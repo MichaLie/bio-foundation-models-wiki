@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+_site/
+.DS_Store
+.claude/
+AUDIT_REPORT.md
+workflow_result.json
+existing_models.json

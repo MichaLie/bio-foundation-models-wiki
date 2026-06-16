@@ -1,0 +1,63 @@
+name: "Add / fix a model"
+description: "Dump a model to add (or a correction). You or an agent turns this into a models_final.json entry."
+title: "[model] <name>"
+labels: ["add-model"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Model name
+    validations:
+      required: true
+  - type: dropdown
+    id: modality
+    attributes:
+      label: Modality
+      options:
+        - dna
+        - rna
+        - protein
+        - complex
+        - molecule
+        - singlecell
+        - spatial
+        - multimodal
+        - platform
+        - benchmark
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year
+  - type: textarea
+    id: description
+    attributes:
+      label: One-sentence description
+    validations:
+      required: true
+  - type: input
+    id: io
+    attributes:
+      label: Input -> Output
+      placeholder: "e.g. protein sequence -> per-residue embeddings"
+  - type: input
+    id: paper
+    attributes:
+      label: Paper URL
+  - type: input
+    id: code
+    attributes:
+      label: Code / weights URL
+  - type: input
+    id: access
+    attributes:
+      label: Access
+      placeholder: "Open code + weights | gated | Model hub | Web/API | Paper-only"
+  - type: input
+    id: use_cases
+    attributes:
+      label: Main use cases
+  - type: markdown
+    attributes:
+      value: "An agent (or you) will add this to `models_final.json`; the site rebuilds and redeploys automatically on merge."
