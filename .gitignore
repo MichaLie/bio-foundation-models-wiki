@@ -7,3 +7,6 @@ _site/
 AUDIT_REPORT.md
 workflow_result.json
 existing_models.json
+
+# second wiki — its own repo
+Autonomous_Agents/
