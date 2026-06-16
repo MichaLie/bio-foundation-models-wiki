@@ -98,13 +98,6 @@ TEMPLATE = r"""<!DOCTYPE html>
  --api:#6d28d9;--apibg:#efe7fc;--platform:#0e7490;--platformbg:#dcf2f6;--paper:#a13a3a;--paperbg:#fbe6e6;
  --new:#d6336c;--star:#e8a800;
 }
-html[data-theme="dark"]{
- --bg:#0f1218;--panel:#161b22;--ink:#e6e9ef;--muted:#9aa3b2;--line:#262c36;--accent:#5b8cff;
- --chip:#1d232d;--chipline:#2b3340;--rowhover:#1b2330;--detail:#12161d;
- --open:#5fd99a;--openbg:#10331f;--partial:#f0b95c;--partialbg:#33260f;--hub:#6cb6f0;--hubbg:#0e273b;
- --api:#b794f4;--apibg:#241039;--platform:#5fd0de;--platformbg:#06303a;--paper:#f08a8a;--paperbg:#3a1414;
- --new:#f06595;--star:#f2c200;
-}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:13.5px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
@@ -164,14 +157,27 @@ tr.detailrow td{background:var(--detail);padding:0 8px 14px 30px}
 .empty{text-align:center;color:var(--muted);padding:50px 0}
 footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 .legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:11.5px;color:var(--muted)}
+.hright{display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.dedi{display:flex;align-items:center;gap:11px;text-decoration:none}
+.dedi:hover{text-decoration:none}
+.elixir-logo svg{height:50px;width:auto;display:block}
+.elixir-logo .cls-2{fill:#4d4848}
+.dedi-cap{font-size:12px;line-height:1.35;color:var(--muted);text-align:right}
+.dedi-cap b{color:var(--ink);font-weight:700}
+.dedi:hover .dedi-cap{color:var(--ink)}
 </style></head>
 <body><div class="wrap">
-<header class="top"><div>
+<header class="top"><div class="htext">
 <h1>Biological Foundation Models — Researcher Index</h1>
 <div class="sub">Filterable index of foundation models for biological sequences, molecules, structures, omics, cells, and tissue images.
 Answer fast: <b>what object?</b> · <b>in → out?</b> · <b>accessible today?</b> · <b>what for?</b>
 Updated __TODAY__. Access tags are best-effort — <b>always verify the license</b> before commercial use. Click any row for detail.</div>
-</div><button class="toolbtn" id="theme">🌓 Theme</button></header>
+</div>
+<div class="hright">
+<a class="dedi" href="https://www.elixir-czech.cz/" target="_blank" rel="noopener" title="ELIXIR-CZ — Czech national node of ELIXIR">
+<span class="elixir-logo">__ELIXIRSVG__</span>
+<span class="dedi-cap">Dedicated to <b>ELIXIR-CZ</b><br>Czech national node of ELIXIR</span></a>
+</div></header>
 
 <div class="stats">
 <div class="stat"><b>__TOTAL__</b><span>models &amp; resources</span></div>
@@ -229,8 +235,6 @@ chips(document.getElementById('togchips'),['hasWeights','hasCode','canonical'],{
 const qEl=document.getElementById('q');
 qEl.addEventListener('input',e=>{st.q=e.target.value.toLowerCase();render()});
 document.getElementById('reset').onclick=()=>{st.q='';qEl.value='';st.mods.clear();st.accs.clear();st.tog.clear();st.sort='default';document.querySelectorAll('.chip.on').forEach(c=>c.classList.remove('on'));render()};
-document.getElementById('theme').onclick=()=>{const h=document.documentElement;h.dataset.theme=h.dataset.theme==='dark'?'':'dark';try{localStorage.setItem('bfm-theme',h.dataset.theme)}catch(e){}};
-(function(){try{const t=localStorage.getItem('bfm-theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}})();
 document.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(st.sort===k){st.dir*=-1}else{st.sort=k;st.dir=1}render()});
 document.querySelectorAll('.qcbtn').forEach(b=>b.onclick=()=>{st.q=b.dataset.q.toLowerCase();qEl.value=b.dataset.q;render();document.querySelector('table.main').scrollIntoView({behavior:'smooth'})});
 function tokens(q){return q.split(/\s+/).filter(Boolean)}
@@ -291,12 +295,20 @@ render();
 </script></body></html>
 """
 
+try:
+    _elixir_svg = open('assets/elixir-cz-logo.svg').read()
+    if _elixir_svg.lstrip().startswith('<?xml'):
+        _elixir_svg = _elixir_svg.split('?>', 1)[1]
+except FileNotFoundError:
+    _elixir_svg = ''
+
 repl = {
  '__TODAY__':today,'__TOTAL__':str(total),'__NOPEN__':str(n_open),'__NGATED__':str(n_gated),
  '__NAPI__':str(n_api),'__NNEW__':str(n_new),'__NCATS__':str(n_cats),'__QUICK__':quick_rows,
  '__DATA__':json.dumps(norm,ensure_ascii=False),'__MODLABELS__':json.dumps(MOD_LABELS),
  '__MODORDER__':json.dumps(MOD_ORDER),'__ACCLABELS__':json.dumps(ACCESS_LABELS),
  '__ACCSHORT__':json.dumps(ACCESS_SHORT),'__ACCORDER__':json.dumps(ACCESS_ORDER),
+ '__ELIXIRSVG__':_elixir_svg,
 }
 out=TEMPLATE
 for k,v in repl.items():
