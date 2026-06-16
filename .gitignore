@@ -2,7 +2,8 @@ __pycache__/
 *.pyc
 _site/
 .DS_Store
-.claude/
+.claude/settings.local.json
+.claude/launch.json
 AUDIT_REPORT.md
 workflow_result.json
 existing_models.json
