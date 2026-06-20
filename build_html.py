@@ -144,8 +144,8 @@ tr.open .exp{transform:rotate(90deg)}
 .b-hub{color:var(--hub);background:var(--hubbg)}.b-api{color:var(--api);background:var(--apibg)}
 .b-paper{color:var(--paper);background:var(--paperbg)}.b-platform{color:var(--platform);background:var(--platformbg)}
 .b-mod{color:var(--muted);background:var(--chip);font-weight:600}
-td.io,td.uses{max-width:300px;color:var(--ink)}
-td.io .t,td.uses .t{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+td.io,td.uses{max-width:360px;color:var(--ink)}
+td.io .t,td.uses .t{display:block;white-space:normal;overflow-wrap:anywhere}
 td.yr{color:var(--muted);white-space:nowrap}
 td.lnk a{font-size:14px;margin-right:5px;text-decoration:none}
 tr.detailrow td{background:var(--detail);padding:0 8px 14px 30px}

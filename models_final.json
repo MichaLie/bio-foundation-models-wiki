@@ -1144,17 +1144,25 @@
  {
   "modality": "protein",
   "name": "RFdiffusion",
-  "description": "Diffusion model for protein backbone and functional motif design.",
+  "description": "Diffusion model for protein backbone and functional-motif design; RFdiffusion3 (2025) extends it to an all-atom diffusion model that designs proteins in the context of ligands, nucleic acids, and arbitrary non-protein atoms (e.g. enzymes, DNA-binding proteins).",
   "paper_links": [
    {
     "label": "Nature",
     "url": "https://www.nature.com/articles/s41586-023-06415-8"
+   },
+   {
+    "label": "bioRxiv (RFdiffusion3)",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.09.18.676967v1"
    }
   ],
   "code_links": [
    {
     "label": "GitHub",
     "url": "https://github.com/RosettaCommons/RFdiffusion"
+   },
+   {
+    "label": "GitHub (foundry)",
+    "url": "https://github.com/RosettaCommons/foundry"
    }
   ],
   "status": "Open code + weights",
@@ -1324,17 +1332,25 @@
  {
   "modality": "complex",
   "name": "RoseTTAFold All-Atom",
-  "description": "All-atom model for biomolecular assemblies with proteins, nucleic acids, small molecules, metals, and modifications.",
+  "description": "All-atom model for biomolecular assemblies with proteins, nucleic acids, small molecules, metals, and modifications; succeeded by RoseTTAFold3 / RF3 (2025) with improved chirality handling and flexible atomic-distance conditioning for docking.",
   "paper_links": [
    {
     "label": "Science",
     "url": "https://www.science.org/doi/10.1126/science.adl2528"
+   },
+   {
+    "label": "bioRxiv (RF3)",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.08.14.670328v2"
    }
   ],
   "code_links": [
    {
     "label": "GitHub",
     "url": "https://github.com/baker-laboratory/RoseTTAFold-All-Atom"
+   },
+   {
+    "label": "GitHub (foundry)",
+    "url": "https://github.com/RosettaCommons/foundry"
    }
   ],
   "status": "Open code + weights",
@@ -1548,11 +1564,15 @@
  {
   "modality": "molecule",
   "name": "Uni-Mol",
-  "description": "Universal 3D molecular representation framework with molecular and pocket pretraining.",
+  "description": "Universal 3D molecular representation framework with molecular and pocket pretraining; Uni-Mol3 (2025) extends the series to multi-molecule chemical reactions via a 3D-aware Mol-Tokenizer and two-stage pretraining.",
   "paper_links": [
    {
     "label": "ICLR",
     "url": "https://openreview.net/forum?id=6K2RM6wVqKu"
+   },
+   {
+    "label": "arXiv (Uni-Mol3)",
+    "url": "https://arxiv.org/abs/2508.00920"
    }
   ],
   "code_links": [
@@ -3434,7 +3454,7 @@
  {
   "modality": "rna",
   "name": "DRfold",
-  "description": "End-to-end deep learning RNA tertiary structure predictor combining learned local frame rotations and geometric restraints into a hybrid energy potential; MSA-free (single-sequence).",
+  "description": "End-to-end deep-learning RNA tertiary-structure predictor combining learned local frame rotations and geometric restraints (MSA-free); DRfold2 (2026) adds a pretrained RNA Composite Language Model (RCLM) and a denoising structure module for end-to-end ab initio folding.",
   "io": "RNA sequence (+ secondary structure) -> predicted 3D tertiary structure (atomic resolution)",
   "status": "Open code + weights (MIT)",
   "use_cases": "Ab initio / single-sequence RNA 3D structure prediction without MSA",
@@ -3443,12 +3463,20 @@
    {
     "label": "Nature",
     "url": "https://www.nature.com/articles/s41467-023-41303-9"
+   },
+   {
+    "label": "PLOS Biology (DRfold2)",
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003659"
    }
   ],
   "code_links": [
    {
     "label": "GitHub",
     "url": "https://github.com/leeyang/DRfold"
+   },
+   {
+    "label": "GitHub (DRfold2)",
+    "url": "https://github.com/leeyang/DRfold2"
    }
   ],
   "new": true,
@@ -4226,7 +4254,7 @@
  {
   "modality": "complex",
   "name": "Protenix",
-  "description": "ByteDance's trainable, fully open-source PyTorch reproduction of AlphaFold3 for all-atom biomolecular complex structure prediction, with public training and inference code; later v1 reported to match/exceed AF3 on several benchmarks.",
+  "description": "ByteDance's trainable, fully open-source PyTorch reproduction of AlphaFold3 for all-atom biomolecular complex structure prediction; the v1 release (2026) added protein-template integration and RNA MSA support to match or exceed AF3 on several benchmarks, and v2 (2026) adds large antibody-antigen gains, GPCR hit discovery, and zero-shot antibody design.",
   "io": "JSON spec of protein/RNA/DNA/ligand (+optional MSA, templates, atom-level constraints) -> all-atom complex 3D structure",
   "status": "Open code + weights",
   "use_cases": "Open AF3-style complex prediction, antibody-antigen modeling, drug-target structures, retraining/fine-tuning research",
@@ -4235,6 +4263,14 @@
    {
     "label": "bioRxiv",
     "url": "https://www.biorxiv.org/content/10.1101/2025.01.08.631967v1"
+   },
+   {
+    "label": "bioRxiv (v1)",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.02.05.703733v1"
+   },
+   {
+    "label": "bioRxiv (v2)",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.04.10.717613v1"
    }
   ],
   "code_links": [
@@ -5746,7 +5782,7 @@
  {
   "modality": "spatial",
   "name": "PRISM",
-  "description": "Paige multimodal generative slide-level foundation model built on Virchow tile features, trained on 587k WSIs and 195k clinical reports for slide-level embeddings and report generation.",
+  "description": "Paige multimodal generative slide-level pathology foundation model built on Virchow tile features (587k WSIs, 195k clinical reports); PRISM2 (2025) scales to 2.3M H&E WSIs with clinical reports and a 4B-parameter LLM backbone for clinical-grade cancer detection.",
   "io": "Set of Virchow tile features for a WSI -> slide-level embedding and/or generated diagnostic text",
   "status": "Model hub",
   "use_cases": "Slide-level cancer classification, zero-shot tasks, automated diagnostic report/summary generation",
@@ -5755,12 +5791,20 @@
    {
     "label": "arXiv",
     "url": "https://arxiv.org/abs/2405.10254"
+   },
+   {
+    "label": "arXiv (PRISM2)",
+    "url": "https://arxiv.org/abs/2506.13063"
    }
   ],
   "code_links": [
    {
     "label": "Hugging Face",
     "url": "https://huggingface.co/paige-ai/Prism"
+   },
+   {
+    "label": "Hugging Face (Prism2)",
+    "url": "https://huggingface.co/paige-ai/Prism2"
    }
   ],
   "new": true,
@@ -6471,5 +6515,1406 @@
   "new": true,
   "canonical": false,
   "noncommercial": false
+ },
+ {
+  "modality": "dna",
+  "name": "GenSLMs",
+  "description": "Genome-scale language models (2.5B-25B parameters) pretrained on 110M prokaryotic gene sequences and fine-tuned on 1.5M SARS-CoV-2 genomes to model evolutionary dynamics and identify variants of concern.",
+  "io": "prokaryotic gene sequences / SARS-CoV-2 genomes -> evolutionary dynamics predictions, variant-of-concern classification",
+  "status": "Open code + weights",
+  "use_cases": "variant-of-concern identification, viral evolutionary dynamics, pandemic surveillance, genome-scale sequence modeling",
+  "year": "2022",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.1101/2022.10.10.511571v2.full"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/ramanathanlab/genslm"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "dna",
+  "name": "METAGENE-1",
+  "description": "A 7B-parameter autoregressive transformer pretrained on 1.5 trillion base pairs of metagenomic DNA and RNA from human wastewater, designed for pandemic monitoring, pathogen detection, and biosurveillance.",
+  "io": "metagenomic DNA/RNA sequence -> sequence likelihoods, embeddings, and pathogen classification outputs",
+  "status": "Open code + weights",
+  "use_cases": "pandemic monitoring, pathogen detection, biosurveillance, metagenomic sequence analysis",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2501.02045"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "Hugging Face",
+    "url": "https://huggingface.co/metagene-ai/METAGENE-1"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "dna",
+  "name": "CpGPT",
+  "description": "Transformer model pretrained on 150,000+ DNA methylation datasets for zero-shot methylation imputation, array conversion, aging biomarker prediction, and cross-tissue and cross-species transfer.",
+  "io": "DNA methylation array profiles -> imputed methylation values, age predictions, cross-platform conversions",
+  "status": "Open code + weights",
+  "use_cases": "methylation imputation, array platform conversion, epigenetic aging clocks, cross-tissue transfer, cross-species analysis",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.10.24.619766v3"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/lucascamillomd/CpGPT"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "dna",
+  "name": "MethylGPT",
+  "description": "Transformer foundation model pretrained on 226,555 human DNA methylation profiles across 5,281 datasets, enabling methylome-based imputation, biological age prediction, and disease risk assessment across diverse tissue types.",
+  "io": "DNA methylation profile (beta values) -> imputed methylation, predicted biological age, disease risk scores",
+  "status": "Open code + weights",
+  "use_cases": "methylation imputation, biological age prediction, disease risk assessment, tissue-type analysis",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.10.30.621013v2"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/albert-ying/MethylGPT"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "dna",
+  "name": "HiCFoundation",
+  "description": "Self-supervised foundation model trained on 118 million Hi-C contact matrix submatrices for chromatin 3D architecture analysis across 316 species, supporting resolution enhancement, loop detection, single-cell Hi-C, and multi-omics integration.",
+  "io": "Hi-C contact matrix submatrices -> chromatin 3D architecture predictions, enhanced resolution maps, loop calls, single-cell Hi-C profiles",
+  "status": "Open code + weights",
+  "use_cases": "chromatin 3D architecture analysis, Hi-C resolution enhancement, loop detection, single-cell Hi-C analysis, multi-omics integration",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "Nature",
+    "url": "https://www.nature.com/articles/s41592-026-03097-8"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/Noble-Lab/HiCFoundation"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "dna",
+  "name": "PhyloGPN",
+  "description": "Convolutional genomic language model (83M parameters) trained with a phylogenetic-tree loss on the Zoonomia multi-species alignment, producing per-nucleotide embeddings and variant-effect scores without requiring alignment at inference.",
+  "io": "multi-species DNA alignment (training) / single-species nucleotide sequence (inference) -> per-nucleotide embeddings, variant-effect scores",
+  "status": "Open code + weights",
+  "use_cases": "variant effect prediction, regulatory element analysis, cross-species genomic comparison, non-coding variant interpretation",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2503.03773"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "Hugging Face",
+    "url": "https://huggingface.co/songlab/PhyloGPN"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "dna",
+  "name": "AIDO.DNA",
+  "description": "7B-parameter encoder-only transformer trained on 10.6 billion nucleotides from 796 species, achieving state-of-the-art performance on supervised, generative, and zero-shot functional genomics benchmarks.",
+  "io": "DNA nucleotide sequence -> functional genomic annotations, sequence embeddings, zero-shot variant effect predictions",
+  "status": "Open weights",
+  "use_cases": "variant effect prediction, regulatory element annotation, gene expression modeling, zero-shot functional genomics",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.12.01.625444v2"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "Hugging Face",
+    "url": "https://huggingface.co/genbio-ai/AIDO.DNA-7B"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": true,
+  "new": false
+ },
+ {
+  "modality": "dna",
+  "name": "Genos",
+  "description": "Human-centric genomic foundation model (1.2B and 10B parameters, MoE architecture) trained on 636 high-quality human assemblies with 1M-token context at single-nucleotide resolution for pathogenic mutation interpretation.",
+  "io": "DNA sequence (human genome, single-nucleotide resolution) -> genomic variant pathogenicity predictions and mutation interpretations",
+  "status": "Open code + weights",
+  "use_cases": "pathogenic mutation interpretation, genomic variant analysis, human genome modeling",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "Oxford",
+    "url": "https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf132/8296738"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/BGI-HangzhouAI/Genos"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "dna",
+  "name": "Genos-m",
+  "description": "Sparse mixture-of-experts genomic foundation model (4.7B total / ~330M active parameters) pretrained on 1.2 trillion nucleotides from human-associated microbial genomes, MAGs, and bacteriophages at single-nucleotide resolution with 1M-token context.",
+  "io": "microbial nucleotide sequence -> genomic embeddings, sequence generation, functional annotations",
+  "status": "Open code + weights",
+  "use_cases": "microbial genome annotation, bacteriophage analysis, metagenome-assembled genome analysis, microbial sequence generation",
+  "year": "2026",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.05.21.726868v1"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/BGI-HangzhouAI/Genos-m"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "singlecell",
+  "name": "EpiAgent",
+  "description": "Transformer foundation model pretrained on ~5 million single-cell ATAC-seq profiles for chromatin accessibility analysis, supporting cell type annotation, data imputation, and in silico cis-regulatory perturbation.",
+  "io": "single-cell ATAC-seq chromatin accessibility profiles -> cell type annotations, imputed accessibility, cis-regulatory perturbation predictions",
+  "status": "Open code + weights",
+  "use_cases": "cell type annotation, chromatin accessibility imputation, cis-regulatory element perturbation, single-cell epigenomics analysis",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "Nature",
+    "url": "https://www.nature.com/articles/s41592-025-02822-z"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/xy-chen16/EpiAgent"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "rna",
+  "name": "EVA",
+  "description": "Generative RNA foundation model (1.4B MoE, 114M sequences, 8k context) enabling controllable sequence generation across 11 RNA classes including tRNAs and therapeutic mRNAs.",
+  "io": "RNA class label + optional conditioning -> RNA sequence",
+  "status": "Open code + weights",
+  "use_cases": "tRNA design, mRNA therapeutic design, controllable RNA sequence generation, multi-class RNA engineering",
+  "year": "2026",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.17.712398v2"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/GENTEL-lab/EVA"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "rna",
+  "name": "Exai-1",
+  "description": "Multimodal cell-free RNA foundation model integrating sequence embeddings with cfRNA abundance data, pretrained on 306B tokens from blood samples for liquid biopsy and cancer detection.",
+  "io": "cfRNA sequence + abundance data -> liquid biopsy embeddings for cancer detection",
+  "status": "Open code, gated weights",
+  "use_cases": "liquid biopsy, cancer detection, cfRNA analysis",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.03.26.645557v1"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/exai-oss/exai-1"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "protein",
+  "name": "Proteina",
+  "description": "Flow-based protein backbone generator using hierarchical fold-class conditioning and a scalable non-equivariant transformer for de novo backbone design up to 800 residues.",
+  "io": "fold-class conditioning + noise -> protein backbone coordinates (up to 800 residues)",
+  "status": "Open weights",
+  "use_cases": "de novo protein backbone design, fold-conditioned structure generation, large protein design",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2503.00710"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/NVIDIA-BioNeMo/proteina"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": true,
+  "new": false
+ },
+ {
+  "modality": "protein",
+  "name": "La-Proteina",
+  "description": "Partially-latent flow matching model from NVIDIA for joint de novo generation of amino acid sequence and full atomistic structure (backbone + side chains) without requiring a sequence as input.",
+  "io": "noise -> amino acid sequence + all-atom 3D protein structure",
+  "status": "Open code + weights",
+  "use_cases": "de novo protein design, co-design of sequence and structure, drug discovery, synthetic biology",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2507.09466"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/NVIDIA-Digital-Bio/la-proteina"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "complex",
+  "name": "Proteina-Complexa",
+  "description": "Fully-atomistic protein binder design model from NVIDIA using flow-based generative pretraining with test-time compute scaling to design binders against protein and small-molecule targets.",
+  "io": "protein or small-molecule target structure -> all-atom binder structure",
+  "status": "Open code + weights",
+  "use_cases": "protein binder design, drug target engagement, small-molecule co-binder generation, therapeutic protein engineering",
+  "year": "2026",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2603.27950"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/NVIDIA-BioNeMo/Proteina-Complexa"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "protein",
+  "name": "FoldFlow-2",
+  "year": "2024",
+  "description": "SE(3)-equivariant flow matching model for joint protein backbone and sequence co-design, trained on PDB and large synthetic structure datasets using sequence conditioning.",
+  "io": "protein sequence (optional) -> protein backbone 3D structure + sequence",
+  "status": "Open code + weights",
+  "use_cases": "de novo protein design, backbone generation, sequence-structure co-design, protein engineering",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2405.20313"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/DreamFold/FoldFlow"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "protein",
+  "name": "IgGM",
+  "description": "Generative foundation model for antibody and nanobody design that co-generates CDR sequences and full antibody-antigen complex structures conditioned on a target antigen.",
+  "io": "antigen structure -> CDR sequences + antibody-antigen complex 3D structure",
+  "status": "Open code + weights",
+  "use_cases": "antibody design, nanobody design, CDR sequence generation, antibody-antigen complex modeling",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.09.19.613838v2"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/TencentAI4S/IgGM"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "protein",
+  "name": "AbLingua",
+  "year": "2026",
+  "description": "Family of encoder-based antibody language models scaled to 1.7B parameters trained on 1.4B sequences, featuring improved tokenization that captures structural motifs; the largest antibody-specific encoder LM to date.",
+  "io": "antibody sequence -> sequence embeddings / representations",
+  "status": "Open code, gated weights",
+  "use_cases": "antibody design, CDR representation, binding affinity prediction, developability screening",
+  "canonical": false,
+  "noncommercial": false,
+  "new": false,
+  "paper_links": [
+   {
+    "label": "Nature",
+    "url": "https://www.nature.com/articles/s42003-026-10283-z"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "Hugging Face",
+    "url": "https://huggingface.co/IDEA-AI4S/AbLingua"
+   }
+  ]
+ },
+ {
+  "modality": "protein",
+  "name": "SCEPTR",
+  "description": "TCR-specific protein language model pre-trained with autocontrastive learning and masked language modelling for data-efficient transfer learning on TCR-pMHC specificity prediction tasks.",
+  "io": "TCR amino acid sequence -> TCR-pMHC binding specificity prediction",
+  "status": "Open code + weights",
+  "use_cases": "TCR-pMHC specificity prediction, T cell receptor binding analysis, antigen-specific T cell identification",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2406.06397"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/yutanagano/sceptr"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "multimodal",
+  "name": "MAMMAL",
+  "description": "IBM multi-modal multi-task foundation model trained on 2 billion biological samples spanning proteins, small molecules, and single-cell gene expression, achieving state-of-the-art on 9 of 11 drug-discovery benchmarks.",
+  "io": "protein sequences, small molecules, single-cell gene expression -> task-specific predictions (property, interaction, generation)",
+  "status": "Open code + weights",
+  "use_cases": "drug discovery, protein property prediction, molecule-protein interaction, single-cell analysis",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2410.22367"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/BiomedSciAI/biomed-multi-alignment"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "complex",
+  "name": "IntelliFold-2",
+  "description": "Architectural refinement of IntelliFold surpassing AlphaFold3 on FoldBench via latent-space scaling in Pairformer, stochastic atomization, and policy-guided diffusion sampling for biomolecular structure prediction.",
+  "io": "protein/nucleic acid/ligand sequences and features -> all-atom 3D complex structures",
+  "status": "Open code + weights",
+  "use_cases": "protein structure prediction, biomolecular complex modeling, drug target analysis, protein-ligand interaction studies",
+  "year": "2026",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.02.09.704787v1"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/IntelliGen-AI/IntelliFold"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "complex",
+  "name": "PLACER",
+  "description": "Graph neural network for rapidly generating conformational ensembles of protein-small molecule complexes by denoising partially corrupted atomic coordinates, enabling fast sampling of binding-relevant structural diversity.",
+  "io": "protein-ligand complex structure (partially corrupted) -> conformational ensemble of protein-small molecule complex",
+  "status": "Open code + weights",
+  "use_cases": "conformational ensemble generation, protein-ligand docking, drug discovery, binding pose sampling",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "PNAS",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.2427161122"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/baker-laboratory/PLACER"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "complex",
+  "name": "ATOMICA",
+  "description": "SE(3)-equivariant geometric foundation model pretrained on 2 million molecular interaction interfaces from PDB and CSD to learn universal representations of intermolecular interactions across all biomolecular modality pairs.",
+  "io": "3D molecular interaction interface (protein, nucleic acid, ligand, ion) -> interaction embeddings and interface representations",
+  "status": "Open code + weights",
+  "use_cases": "protein-ligand binding prediction, drug discovery, molecular docking, biomolecular interaction modeling, interface representation learning",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.04.02.646906v1"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/mims-harvard/ATOMICA"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "complex",
+  "name": "PharMolixFM",
+  "description": "All-atom multimodal foundation model supporting diffusion, flow matching, and Bayesian flow network paradigms for protein-small molecule docking, structure-based drug design, and peptide design.",
+  "io": "protein structures + small molecules -> docked complexes, designed ligands, peptide sequences",
+  "status": "Open code + weights",
+  "use_cases": "protein-ligand docking, structure-based drug design, peptide design",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2503.21788"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/PharMolix/OpenBioMed"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "complex",
+  "name": "Pearl",
+  "description": "Protein-ligand co-folding foundation model from Genesis Molecular AI using SO(3)-equivariant diffusion and large-scale synthetic training data, outperforming AlphaFold3 by 14.5% on the PoseBusters benchmark.",
+  "io": "protein sequence + ligand SMILES -> co-folded all-atom protein-ligand 3D structure",
+  "status": "Web/API/commercial",
+  "use_cases": "structure-based drug discovery, binding pose prediction, virtual screening, small-molecule docking",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2510.24670"
+   }
+  ],
+  "code_links": [],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "molecule",
+  "name": "COATI",
+  "description": "Multimodal contrastive encoder-decoder aligning 3D conformer (E(3)-equivariant GNN) and SMILES (RoFormer) representations via CLIP-style learning, with autoregressive SMILES reconstruction for druglike chemical space.",
+  "io": "3D molecular conformer or SMILES string -> aligned joint embedding; embedding -> SMILES sequence",
+  "status": "Open code + weights",
+  "use_cases": "molecular representation learning, drug discovery, virtual screening, molecule generation",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "ACS",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.3c01753"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/terraytherapeutics/COATI"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "molecule",
+  "name": "GEM (ChemRL-GEM)",
+  "description": "Geometry-Enhanced Molecular representation learning model that jointly encodes atoms, bonds, and bond angles via dual-graph GNN, pretrained with geometry-level self-supervised tasks including bond length, angle, and inter-atom distance prediction.",
+  "io": "2D molecular graph + 3D geometry -> molecular property predictions",
+  "status": "Open code + weights",
+  "use_cases": "molecular property prediction, drug discovery, ADMET modeling, quantum chemistry property estimation",
+  "year": "2022",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2106.06130"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/PaddlePaddle/PaddleHelix/tree/dev/apps/pretrained_compound/ChemRL/GEM"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": true,
+  "new": false
+ },
+ {
+  "modality": "molecule",
+  "name": "ChemGPT",
+  "description": "Autoregressive GPT-Neo model pretrained on SELFIES strings from PubChem at scales up to 1.3B parameters, used to establish neural scaling laws for generative molecular chemistry.",
+  "io": "SELFIES molecular string -> generated SELFIES molecular string",
+  "status": "Open weights",
+  "use_cases": "molecule generation, drug discovery, molecular language modeling, scaling law benchmarking",
+  "year": "2023",
+  "paper_links": [
+   {
+    "label": "Nature",
+    "url": "https://www.nature.com/articles/s42256-023-00740-3"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "Hugging Face",
+    "url": "https://huggingface.co/ncfrey/ChemGPT-1.2B"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "molecule",
+  "name": "ChemDFM",
+  "description": "Chemistry dialogue foundation model built on LLaMA-13B, domain-pretrained on 34B tokens from chemical literature and fine-tuned on 2.7M chemistry instructions across property prediction, reaction prediction, molecule captioning, and retrosynthesis.",
+  "io": "chemical text or molecular SMILES -> property predictions, reaction products, retrosynthesis routes, molecule captions",
+  "status": "Open code + weights",
+  "use_cases": "property prediction, reaction prediction, retrosynthesis, molecule captioning",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2401.14818"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/OpenDFM/ChemDFM"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "molecule",
+  "name": "NExT-Mol",
+  "description": "Combines a 1.8B-parameter SELFIES-pretrained molecular LLM (MoLlama) with a 3D diffusion transformer for de novo 3D molecule generation and conformer prediction.",
+  "io": "SELFIES molecular sequence -> de novo 3D molecules and conformer geometries",
+  "status": "Open code + weights",
+  "use_cases": "de novo drug design, conformer prediction, structure-based virtual screening",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2502.12638"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/acharkq/next-mol"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "molecule",
+  "name": "NaFM",
+  "description": "Foundation model for small-molecule natural products pretrained with scaffold-aware contrastive learning and masked graph objectives to capture evolutionary scaffold and side-chain variation.",
+  "io": "natural product molecular graph -> scaffold-aware embeddings for classification, screening, and property prediction",
+  "status": "Open code + weights",
+  "use_cases": "taxonomic classification, virtual screening, drug discovery, natural product property prediction",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2503.17656"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/TomAIDD/NaFM-Official"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "molecule",
+  "name": "MolFM",
+  "description": "Multimodal molecular foundation model that jointly learns from molecular graphs, biomedical text, and knowledge graphs via cross-modal attention, enabling unified representation across chemical and textual modalities.",
+  "io": "molecular graph + biomedical text + knowledge graph -> joint molecular-text embeddings",
+  "status": "Open code + weights",
+  "use_cases": "molecule-text retrieval, drug property prediction, molecular captioning, cross-modal molecular search",
+  "year": "2023",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2307.09484"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/PharMolix/OpenBioMed"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "singlecell",
+  "name": "scTranslator",
+  "description": "Pre-trained generative model that translates single-cell transcriptomes to proteomes in an align-free manner, enabling proteome inference from RNA data across diverse single-cell profiling technologies.",
+  "io": "single-cell RNA expression -> single-cell protein abundance",
+  "status": "Open code + weights",
+  "use_cases": "multi-omics inference from RNA-only data, transcriptome-to-proteome translation, cross-technology single-cell integration",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "Nature",
+    "url": "https://www.nature.com/articles/s41551-025-01528-z"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/TencentAILabHealthcare/scTranslator"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "spatial",
+  "name": "Novae",
+  "description": "Self-supervised graph attention network trained on 29 million spatially resolved cells across 18 tissues for zero-shot spatial domain inference, batch correction, and spatially variable gene analysis across spatial transcriptomics technologies.",
+  "io": "spatially resolved transcriptomics data -> spatial domain labels, batch-corrected embeddings, spatially variable genes",
+  "status": "Open code + weights",
+  "use_cases": "spatial domain inference, batch correction, spatially variable gene detection, cross-technology integration",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "Nature",
+    "url": "https://www.nature.com/articles/s41592-025-02899-6"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/prism-oncology/novae"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "singlecell",
+  "name": "Lingshu-Cell",
+  "description": "Alibaba DAMO Academy masked discrete diffusion model that generates whole-transcriptome expression distributions across ~18,000 genes without prior gene selection, achieving top performance on the Virtual Cell Challenge H1 perturbation benchmark.",
+  "io": "scRNA-seq gene expression profiles + perturbation conditions -> whole-transcriptome expression distributions (~18,000 genes)",
+  "status": "Model hub",
+  "use_cases": "perturbation response prediction, virtual cell simulation, transcriptomic distribution modeling, drug effect prediction",
+  "year": "2026",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25240"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "Hugging Face",
+    "url": "https://huggingface.co/collections/Alibaba-DAMO-Academy/lingshu-cell"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "singlecell",
+  "name": "MaxToki",
+  "description": "Autoregressive single-cell language model built on LLaMA (NVIDIA/Gladstone), pretrained on 175M single-cell transcriptomes; uses in-context learning to predict cell-state trajectories and age-modulating perturbations validated in vivo.",
+  "io": "single-cell transcriptome profiles -> cell-state trajectory predictions, perturbation effect scores",
+  "status": "Open code + weights",
+  "use_cases": "cell-state trajectory inference, aging perturbation prediction, in-context cell reasoning, single-cell gene expression modeling",
+  "year": "2026",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.30.715396v1"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/NVIDIA-Digital-Bio/maxToki"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "multimodal",
+  "name": "ProCyon",
+  "description": "11B parameter multimodal protein foundation model from Harvard MIMS that jointly encodes protein sequence, structure, small-molecule structure, and natural language to generate and predict protein phenotypes.",
+  "io": "protein sequence, structure, small-molecule structure, natural language -> protein phenotype predictions, cross-modal retrieval, text-conditioned protein understanding",
+  "status": "Open code + weights",
+  "use_cases": "protein phenotype prediction, cross-modal protein retrieval, protein-drug interaction analysis, natural language querying of protein function",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.12.10.627665v1"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/mims-harvard/ProCyon"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "multimodal",
+  "name": "InstructBioMol",
+  "description": "Any-to-any multimodal LLM that aligns natural language, small molecules, and proteins within a unified framework for biomolecular instruction following and cross-modal design.",
+  "io": "text / molecule / protein sequence -> text / molecule / protein sequence (any-to-any)",
+  "status": "Open code + weights",
+  "use_cases": "molecule captioning, protein function description, molecule generation from text, protein design, cross-modal biomolecular retrieval",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2410.07919"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/HICAI-ZJU/InstructBioMol"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "multimodal",
+  "name": "NatureLM",
+  "description": "Microsoft Research foundation model (1B-46.7B parameters) unifying small molecules, materials, proteins, DNA, RNA, and cells under a single sequence-based architecture with text-driven cross-domain generation.",
+  "io": "text + molecular/biological sequences (small molecules, proteins, DNA, RNA, materials, cells) -> generated sequences, cross-domain predictions",
+  "status": "Open weights",
+  "use_cases": "protein design, molecule generation, materials discovery, cross-domain biological sequence modeling, text-guided molecular generation",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2502.07527"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "Hugging Face",
+    "url": "https://huggingface.co/microsoft/NatureLM-8x7B"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "multimodal",
+  "name": "BioBridge",
+  "description": "Knowledge-graph framework that bridges independently trained unimodal biomedical foundation models (protein, small molecule, clinical text) enabling cross-modal retrieval and prediction without fine-tuning the base encoders.",
+  "io": "protein sequence / small molecule / clinical text -> cross-modal embeddings and predictions",
+  "status": "Open code + weights",
+  "use_cases": "cross-modal biomedical retrieval, drug-target interaction, protein-phenotype linking, multimodal biomedical reasoning",
+  "year": "2023",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2310.03320"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/RyanWangZf/BioBridge"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "platform",
+  "name": "OpenMEDLab",
+  "description": "Open-source platform and model hub for sharing and deploying foundation models across medical imaging, clinical NLP, bioinformatics, and protein engineering modalities.",
+  "io": "multi-modal medical and biological data -> pretrained foundation models and benchmarks",
+  "status": "Model hub",
+  "use_cases": "medical image analysis, clinical NLP, bioinformatics, protein engineering, model sharing and deployment",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2402.18028"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/openmedlab"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "platform",
+  "name": "Amazon Bio Discovery",
+  "description": "AWS cloud platform providing access to 40+ wet-lab-validated biological foundation models via an AI agent interface, integrated with a laboratory partner network for closed-loop drug discovery workflows.",
+  "io": "biological targets, sequences, or molecules -> drug candidates, binder designs, and experimental predictions",
+  "status": "Web/API/commercial",
+  "use_cases": "drug discovery, protein design, nanobody engineering, closed-loop wet-lab experimentation",
+  "year": "2026",
+  "paper_links": [
+   {
+    "label": "Amazon Science",
+    "url": "https://www.amazon.science/publications/agent-guided-de-novo-design-of-nanobody-binders-against-a-novel-cancer-target"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "AWS",
+    "url": "https://aws.amazon.com/biodiscovery/"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "protein",
+  "name": "Latent Labs (Latent-X / Latent-X2)",
+  "description": "Generative all-atom protein design platform offering no-code and API access to models for binder and drug-like antibody design, with reported experimental hit rates up to 90%.",
+  "io": "target protein structure -> designed binder or antibody sequences and all-atom structures",
+  "status": "Web/API/commercial",
+  "use_cases": "protein binder design, antibody engineering, drug-like antibody generation, therapeutic lead discovery",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2507.19375"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "Latent Labs",
+    "url": "https://www.latentlabs.com/latent-x/"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "spatial",
+  "name": "OmiCLIP / Loki",
+  "description": "Dual-encoder foundation model trained on 2.2 million paired histology tiles and spatial transcriptomics profiles from 32 organs, enabling spatially resolved gene expression prediction, cell-type decomposition, and cross-modal retrieval from H&E images.",
+  "io": "H&E histology tile -> spatial transcriptomics expression profile, cell-type composition",
+  "status": "Open code + weights",
+  "use_cases": "spatial transcriptomics prediction from histology, cell-type deconvolution, cross-modal retrieval, multi-organ spatial analysis",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "Nature",
+    "url": "https://www.nature.com/articles/s41592-025-02707-1"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/GuangyuWangLab2021/Loki"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "spatial",
+  "name": "KRONOS",
+  "description": "Self-supervised foundation model for spatial proteomics trained on 47 million multiplex imaging patches across 175 protein markers, 16 tissue types, and 8 fluorescence platforms including CODEX, MxIF, and IBEX.",
+  "io": "multiplex protein imaging patches -> spatial proteomics embeddings",
+  "status": "Open code + weights",
+  "use_cases": "spatial proteomics analysis, tissue phenotyping, protein marker embedding, multiplex imaging interpretation",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2506.03373"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/mahmoodlab/KRONOS"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "spatial",
+  "name": "VirTues",
+  "description": "Foundation model for multiplex spatial proteomics that learns marker-aware, multi-scale representations from protein imaging data, enabling zero-shot cell typing, niche annotation, and patient stratification.",
+  "io": "multiplex spatial protein images -> multi-scale cell and tissue representations",
+  "status": "Open code + weights",
+  "use_cases": "zero-shot cell typing, tissue niche annotation, patient stratification, spatial proteomics analysis",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2501.06039"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/bunnelab/virtues"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "spatial",
+  "name": "SToFM",
+  "description": "Multi-scale spatial transcriptomics foundation model pretrained on SToCorpus-88M using an SE(2) Transformer to jointly model macro tissue morphology, cellular niche context, and gene expression across resolution scales.",
+  "io": "spatial transcriptomics tissue image + gene expression -> multi-scale spatial embeddings",
+  "status": "Open code + weights",
+  "use_cases": "spatial gene expression prediction, tissue morphology analysis, cellular niche characterization, spatial omics representation learning",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2507.11588"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/PharMolix/SToFM"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "spatial",
+  "name": "STORM",
+  "description": "Multimodal foundation model jointly pretrained on 1.2 million spatially resolved transcriptomic profiles and paired H&E images across 18 organs, enabling virtual ST prediction, spatial domain discovery, and clinical outcome prediction.",
+  "io": "H&E histology image + spatial transcriptomics profiles -> predicted spatial gene expression, spatial domain annotations, clinical outcome predictions",
+  "status": "Paper/preprint only",
+  "use_cases": "virtual spatial transcriptomics from H&E, spatial domain discovery, clinical outcome prediction, multi-organ spatial analysis",
+  "year": "2026",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2604.03630"
+   }
+  ],
+  "code_links": [],
+  "canonical": false,
+  "noncommercial": true,
+  "new": false
+ },
+ {
+  "modality": "spatial",
+  "name": "PathOrchestra",
+  "description": "Pathology foundation model trained on 300,000 whole-slide images across 20 tissue types, evaluated on 112 clinical-grade tasks spanning pan-cancer classification, biomarker assessment, and structured report generation.",
+  "io": "whole-slide pathology image -> cancer classification, biomarker predictions, structured pathology reports",
+  "status": "Open code, gated weights",
+  "use_cases": "pan-cancer classification, biomarker assessment, pathology report generation, tissue type analysis",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2503.24345"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/yanfang-research/PathOrchestra"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": true,
+  "new": false
+ },
+ {
+  "modality": "spatial",
+  "name": "CellSAM",
+  "description": "Universal cell segmentation foundation model combining a learned cell detector (CellFinder) with SAM to generalize across mammalian cells, yeast, and bacteria in diverse imaging modalities.",
+  "io": "microscopy images -> cell instance segmentation masks",
+  "status": "Open code + weights",
+  "use_cases": "cell segmentation, microscopy image analysis, multi-organism cell detection, high-throughput biological imaging",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "Nature",
+    "url": "https://www.nature.com/articles/s41592-025-02879-w"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/vanvalenlab/cellSAM"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "benchmark",
+  "name": "TAPE (Tasks Assessing Protein Embeddings)",
+  "description": "NeurIPS 2019 benchmark of five semi-supervised protein tasks spanning secondary structure prediction, contact prediction, remote homology detection, fluorescence, and stability, used to evaluate protein language models.",
+  "io": "protein sequence -> task-specific predictions (structure, homology, fitness)",
+  "status": "Open code + weights",
+  "use_cases": "protein language model evaluation, secondary structure prediction, remote homology detection, protein engineering fitness prediction",
+  "year": "2019",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/1906.08230"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/songlab-cal/tape"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "benchmark",
+  "name": "PEER (Protein sEquence undERstanding)",
+  "description": "Multi-task benchmark covering 17 protein tasks across five groups (function, localization, structure, protein-protein interaction, and protein-ligand interaction) for systematic evaluation of protein language models.",
+  "io": "protein sequence -> performance scores across 17 protein understanding tasks",
+  "status": "Open code + weights",
+  "use_cases": "protein FM evaluation, multi-task benchmarking, protein function prediction, protein structure assessment",
+  "year": "2022",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2206.02096"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/DeepGraphLearning/PEER_Benchmark"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "benchmark",
+  "name": "GenBench (Genomic Foundation Models)",
+  "description": "NeurIPS 2024 benchmarking suite for systematic evaluation of genomic foundation models across short- and long-range DNA tasks spanning coding regions, non-coding regions, and genome structure.",
+  "io": "DNA sequences -> benchmark scores across genomic tasks",
+  "status": "Open code + weights",
+  "use_cases": "genomic model evaluation, DNA sequence modeling, regulatory element analysis, genome structure prediction",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2406.01627"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/jimmylihui/GenBench"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "benchmark",
+  "name": "DNALONGBENCH",
+  "description": "Benchmark suite of five genomic tasks with long-range dependencies up to 1 million base pairs, designed to evaluate and expose limitations of DNA foundation models on long-range prediction.",
+  "io": "DNA sequences (up to 1 Mbp) -> genomic task predictions (classification/regression across five long-range tasks)",
+  "status": "Open code + weights",
+  "use_cases": "benchmarking DNA foundation models, long-range genomic prediction, model evaluation, genome biology research",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "Nature",
+    "url": "https://www.nature.com/articles/s41467-025-65077-4"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/wenduocheng/DNALongBench"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "benchmark",
+  "name": "NABench",
+  "description": "Large-scale benchmark aggregating 162 high-throughput assays and 2.6 million mutated sequences across diverse DNA and RNA families to evaluate nucleotide foundation models on fitness prediction tasks.",
+  "io": "nucleotide sequences (DNA/RNA mutants) -> fitness prediction scores",
+  "status": "Open code + weights",
+  "use_cases": "nucleotide model evaluation, fitness prediction benchmarking, DNA/RNA model comparison",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2511.02888"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/mrzzmrzz/NABench"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "benchmark",
+  "name": "RNAGym",
+  "description": "Benchmark suite for RNA fitness and structure prediction covering 31 fitness assays with over 1.1 million variants and secondary/tertiary structure tasks, serving as the ProteinGym analog for RNA.",
+  "io": "RNA sequence variants -> fitness scores and secondary/tertiary structure predictions",
+  "status": "Open code + weights",
+  "use_cases": "RNA fitness prediction, RNA secondary structure evaluation, RNA tertiary structure benchmarking, foundation model assessment",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.06.16.660049v1"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/MarksLab-DasLab/RNAGym"
+   }
+  ],
+  "canonical": true,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "benchmark",
+  "name": "PertEval-scFM",
+  "description": "ICML 2025 benchmarking framework evaluating single-cell foundation models on perturbation effect prediction, finding that scFM zero-shot embeddings provide minimal improvement over simple baselines under distribution shift.",
+  "io": "scRNA-seq profiles + perturbation conditions -> perturbation effect prediction benchmarks",
+  "status": "Open code",
+  "use_cases": "benchmarking scFMs, perturbation effect prediction, model evaluation under distribution shift, single-cell transcriptomics",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "PMLR",
+    "url": "https://proceedings.mlr.press/v267/wenteler25a.html"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/aaronwtr/PertEval"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "benchmark",
+  "name": "PathBench",
+  "description": "Benchmark evaluating 19 pathology foundation models across 64 clinical diagnosis and prognosis tasks using 15,888 whole-slide images from 8,549 patients across 10 hospitals, with rigorous data leakage prevention.",
+  "io": "whole-slide images -> diagnostic and prognostic performance scores across 64 tasks",
+  "status": "Open code + weights",
+  "use_cases": "pathology model evaluation, cancer diagnosis benchmarking, clinical prognosis assessment, foundation model comparison",
+  "year": "2025",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2505.20202"
+   }
+  ],
+  "code_links": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/birkhoffkiki/PathBench"
+   }
+  ],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
+ },
+ {
+  "modality": "benchmark",
+  "name": "COMET (Multi-Omics Evaluation)",
+  "description": "Comprehensive benchmark evaluating biological language models across single-omics, cross-omics, and multi-omics tasks spanning DNA, RNA, and protein modalities.",
+  "io": "DNA/RNA/protein sequences -> standardized benchmark scores across omics tasks",
+  "status": "Paper/preprint only",
+  "use_cases": "model evaluation, multi-omics integration assessment, biological language model benchmarking, cross-omics task comparison",
+  "year": "2024",
+  "paper_links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2412.10347"
+   }
+  ],
+  "code_links": [],
+  "canonical": false,
+  "noncommercial": false,
+  "new": false
  }
 ]
