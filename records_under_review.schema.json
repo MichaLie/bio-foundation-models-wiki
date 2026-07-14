@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://michalie.github.io/bio-foundation-models-wiki/records_under_review.schema.json",
+  "title": "Biological Foundation Models under-review register",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schema_version", "title", "description", "status", "date_modified", "record_count", "policy", "entries"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schema_version": {"const": "1.0.0"},
+    "title": {"type": "string", "minLength": 1},
+    "description": {"type": "string", "minLength": 1},
+    "status": {"const": "editorial-hold"},
+    "date_modified": {"type": "string", "format": "date"},
+    "record_count": {"type": "integer", "minimum": 0},
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["displayed_in_index", "stable_ids_reserved", "promotion_rule"],
+      "properties": {
+        "displayed_in_index": {"const": false},
+        "stable_ids_reserved": {"const": true},
+        "promotion_rule": {"type": "string", "minLength": 1}
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["record", "review"],
+        "properties": {
+          "record": {"$ref": "schema.json#/items"},
+          "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status", "hold_since", "reason_code", "reason", "source", "reconsider_when"],
+            "properties": {
+              "status": {"const": "under_review"},
+              "hold_since": {"type": "string", "format": "date"},
+              "reason_code": {"enum": ["scope", "artifact", "family_identity", "terms", "duplication", "multiple"]},
+              "reason": {"type": "string", "minLength": 1},
+              "source": {"type": "string", "pattern": "^evidence/source-audit/foundation_(?:initial|residual_mod[0-2])\\.md$"},
+              "reconsider_when": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    }
+  }
+}

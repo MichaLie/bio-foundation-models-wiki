@@ -1,133 +1,124 @@
 #!/usr/bin/env python3
-"""Regenerate the markdown wiki from models_final.json (all entries, fixes applied)."""
+"""Build synchronized Markdown distributions from the canonical catalog."""
+from __future__ import annotations
+
 import json
 from collections import Counter
-M = json.load(open('models_final.json'))
+from pathlib import Path
 
+from fair_metadata import load_resource_metadata
+
+
+MODELS = json.loads(Path("models_final.json").read_text(encoding="utf-8"))
+META = load_resource_metadata()
 MOD_TITLE = {
- 'dna':'DNA and Genome Models','rna':'RNA Models',
- 'protein':'Protein Sequence, Fitness, and Design Models',
- 'complex':'Structure and Biomolecular Complex Models',
- 'molecule':'Small-Molecule and Chemical Models',
- 'singlecell':'Single-Cell, Omics, and Cellular Models',
- 'spatial':'Spatial Omics and Pathology / Cell-Imaging Models',
- 'multimodal':'Multimodal Bio-Language Models and Bioinformatics LLMs',
- 'platform':'Platforms, Wrappers, and Model Hubs',
- 'benchmark':'Benchmarks and Datasets',
+    "dna": "DNA and Genome Models",
+    "rna": "RNA Models",
+    "protein": "Protein Sequence, Fitness, and Design Models",
+    "complex": "Structure and Biomolecular Complex Models",
+    "molecule": "Small-Molecule and Chemical Models",
+    "singlecell": "Single-Cell, Omics, and Cellular Models",
+    "spatial": "Spatial Omics and Pathology / Cell-Imaging Models",
+    "multimodal": "Multimodal Bio-Language Models and Bioinformatics LLMs",
+    "platform": "Platforms, Wrappers, and Model Hubs",
+    "benchmark": "Benchmarks and Datasets",
 }
-MOD_ORDER = ['dna','rna','protein','complex','molecule','singlecell','spatial','multimodal','platform','benchmark']
-ACCESS_ORDER = {'Open code + weights':0}
+MOD_ORDER = list(MOD_TITLE)
+AUDIT_LABEL = {
+    "verified": "Verified",
+    "verified_with_limits": "Verified with limits",
+    "hold": "HOLD",
+}
 
-def links_md(rec):
-    out=[]
-    for l in rec.get('paper_links',[]): out.append(f"[{l['label']}]({l['url']})")
-    for l in rec.get('code_links',[]): out.append(f"[{l['label']}]({l['url']})")
-    return ' · '.join(out) if out else '—'
 
-def cell(s): return (s or '').replace('|','\\|').replace('\n',' ').strip()
+def cell(value: object) -> str:
+    return str(value or "").replace("|", "\\|").replace("\n", " ").strip()
 
-def acc_rank(rec):
-    s=(rec.get('status','') or '').lower()
-    if 'open code + weights' in s and 'gated' not in s and 'unclear' not in s and 'not released' not in s: return 0
-    if 'paper/preprint only' in s: return 9
-    return 4
 
-def rows_for(mod):
-    items=[r for r in M if r['modality']==mod]
-    items.sort(key=lambda r:(acc_rank(r), 0 if r.get('canonical') else 1, r['name'].lower()))
-    return items
+def links_md(record: dict) -> str:
+    links = record.get("paper_links", []) + record.get("code_links", [])
+    return " · ".join(f"[{cell(link['label'])}]({link['url']})" for link in links) or "—"
 
-today='2026-06-16'
-out=[]
-out.append('# Biological Foundation Models Wiki')
-out.append('')
-out.append(f'Last updated: {today}  ·  {len(M)} entries across {len(MOD_ORDER)} categories.')
-out.append('')
-out.append('A researcher-facing index of foundation models for biological sequences, molecules, structures, '
- 'omics, cells, and tissue images. For each model: what it operates on, what goes in and comes out, how '
- 'accessible it is today, and what it is good for. An interactive, filterable/sortable version is in '
- '`biological_foundation_models_wiki.html` (open in any browser, works offline).')
-out.append('')
-out.append('Legend in the **Model** column: ⭐ = canonical / most-used in its area. '
- 'Access is a best-effort classification — **always verify the license before commercial use.**')
-out.append('')
-out.append('## Status / Access Key')
-out.append('')
-out.append('| Status | Meaning |')
-out.append('| --- | --- |')
-for s,m in [
- ('Open code + weights','Public implementation AND public pretrained weights. Verify license.'),
- ('Open code, gated/partial weights','Code public; weights need approval/login/terms, or only some sizes are open.'),
- ('Model hub','Weights primarily via Hugging Face, NVIDIA NGC/BioNeMo, CZI Virtual Cells, or similar.'),
- ('Web / API / commercial','Access mainly through a hosted server, API, or commercial platform.'),
- ('Platform / framework','A toolkit/serving layer that makes many models usable rather than a single model.'),
- ('Paper / preprint only','Paper found; no stable public implementation confirmed in the sweep.'),
-]:
-    out.append(f'| {s} | {m} |')
-out.append('')
-# counts
-c=Counter(r['modality'] for r in M)
-out.append('## Contents')
-out.append('')
-for mod in MOD_ORDER:
-    out.append(f"- [{MOD_TITLE[mod]}](#{MOD_TITLE[mod].lower().replace(',','').replace('/','').replace('  ',' ').replace(' ','-')}) — {c.get(mod,0)}")
-out.append('')
 
-for mod in MOD_ORDER:
-    items=rows_for(mod)
-    if not items: continue
-    out.append(f'## {MOD_TITLE[mod]}')
-    out.append('')
-    out.append('Sorted: open + canonical first, then by name.')
-    out.append('')
-    out.append('| Model | Year | Description | Input → Output | Access | Links | Main use cases |')
-    out.append('| --- | --- | --- | --- | --- | --- | --- |')
-    for r in items:
-        name=cell(r['name'])
-        if r.get('canonical'): name+=' ⭐'
-        nc=' · *non-commercial*' if r.get('nc') else ''
-        out.append('| {nm} | {yr} | {desc} | {io} | {acc}{nc} | {lnk} | {use} |'.format(
-            nm=name, yr=cell(r.get('year','') or '—'), desc=cell(r['description']),
-            io=cell(r['io']), acc=cell(r['status']), nc=nc, lnk=links_md(r), use=cell(r['use_cases'])))
-    out.append('')
+def access_rank(record: dict) -> tuple[int, int, str]:
+    audit = {"hold": 2, "verified_with_limits": 1, "verified": 0}[record["audit_state"]]
+    status = record.get("status", "").lower()
+    access = 0 if "open code + weights" in status and "gated" not in status else 4
+    if "paper" in status and "only" in status:
+        access = 9
+    return audit, access, record["name"].casefold()
 
-# operation notes (preserved/condensed) + gaps
-out.append('## Practical Operation Notes')
-out.append('')
-out.append('**Sequence encoders (DNA/RNA/protein LMs)** are used in three modes: (1) embedding extraction — '
- 'pass sequences, take token-level or pooled vectors; (2) zero-shot scoring — compare wild-type vs mutant '
- 'log-likelihoods; (3) fine-tuning/adapters — attach task heads. Inputs are FASTA strings or tokenized '
- 'k-mers/BPE; outputs are embeddings, logits, variant scores, or generated sequences.')
-out.append('')
-out.append('**Generative design models** (Evo, ESM3, ProGen, RFdiffusion, ProteinMPNN/LigandMPNN, GenMol, '
- 'diffusion molecule/genome generators) need post-filtering: validity (frame, stop codons, chemical '
- 'validity, structural plausibility), biological filters (novelty, off-target, immunogenicity, '
- 'developability), and orthogonal/wet-lab validation before outputs are treated as candidates.')
-out.append('')
-out.append('**Single-cell / spatial models** are preprocessing-sensitive: confirm gene vocabulary and species '
- 'assumptions, watch batch effects and training-atlas leakage, and compare against classical baselines '
- '(scVI/Harmony/CellTypist) for annotation, integration, perturbation, and GRN tasks.')
-out.append('')
-out.append('**Structure / complex models** are not interchangeable: protein-only → ESMFold/OpenFold/AlphaFold2; '
- 'complexes with ligands/nucleic acids → AlphaFold3, Chai-1, Boltz, Protenix, HelixFold3, RoseTTAFold-AA; '
- 'docking poses should be rescored (a good affinity is not a plausible pose).')
-out.append('')
-out.append('**Pathology / cell-imaging models** are tile or whole-slide encoders (ViT/DINOv2): input is an '
- 'H&E or fluorescence image (tile or WSI), output is an embedding for downstream classification, retrieval, '
- 'or weakly-supervised slide-level tasks. Most clinical-grade ones are gated (request access).')
-out.append('')
-out.append('## Remaining Gaps and Caveats')
-out.append('')
-out.append('- **License audit not done.** Access tags reflect code/weight availability, not license terms. '
- 'Several "open" models are non-commercial (CC-BY-NC); these are flagged where known but not exhaustively.')
-out.append('- **Structured specs are partial.** Parameter count, max context, and training-data scale live in '
- 'the Description prose, not yet as filterable fields. Year is filled for ~86% of entries.')
-out.append('- **Genuinely code-pending models** (mostly 2026 preprints): CellVQ, RegFormer, ScDiVa, '
- 'scLinguist, scConcept, HybriDNA, TEDDY — listed as paper/preprint until code/weights appear.')
-out.append('- **Fast-moving frontier.** New single-cell, pathology, and genome models appear weekly; treat this '
- 'as a living document and re-sweep periodically.')
-out.append('')
 
-open('biological_foundation_models_wiki.md','w').write('\n'.join(out))
-print('Wrote biological_foundation_models_wiki.md —', len(M), 'entries,', sum(1 for r in M if r.get("new")), 'new')
-print('per section:', {MOD_TITLE[k][:18]:v for k,v in sorted(c.items(), key=lambda x:MOD_ORDER.index(x[0]))})
+counts = Counter(record["modality"] for record in MODELS)
+audit_counts = Counter(record["audit_state"] for record in MODELS)
+out = [
+    "# Biological Foundation Models Wiki",
+    "",
+    f"Last evidence review: {META['modified']} · {len(MODELS)} entries across {len(MOD_ORDER)} categories.",
+    "",
+    "A researcher-facing index of foundation models and explicitly labelled platforms or benchmarks for biological sequences, molecules, structures, omics, cells, and tissue images. Presence is not a recommendation, proof of reuse rights, or evidence of clinical fitness.",
+    "",
+    f"Audit state: **{audit_counts['verified']} verified** and **{audit_counts['verified_with_limits']} verified with limits**. Every displayed row links to a dated source-review note in the canonical JSON. Unresolved candidates are excluded from this index and preserved in the repository's separate under-review register.",
+    "",
+    "Legend: ⭐ = canonical / widely used in its area; NC = non-commercial terms apply to at least one artifact or access route. Always inspect the exact code, weight, data, and service terms.",
+    "",
+    "## Contents",
+    "",
+]
+for modality in MOD_ORDER:
+    anchor = MOD_TITLE[modality].lower().replace(",", "").replace("/", "").replace(" ", "-")
+    out.append(f"- [{MOD_TITLE[modality]}](#{anchor}) — {counts[modality]}")
+out.append("")
+
+for modality in MOD_ORDER:
+    items = sorted((record for record in MODELS if record["modality"] == modality), key=access_rank)
+    if not items:
+        continue
+    out.extend([
+        f"## {MOD_TITLE[modality]}",
+        "",
+        "| Model | Year | Audit | Description | Input → Output | Access | Links | Main use cases |",
+        "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    ])
+    for record in items:
+        name = cell(record["name"])
+        if record.get("canonical"):
+            name += " ⭐"
+        if record.get("noncommercial"):
+            name += " · NC"
+        audit = AUDIT_LABEL[record["audit_state"]]
+        if record["audit_state"] != "verified":
+            audit += f": {cell(record['audit_note'])}"
+        out.append(
+            "| {name} | {year} | {audit} | {description} | {io} | {status} | {links} | {uses} |".format(
+                name=name,
+                year=cell(record.get("year") or "—"),
+                audit=cell(audit),
+                description=cell(record["description"]),
+                io=cell(record["io"]),
+                status=cell(record["status"]),
+                links=links_md(record),
+                uses=cell(record["use_cases"]),
+            )
+        )
+    out.append("")
+
+out.extend([
+    "## Evidence and reuse boundary",
+    "",
+    META["evidence_statement"],
+    "",
+    "The catalog records discovery and evidence. It does not grant rights to external artifacts. Code, weights, data and hosted services can have different terms; institutional, data-protection, ethics and domain review still apply.",
+    "",
+    "Catalog data, metadata, and original documentation are licensed under CC BY 4.0. Maintenance/build code is MIT licensed. External resources, logos, and trademarks retain their own terms.",
+    "",
+    "Machine-readable distributions: `models_final.json`, `schema.json`, and `metadata.jsonld`.",
+    "",
+])
+
+payload = "\n".join(out)
+Path("biological_foundation_models_wiki.md").write_text(payload, encoding="utf-8")
+docs = Path("docs")
+docs.mkdir(exist_ok=True)
+(docs / "biological_foundation_models_wiki.md").write_text(payload, encoding="utf-8")
+print(f"Wrote synchronized Markdown ({len(MODELS)} records)")

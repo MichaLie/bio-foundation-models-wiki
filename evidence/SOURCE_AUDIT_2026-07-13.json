@@ -1,0 +1,4360 @@
+{
+  "schema_version": "1.0.0",
+  "audit_date": "2026-07-13",
+  "frozen_commit": "e79a48cb7caa70555d0e6cb0a0838d849297c57e",
+  "role": "internal adversarial source review",
+  "coverage": {
+    "records": 377,
+    "source_reviewed": 377
+  },
+  "counts": {
+    "verified": 231,
+    "verified_with_limits": 114,
+    "hold": 32
+  },
+  "priority_counts": {
+    "P4": 231,
+    "P3": 33,
+    "P2": 93,
+    "P1": 20
+  },
+  "review_files": [
+    {
+      "path": "evidence/source-audit/foundation_initial.md",
+      "sha256": "6471b335455d14bdd506b89ffe353c01a68423f7badd982fdb14996e99e345a7"
+    },
+    {
+      "path": "evidence/source-audit/foundation_residual_mod0.md",
+      "sha256": "eda66db8d5a0c6103b0dd5823be4a1d003648cdd7d01a73bb5ef4be5d01804a4"
+    },
+    {
+      "path": "evidence/source-audit/foundation_residual_mod1.md",
+      "sha256": "75d25839b2125e9a374eef0d24174510a9f0a18e60bdcf352b2aac404f325cb7"
+    },
+    {
+      "path": "evidence/source-audit/foundation_residual_mod2.md",
+      "sha256": "e2e33c4365f4db05ce2e4f3a65dbc0894ec89cef8597583b66901660ddc6ae1b"
+    }
+  ],
+  "records": [
+    {
+      "id": "bfm-enformer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Nature Methods paper and DeepMind Apache research code match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-021-01252-x",
+        "https://github.com/google-deepmind/deepmind-research/tree/master/enformer"
+      ]
+    },
+    {
+      "id": "bfm-dnabert",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://academic.oup.com/bioinformatics/article/37/15/2112/6128680",
+        "https://github.com/jerryji1993/DNABERT",
+        "https://docs.nvidia.com/bionemo-framework/1.10/models/dnabert.html"
+      ]
+    },
+    {
+      "id": "bfm-dnabert-2",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "checkpoint exists, but model card lacks exact licence. Add official repository/licence evidence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2306.15006",
+        "https://huggingface.co/zhihan1996/DNABERT-2-117M"
+      ]
+    },
+    {
+      "id": "bfm-nucleotide-transformer",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official licence is CC BY-NC-SA 4.0.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-024-02523-z",
+        "https://github.com/instadeepai/nucleotide-transformer",
+        "https://huggingface.co/InstaDeepAI/nucleotide-transformer-2.5b-multi-species"
+      ]
+    },
+    {
+      "id": "bfm-hyenadna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/86ab6927ee4ae9bde4247793c46797c7-Abstract-Conference.html",
+        "https://github.com/HazyResearch/hyena-dna",
+        "https://huggingface.co/LongSafari/hyenadna-large-1m-seqlen"
+      ]
+    },
+    {
+      "id": "bfm-caduceus",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://proceedings.mlr.press/v235/schiff24a.html",
+        "https://github.com/kuleshov-group/caduceus",
+        "https://caduceus-dna.github.io/"
+      ]
+    },
+    {
+      "id": "bfm-gena-lm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2023.06.12.544594",
+        "https://academic.oup.com/nar/article/53/2/gkae1310/7954523",
+        "https://github.com/AIRI-Institute/GENA_LM"
+      ]
+    },
+    {
+      "id": "bfm-gpn-msa",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Final paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592768/",
+        "https://www.biorxiv.org/content/10.1101/2023.10.10.561776v1",
+        "https://github.com/songlab-cal/gpn",
+        "https://www.nature.com/articles/s41587-024-02511-w"
+      ]
+    },
+    {
+      "id": "bfm-evo",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.ado9336",
+        "https://www.biorxiv.org/content/10.1101/2024.02.27.582234v1",
+        "https://github.com/evo-design/evo"
+      ]
+    },
+    {
+      "id": "bfm-evo-2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-026-10176-5",
+        "https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1.full",
+        "https://github.com/arcinstitute/evo2"
+      ]
+    },
+    {
+      "id": "bfm-lucaone",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-025-01044-4",
+        "https://github.com/LucaOne/LucaOne",
+        "https://huggingface.co/collections/LucaGroup/lucaone"
+      ]
+    },
+    {
+      "id": "bfm-bioseq-blm",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: reclassify from DNA to platform; it is a DNA/RNA/protein web and software platform.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://academic.oup.com/nar/article/49/22/e129/6377401",
+        "https://github.com/Zimiao1025/BioSeq-BLM"
+      ]
+    },
+    {
+      "id": "bfm-rna-fm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2022.08.06.503062v2.full-text",
+        "https://github.com/ml4bio/RNA-FM",
+        "https://huggingface.co/multimolecule/rnafm"
+      ]
+    },
+    {
+      "id": "bfm-mrna-fm-plantrna-fm",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "only PlantRNA-FM has a primary paper link and the two model cards carry different licences. Split or fully evidence both components.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/",
+        "https://huggingface.co/yangheng/PlantRNA-FM",
+        "https://huggingface.co/yangheng/mrnafm"
+      ]
+    },
+    {
+      "id": "bfm-rinalmo",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "published paper, Apache code, and Zenodo weights match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-025-60872-5",
+        "https://github.com/lbcb-sci/RiNALMo",
+        "https://zenodo.org/records/15043668"
+      ]
+    },
+    {
+      "id": "bfm-uni-rna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2023.07.11.548588v1",
+        "https://github.com/ComDec/unirna_tf"
+      ]
+    },
+    {
+      "id": "bfm-ernie-rna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-025-64972-0",
+        "https://www.biorxiv.org/content/10.1101/2024.03.17.585376v1.full-text",
+        "https://github.com/Bruce-ywj/ERNIE-RNA",
+        "https://huggingface.co/multimolecule/ernierna"
+      ]
+    },
+    {
+      "id": "bfm-rnabert",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "source and weights exist, but no reuse licence is declared. State “no licence found.”",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://academic.oup.com/nargab/article/4/1/lqac012/6546209",
+        "https://github.com/mana438/RNABERT"
+      ]
+    },
+    {
+      "id": "bfm-splicebert",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "original project is BSD-3-Clause while the MultiMolecule mirror is AGPL-3.0. Record component-specific licences.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://academic.oup.com/bib/article/25/3/bbae163/7644137",
+        "https://www.biorxiv.org/content/10.1101/2023.01.31.526427v1",
+        "https://github.com/chenkenbio/SpliceBERT",
+        "https://huggingface.co/multimolecule/splicebert"
+      ]
+    },
+    {
+      "id": "bfm-rna-msm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://academic.oup.com/nar/article/52/1/e3/7369930",
+        "https://github.com/yikunpku/RNA-MSM"
+      ]
+    },
+    {
+      "id": "bfm-generrna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.02.01.578496v1",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0310814",
+        "https://github.com/pfnet-research/GenerRNA"
+      ]
+    },
+    {
+      "id": "bfm-aido-rna",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Same GenBio non-commercial restriction as AIDO.Cell. Paper, model, licence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.11.28.625345",
+        "https://github.com/genbio-ai/modelgenerator",
+        "https://huggingface.co/genbio-ai/AIDO.RNA-1.6B",
+        "https://github.com/genbio-ai/ModelGenerator/blob/main/LICENSE"
+      ]
+    },
+    {
+      "id": "bfm-esm-1b-esm-1v",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "repository is archived. Mark historical/archived while retaining accessible MIT code and weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.pnas.org/doi/10.1073/pnas.2016239118",
+        "https://www.biorxiv.org/content/10.1101/2021.07.09.450648",
+        "https://github.com/facebookresearch/esm"
+      ]
+    },
+    {
+      "id": "bfm-esm-2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact; weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.ade2574",
+        "https://github.com/facebookresearch/esm",
+        "https://huggingface.co/facebook/esm2_t33_650M_UR50D"
+      ]
+    },
+    {
+      "id": "bfm-esmfold",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.ade2574",
+        "https://github.com/facebookresearch/esm"
+      ]
+    },
+    {
+      "id": "bfm-esm3",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "old URL redirects to Biohub’s ESMC/ESMFold2 repository. Add the specific ESM3 README/model-card locator and current MIT terms.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.ads0018",
+        "https://www.biorxiv.org/content/10.1101/2024.07.01.600583v1",
+        "https://github.com/evolutionaryscale/esm",
+        "https://www.evolutionaryscale.ai/"
+      ]
+    },
+    {
+      "id": "bfm-esm-c-esm-cambrian",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.06.03.729735v1",
+        "https://github.com/Biohub/esm",
+        "https://huggingface.co/biohub"
+      ]
+    },
+    {
+      "id": "bfm-prottrans-prott5-protbert",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT repository and Rostlab models match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/34232869/",
+        "https://arxiv.org/abs/2007.06225",
+        "https://github.com/agemagician/ProtTrans",
+        "https://huggingface.co/Rostlab"
+      ]
+    },
+    {
+      "id": "bfm-proteinbert",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://academic.oup.com/bioinformatics/article/38/8/2102/6502274",
+        "https://github.com/nadavbra/protein_bert"
+      ]
+    },
+    {
+      "id": "bfm-progen-progen2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "ProGen · ProGen2 · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41587-022-01618-2",
+        "https://openreview.net/forum?id=ZOn4HXehSJ6",
+        "https://github.com/salesforce/progen",
+        "https://huggingface.co/jinyuan22/ProGen2-base"
+      ]
+    },
+    {
+      "id": "bfm-progen3",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.04.15.649055v2",
+        "https://github.com/Profluent-AI/progen3",
+        "https://huggingface.co/Profluent-Bio/progen3-3b"
+      ]
+    },
+    {
+      "id": "bfm-ankh",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true; weights are CC BY-NC-SA 4.0.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2023.01.16.524265v1",
+        "https://github.com/agemagician/Ankh",
+        "https://huggingface.co/ElnaggarLab/ankh-large"
+      ]
+    },
+    {
+      "id": "bfm-protgpt2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "published paper and Apache model card match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-022-32007-7",
+        "https://huggingface.co/nferruz/ProtGPT2"
+      ]
+    },
+    {
+      "id": "bfm-xtrimopglm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2401.06199",
+        "https://github.com/biomap-research/xTrimoPGLM",
+        "https://huggingface.co/biomap-research/xtrimopglm-1b-mlm"
+      ]
+    },
+    {
+      "id": "bfm-iglm",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and cite JHU Academic Software Licence for code and pretrained models.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2021.12.13.472419v2",
+        "https://doi.org/10.1016/j.cels.2023.10.001",
+        "https://github.com/Graylab/IgLM"
+      ]
+    },
+    {
+      "id": "bfm-antiberta",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/35845836/",
+        "https://www.biorxiv.org/content/10.1101/2021.11.10.468064.full",
+        "https://github.com/alchemab/antiberta"
+      ]
+    },
+    {
+      "id": "bfm-ablang",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "BSD code and released weights match. Persist; no substantive change.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://academic.oup.com/bioinformaticsadvances/article/2/1/vbac046/6627685",
+        "https://github.com/oxpig/AbLang"
+      ]
+    },
+    {
+      "id": "bfm-eve",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Nature paper, MIT code, and released models match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-021-04043-8",
+        "https://github.com/OATML-Markslab/EVE"
+      ]
+    },
+    {
+      "id": "bfm-msa-transformer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2021.02.12.430858v1",
+        "https://github.com/facebookresearch/esm"
+      ]
+    },
+    {
+      "id": "bfm-tranception",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2205.13760",
+        "https://github.com/OATML-Markslab/Tranception"
+      ]
+    },
+    {
+      "id": "bfm-poet",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "PoET weights are CC BY-NC-SA for academic use; noncommercial:false. Replace arXiv with NeurIPS paper and resolve overlap with bfm-poet-2 and platform record bfm-openprotein-ai-poet-poet-2. NeurIPS paper, repo terms, weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://papers.nips.cc/paper_files/paper/2023/hash/f4366126eba252699b280e8f93c0ab2f-Abstract-Conference.html",
+        "https://github.com/OpenProteinAI/PoET",
+        "https://github.com/OpenProteinAI/PoET#license",
+        "https://zenodo.org/records/10061322"
+      ]
+    },
+    {
+      "id": "bfm-proteinmpnn",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.add2187",
+        "https://github.com/dauparas/ProteinMPNN"
+      ]
+    },
+    {
+      "id": "bfm-esm-if1",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2022.04.10.487779v1",
+        "https://github.com/facebookresearch/esm"
+      ]
+    },
+    {
+      "id": "bfm-rfdiffusion",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-023-06415-8",
+        "https://www.biorxiv.org/content/10.1101/2025.09.18.676967v2",
+        "https://github.com/RosettaCommons/RFdiffusion",
+        "https://github.com/RosettaCommons/foundry/tree/production/models/rfd3"
+      ]
+    },
+    {
+      "id": "bfm-chroma",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-023-06728-8",
+        "https://github.com/generatebio/chroma"
+      ]
+    },
+    {
+      "id": "bfm-dplm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Apache code and DPLM checkpoints match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2402.18567",
+        "https://github.com/bytedance/dplm"
+      ]
+    },
+    {
+      "id": "bfm-bioemu-1",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.adq5170",
+        "https://github.com/microsoft/bioemu"
+      ]
+    },
+    {
+      "id": "bfm-alphafold-3",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and distinguish Apache code, gated NC parameters, and NC server.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-024-07487-w",
+        "https://github.com/google-deepmind/alphafold3",
+        "https://alphafoldserver.com/"
+      ]
+    },
+    {
+      "id": "bfm-chai-1",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Apache code and weights are openly available. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.10.10.615955v1",
+        "https://github.com/chaidiscovery/chai-lab",
+        "https://huggingface.co/chaidiscovery/chai-1"
+      ]
+    },
+    {
+      "id": "bfm-boltz-1-boltz-2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Boltz-1 paper; Boltz-2 paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11601547/",
+        "https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1",
+        "https://github.com/jwohlwend/boltz"
+      ]
+    },
+    {
+      "id": "bfm-rosettafold-all-atom",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.adl2528",
+        "https://www.biorxiv.org/content/10.1101/2025.08.14.670328v2",
+        "https://github.com/RosettaCommons/foundry",
+        "https://github.com/RosettaCommons/foundry/tree/production/models/rf3"
+      ]
+    },
+    {
+      "id": "bfm-openfold",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-024-02272-z",
+        "https://github.com/aqlaboratory/openfold"
+      ]
+    },
+    {
+      "id": "bfm-diffdock",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT code and weights remain available. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://openreview.net/forum?id=kKF8_K-mBbS",
+        "https://github.com/gcorso/DiffDock"
+      ]
+    },
+    {
+      "id": "bfm-chemberta-chemberta-2",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Family record cites ChemBERTa-2 but links only the older ChemBERTa v1 repo/model. Add the official ChemBERTa-2 77M MLM/MTR artifacts or split versions. ChemBERTa-2 paper, v1 repo, ChemBERTa-2 MTR, MLM.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://huggingface.co/papers/2209.01712",
+        "https://github.com/seyonechithrananda/bert-loves-chemistry",
+        "https://huggingface.co/seyonec/ChemBERTa-zinc-base-v1",
+        "https://arxiv.org/abs/2209.01712",
+        "https://huggingface.co/DeepChem/ChemBERTa-77M-MTR",
+        "https://huggingface.co/DeepChem/ChemBERTa-77M-MLM"
+      ]
+    },
+    {
+      "id": "bfm-chemberta-3",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: reclassify as a training platform/framework and change “open” to “public source/model links; reuse licence unconfirmed/HOLD”.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/688b04ca23be8e43d6fe2c69/original/chem-ber-ta-3-an-open-source-training-framework-for-chemical-foundation-models.pdf",
+        "https://github.com/deepforestsci/chemberta3"
+      ]
+    },
+    {
+      "id": "bfm-molformer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact; weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-022-00580-7",
+        "https://github.com/IBM/molformer",
+        "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct"
+      ]
+    },
+    {
+      "id": "bfm-gp-molformer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://pubs.rsc.org/en/content/articlehtml/2025/dd/d5dd00122f",
+        "https://github.com/IBM/gp-molformer"
+      ]
+    },
+    {
+      "id": "bfm-grover",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2007.02835",
+        "https://github.com/tencent-ailab/grover"
+      ]
+    },
+    {
+      "id": "bfm-graphmvp",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT code and public pretrained weights match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://openreview.net/forum?id=xQUe1pOKPam",
+        "https://github.com/chao1224/GraphMVP"
+      ]
+    },
+    {
+      "id": "bfm-uni-mol",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Base paper; official artifact; Uni-Mol3 paper. Action: remove the unsupported Uni-Mol3 merge from this verified base record, or create a separate held record; the official artifact does not substantiate that family merge.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://openreview.net/forum?id=6K2RM6wVqKu",
+        "https://github.com/deepmodeling/Uni-Mol",
+        "https://arxiv.org/abs/2508.00920"
+      ]
+    },
+    {
+      "id": "bfm-megamolbart",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Official repository; technical guide. Action: stop labelling the duplicated GitHub URL as a paper; identify it as official software/model documentation.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://github.com/NVIDIA/MegaMolBART",
+        "https://github.com/NVIDIA/bionemo-framework",
+        "https://docs.nvidia.com/bionemo-framework/1.10/notebooks/MMB_GenerativeAI_Inference_with_examples.html"
+      ]
+    },
+    {
+      "id": "bfm-molmim",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; platform.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/pdf/2208.09016",
+        "https://github.com/NVIDIA/bionemo-framework"
+      ]
+    },
+    {
+      "id": "bfm-molt5",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://aclanthology.org/2022.emnlp-main.26/",
+        "https://github.com/blender-nlp/MolT5"
+      ]
+    },
+    {
+      "id": "bfm-3d-molt5",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Status is stale: official pretrained and fine-tuned weights now exist, including MIT-licensed 3d-molt5-base. Paper, repo, weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://openreview.net/forum?id=eGqQyTAbXC",
+        "https://github.com/qizhipei/3d-molt5",
+        "https://huggingface.co/QizhiPei/3d-molt5-base"
+      ]
+    },
+    {
+      "id": "bfm-mole",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Primary paper; artifact. Action: replace the duplicated repository entry in paper_links with the actual paper.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-024-53751-y",
+        "https://github.com/recursionpharma/mole_public"
+      ]
+    },
+    {
+      "id": "bfm-geneformer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · model",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-023-06139-9",
+        "https://huggingface.co/ctheodoris/Geneformer",
+        "https://docs.nvidia.com/bionemo-framework/latest/models/geneformer/"
+      ]
+    },
+    {
+      "id": "bfm-geneformerv2",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "add a version-specific GeneformerV2 artifact locator and document boundary from the Geneformer family record.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s43588-026-00972-4",
+        "https://huggingface.co/ctheodoris/Geneformer"
+      ]
+    },
+    {
+      "id": "bfm-scgpt",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-024-02201-0",
+        "https://www.biorxiv.org/content/10.1101/2023.04.30.538439v2",
+        "https://github.com/bowang-lab/scGPT",
+        "https://scgpt.readthedocs.io/en/latest/introduction.html",
+        "https://virtualcellmodels.cziscience.com/model/scgpt"
+      ]
+    },
+    {
+      "id": "bfm-scfoundation",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-024-02305-7",
+        "https://github.com/biomap-research/scFoundation",
+        "https://huggingface.co/genbio-ai/scFoundation"
+      ]
+    },
+    {
+      "id": "bfm-uce",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "UCE now has a final Nature article published July 2026; replace the preprint as primary while preserving it as history. Nature paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-026-10689-z",
+        "https://github.com/snap-stanford/UCE",
+        "https://virtualcellmodels.cziscience.com/model/uce"
+      ]
+    },
+    {
+      "id": "bfm-saturn",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "repository provides training code, embeddings and derived macrogene weights, not a reusable pretrained SATURN checkpoint. HOLD or reclassify as method.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-024-02191-z",
+        "https://github.com/snap-stanford/SATURN"
+      ]
+    },
+    {
+      "id": "bfm-cellplm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://openreview.net/forum?id=BKXvPDekud",
+        "https://github.com/OmicsML/CellPLM"
+      ]
+    },
+    {
+      "id": "bfm-xtrimogene",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "paper-only with no official code or checkpoint. HOLD under the reusable-artifact rule.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://openreview.net/forum?id=gdwcoBCMVi",
+        "https://arxiv.org/html/2311.15156v2"
+      ]
+    },
+    {
+      "id": "bfm-genecompass",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: replace “open” with “public code and checkpoints; reuse licence unconfirmed/HOLD”.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41422-024-01034-y",
+        "https://github.com/xCompass-AI/GeneCompass"
+      ]
+    },
+    {
+      "id": "bfm-scprint",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-025-58699-1",
+        "https://github.com/cantinilab/scPRINT",
+        "https://virtualcellmodels.cziscience.com/model/scprint"
+      ]
+    },
+    {
+      "id": "bfm-cellfm",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official terms are CC BY-NC-ND 4.0.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-025-59926-5",
+        "https://www.biorxiv.org/content/10.1101/2024.06.04.597369v1",
+        "https://github.com/biomed-AI/CellFM"
+      ]
+    },
+    {
+      "id": "bfm-transcriptformer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.aec8514",
+        "https://www.biorxiv.org/content/10.1101/2025.04.25.650731v2.full-text",
+        "https://github.com/czi-ai/transcriptformer",
+        "https://virtualcellmodels.cziscience.com/model/transcriptformer"
+      ]
+    },
+    {
+      "id": "bfm-aido-cell",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "noncommercial:false and generic hub wording omit the GenBio AI Community License, which limits code, weights, derivatives, and outputs to non-commercial purposes. Paper, model, licence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.11.28.625303v1",
+        "https://virtualcellmodels.cziscience.com/model/aido-cell",
+        "https://github.com/genbio-ai/modelgenerator",
+        "https://huggingface.co/genbio-ai/AIDO.Cell-10M",
+        "https://github.com/genbio-ai/ModelGenerator/blob/main/LICENSE"
+      ]
+    },
+    {
+      "id": "bfm-scimilarity",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-024-08411-y",
+        "https://github.com/Genentech/scimilarity"
+      ]
+    },
+    {
+      "id": "bfm-scbert",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-022-00534-z",
+        "https://github.com/TencentAILabHealthcare/scBERT"
+      ]
+    },
+    {
+      "id": "bfm-scmulan",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Listed HF artifact is gone, but official repo still provides a checkpoint through Tsinghua Cloud. Replace the dead link; status remains code + weights. Paper, repo, current checkpoint, dead listed HF.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://link.springer.com/chapter/10.1007/978-1-0716-3989-4_57",
+        "https://github.com/SuperBianC/scMulan",
+        "https://huggingface.co/deeplife/scmulan_model",
+        "https://cloud.tsinghua.edu.cn/f/2250c5df51034b2e9a85/?dl=1"
+      ]
+    },
+    {
+      "id": "bfm-sccello",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT project and official public checkpoint match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://neurips.cc/virtual/2024/poster/94537",
+        "https://github.com/DeepGraphLearning/scCello",
+        "https://huggingface.co/katarinayuan/scCello-zeroshot"
+      ]
+    },
+    {
+      "id": "bfm-scprotein",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "dataset-specific analysis framework/checkpoints do not substantiate a broadly pretrained foundation model. HOLD or reclassify outside scope.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-024-02214-9",
+        "https://github.com/TencentAILabHealthcare/scPROTEIN"
+      ]
+    },
+    {
+      "id": "bfm-atacformer",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Current paper; official documentation; weights. Action: replace the stale paper-only description, add the official artifacts, and record public code/weights while holding any stronger reuse claim until an exact licence is captured.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.11.03.685753v1",
+        "https://docs.bedbase.org/atacformer/",
+        "https://huggingface.co/databio/atacformer-base-hg38",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12637716/"
+      ]
+    },
+    {
+      "id": "bfm-cell2sentence",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "document family boundary against C2S-Scale or merge under a family record.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2023.09.11.557287v1",
+        "https://github.com/vandijklab/cell2sentence"
+      ]
+    },
+    {
+      "id": "bfm-chatcell",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Repository is CC BY-NC-SA 4.0, but noncommercial:false. Paper, repo, licence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2402.08303",
+        "https://github.com/zjunlp/ChatCell",
+        "https://huggingface.co/zjunlp/chatcell-large",
+        "https://github.com/zjunlp/ChatCell/blob/main/LICENSE"
+      ]
+    },
+    {
+      "id": "bfm-biot5",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://aclanthology.org/2023.emnlp-main.70/",
+        "https://github.com/QizhiPei/BioT5"
+      ]
+    },
+    {
+      "id": "bfm-biot5-plus",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "official code and pretrained/fine-tuned models are released. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2402.17810",
+        "https://github.com/QizhiPei/BioT5"
+      ]
+    },
+    {
+      "id": "bfm-protst",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://proceedings.mlr.press/v202/xu23t.html",
+        "https://github.com/DeepGraphLearning/ProtST"
+      ]
+    },
+    {
+      "id": "bfm-proteindt",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "published paper, MIT code, and official checkpoints match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-025-01011-z",
+        "https://arxiv.org/abs/2302.04611",
+        "https://github.com/chao1224/ProteinDT"
+      ]
+    },
+    {
+      "id": "bfm-protrek",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Replace bioRxiv with final Nature Biotechnology article. Final paper, repo, model.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41587-025-02836-0",
+        "https://github.com/westlake-repl/ProTrek",
+        "https://huggingface.co/westlake-repl/ProTrek_650M"
+      ]
+    },
+    {
+      "id": "bfm-galactica",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true for model weights; retain Apache code and withdrawn-demo caution separately.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2211.09085",
+        "https://github.com/paperswithcode/galai"
+      ]
+    },
+    {
+      "id": "bfm-czi-virtual-cells-platform",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://virtualcellmodels.cziscience.com/models",
+        "https://virtualcellmodels.cziscience.com/ai-workspace"
+      ]
+    },
+    {
+      "id": "bfm-helical",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "No standalone primary paper identified; framework; documentation. Action: explicitly label it as a platform/framework without a standalone paper.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://github.com/helicalAI/helical",
+        "https://helical.readthedocs.io/"
+      ]
+    },
+    {
+      "id": "bfm-nvidia-bionemo",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "framework · docs",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://github.com/NVIDIA/BioNeMo",
+        "https://github.com/NVIDIA/bionemo-framework",
+        "https://docs.nvidia.com/bionemo-framework/1.10/",
+        "https://docs.nvidia.com/bionemo-framework/latest/"
+      ]
+    },
+    {
+      "id": "bfm-aido-aido-modelgenerator",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "No standalone primary paper identified; toolkit; licence. Action: set noncommercial:true; identify the GenBio AI Community License as non-commercial and state that this is a platform/toolkit.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://github.com/genbio-ai/AIDO",
+        "https://github.com/genbio-ai/modelgenerator",
+        "https://genbio-ai.github.io/ModelGenerator/",
+        "https://raw.githubusercontent.com/genbio-ai/ModelGenerator/main/LICENSE"
+      ]
+    },
+    {
+      "id": "bfm-alphafold-server",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Status says only “terms apply,” while use and outputs are explicitly non-commercial and additionally prohibit docking/screening and structure-model training. Set explicit NC wording/flag. FAQ, output terms.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://alphafoldserver.com/",
+        "https://alphafoldserver.com/faq",
+        "https://alphafoldserver.com/output-terms"
+      ]
+    },
+    {
+      "id": "bfm-hugging-face-biology-orgs",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "platform classification is acceptable, but it is a curated org list rather than one official biological hub. Add explicit selection/provenance rationale.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://huggingface.co/EvolutionaryScale",
+        "https://huggingface.co/InstaDeepAI",
+        "https://huggingface.co/Rostlab",
+        "https://huggingface.co/genbio-ai",
+        "https://huggingface.co/multimolecule"
+      ]
+    },
+    {
+      "id": "bfm-alphagenome",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-025-10014-0",
+        "https://github.com/google-deepmind/alphagenome_research",
+        "https://www.kaggle.com/models/google/alphagenome",
+        "https://deepmind.google.com/science/alphagenome/model-terms"
+      ]
+    },
+    {
+      "id": "bfm-borzoi",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41588-024-02053-6",
+        "https://github.com/calico/borzoi"
+      ]
+    },
+    {
+      "id": "bfm-sei",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact; licence. Action: set noncommercial:true; redistribution/use is limited to academic and research purposes.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41588-022-01102-2",
+        "https://github.com/FunctionLab/sei-framework",
+        "https://raw.githubusercontent.com/FunctionLab/sei-framework/main/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "bfm-deepsea",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Identity is correct, but the linked artifact is the later Selene framework, and DeepSEA is a supervised regulatory predictor rather than an unambiguous reusable FM. Decide whether it is a documented historical/canonical exception. Paper, Selene.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/nmeth.3547",
+        "https://github.com/FunctionLab/selene"
+      ]
+    },
+    {
+      "id": "bfm-chrombpnet",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Current paper/repo describe a bias-factorized chromatin-accessibility predictor trained per assay, not clearly a reusable multi-task foundation model. Reassess against the stated scope rule or document an exception. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.12.25.630221v1",
+        "https://github.com/kundajelab/chrombpnet"
+      ]
+    },
+    {
+      "id": "bfm-gpn-genomic-pre-trained-network",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.pnas.org/doi/abs/10.1073/pnas.2311219120",
+        "https://github.com/songlab-cal/gpn"
+      ]
+    },
+    {
+      "id": "bfm-generator",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT repository and current v1/v2 model cards match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2502.07272",
+        "https://github.com/GenerTeam/GENERator"
+      ]
+    },
+    {
+      "id": "bfm-genomeocean",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Paper; code; weights. Action: add the official source repository and upgrade the model-hub-only description.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.01.30.635558v1",
+        "https://huggingface.co/pGenomeOcean/GenomeOcean-4B",
+        "https://github.com/jgi-genomeocean/genomeocean"
+      ]
+    },
+    {
+      "id": "bfm-megadna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-024-53759-4",
+        "https://github.com/lingxusb/megaDNA"
+      ]
+    },
+    {
+      "id": "bfm-dnagpt",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official licence is PolyForm Noncommercial 1.0.0.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2307.05628",
+        "https://github.com/TencentAILabHealthcare/DNAGPT"
+      ]
+    },
+    {
+      "id": "bfm-grover-dna-language-model",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Model hub and paper match, but the HF card exposes no explicit model licence. Preserve as accessible-with-unclear-reuse, not implicitly permissive. Paper, model.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-024-00872-0",
+        "https://huggingface.co/PoetschLab/GROVER"
+      ]
+    },
+    {
+      "id": "bfm-mistral-dna",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "no primary paper, linked checkpoint currently unauthorized, and direct model-card URL is absent. HOLD until checkpoint and terms are verifiable.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://github.com/raphaelmourad/Mistral-DNA"
+      ]
+    },
+    {
+      "id": "bfm-agront-agronomic-nucleotide-transformer",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and record CC BY-NC-SA 4.0 model terms.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s42003-024-06465-2",
+        "https://huggingface.co/InstaDeepAI/agro-nucleotide-transformer-1b"
+      ]
+    },
+    {
+      "id": "bfm-plantcaduceus-plantcad-plantcad2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.08.27.672609v3.full",
+        "https://github.com/plantcad/plantcad",
+        "https://huggingface.co/collections/kuleshov-group/plantcad2-67e437e241a382671371a572"
+      ]
+    },
+    {
+      "id": "bfm-florabert",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Official description focuses on plant promoter modelling and tissue-specific gene-expression prediction; broad reusable FM scope is not established. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.researchsquare.com/article/rs-1927200/v1",
+        "https://github.com/benlevyx/florabert"
+      ]
+    },
+    {
+      "id": "bfm-specieslm-species-aware-dna-language-model",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://link.springer.com/article/10.1186/s13059-024-03221-x",
+        "https://github.com/gagneurlab/SpeciesLM"
+      ]
+    },
+    {
+      "id": "bfm-glm-genomic-language-model",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official licence limits use to academic and non-commercial research.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-024-46947-9",
+        "https://github.com/y-hwang/gLM"
+      ]
+    },
+    {
+      "id": "bfm-omnina",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://academic.oup.com/nar/article/54/6/gkag083/8528802",
+        "https://github.com/xilinshen/OmniNA"
+      ]
+    },
+    {
+      "id": "bfm-orca",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official licence permits academic-research use only.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41588-022-01065-4",
+        "https://github.com/jzhoulab/orca"
+      ]
+    },
+    {
+      "id": "bfm-get-general-expression-transformer",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true; repository is CC BY-NC 4.0.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-024-08391-z",
+        "https://github.com/GET-Foundation/get_model"
+      ]
+    },
+    {
+      "id": "bfm-decima",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official licence is the Genentech Non-Commercial Software License.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-026-03102-0",
+        "https://github.com/Genentech/decima"
+      ]
+    },
+    {
+      "id": "bfm-scooby",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "published paper, MIT code, and official model cards match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-025-02854-5",
+        "https://github.com/gagneurlab/scooby"
+      ]
+    },
+    {
+      "id": "bfm-segmentnt",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and cite CC BY-NC-SA 4.0 model terms.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.03.14.584712v2",
+        "https://huggingface.co/InstaDeepAI/segment_nt"
+      ]
+    },
+    {
+      "id": "bfm-hybridna",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Paper; no provenance-confirmed official artifact found. Action: retain paper-only/HOLD.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2502.10807"
+      ]
+    },
+    {
+      "id": "bfm-janusdna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2505.17257",
+        "https://github.com/Qihao-Duan/JanusDNA"
+      ]
+    },
+    {
+      "id": "bfm-orthrus",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-026-03064-3",
+        "https://www.biorxiv.org/content/10.1101/2024.10.10.617658v2",
+        "https://github.com/bowang-lab/Orthrus"
+      ]
+    },
+    {
+      "id": "bfm-utr-lm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "published paper, GPL-3.0 code and public checkpoints match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-024-00823-9",
+        "https://github.com/a96123155/UTR-LM"
+      ]
+    },
+    {
+      "id": "bfm-codonbert",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://genome.cshlp.org/content/34/7/1027",
+        "https://www.biorxiv.org/content/10.1101/2023.09.09.556981",
+        "https://github.com/Sanofi-Public/CodonBERT"
+      ]
+    },
+    {
+      "id": "bfm-rnaernie",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-024-00836-4",
+        "https://github.com/CatIIIIIIII/RNAErnie"
+      ]
+    },
+    {
+      "id": "bfm-birna-bert",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.nature.com/articles/s42003-025-08982-0",
+        "https://www.biorxiv.org/content/10.1101/2024.07.02.601703",
+        "https://github.com/buetnlpbio/BiRNA-BERT"
+      ]
+    },
+    {
+      "id": "bfm-helix-mrna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2502.13785",
+        "https://github.com/helicalAI/helical"
+      ]
+    },
+    {
+      "id": "bfm-rhofold-plus",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-024-02487-0",
+        "https://arxiv.org/abs/2207.01586",
+        "https://github.com/ml4bio/RhoFold"
+      ]
+    },
+    {
+      "id": "bfm-rnagenesis",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.12.30.630826v2",
+        "https://github.com/zaixizhang/RNAGenesis"
+      ]
+    },
+    {
+      "id": "bfm-lamar",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03752-x",
+        "https://www.biorxiv.org/content/10.1101/2024.10.12.617732v2",
+        "https://github.com/zhw-e8/LAMAR",
+        "https://github.com/rnasys/LAMAR"
+      ]
+    },
+    {
+      "id": "bfm-omnigenome",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2407.11242",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/35500",
+        "https://github.com/yangheng95/OmniGenBench"
+      ]
+    },
+    {
+      "id": "bfm-mrnabert",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-025-65340-8",
+        "https://github.com/yyly6/mRNABERT"
+      ]
+    },
+    {
+      "id": "bfm-trrosettarna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "published paper, Apache code, downloadable parameters, and server match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-023-42528-4",
+        "https://github.com/YangLab-SDU/trRosettaRNA2"
+      ]
+    },
+    {
+      "id": "bfm-drfold",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "DRfold/DRfold2 are RNA structure predictors; DRfold2 contains a pretrained RCLM component, but the catalogue record itself remains one-task structure prediction. HOLD or define a structural-model exception. DRfold paper, DRfold2 paper, DRfold, DRfold2.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-023-41303-9",
+        "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003659",
+        "https://github.com/leeyang/DRfold",
+        "https://github.com/leeyang/DRfold2"
+      ]
+    },
+    {
+      "id": "bfm-rosettafoldna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-023-02086-5",
+        "https://github.com/uw-ipd/RoseTTAFold2NA"
+      ]
+    },
+    {
+      "id": "bfm-saprot",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://openreview.net/forum?id=6MRm3G4NiU",
+        "https://github.com/westlake-repl/SaProt"
+      ]
+    },
+    {
+      "id": "bfm-prostt5",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://academic.oup.com/nargab/article/6/4/lqae150/7901286",
+        "https://github.com/mheinzinger/ProstT5"
+      ]
+    },
+    {
+      "id": "bfm-prosst",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "GPL-3.0 code and official checkpoints match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://openreview.net/forum?id=4Z7RZixpJQ",
+        "https://github.com/openmedlab/ProSST"
+      ]
+    },
+    {
+      "id": "bfm-amplify",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.09.23.614603v1",
+        "https://github.com/chandar-lab/AMPLIFY"
+      ]
+    },
+    {
+      "id": "bfm-carp",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.cell.com/cell-systems/fulltext/S2405-4712(24)00029-2",
+        "https://github.com/microsoft/protein-sequence-models"
+      ]
+    },
+    {
+      "id": "bfm-ligandmpnn",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Nature Methods paper, MIT code, and weights match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-025-02626-1",
+        "https://github.com/dauparas/LigandMPNN"
+      ]
+    },
+    {
+      "id": "bfm-antifold",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "paper, BSD repository, and included weights match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://academic.oup.com/bioinformaticsadvances/article/5/1/vbae202/8090019",
+        "https://github.com/oxpig/AntiFold"
+      ]
+    },
+    {
+      "id": "bfm-rfdiffusion2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-025-02975-x",
+        "https://github.com/RosettaCommons/RFdiffusion2"
+      ]
+    },
+    {
+      "id": "bfm-genie-2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2405.15489",
+        "https://github.com/aqlaboratory/genie2"
+      ]
+    },
+    {
+      "id": "bfm-framediff-frameflow-multiflow",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Improperly merges three distinct methods while citing only Multiflow’s paper/repo. Either keep Multiflow alone or add separate FrameDiff and FrameFlow evidence/records. Multiflow ICML, Multiflow repo, FrameDiff paper, FrameDiff repo, FrameFlow paper, FrameFlow repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2402.04997",
+        "https://github.com/jasonkyuyim/multiflow",
+        "https://proceedings.mlr.press/v235/campbell24a.html",
+        "https://arxiv.org/abs/2302.02277",
+        "https://github.com/jasonkyuyim/se3_diffusion",
+        "https://arxiv.org/abs/2310.05297",
+        "https://github.com/microsoft/frame-flow"
+      ]
+    },
+    {
+      "id": "bfm-proteus",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://proceedings.mlr.press/v235/wang24bi.html",
+        "https://github.com/Wangchentong/Proteus"
+      ]
+    },
+    {
+      "id": "bfm-evodiff",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "official MIT code and pretrained models match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2023.09.11.556673v1",
+        "https://github.com/microsoft/evodiff"
+      ]
+    },
+    {
+      "id": "bfm-dplm-2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2410.13782",
+        "https://github.com/bytedance/dplm"
+      ]
+    },
+    {
+      "id": "bfm-pinal-denovo-pinal",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.08.01.606258v7",
+        "https://github.com/westlake-repl/Denovo-Pinal"
+      ]
+    },
+    {
+      "id": "bfm-aido-protein-16b",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; model; licence. Action: set noncommercial:true and record the GenBio AI Community License.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://openreview.net/forum?id=6VldeCDKpH",
+        "https://huggingface.co/genbio-ai/AIDO.Protein-16B",
+        "https://raw.githubusercontent.com/genbio-ai/ModelGenerator/main/LICENSE"
+      ]
+    },
+    {
+      "id": "bfm-ptm-mamba",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-025-02656-9",
+        "https://github.com/programmablebio/ptm-mamba"
+      ]
+    },
+    {
+      "id": "bfm-prothyena",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.01.18.576206v1",
+        "https://github.com/ZHymLumine/ProtHyena"
+      ]
+    },
+    {
+      "id": "bfm-lc-plm",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Repository explicitly uses CC BY-NC 4.0, but noncommercial:false; paper is now accepted/published in TMLR. TMLR record, repo, licence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://openreview.net/forum?id=dWvztQzfy4",
+        "https://github.com/amazon-science/LC-PLM",
+        "https://github.com/amazon-science/LC-PLM/blob/main/LICENSE"
+      ]
+    },
+    {
+      "id": "bfm-antiberty",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2112.07782",
+        "https://github.com/jeffreyruffolo/AntiBERTy"
+      ]
+    },
+    {
+      "id": "bfm-ablang2-tcrlang",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.02.02.578678",
+        "https://github.com/oxpig/AbLang2"
+      ]
+    },
+    {
+      "id": "bfm-igbert-igt5",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "paper and MIT model card match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012646",
+        "https://huggingface.co/Exscientia/IgT5"
+      ]
+    },
+    {
+      "id": "bfm-p-iggen",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://academic.oup.com/bioinformatics/article/40/11/btae659/7888884",
+        "https://github.com/oxpig/p-IgGen"
+      ]
+    },
+    {
+      "id": "bfm-balm-bio-inspired-antibody-language-model",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://academic.oup.com/bib/article/25/4/bbae245/7682462",
+        "https://github.com/BEAM-Labs/BALM"
+      ]
+    },
+    {
+      "id": "bfm-sapiens",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.tandfonline.com/doi/full/10.1080/19420862.2021.2020203",
+        "https://github.com/Merck/Sapiens"
+      ]
+    },
+    {
+      "id": "bfm-proteinnpt",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/6a4d5d85f7a52f062d23d98d544a5578-Abstract-Conference.html",
+        "https://github.com/OATML-Markslab/ProteinNPT"
+      ]
+    },
+    {
+      "id": "bfm-poet-2",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Model identity is verified; keep distinct from the OpenProtein platform record and expose exact model terms.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2508.04724",
+        "https://github.com/OpenProteinAI/PoET-2",
+        "https://www.openprotein.ai/",
+        "https://docs.openprotein.ai/rest-api/prompt.html"
+      ]
+    },
+    {
+      "id": "bfm-protriever",
+      "audit_state": "hold",
+      "audit_priority": "P1",
+      "audit_note": "official repository contains only README, not open code or weights. HOLD and correct status to placeholder/paper only.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2506.08954",
+        "https://github.com/OATML-Markslab/Protriever"
+      ]
+    },
+    {
+      "id": "bfm-zymctrl",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; model.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.05.03.592223v1",
+        "https://huggingface.co/AI4PD/ZymCTRL"
+      ]
+    },
+    {
+      "id": "bfm-protgps",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Model is centred on one localization objective—12-compartment prediction and localization-conditioned generation. Reassess broad-FM eligibility. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.adq2634",
+        "https://github.com/pgmikhael/protgps"
+      ]
+    },
+    {
+      "id": "bfm-alphafold2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Apache code and CC BY 4.0 parameters match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-021-03819-2",
+        "https://github.com/google-deepmind/alphafold"
+      ]
+    },
+    {
+      "id": "bfm-alphafold-multimer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2021.10.04.463034",
+        "https://github.com/google-deepmind/alphafold"
+      ]
+    },
+    {
+      "id": "bfm-protenix",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Apache code and model parameters, including current family releases, match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.01.08.631967v1",
+        "https://www.biorxiv.org/content/10.64898/2026.02.05.703733v1",
+        "https://www.biorxiv.org/content/10.64898/2026.04.10.717613v1",
+        "https://github.com/bytedance/Protenix"
+      ]
+    },
+    {
+      "id": "bfm-helixfold3",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true; code/parameters are non-commercial and server terms differ by free versus paid route.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2408.16975",
+        "https://github.com/PaddlePaddle/PaddleHelix/tree/dev/apps/protein_folding/helixfold3"
+      ]
+    },
+    {
+      "id": "bfm-openfold3",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://portal.openfold.omsf.io/reports/of3p2_technical_report.pdf",
+        "https://github.com/aqlaboratory/openfold-3",
+        "https://huggingface.co/OpenFold/OpenFold3"
+      ]
+    },
+    {
+      "id": "bfm-chai-2",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; official access page. Action: add the official access link and describe commercial access plus limited non-commercial academic access, rather than generic “Web/API”.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.07.05.663018v1",
+        "https://www.chaidiscovery.com/product"
+      ]
+    },
+    {
+      "id": "bfm-neuralplexer-and-neuralplexer3",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Family conflates v1 and NP3. V1 checkpoints are explicitly CC BY-NC-SA for non-commercial use, while linked repo/paper do not implement NP3. NP3 has a separate NeurIPS paper and no verified public code/weights in the cited artifact. v1 paper, v1 repo, v1 checkpoints, NP3 paper.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-024-00792-z",
+        "https://github.com/zrqiao/NeuralPLexer",
+        "https://doi.org/10.5281/zenodo.10373581",
+        "https://openreview.net/forum?id=BlLAmMFEzJ"
+      ]
+    },
+    {
+      "id": "bfm-umol",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Apache code and CC BY 4.0 parameters match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-024-48837-6",
+        "https://github.com/patrickbryant1/Umol"
+      ]
+    },
+    {
+      "id": "bfm-diffdock-l",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://openreview.net/forum?id=UfBIxpTK10",
+        "https://github.com/gcorso/DiffDock"
+      ]
+    },
+    {
+      "id": "bfm-uni-mol-docking-v2",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Exact model is a dedicated docking predictor rather than an unambiguous broader-than-one-task FM. HOLD or document a structural/docking exception. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2405.11769",
+        "https://github.com/deepmodeling/Uni-Mol/tree/main/unimol_docking_v2"
+      ]
+    },
+    {
+      "id": "bfm-flowdock",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "published paper, MIT code, and Zenodo checkpoints match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://academic.oup.com/bioinformatics/article/41/Supplement_1/i198/8199366",
+        "https://github.com/BioinfoMachineLearning/FlowDock"
+      ]
+    },
+    {
+      "id": "bfm-igfold",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official JHU Academic Software License restricts use.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-023-38063-x",
+        "https://github.com/Graylab/IgFold"
+      ]
+    },
+    {
+      "id": "bfm-abodybuilder3",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Identity and artifacts verify, but ABodyBuilder3 is a task-specific antibody structure predictor rather than a model broader than one task; HOLD or document a structural-model exception. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://academic.oup.com/bioinformatics/article/40/10/btae576/7810444",
+        "https://github.com/Exscientia/abodybuilder3"
+      ]
+    },
+    {
+      "id": "bfm-rosettafold2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2023.05.24.542179v1",
+        "https://github.com/uw-ipd/RoseTTAFold2"
+      ]
+    },
+    {
+      "id": "bfm-omegafold",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "accessible Apache code/weights are historical and repository activity is dormant. Mark maintenance state.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2022.07.21.500999v1",
+        "https://github.com/HeliXonProtein/OmegaFold"
+      ]
+    },
+    {
+      "id": "bfm-chemformer-molbart",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://iopscience.iop.org/article/10.1088/2632-2153/ac3ffb",
+        "https://github.com/MolecularAI/Chemformer"
+      ]
+    },
+    {
+      "id": "bfm-molgpt",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "MIT code is verified, but weights are externally hosted on Kaggle. Add the exact official artifact provenance/licence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://pubs.acs.org/doi/10.1021/acs.jcim.1c00600",
+        "https://github.com/devalab/molgpt"
+      ]
+    },
+    {
+      "id": "bfm-safe-gpt",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true; code is Apache, data CC BY, model weights CC BY-NC.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2310.10773",
+        "https://github.com/datamol-io/safe"
+      ]
+    },
+    {
+      "id": "bfm-genmol",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "explicitly separate Apache-2.0 code from NVIDIA Open Model Licence weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2501.06158",
+        "https://github.com/NVIDIA-Digital-Bio/genmol"
+      ]
+    },
+    {
+      "id": "bfm-megalodon",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "add exact code licence and NVIDIA model-weight licence instead of generic “open.”",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2505.18392",
+        "https://github.com/NVIDIA-Digital-Bio/megalodon"
+      ]
+    },
+    {
+      "id": "bfm-uni-mol2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT family repository and Uni-Mol2 code/weights match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2406.14969",
+        "https://github.com/deepmodeling/Uni-Mol"
+      ]
+    },
+    {
+      "id": "bfm-molclr",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT code and bundled pretrained checkpoints match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-022-00447-x",
+        "https://github.com/yuyangw/MolCLR"
+      ]
+    },
+    {
+      "id": "bfm-mole-bert",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://openreview.net/forum?id=jevY-DtiZTR",
+        "https://github.com/junxia97/Mole-BERT"
+      ]
+    },
+    {
+      "id": "bfm-kpgt-knowledge-guided-pre-training-of-graph-transformer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-023-43214-1",
+        "https://github.com/lihan97/KPGT"
+      ]
+    },
+    {
+      "id": "bfm-molgen",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Replace arXiv with final ICLR 2024 paper. ICLR paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2024/hash/ed7dd1e32cf9b0abf664bf0e891527e5-Abstract-Conference.html",
+        "https://github.com/zjunlp/MolGen"
+      ]
+    },
+    {
+      "id": "bfm-molbert",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2011.13230",
+        "https://github.com/BenevolentAI/MolBERT"
+      ]
+    },
+    {
+      "id": "bfm-smi-ted-materials-smi-ted",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Apache FM4M repository and official SMI-TED model artifact match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2407.20267",
+        "https://github.com/IBM/materials"
+      ]
+    },
+    {
+      "id": "bfm-smi-ssed-materials-smi-ssed",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://research.ibm.com/publications/a-mamba-based-foundation-model-for-chemistry",
+        "https://github.com/IBM/materials"
+      ]
+    },
+    {
+      "id": "bfm-chemfm",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; repository licence is CC BY-NC 4.0.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s42004-025-01793-8",
+        "https://github.com/TheLuoFengLab/ChemFM"
+      ]
+    },
+    {
+      "id": "bfm-mist",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2510.18900",
+        "https://github.com/BattModels/mist-demo"
+      ]
+    },
+    {
+      "id": "bfm-smiles-bert",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; official code. Action: upgrade from paper-only to public code, explicitly noting that pretrained weights remain unreleased.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://dl.acm.org/doi/10.1145/3307339.3342186",
+        "https://github.com/uta-smile/SMILES-BERT"
+      ]
+    },
+    {
+      "id": "bfm-cddd-continuous-and-data-driven-molecular-descriptors",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT implementation and pretrained model link match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://pubs.rsc.org/en/content/articlehtml/2019/sc/c8sc04175j",
+        "https://github.com/jrwnter/cddd"
+      ]
+    },
+    {
+      "id": "bfm-state-arc-institute",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.06.26.661135v1",
+        "https://github.com/ArcInstitute/state"
+      ]
+    },
+    {
+      "id": "bfm-tahoe-x1",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.10.23.683759v1",
+        "https://github.com/tahoebio/tahoe-x1"
+      ]
+    },
+    {
+      "id": "bfm-sclong",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "checkpoint is public via SharePoint, but no repository or weight licence was found. State this explicitly.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-026-69102-y",
+        "https://github.com/BaiDing1234/scLong"
+      ]
+    },
+    {
+      "id": "bfm-genemamba",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Paper; code; weights. Action: qualify as public code/weights with no confirmed reuse licence; HOLD the “open” claim.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2504.16956",
+        "https://github.com/MineSelf2016/GeneMamba",
+        "https://huggingface.co/mineself2016/GeneMamba"
+      ]
+    },
+    {
+      "id": "bfm-sctab",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-024-51059-5",
+        "https://github.com/theislab/scTab"
+      ]
+    },
+    {
+      "id": "bfm-genept",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "GenePT releases code and precomputed OpenAI gene embeddings, not conventional trained model weights. Status should say code + precomputed embeddings. Paper, repo, embeddings DOI.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41551-024-01284-6",
+        "https://github.com/yiqunchen/GenePT",
+        "https://doi.org/10.5281/zenodo.10833191"
+      ]
+    },
+    {
+      "id": "bfm-scelmo",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: reclassify as a platform/method or HOLD/remove; it depends on external LLM APIs and does not release dedicated biological-model weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.cell.com/patterns/fulltext/S2666-3899(25)00279-X",
+        "https://github.com/HelloWorldLTY/scELMo"
+      ]
+    },
+    {
+      "id": "bfm-langcell",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Replace arXiv-only source with final ICML publication. ICML paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://proceedings.mlr.press/v235/zhao24u.html",
+        "https://github.com/PharMolix/LangCell"
+      ]
+    },
+    {
+      "id": "bfm-cellwhisperer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41587-025-02857-9",
+        "https://github.com/epigen/cellwhisperer"
+      ]
+    },
+    {
+      "id": "bfm-scmmgpt",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Paper; repository. Action: change “open code” to “public source skeleton; weights and licence unconfirmed/HOLD”.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2503.09427",
+        "https://github.com/syr-cn/scMMGPT"
+      ]
+    },
+    {
+      "id": "bfm-c2s-scale-cell2sentence-scale",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "add direct 2B/27B model-card and model-term URLs; document why this remains separate from Cell2Sentence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.04.14.648850v2",
+        "https://github.com/vandijklab/cell2sentence"
+      ]
+    },
+    {
+      "id": "bfm-teddy",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; official repository. Action: upgrade from paper-only to public Apache-2.0 code/configuration; state that model weight files were not confirmed.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2503.03485",
+        "https://huggingface.co/Merck/TEDDY"
+      ]
+    },
+    {
+      "id": "bfm-cellvq",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; code; weights. Action: replace paper-only status with public code and pretrained checkpoint access.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-026-70071-5",
+        "https://github.com/A4Bio/CellVQ",
+        "https://modelscope.cn/models/wj1006/CellVQ/files"
+      ]
+    },
+    {
+      "id": "bfm-regformer",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; MIT code; checkpoints. Action: replace paper-only status with open MIT code and public CC BY 4.0 checkpoints.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-026-72198-x",
+        "https://github.com/BGIResearch/RegFormer",
+        "https://figshare.com/articles/online_resource/pretraining_models/28645493"
+      ]
+    },
+    {
+      "id": "bfm-scprint-2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2025.12.11.693702v1",
+        "https://github.com/cantinilab/scPRINT-2"
+      ]
+    },
+    {
+      "id": "bfm-sclinguist",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "“Paper/preprint only” is stale: official MIT repository, documentation, and three released checkpoints exist. Preprint, repo, documentation.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.09.30.679123v1",
+        "https://github.com/OmicsML/scLinguist",
+        "https://doi.org/10.1101/2025.09.30.679123",
+        "https://sclinguist.readthedocs.io/en/stable/install.html"
+      ]
+    },
+    {
+      "id": "bfm-captain",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-026-72882-y",
+        "https://github.com/iamjiboya/CAPTAIN"
+      ]
+    },
+    {
+      "id": "bfm-scconcept",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "“Paper/preprint only” is stale: official MIT code, PyPI package, and pretrained HF checkpoints now exist. Preprint, repo, model hub.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.10.14.682419v1",
+        "https://github.com/theislab/scConcept",
+        "https://huggingface.co/theislab/scConcept",
+        "https://doi.org/10.1101/2025.10.14.682419"
+      ]
+    },
+    {
+      "id": "bfm-scdiva",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "paper-only with no released code or checkpoint. HOLD under the reusable-artifact rule.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2602.03477"
+      ]
+    },
+    {
+      "id": "bfm-tabula",
+      "audit_state": "hold",
+      "audit_priority": "P1",
+      "audit_note": "set NC true, but repository has training code only and no pretrained checkpoint. HOLD until reusable weights exist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1",
+        "https://github.com/aristoteleo/tabula"
+      ]
+    },
+    {
+      "id": "bfm-pulsar",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "public MIT checkpoints now exist. Change “unclear weights” to open code + weights and add model-card URLs.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.11.24.685470v1",
+        "https://github.com/snap-stanford/PULSAR"
+      ]
+    },
+    {
+      "id": "bfm-stack-arc-institute",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official licence is CC BY-NC-SA 4.0.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.01.09.698608v1",
+        "https://github.com/ArcInstitute/stack"
+      ]
+    },
+    {
+      "id": "bfm-sc-mamba2",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official licence is CC BY-NC 4.0.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.09.30.615775v1",
+        "https://github.com/xtalpi-xic/SC-MAMBA2"
+      ]
+    },
+    {
+      "id": "bfm-uni-uni2-h",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Gated weights and associated code/models are CC BY-NC-ND 4.0 for non-commercial academic use; noncommercial:false is wrong. Paper, repo terms.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41591-024-02857-3",
+        "https://github.com/mahmoodlab/UNI",
+        "https://github.com/mahmoodlab/UNI#license-and-terms-of-tuse"
+      ]
+    },
+    {
+      "id": "bfm-virchow-virchow2-and-virchow2g",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Base paper; base model; official family access. Action: split the family or encode member-specific terms: base Virchow is gated Apache-2.0, Virchow2 is non-commercial research, and Virchow2G has different commercial access.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41591-024-03141-0",
+        "https://huggingface.co/paige-ai/Virchow",
+        "https://www.paige.ai/foundation-models"
+      ]
+    },
+    {
+      "id": "bfm-prov-gigapath",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-024-07441-w",
+        "https://github.com/prov-gigapath/prov-gigapath"
+      ]
+    },
+    {
+      "id": "bfm-conch",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Gated weights and code/model are CC BY-NC-ND 4.0 for non-commercial academic research; noncommercial:false is wrong. Paper, repo terms.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41591-024-02856-4",
+        "https://github.com/mahmoodlab/CONCH",
+        "https://github.com/mahmoodlab/CONCH#license-and-terms-of-use"
+      ]
+    },
+    {
+      "id": "bfm-titan",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and state manual gating, CC BY-NC-ND terms, and decoder-weight omission.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41591-025-03982-3",
+        "https://github.com/mahmoodlab/TITAN"
+      ]
+    },
+    {
+      "id": "bfm-h-optimus-0-h-optimus-1",
+      "audit_state": "hold",
+      "audit_priority": "P1",
+      "audit_note": "“Paper” is a company announcement, H-optimus-1 is missing from artifacts and is gated CC BY-NC-ND. Add both model cards and accurate mixed terms.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.bioptimus.com/news/bioptimus-launches-h-optimus-1",
+        "https://huggingface.co/bioptimus/H-optimus-0"
+      ]
+    },
+    {
+      "id": "bfm-phikon-phikon-v2",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and cite separate Phikon and Phikon-v2 non-commercial model terms.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2409.09173",
+        "https://github.com/owkin/HistoSSLscaling"
+      ]
+    },
+    {
+      "id": "bfm-plip-pathology-language-image-pretraining",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Paper; code; weights. Action: change “open” to “public code/weights; reuse terms unresolved/HOLD”; neither current official location provides a confirmed licence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41591-023-02504-3",
+        "https://github.com/PathologyFoundation/plip",
+        "https://huggingface.co/vinid/plip"
+      ]
+    },
+    {
+      "id": "bfm-musk",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; code/model terms are CC BY-NC-ND 4.0 and academic-research-only.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-024-08378-w",
+        "https://github.com/lilab-stanford/MUSK"
+      ]
+    },
+    {
+      "id": "bfm-chief",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true and state academic/non-commercial restrictions alongside the GPLv3 reference.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41586-024-07894-z",
+        "https://github.com/hms-dbmi/CHIEF"
+      ]
+    },
+    {
+      "id": "bfm-hibou-hibou-b-hibou-l",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2406.05074",
+        "https://github.com/HistAI/hibou"
+      ]
+    },
+    {
+      "id": "bfm-atlas-rudolfv-successor",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Listed HF artifact returns no model; official Aignostics materials now describe flexible commercial licensing and Atlas 2, not open/gated Atlas weights. Replace the dead artifact and avoid “open code, gated weights” unless a current public release is found. Atlas paper, dead listed artifact, official model page, Atlas 2.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2501.05409",
+        "https://huggingface.co/aignostics/atlas",
+        "https://www.aignostics.com/products/foundation-models",
+        "https://www.aignostics.com/blog/atlas-2-setting-a-new-standard-for-pathology-foundation-models"
+      ]
+    },
+    {
+      "id": "bfm-prism",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true; PRISM and PRISM2 are gated CC BY-NC-ND models.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2405.10254",
+        "https://arxiv.org/abs/2506.13063",
+        "https://huggingface.co/paige-ai/Prism",
+        "https://huggingface.co/paige-ai/Prism2"
+      ]
+    },
+    {
+      "id": "bfm-midnight-midnight-12k-midnight-92k",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2504.05186",
+        "https://github.com/kaiko-ai/midnight"
+      ]
+    },
+    {
+      "id": "bfm-gpfm-generalizable-pathology-foundation-model",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and change “gated weights” to directly downloadable NC weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41551-025-01488-4",
+        "https://github.com/birkhoffkiki/GPFM"
+      ]
+    },
+    {
+      "id": "bfm-openphenom-s-16-phenom-family",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Official project terms restrict model use to non-commercial purposes; the official project hub is cited.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://openaccess.thecvf.com/content/CVPR2024/html/Kraus_Masked_Autoencoders_for_Microscopy_are_Scalable_Learners_of_Cellular_Biology_CVPR_2024_paper.html",
+        "https://github.com/recursionpharma/maes_microscopy",
+        "https://www.rxrx.ai/phenom"
+      ]
+    },
+    {
+      "id": "bfm-subcell",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "“Model hub” is supportable, but the record links only training code. Add the CZI Virtual Cells model card, which identifies MIT licensing and the usable model. Preprint, repo, model card.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.12.06.627299v2",
+        "https://github.com/CellProfiling/subcell-embed",
+        "https://virtualcellmodels.cziscience.com/model/0193323e-ebd5-727c-bb32-87ed8f737213"
+      ]
+    },
+    {
+      "id": "bfm-cell-dino",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013828",
+        "https://github.com/facebookresearch/dinov2/blob/main/docs/README_CELL_DINO.md"
+      ]
+    },
+    {
+      "id": "bfm-cell-painting-cnn-deepprofiler-model",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-024-45999-1",
+        "https://github.com/cytomining/DeepProfiler"
+      ]
+    },
+    {
+      "id": "bfm-nicheformer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-025-02814-z",
+        "https://github.com/theislab/nicheformer"
+      ]
+    },
+    {
+      "id": "bfm-scgpt-spatial",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT code and Figshare weights match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1",
+        "https://github.com/bowang-lab/scGPT-spatial"
+      ]
+    },
+    {
+      "id": "bfm-mstar",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and state manually gated CC BY-NC-ND weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-025-66220-x",
+        "https://github.com/Innse/mSTAR"
+      ]
+    },
+    {
+      "id": "bfm-biomedgpt",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Replace arXiv with the final IEEE article; expose direct model artifacts and the BioMedGPT Acceptable Use Policy rather than only generic “open code + weights.” Final paper, repo, AUP.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/10767279/",
+        "https://github.com/PharMolix/OpenBioMed",
+        "https://github.com/PharMolix/OpenBioMed/blob/main/USE_POLICY.md"
+      ]
+    },
+    {
+      "id": "bfm-chatnt",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and cite the model-card non-commercial licence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-025-01047-1",
+        "https://huggingface.co/InstaDeepAI/ChatNT"
+      ]
+    },
+    {
+      "id": "bfm-instructprotein",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://aclanthology.org/2024.acl-long.62/",
+        "https://github.com/HICAI-ZJU/InstructProtein"
+      ]
+    },
+    {
+      "id": "bfm-prott3",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Public code/checkpoints verify, but no explicit repository licence was found; mark reuse licence unclear. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://aclanthology.org/2024.acl-long.324/",
+        "https://github.com/acharkq/ProtT3"
+      ]
+    },
+    {
+      "id": "bfm-mol-instructions",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://openreview.net/forum?id=Tlsdsb6l9n",
+        "https://github.com/zjunlp/Mol-Instructions"
+      ]
+    },
+    {
+      "id": "bfm-prot2text",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Repository/model release is CC BY-NC-SA 4.0, but noncommercial:false. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/28948",
+        "https://github.com/hadi-abdine/Prot2Text"
+      ]
+    },
+    {
+      "id": "bfm-bioreason",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "repository still says checkpoints are forthcoming. HOLD until a reusable checkpoint is released.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2505.23579",
+        "https://github.com/bowang-lab/BioReason"
+      ]
+    },
+    {
+      "id": "bfm-txgemma",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Paper; model. Action: specify gated/authenticated model access and Gemma terms rather than generic “model hub”.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2504.06196",
+        "https://huggingface.co/google/txgemma-9b-chat"
+      ]
+    },
+    {
+      "id": "bfm-scchat",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: reclassify as a multi-agent analysis platform, not a reusable single-cell foundation model.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://onlinelibrary.wiley.com/doi/10.1002/aic.70285",
+        "https://github.com/li-group/scChat"
+      ]
+    },
+    {
+      "id": "bfm-openprotein-ai-poet-poet-2",
+      "audit_state": "hold",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and resolve duplication with bfm-poet-2. Narrow to the commercial platform or merge.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2508.04724",
+        "https://github.com/OpenProteinAI/PoET-2"
+      ]
+    },
+    {
+      "id": "bfm-tamarind-bio",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "official platform",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.tamarind.bio/"
+      ]
+    },
+    {
+      "id": "bfm-neurosnap",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "platform identity is current, but add official product terms/pricing/API evidence; website availability alone is insufficient licence evidence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://neurosnap.ai/"
+      ]
+    },
+    {
+      "id": "bfm-latch-bio",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "commercial platform plus MIT SDK is correctly scoped. Persist project/licence sources.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://github.com/latchbio/latch"
+      ]
+    },
+    {
+      "id": "bfm-ginkgo-model-api-aa-0",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://datapoints.ginkgo.bio/updates/introducing-ginkgo-s-model-api-a-programmable-interface-for-ginkgo-s-ai-research"
+      ]
+    },
+    {
+      "id": "bfm-proteingym",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/cac723e5ff29f65e3fcbb0739ae91bee-Abstract-Datasets_and_Benchmarks.html",
+        "https://github.com/OATML-Markslab/ProteinGym"
+      ]
+    },
+    {
+      "id": "bfm-bend",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Benchmark role is correct, but “Open code + weights” is not: BEND provides benchmark data/code and wrappers around third-party checkpoints. Link the final ICLR paper. ICLR paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2024/hash/429e7b31625a8b7839f9e4d6e2aa9bb9-Abstract-Conference.html",
+        "https://github.com/frederikkemarin/BEND"
+      ]
+    },
+    {
+      "id": "bfm-genomic-benchmarks",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Benchmark distributes datasets/package/baselines, not model weights. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://link.springer.com/article/10.1186/s12863-023-01123-8",
+        "https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks"
+      ]
+    },
+    {
+      "id": "bfm-sceval",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "benchmark code uses external models/checkpoints. Change status accordingly; also record that repository has no explicit licence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2023.09.08.555192v4",
+        "https://github.com/HelloWorldLTY/scEval"
+      ]
+    },
+    {
+      "id": "bfm-open-problems-in-single-cell-analysis",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "change to “open benchmark code, tasks, datasets and containers”; it has no proprietary model weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41587-025-02694-w",
+        "https://github.com/openproblems-bio/openproblems"
+      ]
+    },
+    {
+      "id": "bfm-proteinbench",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2409.06744",
+        "https://proteinbench.github.io/"
+      ]
+    },
+    {
+      "id": "bfm-therapeutics-data-commons-tdc",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Benchmark/platform supplies datasets, library, oracles, and leaderboards—not weights. Replace arXiv with NeurIPS Datasets and Benchmarks paper. Final paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/4c56ff4ce4aaf9573aa5dff913df997a-Abstract-round1.html",
+        "https://github.com/mims-harvard/TDC"
+      ]
+    },
+    {
+      "id": "bfm-genslms",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Replace preprint-only primary source with the published article. Final paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://journals.sagepub.com/doi/10.1177/10943420231201154",
+        "https://github.com/ramanathanlab/genslm"
+      ]
+    },
+    {
+      "id": "bfm-metagene-1",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · model",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2501.02045",
+        "https://huggingface.co/metagene-ai/METAGENE-1"
+      ]
+    },
+    {
+      "id": "bfm-cpgpt",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT code and pretrained models match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.10.24.619766v3",
+        "https://github.com/lucascamillomd/CpGPT"
+      ]
+    },
+    {
+      "id": "bfm-methylgpt",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Apache code and pretrained models match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.10.30.621013v2",
+        "https://github.com/albert-ying/MethylGPT"
+      ]
+    },
+    {
+      "id": "bfm-hicfoundation",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-026-03097-8",
+        "https://github.com/Noble-Lab/HiCFoundation"
+      ]
+    },
+    {
+      "id": "bfm-phylogpn",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Paper; weights; official code. Action: add the official shared GPN source repository.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2503.03773",
+        "https://huggingface.co/songlab/PhyloGPN",
+        "https://github.com/songlab-cal/gpn"
+      ]
+    },
+    {
+      "id": "bfm-aido-dna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "GenBio community terms are already conservatively represented. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.12.01.625444v2",
+        "https://huggingface.co/genbio-ai/AIDO.DNA-7B"
+      ]
+    },
+    {
+      "id": "bfm-genos",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "published paper, Apache code, and model artifacts match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf132/8296738",
+        "https://github.com/BGI-HangzhouAI/Genos"
+      ]
+    },
+    {
+      "id": "bfm-genos-m",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.05.21.726868v1",
+        "https://github.com/BGI-HangzhouAI/Genos-m"
+      ]
+    },
+    {
+      "id": "bfm-epiagent",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-025-02822-z",
+        "https://github.com/xy-chen16/EpiAgent"
+      ]
+    },
+    {
+      "id": "bfm-eva",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.03.17.712398v2",
+        "https://github.com/GENTEL-lab/EVA"
+      ]
+    },
+    {
+      "id": "bfm-exai-1",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.03.26.645557v1",
+        "https://github.com/exai-oss/exai-1"
+      ]
+    },
+    {
+      "id": "bfm-proteina",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "NC flag is already correct; official repository provides research-only weights. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2503.00710",
+        "https://github.com/NVIDIA-BioNeMo/proteina"
+      ]
+    },
+    {
+      "id": "bfm-la-proteina",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Paper; artifact. Action: encode the separate terms: Apache-2.0 source, NVIDIA Open Model License weights, and CC BY materials.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2507.09466",
+        "https://github.com/NVIDIA-Digital-Bio/la-proteina"
+      ]
+    },
+    {
+      "id": "bfm-proteina-complexa",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Paper; artifact. Action: encode Apache-2.0 source, NVIDIA Open Model License weights, and CC BY 4.0 datasets separately.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2603.27950",
+        "https://github.com/NVIDIA-BioNeMo/Proteina-Complexa"
+      ]
+    },
+    {
+      "id": "bfm-foldflow-2",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true; official licence is CC BY-NC 4.0.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2405.20313",
+        "https://github.com/DreamFold/FoldFlow"
+      ]
+    },
+    {
+      "id": "bfm-iggm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · repo",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.09.19.613838v2",
+        "https://github.com/TencentAI4S/IgGM"
+      ]
+    },
+    {
+      "id": "bfm-ablingua",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.nature.com/articles/s42003-026-10283-z",
+        "https://huggingface.co/IDEA-AI4S/AbLingua"
+      ]
+    },
+    {
+      "id": "bfm-sceptr",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Replace arXiv with final Cell Systems paper; weights are bundled/released and MIT. Final paper, repo, software DOI.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.sciencedirect.com/science/article/pii/S2405471224003697",
+        "https://github.com/yutanagano/sceptr",
+        "https://doi.org/10.5281/zenodo.14286003"
+      ]
+    },
+    {
+      "id": "bfm-mammal",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "IBM MAMMAL repository, Apache code, and official model artifact match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2410.22367",
+        "https://github.com/BiomedSciAI/biomed-multi-alignment"
+      ]
+    },
+    {
+      "id": "bfm-intellifold-2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "official Apache repository and IntelliFold weights match; upstream AF3 weights are explicitly excluded. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.02.09.704787v1",
+        "https://github.com/IntelliGen-AI/IntelliFold"
+      ]
+    },
+    {
+      "id": "bfm-placer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "BSD licence explicitly covers source and weights. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.pnas.org/doi/10.1073/pnas.2427161122",
+        "https://github.com/baker-laboratory/PLACER"
+      ]
+    },
+    {
+      "id": "bfm-atomica",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT code and official released checkpoints match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.04.02.646906v1",
+        "https://github.com/mims-harvard/ATOMICA"
+      ]
+    },
+    {
+      "id": "bfm-pharmolixfm",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Identity and preview weights verify, but add the model download directly instead of relying on the umbrella OpenBioMed repo. Paper, repo, model.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2503.21788",
+        "https://github.com/PharMolix/OpenBioMed",
+        "https://cloud.tsinghua.edu.cn/f/8f337ed5b58f45138659/"
+      ]
+    },
+    {
+      "id": "bfm-pearl",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Only a paper is cited; “Web/API/commercial” lacks an official artifact locator. Official Genesis pages describe Pearl and an AI platform/partner access, not a public model endpoint. Paper, official Pearl page.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2510.24670",
+        "https://www.genesis.ml/ai-research"
+      ]
+    },
+    {
+      "id": "bfm-coati",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "distinguish original COATI release from COATI2, whose training code is not released.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://pubs.acs.org/doi/10.1021/acs.jcim.3c01753",
+        "https://github.com/terraytherapeutics/COATI"
+      ]
+    },
+    {
+      "id": "bfm-gem-chemrl-gem",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2106.06130",
+        "https://github.com/PaddlePaddle/PaddleHelix/tree/dev/apps/pretrained_compound/ChemRL/GEM"
+      ]
+    },
+    {
+      "id": "bfm-chemgpt",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "model exists but its current model card has no explicit licence. State “licence not declared,” not implied open reuse.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s42256-023-00740-3",
+        "https://huggingface.co/ncfrey/ChemGPT-1.2B"
+      ]
+    },
+    {
+      "id": "bfm-chemdfm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "current repository links released model variants. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2401.14818",
+        "https://github.com/OpenDFM/ChemDFM"
+      ]
+    },
+    {
+      "id": "bfm-next-mol",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact; weights. Action: qualify as public code/checkpoints with reuse licence unconfirmed/HOLD.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2502.12638",
+        "https://github.com/acharkq/next-mol",
+        "https://huggingface.co/acharkq/MoLlama"
+      ]
+    },
+    {
+      "id": "bfm-nafm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT code and Zenodo checkpoint match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2503.17656",
+        "https://github.com/TomAIDD/NaFM-Official"
+      ]
+    },
+    {
+      "id": "bfm-molfm",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "generic OpenBioMed repository links a Baidu-hosted model. Add the direct official checkpoint and component-specific licence.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2307.09484",
+        "https://github.com/PharMolix/OpenBioMed"
+      ]
+    },
+    {
+      "id": "bfm-sctranslator",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Code/checkpoints are public but no licence file is present, and the model is a single RNA-to-protein translation task. HOLD or explicitly document both scope and no-licence limitations. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41551-025-01528-z",
+        "https://github.com/TencentAILabHealthcare/scTranslator"
+      ]
+    },
+    {
+      "id": "bfm-novae",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "published paper, BSD code, and model card match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-025-02899-6",
+        "https://github.com/prism-oncology/novae"
+      ]
+    },
+    {
+      "id": "bfm-lingshu-cell",
+      "audit_state": "hold",
+      "audit_priority": "P2",
+      "audit_note": "Paper; official collection; project. Action: downgrade “model hub” to paper/project page; the official collection currently contains the paper, not a model.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2603.25240",
+        "https://huggingface.co/collections/Alibaba-DAMO-Academy/lingshu-cell",
+        "https://alibaba-damo-academy.github.io/lingshu-cell-homepage/"
+      ]
+    },
+    {
+      "id": "bfm-maxtoki",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.03.30.715396v1",
+        "https://github.com/NVIDIA-Digital-Bio/maxToki"
+      ]
+    },
+    {
+      "id": "bfm-procyon",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.12.10.627665v1",
+        "https://github.com/mims-harvard/ProCyon"
+      ]
+    },
+    {
+      "id": "bfm-instructbiomol",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2410.07919",
+        "https://github.com/HICAI-ZJU/InstructBioMol"
+      ]
+    },
+    {
+      "id": "bfm-naturelm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; model.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2502.07527",
+        "https://huggingface.co/microsoft/NatureLM-8x7B"
+      ]
+    },
+    {
+      "id": "bfm-biobridge",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "paper/repository/checkpoints and MIT licence match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2310.03320",
+        "https://github.com/RyanWangZf/BioBridge"
+      ]
+    },
+    {
+      "id": "bfm-openmedlab",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper · official organization",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2402.18028",
+        "https://github.com/openmedlab"
+      ]
+    },
+    {
+      "id": "bfm-amazon-bio-discovery",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; platform.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.amazon.science/publications/agent-guided-de-novo-design-of-nanobody-binders-against-a-novel-cancer-target",
+        "https://aws.amazon.com/biodiscovery/"
+      ]
+    },
+    {
+      "id": "bfm-latent-labs-latent-x-latent-x2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; official product.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2507.19375",
+        "https://www.latentlabs.com/latent-x/"
+      ]
+    },
+    {
+      "id": "bfm-omiclip-loki",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; artifact. Action: set noncommercial:true and identify the custom academic/non-commercial restrictions rather than relying on its “BSD-3” label.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-025-02707-1",
+        "https://github.com/GuangyuWangLab2021/Loki"
+      ]
+    },
+    {
+      "id": "bfm-kronos",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P1",
+      "audit_note": "set NC true and state gated CC BY-NC-ND weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2506.03373",
+        "https://github.com/mahmoodlab/KRONOS"
+      ]
+    },
+    {
+      "id": "bfm-virtues",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Mixed access is flattened incorrectly: code is MIT, virtues-sp32 and virtues-imc14 weights are CC BY-NC 4.0, while virtues-sp31 is MIT. Status must expose per-checkpoint terms instead of generic open + noncommercial:false. Paper, repo model table.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2501.06039",
+        "https://github.com/bunnelab/virtues",
+        "https://github.com/bunnelab/virtues#models"
+      ]
+    },
+    {
+      "id": "bfm-stofm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "MIT code, checkpoint, and released corpus match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2507.11588",
+        "https://github.com/PharMolix/SToFM"
+      ]
+    },
+    {
+      "id": "bfm-storm",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Paper; official project. Action: add the project page, state that no public code/weights were found, and set noncommercial:false unless an actual non-commercial artifact licence is sourced.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2604.03630",
+        "https://storm-web-demo.vercel.app/"
+      ]
+    },
+    {
+      "id": "bfm-pathorchestra",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2503.24345",
+        "https://github.com/yanfang-research/PathOrchestra"
+      ]
+    },
+    {
+      "id": "bfm-cellsam",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "current Nature Methods paper, Apache inference code, and weights match. Persist.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.nature.com/articles/s41592-025-02879-w",
+        "https://github.com/vanvalenlab/cellSAM"
+      ]
+    },
+    {
+      "id": "bfm-tape-tasks-assessing-protein-embeddings",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "benchmark, BSD code and baseline weights remain available, but README says training code is no longer maintained. Mark historical maintenance state.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/1906.08230",
+        "https://github.com/songlab-cal/tape"
+      ]
+    },
+    {
+      "id": "bfm-peer-protein-sequence-understanding",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "change to open benchmark code/datasets/configurations, not own weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2206.02096",
+        "https://github.com/DeepGraphLearning/PEER_Benchmark"
+      ]
+    },
+    {
+      "id": "bfm-genbench-genomic-foundation-models",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "say “open benchmark code/data/baseline assets,” not generically “weights.”",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2406.01627",
+        "https://github.com/jimmylihui/GenBench"
+      ]
+    },
+    {
+      "id": "bfm-dnalongbench",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Benchmark provides datasets, evaluation code, and baselines, not released benchmark “weights.” Change status to code + benchmark data/baselines. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-025-65077-4",
+        "https://github.com/wenduocheng/DNALongBench"
+      ]
+    },
+    {
+      "id": "bfm-nabench",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Benchmark provides data, scores, and evaluation code; contributors are instructed to supply their own model checkpoints. Change status from “weights” to benchmark data/code/results. Paper, repo.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+      "sources": [
+        "https://arxiv.org/abs/2511.02888",
+        "https://github.com/mrzzmrzz/NABench"
+      ]
+    },
+    {
+      "id": "bfm-rnagym",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "describe open benchmark code/data/baseline checkpoints rather than generic own weights.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.06.16.660049v1",
+        "https://github.com/MarksLab-DasLab/RNAGym"
+      ]
+    },
+    {
+      "id": "bfm-perteval-scfm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; artifact.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://proceedings.mlr.press/v267/wenteler25a.html",
+        "https://github.com/aaronwtr/PertEval"
+      ]
+    },
+    {
+      "id": "bfm-pathbench",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "change from “code + weights” to open benchmark application/data; evaluated models are external.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+      "sources": [
+        "https://arxiv.org/abs/2505.20202",
+        "https://github.com/birkhoffkiki/PathBench"
+      ]
+    },
+    {
+      "id": "bfm-comet-multi-omics-evaluation",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Paper; no official reusable artifact found. Action: retain conservative paper-only status.",
+      "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+      "sources": [
+        "https://arxiv.org/abs/2412.10347"
+      ]
+    },
+    {
+      "id": "bfm-space",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2506.01833",
+        "https://github.com/ZhuJiwei111/SPACE",
+        "https://huggingface.co/yangyz1230/space"
+      ]
+    },
+    {
+      "id": "bfm-bmfm-dna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2507.05265",
+        "https://github.com/BiomedSciAI/biomed-multi-omic",
+        "https://huggingface.co/ibm-research/biomed.dna.ref.modernbert.113m.v1",
+        "https://huggingface.co/ibm-research/biomed.dna.snp.modernbert.113m.v1"
+      ]
+    },
+    {
+      "id": "bfm-omni-dna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2502.03499",
+        "https://github.com/Zehui127/Omni-DNA",
+        "https://huggingface.co/zehui127/Omni-DNA-1B"
+      ]
+    },
+    {
+      "id": "bfm-nucel",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/36982",
+        "https://github.com/FreakingPotato/NucEL",
+        "https://huggingface.co/FreakingPotato/NucEL"
+      ]
+    },
+    {
+      "id": "bfm-d3lm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2603.01780",
+        "https://huggingface.co/Hengchang-Liu/D3LM-from-nt",
+        "https://huggingface.co/Hengchang-Liu/D3LM-scratch"
+      ]
+    },
+    {
+      "id": "bfm-onegenome-rice",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://doi.org/10.64898/2026.04.21.719822",
+        "https://github.com/zhejianglab/OneGenome-Rice",
+        "https://huggingface.co/ZhejiangLab/OneGenome-Rice"
+      ]
+    },
+    {
+      "id": "bfm-hydrarna",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://doi.org/10.1186/s13059-025-03853-7",
+        "https://github.com/GuipengLi/HydraRNA",
+        "https://drive.google.com/drive/folders/14ZXi_aANEEdPa_Sc2cQZtUa4dENPDTkz"
+      ]
+    },
+    {
+      "id": "bfm-structrfm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.08.06.668731v1",
+        "https://github.com/heqin-zhu/structRFM",
+        "https://huggingface.co/heqin-zhu/structRFM",
+        "https://doi.org/10.5281/zenodo.16754363"
+      ]
+    },
+    {
+      "id": "bfm-codonfm-encodon",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://research.nvidia.com/labs/dbr/assets/data/manuscripts/nv-codonfm-preprint.pdf",
+        "https://github.com/NVIDIA-BioNeMo/CodonFM",
+        "https://huggingface.co/nvidia/NV-CodonFM-Encodon-80M-v1"
+      ]
+    },
+    {
+      "id": "bfm-ankh3",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2505.20052",
+        "https://github.com/agemagician/Ankh",
+        "https://huggingface.co/ElnaggarLab/ankh3-large"
+      ]
+    },
+    {
+      "id": "bfm-esm-s",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2402.05856",
+        "https://github.com/DeepGraphLearning/esm-s",
+        "https://huggingface.co/Oxer11/ESM-S"
+      ]
+    },
+    {
+      "id": "bfm-proust",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2602.01845",
+        "https://github.com/Furkan9015/proust-inference",
+        "https://huggingface.co/nappenstance/proust_v0"
+      ]
+    },
+    {
+      "id": "bfm-ab-roberta",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2506.13006",
+        "https://huggingface.co/mogam-ai/Ab-RoBERTa"
+      ]
+    },
+    {
+      "id": "bfm-oneprot",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013679",
+        "https://github.com/klemens-floege/oneprot/",
+        "https://huggingface.co/HelmholtzAI-FZJ/oneprot-4"
+      ]
+    },
+    {
+      "id": "bfm-protdat",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://doi.org/10.1038/s41467-025-65562-w",
+        "https://github.com/GXY0116/ProtDAT/tree/v1.0.0",
+        "https://zenodo.org/records/14264096"
+      ]
+    },
+    {
+      "id": "bfm-esmfold2",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.06.03.729735v1",
+        "https://github.com/Biohub/esm",
+        "https://huggingface.co/biohub/ESMFold2"
+      ]
+    },
+    {
+      "id": "bfm-opendde-preview",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2607.03787",
+        "https://github.com/aurekaresearch/OpenDDE",
+        "https://huggingface.co/aurekaresearch/OpenDDE",
+        "https://aurekaresearch.github.io/OpenDDE-Website/"
+      ]
+    },
+    {
+      "id": "bfm-pocketxmol",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://doi.org/10.1016/j.cell.2026.01.003",
+        "https://github.com/pengxingang/PocketXMol",
+        "https://doi.org/10.5281/zenodo.17801271"
+      ]
+    },
+    {
+      "id": "bfm-suiren-1",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2603.21942",
+        "https://github.com/golab-ai/Suiren-Foundation-Model",
+        "https://huggingface.co/ajy112/Suiren-Base"
+      ]
+    },
+    {
+      "id": "bfm-ubio-molfm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2602.17709",
+        "https://github.com/IQuestLab/UBio-MolFM",
+        "https://huggingface.co/IQuestLab/IQuest-UBio-MolFM-V1",
+        "https://huggingface.co/datasets/IQuestLab/UBio-Protein26"
+      ]
+    },
+    {
+      "id": "bfm-uma",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2506.23971",
+        "https://github.com/facebookresearch/fairchem",
+        "https://fair-chem.github.io/uma/",
+        "https://huggingface.co/facebook/UMA"
+      ]
+    },
+    {
+      "id": "bfm-seedfold",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2512.24354",
+        "https://seedfold.github.io/",
+        "https://seedfold.io/"
+      ]
+    },
+    {
+      "id": "bfm-boltzgen",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://doi.org/10.1101/2025.11.20.689494",
+        "https://github.com/HannesStark/boltzgen",
+        "https://huggingface.co/boltzgen/boltzgen-1",
+        "https://boltz.bio/boltzgen"
+      ]
+    },
+    {
+      "id": "bfm-pxdesign",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://doi.org/10.1101/2025.08.15.670450",
+        "https://github.com/bytedance/PXDesign",
+        "https://protenix.github.io/pxdesign/",
+        "https://protenix-server.com/"
+      ]
+    },
+    {
+      "id": "bfm-boltzmol-1",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://boltz.bio/boltzmol1-technical-report.pdf",
+        "https://boltz.bio/boltzmol-boltzprot-api",
+        "https://api.boltz.bio/"
+      ]
+    },
+    {
+      "id": "bfm-boltzprot-1",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.06.23.733997v1",
+        "https://boltz.bio/boltzprot1-technical-report.pdf",
+        "https://boltz.bio/boltzmol-boltzprot-api",
+        "https://api.boltz.bio/"
+      ]
+    },
+    {
+      "id": "bfm-seedproteo",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2512.24192",
+        "https://seedfold.github.io/",
+        "https://seedfold.io/proteinDesign"
+      ]
+    },
+    {
+      "id": "bfm-alphaproteo",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2409.08022",
+        "https://deepmind.google/blog/alphaproteo-generates-novel-proteins-for-biology-and-health-research/"
+      ]
+    },
+    {
+      "id": "bfm-rosetta-foundry",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://github.com/RosettaCommons/foundry",
+        "https://rosettacommons.github.io/foundry/"
+      ]
+    },
+    {
+      "id": "bfm-foldbench",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://doi.org/10.1038/s41467-025-67127-3",
+        "https://github.com/BEAM-Labs/FoldBench"
+      ]
+    },
+    {
+      "id": "bfm-pxmeter",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://doi.org/10.1101/2025.07.17.664878",
+        "https://github.com/bytedance/PXMeter"
+      ]
+    },
+    {
+      "id": "bfm-pfmbench",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2506.14796",
+        "https://github.com/biomap-research/PFMBench"
+      ]
+    },
+    {
+      "id": "bfm-protein-se3",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2507.20243",
+        "https://github.com/BruthYU/protein-se3"
+      ]
+    },
+    {
+      "id": "bfm-esm-atlas",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://biohub.ai/resources",
+        "https://github.com/Biohub/esm",
+        "https://biohub.ai/esm/protein/atlas/api-docs/"
+      ]
+    },
+    {
+      "id": "bfm-biomatrix",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2606.22138",
+        "https://github.com/QizhiPei/BioMatrix",
+        "https://huggingface.co/QizhiPei/BioMatrix-4B-SFT"
+      ]
+    },
+    {
+      "id": "bfm-genejepa",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2025.10.14.682378v1",
+        "https://github.com/BiostateAI/GeneJEPA",
+        "https://huggingface.co/elonlit/GeneJEPA"
+      ]
+    },
+    {
+      "id": "bfm-eva-scienta",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2602.10168",
+        "https://huggingface.co/ScientaLab/eva-rna"
+      ]
+    },
+    {
+      "id": "bfm-genbio-pathfm",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.03.17.712534v1",
+        "https://github.com/genbio-ai/genbio-pathfm",
+        "https://huggingface.co/genbio-ai/genbio-pathfm"
+      ]
+    },
+    {
+      "id": "bfm-squall",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.06.01.729028v1",
+        "https://github.com/OswaldZhang/SQUALL-release",
+        "https://huggingface.co/zongxu/SQUALL",
+        "https://zenodo.org/records/17318279"
+      ]
+    },
+    {
+      "id": "bfm-spatialwhisperer",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://openreview.net/forum?id=Ze7U293Zw4",
+        "https://github.com/zinagoodlab/spatialwhisperer",
+        "https://huggingface.co/Good-Lab/spatialwhisperer"
+      ]
+    },
+    {
+      "id": "bfm-deepspot-m",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1",
+        "https://github.com/ratschlab/DeepSpotM",
+        "https://huggingface.co/ratschlab/DeepSpotM"
+      ]
+    },
+    {
+      "id": "bfm-h2o-spatial",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.04.21.717342v1",
+        "https://github.com/TencentAILabHealthcare/H2O"
+      ]
+    },
+    {
+      "id": "bfm-lemon",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2603.25802",
+        "https://huggingface.co/aliceblondel/LEMON"
+      ]
+    },
+    {
+      "id": "bfm-mupd",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "The official artifact is public rather than gated and uses CC BY-NC-ND terms.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2604.03635",
+        "https://huggingface.co/xiangjx/MuPaD-256"
+      ]
+    },
+    {
+      "id": "bfm-bioairepo",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.ebi.ac.uk/about/news/technology-and-innovation/bioairepo-embl-ebis-hub-for-life-science-ai-models/",
+        "https://www.ebi.ac.uk/biostudies/BioAIrepo"
+      ]
+    },
+    {
+      "id": "bfm-vcbench",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.06.18.733146v1",
+        "https://github.com/AppliedScientific/VCBench",
+        "https://huggingface.co/collections/appliedscientific/vcbench-v100-single-cell-foundation-model-benchmark"
+      ]
+    },
+    {
+      "id": "bfm-scmbench",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.nature.com/articles/s41467-026-72570-x",
+        "https://github.com/ml4bio/SCMBench"
+      ]
+    },
+    {
+      "id": "bfm-spapath-bench",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2605.25764",
+        "https://bokai-zhao.github.io/SpaPath-benchboard/"
+      ]
+    },
+    {
+      "id": "bfm-gpt-rosalind",
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P2",
+      "audit_note": "Access is limited to qualified Enterprise customers and initially scoped to the United States.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://openai.com/index/introducing-gpt-rosalind/",
+        "https://openai.com/form/life-sciences-access/"
+      ]
+    },
+    {
+      "id": "bfm-mimic-polymathic",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://arxiv.org/abs/2604.24506",
+        "https://github.com/PolymathicAI/MIMIC"
+      ]
+    },
+    {
+      "id": "bfm-holocell",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.06.07.730684v2",
+        "https://github.com/bjzgcai/HoloCell"
+      ]
+    },
+    {
+      "id": "bfm-cellos",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.06.18.733163v2"
+      ]
+    },
+    {
+      "id": "bfm-omnicell-bgi",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2025.12.29.696804v3",
+        "https://github.com/BGIResearch/omnicell",
+        "https://modelscope.cn/models/PJSucas/OmniCell-v1"
+      ]
+    },
+    {
+      "id": "bfm-bioreason-pro",
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
+      "audit_source": "evidence/source-audit/foundation_initial.md",
+      "sources": [
+        "https://www.biorxiv.org/content/early/2026/03/20/2026.03.19.712954",
+        "https://github.com/bowang-lab/BioReason-Pro",
+        "https://huggingface.co/collections/wanglab/bioreason-pro",
+        "https://huggingface.co/wanglab/bioreason-pro-sft",
+        "https://huggingface.co/wanglab/bioreason-pro-rl"
+      ]
+    }
+  ]
+}
