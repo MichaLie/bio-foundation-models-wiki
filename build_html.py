@@ -205,7 +205,7 @@ header.top{position:relative;align-items:center;gap:24px;padding:23px 25px 22px 
 header.top::before{content:"Biological AI resource index";display:block;position:absolute;top:15px;left:28px;color:#176c83;font-size:9.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
 .htext{padding-top:15px}
 h1{margin:0 0 7px;color:#142734;font-size:25px;line-height:1.12;font-weight:650;letter-spacing:-.025em}
-.sub{max-width:900px;color:#586d7b;font-size:13px;line-height:1.58}.sub b{color:#314b5a;font-weight:650}
+.sub{max-width:900px;color:#586d7b;font-size:14px;line-height:1.58}.sub b{color:#314b5a;font-weight:650}
 .hright{gap:9px}.dedi{gap:10px}.elixir-logo svg{height:53px}.dedi-cap{color:#607482}.dedi-cap b{color:#203744}
 .stats{gap:9px;margin:15px 0 4px}.stat{min-width:132px;padding:8px 13px;border-color:#d8e3e9;border-radius:8px;box-shadow:0 3px 12px rgba(32,67,79,.025)}
 .stat b{color:#1c3543;font-size:18px;font-variant-numeric:tabular-nums}.stat span{color:#607482}
@@ -216,11 +216,11 @@ h1{margin:0 0 7px;color:#142734;font-size:25px;line-height:1.12;font-weight:650;
 .chip{padding:4px 9px;border-color:#d5e0e6;border-radius:7px;background:#f4f7f9;font-family:inherit;font-size:11.5px}.chip:hover{border-color:#aebfc8;background:#edf3f5}.chip.on,.chip.tog.on{border-color:#176d48;background:#176d48}
 .countpill{margin-top:8px;color:#526978;font-weight:600;font-variant-numeric:tabular-nums}
 details.qc{margin:11px 0 15px;border-color:#d8e3e9;border-radius:8px;background:#fff}details.qc summary{color:#284653;font-weight:650}.qcbtn,.qcclear{border-color:#d5e0e6;background:#f4f7f9;color:#135e7b}
-.tablewrap{border-top:1px solid #d8e3e9;background:#fff}table.main{background:#fff;font-size:12.8px}
-table.main thead th{padding:9px 8px;border-bottom:1px solid #cfdde4;background:#f3f7f8;color:#526978;font-size:10px;font-weight:800;letter-spacing:.075em}
+.tablewrap{border-top:1px solid #d8e3e9;background:#fff}table.main{background:#fff;font-size:14px}
+table.main thead th{padding:9px 8px;border-bottom:1px solid #cfdde4;background:#f3f7f8;color:#526978;font-size:10.5px;font-weight:800;letter-spacing:.075em}
 table.main tbody td{padding:9px 8px;border-bottom-color:#e4ebef}tr.row:hover{background:#f3f8f6}.nm{color:#1c2d39;font-weight:650}
 .badge{font-size:10.5px;font-weight:650}.b-mod{color:#536878;background:#eef3f5}td.yr{font-variant-numeric:tabular-nums}.exp{color:#69808d}.exp:hover{color:#176d48}
-td.lnk a{filter:saturate(.65);opacity:.82}td.lnk a:hover{filter:none;opacity:1}tr.detailrow td{background:#f4f8f9}.detail h4{color:#203744}.detail .kv b{color:#526978}
+td.lnk a{filter:saturate(.65);opacity:.82}td.lnk a:hover{filter:none;opacity:1}tr.detailrow td{background:#f4f8f9}.detail h4{color:#203744;font-size:13.5px}.detail .kv{font-size:13.5px}.detail .kv b{color:#526978}
 .detail .links a{border-color:#d3e0e6;border-radius:6px;background:#fff;color:#135e7b}.grouprow td{padding:16px 9px 6px;border-bottom-color:#d4e1e7;background:#edf5f3;color:#30634f;font-size:10px;letter-spacing:.09em}
 footer{margin-top:26px;padding:17px 18px;border:1px solid #d8e3e9;border-radius:9px;background:#f7fafb;color:#586d7b}.legend{color:#586d7b}.legend b{color:#294453}
 @media(max-width:900px){body{background:#fff}.wrap{padding-top:12px}.controls{position:static;box-shadow:none}.tablewrap{border:1px solid #d8e3e9;border-radius:8px}table.main thead th{position:static}header.top{align-items:flex-start}.hright{padding-top:4px}}
