@@ -165,7 +165,7 @@
     "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/df1d18e4195c340b6bbf434402519ea50bd9ff9e"
   },
   "prov:wasGeneratedBy": {
-    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/releases/tag/v2.0.0",
+    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/releases/tag/v2.0.1",
     "@type": "prov:Activity",
     "dct:type": "Versioned release build",
     "prov:endedAtTime": {
@@ -207,5 +207,5 @@
   "schema:url": {
     "@id": "https://michalie.github.io/bio-foundation-models-wiki/"
   },
-  "schema:version": "2.0.0"
+  "schema:version": "2.0.1"
 }
