@@ -1,5 +1,5 @@
 name: "Add / fix a model"
-description: "Dump a model to add (or a correction). You or an agent turns this into a models_final.json entry."
+description: "Suggest a biological foundation model or report a correction for evidence review."
 title: "[model] <name>"
 labels: ["add-model"]
 body:
@@ -60,4 +60,4 @@ body:
       label: Main use cases
   - type: markdown
     attributes:
-      value: "An agent (or you) will add this to `models_final.json`; the site rebuilds and redeploys automatically on merge."
+      value: "Submissions are reviewed against current primary sources and the public inclusion policy before any catalog change. Inclusion is not automatic."

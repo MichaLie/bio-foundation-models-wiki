@@ -1,0 +1,56 @@
+{
+  "identifier": "https://michalie.github.io/bio-foundation-models-wiki/",
+  "profile": "foundation-models",
+  "title": "Biological Foundation Models - Researcher Index",
+  "description": "A curated, filterable catalog of foundation models and related resources for biological sequences, molecules, structures, omics, cells, and tissue images.",
+  "resource_version": "2.0.0",
+  "issued": "2026-06-16",
+  "modified": "2026-07-14",
+  "data_file": "models_final.json",
+  "schema_file": "schema.json",
+  "under_review_file": "records_under_review.json",
+  "under_review_schema_file": "records_under_review.schema.json",
+  "repository": "https://github.com/MichaLie/bio-foundation-models-wiki",
+  "baseline_commit": "df1d18e4195c340b6bbf434402519ea50bd9ff9e",
+  "baseline_commit_url": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/df1d18e4195c340b6bbf434402519ea50bd9ff9e",
+  "release_ref": "https://github.com/MichaLie/bio-foundation-models-wiki/releases/tag/v2.0.0",
+  "legacy_snapshot_commit": "e608549ed498aca31921d08a16e424b99ef233aa",
+  "legacy_snapshot_date": "2026-06-16",
+  "baseline_data_date": "2026-06-20",
+  "id_prefix": "bfm",
+  "creator": {
+    "type": "Person",
+    "name": "Michaela Liegertová",
+    "url": "https://github.com/MichaLie",
+    "email": "michaela.liegertova@img.cas.cz",
+    "affiliation": {
+      "name": "Institute of Molecular Genetics of the Czech Academy of Sciences",
+      "url": "https://www.img.cas.cz/en/"
+    }
+  },
+  "publisher": {
+    "type": "Person",
+    "name": "Michaela Liegertová",
+    "url": "https://github.com/MichaLie",
+    "email": "michaela.liegertova@img.cas.cz",
+    "affiliation": {
+      "name": "Institute of Molecular Genetics of the Czech Academy of Sciences",
+      "url": "https://www.img.cas.cz/en/"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "code_license": "https://spdx.org/licenses/MIT.html",
+  "rights_statement": "Catalog data, metadata, and original documentation are licensed under CC BY 4.0; maintenance and build software are licensed under MIT. Third-party papers, model artifacts, external software, services, logos, and trademarks remain under their own terms. IMG CAS is the curator's affiliation, not the publisher or an endorsement.",
+  "provenance": "Curated from primary papers, official repositories, model hubs, project pages, and explicit licence or access terms. All 377 candidates received source-level review on 2026-07-13 against the recorded source baseline. The 345 records meeting the release policy form the canonical displayed catalog; 32 unresolved candidates are preserved losslessly in a separate under-review register. Generated distributions come from the canonical JSON through a deterministic build.",
+  "is_part_of": "https://michalie.github.io/",
+  "keywords": [
+    "biological foundation models",
+    "bioinformatics",
+    "machine learning",
+    "protein models",
+    "genomics",
+    "single-cell",
+    "ELIXIR"
+  ],
+  "evidence_statement": "All 377 candidates were source-reviewed on 2026-07-13. The displayed catalog contains 345 release-policy records: 231 verified and 114 verified with visible limitations. Thirty-two unresolved candidates are excluded from the index and preserved with stable IDs, evidence, reasons, and reconsideration conditions in the repository's under-review register."
+}

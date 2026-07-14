@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+.maintenance-output/
 _site/
 .DS_Store
 .claude/settings.local.json

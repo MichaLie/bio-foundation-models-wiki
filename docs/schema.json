@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://michalie.github.io/bio-foundation-models-wiki/schema.json",
+  "title": "Biological Foundation Models catalog",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "date_added",
+      "name",
+      "modality",
+      "description",
+      "paper_links",
+      "code_links",
+      "status",
+      "io",
+      "use_cases",
+      "year",
+      "canonical",
+      "noncommercial",
+      "verified",
+      "sources",
+      "audit_state",
+      "audit_priority",
+      "audit_note",
+      "audit_source"
+    ],
+    "properties": {
+      "id": {"type": "string", "pattern": "^bfm-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+      "date_added": {"type": "string", "format": "date"},
+      "date_modified": {"type": "string", "format": "date"},
+      "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+      "name": {"type": "string", "minLength": 1},
+      "modality": {
+        "enum": ["dna", "rna", "protein", "complex", "molecule", "singlecell", "spatial", "multimodal", "platform", "benchmark"]
+      },
+      "description": {"type": "string", "minLength": 1},
+      "paper_links": {"$ref": "#/$defs/links"},
+      "code_links": {"$ref": "#/$defs/links"},
+      "status": {"type": "string", "minLength": 1},
+      "io": {"type": "string"},
+      "use_cases": {"type": "string", "minLength": 1},
+      "year": {"type": "string", "pattern": "^(?:|19[0-9]{2}|20[0-9]{2})$"},
+      "canonical": {"type": "boolean"},
+      "noncommercial": {"type": "boolean"},
+      "verified": {"type": "string", "format": "date"},
+      "sources": {
+        "type": "array",
+        "minItems": 1,
+        "items": {"type": "string", "format": "uri", "pattern": "^https?://"},
+        "uniqueItems": true
+      },
+      "audit_state": {"enum": ["verified", "verified_with_limits", "hold"]},
+      "audit_priority": {"enum": ["P1", "P2", "P3", "P4"]},
+      "audit_note": {"type": "string", "minLength": 1},
+      "audit_source": {
+        "type": "string",
+        "pattern": "^evidence/source-audit/foundation_(?:initial|residual_mod[0-2])\\.md$"
+      }
+    }
+  },
+  "$defs": {
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "url"],
+        "properties": {
+          "label": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "format": "uri", "pattern": "^https?://"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "schema": "https://schema.org/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://michalie.github.io/bio-foundation-models-wiki/",
+  "@type": [
+    "dcat:Dataset",
+    "schema:Dataset"
+  ],
+  "dcat:distribution": [
+    {
+      "@id": "https://michalie.github.io/bio-foundation-models-wiki/#distribution-json",
+      "@type": [
+        "dcat:Distribution",
+        "schema:DataDownload"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://michalie.github.io/bio-foundation-models-wiki/"
+      },
+      "dcat:byteSize": 491680,
+      "dcat:downloadURL": {
+        "@id": "https://michalie.github.io/bio-foundation-models-wiki/models_final.json"
+      },
+      "dct:format": {
+        "@id": "https://www.iana.org/assignments/media-types/application/json"
+      },
+      "dct:title": "Canonical catalog data",
+      "schema:encodingFormat": "application/json",
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:algorithm": {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "dd24809f4b4fc2991aeeb66b3bb75c847dc26cb5535fb6065390c5fe494a1b2a"
+      }
+    },
+    {
+      "@id": "https://michalie.github.io/bio-foundation-models-wiki/#distribution-schema",
+      "@type": [
+        "dcat:Distribution",
+        "schema:DataDownload"
+      ],
+      "dcat:accessURL": {
+        "@id": "https://michalie.github.io/bio-foundation-models-wiki/"
+      },
+      "dcat:byteSize": 2568,
+      "dcat:downloadURL": {
+        "@id": "https://michalie.github.io/bio-foundation-models-wiki/schema.json"
+      },
+      "dct:format": {
+        "@id": "https://www.iana.org/assignments/media-types/application/schema+json"
+      },
+      "dct:title": "JSON Schema for the catalog",
+      "schema:encodingFormat": "application/schema+json",
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:algorithm": {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "7a552521da27408369700704ac87ce93746544f7992270d6b4e8251067983c8f"
+      }
+    },
+    {
+      "@id": "https://michalie.github.io/bio-foundation-models-wiki/#distribution-html",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://michalie.github.io/bio-foundation-models-wiki/"
+      },
+      "dct:format": {
+        "@id": "https://www.iana.org/assignments/media-types/text/html"
+      },
+      "dct:title": "Interactive HTML catalog"
+    }
+  ],
+  "dcat:keyword": [
+    "biological foundation models",
+    "bioinformatics",
+    "machine learning",
+    "protein models",
+    "genomics",
+    "single-cell",
+    "ELIXIR"
+  ],
+  "dcat:landingPage": {
+    "@id": "https://michalie.github.io/bio-foundation-models-wiki/"
+  },
+  "dct:accessRights": {
+    "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+  },
+  "dct:conformsTo": [
+    {
+      "@id": "https://doi.org/10.1038/sdata.2016.18"
+    },
+    {
+      "@id": "https://www.w3.org/TR/vocab-dcat-3/"
+    },
+    {
+      "@id": "https://www.w3.org/TR/json-ld11/"
+    },
+    {
+      "@id": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ],
+  "dct:creator": {
+    "@id": "https://github.com/MichaLie",
+    "@type": "schema:Person",
+    "schema:affiliation": {
+      "@id": "https://www.img.cas.cz/en/",
+      "@type": "schema:Organization",
+      "schema:name": "Institute of Molecular Genetics of the Czech Academy of Sciences"
+    },
+    "schema:email": "mailto:michaela.liegertova@img.cas.cz",
+    "schema:name": "Michaela Liegertová"
+  },
+  "dct:description": "A curated, filterable catalog of foundation models and related resources for biological sequences, molecules, structures, omics, cells, and tissue images.",
+  "dct:identifier": "https://michalie.github.io/bio-foundation-models-wiki/",
+  "dct:isPartOf": {
+    "@id": "https://michalie.github.io/"
+  },
+  "dct:issued": {
+    "@type": "xsd:date",
+    "@value": "2026-06-16"
+  },
+  "dct:language": {
+    "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+  },
+  "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "dct:modified": {
+    "@type": "xsd:date",
+    "@value": "2026-07-14"
+  },
+  "dct:provenance": "Curated from primary papers, official repositories, model hubs, project pages, and explicit licence or access terms. All 377 candidates received source-level review on 2026-07-13 against the recorded source baseline. The 345 records meeting the release policy form the canonical displayed catalog; 32 unresolved candidates are preserved losslessly in a separate under-review register. Generated distributions come from the canonical JSON through a deterministic build.",
+  "dct:publisher": {
+    "@id": "https://github.com/MichaLie",
+    "@type": "schema:Person",
+    "schema:affiliation": {
+      "@id": "https://www.img.cas.cz/en/",
+      "@type": "schema:Organization",
+      "schema:name": "Institute of Molecular Genetics of the Czech Academy of Sciences"
+    },
+    "schema:email": "mailto:michaela.liegertova@img.cas.cz",
+    "schema:name": "Michaela Liegertová"
+  },
+  "dct:relation": {
+    "@id": "https://michalie.github.io/bio-foundation-models-wiki/records_under_review.json",
+    "@type": "dcat:Dataset",
+    "dct:description": "Audited candidates excluded from the displayed canonical index until their scope, artifact, identity, duplication, or reuse-term issue is resolved.",
+    "dct:title": "Biological Foundation Models — records under review",
+    "dct:type": "Editorial under-review register; not part of the canonical displayed catalog",
+    "schema:numberOfItems": 32
+  },
+  "dct:rights": "Catalog data, metadata, and original documentation are licensed under CC BY 4.0; maintenance and build software are licensed under MIT. Third-party papers, model artifacts, external software, services, logos, and trademarks remain under their own terms. IMG CAS is the curator's affiliation, not the publisher or an endorsement.",
+  "dct:source": {
+    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki"
+  },
+  "dct:title": "Biological Foundation Models - Researcher Index",
+  "prov:wasDerivedFrom": {
+    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/df1d18e4195c340b6bbf434402519ea50bd9ff9e"
+  },
+  "prov:wasGeneratedBy": {
+    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/releases/tag/v2.0.0",
+    "@type": "prov:Activity",
+    "dct:type": "Versioned release build",
+    "prov:endedAtTime": {
+      "@type": "xsd:date",
+      "@value": "2026-07-14"
+    },
+    "prov:used": [
+      {
+        "@id": "https://github.com/MichaLie/bio-foundation-models-wiki"
+      },
+      {
+        "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/df1d18e4195c340b6bbf434402519ea50bd9ff9e"
+      }
+    ]
+  },
+  "schema:creator": {
+    "@id": "https://github.com/MichaLie",
+    "@type": "schema:Person",
+    "schema:affiliation": {
+      "@id": "https://www.img.cas.cz/en/",
+      "@type": "schema:Organization",
+      "schema:name": "Institute of Molecular Genetics of the Czech Academy of Sciences"
+    },
+    "schema:email": "mailto:michaela.liegertova@img.cas.cz",
+    "schema:name": "Michaela Liegertová"
+  },
+  "schema:dateModified": "2026-07-14",
+  "schema:description": "A curated, filterable catalog of foundation models and related resources for biological sequences, molecules, structures, omics, cells, and tissue images.",
+  "schema:identifier": "https://michalie.github.io/bio-foundation-models-wiki/",
+  "schema:isAccessibleForFree": true,
+  "schema:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "schema:name": "Biological Foundation Models - Researcher Index",
+  "schema:numberOfItems": 345,
+  "schema:sameAs": {
+    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki"
+  },
+  "schema:url": {
+    "@id": "https://michalie.github.io/bio-foundation-models-wiki/"
+  },
+  "schema:version": "2.0.0"
+}
