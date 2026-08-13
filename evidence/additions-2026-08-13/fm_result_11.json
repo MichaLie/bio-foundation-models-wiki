@@ -1,0 +1,122 @@
+[
+ {
+  "name": "scMamba",
+  "verdict": "hold",
+  "reason": "Paper verified (arXiv 2506.20697, 'scMamba: A Scalable Foundation Model for Single-Cell Multi-Omics Integration Beyond Highly Variable Feature Selection', Yuan/Jiao/Xiao/Peng, submitted 2025-06-25, not withdrawn). But the artifact does not meet the bar this session: repo 23AIBox/scMamba (AGPL-3.0, created 2025-04-09) has been stale since 2025-04-19 -- before the arXiv posting -- its README states 'All code will be publicly available following acceptance of the manuscript', and the pretrained checkpoints are offered only via a Dropbox share whose contents could not be verified (JS-rendered page, no file listing retrievable). Paper-to-repo linkage rests on exact title match only; the arXiv abs page links no code. Additional hazard: a second, unrelated 'scMamba' exists (arXiv 2502.19429, Oh/Choi/Jin/Jung/Ye, 'A Pre-Trained Model for Single-Nucleus RNA Sequencing Analysis in Neurodegenerative Disorders', submitted 2025-02-12; repo okt0711/scMamba, Apache-2.0) -- any future entry needs explicit disambiguation. Also outside the current discovery window (mid-2025).",
+  "licence_quote": "Repo licence AGPL-3.0 (GitHub API, 23AIBox/scMamba). README: 'The checkpoints and datasets for the scMamba model are available via dropbox.' and 'All code will be publicly available following acceptance of the manuscript.' No separate weights licence stated.",
+  "record": null,
+  "reconsider_when": "Manuscript is accepted/published and the full code + checkpoints are formally released in a verifiable location (Hugging Face, Zenodo, or a populated GitHub release) with the paper explicitly pointing to the repo; then add with disambiguation against the Oh/Ye scMamba (arXiv 2502.19429).",
+  "fetched": [
+   "https://arxiv.org/abs/2506.20697",
+   "https://github.com/23AIBox/scMamba",
+   "https://raw.githubusercontent.com/23AIBox/scMamba/main/README.md",
+   "https://arxiv.org/abs/2502.19429",
+   "gh api repos/23AIBox/scMamba",
+   "gh api repos/okt0711/scMamba",
+   "https://www.dropbox.com/scl/fo/g64416xvv1fjd36l1z7nx/AKcB6XbOFHLPFHQX68TpGCQ (unresolvable this session)"
+  ]
+ },
+ {
+  "name": "Lingshu-Cell",
+  "verdict": "reject",
+  "reason": "Watchlist reject: no official released artifact. Paper verified (arXiv 2603.25240, 'Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells', Zhang/Yuan/.../Rong (DAMO Academy), submitted 2026-03-26, not withdrawn) and the official project homepage exists, but the homepage links ONLY the arXiv PDF -- no GitHub, no Hugging Face, no ModelScope, no weights, no code availability statement. HF full-text search for 'lingshu-cell' returns a single upload, bibona/lingshu-cell (created 2026-07-20, 0 downloads), whose owner is not affiliated with Alibaba DAMO -- consistent with today's HOLD-register review; no NEW official artifact evidence found. Fails the released-reusable-artifact requirement. Keep on watchlist for an official weights release.",
+  "licence_quote": "No model/weights licence exists to quote -- no official artifact is released. (The project homepage itself is 'licensed under a Creative Commons Attribution-ShareAlike 4.0 International License', which covers the webpage, not the model.)",
+  "record": null,
+  "fetched": [
+   "https://alibaba-damo-academy.github.io/lingshu-cell-homepage/",
+   "https://arxiv.org/abs/2603.25240",
+   "https://huggingface.co/api/models?search=lingshu-cell"
+  ]
+ },
+ {
+  "name": "scUNVEIL",
+  "verdict": "reject",
+  "reason": "Training pipeline only -- not a released, reusable model. Repo thonzyk/scunveil-training verified via GitHub API (Apache-2.0, created 2026-07-22, pushed 2026-08-10, 1 star, 0 releases, single-developer): description reads 'Data preparation and pretraining pipeline for the scUNVEIL single-cell RNA-seq foundation model.' README is purely a CELLxGENE-Census data-prep and from-scratch training workflow with no pretrained weights, no checkpoints, no model card. arXiv full-text search for 'scUNVEIL' returns zero results -- no paper or preprint exists. Could return via discovery if weights and a paper appear.",
+  "licence_quote": "Code licence: 'Apache-2.0' (GitHub API spdx_id). No weights exist, so no weights licence.",
+  "record": null,
+  "fetched": [
+   "gh api repos/thonzyk/scunveil-training",
+   "gh api repos/thonzyk/scunveil-training/releases",
+   "https://raw.githubusercontent.com/thonzyk/scunveil-training/main/README.md",
+   "http://export.arxiv.org/api/query?search_query=all:%22scUNVEIL%22"
+  ]
+ },
+ {
+  "name": "PRISM2",
+  "verdict": "accept",
+  "reason": "Fully verified. Paper: Nature Medicine 2026-07-31, 'End-to-end multimodal pathology foundation model with clinical dialogue', Vorontsov et al. (Paige/Tempus, Microsoft Research, MSK), DOI 10.1038/s41591-026-04521-4, PMID 42538427 (PubMed). Preprint: arXiv 2506.13063 (2025-06-16). Weights: huggingface.co/paige-ai/Prism2 -- official Paige org (also hosts Virchow, Virchow2, PRISM), gated (manual approval, institutional email), licence cc-by-nc-nd-4.0, last modified 2026-07-31; survival-finetuned variant paige-ai/Prism2-survival in the same org. Evaluation code/embeddings on Zenodo 19056118 (CC-BY-4.0). Distinct successor to PRISM (already indexed).",
+  "licence_quote": "HF model card: 'This model and associated code are released under the CC-BY-NC-ND 4.0 license and may only be used for non-commercial, academic research purposes with proper attribution.' Access is gated: manual approval, institutional email required, no medical/diagnostic/clinical use. Zenodo linear-probe deposit is separately CC-BY-4.0.",
+  "record": {
+   "name": "PRISM2",
+   "modality": "spatial",
+   "description": "Multimodal slide-level computational pathology foundation model from Paige (Paige/Tempus) and Microsoft Research: a 0.6B Perceiver whole-slide encoder coupled to a Phi-3-mini-128k-instruct decoder (4.4B parameters total), trained on 2.3M whole-slide images and 14M question-answer pairs derived from ~700K MSKCC pathology reports. Supports prompt-based diagnostic inference (cancer detection, QA) and transferable slide embeddings; a survival-finetuned variant (Prism2-survival) is released alongside.",
+   "io": "Virchow2 tile embeddings of a whole-slide image (N x 1280, 224px tiles at 0.5 mpp) + optional text prompt -> slide-level embedding and diagnostic text (QA / report-style output)",
+   "status": "Weights on Hugging Face, gated (manual approval, institutional email); CC-BY-NC-ND 4.0, non-commercial research only",
+   "use_cases": "slide-level embeddings, cancer detection, diagnostic question answering, biomarker prediction, survival prediction",
+   "year": 2026,
+   "paper_links": [
+    {"label": "Nature Medicine (2026)", "url": "https://doi.org/10.1038/s41591-026-04521-4"},
+    {"label": "arXiv preprint", "url": "https://arxiv.org/abs/2506.13063"}
+   ],
+   "code_links": [
+    {"label": "Hugging Face (Prism2)", "url": "https://huggingface.co/paige-ai/Prism2"},
+    {"label": "Hugging Face (Prism2-survival)", "url": "https://huggingface.co/paige-ai/Prism2-survival"},
+    {"label": "Zenodo linear-probe evaluation", "url": "https://zenodo.org/records/19056118"}
+   ],
+   "sources": [
+    "https://huggingface.co/paige-ai/Prism2",
+    "https://huggingface.co/api/models/paige-ai/Prism2",
+    "https://huggingface.co/api/models?author=paige-ai",
+    "https://doi.org/10.1038/s41591-026-04521-4 (PubMed PMID 42538427)",
+    "http://export.arxiv.org/api/query?search_query=ti:%22PRISM2%22",
+    "https://zenodo.org/records/19056118"
+   ],
+   "noncommercial": true,
+   "aliases": ["Prism2"]
+  },
+  "fetched": [
+   "https://huggingface.co/api/models/paige-ai/Prism2",
+   "https://huggingface.co/paige-ai/Prism2",
+   "https://huggingface.co/api/models?author=paige-ai",
+   "PubMed get_article_metadata PMID 42538427 (DOI 10.1038/s41591-026-04521-4)",
+   "http://export.arxiv.org/api/query?search_query=ti:%22PRISM2%22",
+   "https://zenodo.org/records/19056118"
+  ]
+ },
+ {
+  "name": "KRONOS2",
+  "verdict": "accept",
+  "reason": "Artifact fully verified as official: huggingface.co/MahmoodLab/KRONOS2 (official Mahmood Lab org), gated (manual approval, institutional email), licence cc-by-nc-nd-4.0, created 2026-04-20, last modified 2026-07-27; announced in the official mahmoodlab/KRONOS README: '(072726) KRONOSv2 announced!' with a direct link to the HF repo. Model card: marker-aware DINOv2 ViT-B/16, 768-dim embeddings, 268-marker vocabulary, pretrained on the SPM56M multiplex spatial proteomics dataset. Caveat carried into the entry: no dedicated KRONOS2 paper exists yet -- the official card cites the KRONOS v1 paper (arXiv 2506.03373, 'A Foundation Model for Spatial Proteomics', Shaban et al., 2025-06-03, verified not withdrawn); a KRONOS2 technical report is flagged as forthcoming. Separate release from KRONOS v1 (already indexed), not a rename.",
+  "licence_quote": "HF model card: released under the 'CC-BY-NC-ND 4.0 license and may only be used for non-commercial, academic research purposes with proper attribution.' Gated: manual approval with institutional email. GitHub README: code & weights 'released to the academic community for non-commercial academic research only. Any commercial research use, integration into commercial products or services, or creation of derivative models... requires prior approvals.'",
+  "record": {
+   "name": "KRONOS2",
+   "modality": "spatial",
+   "description": "Second-generation marker-aware vision foundation model for multiplex spatial proteomics imaging (CODEX/PhenoCycler, CyCIF and similar platforms) from the Mahmood Lab: a DINOv2 ViT-B/16 pretrained on the SPM56M dataset with a 268-marker vocabulary, producing one 768-dimensional embedding per multiplexed image patch conditioned on which antibody markers are present. Successor release to KRONOS; a dedicated KRONOS2 technical report is still forthcoming (the official card cites the KRONOS v1 paper).",
+   "io": "multiplex spatial proteomics image patch (256x256 px, marker-aware channel handling) -> 768-dim patch embedding",
+   "status": "Weights on Hugging Face, gated (manual approval, institutional email); CC-BY-NC-ND 4.0, non-commercial research only",
+   "use_cases": "cell phenotyping, tissue classification, biomarker discovery, patient stratification from multiplex imaging",
+   "year": 2026,
+   "paper_links": [
+    {"label": "KRONOS paper (v1, arXiv)", "url": "https://arxiv.org/abs/2506.03373"}
+   ],
+   "code_links": [
+    {"label": "Hugging Face (KRONOS2)", "url": "https://huggingface.co/MahmoodLab/KRONOS2"},
+    {"label": "GitHub (KRONOS)", "url": "https://github.com/mahmoodlab/KRONOS"}
+   ],
+   "sources": [
+    "https://huggingface.co/api/models/MahmoodLab/KRONOS2",
+    "https://huggingface.co/MahmoodLab/KRONOS2",
+    "https://raw.githubusercontent.com/mahmoodlab/KRONOS/main/README.md",
+    "https://arxiv.org/abs/2506.03373"
+   ],
+   "noncommercial": true,
+   "aliases": ["KRONOSv2", "KRONOS v2"]
+  },
+  "fetched": [
+   "https://huggingface.co/api/models/MahmoodLab/KRONOS2",
+   "https://huggingface.co/MahmoodLab/KRONOS2",
+   "https://raw.githubusercontent.com/mahmoodlab/KRONOS/main/README.md",
+   "https://arxiv.org/abs/2506.03373"
+  ]
+ }
+]

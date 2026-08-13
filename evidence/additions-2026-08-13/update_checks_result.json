@@ -1,0 +1,66 @@
+[
+ {
+  "name": "Plato-Bio",
+  "decision": "no_action",
+  "affected_record_id": "asa-denario",
+  "proposed_change": null,
+  "evidence_urls": ["https://arxiv.org/abs/2607.23975"],
+  "rationale": "Plato-Bio (Stefan G. Creadore, sole author, Eldergenix repo) is a biology-routed extension of the open Plato/Denario architecture with NO shared authorship with Denario (arXiv 2510.26887). It is an independent third-party derivative, not an alias — no change to asa-denario. Plato-Bio itself is not added this cycle: single-author derivative without independent adoption evidence; watchlist."
+ },
+ {
+  "name": "Argonne multi-agentic atomistic simulation framework",
+  "decision": "no_action",
+  "affected_record_id": "asa-chemgraph",
+  "proposed_change": null,
+  "evidence_urls": ["https://api.crossref.org/works/10.1039/d5dd00435g", "https://api.crossref.org/works/10.1038/s42004-025-01776-9"],
+  "rationale": "Crossref: Digital Discovery paper (Vriza, Kornu, Koneru, Chan, Sankaranarayanan) shares NO authors with the ChemGraph paper (Pham, Tanikanti, Keçeli) — different Argonne team, distinct system, so no ChemGraph amendment. The framework itself is not added this cycle: unnamed system, primary pages (RSC, anl.gov) 403-blocked, no repo or artifact verifiable from primary sources today. Watchlist with reconsider-when: primary page or official repo becomes fetchable."
+ },
+ {
+  "name": "MadAgents (v3) / Agentic Re-Casting",
+  "decision": "no_action",
+  "affected_record_id": null,
+  "proposed_change": null,
+  "evidence_urls": ["https://arxiv.org/abs/2607.22813"],
+  "rationale": "No existing MadAgents record exists in the catalog (grep verified), so there is no alias question. arXiv 2607.22813 (Diefenbacher, Plehn, Schiller, Schmal) is a method demonstration of agentic SFitter re-casting referencing MadAgents.v3, with a physicist in the loop and no located code release. Method paper without released system artifact — not added; watchlist."
+ },
+ {
+  "name": "El Agente Quntur",
+  "decision": "record_amendment",
+  "affected_record_id": "asa-el-agente-q",
+  "proposed_change": "Add alias 'El Agente Quntur'; add paper link {label: 'arXiv (Quntur)', url: 'https://arxiv.org/abs/2602.04850'}; extend notes with: 'Successor system El Agente Quntur (2026, same Aspuru-Guzik group, Pérez-Sánchez lead) generalizes the line to the full ORCA 6.0 calculation range with hierarchical reasoning-driven planning; no separate code release located.' Set date_modified 2026-08-13.",
+  "evidence_urls": ["https://arxiv.org/abs/2602.04850"],
+  "rationale": "Same research group (Aspuru-Guzik among 15 authors), explicit continuation of the El Agente line under a new name; no released artifact of its own, so an amendment + alias keeps one identity rather than padding a second record."
+ },
+ {
+  "name": "OpenDDE full release",
+  "decision": "no_action",
+  "affected_record_id": "bfm-opendde-preview",
+  "proposed_change": null,
+  "evidence_urls": ["https://huggingface.co/api/models/aurekaresearch/OpenDDE", "https://arxiv.org/abs/2607.03787"],
+  "rationale": "The record already carries the full-release paper (arXiv 2607.03787), the official repo, the ungated HF weights (confirmed today: gated:false, 20 files, lastModified 2026-07-04) and an accurate status string ('Open preview code + checkpoints + Docker (Apache-2.0); unstable and not production-ready'), all verified in the 2026-07-13 audit. Nothing to change."
+ },
+ {
+  "name": "IgGM2",
+  "decision": "no_action",
+  "affected_record_id": "bfm-iggm",
+  "proposed_change": null,
+  "evidence_urls": ["https://github.com/TencentAI4S/IgGM2 (404)"],
+  "rationale": "No official IgGM2 artifact exists: TencentAI4S/IgGM2 returns 404 and no other official location was verified. The successor preprint (reported bioRxiv 2026-07-09) was not independently fetched this session, so no record note citing it is added — UNVERIFIED. Watchlist: reconsider when an official IgGM2 repo/weights or verified preprint DOI exists."
+ },
+ {
+  "name": "Edison Finch",
+  "decision": "no_action",
+  "affected_record_id": "asa-futurehouse-platform-agents-crow-falcon-owl-phoenix",
+  "proposed_change": null,
+  "evidence_urls": ["https://edisonscientific.com"],
+  "rationale": "Checked edisonscientific.com today: named products are Kosmos, ChemCrow, PaperQA, Aviary, Robin — no 'Finch' listed anywhere. The discovery-lane claim that the record omits a current agent named Finch is not supported by current primary sources; no amendment."
+ },
+ {
+  "name": "Agent-MD (GCMC-MD campaigns)",
+  "decision": "new_record",
+  "affected_record_id": null,
+  "proposed_change": "New ASA record — name: 'Agent-MD (GCMC-MD campaigns)' (disambiguated from the catalogued clinical asa-agentmd, a different system by different authors); category: physics; domain: 'Stateful molecular-simulation campaign agent (GCMC-MD)'; paper_links: [{label:'arXiv', url:'https://arxiv.org/abs/2608.07637'}]; repo_links: []; access: paper-only; inputs: 'Campaign specification (systems, humidity/state schedule)'; outputs: 'Completed segmented GCMC-MD campaigns with analysis, archiving and state progression'; autonomy: A3; notes: 'Selective LLM intervention with event-driven escalation: routine production runs under deterministic rule-based control, LLM reasoning invoked at campaign construction and event-triggered review (Wang, Yin, Tang, Chu, 2026-08-07); demonstrated on 120 segmented cycles across 15 montmorillonite states; no code release located.'; sources: ['https://arxiv.org/abs/2608.07637']; aliases: [].",
+  "evidence_urls": ["https://arxiv.org/abs/2608.07637"],
+  "rationale": "Verified real multi-step autonomous simulation-campaign system, in scope; name collision with the catalogued clinical AgentMD (NCBI) resolved by disambiguated display name; confirmed different systems and authors."
+ }
+]

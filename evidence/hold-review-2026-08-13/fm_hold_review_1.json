@@ -1,0 +1,102 @@
+[
+  {
+    "id": "bfm-mrna-fm-plantrna-fm",
+    "name": "mRNA-FM / PlantRNA-FM",
+    "condition": "Split the family or verify each member with its own primary evidence, artifact locator, and licence.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://huggingface.co/yangheng/PlantRNA-FM",
+      "https://huggingface.co/yangheng/mrnafm"
+    ],
+    "licence_quote": "PlantRNA-FM card: \"License: mit\". mrnafm card: \"This model is licensed under the AGPL-3.0 License\" (SPDX-License-Identifier: AGPL-3.0-or-later).",
+    "rationale": "Checked both HF model cards today. PlantRNA-FM is now fully evidenced as an individual member: MIT licence, 34M-param safetensors weights downloadable ungated, primary paper linked on the card (bioRxiv 10.1101/2024.06.24.600509v2; the register already holds the published article PMC11652376). mRNA-FM: weights downloadable ungated under AGPL-3.0, but its card's only linked paper is the family RNA-FM preprint (doi.org/10.1101/2022.08.06.503062 / arXiv 2204.00300), not an mRNA-FM-specific primary publication — 'its own primary evidence' is not established. The two members carry conflicting licences (MIT vs AGPL-3.0), so the combined family record cannot be promoted as-is; the split has not been executed in the register. Recommend splitting: PlantRNA-FM would be promotable as a standalone record on today's evidence; mRNA-FM would need its primary-evidence question resolved. Ambiguity resolves to HOLD.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-saturn",
+    "name": "SATURN",
+    "condition": "Reconsider when an official reusable pretrained SATURN checkpoint is released and its terms are verified, or reclassify outside model scope.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/snap-stanford/SATURN"
+    ],
+    "licence_quote": "Repo licence: MIT (GitHub licence indicator); no checkpoint-specific terms exist because no checkpoint is offered.",
+    "rationale": "Fetched the official repo today. It still provides training code, protein embeddings, and macrogene weights only; no reusable pretrained SATURN checkpoint is offered for download and no release announcing one is visible (34 commits, no dated releases shown). Condition not satisfied. Reclassification outside model scope remains an internal register decision.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-xtrimogene",
+    "name": "xTrimoGene",
+    "condition": "Reconsider when official reusable code or a checkpoint is released and verified.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2311.15156",
+      "https://github.com/biomap-research/scFoundation"
+    ],
+    "licence_quote": "No xTrimoGene licence exists to quote — no official xTrimoGene code or checkpoint was found. Related scFoundation repo: code Apache-2.0, weights under a separate MODEL_LICENSE file.",
+    "rationale": "Checked today: arXiv abstract (NeurIPS 2023 paper, last revised 2024-02-24) states the model is 'available for use as a service' via a BioMap API endpoint — a service, not reusable code or a checkpoint. The OpenReview forum page could not be fetched (browser-verification screen blocked the fetch). The biomap-research/scFoundation repo explicitly says scFoundation 'was based on the xTrimoGene architecture' and is the official code for scFoundation, not xTrimoGene; it does not constitute an official xTrimoGene release. WebSearch budget was exhausted, so no broader sweep for a new official xTrimoGene repo was possible this session. Condition not satisfied on fetched evidence.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-scprotein",
+    "name": "scPROTEIN",
+    "condition": "Reconsider if broader reusable pretraining is evidenced or a written scope-policy revision explicitly includes this class.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/TencentAILabHealthcare/scPROTEIN"
+    ],
+    "licence_quote": "Repo licence: Apache-2.0 (GitHub licence indicator).",
+    "rationale": "Fetched the official repo today. It remains a dataset-specific framework: users train stage1/stage2 on individual datasets, and the only released checkpoints are 'for scPROTEIN stage1 and stage2 on SCoPE2_Specht dataset' — one dataset, not broad reusable pretraining. No scope-policy revision exists (that is an internal register document, not something external evidence can supply). Condition not satisfied.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-deepsea",
+    "name": "DeepSEA",
+    "condition": "Reconsider only under a written historical-exception policy with the original artifact correctly identified.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "http://deepsea.princeton.edu/help/"
+    ],
+    "licence_quote": "No licence stated on the DeepSEA download page; it says only \"The code for the standalone version of DeepSEA can be downloaded here (766M).\" and cites Zhou & Troyanskaya, Nature Methods (2015).",
+    "rationale": "The condition has two parts. Part 2 (original artifact correctly identified) can now be resolved: fetched deepsea.princeton.edu/help/ today — the original standalone DeepSEA code download (766M) is live there, distinct from the Selene framework the record currently links; the page also states 'We now recommend our new library Selene for training purposes.' No licence/terms are stated for the standalone download. Part 1, a written historical-exception policy, is an internal register document that no external evidence can satisfy, so the entry stays held. If the policy is adopted, replace the Selene code link with the deepsea.princeton.edu artifact and note the absent licence.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-chrombpnet",
+    "name": "ChromBPNet",
+    "condition": "Reconsider if a written scope policy includes assay-specific predictors or broader reusable pretraining is evidenced.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/kundajelab/chrombpnet"
+    ],
+    "licence_quote": "Repo licence: MIT (GitHub licence indicator). Repo on transferability: \"Bias models are generally transferable across assay types following similar protocol.\"",
+    "rationale": "Fetched the official repo today. ChromBPNet is still trained per-assay/per-dataset via the 'chrombpnet pipeline' command on the user's own BAM/fragment files; the only reusable pretrained artifacts are the bias models, which are a correction component, not a foundation model. So broader reusable pretraining is not evidenced, and the written scope policy is an internal register decision. Attempted to check whether the Dec 2024 bioRxiv preprint (10.1101/2024.12.25.630221) is now journal-published, but bioRxiv returned HTTP 403 — publication status UNVERIFIED this session; it would not change the scope verdict either way.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-mistral-dna",
+    "name": "Mistral-DNA",
+    "condition": "Reconsider when a primary source, authorized checkpoint, direct model card, and exact terms are all verified.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/raphaelmourad/Mistral-DNA",
+      "https://huggingface.co/RaphaelMourad/Mistral-DNA-v0.1",
+      "https://huggingface.co/RaphaelMourad/Mistral-DNA-v1-1.6B-hg38"
+    ],
+    "licence_quote": "None verifiable: the GitHub repo declares no explicit licence in the fetched content, and both HF model card fetches returned HTTP 401 Unauthorized, so no licence text could be read.",
+    "rationale": "Checked today. GitHub repo: still no primary paper linked (no journal/DOI/arXiv reference found in the fetched content), no explicit licence declared, and it links the HF checkpoint RaphaelMourad/Mistral-DNA-v0.1. Both that model card and an alternative (Mistral-DNA-v1-1.6B-hg38) returned HTTP 401 Unauthorized to unauthenticated fetch — consistent with the prior audit's 'checkpoint currently unauthorized', though I cannot distinguish gating from a nonexistent card from a 401 alone; other HF cards (yangheng/*) fetched fine this session, so this is card-specific, not an HF-wide outage. None of the four required elements (primary source, authorized checkpoint, direct model card, exact terms) verified. Condition clearly not satisfied.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-florabert",
+    "name": "FloraBERT",
+    "condition": "Reconsider if broader reusable foundation-model scope is established by primary evidence.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/benlevyx/florabert"
+    ],
+    "licence_quote": "Repo licence: MIT (GitHub licence indicator). Repo self-description: \"Predicting gene expression levels from upstream promoter regions using deep learning.\"",
+    "rationale": "Fetched the official repo today. Scope is unchanged: plant promoter modelling and tissue-specific gene-expression prediction (a general plant promoter LM, a maize-specific LM, and a multitask regression head), with pretrained models distributed via a Google Drive link rather than a versioned model hub. Only 3 commits; no sign of renaming, archival, or new primary evidence establishing broader reusable FM scope. Condition not satisfied. Publication status of the Research Square preprint was not re-checked (would not affect the scope condition).",
+    "checked": "2026-08-13"
+  }
+]

@@ -1,0 +1,321 @@
+[
+  {
+    "name": "ProtGPT3",
+    "verdict": "accept",
+    "reason": "Primary preprint verified via bioRxiv API: DOI 10.64898/2026.06.04.730041, 'ProtGPT3: an Open-source family of Promptable and Aligned Protein Language Models', Garibbo/Boxo Corominas/Stocco/Illanes Vicioso/Middendorf/Ferruz, corresponding Michele Garibbo (Centre for Genomic Regulation), posted 2026-06-08, v1, cc_by, not withdrawn, published_doi NA. Artifacts verified officially owned: HF org AI4PD ('AI for protein design', the Ferruz-lab org that also hosts ProtGPT2 and ZymCTRL) carries exactly 7 ProtGPT3 checkpoints (112M, 1.3B, 10B, MSA, and 112M/1.3B/10B-dpo), all gated:false, all with safetensors weights; collection slug AI4PD/protgpt3-family-694961c1c66f557bc5a62e00 confirmed via HF collections API (gating:false). Code repo github.com/michele1993/protGPT3 (first/corresponding author's account, created 2026-05-07) contains the pretraining, DPO-alignment, SFT-vs-prompting and MSA test-time-compute code. Scope is unambiguous: pretrained autoregressive pLM family, reusable for unconditional generation, prefix/family-conditioned generation, few-shot MSA prompting, and variant-effect scoring (ProteinGym results in the appendix). LICENCE CAVEAT, load-bearing: none of the 7 model cards declares a license field (cardData has no 'license' key on any of them), no LICENSE file exists in the code repo or in any HF repo, and the only affirmative statement is the paper's Appendix A.18 wording quoted below. noncommercial is set false on the strength of the authors' explicit 'open source' release statement plus ungated public weights, but no formal grant document exists - the parent should treat the licence as UNSPECIFIED rather than as a verified permissive licence.",
+    "licence_quote": "Paper Appendix A.18 (fetched PDF): 'All 7 models are publicly available open source on Hugging Face Hub at https://huggingface.co/collections/AI4PD/protgpt3-family. The entire code base for training and evaluation is available on a GitHub repository at https://github.com/michele1993/protGPT3.' No SPDX licence is declared anywhere: HF cardData for AI4PD/ProtGPT3-112M, -1.3B, -10B, -MSA, -112M-dpo has no 'license' key, no LICENSE file among the repo siblings, and github.com/michele1993/protGPT3 returns license:null from the GitHub API. Preprint text itself is CC-BY 4.0 (bioRxiv record license: cc_by).",
+    "record": {
+      "name": "ProtGPT3",
+      "modality": "protein",
+      "description": "Open-source family of autoregressive protein language models from the Ferruz lab (CRG), spanning 112M to 10B parameters in a Mixtral-style sparse mixture-of-experts architecture, with DPO-aligned variants and a 112M MSA-promptable model for homolog-conditioned few-shot generation. Seven checkpoints are released on Hugging Face together with training, alignment and inference-time-compute code.",
+      "io": "amino-acid prefix with an N-to-C/C-to-N direction token, or a prompt of ~15 homologous sequences for the MSA model -> generated protein sequences and per-sequence likelihoods",
+      "status": "Open weights, 7 ungated checkpoints on Hugging Face (AI4PD org); paper states an open-source release but no formal licence is declared on the model cards or code repo",
+      "use_cases": "de novo protein sequence generation, family-conditioned and few-shot homolog-prompted design, DPO-aligned low-complexity reduction, zero-shot variant effect scoring, enzyme design (defluorinase case study)",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (2026-06-08)",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.06.04.730041v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "Hugging Face collection (7 checkpoints)",
+          "url": "https://huggingface.co/collections/AI4PD/protgpt3-family"
+        },
+        {
+          "label": "GitHub (training/evaluation code)",
+          "url": "https://github.com/michele1993/protGPT3"
+        }
+      ],
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.06.04.730041v1",
+        "https://www.biorxiv.org/content/10.64898/2026.06.04.730041v1.full.pdf",
+        "https://huggingface.co/api/models?author=AI4PD",
+        "https://huggingface.co/api/models/AI4PD/ProtGPT3-112M",
+        "https://huggingface.co/api/models/AI4PD/ProtGPT3-1.3B",
+        "https://huggingface.co/api/models/AI4PD/ProtGPT3-10B",
+        "https://huggingface.co/api/models/AI4PD/ProtGPT3-MSA",
+        "https://huggingface.co/api/models/AI4PD/ProtGPT3-112M-dpo",
+        "https://huggingface.co/api/collections/AI4PD/protgpt3-family",
+        "https://huggingface.co/AI4PD/ProtGPT3-1.3B/raw/main/README.md",
+        "https://github.com/michele1993/protGPT3"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "ProtGPT3-MSA",
+        "ProtGPT3-112M",
+        "ProtGPT3-1.3B",
+        "ProtGPT3-10B"
+      ],
+      "date": "2026-06-08"
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.06.04.730041",
+      "https://www.biorxiv.org/content/10.64898/2026.06.04.730041v1.full.pdf",
+      "https://huggingface.co/api/models?author=AI4PD&limit=100",
+      "https://huggingface.co/api/models/AI4PD/ProtGPT3-112M",
+      "https://huggingface.co/api/models/AI4PD/ProtGPT3-1.3B",
+      "https://huggingface.co/api/models/AI4PD/ProtGPT3-10B",
+      "https://huggingface.co/api/models/AI4PD/ProtGPT3-MSA",
+      "https://huggingface.co/api/models/AI4PD/ProtGPT3-112M-dpo",
+      "https://huggingface.co/api/collections/AI4PD/protgpt3-family",
+      "https://huggingface.co/AI4PD/ProtGPT3-112M/raw/main/README.md",
+      "https://huggingface.co/AI4PD/ProtGPT3-1.3B/raw/main/README.md",
+      "https://huggingface.co/AI4PD/ProtGPT3-10B/raw/main/README.md",
+      "https://huggingface.co/AI4PD/ProtGPT3-MSA/raw/main/README.md",
+      "https://api.github.com/repos/michele1993/protGPT3",
+      "https://api.github.com/repos/michele1993/protGPT3/contents/README.md"
+    ]
+  },
+  {
+    "name": "MSA Pairformer",
+    "verdict": "accept",
+    "reason": "Journal article verified two independent ways, resolving the discovery lane's UNVERIFIED date: Crossref for DOI 10.1016/j.cell.2026.06.029 returns 'Expanding the scope of protein language modeling to protein-protein interactions with MSA Pairformer', container Cell, journal-article, created 2026-07-21T14:51:39Z, print issue 2026-08, authors Akiyama, Zhang, Tang, Kim, Mirdita, Steinegger, Ovchinnikov, no update-to (not retracted/withdrawn); PubMed PMID 42480528 confirms the same DOI with epubdate 2026 Jul 21 and pubdate 2026 Aug 6, pii S0092-8674(26)00749-X. The earlier bioRxiv preprint was also located and verified via the bioRxiv API: 10.1101/2025.08.02.668173, 'Scaling down protein language modeling with MSA Pairformer', posted 2025-08-03, corresponding author Sergey Ovchinnikov (MIT), cc_by - this establishes the model as a 2025 release with a 2026 peer-reviewed publication. Artifacts officially owned: github.com/yoakiyama/MSA_Pairformer (Yo Akiyama, first author; created 2025-06-01, pushed 2026-07-24, 179 stars) and HF weights. HF SLUG AMBIGUITY RESOLVED: both huggingface.co/api/models/yakiyama/MSA-Pairformer and .../yoakiyama/MSA-Pairformer return the same record with canonical id 'yoakiyama/MSA-Pairformer' (_id 68450d18fc894c220e8ef342, created 2025-06-08, lastModified 2026-05-28, gated:false, 335 downloads, 5 likes, ~2.0 GB, files model.bin/model_cuex.bin/contact.bin/confind_contact.bin/mrf_head.bin) - 'yakiyama' is simply a redirect, canonical is 'yoakiyama'. Scope: pretrained 111M-parameter MSA-based pLM used for sequence embedding, unsupervised residue-residue contact prediction in monomers and at protein-protein interfaces, and zero-shot variant effect prediction - three distinct downstream uses, clearly broader than one task. YEAR NOTE for the parent: record year is set to 2025 (weights on HF 2025-06-08, preprint 2025-08-03); if the index keys on peer-reviewed publication instead, the in-window date is 2026-07-21 (Cell online).",
+    "licence_quote": "GitHub README 'Licenses' section: 'MSA Pairformer code and model weights are released under a permissive, slightly modified MIT license. It can be freely used for both academic and commercial purposes.' Code LICENSE (github.com/yoakiyama/MSA_Pairformer/LICENSE): 'Modified MIT License (Coffee edition) / Copyright (c) 2025 Yo Akiyama / Permission is hereby granted, free of charge, ... to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies'. Weights LICENSE (huggingface.co/yoakiyama/MSA-Pairformer/raw/main/LICENSE) is the same text as 'Modified MIT License (Pizza edition)'. Both add only a non-binding closing line ('you can buy me a cup of coffee / a slice of pizza in return'). HF gated:false.",
+    "record": {
+      "name": "MSA Pairformer",
+      "modality": "protein",
+      "description": "111M-parameter MSA-based protein language model that adapts the AlphaFold Pairformer's bidirectional sequence<->pair representation updates into a pretrained LM of protein and protein-protein coevolution. Reported to outperform ESM2-15B on unsupervised contact prediction with two orders of magnitude fewer parameters, and to substantially improve contact prediction at protein-protein interfaces; published in Cell in 2026 after a 2025 preprint and weight release.",
+      "io": "query sequence plus its multiple sequence alignment -> sequence and pairwise embeddings, residue-residue contact maps (monomer and interface), zero-shot variant effect scores",
+      "status": "Open weights and code under a modified MIT licence explicitly permitting commercial use; Hugging Face repo ungated",
+      "use_cases": "protein sequence embedding, unsupervised residue-residue contact prediction, protein-protein interface contact prediction, screening of interacting sequence pairs, zero-shot variant effect prediction",
+      "year": 2025,
+      "paper_links": [
+        {
+          "label": "Cell (2026), DOI 10.1016/j.cell.2026.06.029",
+          "url": "https://doi.org/10.1016/j.cell.2026.06.029"
+        },
+        {
+          "label": "bioRxiv preprint (2025-08-03)",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.08.02.668173v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yoakiyama/MSA_Pairformer"
+        },
+        {
+          "label": "Hugging Face weights",
+          "url": "https://huggingface.co/yoakiyama/MSA-Pairformer"
+        }
+      ],
+      "sources": [
+        "https://api.crossref.org/works/10.1016/j.cell.2026.06.029",
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42480528",
+        "https://api.biorxiv.org/details/biorxiv/10.1101/2025.08.02.668173",
+        "https://api.github.com/repos/yoakiyama/MSA_Pairformer",
+        "https://huggingface.co/api/models/yoakiyama/MSA-Pairformer",
+        "https://huggingface.co/yoakiyama/MSA-Pairformer/raw/main/LICENSE"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "MSA-Pairformer",
+        "MSA_Pairformer"
+      ],
+      "date": null
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://api.crossref.org/works/10.1016/j.cell.2026.06.029",
+      "https://api.crossref.org/works?query.bibliographic=MSA+Pairformer+protein+protein+interactions",
+      "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%22MSA+Pairformer%22",
+      "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42480528",
+      "https://api.biorxiv.org/details/biorxiv/10.1101/2025.08.02.668173",
+      "https://api.github.com/repos/yoakiyama/MSA_Pairformer",
+      "https://api.github.com/repos/yoakiyama/MSA_Pairformer/contents/LICENSE",
+      "https://api.github.com/repos/yoakiyama/MSA_Pairformer/contents/README.md",
+      "https://huggingface.co/api/models/yoakiyama/MSA-Pairformer",
+      "https://huggingface.co/api/models/yakiyama/MSA-Pairformer",
+      "https://huggingface.co/yoakiyama/MSA-Pairformer/raw/main/LICENSE"
+    ]
+  },
+  {
+    "name": "ProLLaMA",
+    "verdict": "accept",
+    "reason": "OUT-OF-WINDOW BACKFILL, not a new release - the parent should confirm the curator wants 2024 entries before merging. Verification itself is clean. arXiv API for 2402.16445 returns 'ProLLaMA: A Protein Large Language Model for Multi-Task Protein Language Processing', published 2024-02-26T09:43:52Z, latest version updated 2026-08-13, comment field 'IEEE Transactions on Artificial Intelligence', authors Liuzhenghao Lv, Zongying Lin, Hao Li, Yuyang Liu, Jiaxi Cui, Calvin Yu-Chian Chen, Li Yuan, Yonghong Tian - not withdrawn. Artifacts verified officially owned: github.com/PKU-YuanGroup/ProLLaMA (Li Yuan's PKU group, created 2024-02-24, 207 stars, Apache-2.0) and its README links the weights directly, which settles the ownership question the discovery lane left open - the HF user GreatCaptainNemo is the authors' account, not a re-upload. Both checkpoints resolved and are ungated: GreatCaptainNemo/ProLLaMA_Stage_1 (created 2024-04-25, 995 downloads, safetensors + pytorch bins) and GreatCaptainNemo/ProLLaMA (created 2024-02-24, 389 downloads). Scope: two-stage pretrained protein LM covering both generation (family/superfamily-conditioned sequence generation, with or without an amino-acid prefix) and understanding (superfamily prediction), with the Stage-1 checkpoint reusable as a general protein backbone - broader than one task. LICENCE CONFLICT worth recording: the HF cards carry license: apache-2.0 in metadata but the card body says to follow the Llama 2 licence; both permit commercial use, so noncommercial:false holds either way, but the effective terms are the Llama 2 Community Licence (>700M MAU carve-out, acceptable-use policy) rather than pure Apache-2.0. IEEE TAI acceptance is attested only by the arXiv comment field; I did NOT fetch the IEEE page, so no IEEE URL is recorded.",
+    "licence_quote": "GitHub LICENSE (PKU-YuanGroup/ProLLaMA): 'Apache License / Version 2.0, January 2004' (GitHub API license.spdx_id = 'Apache-2.0'). HF card metadata for both GreatCaptainNemo/ProLLaMA and GreatCaptainNemo/ProLLaMA_Stage_1: 'license: apache-2.0'. HF card body, both models: 'ProLLaMA is based on Llama-2-7b, so please follow the license of Llama2.' / 'ProLLaMA_Stage_1 is based on Llama-2-7b, so please follow the license of Llama2.' Both HF repos gated:false.",
+    "record": {
+      "name": "ProLLaMA",
+      "modality": "protein",
+      "description": "Llama-2-7B-based multitask protein large language model trained in two stages - continued pretraining on protein sequences (ProLLaMA_Stage_1) followed by instruction tuning - so that a single model handles both controllable superfamily-conditioned sequence generation and protein understanding tasks such as superfamily prediction. Accepted by IEEE Transactions on Artificial Intelligence in 2025 per the arXiv metadata.",
+      "io": "natural-language instruction such as '[Generate by superfamily] Superfamily=<...>' or '[Determine superfamily] Seq=<...>', optionally with an amino-acid prefix -> generated protein sequence or predicted superfamily label",
+      "status": "Open weights on Hugging Face (ungated); code Apache-2.0, weights derived from Llama-2-7B and subject to the Llama 2 licence",
+      "use_cases": "controllable protein sequence generation by superfamily, prefix-conditioned generation, protein superfamily prediction, mutation-effect scripting, general protein LM backbone for instruction-style tasks",
+      "year": 2024,
+      "paper_links": [
+        {
+          "label": "arXiv:2402.16445",
+          "url": "https://arxiv.org/abs/2402.16445"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/PKU-YuanGroup/ProLLaMA"
+        },
+        {
+          "label": "Hugging Face (instruction-tuned)",
+          "url": "https://huggingface.co/GreatCaptainNemo/ProLLaMA"
+        },
+        {
+          "label": "Hugging Face (Stage 1 backbone)",
+          "url": "https://huggingface.co/GreatCaptainNemo/ProLLaMA_Stage_1"
+        }
+      ],
+      "sources": [
+        "http://export.arxiv.org/api/query?id_list=2402.16445",
+        "https://api.github.com/repos/PKU-YuanGroup/ProLLaMA",
+        "https://huggingface.co/api/models/GreatCaptainNemo/ProLLaMA",
+        "https://huggingface.co/api/models/GreatCaptainNemo/ProLLaMA_Stage_1",
+        "https://huggingface.co/GreatCaptainNemo/ProLLaMA/raw/main/README.md"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "ProLLaMA_Stage_1"
+      ],
+      "date": null
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "http://export.arxiv.org/api/query?id_list=2402.16445",
+      "https://api.github.com/repos/PKU-YuanGroup/ProLLaMA",
+      "https://api.github.com/repos/PKU-YuanGroup/ProLLaMA/contents/LICENSE",
+      "https://api.github.com/repos/PKU-YuanGroup/ProLLaMA/contents/README.md",
+      "https://huggingface.co/api/models?author=GreatCaptainNemo",
+      "https://huggingface.co/api/models/GreatCaptainNemo/ProLLaMA",
+      "https://huggingface.co/api/models/GreatCaptainNemo/ProLLaMA_Stage_1",
+      "https://huggingface.co/GreatCaptainNemo/ProLLaMA/raw/main/README.md",
+      "https://huggingface.co/GreatCaptainNemo/ProLLaMA_Stage_1/raw/main/README.md"
+    ]
+  },
+  {
+    "name": "UTRGen",
+    "verdict": "accept",
+    "reason": "Preprint verified via bioRxiv API: DOI 10.64898/2026.06.26.734691, 'UTRGen: A unified framework for full-spectrum design of mRNA 5' UTRs', Wang/Chen/Zhu/Fang/Cheng/Lang/Zhang/Huang/Li, corresponding Xiaolin Li (Hangzhou Institute of Medicine, CAS), posted 2026-06-27, v1, cc_by_nc, not withdrawn, published_doi NA. Artifact officially owned: github.com/HIM-AIM/UTRGen - org slug HIM-AIM matches the Hangzhou Institute of Medicine affiliation; created 2026-05-13, last pushed 2026-07-05, MIT, 0 stars, not archived, description 'Code Repository for UTRGen paper.' Repo contains the full pipeline (pretrain/, downstream/{te_el,mrl,ires}/, rl/, generate/) matching the paper's four stages. I CLOSED THE GAP the discovery lane flagged: the checkpoint link resolves. The Google Drive folder https://drive.google.com/drive/folders/1E4TYXN48wdDru_-ETVxu2UWYSEKvO0wr returned HTTP 200 with no sign-in wall and title 'UTRGen - Disk Google', and its listing contains exactly two shared entries, aria-labelled 'ckpts.zip Compressed archive Shared' and 'data.zip Compressed archive Shared'. RESIDUAL CAVEAT, stated precisely: I confirmed the archives are publicly listed and the folder is world-readable, but I did not download or open ckpts.zip, so the specific contents (which checkpoints, what sizes) are UNVERIFIED, and Google Drive is not a permanent archive. Scope: explicit Stage-I autoregressive pretraining on multi-species 5' UTR corpora producing, in the README's own words, 'a general-purpose backbone for downstream tasks', reused across TE/EL prediction, MRL prediction, IRES classification, GRPO-based design and de novo generation - textbook pretrained/reusable/multi-task. Note the small backbone (GPT-2, 8 layers, 16 heads, 384 hidden, 256 ctx) if the index has a scale threshold.",
+    "licence_quote": "Repo LICENSE (github.com/HIM-AIM/UTRGen/LICENSE): 'MIT License / Copyright (c) 2025 UTRGen / Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell...'. README: 'This project is licensed under the MIT License - see the LICENSE file for details.' GitHub API license.spdx_id = 'MIT'. No separate licence is attached to the Google Drive checkpoint archive. Distinct from the preprint TEXT, which bioRxiv records as cc_by_nc - that NC term covers the manuscript, not the code or weights.",
+    "record": {
+      "name": "UTRGen",
+      "modality": "rna",
+      "description": "Unified 5' UTR modelling framework built on a small GPT-2 decoder (8 layers, 16 heads, 384 hidden, 256-token context) autoregressively pretrained on multi-species 5' UTR sequence and then adapted, via lightweight prediction heads, to translation efficiency, expression level, mean ribosome load and IRES identification, plus GRPO-based function-guided sequence design. Reported state of the art across 14 benchmark datasets.",
+      "io": "single-nucleotide prompt or 5' UTR sequence -> generated 5' UTR sequences (FASTA), or predicted translation efficiency / expression level / mean ribosome load / IRES class",
+      "status": "MIT-licensed code on GitHub; pretrained checkpoints distributed as a publicly shared Google Drive archive",
+      "use_cases": "de novo 5' UTR generation, translation efficiency and expression level prediction, mean ribosome load prediction, IRES identification, reinforcement-learning-guided mRNA UTR design",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (2026-06-27)",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.06.26.734691v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/HIM-AIM/UTRGen"
+        },
+        {
+          "label": "Checkpoints and data (Google Drive)",
+          "url": "https://drive.google.com/drive/folders/1E4TYXN48wdDru_-ETVxu2UWYSEKvO0wr"
+        }
+      ],
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.06.26.734691v1",
+        "https://github.com/HIM-AIM/UTRGen",
+        "https://drive.google.com/drive/folders/1E4TYXN48wdDru_-ETVxu2UWYSEKvO0wr"
+      ],
+      "noncommercial": false,
+      "aliases": [],
+      "date": "2026-06-27"
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.06.26.734691",
+      "https://github.com/HIM-AIM/UTRGen",
+      "https://api.github.com/repos/HIM-AIM/UTRGen",
+      "https://api.github.com/repos/HIM-AIM/UTRGen/contents",
+      "https://api.github.com/repos/HIM-AIM/UTRGen/contents/README.md",
+      "https://api.github.com/repos/HIM-AIM/UTRGen/contents/LICENSE",
+      "https://drive.google.com/drive/folders/1E4TYXN48wdDru_-ETVxu2UWYSEKvO0wr?usp=sharing"
+    ]
+  },
+  {
+    "name": "Shifu-LMR",
+    "verdict": "accept",
+    "reason": "THE CORE JOB FOR THIS CANDIDATE IS DONE: the official artifact exists and I located it. A GitHub code search for 'Shifu-Corpus' surfaced github.com/Vicens-Lab/LMR - the org is the Vicens Lab, and the repo LICENSE names 'Gabriel Galvez and Quentin Vicens, Vicens Lab, Center for Nuclear Receptors and Cell Signaling, University of Houston', exactly matching the preprint's authors and corresponding institution, and its CITATION points at this preprint's DOI. The discovery lane missed it because the repo and the weight repos are named LMR, not Shifu. Repo created 2026-07-03, pushed 2026-07-17, MIT, not archived. Weights verified: four Hugging Face repos under GaboG7 (= Gabriel Cardenas Galvez, first author), all created 2026-07-03, all gated:false, private:false, each declaring license 'mit' and tagged 'shifu', each containing a real .pt checkpoint - LMR-v0 (289M, lmr_v0.pt, 3.47 GB), LMR-G (228M, lmr_g.pt, 2.74 GB), LMR-mini (65M = the paper's Shifu-LMR-Nano, lmr_mini.pt, 0.76 GB), LMR-Long (290M, 4096 context, lmr_long.pt, 3.47 GB). Preprint verified via bioRxiv API: DOI 10.64898/2026.07.15.738762, Galvez & Vicens, posted 2026-07-16, v1, cc_by_nc, not withdrawn. SCOPE, addressing the discovery lane's second caveat: these are masked-language-model-pretrained RNA backbones (HF pipeline_tag fill-mask), and the README offers them as 'a compact RNA language-model backbone to fine-tune', with configs and training code for continued pretraining and fine-tuning - that clears pretrained/reusable/broader-than-one-task, even though every evaluation in the paper is secondary structure. LANE SPLIT for the parent: Shifu-Corpus (HF dataset GaboG7/SHIFU-Corpus, 254,123 sequences, gated:false) and the Shifu Trifecta evaluation protocol are benchmark-lane items and should be filed separately, not folded into this record. Two caveats worth carrying: the 86M LMR-G variant is explicitly NOT released, and the 2D structure heads in models_2d/ are 'config only; no weights/scripts', so only the four foundational backbones are actually downloadable. Adoption is currently near zero (1 GitHub star, 0 reported HF downloads).",
+    "licence_quote": "Repo LICENSE (github.com/Vicens-Lab/LMR/LICENSE): 'MIT License / Copyright (c) 2026 Gabriel Galvez and Quentin Vicens / Vicens Lab, Center for Nuclear Receptors and Cell Signaling, University of Houston / Permission is hereby granted, free of charge, ... to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies'. Same file: 'NOTE ON DATA: SHIFU-Corpus is derived from six public databases (RNASSTR, bpRNA, RNAStrAlign, ArchiveII, DSSR, and RNAsolo) that retain their own licenses and terms of use. This MIT license covers the code in this repository only.' Weights are licensed separately and permissively: all four HF model repos declare cardData license 'mit', gated:false. The preprint TEXT is cc_by_nc per the bioRxiv record - that NC term covers the manuscript only, not the code or weights.",
+    "record": {
+      "name": "Shifu-LMR",
+      "modality": "rna",
+      "description": "Family of compact masked-language-model RNA backbones released as the model component of the Shifu framework, spanning 65M to 290M parameters including a 4,096-token long-context variant. The 65M Shifu-LMR-Nano is reported to reach micro-F1 0.789 on RNA secondary structure against RiNALMo's 0.627 at 650M parameters, and the family is released as fine-tunable backbones alongside the leakage-audited Shifu-Corpus dataset and the three-axis Shifu Trifecta evaluation protocol.",
+      "io": "RNA nucleotide sequence -> contextual residue embeddings and masked-token predictions, fine-tunable to base-pair / secondary-structure predictions",
+      "status": "Open weights: four MIT-licensed, ungated checkpoints on Hugging Face; code MIT on GitHub",
+      "use_cases": "RNA sequence representation learning, RNA secondary structure prediction after fine-tuning, leakage-free benchmarking baseline, laptop-scale RNA language modelling and continued pretraining",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (2026-07-16)",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.07.15.738762v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Vicens-Lab/LMR"
+        },
+        {
+          "label": "Hugging Face weights (LMR-nano / Shifu-LMR-Nano, 65M)",
+          "url": "https://huggingface.co/GaboG7/LMR-mini"
+        },
+        {
+          "label": "Hugging Face weights (LMR-v0, 289M)",
+          "url": "https://huggingface.co/GaboG7/LMR-v0"
+        },
+        {
+          "label": "Hugging Face weights (LMR-G, 228M)",
+          "url": "https://huggingface.co/GaboG7/LMR-G"
+        },
+        {
+          "label": "Hugging Face weights (LMR-Long, 290M, 4k context)",
+          "url": "https://huggingface.co/GaboG7/LMR-Long"
+        }
+      ],
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.07.15.738762v1",
+        "https://github.com/Vicens-Lab/LMR",
+        "https://huggingface.co/GaboG7/LMR-v0",
+        "https://huggingface.co/GaboG7/LMR-G",
+        "https://huggingface.co/GaboG7/LMR-mini",
+        "https://huggingface.co/GaboG7/LMR-Long"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "Shifu",
+        "LMR",
+        "Shifu-LMR-Nano",
+        "LMR-nano",
+        "LMR-v0",
+        "LMR-G",
+        "LMR-Long",
+        "Language Models for RNA"
+      ],
+      "date": "2026-07-16"
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.07.15.738762",
+      "https://api.github.com/search/code?q=Shifu-Corpus",
+      "https://api.github.com/repos/Vicens-Lab/LMR",
+      "https://api.github.com/repos/Vicens-Lab/LMR/contents",
+      "https://api.github.com/repos/Vicens-Lab/LMR/contents/README.md",
+      "https://api.github.com/repos/Vicens-Lab/LMR/contents/LICENSE",
+      "https://huggingface.co/api/models?author=GaboG7",
+      "https://huggingface.co/api/datasets?author=GaboG7",
+      "https://huggingface.co/api/models/GaboG7/LMR-v0",
+      "https://huggingface.co/api/models/GaboG7/LMR-G",
+      "https://huggingface.co/api/models/GaboG7/LMR-mini",
+      "https://huggingface.co/api/models/GaboG7/LMR-Long"
+    ]
+  }
+]

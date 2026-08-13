@@ -1,0 +1,141 @@
+[
+  {
+    "id": "bfm-chemberta-3",
+    "name": "ChemBERTa-3",
+    "condition": "Reconsider after platform/framework scope and explicit reuse terms for the released framework and model artifacts are verified.",
+    "verdict": "promote",
+    "evidence_urls": [
+      "https://doi.org/10.1039/D5DD00348B",
+      "https://github.com/deepforestsci/chemberta3",
+      "https://raw.githubusercontent.com/deepforestsci/chemberta3/main/LICENSE",
+      "https://raw.githubusercontent.com/deepforestsci/chemberta3/main/README.md",
+      "https://huggingface.co/DeepChem/MoLFormer-c3-1.1B",
+      "https://huggingface.co/DeepChem/MoLFormer-c3-1.1B/raw/main/README.md",
+      "https://huggingface.co/DeepChem/ChemBERTa-100M-MLM",
+      "https://huggingface.co/DeepChem/ChemBERTa-100M-MLM/raw/main/README.md",
+      "https://api.github.com/repos/deepforestsci/chemberta3",
+      "https://huggingface.co/api/models?author=DeepChem&limit=100"
+    ],
+    "licence_quote": "Repository LICENSE (https://raw.githubusercontent.com/deepforestsci/chemberta3/main/LICENSE): \"MIT License / Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \\\"Software\\\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software\". Model-card front matter on https://huggingface.co/DeepChem/MoLFormer-c3-1.1B/raw/main/README.md and https://huggingface.co/DeepChem/ChemBERTa-100M-MLM/raw/main/README.md: \"license: mit\" (HF API also returns tag \"license:mit\" and cardData.license = \"mit\" for both). Journal article itself is under CC BY-NC 3.0 per Crossref licence field (http://creativecommons.org/licenses/by-nc/3.0/) - that covers the article, not the software.",
+    "rationale": "Both halves of the condition are now satisfied from primary sources fetched today. (1) Scope: the work is peer-reviewed and published - Crossref CSL JSON for DOI 10.1039/D5DD00348B returns title \"ChemBERTa-3: an open source training framework for chemical foundation models\", container-title \"Digital Discovery\", volume 5, issue 2, pages 662-685, created 2026-01-19, publisher Royal Society of Chemistry, and the deposited abstract reads \"An overview of ChemBERTa-3, an open-source training and benchmarking framework designed to train and fine-tune large-scale chemical foundation models\" - i.e. the platform/training-framework classification the record already carries (modality \"platform\") is confirmed by the published primary source, not inferred. (2) Terms: GitHub API for deepforestsci/chemberta3 returns license.spdx_id \"MIT\" and the repo root contains a LICENSE file whose text is verbatim MIT (quoted above); repo last pushed 2026-07-23. The released model artifacts named in the repo README (\"The pretrained models are also available on the Hugging Face Hub at https://huggingface.co/DeepChem\") carry MIT in their card front matter: DeepChem/MoLFormer-c3-1.1B (created 2025-06-13, lastModified 2026-02-25, files include model.safetensors and deepchem_ckpt.pt, ungated) and DeepChem/ChemBERTa-100M-MLM (created 2025-05-09, lastModified 2025-08-18, files include model.safetensors, ungated). The MoLFormer-c3-1.1B card also cites the journal version: \"ChemBERTa-3: An Open Source Training Framework for Chemical Foundation Models. RSC Digital Discovery 2026; doi:10.1039/D5DD00348B\". CAVEATS the catalog should carry: (a) DeepChem/MoLFormer-c3-550M and DeepChem/MoLFormer-c3-100M currently contain only README.md and .gitattributes - no weight files - so only the 1.1B c3-MoLFormer and ChemBERTa-100M-MLM are verified downloadable weights; (b) the older DeepChem/ChemBERTa-10M-MLM (2022) carries no licence declaration and should not be cited as a ChemBERTa-3 artifact; (c) the record's paper_link should be upgraded from the ChemRxiv PDF to the DOI. Release dates: framework artifacts on HF 2025-05-09 / 2025-06-13; journal version 2026-01-19.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-genecompass",
+    "name": "GeneCompass",
+    "condition": "Reconsider when explicit code and checkpoint reuse terms are confirmed from an official source.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://api.github.com/repos/xCompass-AI/GeneCompass",
+      "https://api.github.com/repos/xCompass-AI/GeneCompass/contents",
+      "https://raw.githubusercontent.com/xCompass-AI/GeneCompass/master/README.md",
+      "https://www.scidb.cn/en/anonymous/SUZOdk1y",
+      "https://www.nature.com/articles/s41422-024-01034-y"
+    ],
+    "licence_quote": "UNVERIFIED - no licence statement found. GitHub API returns \"license\": null for xCompass-AI/GeneCompass; the repository root listing (README.md, __init__.py, data, downstream_tasks, genecompass, img, preprocess, pretraining, prior_knowledge, requirements.txt, scdata, setup.sh) contains no LICENSE file; a case-insensitive grep for \"licen\" / \"terms of use\" over the README returns no match.",
+    "rationale": "Checked today: (1) GitHub API metadata for xCompass-AI/GeneCompass - license null, repo not archived, last pushed 2026-02-10; (2) repository root contents listing - no LICENSE/COPYING file; (3) full README - it states \"This is the official repository of Genecompass ... which provides training&finetuning code and pretraining checkpoints\" and distributes GeneCompass_Small and GeneCompass_Base via https://www.scidb.cn/en/anonymous/SUZOdk1y, but contains no licence or reuse-terms statement anywhere; (4) the ScienceDB anonymous checkpoint page fetched (HTTP 200, ~868 kB) renders client-side and returned only the site's generic licence-picker template strings, no dataset-specific licence for this deposit. FETCH FAILURE to report: https://www.nature.com/articles/s41422-024-01034-y (Cell Research article) 303-redirects to idp.nature.com authorization and could not be fetched this session, so any code-availability statement in the paper remains unchecked. Condition unmet: code terms absent, checkpoint terms unverifiable.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-hybridna",
+    "name": "HybriDNA",
+    "condition": "Reconsider when a provenance-confirmed official reusable model artifact is released and verified.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2502.10807",
+      "https://hybridna-project.github.io/HybriDNA-Project/",
+      "https://api.github.com/repos/microsoft/HybriDNA",
+      "https://huggingface.co/api/models?filter=arxiv:2502.10807",
+      "https://huggingface.co/Mishamq/HybriDNA-300M",
+      "https://huggingface.co/Mishamq/HybriDNA-300M/raw/main/README.md",
+      "https://huggingface.co/api/models/Mishamq/HybriDNA-3B",
+      "https://huggingface.co/api/models/Mishamq/HybriDNA-7B",
+      "https://huggingface.co/api/users/Mishamq/overview"
+    ],
+    "licence_quote": "Candidate (provenance NOT confirmed as official) - front matter of https://huggingface.co/Mishamq/HybriDNA-300M/raw/main/README.md: \"license: apache-2.0\"; HF API returns tag \"license:apache-2.0\" and cardData.license \"apache-2.0\" for HybriDNA-300M, -3B and -7B, all ungated, all containing safetensors weights.",
+    "rationale": "Material change since the last review, but not enough to clear the provenance bar. Fetched today: the arXiv abs page for 2502.10807 (Microsoft Research AI for Science authorship; comments field gives the official project page); the official project page https://hybridna-project.github.io/HybriDNA-Project/ , which lists the author block \"Microsoft Research AI for Science\" and a \"Code\" button pointing to https://github.com/microsoft/HybriDNA - that repository returns 404 \"Not Found\" from the GitHub API, so the only official artifact locator is dead. Three weight repos now exist on Hugging Face - Mishamq/HybriDNA-300M (created 2026-01-15, lastModified 2026-05-05), -3B and -7B - each Apache-2.0, ungated, with model.safetensors plus custom modeling/tokenizer code, and each tagged arxiv:2502.10807 (confirmed by the HF arXiv filter, which returns exactly these three). Provenance is suggestive but unconfirmed: the HF account Mishamq has fullname \"Mingqian Ma\", matching the paper's first author, but its listed orgs are \"umich\" and \"CladeTeam\", not Microsoft, and no official page (project page, arXiv listing, or any Microsoft repo) links to these model repos - the arxiv tag is uploader-asserted. The model card itself does not name the authors or Microsoft. Under the prefer-HOLD rule this is ambiguous evidence, so HOLD stands; a single official link (a live microsoft/HybriDNA repo or a project-page weights link) would flip it to promote.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-genemamba",
+    "name": "GeneMamba",
+    "condition": "Reconsider when explicit reuse terms for the official code and weights are confirmed.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://api.github.com/repos/MineSelf2016/GeneMamba",
+      "https://api.github.com/repos/MineSelf2016/GeneMamba/contents",
+      "https://raw.githubusercontent.com/MineSelf2016/GeneMamba/main/README.md",
+      "https://huggingface.co/api/models/mineself2016/GeneMamba",
+      "https://huggingface.co/mineself2016/GeneMamba/raw/main/LICENSE",
+      "https://huggingface.co/mineself2016/GeneMamba/raw/main/README.md"
+    ],
+    "licence_quote": "Weights side only, and non-canonical: https://huggingface.co/mineself2016/GeneMamba/raw/main/LICENSE opens \"Apache License / Version 2.0, January 2004\" but its body is NOT the verbatim Apache-2.0 text - e.g. the patent grant reads \"irrevocable (except as stated in Section 3.F)\" (canonical Apache-2.0 has no Section 3 subsections and reads \"except as stated in this section\"), and the Derivative Works definition ends \"...except that the work that constitutes Collection will not be considered a Derivative Work\" while omitting the canonical \"merely link (or bind by name) to the interfaces of the Work\" carve-out. Code side: no licence at all - GitHub API returns \"license\": null for MineSelf2016/GeneMamba and the root listing has no LICENSE file.",
+    "rationale": "Checked today: GitHub API metadata and root contents for MineSelf2016/GeneMamba (license null; files .gitattributes, .gitignore, README.md, ckpts, config.json, data_download, datasets, examples, figures, gene_tokenizer.json, genemamba, preprocess, pretrain, requirements.txt - no LICENSE); the GitHub README, which points to the HF repo (\"For more convenient usage, please visit https://huggingface.co/mineself2016/GeneMamba\") but states no licence; HF API metadata for mineself2016/GeneMamba (created 2026-03-21, lastModified 2026-03-23, ungated, model.safetensors present, cardData has NO license field and there is no license: tag); and the LICENSE file inside the HF repo, whose text is a modified, non-verbatim Apache-2.0 (deviations quoted above). So the official code carries no terms at all, and the weights carry a licence file that is labelled Apache-2.0 but whose granted terms differ from canonical Apache-2.0 - exactly the kind of ambiguity the register resolves as HOLD. The catalog should also not display this as \"Apache-2.0\" until the discrepancy is resolved by the authors.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-scmmgpt",
+    "name": "scMMGPT",
+    "condition": "Reconsider when official reusable weights and explicit reuse terms are both confirmed.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://api.github.com/repos/syr-cn/scMMGPT",
+      "https://api.github.com/repos/syr-cn/scMMGPT/contents",
+      "https://raw.githubusercontent.com/syr-cn/scMMGPT/main/README.md",
+      "https://huggingface.co/api/models?search=scMMGPT",
+      "https://huggingface.co/api/models?author=syr-cn"
+    ],
+    "licence_quote": "UNVERIFIED - none exists. GitHub API returns \"license\": null for syr-cn/scMMGPT; the root listing (README.md, data_provider, model, padding_data.py, preprocess.py, scripts, stage1.py, stage2.py, teaser-radar.png, training_2.pdf, utils.py) contains no LICENSE file; the entire README is the single line \"# scMMGPT\".",
+    "rationale": "Nothing has moved since the last review. Checked today: GitHub API metadata (license null, last pushed 2025-07-29, unchanged since before the previous review), the repository root listing (source skeleton only - no LICENSE, no weights, no checkpoint links), and the README, which contains one heading line and no licence, checkpoint or Hugging Face reference. Hugging Face: a model search for \"scMMGPT\" returns zero hits and the author listing for syr-cn returns no models. Both halves of the condition (reusable weights, explicit terms) remain unmet.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-plip-pathology-language-image-pretraining",
+    "name": "PLIP (Pathology Language-Image Pretraining)",
+    "condition": "Reconsider when explicit reuse terms for the official code and weights are confirmed.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://api.github.com/repos/PathologyFoundation/plip",
+      "https://api.github.com/repos/PathologyFoundation/plip/contents",
+      "https://raw.githubusercontent.com/PathologyFoundation/plip/main/README.md",
+      "https://huggingface.co/api/models/vinid/plip",
+      "https://huggingface.co/vinid/plip/raw/main/README.md"
+    ],
+    "licence_quote": "No reuse licence anywhere. GitHub API returns \"license\": null for PathologyFoundation/plip and the root listing (.gitignore, README.md, assets, plip.py, reproducibility, requirements.txt, setup.py) has no LICENSE file; the README contains no \"licen\"/\"terms\"/\"commercial\" string. The HF weights repo vinid/plip has empty YAML front matter (literally \"{}\", cardData empty, no license tag, no LICENSE file among its 8 files); the only use-terms text on the card is inherited from the OpenAI CLIP card and is restrictive rather than permissive: \"Any deployed use case of the model - whether commercial or not - is currently out of scope.\" The card adds a disclaimer that results \"are not intended to constitute medical advice\" and a Twitter-policy data clause.",
+    "rationale": "Checked today: GitHub API metadata for PathologyFoundation/plip (license null, last pushed 2023-09-20 - unchanged), the repo root listing, the README (Resources section links only the HF demo, the HF model and the Nature Medicine paper; no licence section), HF API metadata for vinid/plip (created 2023-03-04, lastModified 2023-03-31, ungated, cardData {}), and the raw model card. No grant of reuse rights exists on either official artifact, so the condition is unmet. Additional flag for the catalog: the model card's inherited CLIP language declares any deployed use out of scope, which sits badly with the record's noncommercial=false field - if the entry is ever promoted, the terms field must reproduce that wording rather than imply an open licence.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-next-mol",
+    "name": "NExT-Mol",
+    "condition": "Reconsider when explicit reuse terms for the official code and checkpoints are confirmed.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://api.github.com/repos/acharkq/next-mol",
+      "https://api.github.com/repos/acharkq/NExT-Mol/contents",
+      "https://raw.githubusercontent.com/acharkq/NExT-Mol/main/README.md",
+      "https://huggingface.co/api/models/acharkq/MoLlama",
+      "https://huggingface.co/acharkq/MoLlama/raw/main/README.md",
+      "https://api.osf.io/v2/nodes/gqy39/"
+    ],
+    "licence_quote": "UNVERIFIED - no licence on any of the three official locations. GitHub API returns \"license\": null for acharkq/NExT-Mol (repo redirects from acharkq/next-mol) and the root listing contains no LICENSE file; the HF weights repo acharkq/MoLlama has cardData null, no license tag, no LICENSE file, and a card consisting only of a load snippet; the OSF project gqy39 that hosts the DMT-B/DMT-L checkpoints returns license relationship null and node_license null from the OSF API.",
+    "rationale": "Checked today: GitHub metadata and root contents for acharkq/NExT-Mol (last pushed 2025-08-23; no LICENSE); the README, which links the pretrained MoLlama LLM at https://huggingface.co/acharkq/MoLlama and the DMT-B/DMT-L conformer checkpoints at OSF https://osf.io/gqy39/ , states \"If you use our codes or checkpoints, please cite your paper\" (a citation request, not a licence) and still warns \"We are still in in-progress open sourcing all parts of NExT-Mol\"; the HF API record and raw card for acharkq/MoLlama (created 2023-12-21, lastModified 2025-02-22, ungated, model.safetensors present, no licence declared); and the OSF API record for node gqy39 (title \"NEXT-Mol\", public, date_modified 2025-06-17) which carries no licence. Artifacts are downloadable but their reuse terms remain undeclared, so the condition is unmet.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-lingshu-cell",
+    "name": "Lingshu-Cell",
+    "condition": "Reconsider when the official Hugging Face collection contains a released reusable model artifact with verified terms.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://huggingface.co/api/collections?owner=Alibaba-DAMO-Academy",
+      "https://huggingface.co/collections/Alibaba-DAMO-Academy/lingshu-cell-69cc8398135cd015863869cb",
+      "https://huggingface.co/api/models?author=Alibaba-DAMO-Academy",
+      "https://alibaba-damo-academy.github.io/lingshu-cell-homepage/",
+      "https://huggingface.co/api/models/bibona/lingshu-cell"
+    ],
+    "licence_quote": "No official artifact exists to licence. The official collection Alibaba-DAMO-Academy/lingshu-cell-69cc8398135cd015863869cb contains exactly one item, of type \"paper\" (arXiv 2603.25240), and zero models - by contrast with sibling DAMO collections (Photon, OmniCT, RynnBrain) which do list model repos. A third-party repo bibona/lingshu-cell declares \"license: mit\", but it is not an Alibaba DAMO Academy artifact and cannot supply the record's terms.",
+    "rationale": "Checked today: the Hugging Face collections API for owner Alibaba-DAMO-Academy - the Lingshu-Cell collection still holds only the paper (id 2603.25240, matching the record's arXiv ID) and no model; a model listing for author Alibaba-DAMO-Academy filtered on \"lingshu\" returns nothing (the related Lingshu-Med collection points at the separate lingshu-medical-mllm org, which is the medical MLLM, not Lingshu-Cell); and the official project page https://alibaba-damo-academy.github.io/lingshu-cell-homepage/ , whose only outbound resource link is https://arxiv.org/pdf/2603.25240 - no code, weights or endpoint link anywhere on the page. One new fact worth recording without acting on it: an unaffiliated user repo bibona/lingshu-cell (created 2026-07-20, MIT, containing parse_cytokine_85M.pth, parse_pbmc_uncond_85M.pth, vcc_perturbation_85M.pth and gene_embeddings.npz) has appeared; provenance is not established and it must not be treated as the official artifact. Condition unmet.",
+    "checked": "2026-08-13"
+  }
+]

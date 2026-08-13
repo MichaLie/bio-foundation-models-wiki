@@ -1,0 +1,235 @@
+[
+ {
+  "name": "MarinDNA",
+  "verdict": "accept",
+  "reason": "Primary release document verified: Open Athena blog post 'A 1B standard Transformer rivals Evo 2 40B on variant effect prediction', dated August 3 2026, authors Gonzalo Benegas & Eric Czech (no preprint/DOI exists; the GitHub README confirms the blog is the citable release write-up). Artifacts are official: GitHub Open-Athena/marin-dna (created 2025-11-25, pushed 2026-08-12, Apache-2.0, homepage openathena.ai/marin-dna/) and the marin-dna HF org, whose model cards point back at the same blog post and at wandb runs under the Open Athena author (eric-czech). HF API confirms marin-dna/marin-dna-exp135-m5.1 createdAt 2026-07-23, 442 downloads, gated false, license apache-2.0; the eight scaling-ladder checkpoints (h640-p46M ... h2944-p4B) createdAt 2026-08-06, all apache-2.0, gated false. Scope: general pretrained nucleotide-level causal LM used for VEP, likelihood scoring and embeddings, not a single-task predictor. Note for the record wording: the context window is unusually short (256 tokens = BOS + 255 bases).",
+  "licence_quote": "Model card table: '| License | Apache-2.0 |'; HF API cardData {\"license\": \"apache-2.0\"}, gated false. GitHub Open-Athena/marin-dna LICENSE begins 'Apache License / Version 2.0, January 2004' and the GitHub API reports spdx_id Apache-2.0. Weights and code are both Apache-2.0; no gating, no NC clause anywhere.",
+  "record": {
+   "name": "MarinDNA",
+   "modality": "dna",
+   "description": "Nucleotide-level causal DNA language model family from Open Athena, trained with the Marin framework on curated vertebrate genome regions (CDS, upstream, downstream, enhancer and ncRNA intervals). The release comprises the 1.12B-parameter m5.1 flagship plus an eight-model 46M-4B parameter-scaling ladder, and reports the 1B model matching Evo 2 40B on zero-shot Mendelian variant-effect prediction at far lower training compute.",
+   "io": "DNA sequence (up to 255 bases per 256-token context) -> nucleotide likelihoods, embeddings and variant-effect scores",
+   "status": "Public weights + code, Apache-2.0; released via an Open Athena blog write-up rather than a paper",
+   "use_cases": "Zero-shot variant effect prediction, genomic representation learning, DNA model scaling research",
+   "year": "2026",
+   "paper_links": [
+    {
+     "label": "Open Athena release write-up",
+     "url": "https://openathena.ai/blog/marin-dna/"
+    }
+   ],
+   "code_links": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/Open-Athena/marin-dna"
+    },
+    {
+     "label": "Hugging Face (m5.1 1B)",
+     "url": "https://huggingface.co/marin-dna/marin-dna-exp135-m5.1"
+    },
+    {
+     "label": "Hugging Face org",
+     "url": "https://huggingface.co/marin-dna"
+    }
+   ],
+   "sources": [
+    "https://openathena.ai/blog/marin-dna/",
+    "https://github.com/Open-Athena/marin-dna",
+    "https://huggingface.co/marin-dna/marin-dna-exp135-m5.1",
+    "https://huggingface.co/api/models/marin-dna/marin-dna-exp135-m5.1",
+    "https://huggingface.co/marin-dna/marin-dna-scaling-v0.5-h1920-p1B",
+    "https://raw.githubusercontent.com/Open-Athena/marin-dna/main/LICENSE"
+   ],
+   "noncommercial": false,
+   "aliases": [
+    "MarinDNA m5.1",
+    "marin-dna"
+   ]
+  },
+  "reconsider_when": null,
+  "fetched": [
+   "https://openathena.ai/blog/marin-dna/",
+   "https://github.com/Open-Athena/marin-dna",
+   "https://raw.githubusercontent.com/Open-Athena/marin-dna/main/LICENSE",
+   "https://raw.githubusercontent.com/marin-community/marin/main/LICENSE",
+   "https://huggingface.co/api/models/marin-dna/marin-dna-exp135-m5.1",
+   "https://huggingface.co/marin-dna/marin-dna-exp135-m5.1/raw/main/README.md",
+   "https://huggingface.co/api/models/marin-dna/marin-dna-scaling-v0.5-h1920-p1B",
+   "https://huggingface.co/marin-dna/marin-dna-scaling-v0.5-h1920-p1B/raw/main/README.md",
+   "https://huggingface.co/api/models?author=marin-dna",
+   "https://huggingface.co/api/collections/marin-dna/a-1b-standard-transformer-rivals-evo-2-40b-on-vep",
+   "https://api.github.com/repos/Open-Athena/marin-dna",
+   "https://api.github.com/repos/marin-community/marin"
+  ]
+ },
+ {
+  "name": "CENO / CENO-P",
+  "verdict": "accept",
+  "reason": "Primary document verified by download: a 51-page technical report PDF at the official project page (HTTP 200, last-modified 2026-07-30), first page reading 'CENO: A Genome-Scale World Model for Evolutionary Sequence Interpretation and Programmable Regulatory Design', authors Mingqian Ma, Yucheng Wu, Xin Chen, Feifei Jiang et al., lead affiliation Shanghai Artificial Intelligence Laboratory; abstract matches the released checkpoints (Mamba + sparse attention + MoE autoregressive backbone, 300M/600M/1B scales, staged 8k -> 131k -> 1M-token curriculum). No journal or preprint DOI exists - the report is self-hosted, so the record cites it as a technical report. Artifacts official: GitHub CladeTeam/CENO (created 2026-07-08, pushed 2026-07-22, Apache-2.0, correspondence renyuchen@pjlab.org.cn, Shanghai AI Lab) ships model code, VEP pipeline and generation demo; HF org CladeTeam holds 15 CENO/CENO-P checkpoints all createdAt 2026-07-10, gated false, apache-2.0 (verified for CENO-1B-base and CENO-P-1B), each with LICENSE and NOTICE files in the weights repo. Scope: general long-context genomic LM for generation, embeddings and VEP.",
+  "licence_quote": "Model card: 'Apache-2.0. The bundled model code is derived from NVIDIA's Nemotron-H Hugging Face implementation (Apache-2.0); the tokenizer is derived from the Arc Institute Evo2 CharLevelTokenizer (Apache-2.0). See the LICENSE and NOTICE files in this repository for full attribution.' HF API cardData {\"license\": \"apache-2.0\"}, gated false; the weights repo carries LICENSE (11,357 bytes) and NOTICE. GitHub repo LICENSE begins 'Apache License / Version 2.0, January 2004'. Upstream composition is Apache-2.0 throughout, so weights and code are both permissive.",
+  "record": {
+   "name": "CENO",
+   "modality": "dna",
+   "description": "Long-context autoregressive DNA foundation model family from Shanghai Artificial Intelligence Laboratory, built on a Nemotron-H style Mamba / sparse-attention / mixture-of-experts hybrid backbone with character-level tokenization and trained at 80M-1B parameters through a staged 8k to 131k to 1M-token context curriculum. CENO-P variants are post-trained on multi-species alignments for variant-effect scoring by delta log-likelihood.",
+   "io": "DNA sequence (contexts up to ~1M tokens) -> sequence likelihoods, embeddings, variant-effect scores or generated DNA",
+   "status": "Public code + 15 checkpoints on Hugging Face, Apache-2.0; documented by a self-hosted technical report (no journal or preprint DOI)",
+   "use_cases": "Variant effect prediction, long-context genome modelling, regulatory sequence design, embedding extraction",
+   "year": "2026",
+   "paper_links": [
+    {
+     "label": "Technical report (PDF)",
+     "url": "https://cladeteam.github.io/ceno.github.io/assets/paper/CENO_Technical_Report_Version.pdf"
+    },
+    {
+     "label": "Project page",
+     "url": "https://cladeteam.github.io/ceno.github.io/"
+    }
+   ],
+   "code_links": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/CladeTeam/CENO"
+    },
+    {
+     "label": "Hugging Face (CENO-1B-base)",
+     "url": "https://huggingface.co/CladeTeam/CENO-1B-base"
+    },
+    {
+     "label": "Hugging Face org",
+     "url": "https://huggingface.co/CladeTeam"
+    }
+   ],
+   "sources": [
+    "https://cladeteam.github.io/ceno.github.io/",
+    "https://cladeteam.github.io/ceno.github.io/assets/paper/CENO_Technical_Report_Version.pdf",
+    "https://github.com/CladeTeam/CENO",
+    "https://huggingface.co/CladeTeam/CENO-1B-base",
+    "https://huggingface.co/api/models/CladeTeam/CENO-1B-base",
+    "https://huggingface.co/api/models/CladeTeam/CENO-P-1B"
+   ],
+   "noncommercial": false,
+   "aliases": [
+    "CENO-P",
+    "CladeTeam CENO"
+   ]
+  },
+  "reconsider_when": null,
+  "fetched": [
+   "https://huggingface.co/api/models/CladeTeam/CENO-1B-base",
+   "https://huggingface.co/CladeTeam/CENO-1B-base/raw/main/README.md",
+   "https://huggingface.co/api/models/CladeTeam/CENO-P-1B",
+   "https://huggingface.co/api/models?author=CladeTeam",
+   "https://raw.githubusercontent.com/CladeTeam/CENO/main/README.md",
+   "https://raw.githubusercontent.com/CladeTeam/CENO/main/LICENSE",
+   "https://api.github.com/repos/CladeTeam/CENO",
+   "https://api.github.com/orgs/CladeTeam/repos",
+   "https://cladeteam.github.io/ceno.github.io/",
+   "https://cladeteam.github.io/ceno.github.io/assets/paper/CENO_Technical_Report_Version.pdf"
+  ]
+ },
+ {
+  "name": "PlantHelixSeek",
+  "verdict": "hold",
+  "reason": "Model and provenance are real, but criterion 1 fails: there is no primary paper, preprint or technical report anywhere. The GitHub citation block is self-referential (@article{PlantHelixSeek2026, author = {YueChao WU}, url = {https://huggingface.co/zhangtaolab/PlantHelixSeek}}) and Europe PMC returns 0 hits for 'PlantHelixSeek' and 0 for 'HelixSeek'. The repo repeatedly refers to 'the paper's downstream validation' tasks, so a manuscript appears to be in preparation but is not public. Everything else checks out: HF zhangtaolab is the established plant-DNA-LM lab (PlantDNABERT/PlantDNAMamba/PlantCaduceus-adjacent), base model createdAt 2026-07-16 with 1.88 GB pytorch_model.bin, downstream checkpoints CRE 2026-07-07, Anno 2026-07-08 and ten task heads 2026-07-19, all gated false; GitHub zhangtaolab/PlantHelixSeek created 2026-07-24 (MIT) with contact wuyuechao@zhangtaolab.org. Weights are non-commercial, so if admitted the record must carry noncommercial: true. Downloads are 3, i.e. uptake is unproven.",
+  "licence_quote": "Model card: 'CC-BY-NC 4.0 (research use; contact authors for commercial licensing)'; HF API cardData {\"license\": \"cc-by-nc-4.0\"}, gated false. GitHub README splits it: '- **Code**: [MIT License](LICENSE)' and '- **Model weights**: CC-BY-NC 4.0 (research use; contact authors for commercial licensing)'; repo LICENSE file begins 'MIT License / Copyright (c) 2025 Zhangtaolab' and the GitHub API reports spdx_id MIT. So permissive code, non-commercial weights.",
+  "record": null,
+  "reconsider_when": "A primary document appears - a bioRxiv/arXiv preprint or journal article for PlantHelixSeek or the HelixSeek architecture (re-check Europe PMC for 'PlantHelixSeek'/'HelixSeek' and the GitHub README citation block), or the lab posts a dated technical report. At that point accept with modality dna, noncommercial true, status 'Public weights (CC-BY-NC-4.0) + MIT code'.",
+  "fetched": [
+   "https://huggingface.co/api/models/zhangtaolab/PlantHelixSeek",
+   "https://huggingface.co/zhangtaolab/PlantHelixSeek/raw/main/README.md",
+   "https://huggingface.co/api/models/zhangtaolab/PlantHelixSeek-CRE",
+   "https://huggingface.co/api/models/zhangtaolab/PlantHelixSeek-Anno",
+   "https://huggingface.co/api/models/zhangtaolab/PlantHelixSeek-core_promoter",
+   "https://huggingface.co/api/models?author=zhangtaolab",
+   "https://raw.githubusercontent.com/zhangtaolab/PlantHelixSeek/main/README.md",
+   "https://raw.githubusercontent.com/zhangtaolab/PlantHelixSeek/main/LICENSE",
+   "https://api.github.com/repos/zhangtaolab/PlantHelixSeek",
+   "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PlantHelixSeek&format=json",
+   "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HelixSeek&format=json"
+  ]
+ },
+ {
+  "name": "SeqLens v2 (with mgxLens v2)",
+  "verdict": "hold",
+  "reason": "Three conditions fail. (1) No primary document for v2: Europe PMC hits for 'seqLens' return only the v1 work (seqLens: Optimizing Language Models for Genomic Predictions, Baghbanzadeh, Mann, Crandall, Rahnavard, Mol Biol Evol 2026-07-01, doi 10.1093/molbev/msag139) and its 2025 bioRxiv preprint; the v2 card's own citation is a @misc pointing back at the HF URL. (2) Provenance is unverified: the HF org seqSight is described as 'Agentci AI for omics and sequencing data analysis', is not verified, has 5 members, and nothing links it to the v1 authors - the official omicsEye/seqLens GitHub repo links only to the omicseye HF collection and never to seqSight, and no public v2 code repo exists (GitHub search returns only the v1 omicsEye/seqLens repo and unrelated projects). The card also cites internal files that are not public (PROJECT_STATE.md, experiments/eval_reports/...). (3) Partial/unproven release: only the 10.3M 'Micro' variant is public, with the card's own family table marking Base 'In development' and Large 'Planned'; both seqlens-v2 repos have 0 downloads. mgxLens v2 additionally fails scope and licence: it is a task-specific retrieval profiler bundle (encoder.pt + 2.3 GB FAISS index over MetaPhlAn SGB markers), self-described as 'Proof of concept. Not accuracy-tuned', with HF cardData null - no licence declared at all - and it consumes a third-party base model (omicseye/seqLens_4096_512_89M-at-base-multi) at runtime.",
+  "licence_quote": "seqlens-v2-micro-16k card ends 'License / Apache 2.0' and HF API cardData {\"license\": \"apache-2.0\"}, gated false. mgxlens-v2: HF API returns \"cardData\": null and the repo file list (MANIFEST.json, README.md, encoder.pt, index.faiss, index.clades.npy, index.markers.npy, lineage.tsv, mgx_encoder.py) contains no LICENSE file and the README states no licence - licence UNVERIFIED / absent for mgxLens.",
+  "record": null,
+  "reconsider_when": "Positive evidence of ownership appears - the omicsEye / Rahnavard group (or the seqLens v1 authors) publicly claiming the seqSight HF org, a public seqlens-v2 code repository, or a v2 preprint/paper naming authors - AND the larger family members (Base ~100M / Large ~400M) actually ship. Reassess mgxLens separately only if it is relicensed and re-scoped as a reusable model rather than a proof-of-concept profiler bundle.",
+  "fetched": [
+   "https://huggingface.co/api/models/seqSight/seqlens-v2-micro-16k",
+   "https://huggingface.co/seqSight/seqlens-v2-micro-16k/raw/main/README.md",
+   "https://huggingface.co/api/models/seqSight/seqlens-v2-micro-novel-16k",
+   "https://huggingface.co/api/models/seqSight/mgxlens-v2",
+   "https://huggingface.co/seqSight/mgxlens-v2/raw/main/README.md",
+   "https://huggingface.co/seqSight/mgxlens-v2/raw/main/MANIFEST.json",
+   "https://huggingface.co/api/organizations/seqSight/overview",
+   "https://huggingface.co/api/models?author=seqSight",
+   "https://huggingface.co/api/models?author=omicseye",
+   "https://raw.githubusercontent.com/omicsEye/seqLens/main/README.md",
+   "https://api.github.com/orgs/omicsEye/repos",
+   "https://api.github.com/search/repositories?q=mgxlens+OR+seqlens",
+   "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=seqLens&format=json",
+   "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1093/molbev/msag139%22&format=json&resultType=core"
+  ]
+ },
+ {
+  "name": "LDARNet",
+  "verdict": "accept",
+  "reason": "Paper verified independently of the model card via the arXiv API: arXiv:2606.04552v2, 'LDARNet: DNA Adaptive Representation Network with Learnable Tokenization for Genomic Modeling', Daria Ledneva and Denis Kuznetsov, published 2026-06-03, updated 2026-08-04, categories cs.CL and q-bio.GN, comment 'Fix parameter count typo; update results' - present, matching, not withdrawn. Artifacts official: GitHub darlednik/ICML-LDARNet (created 2026-05-27, pushed 2026-08-04, Apache-2.0) is owned by GitHub user darlednik whose display name is 'Ledneva Daria', matching the first author, and the repo links to the HF weights under the same handle; the HF repos darlednik/LDARNet-110M (createdAt 2026-06-30, model_ckpt_110m.pt 1.53 GB) and darlednik/LDARNet-2M (createdAt 2026-06-30) are gated false. Scope: pretrained MLM checkpoints for general genomic representation learning, evaluated across 27 tasks / the Nucleotide Transformer benchmark, not a single-task model. Caveats not carried into the record: the repo name and README badge claim ICML 2026 acceptance, which I could not verify (arXiv carries no journal_ref); both HF repos had 0 downloads at check time; the weights ship as a bare .pt requiring the repo's loader, not a transformers-native checkpoint.",
+  "licence_quote": "HF API cardData {\"license\": \"apache-2.0\"} for both LDARNet-110M and LDARNet-2M, gated false (no LICENSE file inside the weights repos - the declaration is the card metadata). GitHub darlednik/ICML-LDARNet LICENSE begins 'Apache License / Version 2.0, January 2004', GitHub API spdx_id Apache-2.0, README badge 'License Apache 2.0' and 'Fully open: pretrained weights, training code, evaluation, and per-fold results are all released.'",
+  "record": {
+   "name": "LDARNet",
+   "modality": "dna",
+   "description": "Hierarchical genomic representation model with learnable tokenization: H-Net-style dynamic chunking learns content-aware token boundaries, a bidirectional BiMamba-2 state-space backbone with one local-attention layer processes the compressed sequence, and dechunking restores base resolution. Pretrained by masked language modelling on the human reference genome plus a multispecies collection and released as 2M and 110M checkpoints.",
+   "io": "DNA sequence (byte-level A/C/G/T/N) -> learned token boundaries, nucleotide and sequence embeddings, masked-token predictions",
+   "status": "Public weights + training and evaluation code, Apache-2.0; weights ship as .pt checkpoints loaded via the project's own loader",
+   "use_cases": "Genomic representation learning, histone-mark and regulatory sequence classification, tokenization research",
+   "year": "2026",
+   "paper_links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.04552"
+    }
+   ],
+   "code_links": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/darlednik/ICML-LDARNet"
+    },
+    {
+     "label": "Hugging Face (110M)",
+     "url": "https://huggingface.co/darlednik/LDARNet-110M"
+    },
+    {
+     "label": "Hugging Face (2M)",
+     "url": "https://huggingface.co/darlednik/LDARNet-2M"
+    }
+   ],
+   "sources": [
+    "https://arxiv.org/abs/2606.04552",
+    "https://export.arxiv.org/api/query?id_list=2606.04552",
+    "https://github.com/darlednik/ICML-LDARNet",
+    "https://huggingface.co/darlednik/LDARNet-110M",
+    "https://huggingface.co/api/models/darlednik/LDARNet-110M",
+    "https://huggingface.co/api/models/darlednik/LDARNet-2M"
+   ],
+   "noncommercial": false,
+   "aliases": [
+    "DNA Adaptive Representation Network"
+   ]
+  },
+  "reconsider_when": null,
+  "fetched": [
+   "https://arxiv.org/abs/2606.04552",
+   "https://export.arxiv.org/api/query?id_list=2606.04552",
+   "https://huggingface.co/api/models/darlednik/LDARNet-110M",
+   "https://huggingface.co/darlednik/LDARNet-110M/raw/main/README.md",
+   "https://huggingface.co/api/models/darlednik/LDARNet-2M",
+   "https://raw.githubusercontent.com/darlednik/ICML-LDARNet/main/README.md",
+   "https://raw.githubusercontent.com/darlednik/ICML-LDARNet/main/LICENSE",
+   "https://api.github.com/repos/darlednik/ICML-LDARNet",
+   "https://api.github.com/users/darlednik",
+   "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=LDARNet&format=json"
+  ]
+ }
+]

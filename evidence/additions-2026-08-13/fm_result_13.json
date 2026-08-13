@@ -1,0 +1,117 @@
+[
+ {
+  "name": "SEAL (Spatial Expression-Aligned Learning)",
+  "verdict": "accept",
+  "reason": "Primary preprint verified: arXiv:2602.14177 'Towards Spatial Transcriptomics-driven Pathology Foundation Models' (Hemker, Song, ..., Faisal Mahmood; submitted 2026-02-15; no withdrawal). Official artifacts verified: github.com/mahmoodlab/SEAL (official Mahmood Lab org) and huggingface.co/MahmoodLab/SEAL (created 2026-02-16, gated 'auto', license cc-by-nc-nd-4.0). HF file listing confirms exactly the CONCH and UNIv2 variants are released (seal_conch_vision/omics.pth, seal_univ2_vision/omics.pth) - matching the discovery note; Virchow2/Phikon-v2/H0-mini variants are described in the repo but not yet downloadable. Scope passes: trained on 700k+ image-expression pairs across 14 organs, evaluated on 53 downstream tasks, functions as a drop-in replacement feature extractor. Duplicate check: grep across the wiki repo found no existing SEAL / Spatial Expression-Aligned entry. Caveat recorded in licence_quote: the GitHub repo currently has NO license file (GitHub license API 404s), so code licence is unspecified; weights are CC BY-NC-ND 4.0.",
+  "licence_quote": "Weights (Hugging Face MahmoodLab/SEAL): license tag \"cc-by-nc-nd-4.0\", gated: \"auto\" (click-through). Code (github.com/mahmoodlab/SEAL): no LICENSE file present - GitHub license API returns 404 and the root file listing contains no license file, so the code licence is unspecified.",
+  "record": {
+   "name": "SEAL",
+   "modality": "spatial",
+   "description": "Spatial Expression-Aligned Learning (Mahmood Lab): a self-supervised framework that finetunes existing patch-level pathology foundation models against paired spatial transcriptomics (700k+ pairs across 14 organs), yielding molecularly-aligned drop-in vision encoders plus matched expression encoders. Evaluated across 53 downstream tasks including molecular status prediction and cross-modal gene-image retrieval; CONCH and UNIv2 variants released.",
+   "io": "H&E histology patch -> molecularly-aligned patch embedding (paired omics encoder maps expression profiles into the shared space for cross-modal retrieval)",
+   "status": "Weights on Hugging Face (click-through gated, CC BY-NC-ND 4.0); CONCH and UNIv2 variants available; code public, no code licence stated",
+   "use_cases": "molecular status prediction, gene expression prediction, treatment response assessment, gene-image cross-modal retrieval, patch- and slide-level pathology tasks",
+   "year": 2026,
+   "paper_links": [
+    {"label": "arXiv:2602.14177", "url": "https://arxiv.org/abs/2602.14177"}
+   ],
+   "code_links": [
+    {"label": "GitHub (mahmoodlab/SEAL)", "url": "https://github.com/mahmoodlab/SEAL"},
+    {"label": "Hugging Face (MahmoodLab/SEAL)", "url": "https://huggingface.co/MahmoodLab/SEAL"}
+   ],
+   "sources": [
+    "https://arxiv.org/abs/2602.14177",
+    "https://github.com/mahmoodlab/SEAL",
+    "https://huggingface.co/api/models/MahmoodLab/SEAL"
+   ],
+   "noncommercial": true,
+   "aliases": ["Spatial Expression-Aligned Learning"]
+  },
+  "fetched": [
+   "https://arxiv.org/abs/2602.14177",
+   "https://github.com/mahmoodlab/SEAL",
+   "https://huggingface.co/api/models?author=MahmoodLab&search=SEAL",
+   "https://huggingface.co/api/models/MahmoodLab/SEAL",
+   "https://raw.githubusercontent.com/mahmoodlab/SEAL/main/LICENSE (404)",
+   "gh api repos/mahmoodlab/SEAL/license (404 - no license file)",
+   "gh api repos/mahmoodlab/SEAL/contents/ (root listing, no LICENSE)"
+  ]
+ },
+ {
+  "name": "SpatialFusion",
+  "verdict": "accept",
+  "reason": "Primary preprint verified via the official bioRxiv API: DOI 10.64898/2026.03.16.712056, title 'SpatialFusion: A lightweight multimodal foundation model for pathway-informed spatial niche mapping' (Yates, Shavakhi, Choueiri, Van Allen, Uhler; corresponding: Caroline Uhler, MIT; posted 2026-03-18, v1, not withdrawn, no published journal DOI yet). Note the live title says 'foundation model', resolving the discovery lane's 'framework vs foundation model' doubt in favour of the authors' own FM framing. Official artifact verified: github.com/uhlerlab/spatialfusion (Uhler lab org, matches corresponding author), MIT licence confirmed by GitHub license API, and pretrained checkpoints confirmed as actual committed files (spatialfusion-ae-{uni,virchow}-{scgpt,nicheformer}.pt plus GCN and unimodal variants under src/spatialfusion/data/). Zenodo 20934900 (benchmark dataset, CC BY 4.0, Josephine Yates, ETH Zurich) also resolves. Scope passes: pretrained checkpoints for all backbone combinations, applied across ovarian/breast/prostate/lung and two Visium HD cohorts, supports embedding, niche mapping and finetuning. Honest caveat for the curator: it is deliberately lightweight - small fusion heads (~1 MB AE + ~12 KB GCN checkpoints) over frozen UNI/Virchow and scGPT/Nicheformer embeddings - so 'foundation model' describes the framing, not the parameter scale. Duplicate check: no existing SpatialFusion entry found in the wiki repo.",
+  "licence_quote": "Code and bundled checkpoints: \"MIT License\" (GitHub license API, path LICENSE, spdx MIT). Preprint text licence: cc_by_nc_nd (bioRxiv API field - applies to the manuscript, not the software). Zenodo benchmark dataset: Creative Commons Attribution 4.0 International.",
+  "record": {
+   "name": "SpatialFusion",
+   "modality": "spatial",
+   "description": "Lightweight multimodal model from the Uhler lab (MIT) that fuses H&E histology and spatial transcriptomics embeddings from pretrained foundation-model backbones (UNI/Virchow x scGPT/Nicheformer) into joint cellular-neighbourhood representations and pathway-informed spatial niches at single-cell resolution. Pretrained checkpoints for every supported backbone combination ship inside the MIT-licensed package, with finetuning workflows for new cohorts.",
+   "io": "paired H&E histology + spatial transcriptomics (per-cell/spot foundation-model embeddings) -> joint neighbourhood embedding + pathway-informed spatial niche assignments",
+   "status": "Open source (MIT); pretrained checkpoints bundled in the package",
+   "use_cases": "spatial niche mapping, multimodal ST + histology embedding, tumor microenvironment characterization, pre-malignant niche discovery, finetuning on new cohorts",
+   "year": 2026,
+   "paper_links": [
+    {"label": "bioRxiv 10.64898/2026.03.16.712056", "url": "https://www.biorxiv.org/content/10.64898/2026.03.16.712056v1"}
+   ],
+   "code_links": [
+    {"label": "GitHub (uhlerlab/spatialfusion)", "url": "https://github.com/uhlerlab/spatialfusion"},
+    {"label": "Zenodo benchmark dataset", "url": "https://zenodo.org/records/20934900"}
+   ],
+   "sources": [
+    "https://api.biorxiv.org/details/biorxiv/10.64898/2026.03.16.712056",
+    "https://github.com/uhlerlab/spatialfusion",
+    "https://zenodo.org/records/20934900"
+   ],
+   "noncommercial": false,
+   "aliases": []
+  },
+  "fetched": [
+   "https://api.biorxiv.org/details/biorxiv/10.64898/2026.03.16.712056",
+   "bioRxiv MCP get_preprint 10.64898/2026.03.16.712056",
+   "https://github.com/uhlerlab/spatialfusion",
+   "gh api repos/uhlerlab/spatialfusion/license (MIT)",
+   "gh api repos/uhlerlab/spatialfusion/contents/src/spatialfusion/data/checkpoint_dir_ae",
+   "gh api repos/uhlerlab/spatialfusion/contents/src/spatialfusion/data/checkpoint_dir_gcn",
+   "https://zenodo.org/records/20934900"
+  ]
+ },
+ {
+  "name": "Path Foundation (Google)",
+  "verdict": "accept",
+  "reason": "Released Google Health AI pathology embedding model; catalogue gap, not a new release. Official ownership verified: huggingface.co/api/models/google/path-foundation (author: google, gated: 'auto', license: 'other' named 'health-ai-developer-foundations', last modified 2025-02-20) and Google's official HAI-DEF developer pages, which describe it as a ViT-S trained with Masked Siamese Networks on 60M H&E patches from TCGA (32 solid tumor studies) at three magnifications, producing 384-dim embeddings; official model card states Created December 19, 2023, Version 1.0.0. Research paper cited by the model card verified: arXiv:2310.13259 'Domain-specific optimization and diverse evaluation of self-supervised models for histopathology' (Lai, Ahmed et al., submitted 2023-10-20, no withdrawal). Current terms are the Health AI Developer Foundations Terms of Use (last modified 2024-11-15) - quoted below; access is HF click-through gating on acceptance. Google's own docs note it is an 'older single-modality model' and recommend MedSigLIP as the modern multimodal alternative - worth a line in the index but does not change reusability. Duplicate check: no existing 'Path Foundation' / 'path-foundation' entry found in the wiki repo.",
+  "licence_quote": "HF: license 'other', license_name 'health-ai-developer-foundations', license_link https://developers.google.com/health-ai-developer-foundations/terms; users must 'review and agree to Health AI Developer Foundation's terms of use' to access files. HAI-DEF Terms of Use (last modified 2024-11-15): permit users to 'use, reproduce, modify, Distribute, perform, or display' the services subject to conditions (redistribution must pass through the Section 3.2 use restrictions and the full terms); commercial distribution via a 'Hosted Service' is permitted with restrictions; prohibited uses include those in the Prohibited Use Policy and any use 'that could cause a Health Regulatory Authority to deem Google to be a \"manufacturer\" of a medical device'; 'YOU AGREE THAT GOOGLE WILL NOT BE DEEMED TO BE FURNISHING ANY MEDICAL ADVICE OR HEALTH CARE SERVICES.'",
+  "record": {
+   "name": "Path Foundation",
+   "modality": "spatial",
+   "description": "Google Health AI histopathology embedding model: a ViT-S trained with Masked Siamese Networks on 60 million H&E patches from TCGA (32 solid tumor studies) at three magnifications, producing 384-dimensional patch embeddings for data-efficient downstream pathology classifiers. Distributed under Google's Health AI Developer Foundations (HAI-DEF) program; Google now positions MedSigLIP as its modern multimodal successor.",
+   "io": "224x224 H&E histopathology patch -> 384-dim embedding",
+   "status": "Weights on Hugging Face, gated by click-through acceptance of Google's HAI-DEF Terms of Use (custom terms; commercial use permitted with use restrictions)",
+   "use_cases": "tumor identification, tumor grading, biomarker detection, similar-image search across whole slide images, data-efficient pathology classifier development",
+   "year": 2023,
+   "paper_links": [
+    {"label": "arXiv:2310.13259", "url": "https://arxiv.org/abs/2310.13259"}
+   ],
+   "code_links": [
+    {"label": "Hugging Face (google/path-foundation)", "url": "https://huggingface.co/google/path-foundation"},
+    {"label": "HAI-DEF developer docs", "url": "https://developers.google.com/health-ai-developer-foundations/path-foundation"}
+   ],
+   "sources": [
+    "https://huggingface.co/api/models/google/path-foundation",
+    "https://developers.google.com/health-ai-developer-foundations/path-foundation",
+    "https://developers.google.com/health-ai-developer-foundations/path-foundation/model-card",
+    "https://developers.google.com/health-ai-developer-foundations/terms",
+    "https://arxiv.org/abs/2310.13259"
+   ],
+   "noncommercial": false,
+   "aliases": ["Path Foundation (Google)", "google/path-foundation"]
+  },
+  "fetched": [
+   "https://huggingface.co/api/models/google/path-foundation",
+   "https://huggingface.co/google/path-foundation",
+   "https://developers.google.com/health-ai-developer-foundations/path-foundation",
+   "https://developers.google.com/health-ai-developer-foundations/path-foundation/model-card",
+   "https://developers.google.com/health-ai-developer-foundations/terms",
+   "https://arxiv.org/abs/2310.13259"
+  ]
+ }
+]

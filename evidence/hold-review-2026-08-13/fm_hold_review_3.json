@@ -1,0 +1,151 @@
+[
+  {
+    "id": "bfm-tabula",
+    "name": "Tabula",
+    "condition": "Release of an official reusable pretrained Tabula checkpoint with verified terms.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://api.github.com/repos/aristoteleo/tabula",
+      "https://api.github.com/repos/aristoteleo/tabula/contents/",
+      "https://api.github.com/repos/aristoteleo/tabula/releases",
+      "https://raw.githubusercontent.com/aristoteleo/tabula/main/README.md",
+      "https://raw.githubusercontent.com/aristoteleo/tabula/main/LICENSE",
+      "https://huggingface.co/api/models?search=tabula&limit=30",
+      "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1"
+    ],
+    "licence_quote": "Non-Commercial License / Copyright (c) 2026 Aristotle ... The Software must not be used, distributed, or modified for any commercial purposes, including but not limited to selling, sublicensing, or using the Software in a product or service intended for commercial gain. (github.com/aristoteleo/tabula LICENSE, fetched 2026-08-13)",
+    "rationale": "Repository is alive (last push 2026-08-10) but still ships training/fine-tuning code only. The GitHub API contents listing of the repo root shows no weights and no releases (releases endpoint returns []); the README fetched today has Installation / Quick Start / development sections and no checkpoint, weights or download section at all (contrast with the still-listed contact address for data). GitHub reports the licence as NOASSERTION; the LICENSE file is a custom non-commercial licence (quoted), which corroborates the existing noncommercial:true flag but does not supply weights. A Hugging Face search for 'tabula' returns only unrelated repos (scvi-tools Tabula Sapiens models, tabular-data demos) - no aristoteleo/Tabula model. The cited bioRxiv preprint was verified via the bioRxiv API: 10.1101/2025.01.06.631427, v1, 2025-01-06, CC-BY, published_doi 'NA' (still not journal-published). One unresolved discrepancy worth flagging but NOT acted on: the README today advertises a preprint titled 'Predictive single cell foundation model for gene regulation and aging with privacy-preserving tabular learning' with a longer author list, whereas the cited bioRxiv v1 is titled 'Toward a privacy-preserving predictive foundation model of single-cell transcriptomics with federated learning and tabular modeling'. I did not verify whether a newer preprint version exists - UNVERIFIED. Condition (reusable pretrained checkpoint) is unmet.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-virchow-virchow2-and-virchow2g",
+    "name": "Virchow / Virchow2 (and Virchow2G)",
+    "condition": "Split the family, or encode member-specific artifacts, access routes and terms with primary evidence.",
+    "verdict": "promote",
+    "evidence_urls": [
+      "https://api.crossref.org/works/10.1038/s41591-024-03141-0",
+      "https://doi.org/10.1038/s41591-024-03141-0",
+      "https://export.arxiv.org/api/query?id_list=2408.00738",
+      "https://arxiv.org/abs/2408.00738",
+      "https://arxiv.org/abs/2309.07778",
+      "https://huggingface.co/api/models/paige-ai/Virchow",
+      "https://huggingface.co/paige-ai/Virchow",
+      "https://huggingface.co/api/models/paige-ai/Virchow2",
+      "https://huggingface.co/paige-ai/Virchow2",
+      "https://huggingface.co/api/models?author=paige-ai&limit=50",
+      "https://huggingface.co/api/models/paige-ai/Virchow2G",
+      "https://www.paige.ai/foundation-models"
+    ],
+    "licence_quote": "Virchow (HF card, license: apache-2.0, gated): \"The Virchow Model and associated code are released under the Apache License, Version 2.0 (the \\\"License\\\")\" plus additional gate terms (\"the primary email used to sign up for your Hugging Face account must match your institutional email to receive approval\"). Virchow2 (HF card, license: cc-by-nc-nd-4.0, gated): \"This model and associated code are released under the CC-BY-NC-ND 4.0 license and may only be used for non-commercial, academic research purposes with proper attribution. Any commercial use, sale, or other monetization of the Virchow2 Model and its derivatives ... is prohibited and requires prior approval.\" Virchow2G (paige.ai/foundation-models): access listed as \"Commercial License Only\".",
+    "rationale": "Every member-specific fact the audit asked for is now verified from primary sources fetched today, so the record can be promoted PROVIDED the register encodes per-member terms rather than one family-level licence flag. (1) Virchow: paper Nature Medicine 10.1038/s41591-024-03141-0, 'A foundation model for clinical-grade computational pathology and rare cancers detection', published 2024-07-22 (Crossref-verified today); preprint arXiv 2309.07778 'Virchow: A Million-Slide Digital Pathology Foundation Model' (title verified via arXiv API). Artifact https://huggingface.co/paige-ai/Virchow, HF API: license apache-2.0, gated 'auto', createdAt 2024-06-05, lastModified 2024-09-03. (2) Virchow2: paper arXiv 2408.00738 'Virchow2: Scaling Self-Supervised Mixed Magnification Models in Pathology', published 2024-08-01 (arXiv API). Artifact https://huggingface.co/paige-ai/Virchow2, HF API: license cc-by-nc-nd-4.0, gated 'auto', createdAt 2024-08-05, lastModified 2024-10-26 - non-commercial research only. (3) Virchow2G: HAS NO PUBLIC ARTIFACT. The paige-ai org listing returns exactly five models (Virchow, Virchow2, Prism, Prism2, Prism2-survival); https://huggingface.co/api/models/paige-ai/Virchow2G returns an error (not found/not public). The official Paige foundation-models page describes Virchow2G as '1.8B parameters' with access 'Commercial License Only', and also lists a Virchow2G-Mini variant, likewise commercial-licence-only. Required record edits on promotion: the top-level noncommercial:false is WRONG for Virchow2 and Virchow2G; encode Virchow = Apache-2.0 gated open weights, Virchow2 = CC-BY-NC-ND-4.0 gated non-commercial, Virchow2G / Virchow2G-Mini = commercial licence only, no public weights, no separate paper verified. Not checked: whether Azure AI Foundry distribution carries different terms, and whether a Virchow2G technical report exists (an arXiv search for 'Virchow2G' returned no such paper).",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-h-optimus-0-h-optimus-1",
+    "name": "H-optimus-0 / H-optimus-1",
+    "condition": "Verify and link each model card and encode the family members' distinct access and reuse terms.",
+    "verdict": "promote",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/bioptimus/H-optimus-0",
+      "https://huggingface.co/bioptimus/H-optimus-0",
+      "https://huggingface.co/api/models/bioptimus/H-optimus-1",
+      "https://huggingface.co/bioptimus/H-optimus-1",
+      "https://github.com/bioptimus/releases/tree/main/models/h-optimus/v0",
+      "https://raw.githubusercontent.com/bioptimus/releases/main/models/h-optimus/v0/LICENSE.md",
+      "https://raw.githubusercontent.com/bioptimus/releases/main/models/h-optimus/v0/README.md",
+      "https://www.bioptimus.com/news/bioptimus-launches-h-optimus-1"
+    ],
+    "licence_quote": "H-optimus-0 (HF card, license: apache-2.0, gated 'auto'): \"This model and associated code are released under the Apache-2.0 license.\" H-optimus-1 (HF card, license: cc-by-nc-nd-4.0, gated 'manual'): \"This model and associated code are released under the CC-BY-NC-ND 4.0 license and may only be used for non-commercial, academic research purposes with proper attribution. Any commercial use, sale, or other monetization of the H-optimus-1 model and its derivatives ... is prohibited and requires prior approval.\"",
+    "rationale": "Both model cards now exist, were fetched today via the HF model API, and carry crisply different terms - exactly what the condition demanded. H-optimus-0: https://huggingface.co/bioptimus/H-optimus-0, license apache-2.0, gated 'auto' (auto-approve after accepting terms), createdAt 2024-07-30, lastModified 2025-12-12; its official release page github.com/bioptimus/releases/tree/main/models/h-optimus/v0 carries a full Apache License 2.0 text in LICENSE.md and a technical README ('H-optimus-0 - An open-source foundation model for histology', ViT-g/14, 40 blocks, 24 heads, 1536-dim embedding, >500,000 H&E WSIs). H-optimus-1: https://huggingface.co/bioptimus/H-optimus-1, license cc-by-nc-nd-4.0, gated 'manual' (manual approval, institutional email required), createdAt 2025-02-17, lastModified 2026-06-11; the official Bioptimus announcement states the model 'can be accessed for academic research purposes' and links that HF card. IMPORTANT CAVEAT the register must encode: there is NO peer-reviewed paper or preprint for either model - the current paper_link is a company announcement and should be relabelled as such (the announcement itself cites H-optimus-0 only via the GitHub release page, not a DOI); an arXiv/DOI record for H-optimus is UNVERIFIED because I found none. Also encode noncommercial as mixed: H-optimus-0 Apache-2.0 (commercial use permitted, gate required), H-optimus-1 CC-BY-NC-ND-4.0 non-commercial academic only - the record's current blanket noncommercial:true understates H-optimus-0. Release dates used are the HF repo creation dates above; the announcement page renders as an April 2025 post, which I report as page-reported, not independently confirmed.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-atlas-rudolfv-successor",
+    "name": "Atlas (RudolfV successor)",
+    "condition": "A current official public artifact or endpoint for Atlas, with exact access terms, is verified.",
+    "verdict": "update_note",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/aignostics/atlas",
+      "https://huggingface.co/api/models/Aignostics/Atlas",
+      "https://huggingface.co/api/models?author=aignostics&limit=50",
+      "https://huggingface.co/api/models?search=aignostics&limit=20",
+      "https://huggingface.co/api/models/Aignostics/RudolfV-2",
+      "https://huggingface.co/Aignostics/RudolfV-2",
+      "https://www.aignostics.com/products/foundation-models",
+      "https://export.arxiv.org/api/query?id_list=2601.05148",
+      "https://arxiv.org/abs/2601.05148",
+      "https://arxiv.org/abs/2501.05409"
+    ],
+    "licence_quote": "No readable licence text obtained. Aignostics/RudolfV-2 carries only the HF tag 'license:other' with cardData license 'other' and no license_name/license_link; the card body is behind a manual gate (\"Access to model Aignostics/RudolfV-2 is restricted. You must have access to it and be authenticated to access it.\"). The official product page states only: \"Flexible licensing options tailored for your unique needs\" with an \"Inquire about licensing\" contact route.",
+    "rationale": "Still held - the Atlas condition is unmet - but the entry's facts have materially changed and the record needs editing. (a) The listed artifact is still dead: both https://huggingface.co/api/models/aignostics/atlas and .../Aignostics/Atlas return an error (not found), and author=aignostics returns an empty list. (b) NEW: an Aignostics HF org now publishes gated weights, but for a DIFFERENT model - Aignostics/RudolfV-2 (createdAt 2026-07-30, lastModified 2026-08-07, gated 'manual', license tag 'other', files include model.safetensors and custom modeling code), plus RudolfV-2-S and RudolfV-2-B (both createdAt 2026-07-31). Their licence text is not readable without authentication, so terms remain UNVERIFIED. (c) NEW: the official Aignostics foundation-models page now presents a three-generation line - RudolfV (Jan 2024), Atlas (Jan 2025), Atlas 2 (Jan 2026) - with no public weight download and only 'flexible licensing'/'Inquire about licensing'. (d) The Atlas 2 paper exists and was verified via the arXiv API: arXiv 2601.05148 'Atlas 2 -- Foundation models for clinical deployment', published 2026-01-08 (the original Atlas paper arXiv 2501.05409 'Atlas: A Novel Pathology Foundation Model by Mayo Clinic, Charite, and Aignostics', published 2025-01-09, also verified). Suggested note: replace the dead HF link, record Atlas as commercial-licence-only with no public artifact, add Atlas 2 as the current generation, and treat the gated RudolfV-2 family as a separate candidate record rather than evidence for Atlas. Not checked: whether Atlas is reachable through any Aignostics platform/API endpoint requiring an account.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-bioreason",
+    "name": "BioReason",
+    "condition": "The promised official BioReason checkpoints are released and their terms verified.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bowang-lab/BioReason/main/README.md",
+      "https://api.github.com/repos/bowang-lab/BioReason",
+      "https://huggingface.co/api/models?search=bioreason&limit=30",
+      "https://huggingface.co/api/models?author=wanglab&limit=100",
+      "https://huggingface.co/api/models/wanglab/bioreason-pro-sft",
+      "https://huggingface.co/api/models/wanglab/bioreason-pro-rl",
+      "https://api.github.com/repos/bowang-lab/BioReason-Pro",
+      "https://export.arxiv.org/api/query?id_list=2505.23579"
+    ],
+    "licence_quote": "Repository licence only: GitHub API reports bowang-lab/BioReason as Apache License 2.0 (spdx Apache-2.0). No checkpoint licence exists to quote - the README's Checkpoints section reads in full: \"We will release the checkpoints soon!\"",
+    "rationale": "Condition unmet, 13 months after the promise. The README fetched today still contains the literal section '## Checkpoints / We will release the checkpoints soon!', while the abstract text in the same README continues to claim 'Data, code, and checkpoints are publicly available'. Repo last push 2026-05-28. A Hugging Face search for 'bioreason' and a listing of the wanglab org return no BioReason (DNA-LLM) checkpoint - only third-party fine-tunes and the successor's weights. MATERIAL SIDE-FACTS (not sufficient to lift this hold, but worth recording): the repo description now reads \"BioReason: Incentivizing Multimodal Biological Reasoning within a DNA-LLM Model | NeurIPS '25\" (venue claim from the repo itself; I did not fetch a NeurIPS proceedings page, so the venue is UNVERIFIED), and a README banner announces 'BioReason-Pro is now released!' - a distinct successor for protein function annotation (ESM3 embeddings + GO-GPT + RL) with its own repo bowang-lab/BioReason-Pro (created 2026-03-20, no licence set), a web server bioreason.net, and released ungated Apache-2.0 checkpoints wanglab/bioreason-pro-sft and wanglab/bioreason-pro-rl (both createdAt 2026-03-20). The banner cites a bioRxiv link with DOI prefix 10.64898 (2026.03.19.712954) which I did NOT fetch or verify - treat as UNVERIFIED. BioReason-Pro is a different model from this record and, if wanted, should be a new candidate entry, not a promotion of this one. The record's own arXiv 2505.23579 (v2, updated 2025-10-24) was title-verified today.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-openprotein-ai-poet-poet-2",
+    "name": "OpenProtein.AI (PoET / PoET-2)",
+    "condition": "Narrow this record to the commercial platform or merge it with the PoET-2 record, documenting the stable-ID disposition.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://api.github.com/repos/OpenProteinAI/PoET-2",
+      "https://raw.githubusercontent.com/OpenProteinAI/PoET-2/main/README.md",
+      "https://huggingface.co/api/models?author=OpenProteinAI&limit=30",
+      "https://export.arxiv.org/api/query?id_list=2508.04724"
+    ],
+    "licence_quote": "PoET-2 README licence table: \"Source Code (excludes model weights) | Apache License 2.0\" and \"Model Weights | PoET Non-Commercial License Agreement\" (MODEL_LICENSE.md), followed by \"For commercial use of the model weights, please reach out to us at contact@ne47.bio.\"",
+    "rationale": "The condition is a register-side editorial act (narrow vs merge, plus stable-ID disposition) and cannot be satisfied by any external page, so the hold stands regardless of what upstream does. What today's evidence does settle, and should be written into whichever record survives the merge: the model repo is real and self-hosting - GitHub OpenProteinAI/PoET-2 (repo licence Apache-2.0, pushed 2025-08-20, description 'Code and model weights for PoET-2, a retrieval-augmented multimodel protein language model...'), with 'make download_model' fetching ~400MB of weights; the licence is SPLIT - Apache-2.0 code, non-commercial weights (quoted), which confirms the audit's 'set NC true' for the model side. The paper is arXiv 2508.04724, title verified today as 'Understanding protein function with a multimodal retrieval-augmented foundation model' (v1 2025-08-05, v2 2026-02-26) - note this differs from the PoET-2-named title implied by the record. No OpenProteinAI models are published on Hugging Face (author query returns an empty list). Also relevant to the merge decision: this HOLD register contains no separate bfm-poet-2 record (I enumerated all 32 ids), so the duplicate target lives in the displayed catalog and the disposition must be decided there. I did not fetch openprotein.ai platform/pricing pages, so the commercial-platform side of the boundary is unverified today.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-pearl",
+    "name": "Pearl",
+    "condition": "An official reusable Pearl model artifact or public endpoint, with its terms, is verified.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2510.24670",
+      "https://arxiv.org/abs/2510.24670",
+      "https://www.genesis.ml/ai-research",
+      "https://www.genesis.ml/pearl",
+      "https://www.genesis.ml/technology",
+      "https://integrate.api.nvidia.com/v1/models",
+      "https://build.nvidia.com/genesis-molecular-ai/pearl"
+    ],
+    "licence_quote": "None found. The only access-related sentence on the official Genesis research page is \"Genesis and NVIDIA jointly announced Pearl at GTC 2025\"; no licence, API, endpoint or download terms appear.",
+    "rationale": "Condition unmet; no artifact and no terms exist to verify. Paper identity confirmed today via the arXiv API: 2510.24670, 'Pearl: A Foundation Model for Placing Every Atom in the Right Location', v1 2025-10-28 / v2 2025-10-29, comment 'technical report'. Official pages: genesis.ml/ai-research (fetched) describes Pearl but states nothing about access, weights, API or licensing; https://www.genesis.ml/pearl and https://www.genesis.ml/technology both return HTTP 404, so no dedicated official product page exists at those paths. On the NVIDIA route implied by the GTC announcement: the public NVIDIA inference catalogue at https://integrate.api.nvidia.com/v1/models lists 102 models and contains no 'pearl' or 'genesis' entry. https://build.nvidia.com/genesis-molecular-ai/pearl returns HTTP 200, but I verified this is worthless as evidence - a deliberately nonsense path on the same host also returns HTTP 200 with a generic 'NVIDIA NIM | Try NVIDIA NIM APIs' shell, so the site is an SPA that 200s on everything. Therefore a public Pearl endpoint is UNVERIFIED, not confirmed absent. Not checked: partner/enterprise access behind a login, and any NVIDIA BioNeMo blog announcement.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-sctranslator",
+    "name": "scTranslator",
+    "condition": "Both scope eligibility and explicit code/checkpoint reuse terms are resolved.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://api.github.com/repos/TencentAILabHealthcare/scTranslator",
+      "https://api.github.com/repos/TencentAILabHealthcare/scTranslator/contents/",
+      "https://raw.githubusercontent.com/TencentAILabHealthcare/scTranslator/main/README.md",
+      "https://api.crossref.org/works/10.1038/s41551-025-01528-z",
+      "https://doi.org/10.1038/s41551-025-01528-z"
+    ],
+    "licence_quote": "None exists to quote. The GitHub API reports \"license\": null for TencentAILabHealthcare/scTranslator, and the repository root contains no LICENSE file (contents: README.md, checkpoint/, code/, dataset/, requirements.txt, result/, scTranslator.jpg). The README distributes weights with no terms attached: \"The pre-trained models can be downloaded from these links.\"",
+    "rationale": "Both halves of the condition are still open, so the hold stands. Licence: re-checked today at the GitHub API level and by listing the repository root - there is still no LICENSE file and no SPDX licence, unchanged in substance since the July review (repo last pushed 2025-08-24). Checkpoints are real but term-free: the README's model table offers scTranslator 2M (>2M human cells + 18,000 bulk samples), scTranslator 160k and scTranslator 10k, each behind a personal Google Drive link, with datasets and results likewise on Drive and a contact email for questions - i.e. public availability without any grant of reuse rights. Scope: the model remains a single RNA-to-protein translation task; that half is a written-policy decision the register must make, not something an external page can settle. Paper facts confirmed via Crossref today: 10.1038/s41551-025-01528-z, 'A pre-trained large generative model for translating single-cell transcriptomes to proteomes', Nature Biomedical Engineering, published 2025-11-05 - the record's paper link and 2025 year are correct. Not checked: whether the Google Drive files themselves carry an embedded licence, and whether the journal supplementary material states reuse terms.",
+    "checked": "2026-08-13"
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "name": "RibonanzaNet2",
+    "verdict": "hold",
+    "reason": "No primary paper or preprint for RibonanzaNet2 could be found. Europe PMC search for \"RibonanzaNet2\" returned 1 hit, an unrelated 2026 review (10.1039/d6sc01189f); a broader \"RibonanzaNet\" search returned 6 hits, none a RibonanzaNet2 paper — the closest primary work is the RibonanzaNet v1 paper (Ribonanza: deep learning of RNA structure through dual crowdsourcing, bioRxiv 10.1101/2024.02.24.581671, 2024-02-27). The repo github.com/Shujun-He/RibonanzaNet2 exists and is MIT-licensed, but its README is titled \"# RibonanzaNet\", describes training code, and links only v1 Kaggle notebooks (ribonanzanet-2d-structure-finetune / -inference, ribonanzanet-inference); no RibonanzaNet2 checkpoint locator is stated. The reported Kaggle weights page kaggle.com/models/shujun717/ribonanzanet2 returns HTTP 200 but only a 5.7 KB JS shell whose sole usable content is the page title \"Shujun | RibonanzaNet2 | Kaggle\" — no files, variations, licence or author metadata could be read. The only Hugging Face hosting is the multimolecule/* org (ribonanzanet, -deg, -drop, -ss), a third-party re-hosting org, not the Das Lab or Shujun He. The '~100M parameters' and 'state of the art' claims in the candidate remain UNVERIFIED.",
+    "licence_quote": "Repo LICENSE (github.com/Shujun-He/RibonanzaNet2, MIT, 'Copyright (c) 2025 Shujun-He'): \"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \\\"Software\\\"), to deal in the Software without restriction\". This covers CODE only; no weights licence was verifiable — the Kaggle model page did not render and the HF copies are third-party (multimolecule).",
+    "record": null,
+    "reconsider_when": "Reconsider when (a) a RibonanzaNet2-specific paper or preprint exists and resolves (arXiv/bioRxiv/journal DOI), AND (b) an author-owned checkpoint locator loads with readable terms — e.g. the Kaggle model page kaggle.com/models/shujun717/ribonanzanet2 renders its variations/licence, or weights appear under a Das Lab / Shujun He Hugging Face or Zenodo record. Third-party multimolecule re-uploads do not satisfy (b).",
+    "fetched": [
+      "https://raw.githubusercontent.com/Shujun-He/RibonanzaNet2/main/README.md",
+      "https://raw.githubusercontent.com/Shujun-He/RibonanzaNet2/main/LICENSE",
+      "https://github.com/Shujun-He/RibonanzaNet2",
+      "https://www.kaggle.com/models/shujun717/ribonanzanet2",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RibonanzaNet&format=json&pageSize=25&resultType=core",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22RibonanzaNet2%22&format=json&pageSize=25",
+      "https://huggingface.co/api/models?search=ribonanzanet&limit=20"
+    ]
+  },
+  {
+    "name": "Tabula",
+    "verdict": "already_held",
+    "reason": "Same model as hold-register entry bfm-tabula, not a distinct one. Identity chain: the candidate's repo github.com/aristoteleo/tabula is the exact code_link on bfm-tabula; the repo README names the preprint \"Predictive single cell foundation model for gene regulation and aging with privacy-preserving tabular learning\" (Ding, ..., Qiu) = arXiv 2607.19400 (submitted 2026-07-06); the held record's paper, bioRxiv 10.1101/2025.01.06.631427 \"Toward a privacy-preserving predictive foundation model of single-cell transcriptomics with federated learning and tabular modeling\" (Ding J.; Lin J.; Jiang S.; Wang Y.; Mao Z.; Fang Z.; Tang J.; Li M.; Qiu X.; corresponding Xiaojie Qiu, Stanford; posted 2025-01-06), is the earlier version of the same work — same lead author, same corresponding author, same federated + tabular design, same downstream task list (cell-type annotation, imputation, perturbation, multi-batch and multi-omics integration; hematopoiesis, pancreatic endogenesis, neurogenesis, cardiogenesis). The hold reason (no reusable pretrained checkpoint) still stands: the repo README documents installation, pretraining and tutorials but names no checkpoint; no model exists on Hugging Face under authors aristoteleo, XiaojieQiu, xiaojieqiu or aicell-lab (all four author queries returned []), and an HF search for \"tabula\" returns only Tabula Sapiens scvi-tools models and unrelated tabular-ML models. Evidence update worth adding to the held record: the 2026-07-06 arXiv version 2607.19400 and the Chiron federated-orchestration companion platform.",
+    "licence_quote": "Repo LICENSE (github.com/aristoteleo/tabula, 'Non-Commercial License, Copyright (c) 2026 Aristotle'): \"The Software must not be used, distributed, or modified for any commercial purposes, including but not limited to selling, sublicensing, or using the Software in a product or service intended for commercial gain.\" — code only; no weights artifact exists to carry terms. Consistent with the held record's noncommercial: true.",
+    "record": null,
+    "reconsider_when": "Unchanged from bfm-tabula: reconsider when an official reusable pretrained Tabula checkpoint is released (author-owned HF/Zenodo/repo release) and its terms are verified.",
+    "fetched": [
+      "https://arxiv.org/abs/2607.19400",
+      "https://raw.githubusercontent.com/aristoteleo/tabula/main/README.md",
+      "https://raw.githubusercontent.com/aristoteleo/tabula/main/LICENSE",
+      "https://api.biorxiv.org/details/biorxiv/10.1101/2025.01.06.631427",
+      "https://huggingface.co/api/models?search=tabula&limit=30",
+      "https://huggingface.co/api/models?author=aristoteleo&limit=20",
+      "https://huggingface.co/api/models?author=xiaojieqiu&limit=20",
+      "https://huggingface.co/api/models?author=aicell-lab&limit=20"
+    ]
+  },
+  {
+    "name": "X-Cell / X-Cell-Ultra (Xaira Therapeutics)",
+    "verdict": "hold",
+    "reason": "Paper verifies, artifact does not. bioRxiv API confirms 10.64898/2026.03.18.712807 v1, posted 2026-03-20, \"X-Cell: Scaling Causal Perturbation Prediction Across Diverse Cellular Contexts via Diffusion Language Models\", corresponding author Bo Wang (Xaira Therapeutics), licence cc_by_nc, not withdrawn, no published journal DOI. But no weights exist yet: the HF API for Xaira-Therapeutics/X-Cell lists siblings [.gitattributes, README.md, x-cell-overview.png] only — no model file, 0 downloads, gated false — and both the HF model card and the GitHub README carry the identical banner \"Status: Model weights and inference code coming soon. The Python API, model weights, and tutorials are under active development.\" The advertised `pip install xcell` / `XCell.from_pretrained(...)` usage is documented under a \"Usage (Coming Soon)\" heading. Scope, modality (singlecell) and ownership are fine; this fails the reusable-artifact rule only. Note the X-Atlas/Pisces dataset repo is separate and was not verified here.",
+    "licence_quote": "GitHub LICENSE (github.com/Xaira-Therapeutics/x-cell): \"Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International, Copyright (c) 2026 Xaira Therapeutics ... NonCommercial — You may not use the material for commercial purposes.\" HF card front-matter: \"license: cc-by-nc-sa-4.0\", gated: false. Access blocker is not the licence but availability: \"Status: Model weights and inference code coming soon.\"",
+    "record": null,
+    "reconsider_when": "Reconsider when https://huggingface.co/api/models/Xaira-Therapeutics/X-Cell lists an actual weight file (X-Cell Mini, 55M) in its siblings, or the `xcell` package with inference code ships and the 'coming soon' banner is removed from the GitHub README. Then re-check whether X-Cell-Ultra (4.9B) is released separately or stays internal, and record it under its own terms.",
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.03.18.712807",
+      "https://huggingface.co/api/models/Xaira-Therapeutics/X-Cell",
+      "https://huggingface.co/Xaira-Therapeutics/X-Cell/raw/main/README.md",
+      "https://raw.githubusercontent.com/Xaira-Therapeutics/x-cell/main/README.md",
+      "https://raw.githubusercontent.com/Xaira-Therapeutics/x-cell/main/LICENSE"
+    ]
+  },
+  {
+    "name": "PerturbGen",
+    "verdict": "accept",
+    "reason": "Paper, code and weights all verified this session. bioRxiv API: 10.64898/2026.03.04.709254 v1, posted 2026-03-05, \"Predicting how perturbations reshape cellular trajectories with PerturbGen\", corresponding author Mo Lotfollahi (Sanger Institute), licence cc_by, not withdrawn. Official repo github.com/Lotfollahi-lab/Perturbgen (MIT LICENSE present) matches the author lab and cites the same preprint URL. Weights are real and public: huggingface.co/lotfollahi-lab/PerturbGen contains a 574,205,516-byte pretraining checkpoint (20250709_1223_cellgen_train_masking_..._epoch=00.ckpt); HEAD on the resolve URL returns 302 -> 200 with x-linked-size 574205516, gated false, private false. Scope is a pretrained, reusable, multi-task FM (target-state prediction, gene-program discovery, in silico perturbation atlases), not a single-task tool. Date oddity from the discovery note is real and reported, not reconciled: the HF repo createdAt 2025-08-12 predates the 2026-03-05 preprint; both come from authoritative endpoints. One caveat carried into the record: the HF model card is the single line \"# PerturbGen\" with no licence field, so the weights ship without stated terms while the code is MIT.",
+    "licence_quote": "Code — repo LICENSE: \"MIT License, Copyright (c) 2022 lotfollibrary ... Permission is hereby granted, free of charge, to any person obtaining a copy of this software ... to deal in the Software without restriction\". Weights — the HF model card body is exactly \"# PerturbGen\" and the API returns tags [\"region:us\"] with no licence key: no weights licence stated, ungated, publicly downloadable. Preprint itself is CC-BY (bioRxiv API licence field \"cc_by\").",
+    "record": {
+      "name": "PerturbGen",
+      "modality": "singlecell",
+      "description": "Generative single-cell foundation model from the Lotfollahi lab (Wellcome Sanger Institute), trained on over 100 million single-cell transcriptomes, that predicts perturbation responses along cellular trajectories rather than at a single static state. It predicts how a genetic perturbation at a source state reshapes downstream states, gene programs and trajectories over time.",
+      "io": "Single-cell expression at a source state + genetic perturbation + target state/time -> predicted target-state expression, gene embeddings and context-specific gene programs",
+      "status": "Open code (MIT); pretrained checkpoint publicly downloadable and ungated on Hugging Face, model card states no licence",
+      "use_cases": "Trajectory-aware perturbation prediction, gene-program discovery, in silico genetic screens and perturbation atlases, disease-model simulation",
+      "year": "2026",
+      "paper_links": [
+        { "label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.64898/2026.03.04.709254v1" }
+      ],
+      "code_links": [
+        { "label": "GitHub", "url": "https://github.com/Lotfollahi-lab/Perturbgen" },
+        { "label": "Hugging Face (checkpoint)", "url": "https://huggingface.co/lotfollahi-lab/PerturbGen" }
+      ],
+      "sources": [
+        "https://api.biorxiv.org/details/biorxiv/10.64898/2026.03.04.709254",
+        "https://raw.githubusercontent.com/Lotfollahi-lab/Perturbgen/main/README.md",
+        "https://raw.githubusercontent.com/Lotfollahi-lab/Perturbgen/main/LICENSE",
+        "https://huggingface.co/api/models/lotfollahi-lab/PerturbGen",
+        "https://huggingface.co/lotfollahi-lab/PerturbGen/raw/main/README.md"
+      ],
+      "noncommercial": false,
+      "aliases": []
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.03.04.709254",
+      "https://raw.githubusercontent.com/Lotfollahi-lab/Perturbgen/main/README.md",
+      "https://raw.githubusercontent.com/Lotfollahi-lab/Perturbgen/main/LICENSE",
+      "https://huggingface.co/api/models/lotfollahi-lab/PerturbGen",
+      "https://huggingface.co/lotfollahi-lab/PerturbGen/raw/main/README.md",
+      "https://huggingface.co/lotfollahi-lab/PerturbGen/resolve/main/20250709_1223_cellgen_train_masking_lr_5e-05_wd_1e-06_batch_64_ptime_pos_sin_m_pow_tp_1-2-3_s_42-epoch=00.ckpt"
+    ]
+  },
+  {
+    "name": "GeneMamba",
+    "verdict": "accept",
+    "reason": "Ownership chain closed by the paper itself. arXiv 2504.16956 \"GeneMamba: An Efficient and Effective Foundation Model on Single Cell Data\" (Cong Qi, Hanzhang Fang, Siqi Jiang, Xun Song, Tianxing Hu, Wei Zhi), v1 2025-04-22 through v4 2026-03-23, not withdrawn; the arXiv HTML (v4) states verbatim \"The code is available at https://github.com/MineSelf2016/GeneMamba. The HuggingFace usage guide is at https://huggingface.co/mineself2016/GeneMamba.\" — so both artifacts are author-declared, not third-party. Weights are real: huggingface.co/mineself2016/GeneMamba carries model.safetensors (262,998,656 bytes; safetensors metadata total 65,744,338 F32 parameters), config.json, tokenizer, custom modelling code (GeneMambaModel / ForMaskedLM / ForSequenceClassification), gated false, tagged arxiv:2504.16956; HEAD on the resolve URL returns 302 -> 200. Scope is a pretrained, reusable, multi-task scRNA-seq FM (multi-batch integration, cell-type annotation, gene-gene correlation). Two discrepancies flagged rather than resolved: the abstract says pretraining on \"nearly 30 million cells\" while the body figure caption says \"approximately 50M cells\" from CELLXGENE — the record therefore states no cell count; and the GitHub repo carries no LICENSE file (LICENSE, LICENSE.md, LICENSE.txt all 404 on main and master) while the HF repo does.",
+    "licence_quote": "Weights — huggingface.co/mineself2016/GeneMamba/raw/main/LICENSE: \"Apache License Version 2.0, January 2004\" (full Apache-2.0 text; ungated, gated: false). Code — github.com/MineSelf2016/GeneMamba has NO licence file: LICENSE, LICENSE.md and LICENSE.txt all return HTTP 404 on both main and master, so the repository code carries no stated terms.",
+    "record": {
+      "name": "GeneMamba",
+      "modality": "singlecell",
+      "description": "Bidirectional state-space (Bi-Mamba) foundation model for single-cell transcriptomics that encodes rank-ordered gene sequences in linear time as an alternative to transformer-based scRNA-seq foundation models. Pretrained on CELLxGENE data with biologically informed objectives and evaluated on multi-batch integration, cell-type annotation and gene-gene correlation.",
+      "io": "Rank-ordered single-cell gene expression -> cell and gene embeddings; fine-tuned classification / masked-LM heads",
+      "status": "Weights on Hugging Face under Apache-2.0, ungated; GitHub code has no licence file",
+      "use_cases": "Multi-batch integration, cell-type annotation, gene-gene correlation analysis, embedding extraction, fine-tuning",
+      "year": "2025",
+      "paper_links": [
+        { "label": "arXiv", "url": "https://arxiv.org/abs/2504.16956" }
+      ],
+      "code_links": [
+        { "label": "GitHub", "url": "https://github.com/MineSelf2016/GeneMamba" },
+        { "label": "Hugging Face", "url": "https://huggingface.co/mineself2016/GeneMamba" }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2504.16956",
+        "https://arxiv.org/html/2504.16956v4",
+        "https://huggingface.co/api/models/mineself2016/GeneMamba",
+        "https://huggingface.co/mineself2016/GeneMamba/raw/main/LICENSE",
+        "https://huggingface.co/mineself2016/GeneMamba/raw/main/README.md",
+        "https://raw.githubusercontent.com/MineSelf2016/GeneMamba/main/README.md"
+      ],
+      "noncommercial": false,
+      "aliases": []
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://arxiv.org/abs/2504.16956",
+      "https://arxiv.org/html/2504.16956v4",
+      "https://huggingface.co/api/models/mineself2016/GeneMamba",
+      "https://huggingface.co/mineself2016/GeneMamba/raw/main/LICENSE",
+      "https://huggingface.co/mineself2016/GeneMamba/raw/main/README.md",
+      "https://huggingface.co/mineself2016/GeneMamba/resolve/main/model.safetensors",
+      "https://raw.githubusercontent.com/MineSelf2016/GeneMamba/main/README.md"
+    ]
+  },
+  {
+    "name": "scMamba (multi-omics integration)",
+    "verdict": "accept",
+    "reason": "EXTRA — not on worklist fm_slice_10.json; verified because the slice brief asked for the scMamba name collision to be settled. This is the arXiv 2506.20697 scMamba: \"scMamba: A Scalable Foundation Model for Single-Cell Multi-Omics Integration Beyond Highly Variable Feature Selection\" (Zhen Yuan, Shaoqing Jiao, Yihang Xiao, Jiajie Peng), submitted 2025-06-25, not withdrawn. It is the one with a real artifact: github.com/23AIBox/scMamba (created 2025-04-09, AGPL-3.0 per GitHub search API, 23AIBox = Jiajie Peng's group) whose README opens \"This is the official codebase for scMamba: A Scalable Foundation Model for Single-Cell Multi-omics Integration Beyond Highly Variable Feature Selection\" and documents inference from pretrained checkpoints (`--checkpoints results/checkpoints/PBMC.pt`). Distinct from arXiv 2502.19429 scMamba (snRNA-seq / neurodegeneration, Oh & Ye, KAIST), which is held separately below. Caveat carried into the record: pretrained checkpoints are distributed via an author-hosted Dropbox folder linked from the README; the link resolves (302 -> zip_download_get, HTTP 200) but the folder listing is a JS shell I could not enumerate, so I confirmed the folder is live and public, NOT the individual checkpoint files. Checkpoints referenced in the README are per-dataset (e.g. PBMC.pt). Name disambiguated in the record; a bare 'scMamba' alias is retained.",
+    "licence_quote": "Code — raw.githubusercontent.com/23AIBox/scMamba/main/LICENSE: \"GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007\" (AGPL-3.0, copyleft, commercial use permitted under network-copyleft terms). Weights — README: \"The checkpoints and datasets for the scMamba model are available via dropbox. We might update our checkpoints from time to time.\" No separate weights licence is stated.",
+    "record": {
+      "name": "scMamba (multi-omics integration)",
+      "modality": "singlecell",
+      "description": "State-space-duality (Mamba) foundation model for single-cell multi-omics integration that uses patch-based tokenization of genomic regions, treating regions as tokens and cells as sentences, so no highly variable feature selection is needed and genomic positional information is preserved. Contrastive learning with cosine-similarity regularization aligns omics layers.",
+      "io": "Paired single-cell multi-omics profiles (e.g. RNA + ATAC, full feature set) -> aligned joint cell embeddings",
+      "status": "Open code (AGPL-3.0); pretrained checkpoints via an author-hosted Dropbox folder linked from the official repo (folder live, file listing not enumerable)",
+      "use_cases": "Single-cell multi-omics integration, clustering, cell-type annotation, trajectory inference",
+      "year": "2025",
+      "paper_links": [
+        { "label": "arXiv", "url": "https://arxiv.org/abs/2506.20697" }
+      ],
+      "code_links": [
+        { "label": "GitHub", "url": "https://github.com/23AIBox/scMamba" }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2506.20697",
+        "https://arxiv.org/html/2506.20697",
+        "https://raw.githubusercontent.com/23AIBox/scMamba/main/README.md",
+        "https://raw.githubusercontent.com/23AIBox/scMamba/main/LICENSE",
+        "https://api.github.com/search/repositories?q=scMamba"
+      ],
+      "noncommercial": false,
+      "aliases": ["scMamba"]
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://arxiv.org/abs/2506.20697",
+      "https://arxiv.org/html/2506.20697",
+      "https://api.github.com/search/repositories?q=scMamba&per_page=20",
+      "https://raw.githubusercontent.com/23AIBox/scMamba/main/README.md",
+      "https://raw.githubusercontent.com/23AIBox/scMamba/main/LICENSE",
+      "https://www.dropbox.com/scl/fo/g64416xvv1fjd36l1z7nx/AKcB6XbOFHLPFHQX68TpGCQ?rlkey=1i3grodznoch33gihjqn74oc9&st=cvwgi5n5&dl=0",
+      "https://huggingface.co/api/models?search=scmamba&limit=20"
+    ]
+  },
+  {
+    "name": "scMamba (snRNA-seq, neurodegeneration)",
+    "verdict": "hold",
+    "reason": "EXTRA — not on worklist fm_slice_10.json; the other half of the scMamba name collision, recorded so the two are never merged. arXiv 2502.19429 \"scMamba: A Pre-Trained Model for Single-Nucleus RNA Sequencing Analysis in Neurodegenerative Disorders\" (Gyutaek Oh, Baekgyu Choi, Seyoung Jin, Inkyung Jung, Jong Chul Ye), Feb 2025, not withdrawn — a genuinely different model from arXiv 2506.20697: different authors (KAIST), different data (snRNA-seq from postmortem brain), different tasks (cell-type annotation, doublet detection, imputation, DEG identification), different architecture lineage (linear adapters + bidirectional Mamba blocks, code forked from hyena-dna). Official repo github.com/okt0711/scMamba (created 2025-02-12, Apache-2.0) names the same paper and authors, so ownership is clear, but there are NO public weights: the README's entire Checkpoint section is a request-by-email gate. Held on the reusable-artifact rule, not on scope or identity.",
+    "licence_quote": "Code — raw.githubusercontent.com/okt0711/scMamba/main/LICENSE: \"Apache License Version 2.0, January 2004\". Weights — README, Checkpoint section, in full: \"If you want to use pre-trained model checkpoint, please contact [okt0711@gmail.com].\" — no public download, no stated weights licence.",
+    "record": null,
+    "reconsider_when": "Reconsider when the pretrained checkpoint is published at a public locator (HF, Zenodo, or a repo release) instead of the email-request gate, and its terms are readable. If it is ever cataloged, it must carry a disambiguated name (e.g. 'scMamba (snRNA-seq, neurodegeneration)') because arXiv 2506.20697 scMamba is a different model.",
+    "fetched": [
+      "https://arxiv.org/abs/2502.19429",
+      "https://arxiv.org/html/2502.19429",
+      "https://api.github.com/search/repositories?q=scMamba&per_page=20",
+      "https://raw.githubusercontent.com/okt0711/scMamba/main/README.md",
+      "https://raw.githubusercontent.com/okt0711/scMamba/main/LICENSE",
+      "https://huggingface.co/api/models?search=scmamba&limit=20"
+    ]
+  }
+]
