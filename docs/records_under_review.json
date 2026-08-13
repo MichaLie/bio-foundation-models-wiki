@@ -4,8 +4,8 @@
   "title": "Biological Foundation Models — records under review",
   "description": "Audited candidates excluded from the displayed canonical index until their scope, artifact, identity, duplication, or reuse-term issue is resolved.",
   "status": "editorial-hold",
-  "date_modified": "2026-07-14",
-  "record_count": 32,
+  "date_modified": "2026-08-13",
+  "record_count": 39,
   "policy": {
     "displayed_in_index": false,
     "stable_ids_reserved": true,
@@ -41,7 +41,7 @@
         "year": "",
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/",
           "https://huggingface.co/yangheng/PlantRNA-FM",
@@ -49,16 +49,16 @@
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "only PlantRNA-FM has a primary paper link and the two model cards carry different licences. Split or fully evidence both components.",
+        "audit_note": "only PlantRNA-FM has a primary paper link and the two model cards carry different licences. Split or fully evidence both components. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_1.json): the split is now evidenced but not executed. PlantRNA-FM is fully documented as an individual member - MIT licence, ungated downloadable weights, its own primary paper - and would be promotable standalone; mRNA-FM's weights are ungated under AGPL-3.0, but its card links only the family preprint, so its own primary evidence is missing. The two members carry conflicting licences, so the combined record cannot be promoted as-is.",
         "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "family_identity",
-        "reason": "only PlantRNA-FM has a primary paper link and the two model cards carry different licences. Split or fully evidence both components.",
+        "reason": "only PlantRNA-FM has a primary paper link and the two model cards carry different licences. Split or fully evidence both components. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_1.json): the split is now evidenced but not executed. PlantRNA-FM is fully documented as an individual member - MIT licence, ungated downloadable weights, its own primary paper - and would be promotable standalone; mRNA-FM's weights are ungated under AGPL-3.0, but its card links only the family preprint, so its own primary evidence is missing. The two members carry conflicting licences, so the combined record cannot be promoted as-is.",
         "source": "evidence/source-audit/foundation_residual_mod1.md",
         "reconsider_when": "Split the family or verify each member with its own primary evidence, artifact locator, and licence."
       }
@@ -88,7 +88,7 @@
         "year": "2024",
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.nature.com/articles/s41592-024-02191-z",
           "https://github.com/snap-stanford/SATURN"
@@ -133,7 +133,7 @@
         "year": "",
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://openreview.net/forum?id=gdwcoBCMVi",
           "https://arxiv.org/html/2311.15156v2"
@@ -179,7 +179,7 @@
         "year": "2024",
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.nature.com/articles/s41592-024-02214-9",
           "https://github.com/TencentAILabHealthcare/scPROTEIN"
@@ -225,23 +225,23 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.nature.com/articles/nmeth.3547",
           "https://github.com/FunctionLab/selene"
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "Identity is correct, but the linked artifact is the later Selene framework, and DeepSEA is a supervised regulatory predictor rather than an unambiguous reusable FM. Decide whether it is a documented historical/canonical exception. Paper, Selene.",
+        "audit_note": "Identity is correct, but the linked artifact is the later Selene framework, and DeepSEA is a supervised regulatory predictor rather than an unambiguous reusable FM. Decide whether it is a documented historical/canonical exception. Paper, Selene. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_1.json): the original standalone DeepSEA artifact has been located at deepsea.princeton.edu/help/, distinct from the Selene framework this record links, and the page states no licence for that download. The remaining blocker is the missing written historical-exception policy, which no external evidence can satisfy; if that policy is adopted, replace the Selene link with the located artifact and record the absent licence.",
         "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "scope",
-        "reason": "Identity is correct, but the linked artifact is the later Selene framework, and DeepSEA is a supervised regulatory predictor rather than an unambiguous reusable FM. Decide whether it is a documented historical/canonical exception. Paper, Selene.",
+        "reason": "Identity is correct, but the linked artifact is the later Selene framework, and DeepSEA is a supervised regulatory predictor rather than an unambiguous reusable FM. Decide whether it is a documented historical/canonical exception. Paper, Selene. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_1.json): the original standalone DeepSEA artifact has been located at deepsea.princeton.edu/help/, distinct from the Selene framework this record links, and the page states no licence for that download. The remaining blocker is the missing written historical-exception policy, which no external evidence can satisfy; if that policy is adopted, replace the Selene link with the located artifact and record the absent licence.",
         "source": "evidence/source-audit/foundation_residual_mod0.md",
         "reconsider_when": "Reconsider only under a written historical-exception policy with the original artifact correctly identified."
       }
@@ -271,7 +271,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.biorxiv.org/content/10.1101/2024.12.25.630221v1",
           "https://github.com/kundajelab/chrombpnet"
@@ -312,7 +312,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://github.com/raphaelmourad/Mistral-DNA"
         ],
@@ -357,7 +357,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.researchsquare.com/article/rs-1927200/v1",
           "https://github.com/benlevyx/florabert"
@@ -411,7 +411,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.nature.com/articles/s41467-023-41303-9",
           "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003659",
@@ -420,16 +420,16 @@
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "DRfold/DRfold2 are RNA structure predictors; DRfold2 contains a pretrained RCLM component, but the catalogue record itself remains one-task structure prediction. HOLD or define a structural-model exception. DRfold paper, DRfold2 paper, DRfold, DRfold2.",
+        "audit_note": "DRfold/DRfold2 are RNA structure predictors; DRfold2 contains a pretrained RCLM component, but the catalogue record itself remains one-task structure prediction. HOLD or define a structural-model exception. DRfold paper, DRfold2 paper, DRfold, DRfold2. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_2.json): the successor repository does ship reusable artifacts - its install script downloads about 1.3 GB of model weights under MIT-form terms - but the weight locator is indirect and both remaining paths are curatorial: no written structural-model exception exists, and the record still frames the entry as one-task RNA structure prediction rather than around the pretrained language-model component.",
         "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "scope",
-        "reason": "DRfold/DRfold2 are RNA structure predictors; DRfold2 contains a pretrained RCLM component, but the catalogue record itself remains one-task structure prediction. HOLD or define a structural-model exception. DRfold paper, DRfold2 paper, DRfold, DRfold2.",
+        "reason": "DRfold/DRfold2 are RNA structure predictors; DRfold2 contains a pretrained RCLM component, but the catalogue record itself remains one-task structure prediction. HOLD or define a structural-model exception. DRfold paper, DRfold2 paper, DRfold, DRfold2. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_2.json): the successor repository does ship reusable artifacts - its install script downloads about 1.3 GB of model weights under MIT-form terms - but the weight locator is indirect and both remaining paths are curatorial: no written structural-model exception exists, and the record still frames the entry as one-task RNA structure prediction rather than around the pretrained language-model component.",
         "source": "evidence/source-audit/foundation_residual_mod0.md",
         "reconsider_when": "Reconsider only under a written structural-model exception or after reframing around an evidenced reusable pretrained component."
       }
@@ -459,7 +459,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2402.04997",
           "https://github.com/jasonkyuyim/multiflow",
@@ -510,7 +510,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2506.08954",
           "https://github.com/OATML-Markslab/Protriever"
@@ -556,7 +556,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.science.org/doi/10.1126/science.adq2634",
           "https://github.com/pgmikhael/protgps"
@@ -602,7 +602,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.nature.com/articles/s42256-024-00792-z",
           "https://github.com/zrqiao/NeuralPLexer",
@@ -650,7 +650,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2405.11769",
           "https://github.com/deepmodeling/Uni-Mol/tree/main/unimol_docking_v2"
@@ -696,7 +696,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://academic.oup.com/bioinformatics/article/40/10/btae576/7810444",
           "https://github.com/Exscientia/abodybuilder3"
@@ -737,7 +737,7 @@
         "code_links": [],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2602.03477"
         ],
@@ -772,6 +772,10 @@
           {
             "label": "bioRxiv",
             "url": "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1"
+          },
+          {
+            "label": "arXiv (2026 version)",
+            "url": "https://arxiv.org/abs/2607.19400"
           }
         ],
         "code_links": [
@@ -782,118 +786,26 @@
         ],
         "canonical": false,
         "noncommercial": true,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1",
-          "https://github.com/aristoteleo/tabula"
+          "https://github.com/aristoteleo/tabula",
+          "https://arxiv.org/abs/2607.19400"
         ],
         "audit_state": "hold",
         "audit_priority": "P1",
-        "audit_note": "set NC true, but repository has training code only and no pretrained checkpoint. HOLD until reusable weights exist.",
+        "audit_note": "set NC true, but repository has training code only and no pretrained checkpoint. HOLD until reusable weights exist. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json and evidence/additions-2026-08-13/fm_result_10.json): the repository is alive but still ships training code only, with no weights and no releases, and no model-hub artifact exists under the authors. A rediscovered candidate was matched to this entry rather than added: the work now also appears as arXiv 2607.19400 under a new title, with a federated-orchestration companion platform, which explains the title mismatch between the repository README and the cited preprint. The custom non-commercial repository licence corroborates the existing noncommercial flag but supplies no weights.",
         "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "artifact",
-        "reason": "set NC true, but repository has training code only and no pretrained checkpoint. HOLD until reusable weights exist.",
+        "reason": "set NC true, but repository has training code only and no pretrained checkpoint. HOLD until reusable weights exist. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json and evidence/additions-2026-08-13/fm_result_10.json): the repository is alive but still ships training code only, with no weights and no releases, and no model-hub artifact exists under the authors. A rediscovered candidate was matched to this entry rather than added: the work now also appears as arXiv 2607.19400 under a new title, with a federated-orchestration companion platform, which explains the title mismatch between the repository README and the cited preprint. The custom non-commercial repository licence corroborates the existing noncommercial flag but supplies no weights.",
         "source": "evidence/source-audit/foundation_residual_mod1.md",
         "reconsider_when": "Reconsider when an official reusable pretrained checkpoint is released and its terms are verified."
-      }
-    },
-    {
-      "record": {
-        "id": "bfm-virchow-virchow2-and-virchow2g",
-        "date_added": "2026-06-16",
-        "modality": "spatial",
-        "name": "Virchow / Virchow2 (and Virchow2G)",
-        "description": "Paige/MSK self-supervised ViT-H tile-level pathology foundation models. Virchow trained on 1.5M WSIs (632M params); Virchow2 on 3.1M+ WSIs; Virchow2G scales to 1.85B params (largest pathology encoder).",
-        "io": "H&E histology tile -> tile-level embedding (frozen or fine-tuned feature extractor)",
-        "status": "HOLD — family members have different gating, commercial access and model terms; split required",
-        "use_cases": "Tile/slide-level cancer detection, rare cancer detection, biomarker prediction, pan-cancer downstream tasks",
-        "year": "2024",
-        "paper_links": [
-          {
-            "label": "Nature",
-            "url": "https://www.nature.com/articles/s41591-024-03141-0"
-          }
-        ],
-        "code_links": [
-          {
-            "label": "Hugging Face",
-            "url": "https://huggingface.co/paige-ai/Virchow"
-          }
-        ],
-        "canonical": true,
-        "noncommercial": false,
-        "verified": "2026-07-13",
-        "sources": [
-          "https://www.nature.com/articles/s41591-024-03141-0",
-          "https://huggingface.co/paige-ai/Virchow",
-          "https://www.paige.ai/foundation-models"
-        ],
-        "audit_state": "hold",
-        "audit_priority": "P2",
-        "audit_note": "Base paper; base model; official family access. Action: split the family or encode member-specific terms: base Virchow is gated Apache-2.0, Virchow2 is non-commercial research, and Virchow2G has different commercial access.",
-        "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
-        "date_modified": "2026-07-13",
-        "aliases": []
-      },
-      "review": {
-        "status": "under_review",
-        "hold_since": "2026-07-13",
-        "reason_code": "family_identity",
-        "reason": "Base paper; base model; official family access. Action: split the family or encode member-specific terms: base Virchow is gated Apache-2.0, Virchow2 is non-commercial research, and Virchow2G has different commercial access.",
-        "source": "evidence/source-audit/foundation_residual_mod2.md",
-        "reconsider_when": "Split the family or encode member-specific artifacts, access routes, and terms with primary evidence."
-      }
-    },
-    {
-      "record": {
-        "id": "bfm-h-optimus-0-h-optimus-1",
-        "date_added": "2026-06-16",
-        "modality": "spatial",
-        "name": "H-optimus-0 / H-optimus-1",
-        "description": "Bioptimus 1.1B-parameter ViT pathology foundation models trained with self-supervised learning on hundreds of millions of tiles from 500k+ (H-0) to 1M+ (H-1) H&E slides across 4,000+ clinical centers.",
-        "io": "H&E histology tile -> tile-level feature embedding",
-        "status": "HOLD — catalog eligibility or reusable-artifact evidence is unresolved; see audit note",
-        "use_cases": "Mutation prediction, survival analysis, tissue/cancer classification, biomarker prediction, WSI feature-extraction backbone",
-        "year": "2024",
-        "paper_links": [
-          {
-            "label": "Paper",
-            "url": "https://www.bioptimus.com/news/bioptimus-launches-h-optimus-1"
-          }
-        ],
-        "code_links": [
-          {
-            "label": "Hugging Face",
-            "url": "https://huggingface.co/bioptimus/H-optimus-0"
-          }
-        ],
-        "canonical": false,
-        "noncommercial": true,
-        "verified": "2026-07-13",
-        "sources": [
-          "https://www.bioptimus.com/news/bioptimus-launches-h-optimus-1",
-          "https://huggingface.co/bioptimus/H-optimus-0"
-        ],
-        "audit_state": "hold",
-        "audit_priority": "P1",
-        "audit_note": "“Paper” is a company announcement, H-optimus-1 is missing from artifacts and is gated CC BY-NC-ND. Add both model cards and accurate mixed terms.",
-        "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
-        "date_modified": "2026-07-13",
-        "aliases": []
-      },
-      "review": {
-        "status": "under_review",
-        "hold_since": "2026-07-13",
-        "reason_code": "family_identity",
-        "reason": "“Paper” is a company announcement, H-optimus-1 is missing from artifacts and is gated CC BY-NC-ND. Add both model cards and accurate mixed terms.",
-        "source": "evidence/source-audit/foundation_residual_mod1.md",
-        "reconsider_when": "Verify and link each model card and encode the family members' distinct access and reuse terms."
       }
     },
     {
@@ -902,44 +814,48 @@
         "date_added": "2026-06-16",
         "modality": "spatial",
         "name": "Atlas (RudolfV successor)",
-        "description": "Aignostics/Mayo Clinic/Charite pathology foundation model (ViT-H/14, 632M params) built on the RudolfV pathologists-in-the-loop approach, trained on 1.2M WSIs across 70+ tissue and 100+ stain types.",
+        "description": "Aignostics/Mayo Clinic/Charite pathology foundation model (ViT-H/14, 632M params) built on the RudolfV pathologists-in-the-loop approach, trained on 1.2M WSIs across 70+ tissue and 100+ stain types; the product line has since advanced to Atlas 2 (arXiv 2601.05148, January 2026).",
         "io": "Histology tile -> tile-level embedding",
-        "status": "HOLD — no current public Atlas weight artifact verified; commercial access information only",
+        "status": "HOLD — no public Atlas or Atlas 2 weight artifact; commercial licensing only, and the previously listed model-hub entry is absent",
         "use_cases": "Pan-tissue cancer classification, biomarker prediction, WSI feature extraction across diverse stains/scanners",
         "year": "2025",
         "paper_links": [
           {
-            "label": "arXiv",
+            "label": "arXiv (Atlas)",
             "url": "https://arxiv.org/abs/2501.05409"
+          },
+          {
+            "label": "arXiv (Atlas 2)",
+            "url": "https://arxiv.org/abs/2601.05148"
           }
         ],
         "code_links": [
           {
-            "label": "Hugging Face",
-            "url": "https://huggingface.co/aignostics/atlas"
+            "label": "Official model page",
+            "url": "https://www.aignostics.com/products/foundation-models"
           }
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2501.05409",
-          "https://huggingface.co/aignostics/atlas",
+          "https://arxiv.org/abs/2601.05148",
           "https://www.aignostics.com/products/foundation-models",
           "https://www.aignostics.com/blog/atlas-2-setting-a-new-standard-for-pathology-foundation-models"
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "Listed HF artifact returns no model; official Aignostics materials now describe flexible commercial licensing and Atlas 2, not open/gated Atlas weights. Replace the dead artifact and avoid “open code, gated weights” unless a current public release is found. Atlas paper, dead listed artifact, official model page, Atlas 2.",
+        "audit_note": "Listed HF artifact returns no model; official Aignostics materials now describe flexible commercial licensing and Atlas 2, not open/gated Atlas weights. Replace the dead artifact and avoid “open code, gated weights” unless a current public release is found. Atlas paper, dead listed artifact, official model page, Atlas 2. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the listed Hugging Face artifact is still absent; the official product page now presents a three-generation line ending in Atlas 2 (arXiv 2601.05148, January 2026) with commercial licensing only and no public weight download; and a gated RudolfV-2 family has appeared on the vendor's model-hub organisation whose licence text is unreadable without authentication. The RudolfV-2 family is a separate candidate, not evidence for Atlas.",
         "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "artifact",
-        "reason": "Listed HF artifact returns no model; official Aignostics materials now describe flexible commercial licensing and Atlas 2, not open/gated Atlas weights. Replace the dead artifact and avoid “open code, gated weights” unless a current public release is found. Atlas paper, dead listed artifact, official model page, Atlas 2.",
+        "reason": "Listed HF artifact returns no model; official Aignostics materials now describe flexible commercial licensing and Atlas 2, not open/gated Atlas weights. Replace the dead artifact and avoid “open code, gated weights” unless a current public release is found. Atlas paper, dead listed artifact, official model page, Atlas 2. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the listed Hugging Face artifact is still absent; the official product page now presents a three-generation line ending in Atlas 2 (arXiv 2601.05148, January 2026) with commercial licensing only and no public weight download; and a gated RudolfV-2 family has appeared on the vendor's model-hub organisation whose licence text is unreadable without authentication. The RudolfV-2 family is a separate candidate, not evidence for Atlas.",
         "source": "evidence/source-audit/foundation_residual_mod0.md",
         "reconsider_when": "Reconsider when a current official public artifact or endpoint and its exact access terms are verified."
       }
@@ -969,23 +885,23 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2505.23579",
           "https://github.com/bowang-lab/BioReason"
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "repository still says checkpoints are forthcoming. HOLD until a reusable checkpoint is released.",
+        "audit_note": "repository still says checkpoints are forthcoming. HOLD until a reusable checkpoint is released. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the promised checkpoints are still unreleased - the README's checkpoint section reads that they will be released soon, while the abstract in the same file continues to claim public checkpoints - and no model-hub artifact exists. The successor BioReason-Pro has been released separately and is already a displayed record; it is a different model and does not lift this hold.",
         "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "artifact",
-        "reason": "repository still says checkpoints are forthcoming. HOLD until a reusable checkpoint is released.",
+        "reason": "repository still says checkpoints are forthcoming. HOLD until a reusable checkpoint is released. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the promised checkpoints are still unreleased - the README's checkpoint section reads that they will be released soon, while the abstract in the same file continues to claim public checkpoints - and no model-hub artifact exists. The successor BioReason-Pro has been released separately and is already a displayed record; it is a different model and does not lift this hold.",
         "source": "evidence/source-audit/foundation_residual_mod1.md",
         "reconsider_when": "Reconsider when the promised official checkpoints are released and their terms are verified."
       }
@@ -1015,23 +931,23 @@
         ],
         "canonical": false,
         "noncommercial": true,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2508.04724",
           "https://github.com/OpenProteinAI/PoET-2"
         ],
         "audit_state": "hold",
         "audit_priority": "P1",
-        "audit_note": "set NC true and resolve duplication with bfm-poet-2. Narrow to the commercial platform or merge.",
+        "audit_note": "set NC true and resolve duplication with bfm-poet-2. Narrow to the commercial platform or merge. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the PoET-2 repository is real and self-hosting, with Apache-2.0 code and a non-commercial model-weights licence, which confirms the recorded non-commercial flag for the model side. The condition remains a register-side editorial act: this record must be narrowed to the commercial platform or merged with the displayed PoET-2 record, with the stable-ID disposition documented. No separate held PoET-2 record exists, so the duplicate target lives in the displayed catalog.",
         "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "duplication",
-        "reason": "set NC true and resolve duplication with bfm-poet-2. Narrow to the commercial platform or merge.",
+        "reason": "set NC true and resolve duplication with bfm-poet-2. Narrow to the commercial platform or merge. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the PoET-2 repository is real and self-hosting, with Apache-2.0 code and a non-commercial model-weights licence, which confirms the recorded non-commercial flag for the model side. The condition remains a register-side editorial act: this record must be narrowed to the commercial platform or merged with the displayed PoET-2 record, with the stable-ID disposition documented. No separate held PoET-2 record exists, so the duplicate target lives in the displayed catalog.",
         "source": "evidence/source-audit/foundation_residual_mod1.md",
         "reconsider_when": "Narrow to the platform or merge with the PoET-2 record while documenting the stable-ID disposition."
       }
@@ -1056,23 +972,23 @@
         "code_links": [],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2510.24670",
           "https://www.genesis.ml/ai-research"
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "Only a paper is cited; “Web/API/commercial” lacks an official artifact locator. Official Genesis pages describe Pearl and an AI platform/partner access, not a public model endpoint. Paper, official Pearl page.",
+        "audit_note": "Only a paper is cited; “Web/API/commercial” lacks an official artifact locator. Official Genesis pages describe Pearl and an AI platform/partner access, not a public model endpoint. Paper, official Pearl page. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): paper identity was confirmed, but no artifact or terms exist to verify - the vendor's research page describes the model without stating access, weights, API or licensing, dedicated product paths return not-found, and the public inference catalogue lists no matching entry. A vendor endpoint path returns HTTP 200 for arbitrary paths, so it is worthless as evidence; a public endpoint remains unverified rather than confirmed absent.",
         "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "artifact",
-        "reason": "Only a paper is cited; “Web/API/commercial” lacks an official artifact locator. Official Genesis pages describe Pearl and an AI platform/partner access, not a public model endpoint. Paper, official Pearl page.",
+        "reason": "Only a paper is cited; “Web/API/commercial” lacks an official artifact locator. Official Genesis pages describe Pearl and an AI platform/partner access, not a public model endpoint. Paper, official Pearl page. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): paper identity was confirmed, but no artifact or terms exist to verify - the vendor's research page describes the model without stating access, weights, API or licensing, dedicated product paths return not-found, and the public inference catalogue lists no matching entry. A vendor endpoint path returns HTTP 200 for arbitrary paths, so it is worthless as evidence; a public endpoint remains unverified rather than confirmed absent.",
         "source": "evidence/source-audit/foundation_residual_mod0.md",
         "reconsider_when": "Reconsider when an official reusable model artifact or public endpoint and its terms are verified."
       }
@@ -1102,71 +1018,25 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.nature.com/articles/s41551-025-01528-z",
           "https://github.com/TencentAILabHealthcare/scTranslator"
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "Code/checkpoints are public but no licence file is present, and the model is a single RNA-to-protein translation task. HOLD or explicitly document both scope and no-licence limitations. Paper, repo.",
+        "audit_note": "Code/checkpoints are public but no licence file is present, and the model is a single RNA-to-protein translation task. HOLD or explicitly document both scope and no-licence limitations. Paper, repo. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the journal publication and the recorded year were confirmed from the registration record, and the checkpoints remain real but term-free - three model sizes behind personal cloud-drive links, with no licence file and no SPDX licence on the repository. Both halves of the condition, scope eligibility and explicit reuse terms, stay open.",
         "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "multiple",
-        "reason": "Code/checkpoints are public but no licence file is present, and the model is a single RNA-to-protein translation task. HOLD or explicitly document both scope and no-licence limitations. Paper, repo.",
+        "reason": "Code/checkpoints are public but no licence file is present, and the model is a single RNA-to-protein translation task. HOLD or explicitly document both scope and no-licence limitations. Paper, repo. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the journal publication and the recorded year were confirmed from the registration record, and the checkpoints remain real but term-free - three model sizes behind personal cloud-drive links, with no licence file and no SPDX licence on the repository. Both halves of the condition, scope eligibility and explicit reuse terms, stay open.",
         "source": "evidence/source-audit/foundation_residual_mod0.md",
         "reconsider_when": "Reconsider when scope eligibility and explicit code/checkpoint reuse terms are both resolved."
-      }
-    },
-    {
-      "record": {
-        "id": "bfm-chemberta-3",
-        "date_added": "2026-06-16",
-        "modality": "platform",
-        "name": "ChemBERTa-3",
-        "description": "Open training framework and benchmark suite for chemical foundation models.",
-        "paper_links": [
-          {
-            "label": "ChemRxiv PDF",
-            "url": "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/688b04ca23be8e43d6fe2c69/original/chem-ber-ta-3-an-open-source-training-framework-for-chemical-foundation-models.pdf"
-          }
-        ],
-        "code_links": [
-          {
-            "label": "GitHub",
-            "url": "https://github.com/deepforestsci/chemberta3"
-          }
-        ],
-        "status": "HOLD — public training framework/model links; exact reuse licence not confirmed",
-        "io": "SMILES -> embeddings/task heads",
-        "use_cases": "Re-training and benchmarking chemical encoders",
-        "year": "",
-        "canonical": false,
-        "noncommercial": false,
-        "verified": "2026-07-13",
-        "sources": [
-          "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/688b04ca23be8e43d6fe2c69/original/chem-ber-ta-3-an-open-source-training-framework-for-chemical-foundation-models.pdf",
-          "https://github.com/deepforestsci/chemberta3"
-        ],
-        "audit_state": "hold",
-        "audit_priority": "P2",
-        "audit_note": "Paper; artifact. Action: reclassify as a training platform/framework and change “open” to “public source/model links; reuse licence unconfirmed/HOLD”.",
-        "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
-        "date_modified": "2026-07-13",
-        "aliases": []
-      },
-      "review": {
-        "status": "under_review",
-        "hold_since": "2026-07-13",
-        "reason_code": "multiple",
-        "reason": "Paper; artifact. Action: reclassify as a training platform/framework and change “open” to “public source/model links; reuse licence unconfirmed/HOLD”.",
-        "source": "evidence/source-audit/foundation_residual_mod2.md",
-        "reconsider_when": "Reconsider after platform scope and explicit reuse terms for the released framework/model artifacts are verified."
       }
     },
     {
@@ -1194,7 +1064,7 @@
         "year": "2024",
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.nature.com/articles/s41422-024-01034-y",
           "https://github.com/xCompass-AI/GeneCompass"
@@ -1235,21 +1105,22 @@
         "code_links": [],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2502.10807"
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "Paper; no provenance-confirmed official artifact found. Action: retain paper-only/HOLD.",
+        "audit_note": "Paper; no provenance-confirmed official artifact found. Action: retain paper-only/HOLD. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the official project page's code link now points to a repository that returns not-found, so the only official artifact locator is dead, while three Apache-2.0, ungated weight repositories have appeared on a personal model-hub account whose display name matches the first author but whose organisations do not match the paper's institution. The paper-to-weights link is uploader-asserted rather than officially published, so provenance is unconfirmed.",
         "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
-        "aliases": []
+        "aliases": [],
+        "date_modified": "2026-08-13"
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "artifact",
-        "reason": "Paper; no provenance-confirmed official artifact found. Action: retain paper-only/HOLD.",
+        "reason": "Paper; no provenance-confirmed official artifact found. Action: retain paper-only/HOLD. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the official project page's code link now points to a repository that returns not-found, so the only official artifact locator is dead, while three Apache-2.0, ungated weight repositories have appeared on a personal model-hub account whose display name matches the first author but whose organisations do not match the paper's institution. The paper-to-weights link is uploader-asserted rather than officially published, so provenance is unconfirmed.",
         "source": "evidence/source-audit/foundation_residual_mod2.md",
         "reconsider_when": "Reconsider when a provenance-confirmed official reusable model artifact is released and verified."
       }
@@ -1279,7 +1150,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2504.16956",
           "https://github.com/MineSelf2016/GeneMamba",
@@ -1287,16 +1158,16 @@
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "Paper; code; weights. Action: qualify as public code/weights with no confirmed reuse licence; HOLD the “open” claim.",
+        "audit_note": "Paper; code; weights. Action: qualify as public code/weights with no confirmed reuse licence; HOLD the “open” claim. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): a parallel discovery lane proposed this model as a new addition on the strength of an Apache-2.0 header in the weights repository; reading the licence file itself shows the body is not the verbatim Apache-2.0 text (an altered patent-grant clause and a modified derivative-works definition), while the official code repository carries no licence at all. The catalog must not display this as Apache-2.0 until the authors resolve the discrepancy, so the hold stands and no new record was created.",
         "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "terms",
-        "reason": "Paper; code; weights. Action: qualify as public code/weights with no confirmed reuse licence; HOLD the “open” claim.",
+        "reason": "Paper; code; weights. Action: qualify as public code/weights with no confirmed reuse licence; HOLD the “open” claim. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): a parallel discovery lane proposed this model as a new addition on the strength of an Apache-2.0 header in the weights repository; reading the licence file itself shows the body is not the verbatim Apache-2.0 text (an altered patent-grant clause and a modified derivative-works definition), while the official code repository carries no licence at all. The catalog must not display this as Apache-2.0 until the authors resolve the discrepancy, so the hold stands and no new record was created.",
         "source": "evidence/source-audit/foundation_residual_mod2.md",
         "reconsider_when": "Reconsider when explicit reuse terms for the official code and weights are confirmed."
       }
@@ -1326,7 +1197,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2503.09427",
           "https://github.com/syr-cn/scMMGPT"
@@ -1372,7 +1243,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://www.nature.com/articles/s41591-023-02504-3",
           "https://github.com/PathologyFoundation/plip",
@@ -1380,16 +1251,16 @@
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "Paper; code; weights. Action: change “open” to “public code/weights; reuse terms unresolved/HOLD”; neither current official location provides a confirmed licence.",
+        "audit_note": "Paper; code; weights. Action: change “open” to “public code/weights; reuse terms unresolved/HOLD”; neither current official location provides a confirmed licence. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): neither official artifact grants reuse rights - the code repository has no licence file and the weights repository has empty card metadata. The only use-terms text is inherited from the upstream CLIP card and states that any deployed use case, commercial or not, is out of scope; if this entry is ever promoted, the terms field must reproduce that wording rather than imply an open licence, and the record's noncommercial flag must be revisited.",
         "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "terms",
-        "reason": "Paper; code; weights. Action: change “open” to “public code/weights; reuse terms unresolved/HOLD”; neither current official location provides a confirmed licence.",
+        "reason": "Paper; code; weights. Action: change “open” to “public code/weights; reuse terms unresolved/HOLD”; neither current official location provides a confirmed licence. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): neither official artifact grants reuse rights - the code repository has no licence file and the weights repository has empty card metadata. The only use-terms text is inherited from the upstream CLIP card and states that any deployed use case, commercial or not, is out of scope; if this entry is ever promoted, the terms field must reproduce that wording rather than imply an open licence, and the record's noncommercial flag must be revisited.",
         "source": "evidence/source-audit/foundation_residual_mod2.md",
         "reconsider_when": "Reconsider when explicit reuse terms for the official code and weights are confirmed."
       }
@@ -1419,7 +1290,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2502.12638",
           "https://github.com/acharkq/next-mol",
@@ -1427,16 +1298,16 @@
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "Paper; artifact; weights. Action: qualify as public code/checkpoints with reuse licence unconfirmed/HOLD.",
+        "audit_note": "Paper; artifact; weights. Action: qualify as public code/checkpoints with reuse licence unconfirmed/HOLD. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the artifacts were located and are downloadable - a pretrained molecular language model on the model hub and conformer checkpoints on an open repository - but none of the three official locations declares a licence, the repository offers a citation request rather than terms, and it still warns that open sourcing is in progress.",
         "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "terms",
-        "reason": "Paper; artifact; weights. Action: qualify as public code/checkpoints with reuse licence unconfirmed/HOLD.",
+        "reason": "Paper; artifact; weights. Action: qualify as public code/checkpoints with reuse licence unconfirmed/HOLD. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the artifacts were located and are downloadable - a pretrained molecular language model on the model hub and conformer checkpoints on an open repository - but none of the three official locations declares a licence, the repository offers a citation request rather than terms, and it still warns that open sourcing is in progress.",
         "source": "evidence/source-audit/foundation_residual_mod2.md",
         "reconsider_when": "Reconsider when explicit reuse terms for the official code and checkpoints are confirmed."
       }
@@ -1470,7 +1341,7 @@
         ],
         "canonical": false,
         "noncommercial": false,
-        "verified": "2026-07-13",
+        "verified": "2026-08-13",
         "sources": [
           "https://arxiv.org/abs/2603.25240",
           "https://huggingface.co/collections/Alibaba-DAMO-Academy/lingshu-cell",
@@ -1478,18 +1349,462 @@
         ],
         "audit_state": "hold",
         "audit_priority": "P2",
-        "audit_note": "Paper; official collection; project. Action: downgrade “model hub” to paper/project page; the official collection currently contains the paper, not a model.",
+        "audit_note": "Paper; official collection; project. Action: downgrade “model hub” to paper/project page; the official collection currently contains the paper, not a model. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the official collection still contains only the paper and no model, and the official project page links no code, weights or endpoint. An unaffiliated third-party repository carrying checkpoint files has appeared; its provenance is not established and it must not be treated as the official artifact.",
         "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
-        "date_modified": "2026-07-13",
+        "date_modified": "2026-08-13",
         "aliases": []
       },
       "review": {
         "status": "under_review",
         "hold_since": "2026-07-13",
         "reason_code": "artifact",
-        "reason": "Paper; official collection; project. Action: downgrade “model hub” to paper/project page; the official collection currently contains the paper, not a model.",
+        "reason": "Paper; official collection; project. Action: downgrade “model hub” to paper/project page; the official collection currently contains the paper, not a model. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the official collection still contains only the paper and no model, and the official project page links no code, weights or endpoint. An unaffiliated third-party repository carrying checkpoint files has appeared; its provenance is not established and it must not be treated as the official artifact.",
         "source": "evidence/source-audit/foundation_residual_mod2.md",
         "reconsider_when": "Reconsider when the official collection contains a released reusable model artifact with verified terms."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-jump-lite",
+        "date_added": "2026-08-13",
+        "modality": "benchmark",
+        "name": "JUMP-lite (with Nahual)",
+        "description": "Compact benchmark subset of the JUMP Cell Painting resource for reproducible evaluation of cell-image representations.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2608.07632"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/afermg/JUMP_lite"
+          },
+          {
+            "label": "Zenodo code archive",
+            "url": "https://zenodo.org/records/21779243"
+          }
+        ],
+        "status": "HOLD — MIT harness code and a Zenodo code archive exist, but the benchmark image, embedding and metadata bundle is not yet retrievable from the Cell Painting Gallery",
+        "io": "Cell Painting images and precomputed embeddings + benchmark tasks -> cell-representation benchmark results",
+        "use_cases": "Benchmarking cell-image representation models",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2608.07632",
+          "https://github.com/afermg/JUMP_lite",
+          "https://zenodo.org/records/21779243"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: paper and MIT code verified, but an unsigned listing of the Cell Painting Gallery prefixes returns no objects, so the benchmark data cannot be downloaded. Evidence: evidence/additions-2026-08-13/fm_result_1.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Paper (arXiv 2608.07632) and MIT code verified, but the benchmark artifact is not retrievable: the README states the release is deposited for publication in the Cell Painting Gallery and the public paths become available only after gallery promotion, and unsigned S3 listings of the cited prefixes return no objects. The data licence is deferred to Cell Painting Gallery / JUMP terms rather than stated. Scope note: JUMP-lite/Nahual is benchmark and deployment infrastructure, not a pretrained model. Evidence: evidence/additions-2026-08-13/fm_result_1.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "An unsigned listing of the Cell Painting Gallery publication_data / images prefixes for the JUMP-lite release returns objects, i.e. the metadata bundle, embeddings and image stores are actually downloadable; re-verify the data licence at that point."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-aqaffinity",
+        "date_added": "2026-08-13",
+        "modality": "complex",
+        "name": "AQAffinity",
+        "description": "SandboxAQ binding-affinity model that predicts protein-ligand affinity directly from sequence and ligand structure, implemented as an affinity module on an open co-folding backbone.",
+        "paper_links": [],
+        "code_links": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/SandboxAQ/AQAffinity"
+          }
+        ],
+        "status": "HOLD — Apache-2.0 weights, inference and training code are published behind an auto-approved contact form, but no primary paper exists and the model is a single-capability affinity head",
+        "io": "Protein sequence + ligand SMILES, with no precomputed structure -> predicted binding affinity",
+        "use_cases": "Binding-affinity prediction and hit triage",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://huggingface.co/SandboxAQ/AQAffinity"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: artifact, ownership and Apache-2.0 terms verified, but no paper or preprint exists and scope is narrower than a reusable backbone. Evidence: evidence/additions-2026-08-13/fm_result_2.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Artifact fully verified on the official SandboxAQ model hub (weights, inference and training code, Apache-2.0, auto-approved contact gate), but two gates fail: no paper or preprint exists anywhere (the only primary source is a first-party vendor release post, and the card cites another team's preprint), and the model is a single-purpose affinity head on another backbone rather than a pretrained model reusable across tasks. Also outside the refresh window. Evidence: evidence/additions-2026-08-13/fm_result_2.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "A primary paper or preprint for AQAffinity appears, or the index adopts a written rule that a first-party vendor release post counts as the primary source and that single-capability heads built on another backbone are in scope. No artifact re-verification is needed at that point."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-planthelixseek",
+        "date_added": "2026-08-13",
+        "modality": "dna",
+        "name": "PlantHelixSeek",
+        "description": "Plant DNA language model released with a base checkpoint and downstream task heads for regulatory-element and annotation tasks.",
+        "paper_links": [],
+        "code_links": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/zhangtaolab/PlantHelixSeek"
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/zhangtaolab/PlantHelixSeek"
+          }
+        ],
+        "status": "HOLD — public MIT code and ungated CC BY-NC 4.0 weights, but no paper, preprint or technical report exists",
+        "io": "Plant DNA sequence -> embeddings and downstream task predictions",
+        "use_cases": "Plant regulatory-element prediction, genome annotation, representation transfer",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://huggingface.co/zhangtaolab/PlantHelixSeek",
+          "https://github.com/zhangtaolab/PlantHelixSeek"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: artifacts and lab provenance verified, but there is no primary document; the repository's citation block is self-referential. Evidence: evidence/additions-2026-08-13/fm_result_3.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "scope",
+        "reason": "Model and provenance are real - an established plant-DNA-model lab, a base checkpoint plus downstream heads on the hub, MIT code and CC BY-NC 4.0 weights - but no primary paper, preprint or technical report exists and literature searches return no hits, so catalog eligibility is unresolved. Weights are non-commercial, and uptake is unproven. Evidence: evidence/additions-2026-08-13/fm_result_3.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "A primary document appears - a preprint, journal article, or dated technical report for PlantHelixSeek or its architecture. Accept then with modality dna, noncommercial true, and a status naming the CC BY-NC 4.0 weights and MIT code."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-seqlens-v2",
+        "date_added": "2026-08-13",
+        "modality": "dna",
+        "name": "SeqLens v2 (with mgxLens v2)",
+        "description": "Announced second generation of the seqLens genomic language model family, with only the smallest variant public and a companion metagenomic profiler bundle.",
+        "paper_links": [
+          {
+            "label": "seqLens v1 (Molecular Biology and Evolution)",
+            "url": "https://doi.org/10.1093/molbev/msag139"
+          }
+        ],
+        "code_links": [],
+        "status": "HOLD — v2 provenance is unverified, only the smallest variant is released, and the companion profiler declares no licence",
+        "io": "DNA or metagenomic sequence -> embeddings and downstream predictions",
+        "use_cases": "Genomic representation learning, metagenomic profiling",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://doi.org/10.1093/molbev/msag139"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: no v2 primary document, unverified organisation provenance, partial release, and an unlicensed companion bundle. Evidence: evidence/additions-2026-08-13/fm_result_3.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Three conditions fail. No primary document for v2 exists - literature hits cover only the v1 work and the v2 card cites itself. Provenance is unverified: the publishing hub organisation is unaffiliated with the v1 authors, no public v2 code repository exists, and the card cites non-public internal files. The release is partial - only the smallest variant is public, with the larger family members marked in development or planned. The companion mgxLens v2 additionally fails scope and licence: it is a self-described proof-of-concept retrieval profiler with no licence declared. Evidence: evidence/additions-2026-08-13/fm_result_3.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "Positive evidence of ownership appears - the v1 authors publicly claiming the publishing organisation, a public v2 code repository, or a v2 paper naming authors - and the larger family members actually ship. Reassess mgxLens separately only if it is relicensed and re-scoped as a reusable model."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-screenshot",
+        "date_added": "2026-08-13",
+        "modality": "singlecell",
+        "name": "ScreenShot",
+        "description": "In-context model for few-shot combination drug screening, pretrained on 40 screening datasets covering about 3,700 drugs and 6,000 samples, that predicts responses from functional dose-response measurements without fine-tuning.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2608.12219"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/tansey-lab/screenshot"
+          }
+        ],
+        "status": "HOLD — checkpoints are present in the public repository but no licence exists anywhere, so reuse rights are unresolved and scope placement needs a curator ruling",
+        "io": "Observed combination dose-response measurements -> predicted responses for unseen combinations",
+        "use_cases": "Combination drug-screening prediction, few-shot perturbation-response modelling",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2608.12219",
+          "https://github.com/tansey-lab/screenshot"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: paper and artifacts verified, but the repository has no licence file and the released checkpoints are per-held-out-cohort evaluation artifacts. Evidence: evidence/additions-2026-08-13/fm_result_5.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Paper (arXiv 2608.12219) and artifacts check out - the official lab repository ships model checkpoints and drug libraries - but no licence exists in any form, so the default is all-rights-reserved and no honest reuse phrase can be written. Scope also needs a curator call: the model is pretrained and reusable by in-context learning, but it consumes functional dose-response measurements rather than molecular representations, and the released checkpoints are leave-one-cohort-out evaluation artifacts rather than one canonical model. If admitted it belongs in the perturbation-response slot (singlecell), not molecule. Evidence: evidence/additions-2026-08-13/fm_result_5.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "A LICENSE file appears in the official repository, or the paper states explicit terms for the released weights, and the curator rules on whether functional-screening perturbation-response models belong in the index."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-spgen",
+        "date_added": "2026-08-13",
+        "modality": "spatial",
+        "name": "SPgen",
+        "description": "Framework that predicts proteome-wide spatial protein abundance by combining frozen third-party sequence, expression and text encoders with a graph network trained per dataset.",
+        "paper_links": [
+          {
+            "label": "bioRxiv",
+            "url": "https://doi.org/10.64898/2026.07.16.739037"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/lijc0804/SPgen"
+          }
+        ],
+        "status": "HOLD — the official repository has no licence and ships no pretrained weights; the pretrained content is entirely third-party frozen encoders",
+        "io": "Spatial transcriptomics with protein-sequence and text embeddings -> predicted spatial protein expression",
+        "use_cases": "Spatial proteomics prediction",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://doi.org/10.64898/2026.07.16.739037",
+          "https://github.com/lijc0804/SPgen"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: preprint and repository identity verified, but no licence, no released checkpoint, and narrow single-task scope. Evidence: evidence/additions-2026-08-13/fm_result_7.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Preprint and official repository verified and linked by the paper's code-availability statement, but three independent blockers remain: no licence file exists, so redistribution terms default to all-rights-reserved; the repository contains scripts and notebooks only, with no checkpoint files or weight-download instructions; and the pretrained content is third-party frozen encoders wrapped by a graph network trained per dataset, i.e. one task rather than reusable pretrained scope. Evidence: evidence/additions-2026-08-13/fm_result_7.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "The repository adds an explicit licence and ships downloadable SPgen checkpoints, or an author-controlled model-hub or Zenodo artifact appears, or a peer-reviewed version documents released weights. Re-verify licence wording at that point."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-omicslm",
+        "date_added": "2026-08-13",
+        "modality": "multimodal",
+        "name": "OmicsLM",
+        "description": "Multimodal large language model that embeds continuous expression profiles in the language-model context for multi-sample omics reasoning, trained on more than 5.5 million instruction examples across 70+ task types.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2605.06728"
+          }
+        ],
+        "code_links": [],
+        "status": "HOLD — paper only; no official code, weights or endpoint could be located",
+        "io": "Expression profiles + natural-language question -> omics reasoning, analysis and answers",
+        "use_cases": "Multi-sample omics reasoning, expression-aware question answering",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2605.06728"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: the primary source is verified, but hub and repository searches return no official artifact. Evidence: evidence/additions-2026-08-13/fm_result_7.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "artifact",
+        "reason": "Primary source verified (arXiv 2605.06728, not withdrawn) and the abstract matches the described capability, but no official artifact could be found anywhere: the abstract page states no code or weights availability, a model-hub search returns nothing, and a repository search returns no matching project. Paper-only entries with no reusable artifact do not meet the artifact criterion. Evidence: evidence/additions-2026-08-13/fm_result_7.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "An official repository or model card appears under the authors' organisation, or a revised version of the paper adds a code-availability link; then verify weights licence and gating before accepting, and record whether the release is weights or inference-only."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-x-cell",
+        "date_added": "2026-08-13",
+        "modality": "singlecell",
+        "name": "X-Cell / X-Cell-Ultra",
+        "description": "Xaira Therapeutics diffusion language model for causal perturbation prediction across diverse cellular contexts, announced with a small public variant and a much larger internal one.",
+        "paper_links": [
+          {
+            "label": "bioRxiv",
+            "url": "https://doi.org/10.64898/2026.03.18.712807"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/Xaira-Therapeutics/X-Cell"
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/Xaira-Therapeutics/x-cell"
+          }
+        ],
+        "status": "HOLD — the official repositories are public and CC BY-NC-SA-4.0, but both carry a 'weights and inference code coming soon' banner and contain no model files",
+        "io": "Cell context + perturbation -> predicted post-perturbation expression",
+        "use_cases": "Perturbation-response prediction, in silico genetic screens",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://doi.org/10.64898/2026.03.18.712807",
+          "https://huggingface.co/Xaira-Therapeutics/X-Cell",
+          "https://github.com/Xaira-Therapeutics/x-cell"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: paper, ownership, scope and terms verified, but no weights exist yet. Evidence: evidence/additions-2026-08-13/fm_result_10.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": [
+          "X-Cell",
+          "X-Cell-Ultra"
+        ]
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "artifact",
+        "reason": "Paper verifies (bioRxiv 10.64898/2026.03.18.712807, posted 2026-03-20, not withdrawn) and ownership, modality and CC BY-NC-SA-4.0 terms are clear, but the reusable-artifact rule fails: the model repository lists no model file and both the model card and the code repository carry the identical banner stating that weights and inference code are coming soon. Evidence: evidence/additions-2026-08-13/fm_result_10.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "The model repository lists an actual weight file, or the inference package ships and the coming-soon banner is removed; then re-check whether X-Cell-Ultra is released separately or stays internal and record it under its own terms."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-scmamba-snrna",
+        "date_added": "2026-08-13",
+        "modality": "singlecell",
+        "name": "scMamba (snRNA-seq, neurodegeneration)",
+        "description": "Bidirectional Mamba model pretrained on single-nucleus RNA-seq from postmortem brain tissue for neurodegeneration analysis; a different model from the multi-omics-integration scMamba.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2502.19429"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/okt0711/scMamba"
+          }
+        ],
+        "status": "HOLD — Apache-2.0 code is public, but the pretrained checkpoint is available only by email request",
+        "io": "Single-nucleus RNA-seq expression -> cell embeddings, annotations and imputed profiles",
+        "use_cases": "Cell-type annotation, doublet detection, imputation, differential-expression analysis",
+        "year": "2025",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2502.19429",
+          "https://github.com/okt0711/scMamba"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13 on the reusable-artifact rule; recorded separately from the multi-omics scMamba so the two are never merged. Evidence: evidence/additions-2026-08-13/fm_result_10.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "artifact",
+        "reason": "One half of a name collision, recorded so the two models are never merged. arXiv 2502.19429 is a genuinely different model from arXiv 2506.20697: different authors, data (postmortem-brain snRNA-seq), tasks and architecture lineage. The official repository names the same paper and authors, so ownership is clear, but there are no public weights - the checkpoint section is a request-by-email gate. Held on the reusable-artifact rule, not on scope or identity. Evidence: evidence/additions-2026-08-13/fm_result_10.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "The pretrained checkpoint is published at a public locator with readable terms instead of the email-request gate. Any catalog entry must keep a disambiguated name, because arXiv 2506.20697 scMamba is a different model."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-scmamba-multiomics",
+        "date_added": "2026-08-13",
+        "modality": "singlecell",
+        "name": "scMamba (multi-omics integration)",
+        "description": "State-space-duality model for single-cell multi-omics integration that tokenizes genomic regions instead of selecting highly variable features; a different model from the snRNA-seq scMamba.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2506.20697"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/23AIBox/scMamba"
+          }
+        ],
+        "status": "HOLD — the AGPL-3.0 repository is stale and states that code follows manuscript acceptance; checkpoints are offered only through a share whose contents could not be verified",
+        "io": "Paired single-cell multi-omics profiles -> aligned joint cell embeddings",
+        "use_cases": "Single-cell multi-omics integration, clustering, cell-type annotation, trajectory inference",
+        "year": "2025",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2506.20697",
+          "https://github.com/23AIBox/scMamba"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: two verification lanes disagreed on the artifact, neither could enumerate the checkpoint files, and the conservative reading prevails. Evidence: evidence/additions-2026-08-13/fm_result_10.json and fm_result_11.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "artifact",
+        "reason": "Paper verified (arXiv 2506.20697, not withdrawn), but the artifact does not clear the bar. Two independent lanes reviewed it and disagreed: one read the repository as documenting inference from pretrained checkpoints, the other found the repository stale since before the paper was posted and its README stating that all code will be public following acceptance. Neither lane could enumerate the checkpoint files, which are offered only through a share page that does not render a file listing, so the conservative reading applies. A second, unrelated scMamba (arXiv 2502.19429) is held separately, so any future entry needs explicit disambiguation. Evidence: evidence/additions-2026-08-13/fm_result_10.json and fm_result_11.json.",
+        "source": "evidence/source-audit/foundation_initial.md",
+        "reconsider_when": "The manuscript is accepted or published and the full code plus checkpoints are formally released at a verifiable locator (model hub, Zenodo, or a populated repository release) with the paper pointing at the repository; then add with disambiguation against the snRNA-seq scMamba."
       }
     }
   ]
