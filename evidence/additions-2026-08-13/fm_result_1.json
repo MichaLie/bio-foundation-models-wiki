@@ -1,0 +1,219 @@
+[
+  {
+    "name": "GENEB",
+    "verdict": "accept",
+    "reason": "Paper verified: arxiv.org/abs/2606.04525 resolves, title 'GENEB: Why Genomic Models Are Hard to Compare' (Daria Ledneva, Mikhail Nuridinov, Denis Kuznetsov), comments 'Accepted to ICML 2026', not withdrawn; submission history v1 2026-06-03, v2 2026-06-05, v3 2026-06-11, v4 2026-08-05. Artifact ownership verified: HF account darlednik resolves to fullname 'Daria Ledneva' (org DeepPavlov) via huggingface.co/api/users/darlednik/overview, matching first author; the same handle owns the GitHub repo, the HF dataset (tagged arxiv:2606.04525) and the HF Space. All three artifacts are live and ungated: GitHub darlednik/GENEB (Apache-2.0, pushed 2026-08-05, 43 stars), HF dataset darlednik/geneb-tasks ('gated':false, 'private':false, license apache-2.0, 541 downloads), HF Space darlednik/geneb-leaderboard (runtime stage RUNNING, 'gated':false, static leaderboard with leaderboard.json / leaderboard_tasks.json). Scope: 40 models x 100 tasks x 13 functional categories, three data regimes, runnable local harness plus released task data and hosted leaderboard - genuine reusable benchmark infrastructure, far broader than one task. Note for the parent: arXiv v1 (2026-06-03) predates a 2026-06-15 window start by 12 days; latest revision 2026-08-05 is in window.",
+    "licence_quote": "Repo LICENSE: 'Apache License / Version 2.0, January 2004'; README badge 'license-Apache 2.0'. HF dataset card front matter: 'license: apache-2.0'. HF dataset API: \"gated\": false, \"private\": false. HF Space API: \"gated\": false. Same Apache-2.0 grant covers harness code and task data; no gating, no non-commercial clause found.",
+    "record": {
+      "name": "GENEB",
+      "modality": "benchmark",
+      "description": "Diagnostic benchmark that evaluates frozen representations from 40 genomic foundation models across 100 DNA classification tasks in 13 functional categories (promoters, enhancers, histone modifications, DNA methylation, splice sites, lncRNA and others) under one linear-probing protocol in full-data, 10-shot and 1-shot regimes, with MCC as the primary metric over 5 seeds. Its headline result is that aggregate leaderboards are unstable: rankings flip sharply across task categories and parameter count is a weak predictor of representation quality.",
+      "io": "DNA sequence classification tasks + a genomic foundation model's frozen embeddings -> per-task, per-category and overall MCC / accuracy / macro-F1 leaderboard scores",
+      "status": "Open code + task data (Apache-2.0), public ungated leaderboard",
+      "use_cases": "choosing a DNA language model for a specific genomics task, standardized head-to-head comparison of genomic foundation models, few-shot representation evaluation, category-aware model selection",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "arXiv:2606.04525 (ICML 2026)",
+          "url": "https://arxiv.org/abs/2606.04525"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub (harness)",
+          "url": "https://github.com/darlednik/GENEB"
+        },
+        {
+          "label": "Hugging Face task data",
+          "url": "https://huggingface.co/datasets/darlednik/geneb-tasks"
+        },
+        {
+          "label": "Leaderboard (HF Space)",
+          "url": "https://huggingface.co/spaces/darlednik/geneb-leaderboard"
+        }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2606.04525",
+        "https://api.github.com/repos/darlednik/GENEB",
+        "https://raw.githubusercontent.com/darlednik/GENEB/main/LICENSE",
+        "https://raw.githubusercontent.com/darlednik/GENEB/main/README.md",
+        "https://huggingface.co/api/datasets/darlednik/geneb-tasks",
+        "https://huggingface.co/datasets/darlednik/geneb-tasks/raw/main/README.md",
+        "https://huggingface.co/api/spaces/darlednik/geneb-leaderboard",
+        "https://huggingface.co/api/users/darlednik/overview"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "Genomic Embedding Benchmark"
+      ]
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://arxiv.org/abs/2606.04525",
+      "https://api.github.com/repos/darlednik/GENEB",
+      "https://raw.githubusercontent.com/darlednik/GENEB/main/LICENSE",
+      "https://raw.githubusercontent.com/darlednik/GENEB/main/README.md",
+      "https://huggingface.co/api/datasets/darlednik/geneb-tasks",
+      "https://huggingface.co/datasets/darlednik/geneb-tasks/raw/main/README.md",
+      "https://huggingface.co/api/spaces/darlednik/geneb-leaderboard",
+      "https://huggingface.co/api/users/darlednik/overview"
+    ]
+  },
+  {
+    "name": "JUMP-lite (with Nahual)",
+    "verdict": "hold",
+    "reason": "Paper and code verified, but the benchmark dataset itself is not yet publicly retrievable. Paper: arxiv.org/abs/2608.07632, 'JUMP-lite: Compact, reproducible benchmarking of cell representations' (Munoz, Fredin Haslum, Shen, Carpenter, Singh; submitted to WACV 2027), v1 2026-08-07, not withdrawn. Code: github.com/afermg/JUMP_lite exists, MIT, pushed 2026-08-12, owner afermg = Alan F. Munoz (first author), archived on Zenodo as record 21779243 ('afermg/JUMP_lite: JUMP-Lite v1.0', 2026-08-03, MIT, single 13 MB source zip). CONDITION FAILURE: the README states the release is only 'deposited for publication in the Cell Painting Gallery' and that 'the public paths below will become available after gallery promotion'. I confirmed this directly against the bucket: an unsigned S3 list of cpg0016-jump/source_all/workspace/publication_data/ returns KeyCount 0, cpg0016-jump/source_all/images/2026_jump_lite_v1.0/ returns KeyCount 0, and the only prefix that exists under source_all/ is workspace/metadata_harmonized/. No 2026_jump_lite key is present anywhere under that prefix. So the 116 GB compressed image subset, the per-site embeddings and the metadata bundle - i.e. the whole benchmark artifact - cannot currently be downloaded. Secondary note: the candidate's Zenodo link (21779243) is the code-archive DOI; the README instead cites 10.5281/zenodo.18705140, which is a separate, real record ('JUMP and JUMP-lite indices and associated tables', 2026-02-19, CC0, index parquets only, not images or embeddings). Also worth flagging for the parent: JUMP-lite/Nahual is benchmark + deployment infrastructure, not a pretrained model.",
+    "licence_quote": "README: 'Repository code is available under the [MIT License](LICENSE). Data usage is governed by the terms of the Cell Painting Gallery and the original JUMP dataset.' LICENSE file: 'MIT License / Copyright (c) 2026 Broad Institute / JUMP_lite contributors'. Access blocker, same README: 'Release status: v1.0 is deposited for publication in the Cell Painting Gallery. The public paths below will become available after gallery promotion.'",
+    "record": null,
+    "reconsider_when": "An unsigned list of https://cellpainting-gallery.s3.amazonaws.com/?list-type=2&prefix=cpg0016-jump/source_all/workspace/publication_data/2026_jump_lite/ (or .../images/2026_jump_lite_v1.0/) returns KeyCount > 0, i.e. the Cell Painting Gallery promotion has happened and the metadata bundle, embeddings and compressed image stores are actually downloadable with --no-sign-request. Re-verify the data licence at that point, since the README defers it to Cell Painting Gallery / JUMP terms rather than stating one.",
+    "fetched": [
+      "https://arxiv.org/abs/2608.07632",
+      "https://api.github.com/repos/afermg/JUMP_lite",
+      "https://raw.githubusercontent.com/afermg/JUMP_lite/main/README.md",
+      "https://raw.githubusercontent.com/afermg/JUMP_lite/main/LICENSE",
+      "https://zenodo.org/api/records/21779243",
+      "https://zenodo.org/api/records/18705140",
+      "https://cellpainting-gallery.s3.amazonaws.com/?list-type=2&prefix=cpg0016-jump/source_all/workspace/publication_data/2026_jump_lite/&max-keys=6",
+      "https://cellpainting-gallery.s3.amazonaws.com/?list-type=2&prefix=cpg0016-jump/source_all/images/2026_jump_lite_v1.0/&max-keys=4",
+      "https://cellpainting-gallery.s3.amazonaws.com/?list-type=2&prefix=cpg0016-jump/source_all/&delimiter=/&max-keys=20",
+      "https://cellpainting-gallery.s3.amazonaws.com/?list-type=2&prefix=cpg0016-jump/source_all/workspace/&delimiter=/&max-keys=30"
+    ]
+  },
+  {
+    "name": "PG-LLM",
+    "verdict": "accept",
+    "reason": "Preprint verified via api.biorxiv.org/details/biorxiv/10.64898/2026.07.27.741045: 'PG-LLM: Benchmarking General-Purpose Language Models for Protein Variant Ranking', Arora R.K.; Chen L.T.; Du M.; Marks D.; Church G., corresponding author Rohit Krishan Arora (Harvard Medical School), licence cc_by, category bioinformatics, v1 2026-07-28 and v2 2026-08-03, published 'NA' (still preprint), not withdrawn. The artifact gap flagged by the discovery lane is now closed: the JATS full text (biorxiv.org/content/early/2026/08/03/2026.07.27.741045.source.xml, HTTP 200, 160 KB) contains a 'Resources and reproducibility' section stating 'Code to run the PG-LLM benchmark is released through the PG-LLM GitHub repository', and the reference list gives https://github.com/rohitarorayyc/proteingym-llm and https://proteingymllm.com. Both resolve (HTTP 200; proteingymllm.com redirects to www.proteingymllm.com). Provenance: the repo LICENSE is copyright the exact author list, and the owner handle rohitarorayyc matches the corresponding author. Data is genuinely released, not just promised: DATA.md documents release eval-data-v1.2 with SHA-256 b40ca6bb30741a652243e90e08a485ef48a52691bff8a075ec0f396200cf6f8a, and I downloaded the asset header - HTTP 200, 2,882,774 bytes, exactly the size DATA.md states. Scope: 217 ProteinGym assays, N=10/50/100 candidate sets, three fixed seeds, held-out labels, a full CLI (pgllm-data/-run/-score/-export/-verify-splits) and a public leaderboard - reusable evaluation infrastructure, not a one-task paper. One access caveat recorded rather than treated as disqualifying: the 59-assay contamination-control panel is not in the bundle ('Data assets for the 59 post-January assays are available from the corresponding author upon request, as some include unpublished data'); the main 217-task benchmark is fully open.",
+    "licence_quote": "Code: 'MIT License / Copyright (c) 2026 Rohit Arora, Leo Tianlai Chen, Melissa Du, Debora S. Marks, and George M. Church' (raw LICENSE). Data, DATA.md: 'This release is intended for evaluation, not training or benchmark-specific tuning. Do not use its candidate sets or held-out labels for pretraining, continued pretraining, fine-tuning, distillation, retrieval augmentation, prompt optimization, or model and agent tuning.' and 'Individual experimental assays remain attributable to their original authors and retain their original terms; the code repository's MIT license does not supersede those data terms.' Note: this is a training-use restriction, not a non-commercial clause - MIT is the positive permissive grant for the code and harness.",
+    "record": {
+      "name": "PG-LLM",
+      "modality": "benchmark",
+      "description": "ProteinGym-derived benchmark of 217 protein-variant prioritization tasks in which a model receives a wild-type sequence plus an assay description and must rank 50 mutant sequences by fitness with no MSA and no structure. It evaluates thirteen general-purpose language models and rescores 95 published protein predictors on identical candidate sets under the same nested-macro Spearman metric, and adds a contamination-control panel of 59 DMS assays from 19 studies whose scores first became public after January 2026.",
+      "io": "wild-type protein sequence + assay description + shuffled set of full-length mutant sequences -> one JSON best-to-worst ranking of the mutants, scored as nested-macro Spearman rho",
+      "status": "Open code (MIT); frozen evaluation bundle released on GitHub, evaluation-only use policy",
+      "use_cases": "benchmarking general-purpose LLMs and protein language models on variant-effect ranking, contamination-controlled evaluation, test-time-compute scaling studies, leaderboard submissions",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (10.64898/2026.07.27.741045)",
+          "url": "https://doi.org/10.64898/2026.07.27.741045"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub (benchmark harness)",
+          "url": "https://github.com/rohitarorayyc/proteingym-llm"
+        },
+        {
+          "label": "Leaderboard and traces",
+          "url": "https://proteingymllm.com"
+        },
+        {
+          "label": "Evaluation data release (eval-data-v1.2)",
+          "url": "https://github.com/rohitarorayyc/proteingym-llm/releases/tag/eval-data-v1.2"
+        }
+      ],
+      "sources": [
+        "https://api.biorxiv.org/details/biorxiv/10.64898/2026.07.27.741045",
+        "https://www.biorxiv.org/content/early/2026/08/03/2026.07.27.741045.source.xml",
+        "https://github.com/rohitarorayyc/proteingym-llm",
+        "https://raw.githubusercontent.com/rohitarorayyc/proteingym-llm/main/README.md",
+        "https://raw.githubusercontent.com/rohitarorayyc/proteingym-llm/main/LICENSE",
+        "https://raw.githubusercontent.com/rohitarorayyc/proteingym-llm/main/DATA.md",
+        "https://github.com/rohitarorayyc/proteingym-llm/releases/download/eval-data-v1.2/proteingym-llm-eval-v1.2.tar.gz",
+        "https://proteingymllm.com"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "ProteinGym-LLM",
+        "proteingym-llm"
+      ]
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.07.27.741045",
+      "https://www.biorxiv.org/content/early/2026/08/03/2026.07.27.741045.source.xml",
+      "https://github.com/rohitarorayyc/proteingym-llm",
+      "https://raw.githubusercontent.com/rohitarorayyc/proteingym-llm/main/README.md",
+      "https://raw.githubusercontent.com/rohitarorayyc/proteingym-llm/main/LICENSE",
+      "https://raw.githubusercontent.com/rohitarorayyc/proteingym-llm/main/DATA.md",
+      "https://github.com/rohitarorayyc/proteingym-llm/releases/download/eval-data-v1.2/proteingym-llm-eval-v1.2.tar.gz",
+      "https://proteingymllm.com",
+      "https://zenodo.org/api/records/19713339"
+    ]
+  },
+  {
+    "name": "CYP ranking benchmark (from 'Rethinking Benchmarks and Models for Enzyme Specificity Prediction')",
+    "verdict": "reject",
+    "reason": "Real paper, real artifacts, but fails the scope bar and has no licence on the artifacts that actually carry the benchmark. Paper verified: arxiv.org/abs/2607.05084, 'Rethinking Benchmarks and Models for Enzyme Specificity Prediction' (Mahood, Komornikova, Pluskal, Chatterjee; IOCB Prague / MIT CSAIL / UPenn), q-bio.BM, v1 2026-07-06, CC BY 4.0, not withdrawn. SCOPE FAILURE: the entity is a single unnamed ranking dataset for one enzyme family - the paper calls it 'a CYP ranking benchmark requiring the correct enzyme to be prioritized among all CYPs in its native organism' (2,922 reactions / 768 enzymes / 616 substrates), one task, one family. That is narrower than the catalog's broader-than-one-task bar, and there is no named, standalone benchmark release to index. LICENCE FAILURE on the primary carriers: the paper's Code and Data Availability section points the CYP database itself at gitlab.com/cyp_pred_repos/cytochromesp450_database - the GitLab API confirms it is public but returns 'license': null and 'license_url': null, as do the sibling repos boltzcyp and ezspec. github.com/lizmahood/enzyme-datasets likewise has no licence (GitHub API 'license': null; raw LICENSE 404), and its README covers the pre-existing enzyme-screen collection (aminotransferase, halogenase, phosphatase, glycosyltransferase, ...), not the CYP data - the paper states those datasets were 'originally sourced by [25]', so that repo is a derived copy, not the CYP artifact. The only licensed artifact, HF datasets/lizmahood/cyp_pred_repos (MIT, public, ungated, 81 GB), is a set of per-model reproduction bundles (boltzcyp/clipzyme/ezcage/ezspec/fusionesp data dirs and checkpoints), i.e. reproduction infrastructure for this one paper rather than a reusable benchmark release.",
+    "licence_quote": "HF datasets/lizmahood/cyp_pred_repos card front matter, in full: '---\\nlicense: mit\\n---' (no other text). github.com/lizmahood/enzyme-datasets: GitHub API 'license': null, raw LICENSE returns HTTP 404 - no licence at all. gitlab.com/cyp_pred_repos/cytochromesp450_database: GitLab API 'visibility': 'public', 'license': null, 'license_url': null - public but unlicensed. Paper wording: 'Code and data for producing the CYP database can be found at https://gitlab.com/cyp_pred_repos/cytochromesp450_database ... All datasets and models can be found at https://huggingface.co/datasets/lizmahood/cyp_pred_repos/tree/main'.",
+    "record": null,
+    "reconsider_when": null,
+    "fetched": [
+      "https://arxiv.org/abs/2607.05084",
+      "https://arxiv.org/html/2607.05084v1",
+      "https://huggingface.co/api/datasets/lizmahood/cyp_pred_repos",
+      "https://huggingface.co/datasets/lizmahood/cyp_pred_repos/raw/main/README.md",
+      "https://api.github.com/repos/lizmahood/enzyme-datasets",
+      "https://raw.githubusercontent.com/lizmahood/enzyme-datasets/main/README.md",
+      "https://raw.githubusercontent.com/lizmahood/enzyme-datasets/main/LICENSE",
+      "https://gitlab.com/api/v4/projects/cyp_pred_repos%2Fcytochromesp450_database",
+      "https://gitlab.com/api/v4/projects/cyp_pred_repos%2Fboltzcyp",
+      "https://gitlab.com/api/v4/projects/cyp_pred_repos%2Fezspec"
+    ]
+  },
+  {
+    "name": "Nesso-1",
+    "verdict": "accept",
+    "reason": "Cleanest entry in the slice; all four criteria verified. Preprint verified via api.biorxiv.org/details/biorxiv/10.64898/2026.08.01.742196: 'Nesso-1: Accelerating Open-Source Binding Affinity Predictions', Shenoy N.; Errington D.; Bengio E.; Kapusniak K.; Klaeser K.; Pang Y.T.; Radenkovic V.; Tossou P.; Bois T.; Wedlake A.; Di Giovanni F., corresponding author Francesco Di Giovanni (Recursion), licence cc_by, category molecular biology, v1 dated 2026-08-03, published 'NA', not withdrawn. The abstract itself states 'We open-source Nesso-1: code and weights are available at https://github.com/recursionpharma/nesso'. Artifacts verified and officially owned: the GitHub repo sits in the recursionpharma org (matching the corresponding author's institution) and resolves HTTP 200 with an Apache-2.0 LICENSE and a README whose citation block matches the preprint author list exactly. Weights are real and ungated: huggingface.co/api/models/recursionpharma/nesso returns 'gated': false, 'private': false, 'disabled': false, license apache-2.0, architectures ['Nesso1'], siblings including v1.0.0/model.safetensors and an Apache-2.0 LICENSE file, 578 MB storage, 21,082 downloads, created 2026-07-11. Scope: a pretrained general-purpose cofolding/affinity model with a CLI ('nesso predict complex.yaml'), documented input schema and tutorials - reusable across arbitrary protein-ligand pairs, not one task. Minor note: PyPI release is 'coming soon', install is via git+https; and the HF card additionally links a Valence Labs PDF technical report, which I did not fetch (the bioRxiv record is the primary source used here).",
+    "licence_quote": "GitHub LICENSE and HF LICENSE are both the verbatim 'Apache License / Version 2.0, January 2004'. Repo README: 'This project is licensed under a permissive [Apache License 2.0](LICENSE).' HF model card: '**License:** [Apache License 2.0]'. HF API: \"gated\": false, \"private\": false, \"license:apache-2.0\". Same permissive grant on code and weights; no gating, no acceptable-use or non-commercial rider found on either artifact.",
+    "record": {
+      "name": "Nesso-1",
+      "modality": "complex",
+      "description": "Coarse-grained cofolding model from Valence Labs / Recursion that jointly predicts protein-ligand structure and binding affinity in about one second per prediction on a single GPU, returning an affinity scalar plus a binder/non-binder score. The technical report claims more than an order-of-magnitude speed-up over Boltz-2 while matching or surpassing its accuracy on the same benchmarks as well as on the OpenBind affinity benchmark and 25 internal biochemical assays.",
+      "io": "protein amino-acid sequence + ligand (SMILES, CCD code or SDF), supplied as an input YAML -> predicted binding affinity scalar + binder/non-binder score (and cofolded complex)",
+      "status": "Open code + weights (Apache-2.0)",
+      "use_cases": "high-throughput virtual screening, binding-affinity prediction, hit triage, on-target versus off-target selectivity assessment, embedding extraction for downstream models",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "bioRxiv technical report (10.64898/2026.08.01.742196)",
+          "url": "https://doi.org/10.64898/2026.08.01.742196"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/recursionpharma/nesso"
+        },
+        {
+          "label": "Model weights (Hugging Face)",
+          "url": "https://huggingface.co/recursionpharma/nesso"
+        }
+      ],
+      "sources": [
+        "https://api.biorxiv.org/details/biorxiv/10.64898/2026.08.01.742196",
+        "https://github.com/recursionpharma/nesso",
+        "https://raw.githubusercontent.com/recursionpharma/nesso/main/LICENSE",
+        "https://raw.githubusercontent.com/recursionpharma/nesso/main/README.md",
+        "https://huggingface.co/api/models/recursionpharma/nesso",
+        "https://huggingface.co/recursionpharma/nesso/raw/main/README.md",
+        "https://huggingface.co/recursionpharma/nesso/raw/main/LICENSE"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "Nesso",
+        "nesso-1"
+      ]
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.08.01.742196",
+      "https://github.com/recursionpharma/nesso",
+      "https://raw.githubusercontent.com/recursionpharma/nesso/main/LICENSE",
+      "https://raw.githubusercontent.com/recursionpharma/nesso/main/README.md",
+      "https://huggingface.co/api/models/recursionpharma/nesso",
+      "https://huggingface.co/recursionpharma/nesso/raw/main/README.md",
+      "https://huggingface.co/recursionpharma/nesso/raw/main/LICENSE"
+    ]
+  }
+]

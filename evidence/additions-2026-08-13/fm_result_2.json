@@ -1,0 +1,175 @@
+[
+ {
+  "name": "Promera",
+  "verdict": "accept",
+  "reason": "All four gates pass. (1) Preprint resolves via the bioRxiv API: DOI 10.64898/2026.06.07.729267, 'Promera: a unified model for biomolecular structure prediction, filtering, and design', Jing B.; Bafna M.; Diaz D.J.; Klivans A.R.; Berger B., corresponding Bonnie Berger (MIT), posted 2026-06-10, v1, CC-BY, published_doi NA, not withdrawn; abstract matches the model exactly (all-atom structure prediction + binder filtering + controllable design, beats OpenFold3-p2 and Boltz-2 on therapeutically relevant co-folding categories). (2) Artifact is first-party: GitHub bjing2016/promera is owned by the first author (Jing, B.), created 2026-06-01, last push 2026-06-28, 85 stars, GitHub-detected licence MIT, default branch master; its README links the weights at huggingface.co/bjing-mit/promera, and the HF API confirms that repo is public, ungated (gated:false), license mit, created 2026-06-01, containing promera_2606.ckpt (1.89 GB). No third-party re-upload involved. (3) Licence unambiguous and permissive for both code and weights. (4) Scope is a general pretrained co-folding/design model, reusable across arbitrary biomolecular complexes and multiple tasks (prediction, filtering, design). Caveat worth carrying: 2026-06-10 is 5 days before the nominal 2026-06-15 window start, so this is an in-scope but slightly out-of-window release; also note downstream design workflows optionally require LigandMPNN/AbMPNN, which carry their own licences.",
+  "licence_quote": "Code (raw.githubusercontent.com/bjing2016/promera/master/LICENSE): 'MIT License / Copyright (c) 2026 Bowen Jing and Mihir Bafna / Permission is hereby granted, free of charge, to any person obtaining a copy of this software ... to deal in the Software without restriction'. Weights (huggingface.co/api/models/bjing-mit/promera): 'tags':['license:mit'], 'cardData':{'license':'mit'}, 'gated':false. GitHub repo page also states: 'MIT. Other licenses may apply to third-party source code noted in comments / file headers.'",
+  "record": {
+   "name": "Promera",
+   "modality": "complex",
+   "description": "Unified all-atom generative model from the Berger lab at MIT that combines biomolecular co-folding with binder filtering and controllable binder design. It predicts complex structures, produces confidence metrics reported to separate binders from non-binders more accurately than prior open models, and designs minibinders and VHH nanobodies under optional epitope, paratope and template constraints.",
+   "io": "JSON schemas of protein / nucleic-acid / ligand chains, with optional epitope, paratope and template constraints -> all-atom complex structures, confidence and filtering scores, and designed binder sequences",
+   "status": "Open: MIT-licensed code, MIT-licensed weights on Hugging Face, ungated",
+   "use_cases": "all-atom co-folding and complex structure prediction, de novo binder and nanobody design, binder filtering in design pipelines, epitope-targeted and state-selective design",
+   "year": 2026,
+   "date": "2026-06-10",
+   "paper_links": [
+    {"label": "bioRxiv preprint", "url": "https://www.biorxiv.org/content/10.64898/2026.06.07.729267v1"}
+   ],
+   "code_links": [
+    {"label": "GitHub", "url": "https://github.com/bjing2016/promera"},
+    {"label": "Weights (Hugging Face)", "url": "https://huggingface.co/bjing-mit/promera"}
+   ],
+   "sources": [
+    "https://api.biorxiv.org/details/biorxiv/10.64898/2026.06.07.729267",
+    "https://www.biorxiv.org/content/10.64898/2026.06.07.729267v1",
+    "https://api.github.com/repos/bjing2016/promera",
+    "https://github.com/bjing2016/promera",
+    "https://raw.githubusercontent.com/bjing2016/promera/master/LICENSE",
+    "https://raw.githubusercontent.com/bjing2016/promera/master/README.md",
+    "https://huggingface.co/api/models/bjing-mit/promera",
+    "https://huggingface.co/bjing-mit/promera"
+   ],
+   "noncommercial": false,
+   "aliases": []
+  },
+  "reconsider_when": null,
+  "fetched": [
+   "https://api.biorxiv.org/details/biorxiv/10.64898/2026.06.07.729267",
+   "https://api.github.com/repos/bjing2016/promera",
+   "https://github.com/bjing2016/promera",
+   "https://raw.githubusercontent.com/bjing2016/promera/master/LICENSE",
+   "https://raw.githubusercontent.com/bjing2016/promera/master/README.md",
+   "https://huggingface.co/api/models/bjing-mit/promera",
+   "https://huggingface.co/bjing-mit/promera/raw/main/README.md",
+   "https://huggingface.co/bjing-mit/promera",
+   "https://github.com/bjing2016/tinyprot"
+  ]
+ },
+ {
+  "name": "DeCAF (DeCAF-Boltz)",
+  "verdict": "accept",
+  "reason": "All four gates pass, with one scope caveat the orchestrator should weigh. (1) arxiv.org/abs/2606.08375 resolves: 'Few-step Cofolding with All-Atom Flow Maps', Scarpellini, Shprints, Holderrieth, Nam, Murugan, Gomez-Bombarelli, Jaakkola, Al-Shedivat, Boffi, Bose; v1 2026-06-07, v2 2026-06-18; cs.LG; not withdrawn; abstract states 'We release our code at https://github.com/genesistherapeutics/decaf'. (2) Artifact is first-party and verified: GitHub genesistherapeutics/decaf created 2026-05-29, pushed 2026-07-07, 40 stars, GitHub-detected licence MIT, default branch master; HF genesisml/decaf is public and ungated (gated:false), license mit, created 2026-06-29, last modified 2026-07-06, containing decaf_ckpt.ckpt and decaf_conf_ckpt.ckpt (7.47 GB total), library_name boltz, tagged arxiv:2606.08375. Provenance chain is closed in both directions: the arXiv abstract names the GitHub org, the HF card links back to that repo and to the genesis.ml company blog, and the HF LICENSE is 'Copyright (c) 2026 Genesis Molecular AI'. The genesis.ml post (2026-06-10) confirms Genesis Molecular AI / Genesis Therapeutics is the same company. (3) MIT for both code and released weights; no gating; teacher model Boltz-1 is itself MIT so the distilled checkpoint carries no inherited copyleft or non-commercial term. (4) Pretrained, reusable, general all-atom co-folding across arbitrary protein-ligand complexes. SCOPE CAVEAT: DeCAF is a distillation of Boltz-1 rather than a from-scratch pretrained model, so the orchestrator may prefer to record it as a derivative artifact of Boltz-1 rather than a standalone record - I verified everything else, so this is a taxonomy call, not an evidence gap. Also note only DeCAF-Boltz weights are released; DeCAF-Pearl (distilled from the proprietary Pearl model) is described in the paper and blog but no weights are published - the record below describes the released artifact only.",
+  "licence_quote": "Weights (huggingface.co/genesisml/decaf/raw/main/LICENSE): 'MIT License / Copyright (c) 2026 Genesis Molecular AI / Permission is hereby granted, free of charge, to any person obtaining a copy of this software ... to deal in the Software without restriction'. HF API: 'tags':['license:mit'], 'cardData':{'license':'mit'}, 'gated':false. Code repo (api.github.com/repos/genesistherapeutics/decaf): 'license':{'key':'mit','spdx_id':'MIT'}.",
+  "record": {
+   "name": "DeCAF (DeCAF-Boltz)",
+   "modality": "complex",
+   "description": "Flow-map distillation framework from Genesis Molecular AI with MIT collaborators that turns all-atom co-folding diffusion models into few-step generators. The released DeCAF-Boltz checkpoint distils Boltz-1 into a few-step sampler with a reported 5x inference speedup at near-parity structure quality, exceeding AlphaFold 3, Chai-1, Boltz-1x and Boltz-2 success rates on the Runs N' Poses benchmark; a second variant distilled from the proprietary Pearl model is described but not released.",
+   "io": "Boltz-format complex specification of protein sequences plus ligands -> all-atom protein-ligand complex structures generated in a handful of sampling steps, with confidence scores",
+   "status": "Open: MIT-licensed code and MIT-licensed DeCAF-Boltz weights on Hugging Face, ungated; DeCAF-Pearl weights not released",
+   "use_cases": "fast all-atom co-folding, protein-ligand pose prediction, large-scale structure-based virtual screening, inference-time scaling with DeCAF-Search",
+   "year": 2026,
+   "date": "2026-06-07",
+   "paper_links": [
+    {"label": "arXiv preprint", "url": "https://arxiv.org/abs/2606.08375"}
+   ],
+   "code_links": [
+    {"label": "GitHub", "url": "https://github.com/genesistherapeutics/decaf"},
+    {"label": "Weights (Hugging Face)", "url": "https://huggingface.co/genesisml/decaf"}
+   ],
+   "sources": [
+    "https://arxiv.org/abs/2606.08375",
+    "https://arxiv.org/abs/2606.08375v2",
+    "https://api.github.com/repos/genesistherapeutics/decaf",
+    "https://github.com/genesistherapeutics/decaf",
+    "https://huggingface.co/api/models/genesisml/decaf",
+    "https://huggingface.co/genesisml/decaf/raw/main/README.md",
+    "https://huggingface.co/genesisml/decaf/raw/main/LICENSE",
+    "https://www.genesis.ml/news/genesis-model-distillation"
+   ],
+   "noncommercial": false,
+   "aliases": ["DeCAF-Boltz", "Denoiser Cofolding All-atom Flowmap Model"]
+  },
+  "reconsider_when": null,
+  "fetched": [
+   "https://arxiv.org/abs/2606.08375",
+   "https://arxiv.org/abs/2606.08375v2",
+   "https://api.github.com/repos/genesistherapeutics/decaf",
+   "https://github.com/genesistherapeutics/decaf",
+   "https://huggingface.co/api/models/genesisml/decaf",
+   "https://huggingface.co/genesisml/decaf/raw/main/README.md",
+   "https://huggingface.co/genesisml/decaf/raw/main/LICENSE",
+   "https://huggingface.co/genesisml/decaf",
+   "https://www.genesis.ml/news/genesis-model-distillation"
+  ]
+ },
+ {
+  "name": "Ptarmigan-1",
+  "verdict": "reject",
+  "reason": "Real preprint, no artifact - fails gate 2. (1) The preprint is genuine and resolves via the bioRxiv API: DOI 10.64898/2026.07.28.741295, 'Structure-free, site-resolved contrastive learning extends small-molecule discovery beyond the reach of structure-based modeling', Fondrie W.E. et al., corresponding Alexander J. Federation (Talus Bioscience), posted 2026-07-30, v1, CC-BY, published_doi NA, not withdrawn; the abstract describes Ptarmigan-1 as claimed. (2) NO public weights or code exist. I fetched the full JATS XML (https://www.biorxiv.org/content/early/2026/07/30/2026.07.28.741295.source.xml, 187 KB) and grepped the entire text: there is no GitHub, Hugging Face, Zenodo or API link anywhere in the manuscript. The 'Data and code availability' section releases only benchmark metadata, not the model: it names public training sources and says the authors 'will release the compound identifiers, target accessions, labels, and decoy assignments used here, together with the per-figure source tables', while 'The internal chemoproteomic corpus and the disordered-target benchmark drawn from it are proprietary and will not be released'. No mention of releasing weights or inference code at all. Independent artifact searches came back empty: HF API search for 'ptarmigan' -> [], for 'talus' -> []; GitHub repository search 'ptarmigan talus' -> total_count 0. The competing-interest statement reads 'All authors are employees of Talus Bioscience, Inc.', consistent with a proprietary internal model announced by preprint. Gate 3 is moot (no model licence exists; only the preprint is CC-BY). Could be revisited if Talus Bioscience later publishes weights or inference code under a first-party GitHub/HF org, but as of 2026-08-13 there is nothing to index.",
+  "licence_quote": "No model licence exists. Preprint only (JATS XML): 'This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0'. Availability statement: 'The internal chemoproteomic corpus and the disordered-target benchmark drawn from it are proprietary and will not be released'.",
+  "record": null,
+  "reconsider_when": null,
+  "fetched": [
+   "https://api.biorxiv.org/details/biorxiv/10.64898/2026.07.28.741295",
+   "https://www.biorxiv.org/content/early/2026/07/30/2026.07.28.741295.source.xml",
+   "https://api.github.com/search/repositories?q=ptarmigan+talus",
+   "https://huggingface.co/api/models?search=ptarmigan",
+   "https://huggingface.co/api/models?search=talus",
+   "http://export.arxiv.org/api/query?search_query=all:Ptarmigan&max_results=10"
+  ]
+ },
+ {
+  "name": "AQAffinity",
+  "verdict": "hold",
+  "reason": "Artifact fully verified, but gates 1 and 4 both fall short, so holding rather than accepting optimistically. (1) NO paper or preprint exists. The only primary source is the first-party SandboxAQ release post (fetched, dated 2026-01-20). arXiv API search for 'AQAffinity' returns total 0 results, and the HF API tag list carries no arxiv: tag (tags are chemistry, biology, protein, ligand, binding, affinity, binding affinity, drug discovery, license:apache-2.0, region:us). The HF card references 'the official Boltz-2 preprint' - i.e. someone else's paper - not one of its own. (2) PASSES: huggingface.co/SandboxAQ/AQAffinity is on the official SandboxAQ org, created 2025-12-05 (HF _id timestamp), last modified 2026-02-10, 32 likes, and ships weights (model_weights/model_weights_only.safetensors, model_weights_only.pt), inference and training code (src/aqaffinity/..., pyproject.toml), and training/validation data CSVs. Access is gated:'auto' - a contact-information form that auto-approves; the HF page shows 'You need to agree to share your contact information to access this model'. (3) PASSES: Apache-2.0 is a positive permissive grant confirmed from two independent first-party sources, so noncommercial would be false. (4) WEAK: AQAffinity is a single-purpose affinity head - a Boltz-2-style affinity module re-implemented on the OpenFold3 backbone - rather than a pretrained backbone reusable across tasks. The vendor post itself frames it as 'a transparent baseline for structural biology rather than a commercial product'. If accepted, the draft fields would be: modality complex; io 'protein sequence + ligand SMILES (no precomputed structure) -> predicted binding affinity'; status 'Apache-2.0 weights and inference/training code on Hugging Face, gated behind an auto-approved contact form'; year 2026; date 2026-01-20; noncommercial false. Also note this is flagged out-of-window (2026-01-20).",
+  "licence_quote": "HF API cardData extra_gated_prompt: 'The AQAffinity preview model is released under Apache 2.0 license. You will automatically get access to the model after answering the following simple questions:'; cardData license: 'apache-2.0', gated: 'auto'. SandboxAQ post: 'The model is released under the permissive Apache License 2.0 and includes inference and training code, along with assay information from its training data.' HF page gate notice: 'You need to agree to share your contact information to access this model'.",
+  "record": null,
+  "reconsider_when": "A primary paper or preprint for AQAffinity appears (none on arXiv as of 2026-08-13 - re-run the arXiv/bioRxiv/ChemRxiv check), OR the index maintainer rules that (a) a first-party vendor release post counts as the primary source for paper-less releases and (b) single-capability affinity heads built on another backbone are in scope. No artifact re-verification is needed at that point: weights, code, official ownership, Apache-2.0 and the auto-approved gate are all already confirmed.",
+  "fetched": [
+   "https://www.sandboxaq.com/post/aqaffinity-open-source-structure-to-affinity-built-on-openfold3-by-sandboxaq",
+   "https://huggingface.co/api/models/SandboxAQ/AQAffinity",
+   "https://huggingface.co/SandboxAQ/AQAffinity",
+   "https://huggingface.co/SandboxAQ/AQAffinity/raw/main/README.md",
+   "http://export.arxiv.org/api/query?search_query=all:AQAffinity&max_results=10"
+  ]
+ },
+ {
+  "name": "FeNNix-Bio1",
+  "verdict": "accept",
+  "reason": "All four gates pass, but flagged for LANE REASSIGNMENT and as out-of-window. (1) Preprint verified through Crossref (the ChemRxiv landing page itself returned HTTP 403 to WebFetch, so I verified against the DOI registration record instead): DOI 10.26434/chemrxiv-2025-f1hgn, type posted-content, title 'A Foundation Model for Accurate Atomistic Simulations in Drug Design', authors Ple, Adjoua, Benali, Posenitskiy, Villot, Lagardere, Piquemal, posted 2025-04-10, created 2025-04-11; the versioned DOI 10.26434/chemrxiv-2025-f1hgn-v4 resolves to the same title, posted 2025-12-17. No withdrawal notice in the Crossref record. Author list matches the HF card's 'Developed by' line exactly. (2) Artifact is first-party: huggingface.co/fennol-tools/FeNNix-Bio1 is public and ungated (gated:false), created 2026-01-05, last modified 2026-01-13, shipping fennix-bio1S.fnx and fennix-bio1M.fnx (67.9 MB) plus a LICENSE file. The HF org name matches the authors' GitHub org FeNNol-tools, whose FeNNol library (https://github.com/FeNNol-tools/FeNNol, HTTP 200, PyPI-published, DOI 10.1063/5.0217688) is the runtime for the .fnx checkpoints; https://github.com/FeNNol-tools/FeNNol-PMC/tree/main/FENNIX-BIO1 also returns 200. Not a third-party re-upload. (3) Licence is fully quoted below and is NON-COMMERCIAL - noncommercial: true. (4) Scope passes: a pretrained interatomic potential in two sizes, reusable across MD, geometry optimization and free-energy scoring, i.e. broader than one task. CAVEATS FOR THE ORCHESTRATOR: (a) the discovery lane was fm_complex, but this is a machine-learning interatomic potential, not a co-folding/interaction model - I have assigned modality 'molecule', matching the UMA-class MLIP precedent noted by the discovery lane; (b) release year is 2025 (preprint v1 2025-04-10, v4 2025-12-17) with weights uploaded to HF on 2026-01-05, so it is well outside the 2026-06-15 window; (c) the ChemRxiv page could not be loaded directly - abstract text is UNVERIFIED beyond the Crossref title and the HF card's own description.",
+  "licence_quote": "Weights (huggingface.co/fennol-tools/FeNNix-Bio1/raw/main/LICENSE, 'Academic Software Licence (\"ASL\")'): 'ASL is not an open-source licence because it does not allow commercial use - it is an \"available source\" licence, meaning that the source code is made available subject to the terms of this licence and only for academic non-commercial use.' Also: 'The non-commercial restriction is an integral part of the license and you may not remove it without the consent of the rights holder in the ASL licensed code.' HF API: 'cardData':{'license':'other','license_name':'asl','license_link':'LICENSE'}, 'gated':false. Note the separate FeNNol runtime library is a distinct repository with its own licence, not verified here.",
+  "record": {
+   "name": "FeNNix-Bio1",
+   "modality": "molecule",
+   "description": "Machine-learning interatomic potential foundation model in two sizes (S and M) for atomistic simulation of organic and biological systems, from the Piquemal group, trained on an extension of the SPICE2 quantum-chemistry dataset. Intended for molecular dynamics, geometry optimization and binding free energy scoring in drug design.",
+   "io": "Atomic coordinates and element types (XYZ / ASE Atoms) -> potential energy and forces, driving MD, geometry optimization and free-energy calculations",
+   "status": "Weights public and ungated on Hugging Face under the Academic Software License: academic non-commercial use only",
+   "use_cases": "molecular dynamics of organic and biological systems, geometry optimization, hydration and binding free energy calculations, protein folding simulation, scoring in drug design",
+   "year": 2025,
+   "date": "2025-04-10",
+   "paper_links": [
+    {"label": "ChemRxiv preprint", "url": "https://doi.org/10.26434/chemrxiv-2025-f1hgn"}
+   ],
+   "code_links": [
+    {"label": "Weights (Hugging Face)", "url": "https://huggingface.co/fennol-tools/FeNNix-Bio1"},
+    {"label": "FeNNol library (GitHub)", "url": "https://github.com/FeNNol-tools/FeNNol"},
+    {"label": "Model files (GitHub)", "url": "https://github.com/FeNNol-tools/FeNNol-PMC/tree/main/FENNIX-BIO1"}
+   ],
+   "sources": [
+    "https://api.crossref.org/works/10.26434/chemrxiv-2025-f1hgn",
+    "https://api.crossref.org/works/10.26434/chemrxiv-2025-f1hgn-v4",
+    "https://huggingface.co/api/models/fennol-tools/FeNNix-Bio1",
+    "https://huggingface.co/fennol-tools/FeNNix-Bio1/raw/main/README.md",
+    "https://huggingface.co/fennol-tools/FeNNix-Bio1/raw/main/LICENSE",
+    "https://github.com/FeNNol-tools/FeNNol",
+    "https://raw.githubusercontent.com/FeNNol-tools/FeNNol/main/README.md"
+   ],
+   "noncommercial": true,
+   "aliases": ["FeNNix-Bio1 S", "FeNNix-Bio1 M", "FENNIX-BIO1"]
+  },
+  "reconsider_when": null,
+  "fetched": [
+   "https://api.crossref.org/works/10.26434/chemrxiv-2025-f1hgn",
+   "https://api.crossref.org/works/10.26434/chemrxiv-2025-f1hgn-v4",
+   "https://chemrxiv.org/engage/chemrxiv/article-details/69399703bc44e47cf4980c4e",
+   "https://chemrxiv.org/engage/chemrxiv/public-api/v1/items/doi/10.26434/chemrxiv-2025-f1hgn",
+   "https://huggingface.co/api/models/fennol-tools/FeNNix-Bio1",
+   "https://huggingface.co/fennol-tools/FeNNix-Bio1/raw/main/README.md",
+   "https://huggingface.co/fennol-tools/FeNNix-Bio1/raw/main/LICENSE",
+   "https://github.com/FeNNol-tools/FeNNol",
+   "https://github.com/FeNNol-tools/FeNNol-PMC/tree/main/FENNIX-BIO1",
+   "https://raw.githubusercontent.com/FeNNol-tools/FeNNol/main/README.md"
+  ]
+ }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "name": "Cherimoya Accessibility aTlas (CATv1)",
+    "verdict": "reject",
+    "reason": "Artifact is real and officially owned (HF org 'programmable-genomics' = Programmable Genomics Laboratory @ UMass Chan, contact Jacob Schreiber; code repo github.com/jmschrei/cherimoya, MIT, created 2026-01-21, 51 stars; HF repo lastModified 2026-07-24, cc-by-4.0, not gated), but it fails SCOPE on two counts, adjudicated explicitly. (1) Not broader than one task: the card states 'Each model predicts accessibility for a single experiment, so download only the model(s) you need' and 'A model only reflects the experiment it was trained on, so do not use it for a different cell type or assay'; the release is 1,518 ENCODE experiments x 5 chromosome-held-out folds = ~7,500 separate ~0.6M-parameter BPNet/ChromBPNet-family CNNs, human GRCh38 only, with no single general checkpoint. (2) Not a pretrained foundation model: these are supervised task models trained per experiment, not a pretrained backbone reused across tasks; the reusable component is the Cherimoya architecture/library, not a pretrained model. Also no paper: the cherimoya README states 'A formal preprint is forthcoming.' Correct home, if the index wants it, is a trained-model zoo / resource listing, not the FM index.",
+    "licence_quote": "HF card front matter: 'license: cc-by-4.0'. Code repo github.com/jmschrei/cherimoya: MIT (gh api license.spdx_id = MIT).",
+    "record": null,
+    "fetched": [
+      "https://huggingface.co/api/models/programmable-genomics/CATv1",
+      "https://huggingface.co/programmable-genomics/CATv1/raw/main/README.md",
+      "https://github.com/jmschrei/cherimoya",
+      "https://api.github.com/repos/jmschrei/cherimoya",
+      "https://huggingface.co/api/organizations/programmable-genomics/overview"
+    ]
+  },
+  {
+    "name": "MKB (Monkey King Bang)",
+    "verdict": "accept",
+    "reason": "Official release from the Shanghai Academy of AI for Science: HF org sais-org (fullname 'Shanghai Academy of AI For Science', createdAt 2026-07-09T01:57:23Z, 188 downloads, 16 likes, gated=false, safetensors total 11,710,712,237 params BF16) and GitHub org Shanghai-Academy-of-AI-For-Science/MKB (created 2026-07-09T03:49:09Z, pushed 2026-07-28, Apache-2.0, 36 stars); the two cross-link each other. No journal paper or preprint DOI, but an official technical report PDF exists in the repo (docs/MKB.pdf, 9.86 MB) and is linked from the card, so it accepts under the 'official release without a paper' allowance. Scope: pretrained, reusable, seven modalities through one natural-language interface with no per-task fine-tuning claimed; understanding for protein/RNA/DNA/molecule/text and generation for RNA/molecule/weather/medical-image/text. Per the slice instruction this is filed once, as modality=multimodal, not under dna or molecule. Caveat recorded: the card carries extra_gated_heading/description text about agreeing to Meta's SAM License, but the HF API reports \"gated\": false and raw files (including SAM_LICENSE.txt) download without login, so access is effectively open.",
+    "licence_quote": "Card License section: 'Composite license. [MKB]'s own components - the code, and all weights except the SAM 3 branch - are Apache-2.0, built on Qwen3-VL (Apache-2.0) and including merged ESM-2 (MIT) and Polaris/Suiren-derived encoders. The medical-image segmentation branch embeds SAM 3 weights, which are governed by Meta's SAM License (SAM_LICENSE.txt ...), including its acceptable-use restrictions (no military / weapons / illegal uses; Trade-Control compliance).' Front matter: 'license: other', 'license_name: apache-2.0-and-sam-license'. GitHub LICENSE = Apache License Version 2.0 ('Copyright 2026 The MKB Authors'). SAM_LICENSE.txt is Meta's SAM licence: no non-commercial clause, but acceptable-use and trade-control restrictions.",
+    "record": {
+      "name": "MKB (Monkey King Bang)",
+      "modality": "multimodal",
+      "description": "Unified scientific multimodal foundation model from the Shanghai Academy of AI for Science that wraps native scientific encoders and decoders (ESM-2, RNA/DNA ConvFormers, a molecular graph encoder, a Swin-ViT weather tower and a SAM 3 image path) around a shared Qwen3-VL-8B-Instruct backbone, about 11.7B parameters in total. One natural-language interface spans seven modalities - protein, RNA, DNA, molecule, weather, medical image and text - with understanding for protein/RNA/DNA/molecule/text and generation for RNA, molecules, weather fields and segmentation masks.",
+      "io": "natural-language prompt plus a protein/RNA/DNA sequence, molecule, gridded weather field or medical image -> natural-language answer, generated RNA sequence, SMILES, 10-day global ERA5 0.25 degree forecast or text-prompted segmentation mask",
+      "status": "open weights on Hugging Face (API reports not gated); Apache-2.0 for code and all weights except the SAM 3 medical-image branch, which is under Meta's SAM License",
+      "use_cases": "cross-modal scientific question answering, DNA/RNA/protein sequence understanding, text-to-molecule and RNA design, weather forecasting, medical-image segmentation",
+      "year": 2026,
+      "date": "2026-07-09",
+      "paper_links": [
+        {
+          "label": "Technical report (PDF, official repo)",
+          "url": "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB/blob/main/docs/MKB.pdf"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB"
+        },
+        {
+          "label": "Weights (Hugging Face)",
+          "url": "https://huggingface.co/sais-org/MKB"
+        }
+      ],
+      "sources": [
+        "https://huggingface.co/api/models/sais-org/MKB",
+        "https://huggingface.co/sais-org/MKB/raw/main/README.md",
+        "https://huggingface.co/sais-org/MKB/raw/main/SAM_LICENSE.txt",
+        "https://raw.githubusercontent.com/Shanghai-Academy-of-AI-For-Science/MKB/main/LICENSE",
+        "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB",
+        "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB/blob/main/docs/MKB.pdf"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "MKB",
+        "Monkey King Bang",
+        "MonkeyKing Bang",
+        "Shen Zhen"
+      ]
+    },
+    "fetched": [
+      "https://huggingface.co/api/models/sais-org/MKB",
+      "https://huggingface.co/api/models/sais-org/MKB?blobs=true",
+      "https://huggingface.co/sais-org/MKB/raw/main/README.md",
+      "https://huggingface.co/sais-org/MKB/raw/main/SAM_LICENSE.txt",
+      "https://raw.githubusercontent.com/Shanghai-Academy-of-AI-For-Science/MKB/main/LICENSE",
+      "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB",
+      "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB/blob/main/docs/MKB.pdf",
+      "https://api.github.com/repos/Shanghai-Academy-of-AI-For-Science/MKB",
+      "https://huggingface.co/api/organizations/sais-org/overview"
+    ]
+  },
+  {
+    "name": "Carbon (Carbon-500M / 3B / 8B)",
+    "verdict": "accept",
+    "reason": "Fully verified official release. GitHub huggingface/carbon (owner = the Hugging Face org itself, created 2026-05-10T19:10:10Z, pushed 2026-06-06, Apache-2.0, 207 stars, 'The home of Carbon Genomic Foundation Model') links the three HF checkpoints; HF org HuggingFaceBio ('Hugging Face Biology Research'), Carbon-500M createdAt 2026-05-12T16:09:33Z (2,878 downloads), Carbon-3B createdAt 2026-05-12T11:05:49Z (4,654 downloads, 57 likes), Carbon-8B createdAt 2026-05-17T23:30:49Z (1,312 downloads); all three apache-2.0 and not gated. Official technical report PDF exists at github.com/huggingface/carbon/blob/main/tech-report.pdf (3.92 MB) and mirrored on the model card; no preprint DOI, which is fine under the official-release allowance. Scope: pretrained decoder-only genomic LM used zero-shot across sequence recovery, four variant-effect benchmarks, perturbation tasks and long-context retrieval - clearly broader than one task. DATE CAVEAT: the discovery lane's 2026-05-19 was derived from a LinkedIn activity id and I did not verify it; I record year 2026 and, as the only directly fetched dates, GitHub repo creation 2026-05-10 and HF repo creation 2026-05-12 (500M/3B) / 2026-05-17 (8B). Out of the 2026-06-15 window, so no in-window date is asserted.",
+    "licence_quote": "Carbon-3B card front matter: 'license: apache-2.0'; card License section reads in full: 'Apache 2.0.' GitHub LICENSE = Apache License, Version 2.0 (gh api license.spdx_id = Apache-2.0). Carbon-500M and Carbon-8B HF API license tag: 'apache-2.0'.",
+    "record": {
+      "name": "Carbon (Carbon-500M / 3B / 8B)",
+      "modality": "dna",
+      "description": "Family of open autoregressive genomic foundation models (500M, 3B and 8B parameters) from Hugging Face Biology with Zhongguancun Academy and TIGEM/University of Naples Federico II. Decoder-only Llama-style transformers pretrained on about 1T 6-mer tokens (roughly 6T DNA base pairs) with a hybrid tokenizer that uses non-overlapping 6-mers for DNA and the Qwen3 BPE vocabulary for English, giving a native context of 32,768 tokens (about 197 kbp) extendable to about 393 kbp via YaRN; the 3B flagship is reported to match Evo2-7B on the evaluation suite while running several times faster.",
+      "io": "DNA or RNA sequence as 6-mer tokens, with optional species-type and gene-type metadata tokens -> generated sequence continuation and token likelihoods used for zero-shot variant-effect scoring",
+      "status": "open weights and training/evaluation code, Apache-2.0, not gated",
+      "use_cases": "genomic sequence generation and recovery, zero-shot variant-effect prediction, motif-perturbation discrimination, long-context genomic retrieval, speculative decoding with the 500M draft model",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "Carbon technical report (PDF, official repo)",
+          "url": "https://github.com/huggingface/carbon/blob/main/tech-report.pdf"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/huggingface/carbon"
+        },
+        {
+          "label": "Carbon-3B (Hugging Face)",
+          "url": "https://huggingface.co/HuggingFaceBio/Carbon-3B"
+        },
+        {
+          "label": "Carbon-8B (Hugging Face)",
+          "url": "https://huggingface.co/HuggingFaceBio/Carbon-8B"
+        },
+        {
+          "label": "Carbon-500M (Hugging Face)",
+          "url": "https://huggingface.co/HuggingFaceBio/Carbon-500M"
+        }
+      ],
+      "sources": [
+        "https://github.com/huggingface/carbon",
+        "https://github.com/huggingface/carbon/blob/main/tech-report.pdf",
+        "https://raw.githubusercontent.com/huggingface/carbon/main/LICENSE",
+        "https://huggingface.co/api/models/HuggingFaceBio/Carbon-3B",
+        "https://huggingface.co/api/models/HuggingFaceBio/Carbon-8B",
+        "https://huggingface.co/api/models/HuggingFaceBio/Carbon-500M",
+        "https://huggingface.co/HuggingFaceBio/Carbon-3B/raw/main/README.md"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "Carbon",
+        "Carbon-3B",
+        "Carbon-8B",
+        "Carbon-500M"
+      ]
+    },
+    "fetched": [
+      "https://huggingface.co/api/models/HuggingFaceBio/Carbon-3B",
+      "https://huggingface.co/api/models/HuggingFaceBio/Carbon-8B",
+      "https://huggingface.co/api/models/HuggingFaceBio/Carbon-500M",
+      "https://huggingface.co/HuggingFaceBio/Carbon-3B/raw/main/README.md",
+      "https://github.com/huggingface/carbon",
+      "https://github.com/huggingface/carbon/blob/main/tech-report.pdf",
+      "https://raw.githubusercontent.com/huggingface/carbon/main/LICENSE",
+      "https://api.github.com/repos/huggingface/carbon",
+      "https://huggingface.co/api/organizations/HuggingFaceBio/overview"
+    ]
+  },
+  {
+    "name": "ModernGENA (base / large)",
+    "verdict": "accept",
+    "reason": "Preprint verified via the bioRxiv API: DOI 10.64898/2026.04.21.719816, 'Back to BERT in 2026: ModernGENA as a Strong, Efficient Baseline for DNA Foundation Models', Aspidova/Kuratov/Shadskiy/Burtsev/Fishman, corresponding Veniamin Fishman (AIRI, Sirius University, Institute of Cytology and Genetics), posted 2026-04-23, v1 only, licence cc_by, not withdrawn, no journal version yet. Weights are official: HF org AIRI-Institute is HF-verified (isVerified: true); moderngena-base createdAt 2026-04-17T13:47:25Z (586 downloads), moderngena-large createdAt 2026-04-17T13:38:04Z (421 downloads), neither gated. Code is the lab's own GENA_LM repo, whose root README is now the modernGENA release page ('We are releasing modernGENA base and large') and which contains examples/modernGENA; repo licence MIT. Scope: pretrained encoder-only DNA LM (masked LM over 443 vertebrate assemblies, 353,574,093,776 bp) reused across the Nucleotide Transformer benchmark, sequence classification and token regression - broader than one task. Two corrections to the discovery note: (a) parameter counts resolve as base = 136,120,832 and large = 377,841,664 per the safetensors indexes; the base MODEL CARD TEXT is wrong ('ModernGENA base is the 377M-parameter version') and I use the safetensors figures. (b) LICENCE GAP, flagged for the orchestrator: neither HF repo has a LICENSE file or a license key in cardData, so the only positive permissive grant is MIT on the AIRI-Institute/GENA_LM release repo plus CC-BY on the preprint; no restriction of any kind is stated anywhere, so noncommercial is recorded false, but the weights themselves carry no explicit licence. Out of window (April 2026), reported as an older notable miss. Not a GENA-LM variant: different architecture (ModernBERT), separate preprint, separate checkpoints.",
+    "licence_quote": "No licence text exists on either model card: HF API cardData for moderngena-base and moderngena-large contains only 'tags' and no license key, and neither siblings list includes a LICENSE file. Code: github.com/AIRI-Institute/GENA_LM LICENSE = 'MIT License. Copyright (c) 2022 AIRI - Artificial Intelligence Research Institute'. Preprint: bioRxiv licence 'cc_by'.",
+    "record": {
+      "name": "ModernGENA (base / large)",
+      "modality": "dna",
+      "description": "DNA foundation model from AIRI (with Sirius University and the Institute of Cytology and Genetics) that adapts the ModernBERT encoder - RoPE, hybrid local/global attention, pre-norm blocks, GeGLU, end-to-end unpadding, FlashAttention - to genomic sequence modelling, released as base and large checkpoints (safetensors indexes report about 136M and about 378M parameters). Pretrained by masked language modelling on 443 vertebrate genome assemblies (353.6 Gbp, both strands, intervals sampled around transcription start sites) using the 32k GENA-LM BPE DNA vocabulary, and positioned as an efficient open baseline that ranks among the top models on the Nucleotide Transformer benchmark.",
+      "io": "DNA sequence tokenized with the 32k GENA-LM BPE DNA vocabulary -> contextual embeddings and masked-token predictions for downstream fine-tuning",
+      "status": "open weights on Hugging Face, not gated, but no licence stated on the model cards; release and fine-tuning code in AIRI-Institute/GENA_LM under MIT",
+      "use_cases": "sequence classification on the Nucleotide Transformer benchmark, CTCF peak-vs-background classification, per-token regression on ENCODE signal tracks, efficient baseline for DNA language-model architecture comparisons",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (2026-04-23)",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.04.21.719816v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub (GENA_LM / modernGENA examples)",
+          "url": "https://github.com/AIRI-Institute/GENA_LM/tree/main/examples/modernGENA"
+        },
+        {
+          "label": "moderngena-base (Hugging Face)",
+          "url": "https://huggingface.co/AIRI-Institute/moderngena-base"
+        },
+        {
+          "label": "moderngena-large (Hugging Face)",
+          "url": "https://huggingface.co/AIRI-Institute/moderngena-large"
+        }
+      ],
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.04.21.719816v1",
+        "https://api.biorxiv.org/details/biorxiv/10.64898/2026.04.21.719816",
+        "https://huggingface.co/api/models/AIRI-Institute/moderngena-base",
+        "https://huggingface.co/api/models/AIRI-Institute/moderngena-large",
+        "https://huggingface.co/AIRI-Institute/moderngena-base/raw/main/README.md",
+        "https://raw.githubusercontent.com/AIRI-Institute/GENA_LM/main/LICENSE"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "ModernGENA",
+        "modernGENA",
+        "moderngena-base",
+        "moderngena-large"
+      ]
+    },
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.04.21.719816",
+      "https://huggingface.co/api/models/AIRI-Institute/moderngena-base",
+      "https://huggingface.co/api/models/AIRI-Institute/moderngena-large",
+      "https://huggingface.co/api/models/AIRI-Institute/moderngena-base?blobs=true",
+      "https://huggingface.co/api/models/AIRI-Institute/moderngena-large?blobs=true",
+      "https://huggingface.co/AIRI-Institute/moderngena-base/raw/main/README.md",
+      "https://huggingface.co/AIRI-Institute/moderngena-large/raw/main/README.md",
+      "https://huggingface.co/AIRI-Institute/moderngena-base/raw/main/LICENSE",
+      "https://raw.githubusercontent.com/AIRI-Institute/GENA_LM/main/LICENSE",
+      "https://api.github.com/repos/AIRI-Institute/GENA_LM",
+      "https://api.github.com/repos/AIRI-Institute/GENA_LM/contents/README.md",
+      "https://api.github.com/repos/AIRI-Institute/GENA_LM/contents/examples/modernGENA/README.md",
+      "https://huggingface.co/api/organizations/AIRI-Institute/overview"
+    ]
+  },
+  {
+    "name": "BOTANIC-0 (Botanic0-S / -M / -L)",
+    "verdict": "accept",
+    "reason": "Preprint verified via the bioRxiv API: DOI 10.64898/2026.02.23.706817, 'BOTANIC-0: a series of foundation models for plant genomic data', Ogier du Terrail et al., corresponding author Jean Ogier du Terrail (Living Models), v1 2026-02-24 and v2 2026-03-04, licence cc_by, category plant biology, not withdrawn, no journal version. Weights confirmed directly this session on the authors' own HF org living-models (fullname 'Living Models'): Botanic0-S, Botanic0-M, Botanic0-L, all createdAt 2026-02-18, lastModified 2026-03-10, Botanic0-L safetensors total 991,260,405 params, each repo carrying a LICENSE file, model code (botanic0_architecture.py, botanic0_tokenizer.py) and a citation to the same DOI - this closes the discovery lane's open item, which had rested on the abstract's claim alone. ACCESS: all three are gated 'auto' - files require accepting contact sharing while logged in, so I could read the rendered card but got HTTP 401 on raw README/LICENSE. Scope: pretrained masked-LM plant genomic LMs at three sizes evaluated zero-shot and fine-tuned across regulatory-element annotation, gene-expression inference and variant-effect prediction. Out of window (February 2026), reported as an older notable miss.",
+    "licence_quote": "HF cardData: 'license': 'other', 'license_name': 'livingmodels-research', 'license_link': 'LICENSE'; 'gated': 'auto'. Card section 'Research use only': 'These models are intended for research use only. They must not be used in production, clinical, or diagnostic contexts, or for any purpose other than non-commercial research and experimentation. Living Models and the model providers disclaim any liability for use outside this scope.' Gate notice: 'You need to agree to share your contact information to access this model. This repository is publicly accessible, but you have to accept the conditions to access its files and content.' (The full LICENSE file text sits behind the gate - HTTP 401 unauthenticated - so the quote above is the card's own statement of terms, not the licence file.)",
+    "record": {
+      "name": "BOTANIC-0 (Botanic0-S / -M / -L)",
+      "modality": "dna",
+      "description": "Family of plant genomic foundation models from Living Models spanning 100M to 1B parameters (Botanic0-S/M/L; L is an encoder-only transformer with 40 layers, hidden size 1500, 20 heads, ~0.99B parameters), pretrained by masked language modelling on nuclear DNA from 43 phylogenetically diverse plant genomes with a 6-mer DNA vocabulary and a 1026-token context. Reported competitive with state-of-the-art genomic foundation models both zero-shot and after fine-tuning, with consistent scaling gains from S to L.",
+      "io": "plant DNA sequence as 6-mer tokens (up to 1026 tokens) -> contextual embeddings and masked-token predictions for zero-shot scoring and downstream fine-tuning",
+      "status": "weights on Hugging Face behind an automatic contact-sharing gate; custom 'livingmodels-research' licence, research use only, non-commercial",
+      "use_cases": "regulatory element annotation, gene expression inference, variant effect prediction, crop genotype-to-phenotype modelling, sequence-based genome editing research",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (v1 2026-02-24, v2 2026-03-04)",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.02.23.706817v2"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "Botanic0-L (Hugging Face)",
+          "url": "https://huggingface.co/living-models/Botanic0-L"
+        },
+        {
+          "label": "Botanic0-M (Hugging Face)",
+          "url": "https://huggingface.co/living-models/Botanic0-M"
+        },
+        {
+          "label": "Botanic0-S (Hugging Face)",
+          "url": "https://huggingface.co/living-models/Botanic0-S"
+        }
+      ],
+      "sources": [
+        "https://api.biorxiv.org/details/biorxiv/10.64898/2026.02.23.706817",
+        "https://huggingface.co/api/models?author=living-models",
+        "https://huggingface.co/api/models/living-models/Botanic0-L",
+        "https://huggingface.co/api/models/living-models/Botanic0-S",
+        "https://huggingface.co/living-models/Botanic0-L",
+        "https://huggingface.co/living-models/Botanic0-S"
+      ],
+      "noncommercial": true,
+      "aliases": [
+        "Botanic0",
+        "BOTANIC-0",
+        "Botanic0-S",
+        "Botanic0-M",
+        "Botanic0-L"
+      ]
+    },
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.02.23.706817",
+      "https://huggingface.co/api/models?author=living-models",
+      "https://huggingface.co/api/models/living-models/Botanic0-L",
+      "https://huggingface.co/api/models/living-models/Botanic0-S",
+      "https://huggingface.co/living-models/Botanic0-L",
+      "https://huggingface.co/living-models/Botanic0-S",
+      "https://huggingface.co/living-models",
+      "https://huggingface.co/living-models/Botanic0-L/raw/main/README.md",
+      "https://huggingface.co/living-models/Botanic0-L/raw/main/LICENSE",
+      "https://www.biorxiv.org/content/10.64898/2026.02.23.706817v1.full",
+      "https://huggingface.co/api/organizations/living-models/overview"
+    ]
+  }
+]

@@ -2953,15 +2953,11 @@
         "url": "https://github.com/SuperBianC/scMulan"
       },
       {
-        "label": "Hugging Face",
-        "url": "https://huggingface.co/deeplife/scmulan_model"
-      },
-      {
         "label": "Current checkpoint",
         "url": "https://cloud.tsinghua.edu.cn/f/2250c5df51034b2e9a85/?dl=1"
       }
     ],
-    "status": "Public code + official externally hosted checkpoint; previous model-hub link is unavailable",
+    "status": "Public code + official externally hosted checkpoint; the former model-hub copy is gone",
     "io": "scRNA/multi-task inputs -> annotation/integration/generation outputs",
     "use_cases": "Multi-task single-cell analysis",
     "year": "",
@@ -2971,14 +2967,13 @@
     "sources": [
       "https://link.springer.com/chapter/10.1007/978-1-0716-3989-4_57",
       "https://github.com/SuperBianC/scMulan",
-      "https://huggingface.co/deeplife/scmulan_model",
       "https://cloud.tsinghua.edu.cn/f/2250c5df51034b2e9a85/?dl=1"
     ],
     "audit_state": "verified_with_limits",
     "audit_priority": "P2",
-    "audit_note": "Listed HF artifact is gone, but official repo still provides a checkpoint through Tsinghua Cloud. Replace the dead link; status remains code + weights. Paper, repo, current checkpoint, dead listed HF.",
+    "audit_note": "Dead Hugging Face artifact removed on 2026-08-13 after re-verification (401 on both page and API, no public relocation found); the official repository and the Tsinghua Cloud checkpoint remain. Completes the action recorded in the 2026-07-13 source audit.",
     "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
-    "date_modified": "2026-07-13",
+    "date_modified": "2026-08-13",
     "aliases": []
   },
   {
@@ -7778,7 +7773,7 @@
     "date_added": "2026-06-16",
     "modality": "spatial",
     "name": "PRISM",
-    "description": "Paige multimodal generative slide-level pathology foundation model built on Virchow tile features (587k WSIs, 195k clinical reports); PRISM2 (2025) scales to 2.3M H&E WSIs with clinical reports and a 4B-parameter LLM backbone for clinical-grade cancer detection.",
+    "description": "Paige multimodal generative slide-level pathology foundation model built on Virchow tile features (587k WSIs, 195k clinical reports); the PRISM2 successor is catalogued as a separate record.",
     "io": "Set of Virchow tile features for a WSI -> slide-level embedding and/or generated diagnostic text",
     "status": "Model hub; non-commercial terms apply to at least one artifact or access route",
     "use_cases": "Slide-level cancer classification, zero-shot tasks, automated diagnostic report/summary generation",
@@ -7787,20 +7782,12 @@
       {
         "label": "arXiv",
         "url": "https://arxiv.org/abs/2405.10254"
-      },
-      {
-        "label": "arXiv (PRISM2)",
-        "url": "https://arxiv.org/abs/2506.13063"
       }
     ],
     "code_links": [
       {
         "label": "Hugging Face",
         "url": "https://huggingface.co/paige-ai/Prism"
-      },
-      {
-        "label": "Hugging Face (Prism2)",
-        "url": "https://huggingface.co/paige-ai/Prism2"
       }
     ],
     "canonical": false,
@@ -7808,15 +7795,13 @@
     "verified": "2026-07-13",
     "sources": [
       "https://arxiv.org/abs/2405.10254",
-      "https://arxiv.org/abs/2506.13063",
-      "https://huggingface.co/paige-ai/Prism",
-      "https://huggingface.co/paige-ai/Prism2"
+      "https://huggingface.co/paige-ai/Prism"
     ],
     "audit_state": "verified_with_limits",
     "audit_priority": "P1",
-    "audit_note": "set NC true; PRISM and PRISM2 are gated CC BY-NC-ND models.",
+    "audit_note": "set NC true; PRISM is a gated CC BY-NC-ND model. Narrowed to PRISM v1 on 2026-08-13 when the separately verified PRISM2 record was added (evidence/additions-2026-08-13/fm_result_11.json).",
     "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
-    "date_modified": "2026-07-13",
+    "date_modified": "2026-08-13",
     "aliases": []
   },
   {
@@ -12881,6 +12866,1991 @@
     "audit_priority": "P4",
     "audit_note": "Identity, scope, primary/official sources and current catalog claims were checked in the changed-record audit; no unresolved material error was recorded.",
     "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-geneb",
+    "date_added": "2026-08-13",
+    "modality": "benchmark",
+    "name": "GENEB",
+    "description": "Diagnostic benchmark that linear-probes frozen representations from 40 genomic foundation models across 100 DNA classification tasks in 13 functional categories, under full-data, 10-shot, and 1-shot regimes.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.04525"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/darlednik/GENEB"
+      },
+      {
+        "label": "Hugging Face task data",
+        "url": "https://huggingface.co/datasets/darlednik/geneb-tasks"
+      },
+      {
+        "label": "Leaderboard",
+        "url": "https://huggingface.co/spaces/darlednik/geneb-leaderboard"
+      }
+    ],
+    "status": "Open harness + task data (Apache-2.0); public ungated leaderboard",
+    "io": "Frozen genomic-model embeddings + DNA classification tasks -> per-task, per-category and overall MCC, accuracy and macro-F1 scores",
+    "use_cases": "Genomic model selection, head-to-head comparison of DNA language models, few-shot representation evaluation",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2606.04525",
+      "https://github.com/darlednik/GENEB",
+      "https://huggingface.co/datasets/darlednik/geneb-tasks",
+      "https://huggingface.co/spaces/darlednik/geneb-leaderboard"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_1.json. Apache-2.0 covers harness and task data; no gating.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "Genomic Embedding Benchmark"
+    ]
+  },
+  {
+    "id": "bfm-pg-llm",
+    "date_added": "2026-08-13",
+    "modality": "benchmark",
+    "name": "PG-LLM",
+    "description": "ProteinGym-derived benchmark of 217 protein-variant ranking tasks in which a model ranks mutant sequences from the wild-type sequence and an assay description alone, without MSAs or structures, plus a contamination-control panel of 59 assays released after January 2026.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://doi.org/10.64898/2026.07.27.741045"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/rohitarorayyc/proteingym-llm"
+      },
+      {
+        "label": "Leaderboard",
+        "url": "https://proteingymllm.com"
+      },
+      {
+        "label": "Evaluation data release",
+        "url": "https://github.com/rohitarorayyc/proteingym-llm/releases/tag/eval-data-v1.2"
+      }
+    ],
+    "status": "Open harness + frozen evaluation bundle (MIT); data released for evaluation use only and the contamination panel is available from the authors on request",
+    "io": "Wild-type sequence + assay description + shuffled mutant set -> ranked mutants scored by nested-macro Spearman",
+    "use_cases": "Variant-effect ranking benchmarks for general-purpose and protein language models, contamination-controlled evaluation, leaderboard submission",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://doi.org/10.64898/2026.07.27.741045",
+      "https://github.com/rohitarorayyc/proteingym-llm",
+      "https://proteingymllm.com",
+      "https://github.com/rohitarorayyc/proteingym-llm/releases/tag/eval-data-v1.2"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_1.json. MIT code; the released data bundle carries an evaluation-only use policy and the 59-assay contamination panel is request-only.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "ProteinGym-LLM"
+    ]
+  },
+  {
+    "id": "bfm-nesso-1",
+    "date_added": "2026-08-13",
+    "modality": "complex",
+    "name": "Nesso-1",
+    "description": "Coarse-grained cofolding model from Valence Labs / Recursion that jointly predicts protein-ligand structure and binding affinity in about one second per prediction on a single GPU.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://doi.org/10.64898/2026.08.01.742196"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/recursionpharma/nesso"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/recursionpharma/nesso"
+      }
+    ],
+    "status": "Open code + weights (Apache-2.0), ungated",
+    "io": "Protein sequence + ligand (SMILES, CCD code or SDF) in an input YAML -> binding-affinity scalar, binder/non-binder score and cofolded complex",
+    "use_cases": "High-throughput virtual screening, binding-affinity prediction, hit triage, selectivity assessment, embedding extraction",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://doi.org/10.64898/2026.08.01.742196",
+      "https://github.com/recursionpharma/nesso",
+      "https://huggingface.co/recursionpharma/nesso"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_1.json. Apache-2.0 on both code and weights, no gating.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "Nesso"
+    ]
+  },
+  {
+    "id": "bfm-promera",
+    "date_added": "2026-08-13",
+    "modality": "complex",
+    "name": "Promera",
+    "description": "Unified all-atom generative model from the Berger lab (MIT) that combines biomolecular co-folding with binder filtering and controllable minibinder and nanobody design under optional epitope, paratope and template constraints.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.06.07.729267v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/bjing2016/promera"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/bjing-mit/promera"
+      }
+    ],
+    "status": "Open code + weights (MIT), ungated",
+    "io": "JSON specification of protein, nucleic-acid and ligand chains with optional constraints -> all-atom complex structures, confidence/filtering scores and designed binder sequences",
+    "use_cases": "All-atom co-folding, de novo binder and nanobody design, binder filtering, epitope-targeted design",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.06.07.729267v1",
+      "https://github.com/bjing2016/promera",
+      "https://huggingface.co/bjing-mit/promera"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_2.json. MIT on code and weights, no gating.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-decaf",
+    "date_added": "2026-08-13",
+    "modality": "complex",
+    "name": "DeCAF (DeCAF-Boltz)",
+    "description": "Flow-map distillation framework from Genesis Molecular AI that turns all-atom co-folding diffusion models into few-step generators; the released DeCAF-Boltz checkpoint distils Boltz-1 into a few-step sampler, while the DeCAF-Pearl variant is described but not released.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.08375"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/genesistherapeutics/decaf"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/genesisml/decaf"
+      }
+    ],
+    "status": "Open code + DeCAF-Boltz weights (MIT), ungated; DeCAF-Pearl weights not released",
+    "io": "Boltz-format complex specification of protein sequences and ligands -> all-atom complex structures generated in a few sampling steps, with confidence scores",
+    "use_cases": "Fast all-atom co-folding, protein-ligand pose prediction, large-scale structure-based virtual screening",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2606.08375",
+      "https://github.com/genesistherapeutics/decaf",
+      "https://huggingface.co/genesisml/decaf"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_2.json. MIT on code and released weights; the teacher model Boltz-1 is itself MIT.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "DeCAF-Boltz"
+    ]
+  },
+  {
+    "id": "bfm-fennix-bio1",
+    "date_added": "2026-08-13",
+    "modality": "molecule",
+    "name": "FeNNix-Bio1",
+    "description": "Machine-learning interatomic potential in two sizes (S and M) for atomistic simulation of organic and biological systems, from the Piquemal group, trained on an extension of the SPICE2 quantum-chemistry dataset.",
+    "paper_links": [
+      {
+        "label": "ChemRxiv",
+        "url": "https://doi.org/10.26434/chemrxiv-2025-f1hgn"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/fennol-tools/FeNNix-Bio1"
+      },
+      {
+        "label": "FeNNol library",
+        "url": "https://github.com/FeNNol-tools/FeNNol"
+      },
+      {
+        "label": "Model files",
+        "url": "https://github.com/FeNNol-tools/FeNNol-PMC/tree/main/FENNIX-BIO1"
+      }
+    ],
+    "status": "Public ungated weights under the Academic Software License: academic non-commercial use only",
+    "io": "Atomic coordinates and element types -> potential energy and forces for molecular dynamics, optimization and free-energy calculations",
+    "use_cases": "Molecular dynamics of organic and biological systems, geometry optimization, hydration and binding free-energy calculation, scoring in drug design",
+    "year": "2025",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://doi.org/10.26434/chemrxiv-2025-f1hgn",
+      "https://huggingface.co/fennol-tools/FeNNix-Bio1",
+      "https://github.com/FeNNol-tools/FeNNol",
+      "https://github.com/FeNNol-tools/FeNNol-PMC/tree/main/FENNIX-BIO1"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_2.json. The Academic Software Licence explicitly forbids commercial use, so noncommercial is true.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "FeNNix-Bio1 S",
+      "FeNNix-Bio1 M"
+    ]
+  },
+  {
+    "id": "bfm-chemate",
+    "date_added": "2026-08-13",
+    "modality": "molecule",
+    "name": "CheMatE",
+    "description": "ModernBERT-based chemistry encoder that places SMILES strings and chemistry natural language in one shared embedding space through continued masked-language pretraining followed by Matryoshka contrastive fine-tuning.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.03855"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/schwallergroup/CheMatE"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/SchwallerGroup/CheMatE-v0"
+      },
+      {
+        "label": "Hugging Face (MLM base)",
+        "url": "https://huggingface.co/SchwallerGroup/CheMatE-v0-MLM"
+      }
+    ],
+    "status": "Open code + weights (MIT), ungated; evaluation datasets available on request",
+    "io": "SMILES string or chemistry text -> dense embedding vector",
+    "use_cases": "Molecular property prediction, chemistry text embedding and retrieval, clustering, frozen-encoder features",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2608.03855",
+      "https://github.com/schwallergroup/CheMatE",
+      "https://huggingface.co/SchwallerGroup/CheMatE-v0",
+      "https://huggingface.co/SchwallerGroup/CheMatE-v0-MLM"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_5.json. MIT on code and both checkpoints, no gating.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "CheMatE-v0"
+    ]
+  },
+  {
+    "id": "bfm-molexar",
+    "date_added": "2026-08-13",
+    "modality": "molecule",
+    "name": "Molexar",
+    "description": "Molecular generation model built on Fragment-SELFIES, a fragment-aware molecular language with validity-preserving decoding, pretrained on UniChem-derived fragment records and fine-tuned for property-, pharmacophore-, sequence- and pocket-conditioned generation.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.25865"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/fairydance/Molexar"
+      },
+      {
+        "label": "Hugging Face (base)",
+        "url": "https://huggingface.co/fairydance/molexar-10m-base"
+      },
+      {
+        "label": "Hugging Face (omni)",
+        "url": "https://huggingface.co/fairydance/molexar-10m-omni"
+      }
+    ],
+    "status": "Open code + weights (MIT), ungated",
+    "io": "Optional condition block (scalar properties, pharmacophore fingerprint, protein sequence or pocket) -> generated Fragment-SELFIES molecules decodable to SMILES",
+    "use_cases": "De novo and fragment-constrained molecule generation, property-conditioned design, pocket- and target-conditioned design",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2606.25865",
+      "https://github.com/fairydance/Molexar",
+      "https://huggingface.co/fairydance/molexar-10m-base",
+      "https://huggingface.co/fairydance/molexar-10m-omni"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_5.json. MIT on code and both checkpoints, no gating.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-novomolgen",
+    "date_added": "2026-08-13",
+    "modality": "molecule",
+    "name": "NovoMolGen",
+    "description": "Family of Llama-architecture molecular language models (32M, 157M and 300M parameters) pretrained on 1.5 billion ZINC-22 molecules and released with both atom-wise and BPE SMILES tokenizers.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2508.13408"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/chandar-lab/NovoMolGen"
+      },
+      {
+        "label": "Hugging Face collection",
+        "url": "https://huggingface.co/collections/chandar-lab/novomolgen-681bce8b0e73b5dc7a3b0ff1"
+      },
+      {
+        "label": "Hugging Face (157M SMILES AtomWise)",
+        "url": "https://huggingface.co/chandar-lab/NovoMolGen_157M_SMILES_AtomWise"
+      }
+    ],
+    "status": "Public MIT-licensed weights on Hugging Face, ungated; the source repository carries no licence file",
+    "io": "Start token or partial SMILES -> generated molecule SMILES and hidden-state embeddings",
+    "use_cases": "De novo molecule generation, goal-directed molecular optimization, reinforcement-learning molecular design",
+    "year": "2025",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2508.13408",
+      "https://github.com/chandar-lab/NovoMolGen",
+      "https://huggingface.co/collections/chandar-lab/novomolgen-681bce8b0e73b5dc7a3b0ff1",
+      "https://huggingface.co/chandar-lab/NovoMolGen_157M_SMILES_AtomWise"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_6.json. Weights are MIT; no LICENSE file exists in the code repository.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-reasyn",
+    "date_added": "2026-08-13",
+    "modality": "molecule",
+    "name": "ReaSyn (NV-ReaSyn)",
+    "description": "NVIDIA encoder-decoder model that generates a molecule's synthetic pathway as a sequence over known reactions and building blocks, returning pathways for the closest synthesizable analog when the target itself is not synthesizable; v2 adds an Edit Flow refinement model.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2509.16084"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/NVIDIA-Digital-Bio/ReaSyn"
+      },
+      {
+        "label": "Hugging Face (autoregressive v2)",
+        "url": "https://huggingface.co/nvidia/NV-ReaSyn-AR-166M-v2"
+      },
+      {
+        "label": "Hugging Face (Edit Flow v2)",
+        "url": "https://huggingface.co/nvidia/NV-ReaSyn-EB-174M-v2"
+      }
+    ],
+    "status": "Open code (Apache-2.0) + public weights under the NVIDIA Open Model License, ungated and commercially usable",
+    "io": "Molecule SMILES -> synthetic pathway over building blocks for the target or its closest synthesizable analog",
+    "use_cases": "Synthesis planning, synthesizable analog generation, synthesizability-constrained property optimization",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2509.16084",
+      "https://github.com/NVIDIA-Digital-Bio/ReaSyn",
+      "https://huggingface.co/nvidia/NV-ReaSyn-AR-166M-v2",
+      "https://huggingface.co/nvidia/NV-ReaSyn-EB-174M-v2"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_6.json. Apache-2.0 code and NVIDIA Open Model License weights, both stated on the official card.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "NV-ReaSyn"
+    ]
+  },
+  {
+    "id": "bfm-minimol",
+    "date_added": "2026-08-13",
+    "modality": "molecule",
+    "name": "MiniMol",
+    "description": "Parameter-efficient molecular graph model (about 10M parameters) pretrained on roughly 3,300 quantum and biological graph- and node-level tasks, used as a frozen featurizer producing 512-dimensional fingerprints.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2404.14986"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/graphcore-research/minimol"
+      },
+      {
+        "label": "PyPI",
+        "url": "https://pypi.org/project/minimol/"
+      }
+    ],
+    "status": "Open code + weights (MIT); weights ship in the GitHub repository and the pip package",
+    "io": "SMILES strings -> 512-dimensional molecular fingerprint embeddings",
+    "use_cases": "ADMET and molecular property prediction, low-data transfer learning, molecular featurization",
+    "year": "2024",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2404.14986",
+      "https://github.com/graphcore-research/minimol",
+      "https://pypi.org/project/minimol/"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_6.json. One MIT grant covers code and the bundled weights.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-chemeleon",
+    "date_added": "2026-08-13",
+    "modality": "molecule",
+    "name": "CheMeleon",
+    "description": "Molecular foundation model pretrained to predict classical RDKit descriptors rather than experimental or simulated labels, giving a transferable representation usable as a frozen fingerprint or fine-tuned through chemprop.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2506.15792"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/JacksonBurns/chemeleon"
+      },
+      {
+        "label": "Zenodo weights",
+        "url": "https://zenodo.org/records/15426600"
+      }
+    ],
+    "status": "Open code + weights (MIT); weights on Zenodo and auto-downloaded by chemprop",
+    "io": "SMILES string or RDKit molecule -> molecular embedding, or fine-tuned property prediction",
+    "use_cases": "Molecular property prediction, ADMET modelling, small-data transfer learning, fingerprint generation",
+    "year": "2025",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2506.15792",
+      "https://github.com/JacksonBurns/chemeleon",
+      "https://zenodo.org/records/15426600"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_6.json. MIT on the repository and on the Zenodo weights record.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-marindna",
+    "date_added": "2026-08-13",
+    "modality": "dna",
+    "name": "MarinDNA",
+    "description": "Nucleotide-level causal DNA language model family from Open Athena trained on curated vertebrate genome regions, comprising a 1.12B-parameter flagship and an eight-model 46M-4B scaling ladder.",
+    "paper_links": [
+      {
+        "label": "Open Athena release write-up",
+        "url": "https://openathena.ai/blog/marin-dna/"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Open-Athena/marin-dna"
+      },
+      {
+        "label": "Hugging Face (m5.1 1B)",
+        "url": "https://huggingface.co/marin-dna/marin-dna-exp135-m5.1"
+      },
+      {
+        "label": "Hugging Face org",
+        "url": "https://huggingface.co/marin-dna"
+      }
+    ],
+    "status": "Open code + weights (Apache-2.0), ungated; documented by an official release write-up rather than a paper",
+    "io": "DNA sequence (256-token context) -> nucleotide likelihoods, embeddings and variant-effect scores",
+    "use_cases": "Zero-shot variant-effect prediction, genomic representation learning, DNA model scaling research",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://openathena.ai/blog/marin-dna/",
+      "https://github.com/Open-Athena/marin-dna",
+      "https://huggingface.co/marin-dna/marin-dna-exp135-m5.1",
+      "https://huggingface.co/marin-dna"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_3.json. Apache-2.0 on code and weights; no preprint or DOI exists, so the official blog release is the primary document.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "marin-dna"
+    ]
+  },
+  {
+    "id": "bfm-ceno",
+    "date_added": "2026-08-13",
+    "modality": "dna",
+    "name": "CENO",
+    "description": "Long-context autoregressive DNA foundation model family from Shanghai Artificial Intelligence Laboratory built on a Mamba, sparse-attention and mixture-of-experts hybrid backbone at 80M-1B parameters, with CENO-P variants post-trained on multi-species alignments for variant-effect scoring.",
+    "paper_links": [
+      {
+        "label": "Technical report",
+        "url": "https://cladeteam.github.io/ceno.github.io/assets/paper/CENO_Technical_Report_Version.pdf"
+      },
+      {
+        "label": "Project page",
+        "url": "https://cladeteam.github.io/ceno.github.io/"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/CladeTeam/CENO"
+      },
+      {
+        "label": "Hugging Face (CENO-1B-base)",
+        "url": "https://huggingface.co/CladeTeam/CENO-1B-base"
+      },
+      {
+        "label": "Hugging Face org",
+        "url": "https://huggingface.co/CladeTeam"
+      }
+    ],
+    "status": "Open code + 15 checkpoints (Apache-2.0), ungated; documented by a self-hosted technical report with no DOI",
+    "io": "DNA sequence with contexts up to about one million tokens -> likelihoods, embeddings, variant-effect scores or generated DNA",
+    "use_cases": "Variant-effect prediction, long-context genome modelling, regulatory sequence design, embedding extraction",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://cladeteam.github.io/ceno.github.io/assets/paper/CENO_Technical_Report_Version.pdf",
+      "https://cladeteam.github.io/ceno.github.io/",
+      "https://github.com/CladeTeam/CENO",
+      "https://huggingface.co/CladeTeam/CENO-1B-base",
+      "https://huggingface.co/CladeTeam"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_3.json. Apache-2.0 on code and weights, LICENSE and NOTICE present in the weight repositories.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "CENO-P"
+    ]
+  },
+  {
+    "id": "bfm-ldarnet",
+    "date_added": "2026-08-13",
+    "modality": "dna",
+    "name": "LDARNet",
+    "description": "Hierarchical genomic representation model with learnable tokenization: dynamic chunking learns content-aware token boundaries, a bidirectional BiMamba-2 backbone processes the compressed sequence, and dechunking restores base resolution.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.04552"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/darlednik/ICML-LDARNet"
+      },
+      {
+        "label": "Hugging Face (110M)",
+        "url": "https://huggingface.co/darlednik/LDARNet-110M"
+      },
+      {
+        "label": "Hugging Face (2M)",
+        "url": "https://huggingface.co/darlednik/LDARNet-2M"
+      }
+    ],
+    "status": "Open code + 2M and 110M weights (Apache-2.0), ungated; checkpoints load through the project's own loader",
+    "io": "DNA sequence -> learned token boundaries, nucleotide and sequence embeddings, masked-token predictions",
+    "use_cases": "Genomic representation learning, regulatory and histone-mark classification, tokenization research",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2606.04552",
+      "https://github.com/darlednik/ICML-LDARNet",
+      "https://huggingface.co/darlednik/LDARNet-110M",
+      "https://huggingface.co/darlednik/LDARNet-2M"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_3.json. Apache-2.0 declared on the repository and both model cards.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "DNA Adaptive Representation Network"
+    ]
+  },
+  {
+    "id": "bfm-carbon",
+    "date_added": "2026-08-13",
+    "modality": "dna",
+    "name": "Carbon (Carbon-500M / 3B / 8B)",
+    "description": "Family of open autoregressive genomic foundation models at 500M, 3B and 8B parameters from Hugging Face Biology with partners, pretrained on about one trillion 6-mer tokens with a 32,768-token native context extendable through YaRN.",
+    "paper_links": [
+      {
+        "label": "Technical report",
+        "url": "https://github.com/huggingface/carbon/blob/main/tech-report.pdf"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/huggingface/carbon"
+      },
+      {
+        "label": "Hugging Face (Carbon-3B)",
+        "url": "https://huggingface.co/HuggingFaceBio/Carbon-3B"
+      },
+      {
+        "label": "Hugging Face (Carbon-8B)",
+        "url": "https://huggingface.co/HuggingFaceBio/Carbon-8B"
+      },
+      {
+        "label": "Hugging Face (Carbon-500M)",
+        "url": "https://huggingface.co/HuggingFaceBio/Carbon-500M"
+      }
+    ],
+    "status": "Open code + weights (Apache-2.0), ungated; documented by an official technical report with no DOI",
+    "io": "DNA or RNA sequence as 6-mer tokens with optional metadata tokens -> generated sequence and token likelihoods for zero-shot variant scoring",
+    "use_cases": "Genomic sequence generation and recovery, zero-shot variant-effect prediction, long-context genomic retrieval",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://github.com/huggingface/carbon/blob/main/tech-report.pdf",
+      "https://github.com/huggingface/carbon",
+      "https://huggingface.co/HuggingFaceBio/Carbon-3B",
+      "https://huggingface.co/HuggingFaceBio/Carbon-8B",
+      "https://huggingface.co/HuggingFaceBio/Carbon-500M"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_4.json. Apache-2.0 on code and all three checkpoints, no gating.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "Carbon",
+      "Carbon-500M",
+      "Carbon-3B",
+      "Carbon-8B"
+    ]
+  },
+  {
+    "id": "bfm-moderngena",
+    "date_added": "2026-08-13",
+    "modality": "dna",
+    "name": "ModernGENA (base / large)",
+    "description": "DNA foundation model from AIRI that adapts the ModernBERT encoder to genomic sequence modelling, released as base and large checkpoints pretrained by masked language modelling on 443 vertebrate genome assemblies with the GENA-LM BPE vocabulary.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.04.21.719816v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/AIRI-Institute/GENA_LM/tree/main/examples/modernGENA"
+      },
+      {
+        "label": "Hugging Face (base)",
+        "url": "https://huggingface.co/AIRI-Institute/moderngena-base"
+      },
+      {
+        "label": "Hugging Face (large)",
+        "url": "https://huggingface.co/AIRI-Institute/moderngena-large"
+      }
+    ],
+    "status": "Public ungated weights with no licence stated on either model card; release and fine-tuning code under MIT",
+    "io": "DNA sequence tokenized with the GENA-LM BPE vocabulary -> contextual embeddings and masked-token predictions",
+    "use_cases": "Nucleotide Transformer benchmark tasks, sequence classification, per-token regression on signal tracks",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.04.21.719816v1",
+      "https://github.com/AIRI-Institute/GENA_LM/tree/main/examples/modernGENA",
+      "https://huggingface.co/AIRI-Institute/moderngena-base",
+      "https://huggingface.co/AIRI-Institute/moderngena-large"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_4.json. Neither weight repository declares a licence; only the code repository is MIT, so checkpoint reuse terms are unresolved.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "ModernGENA"
+    ]
+  },
+  {
+    "id": "bfm-botanic-0",
+    "date_added": "2026-08-13",
+    "modality": "dna",
+    "name": "BOTANIC-0 (Botanic0-S / -M / -L)",
+    "description": "Family of plant genomic foundation models from Living Models spanning about 100M to 1B parameters, pretrained by masked language modelling on nuclear DNA from 43 phylogenetically diverse plant genomes.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.02.23.706817v2"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face (Botanic0-L)",
+        "url": "https://huggingface.co/living-models/Botanic0-L"
+      },
+      {
+        "label": "Hugging Face (Botanic0-M)",
+        "url": "https://huggingface.co/living-models/Botanic0-M"
+      },
+      {
+        "label": "Hugging Face (Botanic0-S)",
+        "url": "https://huggingface.co/living-models/Botanic0-S"
+      }
+    ],
+    "status": "Weights behind an automatic contact-sharing gate under a custom research-only, non-commercial licence",
+    "io": "Plant DNA sequence as 6-mer tokens -> contextual embeddings and masked-token predictions for zero-shot scoring and fine-tuning",
+    "use_cases": "Regulatory element annotation, gene expression inference, variant effect prediction, crop genotype-to-phenotype modelling",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.02.23.706817v2",
+      "https://huggingface.co/living-models/Botanic0-L",
+      "https://huggingface.co/living-models/Botanic0-M",
+      "https://huggingface.co/living-models/Botanic0-S"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_4.json. Custom livingmodels-research licence is research-use only and all three repositories are auto-gated.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "Botanic0"
+    ]
+  },
+  {
+    "id": "bfm-mkb",
+    "date_added": "2026-08-13",
+    "modality": "multimodal",
+    "name": "MKB (Monkey King Bang)",
+    "description": "Unified scientific multimodal model from the Shanghai Academy of AI for Science that wraps native scientific encoders and decoders around a shared vision-language backbone (about 11.7B parameters), covering protein, RNA, DNA, molecule, weather, medical-image and text modalities through one natural-language interface.",
+    "paper_links": [
+      {
+        "label": "Technical report",
+        "url": "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB/blob/main/docs/MKB.pdf"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/sais-org/MKB"
+      }
+    ],
+    "status": "Public ungated weights under a composite licence: Apache-2.0 for code and all weights except the SAM 3 medical-image branch, which follows Meta's SAM License",
+    "io": "Natural-language prompt plus a sequence, molecule, gridded weather field or medical image -> answers, generated RNA or SMILES, forecasts or segmentation masks",
+    "use_cases": "Cross-modal scientific question answering, sequence understanding, text-to-molecule and RNA design, medical-image segmentation",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB/blob/main/docs/MKB.pdf",
+      "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB",
+      "https://huggingface.co/sais-org/MKB"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_4.json. Composite terms: the SAM 3 branch carries Meta's SAM License with acceptable-use restrictions; the card shows gating text while the hub API reports the repository as ungated.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "MKB",
+      "Monkey King Bang"
+    ]
+  },
+  {
+    "id": "bfm-mgm2",
+    "date_added": "2026-08-13",
+    "modality": "multimodal",
+    "name": "MGM2",
+    "description": "Multimodal microbiome foundation model pretrained on 1,821,291 MicrobeAtlas samples and 225,067 OTUs, coupling sequence embeddings with relative-abundance conditioning and community-semantic alignment; released in four scales.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.07.20.739063v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/HUST-NingKang-Lab/MGM2"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/LudensZhang/MGM2"
+      }
+    ],
+    "status": "Public ungated code and four checkpoints, but no licence is declared for either code or weights",
+    "io": "OTU/ASV abundance table with optional representative sequences -> microbial token embeddings and a community-level embedding",
+    "use_cases": "Biome classification, faecal microbiota transplantation response prediction, wastewater community forecasting",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.07.20.739063v1",
+      "https://github.com/HUST-NingKang-Lab/MGM2",
+      "https://huggingface.co/LudensZhang/MGM2"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_6.json. No LICENSE file exists on GitHub and the model card declares no licence, so reuse rights are not granted; the preprint text is CC BY-NC 4.0.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "MGM v2"
+    ]
+  },
+  {
+    "id": "bfm-bionemo-agent-toolkit",
+    "date_added": "2026-08-13",
+    "modality": "platform",
+    "name": "NVIDIA BioNeMo Agent Toolkit",
+    "description": "NVIDIA toolkit that packages its life-science model and library stack as agent-callable skills, so an agent can select, run and interpret bio foundation models across single tasks and multi-step workflows.",
+    "paper_links": [],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit"
+      },
+      {
+        "label": "NVIDIA developer blog",
+        "url": "https://developer.nvidia.com/blog/build-an-ai-scientist-for-life-science-discovery-with-nvidia-bionemo-agent-toolkit/"
+      }
+    ],
+    "status": "Open source (Apache-2.0 code, CC BY 4.0 skills and docs); underlying models keep their own licences and hosted endpoints need an NVIDIA API key",
+    "io": "Agent skill invocation with biological inputs -> outputs of the underlying BioNeMo models with interpretation guidance",
+    "use_cases": "Structure prediction, docking, generative chemistry, protein and binder design, genomics analysis, agentic discovery workflows",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit",
+      "https://developer.nvidia.com/blog/build-an-ai-scientist-for-life-science-discovery-with-nvidia-bionemo-agent-toolkit/"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_7.json. Dual Apache-2.0 OR CC-BY-4.0 licence quoted from the repository LICENSE; distinct from the existing NVIDIA BioNeMo framework record.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "BioNeMo Agent Toolkit",
+      "BioNeMo Skills"
+    ]
+  },
+  {
+    "id": "bfm-boltz-lab",
+    "date_added": "2026-08-13",
+    "modality": "platform",
+    "name": "Boltz Lab / Boltz API",
+    "description": "Hosted platform and API from Boltz PBC serving the company's biomolecular models with managed compute: BoltzMol-1 for small-molecule hit discovery and BoltzProt-1 for protein design, alongside the open Boltz model lineage.",
+    "paper_links": [],
+    "code_links": [
+      {
+        "label": "Boltz platform",
+        "url": "https://boltz.bio/platform"
+      },
+      {
+        "label": "Boltz API",
+        "url": "https://boltz.bio/api"
+      },
+      {
+        "label": "Open Boltz models",
+        "url": "https://github.com/jwohlwend/boltz"
+      }
+    ],
+    "status": "Commercial hosted service with a self-serve free tier, then usage-based pricing; hosted models have no public weights, while Boltz-2 and BoltzGen remain open source",
+    "io": "Target, ligands and job specification through the web interface or SDK -> designed molecules or binders with predicted structure, affinity and ADME properties",
+    "use_cases": "Small-molecule hit discovery, de novo protein and nanobody design, structure and affinity prediction, agentic discovery pipelines",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://boltz.bio/platform",
+      "https://boltz.bio/api",
+      "https://github.com/jwohlwend/boltz"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_7.json. Hosted commercial access only for BoltzMol-1 and BoltzProt-1; pricing and free-tier wording taken from first-party pages.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "Boltz Lab",
+      "Boltz API",
+      "Boltz PBC"
+    ]
+  },
+  {
+    "id": "bfm-protgpt3",
+    "date_added": "2026-08-13",
+    "modality": "protein",
+    "name": "ProtGPT3",
+    "description": "Open family of autoregressive protein language models from the Ferruz lab spanning 112M to 10B parameters in a sparse mixture-of-experts architecture, with DPO-aligned variants and an MSA-promptable model for homolog-conditioned generation.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.06.04.730041v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face collection",
+        "url": "https://huggingface.co/collections/AI4PD/protgpt3-family"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/michele1993/protGPT3"
+      }
+    ],
+    "status": "Seven ungated checkpoints on Hugging Face described as open source in the paper, but no licence is declared on the model cards or code repository",
+    "io": "Amino-acid prefix with a direction token, or a prompt of homologous sequences -> generated protein sequences and per-sequence likelihoods",
+    "use_cases": "De novo protein generation, family-conditioned and homolog-prompted design, zero-shot variant scoring, enzyme design",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.06.04.730041v1",
+      "https://huggingface.co/collections/AI4PD/protgpt3-family",
+      "https://github.com/michele1993/protGPT3"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_8.json. No SPDX licence exists on any of the seven model cards or in the code repository; the only availability statement is the paper's appendix.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-msa-pairformer",
+    "date_added": "2026-08-13",
+    "modality": "protein",
+    "name": "MSA Pairformer",
+    "description": "111M-parameter MSA-based protein language model that adapts AlphaFold's Pairformer sequence-pair updates into a pretrained model of protein and protein-protein coevolution, published in Cell after a 2025 preprint and weight release.",
+    "paper_links": [
+      {
+        "label": "Cell",
+        "url": "https://doi.org/10.1016/j.cell.2026.06.029"
+      },
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.1101/2025.08.02.668173v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/yoakiyama/MSA_Pairformer"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/yoakiyama/MSA-Pairformer"
+      }
+    ],
+    "status": "Open code + weights under a modified MIT licence that explicitly permits commercial use, ungated",
+    "io": "Query sequence plus its multiple sequence alignment -> sequence and pairwise embeddings, contact maps and zero-shot variant scores",
+    "use_cases": "Protein embedding, unsupervised and interface contact prediction, interacting-pair screening, variant-effect prediction",
+    "year": "2025",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://doi.org/10.1016/j.cell.2026.06.029",
+      "https://www.biorxiv.org/content/10.1101/2025.08.02.668173v1",
+      "https://github.com/yoakiyama/MSA_Pairformer",
+      "https://huggingface.co/yoakiyama/MSA-Pairformer"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_8.json. Modified MIT licence covers code and weights and states commercial use is permitted.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-prollama",
+    "date_added": "2026-08-13",
+    "modality": "protein",
+    "name": "ProLLaMA",
+    "description": "Llama-2-7B-based multitask protein language model trained by continued pretraining on protein sequences followed by instruction tuning, handling both superfamily-conditioned generation and protein understanding tasks.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2402.16445"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/PKU-YuanGroup/ProLLaMA"
+      },
+      {
+        "label": "Hugging Face (instruction-tuned)",
+        "url": "https://huggingface.co/GreatCaptainNemo/ProLLaMA"
+      },
+      {
+        "label": "Hugging Face (Stage 1)",
+        "url": "https://huggingface.co/GreatCaptainNemo/ProLLaMA_Stage_1"
+      }
+    ],
+    "status": "Public ungated weights and Apache-2.0 code; the checkpoints derive from Llama-2-7B and the cards direct users to the Llama 2 licence",
+    "io": "Instruction such as generate-by-superfamily or determine-superfamily, optionally with an amino-acid prefix -> generated sequence or predicted superfamily",
+    "use_cases": "Controllable protein generation by superfamily, prefix-conditioned generation, superfamily prediction, instruction-style protein tasks",
+    "year": "2024",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2402.16445",
+      "https://github.com/PKU-YuanGroup/ProLLaMA",
+      "https://huggingface.co/GreatCaptainNemo/ProLLaMA",
+      "https://huggingface.co/GreatCaptainNemo/ProLLaMA_Stage_1"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_8.json. Cards declare apache-2.0 but also instruct users to follow the Llama 2 licence for the derived weights, so reuse is constrained by the base-model terms.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "ProLLaMA_Stage_1"
+    ]
+  },
+  {
+    "id": "bfm-utrgen",
+    "date_added": "2026-08-13",
+    "modality": "rna",
+    "name": "UTRGen",
+    "description": "Unified 5' UTR modelling framework built on a small autoregressive decoder pretrained on multi-species 5' UTR sequence and adapted through lightweight heads to translation efficiency, expression, ribosome load and IRES tasks, with reinforcement-learning-guided design.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.06.26.734691v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/HIM-AIM/UTRGen"
+      },
+      {
+        "label": "Checkpoints and data",
+        "url": "https://drive.google.com/drive/folders/1E4TYXN48wdDru_-ETVxu2UWYSEKvO0wr"
+      }
+    ],
+    "status": "Open MIT code; pretrained checkpoints distributed as a publicly shared Google Drive archive with no separate terms",
+    "io": "Nucleotide prompt or 5' UTR sequence -> generated UTRs, or predicted translation efficiency, expression, ribosome load and IRES class",
+    "use_cases": "5' UTR generation and design, translation efficiency and expression prediction, IRES identification",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.06.26.734691v1",
+      "https://github.com/HIM-AIM/UTRGen",
+      "https://drive.google.com/drive/folders/1E4TYXN48wdDru_-ETVxu2UWYSEKvO0wr"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_8.json. The Drive folder is world-readable and lists the checkpoint archive, but its contents were not opened and Drive is not a permanent archive.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-shifu-lmr",
+    "date_added": "2026-08-13",
+    "modality": "rna",
+    "name": "Shifu-LMR",
+    "description": "Family of compact masked-language-model RNA backbones released as the model component of the Shifu framework, spanning 65M to 290M parameters including a 4,096-token long-context variant, alongside a leakage-audited corpus and evaluation protocol.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.07.15.738762v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Vicens-Lab/LMR"
+      },
+      {
+        "label": "Hugging Face (LMR-mini, 65M)",
+        "url": "https://huggingface.co/GaboG7/LMR-mini"
+      },
+      {
+        "label": "Hugging Face (LMR-v0, 289M)",
+        "url": "https://huggingface.co/GaboG7/LMR-v0"
+      },
+      {
+        "label": "Hugging Face (LMR-G, 228M)",
+        "url": "https://huggingface.co/GaboG7/LMR-G"
+      },
+      {
+        "label": "Hugging Face (LMR-Long, 4k context)",
+        "url": "https://huggingface.co/GaboG7/LMR-Long"
+      }
+    ],
+    "status": "Open code + four checkpoints (MIT), ungated; corpus databases retain their own terms",
+    "io": "RNA nucleotide sequence -> contextual residue embeddings and masked-token predictions for fine-tuning",
+    "use_cases": "RNA representation learning, secondary-structure prediction after fine-tuning, leakage-free benchmarking, continued pretraining",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.07.15.738762v1",
+      "https://github.com/Vicens-Lab/LMR",
+      "https://huggingface.co/GaboG7/LMR-mini",
+      "https://huggingface.co/GaboG7/LMR-v0",
+      "https://huggingface.co/GaboG7/LMR-G",
+      "https://huggingface.co/GaboG7/LMR-Long"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_8.json. MIT on the repository and all four weight repositories, none gated.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "Shifu",
+      "LMR",
+      "Shifu-LMR-Nano"
+    ]
+  },
+  {
+    "id": "bfm-numonomer",
+    "date_added": "2026-08-13",
+    "modality": "rna",
+    "name": "NUMonomer",
+    "description": "End-to-end model that predicts three-dimensional RNA and single-stranded DNA structures directly from sequence, without MSAs, secondary-structure annotations or language-model features.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.07.20.739453v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/yunda-si/NUMonomer"
+      },
+      {
+        "label": "Pretrained weights",
+        "url": "https://drive.google.com/drive/folders/1K9fG3ndV2UH3atwyrxHDqPN-oHyvhRwG"
+      }
+    ],
+    "status": "Open MIT code; pretrained weights distributed through the authors' Google Drive folder",
+    "io": "RNA or single-stranded DNA sequence -> predicted 3D structure with confidence scores",
+    "use_cases": "RNA 3D structure prediction, ssDNA structure prediction, large-scale structure modelling",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.07.20.739453v1",
+      "https://github.com/yunda-si/NUMonomer",
+      "https://drive.google.com/drive/folders/1K9fG3ndV2UH3atwyrxHDqPN-oHyvhRwG"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_9.json. MIT is the only stated grant; the checkpoint file is listed in the public Drive folder but was not downloaded.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-rnapro",
+    "date_added": "2026-08-13",
+    "modality": "rna",
+    "name": "RNAPro",
+    "description": "NVIDIA RNA 3D structure prediction model developed with the hosts and winners of a public RNA folding competition, coupling an all-atom co-folding trunk with MSAs, template modelling and the frozen RibonanzaNet2 RNA foundation model.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/NVIDIA-BioNeMo/RNAPro"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/nvidia/RNAPro-Public-Best-500M"
+      }
+    ],
+    "status": "Open code (Apache-2.0) + public weights under the NVIDIA Open Model License, ungated",
+    "io": "RNA sequence with MSAs and templates -> all-atom 3D structure",
+    "use_cases": "RNA 3D structure prediction, template-based RNA modelling, structure-driven RNA drug discovery",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1",
+      "https://github.com/NVIDIA-BioNeMo/RNAPro",
+      "https://huggingface.co/nvidia/RNAPro-Public-Best-500M"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_9.json. Apache-2.0 code and NVIDIA Open Model License weights, both quoted from official artifacts.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-rnaelectra",
+    "date_added": "2026-08-13",
+    "modality": "rna",
+    "name": "RNAElectra",
+    "description": "Single-nucleotide-resolution RNA language model pretrained on RNAcentral non-coding RNAs with a replaced-token-detection objective rather than masked language modelling, released as a reusable discriminator backbone.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.03.15.711950v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/FreakingPotato/RNAElectra"
+      }
+    ],
+    "status": "Open weights (Apache-2.0), ungated; no separate code repository",
+    "io": "RNA sequence -> per-nucleotide contextual embeddings for fine-tuning",
+    "use_cases": "RNA structure and function prediction, RNA-protein and RNA-RNA interaction prediction, modification and stability prediction",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.03.15.711950v1",
+      "https://huggingface.co/FreakingPotato/RNAElectra"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_9.json. Apache-2.0 declared on the model card; the preprint's data-availability statement confirms author ownership of the upload.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-dgrna",
+    "date_added": "2026-08-13",
+    "modality": "rna",
+    "name": "DGRNA",
+    "description": "Long-context RNA foundation model built on bidirectional Mamba2 with attention, pretrained on 100 million RNA sequences to avoid the quadratic cost of attention on long RNAs.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.1101/2024.10.31.621427v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/TimothyChen225/DGRNA"
+      },
+      {
+        "label": "Pretrained weights",
+        "url": "https://drive.google.com/drive/folders/1LQOIo-fvij3L2dPEA2zfyOGNn3mkz4KE"
+      }
+    ],
+    "status": "Open MIT code; pretrained weights distributed through the authors' Google Drive folder",
+    "io": "RNA sequence -> per-nucleotide contextual embeddings for fine-tuning",
+    "use_cases": "RNA embedding extraction, RNA structure and function prediction, long RNA modelling",
+    "year": "2024",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.1101/2024.10.31.621427v1",
+      "https://github.com/TimothyChen225/DGRNA",
+      "https://drive.google.com/drive/folders/1LQOIo-fvij3L2dPEA2zfyOGNn3mkz4KE"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_9.json. MIT is the only stated grant; the checkpoint filename is listed in the public Drive folder but was not downloaded.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-ribonanzanet2",
+    "date_added": "2026-08-13",
+    "modality": "rna",
+    "name": "RibonanzaNet2",
+    "description": "Das lab RNA foundation model pretrained to map RNA sequence to per-nucleotide chemical reactivity for DMS and SHAPE probes; the released alpha checkpoint supplies frozen sequence and pairwise features reused by downstream models such as RNAPro.",
+    "paper_links": [
+      {
+        "label": "bioRxiv (describes RNet2 use)",
+        "url": "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1"
+      },
+      {
+        "label": "RibonanzaNet v1 preprint",
+        "url": "https://www.biorxiv.org/content/10.1101/2024.02.24.581671v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Kaggle model weights",
+        "url": "https://www.kaggle.com/models/shujun717/ribonanzanet2"
+      },
+      {
+        "label": "GitHub training code",
+        "url": "https://github.com/Shujun-He/RibonanzaNet2"
+      }
+    ],
+    "status": "Public MIT-licensed alpha weights on Kaggle and MIT training code; no RibonanzaNet2-specific paper exists",
+    "io": "RNA sequence -> per-nucleotide DMS and SHAPE reactivity profiles plus sequence and pairwise representations",
+    "use_cases": "Chemical reactivity prediction, RNA secondary structure prediction, embedding backbone for RNA 3D structure prediction",
+    "year": "2025",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1",
+      "https://www.biorxiv.org/content/10.1101/2024.02.24.581671v1",
+      "https://www.kaggle.com/models/shujun717/ribonanzanet2",
+      "https://github.com/Shujun-He/RibonanzaNet2"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_9.json. Weight metadata and the MIT instance licence were read through the Kaggle public API after a parallel lane could not render the HTML page; the release is self-described as an alpha and has no dedicated paper.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "RNet2"
+    ]
+  },
+  {
+    "id": "bfm-perturbgen",
+    "date_added": "2026-08-13",
+    "modality": "singlecell",
+    "name": "PerturbGen",
+    "description": "Generative single-cell model from the Lotfollahi lab trained on over 100 million transcriptomes that predicts perturbation responses along cellular trajectories rather than at a single static state.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.03.04.709254v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Lotfollahi-lab/Perturbgen"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/lotfollahi-lab/PerturbGen"
+      }
+    ],
+    "status": "Open MIT code; the pretraining checkpoint is publicly downloadable and ungated but the model card states no licence",
+    "io": "Source-state expression + genetic perturbation + target state -> predicted target-state expression, gene embeddings and gene programs",
+    "use_cases": "Trajectory-aware perturbation prediction, gene-program discovery, in silico genetic screens",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.03.04.709254v1",
+      "https://github.com/Lotfollahi-lab/Perturbgen",
+      "https://huggingface.co/lotfollahi-lab/PerturbGen"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_10.json. Code is MIT; the weights ship without any stated licence.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-prism2",
+    "date_added": "2026-08-13",
+    "modality": "spatial",
+    "name": "PRISM2",
+    "description": "Paige multimodal slide-level pathology foundation model coupling a whole-slide Perceiver encoder to a language-model decoder, trained on 2.3 million whole-slide images with report-derived question-answer pairs; released with a survival-finetuned variant.",
+    "paper_links": [
+      {
+        "label": "Nature Medicine",
+        "url": "https://doi.org/10.1038/s41591-026-04521-4"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2506.13063"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/paige-ai/Prism2"
+      },
+      {
+        "label": "Hugging Face (survival)",
+        "url": "https://huggingface.co/paige-ai/Prism2-survival"
+      },
+      {
+        "label": "Zenodo evaluation",
+        "url": "https://zenodo.org/records/19056118"
+      }
+    ],
+    "status": "Gated weights (manual approval, institutional email) under CC BY-NC-ND-4.0, non-commercial research only",
+    "io": "Virchow2 tile embeddings of a whole-slide image + optional text prompt -> slide-level embedding and diagnostic text",
+    "use_cases": "Slide-level embeddings, cancer detection, diagnostic question answering, biomarker and survival prediction",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://doi.org/10.1038/s41591-026-04521-4",
+      "https://arxiv.org/abs/2506.13063",
+      "https://huggingface.co/paige-ai/Prism2",
+      "https://huggingface.co/paige-ai/Prism2-survival",
+      "https://zenodo.org/records/19056118"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_11.json. Successor to the separate PRISM record, whose links were narrowed to PRISM v1 in the same migration; weights are manually gated and non-commercial.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-kronos2",
+    "date_added": "2026-08-13",
+    "modality": "spatial",
+    "name": "KRONOS2",
+    "description": "Second-generation marker-aware vision foundation model for multiplex spatial proteomics from the Mahmood Lab, pretrained with a 268-marker vocabulary to produce one embedding per multiplexed image patch conditioned on the markers present.",
+    "paper_links": [
+      {
+        "label": "arXiv (KRONOS v1)",
+        "url": "https://arxiv.org/abs/2506.03373"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/MahmoodLab/KRONOS2"
+      },
+      {
+        "label": "GitHub (KRONOS)",
+        "url": "https://github.com/mahmoodlab/KRONOS"
+      }
+    ],
+    "status": "Gated weights (manual approval, institutional email) under CC BY-NC-ND-4.0; no dedicated KRONOS2 paper yet, the card cites the KRONOS v1 paper",
+    "io": "Multiplex spatial proteomics image patch -> 768-dimensional marker-aware patch embedding",
+    "use_cases": "Cell phenotyping, tissue classification, biomarker discovery, patient stratification from multiplex imaging",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2506.03373",
+      "https://huggingface.co/MahmoodLab/KRONOS2",
+      "https://github.com/mahmoodlab/KRONOS"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_11.json. Separate release from the existing KRONOS record; a KRONOS2 technical report is announced but not published.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "KRONOSv2"
+    ]
+  },
+  {
+    "id": "bfm-gigapath-flash",
+    "date_added": "2026-08-13",
+    "modality": "spatial",
+    "name": "GigaPath-Flash",
+    "description": "Efficient distillations of the Prov-GigaPath pathology foundation model from Microsoft Research: a ViT-S/16 tile encoder with a LongNet slide encoder retaining most slide-level performance at far lower compute, plus the companion GigaTIME-Flash that predicts virtual multiplexed-immunofluorescence maps from H&E tiles.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.18218"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face (GigaPath-Flash)",
+        "url": "https://huggingface.co/prov-gigapath/prov-gigapath-flash"
+      },
+      {
+        "label": "Hugging Face (GigaTIME-Flash)",
+        "url": "https://huggingface.co/prov-gigatime/gigatime-flash"
+      },
+      {
+        "label": "GitHub (GigaTIME)",
+        "url": "https://github.com/prov-gigatime/GigaTIME"
+      }
+    ],
+    "status": "Apache-2.0 weights behind a click-through contact gate; the model cards restrict intended use to research and exclude deployment",
+    "io": "H&E tiles and whole-slide images -> tile and slide embeddings; H&E tiles -> 23-channel virtual multiplexed-immunofluorescence maps",
+    "use_cases": "Whole-slide representation learning, slide-level classification and biomarker prediction, tumour microenvironment mapping",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2607.18218",
+      "https://huggingface.co/prov-gigapath/prov-gigapath-flash",
+      "https://huggingface.co/prov-gigatime/gigatime-flash",
+      "https://github.com/prov-gigatime/GigaTIME"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_12.json. Apache-2.0 is the operative licence, but the cards' research-only intended-use text and the access gate are recorded in the status field.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "GigaTIME-Flash",
+      "Prov-GigaPath-Flash"
+    ]
+  },
+  {
+    "id": "bfm-alice",
+    "date_added": "2026-08-13",
+    "modality": "spatial",
+    "name": "ALICE",
+    "description": "General-purpose computational pathology foundation model built by multi-stage agglomerative distillation of eight vision, vision-language and slide-level teacher models into a single backbone, evaluated across 96 downstream tasks.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.09526"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/WonderLandxD/ALICE"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/JWonderLand/ALICE"
+      }
+    ],
+    "status": "Gated weights (manual approval) under CC BY-NC-ND-4.0, non-commercial research only",
+    "io": "Pathology tiles or whole-slide images, optionally with text -> tile-, vision-language- and slide-level embeddings",
+    "use_cases": "Tissue and tile classification, pathology vision-language tasks, whole-slide diagnosis and prognosis",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2607.09526",
+      "https://github.com/WonderLandxD/ALICE",
+      "https://huggingface.co/JWonderLand/ALICE"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_12.json. CC BY-NC-ND-4.0 on both the repository and the manually gated weights.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-tissueformer",
+    "date_added": "2026-08-13",
+    "modality": "spatial",
+    "name": "TissueFormer",
+    "description": "Multimodal foundation model from the Uhler lab for paired histopathology and spatial transcriptomics at single-cell resolution, using linear-complexity whole-slide attention over more than 17 million image-expression pairs.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.07.31.741265v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/uhlerlab/TissueFormer"
+      }
+    ],
+    "status": "Open MIT code; pretrained checkpoints distributed through Google Drive links in the official repository with no separate terms",
+    "io": "Histology images with or without paired spatial transcriptomics -> single-cell spatial expression predictions and cell-, region- and slide-level embeddings",
+    "use_cases": "Spatial gene-expression prediction from H&E, cell- region- and slide-level diagnosis, mechanism hypothesis generation",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.07.31.741265v1",
+      "https://github.com/uhlerlab/TissueFormer"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_12.json. MIT repository licence is the only grant covering the Drive-hosted checkpoints.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-cellworld",
+    "date_added": "2026-08-13",
+    "modality": "spatial",
+    "name": "CellWorld",
+    "description": "Joint-embedding predictive foundation model for spatial transcriptomics in which cells are tokens and masked spatial regions are predicted in latent space rather than reconstructed as gene counts; four variants pretrained on 46 million human cells.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.06659"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/UoM-HealthAI/CellWorld"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/Haiping-UoM/CellWorld"
+      }
+    ],
+    "status": "Open code + weights (MIT), ungated, four scales",
+    "io": "Spatially resolved single-cell expression with coordinates -> latent cell embeddings, with probe and finetune heads for annotation and niche prediction",
+    "use_cases": "Spatial transcriptomics representation learning, cell-type annotation, tissue region and niche prediction",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2608.06659",
+      "https://github.com/UoM-HealthAI/CellWorld",
+      "https://huggingface.co/Haiping-UoM/CellWorld"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_12.json. MIT on code and weights; the weight repository became public and ungated before verification.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-seal",
+    "date_added": "2026-08-13",
+    "modality": "spatial",
+    "name": "SEAL",
+    "description": "Self-supervised framework from the Mahmood Lab that finetunes existing patch-level pathology foundation models against paired spatial transcriptomics, yielding molecularly aligned drop-in vision encoders with matched expression encoders; CONCH and UNIv2 variants are released.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.14177"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/mahmoodlab/SEAL"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/MahmoodLab/SEAL"
+      }
+    ],
+    "status": "Click-through gated weights under CC BY-NC-ND 4.0; the code repository states no licence",
+    "io": "H&E histology patch -> molecularly aligned patch embedding, with a paired expression encoder for cross-modal retrieval",
+    "use_cases": "Molecular status and expression prediction, treatment-response assessment, gene-image retrieval, patch- and slide-level tasks",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2602.14177",
+      "https://github.com/mahmoodlab/SEAL",
+      "https://huggingface.co/MahmoodLab/SEAL"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_13.json. Weights are CC BY-NC-ND 4.0 and gated; the GitHub repository has no licence file, so code terms are unspecified.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "Spatial Expression-Aligned Learning"
+    ]
+  },
+  {
+    "id": "bfm-spatialfusion",
+    "date_added": "2026-08-13",
+    "modality": "spatial",
+    "name": "SpatialFusion",
+    "description": "Lightweight multimodal model from the Uhler lab that fuses histology and spatial-transcriptomics embeddings from pretrained backbones into joint neighbourhood representations and pathway-informed spatial niches at single-cell resolution.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.03.16.712056v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/uhlerlab/spatialfusion"
+      },
+      {
+        "label": "Zenodo benchmark data",
+        "url": "https://zenodo.org/records/20934900"
+      }
+    ],
+    "status": "Open source (MIT) with pretrained checkpoints for each backbone combination bundled in the package",
+    "io": "Paired histology and spatial transcriptomics embeddings -> joint neighbourhood embedding and pathway-informed niche assignments",
+    "use_cases": "Spatial niche mapping, multimodal spatial embedding, tumour microenvironment characterization, cohort finetuning",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.biorxiv.org/content/10.64898/2026.03.16.712056v1",
+      "https://github.com/uhlerlab/spatialfusion",
+      "https://zenodo.org/records/20934900"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_13.json. MIT covers code and the bundled checkpoints; the fusion heads are small modules over frozen third-party encoders.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": []
+  },
+  {
+    "id": "bfm-path-foundation",
+    "date_added": "2026-08-13",
+    "modality": "spatial",
+    "name": "Path Foundation",
+    "description": "Google Health AI histopathology embedding model: a ViT-S trained with masked siamese networks on 60 million H&E patches from public tumour studies at three magnifications, producing 384-dimensional patch embeddings.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2310.13259"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/google/path-foundation"
+      },
+      {
+        "label": "Developer documentation",
+        "url": "https://developers.google.com/health-ai-developer-foundations/path-foundation"
+      }
+    ],
+    "status": "Weights gated by click-through acceptance of Google's Health AI Developer Foundations terms; commercial use permitted subject to those use restrictions",
+    "io": "H&E histopathology patch -> 384-dimensional embedding",
+    "use_cases": "Tumour identification and grading, biomarker detection, similar-image search, data-efficient pathology classifiers",
+    "year": "2023",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://arxiv.org/abs/2310.13259",
+      "https://huggingface.co/google/path-foundation",
+      "https://developers.google.com/health-ai-developer-foundations/path-foundation"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_13.json. Custom Health AI Developer Foundations terms with use restrictions and a click-through gate; Google documents it as an older single-modality model.",
+    "audit_source": "evidence/source-audit/foundation_initial.md",
+    "aliases": [
+      "google/path-foundation"
+    ]
+  },
+  {
+    "id": "bfm-chemberta-3",
+    "date_added": "2026-06-16",
+    "modality": "platform",
+    "name": "ChemBERTa-3",
+    "description": "Open training and benchmarking framework for chemical foundation models, published in Digital Discovery, with released c3 checkpoints (a 1.1B c3-MoLFormer and a 100M ChemBERTa MLM) on the DeepChem model hub.",
+    "paper_links": [
+      {
+        "label": "Digital Discovery",
+        "url": "https://doi.org/10.1039/D5DD00348B"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/deepforestsci/chemberta3"
+      },
+      {
+        "label": "Hugging Face (MoLFormer-c3-1.1B)",
+        "url": "https://huggingface.co/DeepChem/MoLFormer-c3-1.1B"
+      },
+      {
+        "label": "Hugging Face (ChemBERTa-100M-MLM)",
+        "url": "https://huggingface.co/DeepChem/ChemBERTa-100M-MLM"
+      }
+    ],
+    "status": "Open framework + released checkpoints (MIT); two smaller c3-MoLFormer repositories are still weight-free",
+    "io": "SMILES -> embeddings/task heads",
+    "use_cases": "Re-training and benchmarking chemical encoders, molecular property prediction, chemical model fine-tuning",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://doi.org/10.1039/D5DD00348B",
+      "https://github.com/deepforestsci/chemberta3",
+      "https://huggingface.co/DeepChem/MoLFormer-c3-1.1B",
+      "https://huggingface.co/DeepChem/ChemBERTa-100M-MLM"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Promoted from the under-review register on 2026-08-13: the published Digital Discovery article (10.1039/D5DD00348B) confirms the training-framework scope and MIT covers both the framework and the released checkpoints. Evidence: evidence/hold-review-2026-08-13/fm_hold_review_4.json.",
+    "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+    "date_modified": "2026-08-13",
+    "aliases": []
+  },
+  {
+    "id": "bfm-virchow-virchow2-and-virchow2g",
+    "date_added": "2026-06-16",
+    "modality": "spatial",
+    "name": "Virchow / Virchow2 (and Virchow2G)",
+    "description": "Paige/MSK self-supervised ViT-H tile-level pathology foundation models: Virchow (632M parameters, 1.5M WSIs), Virchow2 (3.1M+ WSIs) and the 1.85B-parameter Virchow2G, which has no public weights.",
+    "io": "H&E histology tile -> tile-level embedding (frozen or fine-tuned feature extractor)",
+    "status": "Member-specific terms: Virchow is Apache-2.0 behind an automatic gate, Virchow2 is CC BY-NC-ND-4.0 non-commercial behind an automatic gate, and Virchow2G is commercial-licence-only with no public weights",
+    "use_cases": "Tile/slide-level cancer detection, rare cancer detection, biomarker prediction, pan-cancer downstream tasks",
+    "year": "2024",
+    "paper_links": [
+      {
+        "label": "Nature Medicine (Virchow)",
+        "url": "https://www.nature.com/articles/s41591-024-03141-0"
+      },
+      {
+        "label": "arXiv (Virchow2)",
+        "url": "https://arxiv.org/abs/2408.00738"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face (Virchow)",
+        "url": "https://huggingface.co/paige-ai/Virchow"
+      },
+      {
+        "label": "Hugging Face (Virchow2)",
+        "url": "https://huggingface.co/paige-ai/Virchow2"
+      },
+      {
+        "label": "Official family access",
+        "url": "https://www.paige.ai/foundation-models"
+      }
+    ],
+    "canonical": true,
+    "noncommercial": true,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.nature.com/articles/s41591-024-03141-0",
+      "https://arxiv.org/abs/2408.00738",
+      "https://huggingface.co/paige-ai/Virchow",
+      "https://huggingface.co/paige-ai/Virchow2",
+      "https://www.paige.ai/foundation-models"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Promoted from the under-review register on 2026-08-13 with member-specific terms encoded: Virchow Apache-2.0 (auto-gated), Virchow2 CC BY-NC-ND-4.0 (auto-gated, non-commercial), Virchow2G and Virchow2G-Mini commercial licence only with no public artifact and no verified paper. Record-level noncommercial is therefore true. Evidence: evidence/hold-review-2026-08-13/fm_hold_review_3.json.",
+    "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+    "date_modified": "2026-08-13",
+    "aliases": []
+  },
+  {
+    "id": "bfm-h-optimus-0-h-optimus-1",
+    "date_added": "2026-06-16",
+    "modality": "spatial",
+    "name": "H-optimus-0 / H-optimus-1",
+    "description": "Bioptimus 1.1B-parameter ViT pathology foundation models trained by self-supervised learning on hundreds of millions of tiles from 500k+ (H-optimus-0) to 1M+ (H-optimus-1) H&E slides; neither model has a peer-reviewed paper or preprint.",
+    "io": "H&E histology tile -> tile-level feature embedding",
+    "status": "Member-specific terms: H-optimus-0 is Apache-2.0 behind an automatic gate, H-optimus-1 is CC BY-NC-ND-4.0 behind manual approval with an institutional email",
+    "use_cases": "Mutation prediction, survival analysis, tissue/cancer classification, biomarker prediction, WSI feature-extraction backbone",
+    "year": "2024",
+    "paper_links": [
+      {
+        "label": "Company announcement",
+        "url": "https://www.bioptimus.com/news/bioptimus-launches-h-optimus-1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Hugging Face (H-optimus-0)",
+        "url": "https://huggingface.co/bioptimus/H-optimus-0"
+      },
+      {
+        "label": "Hugging Face (H-optimus-1)",
+        "url": "https://huggingface.co/bioptimus/H-optimus-1"
+      },
+      {
+        "label": "Official release page",
+        "url": "https://github.com/bioptimus/releases/tree/main/models/h-optimus/v0"
+      }
+    ],
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-08-13",
+    "sources": [
+      "https://www.bioptimus.com/news/bioptimus-launches-h-optimus-1",
+      "https://huggingface.co/bioptimus/H-optimus-0",
+      "https://huggingface.co/bioptimus/H-optimus-1",
+      "https://github.com/bioptimus/releases/tree/main/models/h-optimus/v0"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P2",
+    "audit_note": "Promoted from the under-review register on 2026-08-13 with both model cards verified and per-member terms encoded: H-optimus-0 Apache-2.0 (auto-gated), H-optimus-1 CC BY-NC-ND-4.0 (manually gated). The listed paper is a company announcement and is labelled as such; no DOI exists. Evidence: evidence/hold-review-2026-08-13/fm_hold_review_3.json.",
+    "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+    "date_modified": "2026-08-13",
     "aliases": []
   }
 ]

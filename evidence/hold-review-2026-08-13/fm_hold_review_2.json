@@ -1,0 +1,100 @@
+[
+  {
+    "id": "bfm-drfold",
+    "name": "DRfold",
+    "condition": "Reconsider only under a written structural-model exception, or after the record is reframed around an evidenced reusable pretrained component (DRfold2's RCLM).",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/leeyang/DRfold2"
+    ],
+    "licence_quote": "DRfold2 repository licence text seen today: \"Copyright (c) 2025 Yang Li\" / \"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \\\"Software\\\"), to deal in the Software without restriction...\" (MIT-form text; file labelled as the repository licence).",
+    "rationale": "Checked the DRfold2 repository today: it does ship reusable artifacts - the install script states \"This will download model weights ~1.3GB and install Arena.\", and the repository licence is MIT-form text (Copyright (c) 2025 Yang Li). No direct weight URL is exposed in the README (download is via install.sh), so the artifact locator is indirect. Neither branch of the condition is met: (a) no written structural-model exception exists in the catalog repo - Foundation_models/CHANGELOG.md has no entries after 2026-07-14 (2.0.1) and no scope/exception policy document was found; (b) the catalog record itself is unchanged and still frames DRfold/DRfold2 as one-task RNA tertiary structure prediction rather than around the pretrained RCLM component. Both remaining paths are curatorial acts the register must perform, not facts an external page can settle.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-framediff-frameflow-multiflow",
+    "name": "FrameDiff / FrameFlow / Multiflow",
+    "condition": "Split FrameDiff, FrameFlow and MultiFlow into independently evidenced records, or narrow this record to a single system.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/jasonkyuyim/multiflow",
+      "https://github.com/microsoft/frame-flow"
+    ],
+    "licence_quote": "MultiFlow repo licence as shown today: \"LICENSE: MIT\". FrameFlow repo licence as shown today: \"MIT license\".",
+    "rationale": "Fetched both cited repositories today. github.com/jasonkyuyim/multiflow implements MultiFlow only (\"We provide pre-trained model weights at this Zenodo link\", weights.tar.gz; MIT); github.com/microsoft/frame-flow is live, not archived, implements FrameFlow (\"Datasets and weights are hosted on Zenodo\", weights.tar.gz ~0.6 GB; MIT) and notes only a legacy branch for the older workshop-paper version. So the three systems remain distinct upstream projects with separate repos and separate weight bundles, which is exactly why the merged record is held. The condition is an editorial split/narrowing that the register has not performed - no external evidence can satisfy it. No sign of rename, absorption or withdrawal, so no update_note.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-protriever",
+    "name": "Protriever",
+    "condition": "Reconsider when official executable code or reusable weights are released and verified.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/OATML-Markslab/Protriever",
+      "https://api.github.com/repos/OATML-Markslab/Protriever/contents"
+    ],
+    "licence_quote": "",
+    "rationale": "Checked the official repository today both as HTML and via the GitHub contents API. The API listing for the repository root returns exactly one item: README.md (type file). No source directories, no checkpoint or weights files, no LICENSE file, and the repo shows a single commit. The repository description is \"Official repository for the Protriever paper\". Condition not satisfied: still paper-plus-placeholder, with no released executable code, no reusable weights, and no reuse terms to verify.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-protgps",
+    "name": "ProtGPS",
+    "condition": "Reconsider if broader reusable foundation-model scope is established by primary evidence, or if a written task-specific exception is adopted.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/pgmikhael/protgps"
+    ],
+    "licence_quote": "Repository licence label shown today: \"MIT license\".",
+    "rationale": "Fetched the official repository today. Artifacts are fine - MIT licence, code plus notebooks, and checkpoints released off-repo (\"Download model checkpoints from zenodo and extract to checkpoints/protgps\"), with ESM2 and DR-BERT weights pulled from Torch Hub/HuggingFace. But the hold is about scope, and the repository still presents a single localization objective (paper framing: \"Protein codes promote selective subcellular compartmentalization\"), i.e. 12-compartment prediction plus localization-conditioned generation. No broader reusable pretraining is evidenced, and no written task-specific exception exists in the catalog repo (Foundation_models/CHANGELOG.md stops at 2026-07-14 and contains no policy change). Condition unmet on both branches.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-neuralplexer-and-neuralplexer3",
+    "name": "NeuralPLexer (and NeuralPLexer3)",
+    "condition": "Split NeuralPLexer v1 and NeuralPLexer3 and verify each version's implementation, weights and terms.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/zrqiao/NeuralPLexer"
+    ],
+    "licence_quote": "From the cited repository today: repository code \"BSD-3-Clause-Clear license\"; weights - \"Pretrained model checkpoints described in the published manuscript, downstream evaluation datasets, and predicted structures are available at the following Zenodo repository for non-commercial usage under the CC BY-NC-SA 4.0 license\".",
+    "rationale": "Fetched the cited repository today: it implements NeuralPLexer v1 only (2024 Nature Machine Intelligence work), with code under BSD-3-Clause-Clear and checkpoints under CC BY-NC-SA 4.0 (non-commercial) via the Zenodo record. No mention of NeuralPLexer3 or of any 2025/2026 update in the repository. I attempted the NP3 OpenReview source listed on the record (https://openreview.net/forum?id=BlLAmMFEzJ) and the fetch FAILED - the page returned only a bot-check interstitial (\"Complete the check below to continue to OpenReview\"), so nothing about NP3 code or weights could be verified. Session WebSearch budget was exhausted (200/200), so no independent search for an NP3 artifact was possible. Split has not been performed and NP3 remains unevidenced; the mixed-terms problem (open-ish code, non-commercial weights) still applies to the merged record.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-uni-mol-docking-v2",
+    "name": "Uni-Mol Docking V2",
+    "condition": "Reconsider only under a written structural/docking exception, or with evidence of broader reusable scope.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/deepmodeling/Uni-Mol/tree/main/unimol_docking_v2"
+    ],
+    "licence_quote": "From the directory README today: \"This project is licensed under the terms of the MIT license.\"",
+    "rationale": "Fetched the cited repository directory today. It provides code, a demo, and a single downloadable checkpoint listed as \"unimol docking v2, 464MB, May 17 2024, https://www.dropbox.com/scl/fi/sfhrtx1tjprce18wbvmdr/unimol_docking_v2_240517.pt\", under MIT. Scope is unchanged: the documented capability is ligand-protein binding-pose prediction in single, one-to-one batch, and one-to-many batch modes - variations of one docking task, not broader reusable scope. No successor version or scope-broadening update appears in the directory, and no written structural/docking exception has been adopted in the catalog repo. Condition unmet.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-abodybuilder3",
+    "name": "ABodyBuilder3",
+    "condition": "Reconsider only under a written structural-model exception, or with evidence of broader reusable scope.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://github.com/Exscientia/abodybuilder3"
+    ],
+    "licence_quote": "Repository licence shown today as Apache-2.0 (LICENSE.txt); weights statement: \"Data and model weights are hosted at https://zenodo.org/records/11354577.\"",
+    "rationale": "Fetched the official repository today. Identity and artifacts continue to verify - Apache-2.0 code, training and inference scripts, pre-computed language-model embeddings, and weights on Zenodo (record 11354577) fetchable via download.sh. But the hold is on scope: the repository still describes antibody structure prediction from heavy/light chain sequences, i.e. one task, and no broader reusable pretraining, successor model or rename is mentioned. No written structural-model exception exists in the catalog repo (no CHANGELOG entry after 2026-07-14). Condition unmet.",
+    "checked": "2026-08-13"
+  },
+  {
+    "id": "bfm-scdiva",
+    "name": "ScDiVa",
+    "condition": "Reconsider when official reusable code or a checkpoint is released and verified.",
+    "verdict": "keep_hold",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.03477"
+    ],
+    "licence_quote": "",
+    "rationale": "Fetched the arXiv abstract page today: \"ScDiVa: Masked Discrete Diffusion for Joint Modeling of Single-Cell Identity and Expression\", authors Mingxuan Wang, Cheng Chen, Gaoyang Jiang, Zijia Ren, Chuangxin Zhao, Lu Shi, Yanbiao Ma, submitted 3 February 2026. Neither the abstract nor the comments field mentions a code repository, GitHub URL, checkpoint or weights release, and the record still carries no code_links. Condition unmet: still paper-only. Limitation to note - the session WebSearch budget was exhausted (200/200), so I could not run an independent search for an unlinked third-party or later-posted repository; this verdict rests on the official arXiv record alone.",
+    "checked": "2026-08-13"
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "name": "SPgen",
+    "verdict": "hold",
+    "reason": "Preprint verified via bioRxiv API: DOI 10.64898/2026.07.16.739037, 'SPgen: Proteome-wide Spatial Proteomics generation using multi-modality foundation models', Li J. et al., corresponding Ye Yuan (Institute of Process Engineering, CAS), v1 dated 2026-07-21, category bioinformatics, not withdrawn, published_doi NA. Official code repo verified and matches: the JATS full text's Code Availability section links https://github.com/lijc0804/SPgen (owner handle matches first author Li J.); repo exists with README titled 'SPgen: Proteome-wide Spatial Protein Generation with Multimodal Foundation Models', created 2026-06-11, last push 2026-07-01, 0 stars. HOLD reasons, all three independent: (1) NO LICENCE - raw.githubusercontent.com/lijc0804/SPgen/main/LICENSE and LICENSE.md both return 404 and the GitHub API reports license=null, so redistribution terms are UNVERIFIED (default all-rights-reserved); the cc_by_nc_nd on the bioRxiv record covers the manuscript text only, not the code. (2) NO RELEASED PRETRAINED ARTIFACT - the repo's complete file list is README.md, SP_demo.py, SP_predict.py, run_ESM.py, run_pubmedbert_embedding.py, utils.py, SPgen_env.yml and three analysis notebooks; there are no checkpoint files and no weights download instructions, so the 'pretrained, reusable' criterion is not met. (3) The pretrained foundation-model content is entirely third-party frozen encoders (scGPT from github.com/bowang-lab/scGPT, ESM-2 esm2_t33_650M_UR50S, and huggingface.co/NeuML/pubmedbert-base-embeddings, all named in the Data Availability section) wrapped by a GNN trained per dataset; scope is also narrow (one task: spatial protein expression prediction). Minor quality flag: the Code Availability paragraph in the JATS XML begins 'TSvelo is implemented in Python' - a copy-paste artifact from a different manuscript - though the URL it gives is the SPgen repo.",
+    "licence_quote": "No licence file exists. raw.githubusercontent.com/lijc0804/SPgen/main/LICENSE -> HTTP 404; GitHub API repos/lijc0804/SPgen -> \"license\": null. bioRxiv record licence field: \"cc_by_nc_nd\" (manuscript text only).",
+    "record": null,
+    "reconsider_when": "The repo adds an explicit licence (raw.githubusercontent.com/lijc0804/SPgen/main/LICENSE returns 200) AND ships downloadable SPgen checkpoints/weights, or a Hugging Face / Zenodo artifact appears under the authors' control, or a peer-reviewed version (published_doi != NA on the bioRxiv record) documents released weights. Re-verify licence wording at that point.",
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.07.16.739037 (via bioRxiv MCP get_preprint)",
+      "https://www.biorxiv.org/content/early/2026/07/21/2026.07.16.739037.source.xml",
+      "https://github.com/lijc0804/SPgen",
+      "https://raw.githubusercontent.com/lijc0804/SPgen/main/README.md",
+      "https://raw.githubusercontent.com/lijc0804/SPgen/main/LICENSE",
+      "https://api.github.com/repos/lijc0804/SPgen"
+    ]
+  },
+  {
+    "name": "ProtBLIP2-SST",
+    "verdict": "reject",
+    "reason": "Paper is real and not withdrawn - bioRxiv DOI 10.64898/2026.07.10.737551, 'ProtBLIP2-SST: Protein Function Prediction via BLIP2 with Sequence, Structure, and Text', Chen Z. & Luo Q., corresponding Qiong Luo (HKUST), v1 dated 2026-07-12, licence cc_by, published_doi NA - but there is NO OFFICIAL ARTIFACT of any kind. I downloaded the complete JATS full text and enumerated every external link in it: the only xlink hrefs are figure/table/equation assets, the CC-BY licence URL, the two ORCIDs, and the paper's own PDF/XML. There is no Code Availability or Data Availability section (section titles run Abstract, Index Terms, Competing Interest Statement, related-work sections, Model Architecture, Stage 1, Stage 2, Datasets, Performance Metrics, Environment Setup and Parameters, Baseline methods, Results, Qualitative Analysis - no availability section), and a case-insensitive grep for github/huggingface/zenodo/gitee/figshare across the full text returns zero hits. An authenticated GitHub repository search for 'ProtBLIP2' returns no repositories. Secondary scope failure: the system is a single-task protein-function-captioning pipeline assembled from frozen third-party components (SaProt encoder, frozen BiomedBERT, a Q-Former, and a LoRA-tuned LLM whose base weights 'remain frozen during training'), i.e. not a reusable pretrained foundation model broader than one task. Nothing verifiable to catalogue.",
+    "licence_quote": "bioRxiv manuscript licence: \"cc_by\" (http://creativecommons.org/licenses/by/4.0/, the only licence URL in the full text). No code licence exists because no code was released.",
+    "record": null,
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.07.10.737551 (via bioRxiv MCP get_preprint)",
+      "https://www.biorxiv.org/content/early/2026/07/12/2026.07.10.737551.source.xml",
+      "https://api.github.com/search/repositories?q=ProtBLIP2 (via gh)"
+    ]
+  },
+  {
+    "name": "OmicsLM",
+    "verdict": "hold",
+    "reason": "Primary source verified: arxiv.org/abs/2605.06728, 'OmicsLM: A Multimodal Large Language Model for Multi-Sample Omics Reasoning', Sypetkowski M., Krawczyk J., Smolinski L., Kinas R., Pietrzak P., Jetka T., Powalski R., v1 submitted 2026-05-07, not withdrawn; abstract confirms the discovery lane's description (continuous expression profiles embedded in LLM context, >5.5M instruction examples across 70+ task types, GEO-OmicsQA benchmark). HOLD because no official artifact could be verified anywhere: the arXiv abstract page contains no GitHub, Hugging Face, code-release or weights statement; https://huggingface.co/api/models?search=OmicsLM returns an empty array; an authenticated GitHub repository search for 'OmicsLM' returns no repositories. Also outside the primary window (May 2026, an older-miss candidate rather than a June-August release) - which is a reason to be patient rather than optimistic. Paper-only entries with no reusable artifact do not meet the artifact criterion.",
+    "licence_quote": "No licence to quote. arXiv abstract page states no code or weights availability; huggingface.co/api/models?search=OmicsLM returns []; no GitHub repository found. Access terms UNVERIFIED.",
+    "record": null,
+    "reconsider_when": "An official repo or model card appears under the authors' organisation - recheck https://huggingface.co/api/models?search=OmicsLM and a GitHub search for OmicsLM - or an arXiv v2 / camera-ready (ICML 2026 FM4LS workshop version) adds a code-availability link. Then verify the weights licence and gating before accepting, and record whether the release is weights or inference-only.",
+    "fetched": [
+      "https://arxiv.org/abs/2605.06728",
+      "https://huggingface.co/api/models?search=OmicsLM",
+      "https://api.github.com/search/repositories?q=OmicsLM (via gh)"
+    ]
+  },
+  {
+    "name": "NVIDIA BioNeMo Agent Toolkit",
+    "verdict": "accept",
+    "reason": "Platform entry, no paper required, and the official evidence is first-party and consistent across three fetches. NVIDIA newsroom press release dated 2026-06-23 announces the toolkit; the NVIDIA developer blog of the same date instructs 'Point your agent at https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit and hand it a BioNeMo Skill to get started'; the repo itself exists under the NVIDIA-BioNeMo org (created 2026-05-22, org blog research.nvidia.com/labs/dbr/), description 'Turn any agent into a life science expert with NVIDIA BioNeMo skills.', 415 stars, last push 2026-08-12 (actively maintained), LICENSE NOTICE and copyright 'Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES'. Ownership is not in doubt: both official NVIDIA properties link to this exact org/repo. Scope passes as genuinely usable infrastructure rather than an announcement - the repo tree contains nim-skills/, open-models-skills/, library-skills/, workflows/, plugins/, docs/ and pyproject.toml, and skills execute against hosted NVIDIA NIM endpoints or a local NIM/GPU deployment. It fronts many bio FMs (Boltz-2, Evo 2, OpenFold2/OpenFold3, ProteinMPNN, RFdiffusion, DiffDock, GenMol, MolMIM, MSA-Search, Proteina-Complexa, KERMT) plus Parabricks, nvMolKit and cuEquivariance. Caveat carried into the record: the toolkit's own licence is permissive, but each underlying model keeps its own licence and hosted NIM endpoints need an NVIDIA API key - the Apache-2.0/CC-BY grant does not extend to the models it calls. Catalogue note for the maintainer: the index already lists 'NVIDIA BioNeMo'; this is a distinct new sub-product (the agent skill layer), not a rename, so it may alternatively be folded into that entry.",
+    "licence_quote": "From raw.githubusercontent.com/NVIDIA-BioNeMo/bionemo-agent-toolkit/main/LICENSE: \"BioNeMo Agent Toolkit is dual-licensed: - Source code (scripts, tests, build tooling) is licensed under the Apache License, Version 2.0. See LICENSE-APACHE-2.0 for the full text. - Skills, documentation, and other creative/content files (SKILL.md, workflow definitions, README files) are additionally available under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). See LICENSE-CC-BY-4.0 for the full text. SPDX-License-Identifier: Apache-2.0 OR CC-BY-4.0\"",
+    "record": {
+      "name": "NVIDIA BioNeMo Agent Toolkit",
+      "modality": "platform",
+      "description": "Open-source toolkit from NVIDIA that packages its life-science model and library stack as agent-callable skills, so a coding or scientific agent can select, run and interpret bio foundation models across single tasks and multi-step workflows. Skills front Boltz-2, Evo 2, OpenFold2/3, ProteinMPNN, RFdiffusion, DiffDock, GenMol, MolMIM, MSA-Search, Proteina-Complexa and KERMT, plus Parabricks, nvMolKit and cuEquivariance, and execute against hosted NVIDIA NIM endpoints or a local NIM/GPU deployment.",
+      "io": "agent skill invocation with task inputs (protein/nucleic-acid sequences, structures, ligands, sequencing reads) -> outputs of the underlying BioNeMo models (predicted structures, docked poses, generated molecules, designed sequences, variant effects) with instructions for interpreting them",
+      "status": "Open source on GitHub; toolkit dual-licensed Apache-2.0 (code) / CC-BY-4.0 (skills and docs). Underlying models keep their own licences and hosted NIM endpoints require an NVIDIA API key.",
+      "use_cases": "protein structure prediction, molecular docking, generative chemistry, protein and binder design, genomics analysis, biomarker discovery, agentic multi-step discovery workflows",
+      "year": 2026,
+      "paper_links": [],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit"
+        },
+        {
+          "label": "Licence (Apache-2.0 OR CC-BY-4.0)",
+          "url": "https://raw.githubusercontent.com/NVIDIA-BioNeMo/bionemo-agent-toolkit/main/LICENSE"
+        },
+        {
+          "label": "NVIDIA developer blog",
+          "url": "https://developer.nvidia.com/blog/build-an-ai-scientist-for-life-science-discovery-with-nvidia-bionemo-agent-toolkit/"
+        }
+      ],
+      "sources": [
+        "https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit",
+        "https://raw.githubusercontent.com/NVIDIA-BioNeMo/bionemo-agent-toolkit/main/LICENSE",
+        "https://developer.nvidia.com/blog/build-an-ai-scientist-for-life-science-discovery-with-nvidia-bionemo-agent-toolkit/",
+        "https://nvidianews.nvidia.com/news/nvidia-launches-bionemo-agent-toolkit-giving-ai-agents-the-tools-to-accelerate-scientific-discovery",
+        "https://api.github.com/repos/NVIDIA-BioNeMo/bionemo-agent-toolkit",
+        "https://api.github.com/orgs/NVIDIA-BioNeMo"
+      ],
+      "noncommercial": false,
+      "date": "2026-06-23",
+      "aliases": [
+        "BioNeMo Agent Toolkit",
+        "BioNeMo Skills",
+        "bionemo-agent-toolkit"
+      ]
+    },
+    "fetched": [
+      "https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit",
+      "https://raw.githubusercontent.com/NVIDIA-BioNeMo/bionemo-agent-toolkit/main/LICENSE",
+      "https://developer.nvidia.com/blog/build-an-ai-scientist-for-life-science-discovery-with-nvidia-bionemo-agent-toolkit/",
+      "https://nvidianews.nvidia.com/news/nvidia-launches-bionemo-agent-toolkit-giving-ai-agents-the-tools-to-accelerate-scientific-discovery",
+      "https://api.github.com/repos/NVIDIA-BioNeMo/bionemo-agent-toolkit",
+      "https://api.github.com/orgs/NVIDIA-BioNeMo"
+    ]
+  },
+  {
+    "name": "Boltz Lab / Boltz platform (Boltz PBC)",
+    "verdict": "accept",
+    "reason": "The blocking issue from discovery is resolved: boltz.bio still 403s WebFetch, but a plain curl with a browser User-Agent returned HTTP 200, so I have first-party evidence from six Boltz-owned pages fetched this session (/, /platform, /api, /pricing, /news, /boltzlab, /boltzmol-boltzprot-api) rather than press releases. What the first-party pages establish: Boltz PBC operates two products, Boltz Lab (web platform with agents, announced 2026-01-08) and the Boltz API (announced 2026-06-16, in-window), serving BoltzMol-1 (small-molecule hit discovery) and BoltzProt-1 (protein design) alongside the open-source Boltz-2 and BoltzGen lineage - the homepage tags each model 'Boltz Lab / Boltz API' or 'Open-source'. It is real, usable infrastructure and not an announcement: the /api page shows a working Python SDK snippet (boltz_api.Boltz(api_key=...).small_molecule.design.run(...)) with CLI and TypeScript variants, the pricing page lists a self-serve free tier and per-prediction rates, and the site footer's GitHub link resolves to jwohlwend/boltz ('Official repository for the Boltz biomolecular interaction models', MIT, 4158 stars), tying the company to the known open Boltz models. Availability status, previously UNVERIFIED, is now settled: it is openly self-serve, not partner-gated - 'Professional $0 subscription ... Up to 200 free predictions every month ... Get Started', with Enterprise as a separate contact-sales tier. Scope passes: structure and affinity prediction, ADME, small-molecule design and de novo protein/nanobody design, i.e. broader than one task. Cataloguing caveats: this is a platform record, the underlying BoltzMol-1/BoltzProt-1 are hosted-only (no weights release evidenced), and I did not fetch the linked technical reports, so no paper_links are asserted. The platform itself predates the window (Boltz Lab 2026-01-08); the in-window event is the Boltz API launch, 2026-06-16.",
+    "licence_quote": "No open licence - it is a commercial hosted service. From https://boltz.bio/pricing: \"Professional $0 subscription Pay only for what you use above a generous free monthly allowance. ... Access to latest Boltz models and agents; Up to 200 free predictions every month; Usage-based pricing\" and \"Your Data, Your Ownership ... you own everything you create with Boltz, and your data remains yours. We keep customer data secure and confidential, and we do not use your data to train our models.\" Pricing from https://boltz.bio/api: \"Small-molecule design & screen ... Per molecule $0.025\"; \"ADME prediction Per molecule $0.01\". Separately, the open models linked from the site footer (github.com/jwohlwend/boltz) are MIT per the GitHub API.",
+    "record": {
+      "name": "Boltz Lab / Boltz API",
+      "modality": "platform",
+      "description": "Hosted platform and API from Boltz PBC, the MIT-origin team behind the open Boltz-1/Boltz-2/BoltzGen models, serving the company's biomolecular models with managed GPU compute: BoltzMol-1 for small-molecule hit discovery and BoltzProt-1 for de novo protein design, reachable through the Boltz Lab web interface with design agents or through a Python/TypeScript/CLI API. Enterprise tiers add fine-tuning on private data and single-tenant, VPC or on-premise deployment.",
+      "io": "target protein sequence, pocket residues, ligands and a job specification submitted via the Boltz Lab UI or the API SDK -> designed small molecules or protein binders with predicted structure, binding affinity and ADME properties",
+      "status": "Commercial hosted service, self-serve. Free Professional tier with up to 200 predictions per month, then usage-based pricing from $0.025 per prediction; Enterprise tier for fine-tuning and private deployment. BoltzMol-1 and BoltzProt-1 are hosted-only; Boltz-2 and BoltzGen remain open source (github.com/jwohlwend/boltz, MIT).",
+      "use_cases": "small-molecule hit discovery and screening, de novo protein and nanobody design, structure and binding-affinity prediction, ADME prediction, agentic drug-discovery pipelines",
+      "year": 2026,
+      "paper_links": [],
+      "code_links": [
+        {
+          "label": "Boltz platform",
+          "url": "https://boltz.bio/platform"
+        },
+        {
+          "label": "Boltz API",
+          "url": "https://boltz.bio/api"
+        },
+        {
+          "label": "Open Boltz models (GitHub, MIT)",
+          "url": "https://github.com/jwohlwend/boltz"
+        }
+      ],
+      "sources": [
+        "https://boltz.bio/",
+        "https://boltz.bio/platform",
+        "https://boltz.bio/api",
+        "https://boltz.bio/pricing",
+        "https://boltz.bio/news",
+        "https://boltz.bio/boltzlab",
+        "https://boltz.bio/boltzmol-boltzprot-api",
+        "https://api.github.com/repos/jwohlwend/boltz"
+      ],
+      "noncommercial": false,
+      "date": "2026-06-16",
+      "aliases": [
+        "Boltz Lab",
+        "Boltz API",
+        "Boltz platform",
+        "Boltz PBC"
+      ]
+    },
+    "fetched": [
+      "https://boltz.bio/",
+      "https://boltz.bio/platform",
+      "https://boltz.bio/api",
+      "https://boltz.bio/pricing",
+      "https://boltz.bio/news",
+      "https://boltz.bio/boltzlab",
+      "https://boltz.bio/boltzmol-boltzprot-api",
+      "https://api.github.com/repos/jwohlwend/boltz"
+    ]
+  }
+]

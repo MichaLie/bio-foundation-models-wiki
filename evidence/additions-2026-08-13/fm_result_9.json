@@ -1,0 +1,285 @@
+[
+  {
+    "name": "NUMonomer",
+    "verdict": "accept",
+    "reason": "Preprint verified via bioRxiv (DOI 10.64898/2026.07.20.739453, v1, posted 2026-07-20, not withdrawn, corresponding author Luonan Chen; abstract matches the model). Official repo github.com/yunda-si/NUMonomer confirmed via GitHub API: owner 'yunda-si' has display name 'yunda_si' and public email yunda_si@ucas.edu.cn, matching first author Y. Si; MIT licence, created 2026-01-09, last push 2026-07-21. Paper's Data and code availability states source code AND pretrained weights are at that repo; the repo README points weights to a public Google Drive folder titled 'NUMonomer weights' whose listing contains 'NUMonomer.pt' (folder page fetched, HTTP 200, filename present in HTML; file itself not downloaded). Scope: pretrained on experimentally determined RNA + ssDNA structures, reusable end-to-end predictor across both nucleic-acid classes and sequence lengths up to thousands of nt - same category the index already carries for RhoFold+/trRosettaRNA/RoseTTAFoldNA.",
+    "licence_quote": "Repo LICENSE: \"MIT License / Copyright (c) 2026 yunda_si / Permission is hereby granted, free of charge, to any person obtaining a copy\". Paper: \"The source code and pretrained weights for NUMonomer are publicly available at https://github.com/yunda-si/NUMonomer\". No separate weights licence text on the Drive folder; MIT is the only stated grant.",
+    "record": {
+      "name": "NUMonomer",
+      "modality": "rna",
+      "description": "End-to-end deep-learning model that predicts three-dimensional RNA and single-stranded DNA structures directly from primary sequence, with no MSAs, secondary-structure annotations or language-model features as input. Trained jointly on experimentally determined RNA and ssDNA structures across multiple scales; reported to match or outperform leading methods on CASP16 RNA targets while cutting inference cost by roughly two orders of magnitude.",
+      "io": "RNA or single-stranded DNA sequence (FASTA) -> predicted 3D structure (PDB) with confidence scores",
+      "status": "Open: MIT code on GitHub, pretrained weights via authors' Google Drive",
+      "use_cases": "RNA 3D structure prediction, ssDNA structure prediction, long-sequence and large-scale structure modelling",
+      "year": 2026,
+      "date": "2026-07-20",
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (2026)",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.07.20.739453v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub (inference code, MIT)",
+          "url": "https://github.com/yunda-si/NUMonomer"
+        },
+        {
+          "label": "Pretrained weights (Google Drive)",
+          "url": "https://drive.google.com/drive/folders/1K9fG3ndV2UH3atwyrxHDqPN-oHyvhRwG"
+        }
+      ],
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.07.20.739453v1",
+        "https://www.biorxiv.org/content/10.64898/2026.07.20.739453v1.full",
+        "https://api.github.com/repos/yunda-si/NUMonomer",
+        "https://api.github.com/users/yunda-si",
+        "https://drive.google.com/drive/folders/1K9fG3ndV2UH3atwyrxHDqPN-oHyvhRwG"
+      ],
+      "noncommercial": false,
+      "aliases": []
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://www.biorxiv.org/content/10.64898/2026.07.20.739453v1 (bioRxiv API record via MCP get_preprint)",
+      "https://www.biorxiv.org/content/10.64898/2026.07.20.739453v1.full",
+      "https://api.github.com/repos/yunda-si/NUMonomer",
+      "https://api.github.com/repos/yunda-si/NUMonomer/git/trees/main?recursive=1",
+      "https://api.github.com/repos/yunda-si/NUMonomer/readme",
+      "https://api.github.com/repos/yunda-si/NUMonomer/contents/LICENSE",
+      "https://api.github.com/users/yunda-si",
+      "https://drive.google.com/drive/folders/1K9fG3ndV2UH3atwyrxHDqPN-oHyvhRwG"
+    ]
+  },
+  {
+    "name": "WattmaMod",
+    "verdict": "reject",
+    "reason": "Evidence is sound but the scope gate fails. Preprint verified (bioRxiv DOI 10.64898/2026.07.02.735990, v1, 2026-07-02, corresponding author Renmin Han, Shandong University) and the official repo github.com/YuBinLab-QUST/WattmaMod is real, MIT, and actually ships weights (save_model/RNA002_model/pre_trained.pth plus per-modification backbone_*.pth and classier_*.pth for both RNA002 and RNA004 chemistries). Adjudication requested by the brief: self-supervised pretraining across eleven modification types does NOT clear 'broader than one task'. Every head performs the same task - per-read/per-site modification calling from nanopore direct-RNA current signal - so the eleven types are label extension within one task family, not task transfer. The pretrained WattMamba encoder consumes raw signal/event features rather than sequence, is not offered or documented as a reusable representation for any other RNA problem, and the paper's own framing is a detection framework rather than a backbone. Under the index's boundary this is a task-specific epitranscriptomic caller with a pretraining stage, not a foundation model. Reconsider only if the index widens to signal-level epitranscriptomic backbones, or if the authors later release the pretrained encoder as a standalone general-purpose nanopore-signal representation with downstream uses beyond modification calling.",
+    "licence_quote": "Repo LICENSE: \"MIT License / Copyright (c) 2026 YuBinLab-QUST\". Paper Code availability: \"The source code of the WattmaMod is available for research purposes at Github: https://github.com/YuBinLab-QUST/WattmaMod/\" - note the tension between the repo's MIT grant and the paper's 'for research purposes' wording.",
+    "record": null,
+    "reconsider_when": null,
+    "fetched": [
+      "https://www.biorxiv.org/content/10.64898/2026.07.02.735990v1 (bioRxiv API record via MCP get_preprint)",
+      "https://www.biorxiv.org/content/10.64898/2026.07.02.735990v1.full",
+      "https://api.github.com/repos/YuBinLab-QUST/WattmaMod",
+      "https://api.github.com/repos/YuBinLab-QUST/WattmaMod/git/trees/main?recursive=1",
+      "https://api.github.com/repos/YuBinLab-QUST/WattmaMod/readme",
+      "https://api.github.com/repos/YuBinLab-QUST/WattmaMod/contents/LICENSE"
+    ]
+  },
+  {
+    "name": "RNAPro",
+    "verdict": "accept",
+    "reason": "Fully corroborated. Preprint now independently confirmed (the discovery lane could not fetch it): bioRxiv 10.64898/2025.12.30.696949, 'Template-based RNA structure prediction advanced through a blind code competition', v1 posted 2025-12-30, corresponding author Rhiju Das (Stanford/HHMI), cc_by, not withdrawn; abstract states 'We integrated this template-modeling pipeline and other Kaggle strategies to develop a single model RNAPro'. Full text Code Availability: 'RNAPro code and weights are being released publicly on Github and HuggingFace.' Artifacts are officially NVIDIA-owned: github.com/NVIDIA-Digital-Bio/RNAPro now resolves to NVIDIA-BioNeMo/RNAPro (Apache-2.0, created 2026-01-07, 92 stars, last push 2026-06-05) and huggingface.co/nvidia/RNAPro-Public-Best-500M is under the nvidia org, ungated, with rnapro-public-best-500m.ckpt present (HF API createdAt 2026-01-08, lastModified 2026-01-09). Model card gives 488,301,921 parameters. Scope: pretrained co-folding model reusable on arbitrary RNA sequences, not a single-target tool. Out of the refresh window (released 2026-01-09) but a genuine catalog miss.",
+    "licence_quote": "HF model card front matter: \"license: other / license_name: nvidia-open-model-license\"; body: \"Governing Terms: Use of this model is governed by the [NVIDIA Open Model License Agreement]\". The licence text itself states: \"NVIDIA confirms that: Models are commercially usable. You are free to create and distribute Derivative Models. NVIDIA does not claim ownership to any outputs generated using the Models or Derivative Models.\" Code licence is separate: repo LICENSE is Apache 2.0 (\"Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES... Copyright 2024 ByteDance\"). Weights are not gated (HF API gated: not gated).",
+    "record": {
+      "name": "RNAPro",
+      "modality": "rna",
+      "description": "NVIDIA's RNA 3D structure prediction model, built with the hosts and winners of the Stanford RNA 3D Folding Kaggle competition. It couples an AlphaFold3-style co-folding trunk (Protenix) with MSAs, template-based modelling and the frozen RibonanzaNet2 (RNet2) RNA foundation model; the released checkpoints have 488,301,921 parameters.",
+      "io": "RNA sequence plus MSAs and 3D templates -> all-atom 3D structure (CIF)",
+      "status": "Open weights: Apache-2.0 code, NVIDIA Open Model License weights, ungated on Hugging Face",
+      "use_cases": "RNA 3D structure prediction, template-based RNA modelling, structure-driven RNA drug discovery",
+      "year": 2026,
+      "date": "2026-01-09",
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (2025)",
+          "url": "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub (Apache-2.0)",
+          "url": "https://github.com/NVIDIA-BioNeMo/RNAPro"
+        },
+        {
+          "label": "Hugging Face weights",
+          "url": "https://huggingface.co/nvidia/RNAPro-Public-Best-500M"
+        }
+      ],
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1",
+        "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1.full",
+        "https://api.github.com/repos/NVIDIA-Digital-Bio/RNAPro",
+        "https://huggingface.co/api/models/nvidia/RNAPro-Public-Best-500M",
+        "https://huggingface.co/nvidia/RNAPro-Public-Best-500M/raw/main/README.md",
+        "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/"
+      ],
+      "noncommercial": false,
+      "aliases": []
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1 (bioRxiv API record via MCP get_preprint)",
+      "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1.full",
+      "https://api.github.com/repos/NVIDIA-Digital-Bio/RNAPro",
+      "https://api.github.com/repos/NVIDIA-BioNeMo/RNAPro",
+      "https://api.github.com/repos/NVIDIA-BioNeMo/RNAPro/git/trees/main?recursive=1",
+      "https://api.github.com/repos/NVIDIA-BioNeMo/RNAPro/readme",
+      "https://api.github.com/repos/NVIDIA-BioNeMo/RNAPro/contents/LICENSE",
+      "https://huggingface.co/api/models/nvidia/RNAPro-Public-Best-500M",
+      "https://huggingface.co/nvidia/RNAPro-Public-Best-500M/raw/main/README.md",
+      "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/"
+    ]
+  },
+  {
+    "name": "RNAElectra",
+    "verdict": "accept",
+    "reason": "Preprint verified (bioRxiv 10.64898/2026.03.15.711950, v1 posted 2026-03-17, corresponding author Jiayu Wen, Australian National University, cc_by, not withdrawn). The discovery lane's only open flag - that the Hugging Face account is a personal handle - is now resolved: the preprint's own Data availability section states 'The RNAElectra pretrained model weights are available via Hugging Face (FreakingPotato/RNAElectra)', so the upload is the authors' own and not a third-party re-upload. HF API confirms the repo is not gated, apache-2.0, and holds pytorch_model.bin plus config/tokenizer files (createdAt 2026-02-27, lastModified 2026-08-11; the card notes the August update replaced an ablation variant with the final published model). Scope is the cleanest in the slice: single-nucleotide RNA LM pretrained on RNAcentral, explicitly a 'single reusable backbone' fine-tuned through one sequence-only pipeline across structure, function, RNA-protein and RNA-RNA interaction, modification, translation efficiency and mRNA stability tasks. Out of the refresh window (March 2026).",
+    "licence_quote": "HF card front matter: \"license: apache-2.0\"; card body: \"## License / This model is released under the Apache 2.0 License.\" HF API reports the repo is not gated. No separate code repository exists, so the Apache-2.0 grant covers the released discriminator weights and the accompanying tokenizer code. (The preprint itself is cc_by; that governs the paper, not the weights.)",
+    "record": {
+      "name": "RNAElectra",
+      "modality": "rna",
+      "description": "Single-nucleotide-resolution RNA language model pretrained on non-coding RNAs from RNAcentral with an ELECTRA-style replaced-token-detection objective instead of masked language modelling, giving dense position-wise supervision on realistically corrupted sequences. The released discriminator is a ModernBERT-style backbone (22 layers, hidden size 512, 16 heads) intended as a single reusable backbone for sequence-only fine-tuning.",
+      "io": "RNA sequence -> per-nucleotide contextual embeddings for downstream fine-tuning",
+      "status": "Open: Apache-2.0 weights on Hugging Face, ungated",
+      "use_cases": "RNA structure and function prediction, RNA-protein and RNA-RNA interaction prediction, RNA modification prediction, translation efficiency and mRNA stability prediction",
+      "year": 2026,
+      "date": "2026-03-17",
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (2026)",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.03.15.711950v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "Hugging Face weights",
+          "url": "https://huggingface.co/FreakingPotato/RNAElectra"
+        }
+      ],
+      "sources": [
+        "https://www.biorxiv.org/content/10.64898/2026.03.15.711950v1",
+        "https://www.biorxiv.org/content/10.64898/2026.03.15.711950v1.full",
+        "https://huggingface.co/api/models/FreakingPotato/RNAElectra",
+        "https://huggingface.co/FreakingPotato/RNAElectra/raw/main/README.md"
+      ],
+      "noncommercial": false,
+      "aliases": []
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://www.biorxiv.org/content/10.64898/2026.03.15.711950v1 (bioRxiv API record via MCP get_preprint)",
+      "https://www.biorxiv.org/content/10.64898/2026.03.15.711950v1.full",
+      "https://www.biorxiv.org/content/early/2026/03/17/2026.03.15.711950.source.xml",
+      "https://huggingface.co/api/models/FreakingPotato/RNAElectra",
+      "https://huggingface.co/FreakingPotato/RNAElectra/raw/main/README.md"
+    ]
+  },
+  {
+    "name": "DGRNA",
+    "verdict": "accept",
+    "reason": "Verified but old and low-adoption; scope is clean. Preprint confirmed (bioRxiv 10.1101/2024.10.31.621427, v1 posted 2024-11-03, corresponding author Xiaoyong Pan, SJTU, cc_by_nc_nd, not withdrawn, published_doi NA; Europe PMC shows no journal version as of 2026-08-13). bioRxiv hosts only the abstract page for this preprint, so there is no Data/Code availability statement to link the repo - ownership instead established from the artifact side: github.com/TimothyChen225/DGRNA is owned by GitHub user 'TimothyChen225' whose account name is 'Qushuo Chen', matching co-author Qushuo Chen, and the repo's LICENSE reads 'Copyright (c) 2025 Qushuo Chen'; the README reproduces the preprint abstract in first person and cites the preprint. Weights: README links a public Google Drive folder titled 'DGRNA' whose listing contains 'checkpoint_best_100M.pt' (folder page fetched HTTP 200, filename present in HTML; file not downloaded). Scope: pretrained on 100M RNA sequences, exposes an embedding-extraction API (extract_embedding.py, rna_mamba2_L24), evaluated across six downstream tasks - a reusable backbone, and a bidirectional-Mamba2 long-context RNA LM has no equivalent elsewhere in the index. Caveats for the orchestrator: well outside the refresh window (November 2024), 4 stars, repo untouched since 2025-01-03.",
+    "licence_quote": "Repo LICENSE: \"MIT License / Copyright (c) 2025 Qushuo Chen / Permission is hereby granted, free of charge, to any person obtaining a copy\". README weights section: \"Download the [pretraining file](https://drive.google.com/drive/folders/1LQOIo-fvij3L2dPEA2zfyOGNn3mkz4KE) and place it in ~/.cache/torch/hub/checkpoints/\" - no separate licence is stated on the weights themselves, so MIT is the only grant on the released artifact. The preprint carries cc_by_nc_nd, which governs the manuscript, not the code or weights.",
+    "record": {
+      "name": "DGRNA",
+      "modality": "rna",
+      "description": "Long-context RNA foundation model built on bidirectional Mamba2 with attention rather than a pure Transformer, pretrained on 100 million RNA sequences to avoid the quadratic cost of attention on long RNAs. Reported to outperform existing RNA language models across six downstream RNA tasks.",
+      "io": "RNA sequence -> per-nucleotide contextual embeddings for downstream fine-tuning",
+      "status": "Open: MIT code on GitHub, weights via authors' Google Drive",
+      "use_cases": "RNA embedding extraction, RNA structure and function prediction, long RNA sequence modelling",
+      "year": 2024,
+      "date": "2024-11-03",
+      "paper_links": [
+        {
+          "label": "bioRxiv preprint (2024)",
+          "url": "https://www.biorxiv.org/content/10.1101/2024.10.31.621427v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub (MIT)",
+          "url": "https://github.com/TimothyChen225/DGRNA"
+        },
+        {
+          "label": "Pretrained weights (Google Drive)",
+          "url": "https://drive.google.com/drive/folders/1LQOIo-fvij3L2dPEA2zfyOGNn3mkz4KE"
+        }
+      ],
+      "sources": [
+        "https://www.biorxiv.org/content/10.1101/2024.10.31.621427v1",
+        "https://www.biorxiv.org/content/10.1101/2024.10.31.621427v1.full",
+        "https://api.github.com/repos/TimothyChen225/DGRNA",
+        "https://api.github.com/users/TimothyChen225",
+        "https://drive.google.com/drive/folders/1LQOIo-fvij3L2dPEA2zfyOGNn3mkz4KE"
+      ],
+      "noncommercial": false,
+      "aliases": []
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://www.biorxiv.org/content/10.1101/2024.10.31.621427v1 (bioRxiv API record via MCP get_preprint)",
+      "https://www.biorxiv.org/content/10.1101/2024.10.31.621427v1.full",
+      "https://api.github.com/repos/TimothyChen225/DGRNA",
+      "https://api.github.com/repos/TimothyChen225/DGRNA/git/trees/main?recursive=1",
+      "https://api.github.com/repos/TimothyChen225/DGRNA/readme",
+      "https://api.github.com/repos/TimothyChen225/DGRNA/contents/LICENSE",
+      "https://api.github.com/users/TimothyChen225",
+      "https://drive.google.com/drive/folders/1LQOIo-fvij3L2dPEA2zfyOGNn3mkz4KE",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22DGRNA%22&format=json"
+    ]
+  },
+  {
+    "name": "RibonanzaNet2",
+    "verdict": "accept",
+    "reason": "NOT IN THIS WORKLIST - adjudicated on the brief's explicit instruction to settle its status. Status settled: there is no dedicated RibonanzaNet2 paper (Europe PMC full-text search for 'RibonanzaNet2' and 'RibonanzaNet' returns only the 2024 RibonanzaNet v1 preprint and third-party citing works), but official weights exist and the model is described in a peer-reviewable preprint. The Kaggle weights page IS renderable through the Kaggle public API: https://www.kaggle.com/api/v1/models/shujun717/ribonanzanet2/get returns full metadata - isPrivate false, 24 votes, instance 'alpha' (pyTorch v1), ~100M parameters, 48 transformer blocks, trained on 30 million RNA 100-mer DMS/SHAPE profiles, updateTime 2025-03-31. Ownership is stated on the card: 'RNet2 has been developed by Shujun He (@shujun717), Rhiju Das (@rhijudas), and the Das lab at Stanford University and the Howard Hughes Medical Institute.' Independent corroboration: NVIDIA's official RNAPro repo instructs users to download 'RibonanzaNet2 pretrained checkpoint' from that exact Kaggle model, and the Das-lab preprint 10.64898/2025.12.30.696949 (verified this session) describes it in Methods - 'The pre-trained RNA language model RNet2 (https://www.kaggle.com/models/shujun717/ribonanzanet2) was utilized' and 'an updated version of the RNet foundation model (called RNet2 alpha), trained on chemical mapping data for 40 million sequences'. Per the brief, official weights with no dedicated paper can accept with the announcement page as source. Scope: pretrained sequence-to-reactivity backbone reused for secondary structure, 3D structure and template search - broader than one task. Caveats: card self-describes as an 'alpha release'; the sequence-count figure differs between the Kaggle card (30M 100-mers) and the RNAPro preprint (40M sequences), so I have used the card's own number; the training-code repo Shujun-He/RibonanzaNet2 (MIT, 1 star) still carries a README titled 'RibonanzaNet' describing v1.",
+    "licence_quote": "Kaggle model instance metadata: \"licenseName\": \"MIT\" (model-level licenseName is null; the 'alpha' pyTorch instance carries MIT), \"isPrivate\": false, \"fineTunable\": true. Card text: \"The model is open access so there is access for all\". Training-code repo LICENSE: \"MIT License / Copyright (c) 2025 Shujun-He\".",
+    "record": {
+      "name": "RibonanzaNet2",
+      "modality": "rna",
+      "description": "RNA foundation model from the Das lab (Stanford/HHMI) pretrained to map RNA sequence to per-nucleotide chemical reactivity profiles for the structure-sensitive probes DMS and 2A3 (SHAPE). The released alpha checkpoint has roughly 100M parameters in 48 transformer blocks with symmetric triangular multiplicative updates, and its sequence and pairwise representations are reused as frozen features by downstream models including NVIDIA's RNAPro.",
+      "io": "RNA sequence -> per-nucleotide DMS and 2A3/SHAPE reactivity profiles, plus sequence and pairwise representations",
+      "status": "Open: MIT-licensed weights on Kaggle (alpha release), MIT training code on GitHub",
+      "use_cases": "chemical reactivity prediction, RNA secondary structure prediction, embedding backbone for RNA 3D structure prediction and template search",
+      "year": 2025,
+      "date": "2025-03-31",
+      "paper_links": [
+        {
+          "label": "Kaggle competition preprint describing RNet2 use (bioRxiv 2025)",
+          "url": "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1"
+        },
+        {
+          "label": "RibonanzaNet v1 preprint (predecessor)",
+          "url": "https://www.biorxiv.org/content/10.1101/2024.02.24.581671v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "Kaggle model weights (announcement page)",
+          "url": "https://www.kaggle.com/models/shujun717/ribonanzanet2"
+        },
+        {
+          "label": "GitHub training code (MIT)",
+          "url": "https://github.com/Shujun-He/RibonanzaNet2"
+        }
+      ],
+      "sources": [
+        "https://www.kaggle.com/api/v1/models/shujun717/ribonanzanet2/get",
+        "https://www.kaggle.com/models/shujun717/ribonanzanet2",
+        "https://api.github.com/repos/Shujun-He/RibonanzaNet2",
+        "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1.full",
+        "https://api.github.com/repos/NVIDIA-BioNeMo/RNAPro/readme"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "RNet2",
+        "RibonanzaNet2 alpha"
+      ]
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://www.kaggle.com/models/shujun717/ribonanzanet2",
+      "https://www.kaggle.com/api/v1/models/shujun717/ribonanzanet2/get",
+      "https://www.kaggle.com/api/v1/models/shujun717/ribonanzanet2/pyTorch/alpha/get",
+      "https://api.github.com/repos/Shujun-He/RibonanzaNet2",
+      "https://api.github.com/repos/Shujun-He/RibonanzaNet2/git/trees/main?recursive=1",
+      "https://api.github.com/repos/Shujun-He/RibonanzaNet2/readme",
+      "https://api.github.com/repos/Shujun-He/RibonanzaNet2/contents/LICENSE",
+      "https://api.github.com/users/Shujun-He",
+      "https://www.biorxiv.org/content/10.64898/2025.12.30.696949v1.full",
+      "https://api.github.com/repos/NVIDIA-BioNeMo/RNAPro/readme",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RibonanzaNet2&format=json",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=RibonanzaNet&format=json&resultType=core"
+    ]
+  }
+]

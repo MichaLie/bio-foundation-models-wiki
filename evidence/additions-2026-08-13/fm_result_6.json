@@ -1,0 +1,208 @@
+[
+  {
+    "name": "NovoMolGen",
+    "verdict": "accept",
+    "reason": "arXiv:2508.13408 resolves (title 'NovoMolGen: Rethinking Molecular Language Model Pretraining', Chitsaz/Balaji/Fournier/Bhatt/Chandar; v1 2025-08-19, v2 2025-08-22, not withdrawn). Official artifact confirmed: six checkpoint repos under the authors' own HF org chandar-lab (Sarath Chandar is senior author) - NovoMolGen_{32M,157M,300M}_SMILES_{AtomWise,BPE} - each tagged arxiv:2508.13408, gated=false, license mit; model card documents transformers loading and a transformers-native 'hf-checkpoint' revision. GitHub chandar-lab/NovoMolGen README fetched and links the same HF collection. Broad pretraining (1.5B ZINC-22 molecules), reusable across unconstrained and goal-directed generation. Caveat recorded, not blocking: the GitHub repo has no LICENSE file (LICENSE, LICENSE.md, LICENSE.txt, LICENCE all 404), so only the weights licence is explicit.",
+    "licence_quote": "HF model card YAML front matter: 'license: mit'; API metadata tags include 'license:mit' and \"gated\": false (chandar-lab/NovoMolGen_157M_SMILES_AtomWise). No LICENSE file present in the GitHub repo.",
+    "record": {
+      "name": "NovoMolGen",
+      "modality": "molecule",
+      "description": "Family of Llama-architecture molecular language models (32M / 157M / 300M parameters) pretrained on 1.5 billion ZINC-22 molecules, released with both atom-wise and BPE SMILES tokenisers. The accompanying study systematically varies string representation (SMILES/SELFIES/SAFE/DeepSMILES), tokenisation, model size and data scale, and reports that pretraining metrics correlate only weakly with downstream generation performance.",
+      "io": "BOS prompt or partial SMILES -> generated molecule SMILES (and hidden-state embeddings)",
+      "status": "Open weights on Hugging Face (chandar-lab org), MIT, ungated",
+      "use_cases": "de novo molecule generation, goal-directed molecular optimisation, RL-based molecular design, molecular language-model representations",
+      "year": 2025,
+      "paper_links": [
+        { "label": "arXiv:2508.13408", "url": "https://arxiv.org/abs/2508.13408" }
+      ],
+      "code_links": [
+        { "label": "GitHub (chandar-lab/NovoMolGen)", "url": "https://github.com/chandar-lab/NovoMolGen" },
+        { "label": "Hugging Face collection", "url": "https://huggingface.co/collections/chandar-lab/novomolgen-681bce8b0e73b5dc7a3b0ff1" },
+        { "label": "HF checkpoint (157M SMILES AtomWise)", "url": "https://huggingface.co/chandar-lab/NovoMolGen_157M_SMILES_AtomWise" }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2508.13408",
+        "https://huggingface.co/api/models?author=chandar-lab&limit=50",
+        "https://huggingface.co/api/models/chandar-lab/NovoMolGen_157M_SMILES_AtomWise",
+        "https://huggingface.co/chandar-lab/NovoMolGen_157M_SMILES_AtomWise/raw/main/README.md",
+        "https://raw.githubusercontent.com/chandar-lab/NovoMolGen/main/README.md"
+      ],
+      "noncommercial": false,
+      "aliases": []
+    },
+    "fetched": [
+      "https://arxiv.org/abs/2508.13408",
+      "https://huggingface.co/api/models?author=chandar-lab&limit=50",
+      "https://huggingface.co/api/models/chandar-lab/NovoMolGen_157M_SMILES_AtomWise",
+      "https://huggingface.co/chandar-lab/NovoMolGen_157M_SMILES_AtomWise/raw/main/README.md",
+      "https://raw.githubusercontent.com/chandar-lab/NovoMolGen/main/README.md",
+      "https://raw.githubusercontent.com/chandar-lab/NovoMolGen/main/LICENSE"
+    ]
+  },
+  {
+    "name": "ReaSyn (NV-ReaSyn)",
+    "verdict": "accept",
+    "reason": "Paper verified: arXiv:2509.16084 'Exploring Synthesizable Chemical Space with Iterative Pathway Refinements' (Seul Lee, Karsten Kreis, Srimukh Prasad Veccham, Meng Liu, Danny Reidenbach, Saee Paliwal, Weili Nie, Arash Vahdat; v1 2025-09-19, v2 2026-01-10, not withdrawn). Official artifacts verified via HF API under the nvidia org: nvidia/NV-ReaSyn-AR-166M-v2 (gated=false, one file nv-reasyn-ar-166m-v2.ckpt, lastModified 2026-01-09), nvidia/NV-ReaSyn-EB-174M-v2, and nvidia/NV-ReaSyn-AR-166M-v1. Code repo NVIDIA-Digital-Bio/ReaSyn (branch reasyn_v2) README confirms it is the official code repository for arXiv:2509.16084 and ships an Apache-2.0 LICENSE. The model card overview.md gives the release date 2026-01-08 for GitHub, NGC and both HF repos. Pretrained on SynFormer reaction templates + Enamine building blocks, reusable across synthesis planning, synthesizable reconstruction and synthesizability-constrained optimisation - broader than one task.",
+    "licence_quote": "Model card: 'GOVERNING TERMS: Use of this model is governed by the [NVIDIA Open Model License]... ReaSyn source code is licensed under [Apache 2.0]'; and 'This model is ready for commercial use.' HF API cardData: license 'other', license_name 'nvidia-open-model-license', \"gated\": false. Repo LICENSE file is the Apache License Version 2.0.",
+    "record": {
+      "name": "ReaSyn (NV-ReaSyn)",
+      "modality": "molecule",
+      "description": "NVIDIA encoder-decoder Transformer that generates a target molecule's synthetic pathway as a text sequence over known reaction steps and building blocks, and produces pathways for the closest synthesizable analog when the target is not directly synthesizable. v2 combines bottom-up and top-down tree traversal with an Edit Flow model that refines generated pathways by insertion, deletion and substitution; the autoregressive model has 166M parameters and the edit model 174M.",
+      "io": "Molecule SMILES -> synthetic pathway (sequence of reactions over building blocks) for the target or its closest synthesizable analog",
+      "status": "Open weights on Hugging Face (nvidia org), NVIDIA Open Model License, ungated; code Apache-2.0",
+      "use_cases": "synthesis planning, synthesizable analog generation, synthesizable molecule reconstruction, synthesizability-constrained goal-directed property optimisation",
+      "year": 2026,
+      "date": "2026-01-08",
+      "paper_links": [
+        { "label": "arXiv:2509.16084", "url": "https://arxiv.org/abs/2509.16084" }
+      ],
+      "code_links": [
+        { "label": "GitHub (NVIDIA-Digital-Bio/ReaSyn)", "url": "https://github.com/NVIDIA-Digital-Bio/ReaSyn" },
+        { "label": "HF weights (autoregressive, v2)", "url": "https://huggingface.co/nvidia/NV-ReaSyn-AR-166M-v2" },
+        { "label": "HF weights (Edit Flow, v2)", "url": "https://huggingface.co/nvidia/NV-ReaSyn-EB-174M-v2" }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2509.16084",
+        "https://huggingface.co/api/models/nvidia/NV-ReaSyn-AR-166M-v2",
+        "https://huggingface.co/api/models/nvidia/NV-ReaSyn-EB-174M-v2",
+        "https://huggingface.co/api/models/nvidia/NV-ReaSyn-AR-166M-v1",
+        "https://raw.githubusercontent.com/NVIDIA-Digital-Bio/ReaSyn/reasyn_v2/model_card/overview.md",
+        "https://raw.githubusercontent.com/NVIDIA-Digital-Bio/ReaSyn/reasyn_v2/LICENSE"
+      ],
+      "noncommercial": false,
+      "aliases": ["NV-ReaSyn", "ReaSyn v2", "NV-ReaSyn-AR-166M", "NV-ReaSyn-EB-174M"]
+    },
+    "fetched": [
+      "https://arxiv.org/abs/2509.16084",
+      "https://huggingface.co/api/models/nvidia/NV-ReaSyn-AR-166M-v2",
+      "https://huggingface.co/api/models/nvidia/NV-ReaSyn-EB-174M-v2",
+      "https://huggingface.co/api/models/nvidia/NV-ReaSyn-AR-166M-v1",
+      "https://huggingface.co/api/models?search=ReaSyn&limit=30",
+      "https://raw.githubusercontent.com/NVIDIA-Digital-Bio/ReaSyn/reasyn_v2/model_card/overview.md",
+      "https://raw.githubusercontent.com/NVIDIA-Digital-Bio/ReaSyn/reasyn_v2/LICENSE",
+      "https://raw.githubusercontent.com/NVIDIA-Digital-Bio/ReaSyn/reasyn_v2/README.md"
+    ]
+  },
+  {
+    "name": "MiniMol",
+    "verdict": "accept",
+    "reason": "The artifact gap flagged by discovery is closed. Paper arXiv:2404.14986 'MiniMol: A Parameter-Efficient Foundation Model for Molecular Learning' (Klaeser, Banaszewski, Maddrell-Mander, McLean, Mueller, Parviz, Huang, Fitzgibbon; v1 2024-04-23, not withdrawn). Official artifact: github.com/graphcore-research/minimol - the Graphcore Research org matches the Graphcore-affiliated author list, the README explicitly says 'The model has been introduced in the paper MiniMol ... arxiv.org/abs/2404.14986', published at the ICML 2024 workshop on Accessible and Efficient Foundation Models for Biological Discovery. Weights are real, not just code: minimol/ckpts/minimol_v1/state_dict.pth is tracked in git-LFS (pointer fetched, size 20,791,455 bytes) and the same 20.8 MB state_dict.pth ships inside the official PyPI wheel minimol-1.3.5 (verified by listing the wheel's contents; PyPI home_page github.com/graphcore-research/minimol, authors Blazej Banaszewski, Kerstin Klaser). Broad multi-task pretraining (~3,300 tasks, ~6M molecules, ~500M labels), reusable as a general featuriser.",
+    "licence_quote": "LICENSE at graphcore-research/minimol: 'MIT License / Copyright (c) 2024 Graphcore Ltd. / Permission is hereby granted, free of charge, to any person obtaining a copy of this software ... without restriction'. The same MIT text is bundled as minimol-1.3.5.dist-info/LICENSE in the PyPI wheel that carries the weights, so code and weights are distributed under one MIT grant.",
+    "record": {
+      "name": "MiniMol",
+      "modality": "molecule",
+      "description": "Parameter-efficient (~10M parameter) molecular graph neural network pretrained on roughly 3,300 sparsely defined graph- and node-level quantum and biological tasks covering about 6 million molecules and 500 million labels. It is used as a frozen featuriser producing 512-dimensional fingerprints that transfer to low-data property prediction, evaluated on the Therapeutic Data Commons ADMET group.",
+      "io": "List of SMILES strings -> 512-dimensional molecular fingerprint embeddings",
+      "status": "Open source and open weights, MIT; weights shipped in the pip package `minimol` and in the GitHub repo via git-LFS",
+      "use_cases": "ADMET and molecular property prediction, low-data transfer learning, molecular featurisation for downstream models",
+      "year": 2024,
+      "paper_links": [
+        { "label": "arXiv:2404.14986", "url": "https://arxiv.org/abs/2404.14986" }
+      ],
+      "code_links": [
+        { "label": "GitHub (graphcore-research/minimol)", "url": "https://github.com/graphcore-research/minimol" },
+        { "label": "PyPI (minimol)", "url": "https://pypi.org/project/minimol/" }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2404.14986",
+        "https://raw.githubusercontent.com/graphcore-research/minimol/main/README.md",
+        "https://raw.githubusercontent.com/graphcore-research/minimol/main/LICENSE",
+        "https://raw.githubusercontent.com/graphcore-research/minimol/main/minimol/model.py",
+        "https://pypi.org/pypi/minimol/json"
+      ],
+      "noncommercial": false,
+      "aliases": ["Minimol"]
+    },
+    "fetched": [
+      "https://arxiv.org/abs/2404.14986",
+      "https://raw.githubusercontent.com/graphcore-research/minimol/main/README.md",
+      "https://raw.githubusercontent.com/graphcore-research/minimol/main/LICENSE",
+      "https://raw.githubusercontent.com/graphcore-research/minimol/main/minimol/model.py",
+      "https://raw.githubusercontent.com/graphcore-research/minimol/main/minimol/ckpts/minimol_v1/state_dict.pth",
+      "https://pypi.org/pypi/minimol/json",
+      "https://files.pythonhosted.org/packages/py3/m/minimol/minimol-1.3.5-py3-none-any.whl",
+      "https://huggingface.co/api/models?search=minimol&limit=30"
+    ]
+  },
+  {
+    "name": "CheMeleon",
+    "verdict": "accept",
+    "reason": "The artifact gap flagged by discovery is closed. Paper arXiv:2506.15792, current title 'Deep Learning Foundation Models from Classical Molecular Descriptors' (Jackson W. Burns, Akshat Shirish Zalte, Charlles R. A. Abreu, Jochen Sieg, Christian Feldmann, Miriam Mathea, William H. Green; v1 2025-06-18, v2 2026-02-09, not withdrawn; the repo README still uses the earlier title 'Descriptor-based Foundation Models for Molecular Property Prediction'). Official artifacts: github.com/JacksonBurns/chemeleon (first author's account) states 'This repository provides the supporting code associated with our paper' and links Model weights: Zenodo 10.5281/ZENODO.15426600; the Zenodo record 'CheMeleon Foundation Model' (Jackson Burns, Akshat Shirish Zalte) contains chemeleon_mp.pt (34.9 MB) under MIT. Independently corroborated upstream: chemprop/cli/train.py hard-codes the CheMeleon foundation model and downloads 'https://zenodo.org/records/15460715/files/chemeleon_mp.pt'. Reusable as a frozen fingerprint or fine-tuned across many property tasks.",
+    "licence_quote": "GitHub LICENSE: 'MIT License / Copyright (c) 2025 Jackson Burns'. Zenodo weights record 15426600 licence: 'MIT License - A short and simple permissive license with conditions only requiring preservation of copyright and license notices.' No gating on either.",
+    "record": {
+      "name": "CheMeleon",
+      "modality": "molecule",
+      "description": "Roughly 10M-parameter molecular foundation model pretrained to predict classical, low-noise RDKit molecular descriptors rather than experimental or quantum-simulated labels, giving a transferable representation for downstream property prediction. Reported win rates of 75% on Polaris tasks and strong results on MoleculeACE; usable as a frozen fingerprint or fine-tuned through chemprop's `--from-foundation CheMeleon` flag.",
+      "io": "SMILES string or RDKit mol -> molecular embedding (fingerprint), or fine-tuned molecular property prediction",
+      "status": "Open source and open weights, MIT; weights on Zenodo and auto-downloaded by chemprop 2.2.0+",
+      "use_cases": "molecular property prediction, ADMET modelling, transfer learning on small datasets, molecular fingerprint generation",
+      "year": 2025,
+      "paper_links": [
+        { "label": "arXiv:2506.15792", "url": "https://arxiv.org/abs/2506.15792" }
+      ],
+      "code_links": [
+        { "label": "GitHub (JacksonBurns/chemeleon)", "url": "https://github.com/JacksonBurns/chemeleon" },
+        { "label": "Zenodo weights (chemeleon_mp.pt)", "url": "https://zenodo.org/records/15426600" }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2506.15792",
+        "https://raw.githubusercontent.com/JacksonBurns/chemeleon/main/README.md",
+        "https://raw.githubusercontent.com/JacksonBurns/chemeleon/main/LICENSE",
+        "https://zenodo.org/records/15426600",
+        "https://raw.githubusercontent.com/chemprop/chemprop/main/chemprop/cli/train.py"
+      ],
+      "noncommercial": false,
+      "aliases": ["Chemeleon (Burns et al.)"]
+    },
+    "fetched": [
+      "https://arxiv.org/abs/2506.15792",
+      "https://raw.githubusercontent.com/JacksonBurns/chemeleon/main/README.md",
+      "https://raw.githubusercontent.com/JacksonBurns/chemeleon/main/LICENSE",
+      "https://zenodo.org/records/15426600",
+      "https://raw.githubusercontent.com/chemprop/chemprop/main/chemprop/cli/train.py",
+      "https://huggingface.co/api/models?search=chemeleon&limit=30"
+    ]
+  },
+  {
+    "name": "MGM2",
+    "verdict": "accept",
+    "reason": "Preprint confirmed through api.biorxiv.org: 'MGM2 as a Unified Foundation Model for Microbiome World Exploration', Zhang H., Zhang Y., Qi Y., Liu T., Yang R., Ning K.; corresponding author Kang Ning, Huazhong University of Science and Technology; DOI 10.64898/2026.07.20.739063, posted 2026-07-22, v1, category bioinformatics, license cc_by_nc, not withdrawn, published 'NA'. The discovery lane's 403 on the HTML was worked around by fetching the JATS XML full text: the Code availability statement reads 'MGM2 source code, training scripts, evaluation scripts and documentation will be available at https://github.com/HUST-NingKang-Lab/MGM2'. That repo now exists and is real (72 commits; src/, scripts/, tests/, configs/, ntv3_embedding.py, qwen3_keywords_embedding.py), sits in the corresponding author's own lab org, and its README points to the weight release at huggingface.co/LudensZhang/MGM2 - which is ungated and holds four checkpoints (small/medium/large/xlarge model.ckpt + config.json) plus the shared NTv3 reference and taxonomy-fallback embedding files. Pretrained, frozen-encoder reusable across biome classification, FMT response and post-transplant community prediction, wastewater forecasting and SAE feature discovery. Caveat carried into the record: NO licence is declared anywhere for code or weights (LICENSE, LICENSE.md, LICENSE.txt all 404 on the GitHub repo; the HF cardData has no license field), so I set noncommercial=true rather than assert a permissive grant that no page states. Also note the artifact is on a personal HF account (LudensZhang, presumably first author H. Zhang), legitimised by the lab-org README linking to it.",
+    "licence_quote": "Preprint text only: 'This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0' (JATS XML); bioRxiv API field \"license\":\"cc_by_nc\". Code/weights: no licence text exists - no LICENSE file in HUST-NingKang-Lab/MGM2 and no license field in the HF API cardData for LudensZhang/MGM2 (\"gated\": false).",
+    "record": {
+      "name": "MGM2",
+      "modality": "multimodal",
+      "description": "Multimodal microbiome foundation model pretrained on 1,821,291 MicrobeAtlas samples and 225,067 OTUs clustered at 99% identity, coupling NTv3-derived microbial sequence embeddings with relative-abundance conditioning and community-semantic alignment in an abundance-aware Transformer. Released in four scales (small to xlarge, hidden size 224-512) whose frozen [CLS] embeddings transfer to community classification, paired-community prediction and forecasting.",
+      "io": "OTU/ASV abundance table (optionally with representative sequences) -> contextualised microbial token embeddings and a fixed-size community [CLS] embedding",
+      "status": "Weights (4 sizes) and code public and ungated on Hugging Face and lab GitHub; no licence declared for either, preprint text CC BY-NC 4.0",
+      "use_cases": "microbiome biome classification, fecal microbiota transplantation response and post-transplant community prediction, wastewater ASV time-series forecasting, sparse-autoencoder feature discovery",
+      "year": 2026,
+      "date": "2026-07-22",
+      "paper_links": [
+        { "label": "bioRxiv 2026.07.20.739063", "url": "https://www.biorxiv.org/content/10.64898/2026.07.20.739063v1" }
+      ],
+      "code_links": [
+        { "label": "GitHub (HUST-NingKang-Lab/MGM2)", "url": "https://github.com/HUST-NingKang-Lab/MGM2" },
+        { "label": "Hugging Face weights", "url": "https://huggingface.co/LudensZhang/MGM2" }
+      ],
+      "sources": [
+        "https://api.biorxiv.org/details/biorxiv/10.64898/2026.07.20.739063",
+        "https://www.biorxiv.org/content/early/2026/07/22/2026.07.20.739063.source.xml",
+        "https://raw.githubusercontent.com/HUST-NingKang-Lab/MGM2/main/README.md",
+        "https://github.com/HUST-NingKang-Lab/MGM2",
+        "https://huggingface.co/api/models/LudensZhang/MGM2",
+        "https://huggingface.co/LudensZhang/MGM2/raw/main/README.md"
+      ],
+      "noncommercial": true,
+      "aliases": ["MGM2-XLarge", "MGM v2"]
+    },
+    "fetched": [
+      "https://api.biorxiv.org/details/biorxiv/10.64898/2026.07.20.739063",
+      "https://www.biorxiv.org/content/early/2026/07/22/2026.07.20.739063.source.xml",
+      "https://raw.githubusercontent.com/HUST-NingKang-Lab/MGM2/main/README.md",
+      "https://raw.githubusercontent.com/HUST-NingKang-Lab/MGM2/main/LICENSE",
+      "https://github.com/HUST-NingKang-Lab/MGM2",
+      "https://huggingface.co/api/models/LudensZhang/MGM2",
+      "https://huggingface.co/LudensZhang/MGM2/raw/main/README.md"
+    ]
+  }
+]

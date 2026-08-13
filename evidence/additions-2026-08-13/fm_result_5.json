@@ -1,0 +1,172 @@
+[
+  {
+    "name": "PoreBERT-DNA-VQI",
+    "verdict": "reject",
+    "reason": "Criterion 1 fails outright: there is no paper or preprint. The model card's Citation section reads 'Coming soon.' and no arXiv/bioRxiv/journal record was linkable from any fetched page. Provenance is an unaffiliated individual Hub handle (ShuaiAnwo) with no named lab, no institution, no GitHub repository and no reported evaluation of any kind; the linked training dataset repo ShuaiAnwo/PoreDNA_S1_HG002_MOD_250F701901011_A50 exists but is empty (siblings = .gitattributes + README.md only, usedStorage 0), so the claimed HG002 PoreDNA corpus is not actually released. Weights do exist and are ungated (110M: model.safetensors, 90,169,344 F32 params, createdAt 2026-07-07; 007M: 7,367,680 params, createdAt 2026-07-07), but downloads are 7 and 8 respectively. Licence is self-contradictory (see licence_quote). SCOPE ADJUDICATION as instructed: the model is genuinely out of the nucleotide-sequence genomic-LM class - it consumes discrete tokens emitted by a separate PoreCodec VQ tokenizer over raw nanopore electrical signal ('The model does not directly accept raw nanopore electrical signals... Raw signal must first be converted into tokens using the corresponding tokenizer'), and the card lists basecalling and modified-base detection as downstream uses. A raw-signal sequencing model is defensibly in-index as a dna-adjacent entry IF it were otherwise credible; here scope is not the binding problem - the total absence of a paper, code, released data and any evaluation is. Reject on evidence, not on modality.",
+    "licence_quote": "Model card body: '# License\\n\\nPlease refer to the LICENSE file for usage conditions.' - but no LICENSE file exists in either repo (siblings are only .gitattributes, README.md, config.json, model.safetensors). HF metadata declares license:openrail with gated:false. OpenRAIL is a use-restricted licence, so even the declared licence would not support noncommercial:false.",
+    "record": null,
+    "reconsider_when": null,
+    "fetched": [
+      "https://huggingface.co/api/models/ShuaiAnwo/PoreBERT-DNA-VQI-110M-530",
+      "https://huggingface.co/api/models/ShuaiAnwo/PoreBERT-DNA-VQI-007M-526",
+      "https://huggingface.co/ShuaiAnwo/PoreBERT-DNA-VQI-110M-530/raw/main/README.md",
+      "https://huggingface.co/api/datasets/ShuaiAnwo/PoreDNA_S1_HG002_MOD_250F701901011_A50",
+      "https://huggingface.co/api/models?author=ShuaiAnwo&limit=50"
+    ]
+  },
+  {
+    "name": "CheMatE",
+    "verdict": "accept",
+    "reason": "All four criteria pass. PAPER: arXiv:2608.03855 'Bi-semantic Chemical Embedder for Joint Representation Learning of SMILES and Natural Language', submitted 4 Aug 2026, last revised 6 Aug 2026 (v2), primary class cs.LG, not withdrawn; authors Segura, Goumaz, Sin, Rankovic, Schwaller. ARTIFACT: the paper HTML itself links github.com/schwallergroup/CheMatE and huggingface.co/SchwallerGroup/CheMatE-v0, so both are author-owned, not third-party re-uploads; GitHub owner schwallergroup is an Organization (Schwaller group / LIAC EPFL), repo created 2026-06-19, pushed 2026-06-24, MIT. HF SchwallerGroup/CheMatE-v0 is live and ungated (gated:false, ModernBertModel, 149,014,272 F32 params, created 2026-06-21, 203 downloads), plus the MLM base checkpoint SchwallerGroup/CheMatE-v0-MLM (mit, ungated, 2026-06-21). SCOPE: broad self-supervised pretraining (continued MLM over 10.4B FineWeb + 11.5B ChemPile tokens of SMILES-annotated scientific text) then Matryoshka contrastive fine-tuning; a single frozen encoder reused across classification, regression and text tasks - not a single-task model. Modality assigned 'molecule': despite the SMILES+text joint space, both channels are chemistry, and no second biological modality is involved, so 'multimodal' would overstate it. Year 2026, arXiv date 2026-08-04 (weights published 2026-06-21). Caveat recorded but not blocking: evaluation datasets are 'available on request; a public dataset release is planned' - weights and code are fully open.",
+    "licence_quote": "GitHub LICENSE (raw, main): 'MIT License / Copyright (c) 2025 David / Permission is hereby granted, free of charge, to any person obtaining a copy of this software...'. HF model card: '## License\\n\\nMIT.' and front matter 'license: mit'; API gated:false. Permissive grant on both code and weights.",
+    "record": {
+      "name": "CheMatE",
+      "modality": "molecule",
+      "description": "ModernBERT-based chemistry encoder that places SMILES strings and chemistry natural language in one shared embedding space. It is pretrained by continued masked language modelling on a SMILES-annotated long-context scientific corpus (10.4B tokens from FineWeb plus 11.5B from ChemPile) and then contrastively fine-tuned on synthetic SMILES-text pairs with a Matryoshka multiple-negatives ranking loss.",
+      "io": "SMILES string or chemistry text (ModernBERT context up to 8192 tokens) -> dense embedding vector",
+      "status": "Open weights on Hugging Face, MIT, ungated; code MIT (evaluation datasets on request)",
+      "use_cases": "molecular property prediction, chemistry text embedding and retrieval, clustering, frozen-encoder features for downstream heads",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "arXiv:2608.03855",
+          "url": "https://arxiv.org/abs/2608.03855"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/schwallergroup/CheMatE"
+        },
+        {
+          "label": "Hugging Face (CheMatE-v0)",
+          "url": "https://huggingface.co/SchwallerGroup/CheMatE-v0"
+        },
+        {
+          "label": "Hugging Face (CheMatE-v0-MLM)",
+          "url": "https://huggingface.co/SchwallerGroup/CheMatE-v0-MLM"
+        }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2608.03855",
+        "https://arxiv.org/html/2608.03855v2",
+        "https://github.com/schwallergroup/CheMatE",
+        "https://raw.githubusercontent.com/schwallergroup/CheMatE/main/LICENSE",
+        "https://huggingface.co/SchwallerGroup/CheMatE-v0",
+        "https://huggingface.co/api/models/SchwallerGroup/CheMatE-v0",
+        "https://huggingface.co/api/models/SchwallerGroup/CheMatE-v0-MLM"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "CheMatE-v0",
+        "CheMatE-v0-MLM"
+      ]
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://arxiv.org/abs/2608.03855",
+      "https://arxiv.org/html/2608.03855v2",
+      "https://api.github.com/repos/schwallergroup/CheMatE (via gh api repos/schwallergroup/CheMatE)",
+      "https://raw.githubusercontent.com/schwallergroup/CheMatE/main/LICENSE",
+      "https://github.com/schwallergroup/CheMatE (README via gh api repos/schwallergroup/CheMatE/readme)",
+      "https://huggingface.co/api/models/SchwallerGroup/CheMatE-v0",
+      "https://huggingface.co/SchwallerGroup/CheMatE-v0/raw/main/README.md",
+      "https://huggingface.co/api/models/SchwallerGroup/CheMatE-v0-MLM"
+    ]
+  },
+  {
+    "name": "Molexar",
+    "verdict": "accept",
+    "reason": "All four criteria pass. PAPER: arXiv:2606.25865 'Molexar: A Unified Multimodal Molecular Foundation Model for Drug Design', submitted 24 Jun 2026, primary class q-bio.BM, single version, not withdrawn; authors Lin, Liao, Pan, Ling, Lai (Luhua Lai), Pei (Jianfeng Pei). ARTIFACT: the paper HTML links github.com/fairydance/Molexar and github.com/fairydance/Fragment-SELFIES, which establishes the fairydance namespace as author-owned; the repo README in turn names the two Hub checkpoints under the same handle. GitHub fairydance/Molexar created 2026-06-24, pushed 2026-06-29, MIT, not a fork. HF fairydance/molexar-10m-omni is live and ungated (MolexarForCausalLM, config.json + pytorch_model.bin + tokenizer, created 2026-06-24) and fairydance/molexar-10m-base likewise (mit, ungated, created 2026-06-24). SCOPE: broad generative pretraining verified in the paper text - 'The full molecule-context file contains 135,763,524 Fragment-SELFIES records, corresponding to 33,940,881 molecule-condition rows', derived from UniChem; the SFT checkpoint then serves four distinct conditioning modes (scalar properties, pharmacophore fingerprint, protein sequence, protein pocket) plus unconditional and fragment-constrained generation on one autoregressive path, so clearly broader than one task. Modality 'molecule'. Year 2026, date 2026-06-24. Recorded caveat, not blocking: it is very small for an FM (10,534,912 LM params / 14,756,261 total per the model card), and provenance rests on an individual Hub/GitHub handle whose link to the Lai/Pei group is established via the paper's own links rather than an institutional org account.",
+    "licence_quote": "GitHub LICENSE (raw, main): 'MIT License / Copyright (c) 2026 Molexar authors / Permission is hereby granted, free of charge, to any person obtaining a copy of this software...'. HF model card: '## License\\n\\nThis model is released under the MIT License.' with front matter 'license: mit'; API gated:false. Permissive grant on both code and weights.",
+    "record": {
+      "name": "Molexar",
+      "modality": "molecule",
+      "description": "Molecular generation model built on Fragment-SELFIES, a fragment-aware molecular language with validity-preserving decoding. A Gemma2-style autoregressive decoder (~10.5M LM parameters) is pretrained on 135,763,524 Fragment-SELFIES records derived from UniChem (33,940,881 molecule-condition rows), then supervised fine-tuned so the same decoder generates molecules conditioned on scalar properties, 2D pharmacophore fingerprints, protein sequences or binding pockets.",
+      "io": "optional condition block (scalar properties, pharmacophore fingerprint, protein sequence, or pocket structure) -> generated Fragment-SELFIES molecules decodable to SMILES",
+      "status": "Open weights on Hugging Face, MIT, ungated; code MIT",
+      "use_cases": "de novo and fragment-constrained molecule generation, property-conditioned design, pharmacophore-conditioned design, target-sequence and pocket-conditioned design",
+      "year": 2026,
+      "paper_links": [
+        {
+          "label": "arXiv:2606.25865",
+          "url": "https://arxiv.org/abs/2606.25865"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/fairydance/Molexar"
+        },
+        {
+          "label": "Hugging Face (molexar-10m-base)",
+          "url": "https://huggingface.co/fairydance/molexar-10m-base"
+        },
+        {
+          "label": "Hugging Face (molexar-10m-omni)",
+          "url": "https://huggingface.co/fairydance/molexar-10m-omni"
+        }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2606.25865",
+        "https://arxiv.org/html/2606.25865v1",
+        "https://github.com/fairydance/Molexar",
+        "https://raw.githubusercontent.com/fairydance/Molexar/main/LICENSE",
+        "https://huggingface.co/api/models/fairydance/molexar-10m-omni",
+        "https://huggingface.co/fairydance/molexar-10m-omni/raw/main/README.md",
+        "https://huggingface.co/api/models/fairydance/molexar-10m-base"
+      ],
+      "noncommercial": false,
+      "aliases": [
+        "molexar-10m-base",
+        "molexar-10m-omni",
+        "Molecular Exalted Architect"
+      ]
+    },
+    "reconsider_when": null,
+    "fetched": [
+      "https://arxiv.org/abs/2606.25865",
+      "https://arxiv.org/html/2606.25865v1",
+      "https://api.github.com/repos/fairydance/Molexar (via gh api repos/fairydance/Molexar)",
+      "https://raw.githubusercontent.com/fairydance/Molexar/main/LICENSE",
+      "https://github.com/fairydance/Molexar (README via gh api repos/fairydance/Molexar/readme)",
+      "https://huggingface.co/api/models/fairydance/molexar-10m-omni",
+      "https://huggingface.co/fairydance/molexar-10m-omni/raw/main/README.md",
+      "https://huggingface.co/api/models/fairydance/molexar-10m-base"
+    ]
+  },
+  {
+    "name": "ScreenShot",
+    "verdict": "hold",
+    "reason": "Paper and artifact check out, licence does not, and scope needs a curator call. PAPER: arXiv:2608.12219 'ScreenShot: A Foundation Model for Few-Shot Combination Drug Screening', submitted 12 Aug 2026 (one day before this verification), cs.LG, not withdrawn; authors de Mathelin, Tosh, Tansey. ARTIFACT: the paper links github.com/tansey-lab/screenshot; owner tansey-lab is an Organization matching the senior author (Tansey lab, MSKCC); repo created and last pushed 2026-08-12, 0 stars, one commit. Weights are genuinely present: models/model_batchie/final_model/model.pt (28,121,899 bytes) plus config.json, and equivalent model_gdsc_sq / model_nci_almanac / mlp_* directories with drug libraries. BLOCKER 1 - no licence at all: LICENSE, LICENSE.md, LICENSE.txt, COPYING and license all return HTTP 404 on raw.githubusercontent.com/tansey-lab/screenshot/main/, pyproject.toml contains no license field, and the README has no licence or citation section. With no grant of rights, the default is all-rights-reserved, so neither noncommercial:false nor any honest access phrase can be written today. BLOCKER 2 - scope adjudication as instructed: ScreenShot is pretrained (40 screening datasets, ~3,700 drugs, ~6,000 samples) and reusable by in-context learning without fine-tuning, so it does pass 'pretrained, reusable, broader than one task' in the perturbation-response sense - but it is not a chemistry representation or generation model; it consumes functional dose-response measurements and 'operates directly on functional measurements with no fine-tuning and no molecular profiling'. If admitted, it belongs in a perturbation/cell-response slot (nearest allowed tag: singlecell), not molecule. A further wrinkle for the curator: the released checkpoints are per-held-out-dataset (model_batchie, model_gdsc_sq, model_nci_almanac), i.e. leave-one-cohort-out evaluation artefacts rather than one canonical pretrained model. Holding rather than accepting on licence grounds alone.",
+    "licence_quote": "No licence exists to quote. GitHub API license field is null; https://raw.githubusercontent.com/tansey-lab/screenshot/main/LICENSE returns 404 (as do LICENSE.md, LICENSE.txt, COPYING, license); pyproject.toml has no license key; README.md has no licence text. Repository content is therefore all-rights-reserved by default.",
+    "record": null,
+    "reconsider_when": "A LICENSE file appears at github.com/tansey-lab/screenshot (or the paper/model directory states explicit terms for the model.pt weights) AND the curator rules on whether functional-screening perturbation-response models belong in the index, in which case index it as modality singlecell rather than molecule. Re-check the repo licence in ~4-8 weeks; a v2/camera-ready of arXiv:2608.12219 may also add a data/code availability statement.",
+    "fetched": [
+      "https://arxiv.org/abs/2608.12219",
+      "https://arxiv.org/html/2608.12219v1",
+      "https://api.github.com/repos/tansey-lab/screenshot (via gh api repos/tansey-lab/screenshot)",
+      "https://github.com/tansey-lab/screenshot (README + contents via gh api)",
+      "https://raw.githubusercontent.com/tansey-lab/screenshot/main/pyproject.toml",
+      "https://raw.githubusercontent.com/tansey-lab/screenshot/main/LICENSE (404)",
+      "https://raw.githubusercontent.com/tansey-lab/screenshot/main/README.md"
+    ]
+  },
+  {
+    "name": "DrugGen 2",
+    "verdict": "reject",
+    "reason": "Paper and artifacts are real; the model fails the scope criterion. PAPER: arXiv:2607.08404 'DrugGen 2: A disease-aware language model for enhancing drug discovery', submitted 9 Jul 2026, q-bio.QM, not withdrawn; authors Motahharynia et al. (Isfahan University of Medical Sciences). ARTIFACT: paper links github.com/alimotahharynia/DrugGen-2 (GPL-3.0, pushed 2026-07-10) and huggingface.co/alimotahharynia/DrugGen-2 (ungated, model.safetensors present, 416 downloads, lastModified 2026-07-10) - both author-owned and live. SCOPE ADJUDICATION as instructed: this is a fine-tune, not broad pretraining. The HF card's own front matter declares base_model: openai-community/gpt2 and liyuesen/druggpt, the README states 'Model Sources: liyuesen/druggpt' and 'Training data: alimotahharynia/approved_disease_target_drug', and the abstract describes 'fine-tuning a pre-trained GPT-2 model on a curated dataset of approved drugs linked to their diseases and targets' via SFT plus GRPO. So the pretraining that gives it chemical competence belongs to DrugGPT/GPT-2, not to this release, and its own training set is a small curated approved-drug corpus. Reuse is also confined to one task family: MeSH DAG + protein sequence in, SMILES out; evaluation is on five diabetic-nephropathy targets. It fails 'pretrained, reusable, broader than one task' on both halves. Recorded for a possible curator override: if the index deliberately admits task-specialised conditional generators, DrugGen 2 would be modality molecule, year 2026, GPL-3.0, noncommercial:false (GPL-3.0 permits commercial use under copyleft) - but that is a policy change, not new evidence, so this is a reject rather than a hold.",
+    "licence_quote": "GitHub LICENSE (raw, main): 'GNU GENERAL PUBLIC LICENSE / Version 3, 29 June 2007' (GitHub API spdx_id GPL-3.0). HF card front matter: 'license: gpl-3.0'; API gated:false. Note the README badge image mislabels it as Apache-2.0 while linking a GPL v3 shield - the LICENSE file and both metadata records say GPL-3.0.",
+    "record": null,
+    "reconsider_when": null,
+    "fetched": [
+      "https://arxiv.org/abs/2607.08404",
+      "https://arxiv.org/html/2607.08404v1",
+      "https://api.github.com/repos/alimotahharynia/DrugGen-2 (via gh api repos/alimotahharynia/DrugGen-2)",
+      "https://raw.githubusercontent.com/alimotahharynia/DrugGen-2/main/LICENSE",
+      "https://github.com/alimotahharynia/DrugGen-2 (README via gh api)",
+      "https://huggingface.co/api/models/alimotahharynia/DrugGen-2",
+      "https://huggingface.co/alimotahharynia/DrugGen-2/raw/main/README.md"
+    ]
+  }
+]

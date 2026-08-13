@@ -1,0 +1,174 @@
+[
+ {
+  "name": "GigaPath-Flash / GigaTIME-Flash",
+  "verdict": "accept",
+  "reason": "Paper verified: arXiv 2607.18218 'GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis', v1 2026-07-20, v2 2026-07-22, first author Naoto Usuyama (Microsoft Research), 29 authors, not withdrawn. Ownership proven via Microsoft-controlled aka.ms shortener: the arXiv page carries aka.ms/gigapath-flash and aka.ms/gigatime-flash, which 301-redirect to huggingface.co/prov-gigapath/prov-gigapath-flash and huggingface.co/prov-gigatime/gigatime-flash respectively; aka.ms/gigatime-code redirects to github.com/prov-gigatime/GigaTIME (HTTP 200). HF API confirms both repos public with checkpoint files (pytorch_model.bin + slide_encoder.pth; model.pth), gated 'auto' (click-through agreement to share contact info; anonymous raw-file download is blocked until the gate is accepted). Licence tag Apache-2.0 on both cards, but card text limits intended use to research (quoted below) - adjudicated noncommercial:false because Apache-2.0 is the operative licence and the research-only text is intended-use/disclaimer language, not a licence term; the caveat is surfaced in the status field. Scope: general-purpose tile+slide pathology encoder distilled from Prov-GigaPath (already in the index), reusable across WSI downstream tasks - clears the FM bar; GigaTIME-Flash is its TIME-prediction companion from the same paper, folded into one record with aliases.",
+  "licence_quote": "Apache-2.0 (HF licence tag, both repos; GigaTIME card additionally names 'prov-gigatime-license' pointing at its LICENSE file, unreadable anonymously due to gating). Card: 'The data, code, and model checkpoints are intended to be used solely for (I) future research on pathology foundation models and (II) reproducibility of the experimental results reported in the reference paper.' and 'Any deployed use case of the model --- commercial or otherwise --- is out of scope.' Gate: 'You need to agree to share your contact information to access this model.'",
+  "record": {
+   "name": "GigaPath-Flash",
+   "modality": "spatial",
+   "description": "Efficient distillations of the Prov-GigaPath pathology foundation model from Microsoft Research: a 22M-parameter ViT-S/16 tile encoder paired with a 21M-parameter LongNet slide encoder that retains about 97% of Prov-GigaPath's slide-level performance at roughly 50x less compute. The companion GigaTIME-Flash couples the GigaPath-Flash encoder to a convolutional decoder that predicts 23-channel virtual multiplexed-immunofluorescence tumour-microenvironment maps from H&E tiles.",
+   "io": "H&E tile / whole-slide images -> tile and slide embeddings (GigaPath-Flash); 256x256 H&E tiles -> 23-channel virtual mIF maps (GigaTIME-Flash)",
+   "status": "Open weights on Hugging Face (Apache-2.0), click-through gated; model cards state research-use-only intended use, not for clinical deployment",
+   "use_cases": "whole-slide representation learning, slide-level classification and biomarker prediction, tumour immune microenvironment mapping from H&E",
+   "year": 2026,
+   "date": "2026-07-20",
+   "paper_links": [
+    {"label": "arXiv", "url": "https://arxiv.org/abs/2607.18218"}
+   ],
+   "code_links": [
+    {"label": "GigaPath-Flash weights (HF)", "url": "https://huggingface.co/prov-gigapath/prov-gigapath-flash"},
+    {"label": "GigaTIME-Flash weights (HF)", "url": "https://huggingface.co/prov-gigatime/gigatime-flash"},
+    {"label": "GigaTIME code (GitHub)", "url": "https://github.com/prov-gigatime/GigaTIME"},
+    {"label": "Prov-GigaPath code (GitHub)", "url": "https://github.com/prov-gigapath/prov-gigapath"}
+   ],
+   "sources": [
+    "https://arxiv.org/abs/2607.18218",
+    "https://huggingface.co/prov-gigapath/prov-gigapath-flash",
+    "https://huggingface.co/prov-gigatime/gigatime-flash",
+    "https://huggingface.co/api/models/prov-gigapath/prov-gigapath-flash",
+    "https://huggingface.co/api/models/prov-gigatime/gigatime-flash",
+    "https://aka.ms/gigapath-flash",
+    "https://aka.ms/gigatime-flash",
+    "https://aka.ms/gigatime-code"
+   ],
+   "noncommercial": false,
+   "aliases": ["Prov-GigaPath-Flash", "GigaTIME-Flash"]
+  },
+  "fetched": [
+   "https://arxiv.org/abs/2607.18218",
+   "https://huggingface.co/api/models/prov-gigapath/prov-gigapath-flash",
+   "https://huggingface.co/api/models/prov-gigatime/gigatime-flash",
+   "https://huggingface.co/prov-gigapath/prov-gigapath-flash",
+   "https://huggingface.co/prov-gigatime/gigatime-flash",
+   "https://aka.ms/gigapath-flash",
+   "https://aka.ms/gigatime-flash",
+   "https://aka.ms/gigatime-code",
+   "https://github.com/prov-gigatime/GigaTIME",
+   "https://github.com/prov-gigapath/prov-gigapath"
+  ]
+ },
+ {
+  "name": "ALICE",
+  "verdict": "accept",
+  "reason": "Paper verified: arXiv 2607.09526 'ALICE: Learning a General-Purpose Pathology Foundation Model from Vision, Vision-Language, and Slide-Level Experts', v1 2026-07-10, authors Jiawen Li, Tian Guan, ... Yonghong He (Tsinghua Shenzhen International Graduate School per HF card), not withdrawn. The arXiv abstract links github.com/WonderLandxD/ALICE (grep of the abs page HTML), and that repo's README points to weights at HF JWonderLand/ALICE - author-owned accounts (first author Jiawen Li), so officially owned. HF API: repo public but gated 'manual' (owner approves requests; anonymous raw access blocked), checkpoint alice_all_in_one.pt (~2.9 GB) plus HF-compatible modeling code, created 2026-07-05. Licence CC-BY-NC-ND-4.0 on both the HF card and the GitHub repo. Scope: general-purpose pathology FM distilled from eight teachers, evaluated on 96 downstream tasks - clearly broader than one task.",
+  "licence_quote": "CC-BY-NC-ND-4.0 (HF model card and GitHub repo licence). HF gate: 'You need to agree to share your contact information to access this model.' / 'This repository is publicly accessible, but you have to accept the conditions to access its files and content.' (gating mode 'manual' per HF API, i.e. owner-approved requests).",
+  "record": {
+   "name": "ALICE",
+   "modality": "spatial",
+   "description": "General-purpose computational-pathology foundation model from Tsinghua Shenzhen International Graduate School, built by multi-stage agglomerative distillation of eight vision-only, vision-language and slide-level teacher models into a single backbone. Trained on roughly 25M pathology tile images plus ~155K high-resolution images and evaluated across 96 downstream tasks spanning tissue analysis, multimodal vision-language tasks and whole-slide clinical assessment.",
+   "io": "Pathology tile / whole-slide images (optionally with text) -> tile-, vision-language- and slide-level embeddings for downstream prediction",
+   "status": "Weights on Hugging Face, gated (manual approval), CC-BY-NC-ND-4.0",
+   "use_cases": "tissue and tile classification, pathology vision-language tasks, whole-slide diagnosis and prognosis",
+   "year": 2026,
+   "date": "2026-07-10",
+   "paper_links": [
+    {"label": "arXiv", "url": "https://arxiv.org/abs/2607.09526"}
+   ],
+   "code_links": [
+    {"label": "GitHub", "url": "https://github.com/WonderLandxD/ALICE"},
+    {"label": "Weights (HF)", "url": "https://huggingface.co/JWonderLand/ALICE"}
+   ],
+   "sources": [
+    "https://arxiv.org/abs/2607.09526",
+    "https://github.com/WonderLandxD/ALICE",
+    "https://huggingface.co/JWonderLand/ALICE",
+    "https://huggingface.co/api/models/JWonderLand/ALICE"
+   ],
+   "noncommercial": true,
+   "aliases": []
+  },
+  "fetched": [
+   "https://arxiv.org/abs/2607.09526",
+   "https://huggingface.co/api/models/JWonderLand/ALICE",
+   "https://huggingface.co/JWonderLand/ALICE",
+   "https://github.com/WonderLandxD/ALICE"
+  ]
+ },
+ {
+  "name": "TissueFormer",
+  "verdict": "accept",
+  "reason": "Preprint verified via bioRxiv API (MCP get_preprint): DOI 10.64898/2026.07.31.741265, 'Multi-modal foundation model with whole-slide attention enables transferrable digital pathology at single-cell resolution', posted 2026-08-06 v1, corresponding author Caroline Uhler (MIT), not withdrawn, no journal version yet (published_doi NA). The preprint's source XML on biorxiv.org contains github.com/uhlerlab/TissueFormer, tying paper to repo. Repo exists, MIT licence (raw LICENSE fetched: 'MIT License / Copyright (c) 2025 uhlerlab'); README describes TissueFormer as a multi-modal foundation model for spatial biology trained on 1.2K paired tissue slides and distributes pretrained checkpoints (ours_pretrain_xenium_sample+_small.pth, ours_pretrain_xenium_lung.pth) via Google Drive links in the official repo - acceptable per policy, but no formal terms are stated for the Drive-hosted checkpoints beyond the repo's MIT licence, and Drive durability is a known caveat. Preprint text itself carries no reuse licence (bioRxiv metadata license 'cc_no') - does not affect code/weights. Scope: pretrained multimodal histology + spatial transcriptomics FM covering expression prediction and cell-/region-/slide-level diagnostic tasks - broader than one task.",
+  "licence_quote": "Code and checkpoints: 'MIT License ... Copyright (c) 2025 uhlerlab' (repo LICENSE). Checkpoints are Google Drive links from the official repo with no separate terms stated. Preprint licence: 'cc_no' (no reuse licence declared, per bioRxiv API metadata).",
+  "record": {
+   "name": "TissueFormer",
+   "modality": "spatial",
+   "description": "Multimodal foundation-model framework from the Uhler lab (MIT/Broad) for paired histopathology and spatial transcriptomics at single-cell resolution, using linear- rather than quadratic-complexity whole-slide attention to capture long-range cell-cell dependencies. Trained on over 17 million image-expression pairs from about 1.2K tissue slides, it predicts spatial gene expression from histology and scales to cell-, region- and slide-level diagnostic tasks.",
+   "io": "Histology images (with or without paired spatial transcriptomics) -> single-cell-resolution spatial gene-expression predictions and cell-/region-/slide-level embeddings and diagnostic predictions",
+   "status": "Code MIT on GitHub; pretrained checkpoints via Google Drive links in the official repo (no separate terms stated)",
+   "use_cases": "spatial gene-expression prediction from H&E, cell- region- and slide-level diagnosis, cell-cell interdependency and disease-mechanism hypothesis generation",
+   "year": 2026,
+   "date": "2026-08-06",
+   "paper_links": [
+    {"label": "bioRxiv", "url": "https://www.biorxiv.org/content/10.64898/2026.07.31.741265v1"}
+   ],
+   "code_links": [
+    {"label": "GitHub", "url": "https://github.com/uhlerlab/TissueFormer"}
+   ],
+   "sources": [
+    "https://www.biorxiv.org/content/10.64898/2026.07.31.741265v1",
+    "https://github.com/uhlerlab/TissueFormer",
+    "https://raw.githubusercontent.com/uhlerlab/TissueFormer/main/LICENSE",
+    "https://www.biorxiv.org/content/early/2026/08/06/2026.07.31.741265.source.xml"
+   ],
+   "noncommercial": false,
+   "aliases": []
+  },
+  "fetched": [
+   "bioRxiv API get_preprint 10.64898/2026.07.31.741265",
+   "https://github.com/uhlerlab/TissueFormer",
+   "https://raw.githubusercontent.com/uhlerlab/TissueFormer/main/LICENSE",
+   "https://www.biorxiv.org/content/early/2026/08/06/2026.07.31.741265.source.xml"
+  ]
+ },
+ {
+  "name": "CellWorld",
+  "verdict": "accept",
+  "reason": "The discovery-time blocker (private HF weights repo) is resolved: HF API for Haiping-UoM/CellWorld now returns private:false, gated:false, and anonymous raw-file access works (README, base/config.yaml and LICENSE all fetched without auth this session; repo created 2026-08-06, last modified 2026-08-10). Paper verified: arXiv 2608.06659 'CellWorld: From Gene-Level Reconstruction to Latent Cell Prediction in Spatial Transcriptomics Foundation Models', v1 2026-08-07, authors Haiping Liu, Qian Zhao, Lijing Lin, Jingyuan Sun, Hongpeng Zhou, not withdrawn; abstract links github.com/UoM-HealthAI/CellWorld (grep of abs page). Code repo MIT; HF weights repo MIT with all four scales (small/base/large/huge model.pt + config.yaml) whose architecture table (192x6 / 384x8 / 512x12 / 768x16, 10,000 steps) exactly matches the official GitHub README's model configurations, and the HF LICENSE reads 'Copyright (c) 2026 Haiping Liu' - the paper's first author - so the weights repo is author-owned, not a third-party re-upload. Caveats noted: the current GitHub README no longer names the HF repo (discovery saw an earlier version that did), and the HF README still contains stale 'this model repository is private' download instructions. Scope: JEPA-style pretrained spatial-transcriptomics FM (46M cells) with probe and finetune interfaces for annotation, region and niche prediction - reusable, broader than one task.",
+  "licence_quote": "MIT for both code and weights. GitHub README: 'CellWorld is released under the MIT License. See LICENSE for details.' HF weights repo LICENSE: 'MIT License / Copyright (c) 2026 Haiping Liu'; HF card license tag 'mit', gated:false.",
+  "record": {
+   "name": "CellWorld",
+   "modality": "spatial",
+   "description": "Joint-embedding predictive architecture (JEPA-style) foundation model for spatial transcriptomics from the University of Manchester HealthAI group: cells are tokens, spatial regions are masked, and the model predicts target-encoder latent representations of masked cells from visible spatial context plus a partial-expression hint instead of reconstructing gene counts. Four variants (5.74M-94.56M parameters) pretrained on 46 million human cells.",
+   "io": "Spatially resolved single-cell expression matrices with cell coordinates -> latent cell embeddings; probe/finetune heads -> cell-type annotation, region and niche prediction",
+   "status": "Open weights (MIT) on Hugging Face, four scales; code MIT on GitHub",
+   "use_cases": "spatial transcriptomics representation learning, cell-type annotation, tissue region and niche prediction",
+   "year": 2026,
+   "date": "2026-08-07",
+   "paper_links": [
+    {"label": "arXiv", "url": "https://arxiv.org/abs/2608.06659"}
+   ],
+   "code_links": [
+    {"label": "GitHub", "url": "https://github.com/UoM-HealthAI/CellWorld"},
+    {"label": "Weights (HF)", "url": "https://huggingface.co/Haiping-UoM/CellWorld"}
+   ],
+   "sources": [
+    "https://arxiv.org/abs/2608.06659",
+    "https://github.com/UoM-HealthAI/CellWorld",
+    "https://huggingface.co/api/models/Haiping-UoM/CellWorld",
+    "https://huggingface.co/Haiping-UoM/CellWorld/raw/main/LICENSE"
+   ],
+   "noncommercial": false,
+   "aliases": []
+  },
+  "fetched": [
+   "https://arxiv.org/abs/2608.06659",
+   "https://huggingface.co/api/models/Haiping-UoM/CellWorld",
+   "https://huggingface.co/Haiping-UoM/CellWorld/raw/main/README.md",
+   "https://huggingface.co/Haiping-UoM/CellWorld/raw/main/LICENSE",
+   "https://huggingface.co/Haiping-UoM/CellWorld/raw/main/base/config.yaml",
+   "https://raw.githubusercontent.com/UoM-HealthAI/CellWorld/main/README.md"
+  ]
+ },
+ {
+  "name": "CARTA",
+  "verdict": "reject",
+  "reason": "Scope failure, adjudicated explicitly per the slice note. The HF card (MahmoodLab/CARTA, fetched raw README this session) describes exactly two fixed supervised components: a YOLOv8n detector for TMA core bounding boxes (carta_core.pt, ~6 MB) and a DeepLabV3-ResNet50 tissue-vs-background segmenter (carta_tissue.pt, ~161 MB) for multiplex immunofluorescence preprocessing, positioned as a companion to the CORAL spatial-proteomics processing repo. It is not a pretrained representation model and offers no transfer/adaptation interface beyond its two tasks; the CellSAM precedent does not cover it, since CellSAM is a promptable generalist cell-segmentation foundation model across imaging modalities, whereas CARTA is a dearraying/masking utility. It also has no dedicated paper - the card's citation is the KRONOS preprint (arXiv:2506.03373, 'A Foundation Model for Spatial Proteomics', 2025), which describes a different model, and no release date is stated (HF repo created 2026-07-19, last modified 2026-08-05, per HF API). Secondary finding for the record: the HF licence metadata tag says cc-by-nc-4.0 while the README licence section says CC BY-NC-ND 4.0 - an internal inconsistency in the official card. Repo itself is legitimate (official MahmoodLab HF org, public, ungated), so this is a scope rejection, not a provenance one.",
+  "licence_quote": "README: 'The CARTA weights are released under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license. They are provided for non-commercial academic research only; commercial use, or the distribution of derivative models, requires prior approval.' (Note: HF metadata tag inconsistently says 'cc-by-nc-4.0'.)",
+  "record": null,
+  "fetched": [
+   "https://huggingface.co/api/models/MahmoodLab/CARTA",
+   "https://huggingface.co/MahmoodLab/CARTA/raw/main/README.md"
+  ]
+ }
+]
