@@ -1,6 +1,6 @@
 # Biological Foundation Models Wiki
 
-Last evidence review: 2026-08-13 · 390 entries across 10 categories.
+Last evidence review: 2026-08-14 · 390 entries across 10 categories.
 
 A researcher-facing index of foundation models and explicitly labelled platforms or benchmarks for biological sequences, molecules, structures, omics, cells, and tissue images. Presence is not a recommendation, proof of reuse rights, or evidence of clinical fitness.
 

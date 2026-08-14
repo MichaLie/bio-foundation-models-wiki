@@ -2,6 +2,13 @@
 
 All notable public changes to this resource are documented here.
 
+## 2.1.1 — 2026-08-14
+
+- Added a visible version-and-date badge to the index header, generated from
+  `resource_metadata.json`, so the most recent published update is legible at
+  a glance and refreshes automatically with every release.
+- No catalog records, evidence classifications, or data distributions changed.
+
 ## 2.1.0 — 2026-08-13
 
 - Added 42 verified records across all ten modalities from a delegated discovery and verification refresh covering the mid-June to mid-August window plus older catalog gaps.
