@@ -206,6 +206,7 @@ header.top::before{content:"Biological AI resource index";display:block;position
 .htext{padding-top:15px}
 h1{margin:0 0 7px;color:#142734;font-size:25px;line-height:1.12;font-weight:650;letter-spacing:-.025em}
 .sub{max-width:900px;color:#586d7b;font-size:14px;line-height:1.58}.sub b{color:#314b5a;font-weight:650}
+.vbadge{display:inline-block;margin:1px 0 7px;padding:2.5px 11px;border:1px solid #d7dee3;border-radius:999px;background:#f2f6f4;font-size:11.5px;font-weight:650;letter-spacing:.045em;color:#586d7b;white-space:nowrap}.vbadge b{color:#0f7a3d;font-weight:700}
 .hright{gap:9px}.dedi{gap:10px}.elixir-logo svg{height:53px}.dedi-cap{color:#607482}.dedi-cap b{color:#203744}
 .stats{gap:9px;margin:15px 0 4px}.stat{min-width:132px;padding:8px 13px;border-color:#d8e3e9;border-radius:8px;box-shadow:0 3px 12px rgba(32,67,79,.025)}
 .stat b{color:#1c3543;font-size:18px;font-variant-numeric:tabular-nums}.stat span{color:#607482}
@@ -229,6 +230,7 @@ footer{margin-top:26px;padding:17px 18px;border:1px solid #d8e3e9;border-radius:
 <body><div class="wrap">
 <header class="top"><div class="htext">
 <h1>Biological Foundation Models — Researcher Index</h1>
+<div class="vbadge" title="Version and date of the most recent published catalog update"><b>v__CATVERSION__</b> · updated __CATMODIFIED__</div>
 <div class="sub">Filterable index of foundation models for biological sequences, molecules, structures, omics, cells, and tissue images.
 Answer fast: <b>what object?</b> · <b>in → out?</b> · <b>accessible today?</b> · <b>what for?</b>
 __EVIDENCE_STATEMENT__ Access tags are best-effort — <b>always verify the license</b> before commercial use. Click any row for detail.</div>
@@ -381,7 +383,7 @@ except FileNotFoundError:
     _elixir_svg = ''
 
 repl = {
- '__TODAY__':today,'__TOTAL__':str(total),'__NOPEN__':str(n_open),'__NGATED__':str(n_gated),
+ '__TODAY__':today,'__CATVERSION__':str(resource_meta['resource_version']),'__CATMODIFIED__':str(resource_meta['modified']),'__TOTAL__':str(total),'__NOPEN__':str(n_open),'__NGATED__':str(n_gated),
  '__NAPI__':str(n_api),'__NCATS__':str(n_cats),'__QUICK__':quick_rows,
  '__NVERIFIED__':str(audit_counts.get('verified',0)),'__NLIMITED__':str(audit_counts.get('verified_with_limits',0)),
  '__NHOLD__':str(audit_counts.get('hold',0)),
