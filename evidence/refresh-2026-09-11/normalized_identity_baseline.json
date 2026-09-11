@@ -1,0 +1,3921 @@
+{
+  "date": "2026-09-11",
+  "baseline_commit": "66cef15df536f57c6e3ac0f581638d952493a5da",
+  "records": [
+    {
+      "id": "bfm-enformer",
+      "store": "displayed",
+      "name": "Enformer",
+      "modality": "dna",
+      "normalized_names": [
+        "enformer"
+      ]
+    },
+    {
+      "id": "bfm-dnabert",
+      "store": "displayed",
+      "name": "DNABERT",
+      "modality": "dna",
+      "normalized_names": [
+        "dnabert"
+      ]
+    },
+    {
+      "id": "bfm-dnabert-2",
+      "store": "displayed",
+      "name": "DNABERT-2",
+      "modality": "dna",
+      "normalized_names": [
+        "dnabert2"
+      ]
+    },
+    {
+      "id": "bfm-nucleotide-transformer",
+      "store": "displayed",
+      "name": "Nucleotide Transformer",
+      "modality": "dna",
+      "normalized_names": [
+        "nucleotidetransformer"
+      ]
+    },
+    {
+      "id": "bfm-hyenadna",
+      "store": "displayed",
+      "name": "HyenaDNA",
+      "modality": "dna",
+      "normalized_names": [
+        "hyenadna"
+      ]
+    },
+    {
+      "id": "bfm-caduceus",
+      "store": "displayed",
+      "name": "Caduceus",
+      "modality": "dna",
+      "normalized_names": [
+        "caduceus"
+      ]
+    },
+    {
+      "id": "bfm-gena-lm",
+      "store": "displayed",
+      "name": "GENA-LM",
+      "modality": "dna",
+      "normalized_names": [
+        "genalm"
+      ]
+    },
+    {
+      "id": "bfm-gpn-msa",
+      "store": "displayed",
+      "name": "GPN-MSA",
+      "modality": "dna",
+      "normalized_names": [
+        "gpnmsa"
+      ]
+    },
+    {
+      "id": "bfm-evo",
+      "store": "displayed",
+      "name": "Evo",
+      "modality": "dna",
+      "normalized_names": [
+        "evo"
+      ]
+    },
+    {
+      "id": "bfm-evo-2",
+      "store": "displayed",
+      "name": "Evo 2",
+      "modality": "dna",
+      "normalized_names": [
+        "evo2"
+      ]
+    },
+    {
+      "id": "bfm-lucaone",
+      "store": "displayed",
+      "name": "LucaOne",
+      "modality": "dna",
+      "normalized_names": [
+        "lucaone"
+      ]
+    },
+    {
+      "id": "bfm-bioseq-blm",
+      "store": "displayed",
+      "name": "BioSeq-BLM",
+      "modality": "platform",
+      "normalized_names": [
+        "bioseqblm"
+      ]
+    },
+    {
+      "id": "bfm-rna-fm",
+      "store": "displayed",
+      "name": "RNA-FM",
+      "modality": "rna",
+      "normalized_names": [
+        "rnafm"
+      ]
+    },
+    {
+      "id": "bfm-rinalmo",
+      "store": "displayed",
+      "name": "RiNALMo",
+      "modality": "rna",
+      "normalized_names": [
+        "rinalmo"
+      ]
+    },
+    {
+      "id": "bfm-uni-rna",
+      "store": "displayed",
+      "name": "UNI-RNA",
+      "modality": "rna",
+      "normalized_names": [
+        "unirna"
+      ]
+    },
+    {
+      "id": "bfm-ernie-rna",
+      "store": "displayed",
+      "name": "ERNIE-RNA",
+      "modality": "rna",
+      "normalized_names": [
+        "ernierna"
+      ]
+    },
+    {
+      "id": "bfm-rnabert",
+      "store": "displayed",
+      "name": "RNABERT",
+      "modality": "rna",
+      "normalized_names": [
+        "rnabert"
+      ]
+    },
+    {
+      "id": "bfm-splicebert",
+      "store": "displayed",
+      "name": "SpliceBERT",
+      "modality": "rna",
+      "normalized_names": [
+        "splicebert"
+      ]
+    },
+    {
+      "id": "bfm-rna-msm",
+      "store": "displayed",
+      "name": "RNA-MSM",
+      "modality": "rna",
+      "normalized_names": [
+        "rnamsm"
+      ]
+    },
+    {
+      "id": "bfm-generrna",
+      "store": "displayed",
+      "name": "GenerRNA",
+      "modality": "rna",
+      "normalized_names": [
+        "generrna"
+      ]
+    },
+    {
+      "id": "bfm-aido-rna",
+      "store": "displayed",
+      "name": "AIDO.RNA",
+      "modality": "rna",
+      "normalized_names": [
+        "aidorna"
+      ]
+    },
+    {
+      "id": "bfm-esm-1b-esm-1v",
+      "store": "displayed",
+      "name": "ESM-1b / ESM-1v",
+      "modality": "protein",
+      "normalized_names": [
+        "esm1besm1v"
+      ]
+    },
+    {
+      "id": "bfm-esm-2",
+      "store": "displayed",
+      "name": "ESM-2",
+      "modality": "protein",
+      "normalized_names": [
+        "esm2"
+      ]
+    },
+    {
+      "id": "bfm-esmfold",
+      "store": "displayed",
+      "name": "ESMFold",
+      "modality": "protein",
+      "normalized_names": [
+        "esmfold"
+      ]
+    },
+    {
+      "id": "bfm-esm3",
+      "store": "displayed",
+      "name": "ESM3",
+      "modality": "protein",
+      "normalized_names": [
+        "esm3"
+      ]
+    },
+    {
+      "id": "bfm-esm-c-esm-cambrian",
+      "store": "displayed",
+      "name": "ESM-C / ESM Cambrian",
+      "modality": "protein",
+      "normalized_names": [
+        "esmcesmcambrian"
+      ]
+    },
+    {
+      "id": "bfm-prottrans-prott5-protbert",
+      "store": "displayed",
+      "name": "ProtTrans / ProtT5 / ProtBERT",
+      "modality": "protein",
+      "normalized_names": [
+        "prottransprott5protbert"
+      ]
+    },
+    {
+      "id": "bfm-proteinbert",
+      "store": "displayed",
+      "name": "ProteinBERT",
+      "modality": "protein",
+      "normalized_names": [
+        "proteinbert"
+      ]
+    },
+    {
+      "id": "bfm-progen-progen2",
+      "store": "displayed",
+      "name": "ProGen / ProGen2",
+      "modality": "protein",
+      "normalized_names": [
+        "progenprogen2"
+      ]
+    },
+    {
+      "id": "bfm-progen3",
+      "store": "displayed",
+      "name": "ProGen3",
+      "modality": "protein",
+      "normalized_names": [
+        "progen3"
+      ]
+    },
+    {
+      "id": "bfm-ankh",
+      "store": "displayed",
+      "name": "Ankh",
+      "modality": "protein",
+      "normalized_names": [
+        "ankh"
+      ]
+    },
+    {
+      "id": "bfm-protgpt2",
+      "store": "displayed",
+      "name": "ProtGPT2",
+      "modality": "protein",
+      "normalized_names": [
+        "protgpt2"
+      ]
+    },
+    {
+      "id": "bfm-xtrimopglm",
+      "store": "displayed",
+      "name": "xTrimoPGLM",
+      "modality": "protein",
+      "normalized_names": [
+        "xtrimopglm"
+      ]
+    },
+    {
+      "id": "bfm-iglm",
+      "store": "displayed",
+      "name": "IgLM",
+      "modality": "protein",
+      "normalized_names": [
+        "iglm"
+      ]
+    },
+    {
+      "id": "bfm-antiberta",
+      "store": "displayed",
+      "name": "AntiBERTa",
+      "modality": "protein",
+      "normalized_names": [
+        "antiberta"
+      ]
+    },
+    {
+      "id": "bfm-ablang",
+      "store": "displayed",
+      "name": "AbLang",
+      "modality": "protein",
+      "normalized_names": [
+        "ablang"
+      ]
+    },
+    {
+      "id": "bfm-eve",
+      "store": "displayed",
+      "name": "EVE",
+      "modality": "protein",
+      "normalized_names": [
+        "eve"
+      ]
+    },
+    {
+      "id": "bfm-msa-transformer",
+      "store": "displayed",
+      "name": "MSA Transformer",
+      "modality": "protein",
+      "normalized_names": [
+        "msatransformer"
+      ]
+    },
+    {
+      "id": "bfm-tranception",
+      "store": "displayed",
+      "name": "Tranception",
+      "modality": "protein",
+      "normalized_names": [
+        "tranception"
+      ]
+    },
+    {
+      "id": "bfm-poet",
+      "store": "displayed",
+      "name": "PoET",
+      "modality": "protein",
+      "normalized_names": [
+        "poet"
+      ]
+    },
+    {
+      "id": "bfm-proteinmpnn",
+      "store": "displayed",
+      "name": "ProteinMPNN",
+      "modality": "protein",
+      "normalized_names": [
+        "proteinmpnn"
+      ]
+    },
+    {
+      "id": "bfm-esm-if1",
+      "store": "displayed",
+      "name": "ESM-IF1",
+      "modality": "protein",
+      "normalized_names": [
+        "esmif1"
+      ]
+    },
+    {
+      "id": "bfm-rfdiffusion",
+      "store": "displayed",
+      "name": "RFdiffusion / RFdiffusion3 (RFD3)",
+      "modality": "protein",
+      "normalized_names": [
+        "rfd3",
+        "rfdiffusion",
+        "rfdiffusion3",
+        "rfdiffusionrfdiffusion3rfd3"
+      ]
+    },
+    {
+      "id": "bfm-chroma",
+      "store": "displayed",
+      "name": "Chroma",
+      "modality": "protein",
+      "normalized_names": [
+        "chroma"
+      ]
+    },
+    {
+      "id": "bfm-dplm",
+      "store": "displayed",
+      "name": "DPLM",
+      "modality": "protein",
+      "normalized_names": [
+        "dplm"
+      ]
+    },
+    {
+      "id": "bfm-bioemu-1",
+      "store": "displayed",
+      "name": "BioEmu-1",
+      "modality": "protein",
+      "normalized_names": [
+        "bioemu1"
+      ]
+    },
+    {
+      "id": "bfm-alphafold-3",
+      "store": "displayed",
+      "name": "AlphaFold 3",
+      "modality": "complex",
+      "normalized_names": [
+        "alphafold3"
+      ]
+    },
+    {
+      "id": "bfm-chai-1",
+      "store": "displayed",
+      "name": "Chai-1",
+      "modality": "complex",
+      "normalized_names": [
+        "chai1"
+      ]
+    },
+    {
+      "id": "bfm-boltz-1-boltz-2",
+      "store": "displayed",
+      "name": "Boltz-1 / Boltz-2",
+      "modality": "complex",
+      "normalized_names": [
+        "boltz1boltz2"
+      ]
+    },
+    {
+      "id": "bfm-rosettafold-all-atom",
+      "store": "displayed",
+      "name": "RoseTTAFold All-Atom / RoseTTAFold3 (RF3)",
+      "modality": "complex",
+      "normalized_names": [
+        "rf3",
+        "rosettafold3",
+        "rosettafoldallatom",
+        "rosettafoldallatomrosettafold3rf3"
+      ]
+    },
+    {
+      "id": "bfm-openfold",
+      "store": "displayed",
+      "name": "OpenFold",
+      "modality": "complex",
+      "normalized_names": [
+        "openfold"
+      ]
+    },
+    {
+      "id": "bfm-diffdock",
+      "store": "displayed",
+      "name": "DiffDock",
+      "modality": "complex",
+      "normalized_names": [
+        "diffdock"
+      ]
+    },
+    {
+      "id": "bfm-chemberta-chemberta-2",
+      "store": "displayed",
+      "name": "ChemBERTa / ChemBERTa-2",
+      "modality": "molecule",
+      "normalized_names": [
+        "chembertachemberta2"
+      ]
+    },
+    {
+      "id": "bfm-molformer",
+      "store": "displayed",
+      "name": "MoLFormer",
+      "modality": "molecule",
+      "normalized_names": [
+        "molformer"
+      ]
+    },
+    {
+      "id": "bfm-gp-molformer",
+      "store": "displayed",
+      "name": "GP-MoLFormer",
+      "modality": "molecule",
+      "normalized_names": [
+        "gpmolformer"
+      ]
+    },
+    {
+      "id": "bfm-grover",
+      "store": "displayed",
+      "name": "GROVER",
+      "modality": "molecule",
+      "normalized_names": [
+        "grover"
+      ]
+    },
+    {
+      "id": "bfm-graphmvp",
+      "store": "displayed",
+      "name": "GraphMVP",
+      "modality": "molecule",
+      "normalized_names": [
+        "graphmvp"
+      ]
+    },
+    {
+      "id": "bfm-uni-mol",
+      "store": "displayed",
+      "name": "Uni-Mol",
+      "modality": "molecule",
+      "normalized_names": [
+        "unimol",
+        "unimolbase"
+      ]
+    },
+    {
+      "id": "bfm-megamolbart",
+      "store": "displayed",
+      "name": "MegaMolBART",
+      "modality": "molecule",
+      "normalized_names": [
+        "megamolbart"
+      ]
+    },
+    {
+      "id": "bfm-molmim",
+      "store": "displayed",
+      "name": "MolMIM",
+      "modality": "molecule",
+      "normalized_names": [
+        "molmim"
+      ]
+    },
+    {
+      "id": "bfm-molt5",
+      "store": "displayed",
+      "name": "MolT5",
+      "modality": "molecule",
+      "normalized_names": [
+        "molt5"
+      ]
+    },
+    {
+      "id": "bfm-3d-molt5",
+      "store": "displayed",
+      "name": "3D-MolT5",
+      "modality": "molecule",
+      "normalized_names": [
+        "3dmolt5"
+      ]
+    },
+    {
+      "id": "bfm-mole",
+      "store": "displayed",
+      "name": "MolE",
+      "modality": "molecule",
+      "normalized_names": [
+        "mole"
+      ]
+    },
+    {
+      "id": "bfm-geneformer",
+      "store": "displayed",
+      "name": "Geneformer",
+      "modality": "singlecell",
+      "normalized_names": [
+        "geneformer"
+      ]
+    },
+    {
+      "id": "bfm-geneformerv2",
+      "store": "displayed",
+      "name": "GeneformerV2",
+      "modality": "singlecell",
+      "normalized_names": [
+        "geneformerv2"
+      ]
+    },
+    {
+      "id": "bfm-scgpt",
+      "store": "displayed",
+      "name": "scGPT",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scgpt"
+      ]
+    },
+    {
+      "id": "bfm-scfoundation",
+      "store": "displayed",
+      "name": "scFoundation",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scfoundation"
+      ]
+    },
+    {
+      "id": "bfm-uce",
+      "store": "displayed",
+      "name": "UCE",
+      "modality": "singlecell",
+      "normalized_names": [
+        "uce"
+      ]
+    },
+    {
+      "id": "bfm-cellplm",
+      "store": "displayed",
+      "name": "CellPLM",
+      "modality": "singlecell",
+      "normalized_names": [
+        "cellplm"
+      ]
+    },
+    {
+      "id": "bfm-scprint",
+      "store": "displayed",
+      "name": "scPRINT",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scprint"
+      ]
+    },
+    {
+      "id": "bfm-cellfm",
+      "store": "displayed",
+      "name": "CellFM",
+      "modality": "singlecell",
+      "normalized_names": [
+        "cellfm"
+      ]
+    },
+    {
+      "id": "bfm-transcriptformer",
+      "store": "displayed",
+      "name": "TranscriptFormer",
+      "modality": "singlecell",
+      "normalized_names": [
+        "transcriptformer"
+      ]
+    },
+    {
+      "id": "bfm-aido-cell",
+      "store": "displayed",
+      "name": "AIDO.Cell",
+      "modality": "singlecell",
+      "normalized_names": [
+        "aidocell"
+      ]
+    },
+    {
+      "id": "bfm-scimilarity",
+      "store": "displayed",
+      "name": "SCimilarity",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scimilarity"
+      ]
+    },
+    {
+      "id": "bfm-scbert",
+      "store": "displayed",
+      "name": "scBERT",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scbert"
+      ]
+    },
+    {
+      "id": "bfm-scmulan",
+      "store": "displayed",
+      "name": "scMulan",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scmulan"
+      ]
+    },
+    {
+      "id": "bfm-sccello",
+      "store": "displayed",
+      "name": "scCello",
+      "modality": "singlecell",
+      "normalized_names": [
+        "sccello"
+      ]
+    },
+    {
+      "id": "bfm-atacformer",
+      "store": "displayed",
+      "name": "Atacformer",
+      "modality": "singlecell",
+      "normalized_names": [
+        "atacformer"
+      ]
+    },
+    {
+      "id": "bfm-cell2sentence",
+      "store": "displayed",
+      "name": "Cell2Sentence",
+      "modality": "singlecell",
+      "normalized_names": [
+        "cell2sentence"
+      ]
+    },
+    {
+      "id": "bfm-chatcell",
+      "store": "displayed",
+      "name": "ChatCell",
+      "modality": "singlecell",
+      "normalized_names": [
+        "chatcell"
+      ]
+    },
+    {
+      "id": "bfm-biot5",
+      "store": "displayed",
+      "name": "BioT5",
+      "modality": "multimodal",
+      "normalized_names": [
+        "biot5"
+      ]
+    },
+    {
+      "id": "bfm-biot5-plus",
+      "store": "displayed",
+      "name": "BioT5+",
+      "modality": "multimodal",
+      "normalized_names": [
+        "biot5"
+      ]
+    },
+    {
+      "id": "bfm-protst",
+      "store": "displayed",
+      "name": "ProtST",
+      "modality": "multimodal",
+      "normalized_names": [
+        "protst"
+      ]
+    },
+    {
+      "id": "bfm-proteindt",
+      "store": "displayed",
+      "name": "ProteinDT",
+      "modality": "multimodal",
+      "normalized_names": [
+        "proteindt"
+      ]
+    },
+    {
+      "id": "bfm-protrek",
+      "store": "displayed",
+      "name": "ProTrek",
+      "modality": "multimodal",
+      "normalized_names": [
+        "protrek"
+      ]
+    },
+    {
+      "id": "bfm-galactica",
+      "store": "displayed",
+      "name": "Galactica",
+      "modality": "multimodal",
+      "normalized_names": [
+        "galactica"
+      ]
+    },
+    {
+      "id": "bfm-czi-virtual-cells-platform",
+      "store": "displayed",
+      "name": "Biohub AI-Supported Virtual Cells Platform",
+      "modality": "platform",
+      "normalized_names": [
+        "biohubaisupportedvirtualcellsplatform",
+        "czivirtualcellmodels",
+        "czivirtualcellsplatform"
+      ]
+    },
+    {
+      "id": "bfm-helical",
+      "store": "displayed",
+      "name": "Helical",
+      "modality": "platform",
+      "normalized_names": [
+        "helical"
+      ]
+    },
+    {
+      "id": "bfm-nvidia-bionemo",
+      "store": "displayed",
+      "name": "NVIDIA BioNeMo",
+      "modality": "platform",
+      "normalized_names": [
+        "nvidiabionemo"
+      ]
+    },
+    {
+      "id": "bfm-aido-aido-modelgenerator",
+      "store": "displayed",
+      "name": "AIDO / AIDO.ModelGenerator",
+      "modality": "platform",
+      "normalized_names": [
+        "aidoaidomodelgenerator"
+      ]
+    },
+    {
+      "id": "bfm-alphafold-server",
+      "store": "displayed",
+      "name": "AlphaFold Server",
+      "modality": "platform",
+      "normalized_names": [
+        "alphafoldserver"
+      ]
+    },
+    {
+      "id": "bfm-hugging-face-biology-orgs",
+      "store": "displayed",
+      "name": "Hugging Face biology orgs",
+      "modality": "platform",
+      "normalized_names": [
+        "huggingfacebiologyorgs"
+      ]
+    },
+    {
+      "id": "bfm-alphagenome",
+      "store": "displayed",
+      "name": "AlphaGenome",
+      "modality": "dna",
+      "normalized_names": [
+        "alphagenome"
+      ]
+    },
+    {
+      "id": "bfm-borzoi",
+      "store": "displayed",
+      "name": "Borzoi",
+      "modality": "dna",
+      "normalized_names": [
+        "borzoi"
+      ]
+    },
+    {
+      "id": "bfm-sei",
+      "store": "displayed",
+      "name": "Sei",
+      "modality": "dna",
+      "normalized_names": [
+        "sei"
+      ]
+    },
+    {
+      "id": "bfm-gpn-genomic-pre-trained-network",
+      "store": "displayed",
+      "name": "GPN (Genomic Pre-trained Network)",
+      "modality": "dna",
+      "normalized_names": [
+        "gpngenomicpretrainednetwork"
+      ]
+    },
+    {
+      "id": "bfm-generator",
+      "store": "displayed",
+      "name": "GENERator",
+      "modality": "dna",
+      "normalized_names": [
+        "generator"
+      ]
+    },
+    {
+      "id": "bfm-genomeocean",
+      "store": "displayed",
+      "name": "GenomeOcean",
+      "modality": "dna",
+      "normalized_names": [
+        "genomeocean"
+      ]
+    },
+    {
+      "id": "bfm-megadna",
+      "store": "displayed",
+      "name": "megaDNA",
+      "modality": "dna",
+      "normalized_names": [
+        "megadna"
+      ]
+    },
+    {
+      "id": "bfm-dnagpt",
+      "store": "displayed",
+      "name": "DNAGPT",
+      "modality": "dna",
+      "normalized_names": [
+        "dnagpt"
+      ]
+    },
+    {
+      "id": "bfm-grover-dna-language-model",
+      "store": "displayed",
+      "name": "GROVER (DNA language model)",
+      "modality": "dna",
+      "normalized_names": [
+        "groverdnalanguagemodel"
+      ]
+    },
+    {
+      "id": "bfm-agront-agronomic-nucleotide-transformer",
+      "store": "displayed",
+      "name": "AgroNT (Agronomic Nucleotide Transformer)",
+      "modality": "dna",
+      "normalized_names": [
+        "agrontagronomicnucleotidetransformer"
+      ]
+    },
+    {
+      "id": "bfm-plantcaduceus-plantcad-plantcad2",
+      "store": "displayed",
+      "name": "PlantCaduceus (PlantCAD / PlantCAD2)",
+      "modality": "dna",
+      "normalized_names": [
+        "plantcaduceusplantcadplantcad2"
+      ]
+    },
+    {
+      "id": "bfm-specieslm-species-aware-dna-language-model",
+      "store": "displayed",
+      "name": "SpeciesLM (species-aware DNA language model)",
+      "modality": "dna",
+      "normalized_names": [
+        "specieslmspeciesawarednalanguagemodel"
+      ]
+    },
+    {
+      "id": "bfm-glm-genomic-language-model",
+      "store": "displayed",
+      "name": "gLM (genomic language model)",
+      "modality": "dna",
+      "normalized_names": [
+        "glmgenomiclanguagemodel"
+      ]
+    },
+    {
+      "id": "bfm-omnina",
+      "store": "displayed",
+      "name": "OmniNA",
+      "modality": "dna",
+      "normalized_names": [
+        "omnina"
+      ]
+    },
+    {
+      "id": "bfm-orca",
+      "store": "displayed",
+      "name": "Orca",
+      "modality": "dna",
+      "normalized_names": [
+        "orca"
+      ]
+    },
+    {
+      "id": "bfm-get-general-expression-transformer",
+      "store": "displayed",
+      "name": "GET (General Expression Transformer)",
+      "modality": "dna",
+      "normalized_names": [
+        "getgeneralexpressiontransformer"
+      ]
+    },
+    {
+      "id": "bfm-decima",
+      "store": "displayed",
+      "name": "Decima",
+      "modality": "dna",
+      "normalized_names": [
+        "decima"
+      ]
+    },
+    {
+      "id": "bfm-scooby",
+      "store": "displayed",
+      "name": "scooby",
+      "modality": "dna",
+      "normalized_names": [
+        "scooby"
+      ]
+    },
+    {
+      "id": "bfm-segmentnt",
+      "store": "displayed",
+      "name": "SegmentNT",
+      "modality": "dna",
+      "normalized_names": [
+        "segmentnt"
+      ]
+    },
+    {
+      "id": "bfm-janusdna",
+      "store": "displayed",
+      "name": "JanusDNA",
+      "modality": "dna",
+      "normalized_names": [
+        "janusdna"
+      ]
+    },
+    {
+      "id": "bfm-orthrus",
+      "store": "displayed",
+      "name": "Orthrus",
+      "modality": "rna",
+      "normalized_names": [
+        "orthrus"
+      ]
+    },
+    {
+      "id": "bfm-utr-lm",
+      "store": "displayed",
+      "name": "UTR-LM",
+      "modality": "rna",
+      "normalized_names": [
+        "utrlm"
+      ]
+    },
+    {
+      "id": "bfm-codonbert",
+      "store": "displayed",
+      "name": "CodonBERT",
+      "modality": "rna",
+      "normalized_names": [
+        "codonbert"
+      ]
+    },
+    {
+      "id": "bfm-rnaernie",
+      "store": "displayed",
+      "name": "RNAErnie",
+      "modality": "rna",
+      "normalized_names": [
+        "rnaernie"
+      ]
+    },
+    {
+      "id": "bfm-birna-bert",
+      "store": "displayed",
+      "name": "BiRNA-BERT",
+      "modality": "rna",
+      "normalized_names": [
+        "birnabert"
+      ]
+    },
+    {
+      "id": "bfm-helix-mrna",
+      "store": "displayed",
+      "name": "Helix-mRNA",
+      "modality": "rna",
+      "normalized_names": [
+        "helixmrna"
+      ]
+    },
+    {
+      "id": "bfm-rhofold-plus",
+      "store": "displayed",
+      "name": "RhoFold+",
+      "modality": "rna",
+      "normalized_names": [
+        "rhofold"
+      ]
+    },
+    {
+      "id": "bfm-rnagenesis",
+      "store": "displayed",
+      "name": "RNAGenesis",
+      "modality": "rna",
+      "normalized_names": [
+        "rnagenesis"
+      ]
+    },
+    {
+      "id": "bfm-lamar",
+      "store": "displayed",
+      "name": "LAMAR",
+      "modality": "rna",
+      "normalized_names": [
+        "lamar"
+      ]
+    },
+    {
+      "id": "bfm-omnigenome",
+      "store": "displayed",
+      "name": "OmniGenome",
+      "modality": "rna",
+      "normalized_names": [
+        "omnigenome"
+      ]
+    },
+    {
+      "id": "bfm-mrnabert",
+      "store": "displayed",
+      "name": "mRNABERT",
+      "modality": "rna",
+      "normalized_names": [
+        "mrnabert"
+      ]
+    },
+    {
+      "id": "bfm-trrosettarna",
+      "store": "displayed",
+      "name": "trRosettaRNA",
+      "modality": "rna",
+      "normalized_names": [
+        "trrosettarna"
+      ]
+    },
+    {
+      "id": "bfm-rosettafoldna",
+      "store": "displayed",
+      "name": "RoseTTAFoldNA",
+      "modality": "complex",
+      "normalized_names": [
+        "rosettafoldna"
+      ]
+    },
+    {
+      "id": "bfm-saprot",
+      "store": "displayed",
+      "name": "SaProt",
+      "modality": "protein",
+      "normalized_names": [
+        "saprot"
+      ]
+    },
+    {
+      "id": "bfm-prostt5",
+      "store": "displayed",
+      "name": "ProstT5",
+      "modality": "protein",
+      "normalized_names": [
+        "prostt5"
+      ]
+    },
+    {
+      "id": "bfm-prosst",
+      "store": "displayed",
+      "name": "ProSST",
+      "modality": "protein",
+      "normalized_names": [
+        "prosst"
+      ]
+    },
+    {
+      "id": "bfm-amplify",
+      "store": "displayed",
+      "name": "AMPLIFY",
+      "modality": "protein",
+      "normalized_names": [
+        "amplify"
+      ]
+    },
+    {
+      "id": "bfm-carp",
+      "store": "displayed",
+      "name": "CARP",
+      "modality": "protein",
+      "normalized_names": [
+        "carp"
+      ]
+    },
+    {
+      "id": "bfm-ligandmpnn",
+      "store": "displayed",
+      "name": "LigandMPNN",
+      "modality": "protein",
+      "normalized_names": [
+        "ligandmpnn"
+      ]
+    },
+    {
+      "id": "bfm-antifold",
+      "store": "displayed",
+      "name": "AntiFold",
+      "modality": "protein",
+      "normalized_names": [
+        "antifold"
+      ]
+    },
+    {
+      "id": "bfm-rfdiffusion2",
+      "store": "displayed",
+      "name": "RFdiffusion2",
+      "modality": "protein",
+      "normalized_names": [
+        "rfdiffusion2"
+      ]
+    },
+    {
+      "id": "bfm-genie-2",
+      "store": "displayed",
+      "name": "Genie 2",
+      "modality": "protein",
+      "normalized_names": [
+        "genie2"
+      ]
+    },
+    {
+      "id": "bfm-proteus",
+      "store": "displayed",
+      "name": "Proteus",
+      "modality": "protein",
+      "normalized_names": [
+        "proteus"
+      ]
+    },
+    {
+      "id": "bfm-evodiff",
+      "store": "displayed",
+      "name": "EvoDiff",
+      "modality": "protein",
+      "normalized_names": [
+        "evodiff"
+      ]
+    },
+    {
+      "id": "bfm-dplm-2",
+      "store": "displayed",
+      "name": "DPLM-2",
+      "modality": "protein",
+      "normalized_names": [
+        "dplm2"
+      ]
+    },
+    {
+      "id": "bfm-pinal-denovo-pinal",
+      "store": "displayed",
+      "name": "Pinal (Denovo-Pinal)",
+      "modality": "protein",
+      "normalized_names": [
+        "pinaldenovopinal"
+      ]
+    },
+    {
+      "id": "bfm-aido-protein-16b",
+      "store": "displayed",
+      "name": "AIDO.Protein-16B",
+      "modality": "protein",
+      "normalized_names": [
+        "aidoprotein16b"
+      ]
+    },
+    {
+      "id": "bfm-ptm-mamba",
+      "store": "displayed",
+      "name": "PTM-Mamba",
+      "modality": "protein",
+      "normalized_names": [
+        "ptmmamba"
+      ]
+    },
+    {
+      "id": "bfm-prothyena",
+      "store": "displayed",
+      "name": "ProtHyena",
+      "modality": "protein",
+      "normalized_names": [
+        "prothyena"
+      ]
+    },
+    {
+      "id": "bfm-lc-plm",
+      "store": "displayed",
+      "name": "LC-PLM",
+      "modality": "protein",
+      "normalized_names": [
+        "lcplm"
+      ]
+    },
+    {
+      "id": "bfm-antiberty",
+      "store": "displayed",
+      "name": "AntiBERTy",
+      "modality": "protein",
+      "normalized_names": [
+        "antiberty"
+      ]
+    },
+    {
+      "id": "bfm-ablang2-tcrlang",
+      "store": "displayed",
+      "name": "AbLang2 / TCRLang",
+      "modality": "protein",
+      "normalized_names": [
+        "ablang2tcrlang"
+      ]
+    },
+    {
+      "id": "bfm-igbert-igt5",
+      "store": "displayed",
+      "name": "IgBert / IgT5",
+      "modality": "protein",
+      "normalized_names": [
+        "igbertigt5"
+      ]
+    },
+    {
+      "id": "bfm-p-iggen",
+      "store": "displayed",
+      "name": "p-IgGen",
+      "modality": "protein",
+      "normalized_names": [
+        "piggen"
+      ]
+    },
+    {
+      "id": "bfm-balm-bio-inspired-antibody-language-model",
+      "store": "displayed",
+      "name": "BALM (Bio-inspired Antibody Language Model)",
+      "modality": "protein",
+      "normalized_names": [
+        "balmbioinspiredantibodylanguagemodel"
+      ]
+    },
+    {
+      "id": "bfm-sapiens",
+      "store": "displayed",
+      "name": "Sapiens",
+      "modality": "protein",
+      "normalized_names": [
+        "sapiens"
+      ]
+    },
+    {
+      "id": "bfm-proteinnpt",
+      "store": "displayed",
+      "name": "ProteinNPT",
+      "modality": "protein",
+      "normalized_names": [
+        "proteinnpt"
+      ]
+    },
+    {
+      "id": "bfm-poet-2",
+      "store": "displayed",
+      "name": "PoET-2",
+      "modality": "protein",
+      "normalized_names": [
+        "poet2"
+      ]
+    },
+    {
+      "id": "bfm-zymctrl",
+      "store": "displayed",
+      "name": "ZymCTRL",
+      "modality": "protein",
+      "normalized_names": [
+        "zymctrl"
+      ]
+    },
+    {
+      "id": "bfm-alphafold2",
+      "store": "displayed",
+      "name": "AlphaFold2",
+      "modality": "complex",
+      "normalized_names": [
+        "alphafold2"
+      ]
+    },
+    {
+      "id": "bfm-alphafold-multimer",
+      "store": "displayed",
+      "name": "AlphaFold-Multimer",
+      "modality": "complex",
+      "normalized_names": [
+        "alphafoldmultimer"
+      ]
+    },
+    {
+      "id": "bfm-protenix",
+      "store": "displayed",
+      "name": "Protenix",
+      "modality": "complex",
+      "normalized_names": [
+        "protenix"
+      ]
+    },
+    {
+      "id": "bfm-helixfold3",
+      "store": "displayed",
+      "name": "HelixFold3",
+      "modality": "complex",
+      "normalized_names": [
+        "helixfold3"
+      ]
+    },
+    {
+      "id": "bfm-openfold3",
+      "store": "displayed",
+      "name": "OpenFold3",
+      "modality": "complex",
+      "normalized_names": [
+        "openfold3"
+      ]
+    },
+    {
+      "id": "bfm-chai-2",
+      "store": "displayed",
+      "name": "Chai-2",
+      "modality": "protein",
+      "normalized_names": [
+        "chai2"
+      ]
+    },
+    {
+      "id": "bfm-umol",
+      "store": "displayed",
+      "name": "Umol",
+      "modality": "complex",
+      "normalized_names": [
+        "umol"
+      ]
+    },
+    {
+      "id": "bfm-diffdock-l",
+      "store": "displayed",
+      "name": "DiffDock-L",
+      "modality": "complex",
+      "normalized_names": [
+        "diffdockl"
+      ]
+    },
+    {
+      "id": "bfm-flowdock",
+      "store": "displayed",
+      "name": "FlowDock",
+      "modality": "complex",
+      "normalized_names": [
+        "flowdock"
+      ]
+    },
+    {
+      "id": "bfm-igfold",
+      "store": "displayed",
+      "name": "IgFold",
+      "modality": "protein",
+      "normalized_names": [
+        "igfold"
+      ]
+    },
+    {
+      "id": "bfm-rosettafold2",
+      "store": "displayed",
+      "name": "RoseTTAFold2",
+      "modality": "complex",
+      "normalized_names": [
+        "rosettafold2"
+      ]
+    },
+    {
+      "id": "bfm-omegafold",
+      "store": "displayed",
+      "name": "OmegaFold",
+      "modality": "complex",
+      "normalized_names": [
+        "omegafold"
+      ]
+    },
+    {
+      "id": "bfm-chemformer-molbart",
+      "store": "displayed",
+      "name": "Chemformer / MolBART",
+      "modality": "molecule",
+      "normalized_names": [
+        "chemformermolbart"
+      ]
+    },
+    {
+      "id": "bfm-molgpt",
+      "store": "displayed",
+      "name": "MolGPT",
+      "modality": "molecule",
+      "normalized_names": [
+        "molgpt"
+      ]
+    },
+    {
+      "id": "bfm-safe-gpt",
+      "store": "displayed",
+      "name": "SAFE-GPT",
+      "modality": "molecule",
+      "normalized_names": [
+        "safegpt"
+      ]
+    },
+    {
+      "id": "bfm-genmol",
+      "store": "displayed",
+      "name": "GenMol",
+      "modality": "molecule",
+      "normalized_names": [
+        "genmol"
+      ]
+    },
+    {
+      "id": "bfm-megalodon",
+      "store": "displayed",
+      "name": "Megalodon",
+      "modality": "molecule",
+      "normalized_names": [
+        "megalodon"
+      ]
+    },
+    {
+      "id": "bfm-uni-mol2",
+      "store": "displayed",
+      "name": "Uni-Mol2",
+      "modality": "molecule",
+      "normalized_names": [
+        "unimol2"
+      ]
+    },
+    {
+      "id": "bfm-molclr",
+      "store": "displayed",
+      "name": "MolCLR",
+      "modality": "molecule",
+      "normalized_names": [
+        "molclr"
+      ]
+    },
+    {
+      "id": "bfm-mole-bert",
+      "store": "displayed",
+      "name": "Mole-BERT",
+      "modality": "molecule",
+      "normalized_names": [
+        "molebert"
+      ]
+    },
+    {
+      "id": "bfm-kpgt-knowledge-guided-pre-training-of-graph-transformer",
+      "store": "displayed",
+      "name": "KPGT (Knowledge-Guided Pre-training of Graph Transformer)",
+      "modality": "molecule",
+      "normalized_names": [
+        "kpgtknowledgeguidedpretrainingofgraphtransformer"
+      ]
+    },
+    {
+      "id": "bfm-molgen",
+      "store": "displayed",
+      "name": "MolGen",
+      "modality": "molecule",
+      "normalized_names": [
+        "molgen"
+      ]
+    },
+    {
+      "id": "bfm-molbert",
+      "store": "displayed",
+      "name": "MolBERT",
+      "modality": "molecule",
+      "normalized_names": [
+        "molbert"
+      ]
+    },
+    {
+      "id": "bfm-smi-ted-materials-smi-ted",
+      "store": "displayed",
+      "name": "SMI-TED (materials.smi-ted)",
+      "modality": "molecule",
+      "normalized_names": [
+        "smitedmaterialssmited"
+      ]
+    },
+    {
+      "id": "bfm-smi-ssed-materials-smi-ssed",
+      "store": "displayed",
+      "name": "SMI-SSED (materials.smi_ssed)",
+      "modality": "molecule",
+      "normalized_names": [
+        "smissedmaterialssmissed"
+      ]
+    },
+    {
+      "id": "bfm-chemfm",
+      "store": "displayed",
+      "name": "ChemFM",
+      "modality": "molecule",
+      "normalized_names": [
+        "chemfm"
+      ]
+    },
+    {
+      "id": "bfm-mist",
+      "store": "displayed",
+      "name": "MIST",
+      "modality": "molecule",
+      "normalized_names": [
+        "mist"
+      ]
+    },
+    {
+      "id": "bfm-smiles-bert",
+      "store": "displayed",
+      "name": "SMILES-BERT",
+      "modality": "molecule",
+      "normalized_names": [
+        "smilesbert"
+      ]
+    },
+    {
+      "id": "bfm-cddd-continuous-and-data-driven-molecular-descriptors",
+      "store": "displayed",
+      "name": "CDDD (Continuous and Data-Driven molecular Descriptors)",
+      "modality": "molecule",
+      "normalized_names": [
+        "cdddcontinuousanddatadrivenmoleculardescriptors"
+      ]
+    },
+    {
+      "id": "bfm-state-arc-institute",
+      "store": "displayed",
+      "name": "STATE (Arc Institute)",
+      "modality": "singlecell",
+      "normalized_names": [
+        "statearcinstitute"
+      ]
+    },
+    {
+      "id": "bfm-tahoe-x1",
+      "store": "displayed",
+      "name": "Tahoe-x1",
+      "modality": "singlecell",
+      "normalized_names": [
+        "tahoex1"
+      ]
+    },
+    {
+      "id": "bfm-sclong",
+      "store": "displayed",
+      "name": "scLong",
+      "modality": "singlecell",
+      "normalized_names": [
+        "sclong"
+      ]
+    },
+    {
+      "id": "bfm-sctab",
+      "store": "displayed",
+      "name": "scTab",
+      "modality": "singlecell",
+      "normalized_names": [
+        "sctab"
+      ]
+    },
+    {
+      "id": "bfm-genept",
+      "store": "displayed",
+      "name": "GenePT",
+      "modality": "singlecell",
+      "normalized_names": [
+        "genept"
+      ]
+    },
+    {
+      "id": "bfm-scelmo",
+      "store": "displayed",
+      "name": "scELMo",
+      "modality": "platform",
+      "normalized_names": [
+        "scelmo"
+      ]
+    },
+    {
+      "id": "bfm-langcell",
+      "store": "displayed",
+      "name": "LangCell",
+      "modality": "singlecell",
+      "normalized_names": [
+        "langcell"
+      ]
+    },
+    {
+      "id": "bfm-cellwhisperer",
+      "store": "displayed",
+      "name": "CellWhisperer",
+      "modality": "singlecell",
+      "normalized_names": [
+        "cellwhisperer"
+      ]
+    },
+    {
+      "id": "bfm-c2s-scale-cell2sentence-scale",
+      "store": "displayed",
+      "name": "C2S-Scale (Cell2Sentence-Scale)",
+      "modality": "singlecell",
+      "normalized_names": [
+        "c2sscalecell2sentencescale"
+      ]
+    },
+    {
+      "id": "bfm-teddy",
+      "store": "displayed",
+      "name": "TEDDY",
+      "modality": "singlecell",
+      "normalized_names": [
+        "teddy"
+      ]
+    },
+    {
+      "id": "bfm-cellvq",
+      "store": "displayed",
+      "name": "CellVQ",
+      "modality": "singlecell",
+      "normalized_names": [
+        "cellvq"
+      ]
+    },
+    {
+      "id": "bfm-regformer",
+      "store": "displayed",
+      "name": "RegFormer",
+      "modality": "singlecell",
+      "normalized_names": [
+        "regformer"
+      ]
+    },
+    {
+      "id": "bfm-scprint-2",
+      "store": "displayed",
+      "name": "scPRINT-2",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scprint2"
+      ]
+    },
+    {
+      "id": "bfm-sclinguist",
+      "store": "displayed",
+      "name": "scLinguist",
+      "modality": "singlecell",
+      "normalized_names": [
+        "sclinguist"
+      ]
+    },
+    {
+      "id": "bfm-captain",
+      "store": "displayed",
+      "name": "CAPTAIN",
+      "modality": "singlecell",
+      "normalized_names": [
+        "captain"
+      ]
+    },
+    {
+      "id": "bfm-scconcept",
+      "store": "displayed",
+      "name": "scConcept",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scconcept"
+      ]
+    },
+    {
+      "id": "bfm-pulsar",
+      "store": "displayed",
+      "name": "PULSAR",
+      "modality": "singlecell",
+      "normalized_names": [
+        "pulsar"
+      ]
+    },
+    {
+      "id": "bfm-stack-arc-institute",
+      "store": "displayed",
+      "name": "Stack (Arc Institute)",
+      "modality": "singlecell",
+      "normalized_names": [
+        "stackarcinstitute"
+      ]
+    },
+    {
+      "id": "bfm-sc-mamba2",
+      "store": "displayed",
+      "name": "SC-MAMBA2",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scmamba2"
+      ]
+    },
+    {
+      "id": "bfm-uni-uni2-h",
+      "store": "displayed",
+      "name": "UNI / UNI2-h",
+      "modality": "spatial",
+      "normalized_names": [
+        "uniuni2h"
+      ]
+    },
+    {
+      "id": "bfm-prov-gigapath",
+      "store": "displayed",
+      "name": "Prov-GigaPath",
+      "modality": "spatial",
+      "normalized_names": [
+        "provgigapath"
+      ]
+    },
+    {
+      "id": "bfm-conch",
+      "store": "displayed",
+      "name": "CONCH",
+      "modality": "spatial",
+      "normalized_names": [
+        "conch"
+      ]
+    },
+    {
+      "id": "bfm-titan",
+      "store": "displayed",
+      "name": "TITAN",
+      "modality": "spatial",
+      "normalized_names": [
+        "titan"
+      ]
+    },
+    {
+      "id": "bfm-phikon-phikon-v2",
+      "store": "displayed",
+      "name": "Phikon / Phikon-v2",
+      "modality": "spatial",
+      "normalized_names": [
+        "phikonphikonv2"
+      ]
+    },
+    {
+      "id": "bfm-musk",
+      "store": "displayed",
+      "name": "MUSK",
+      "modality": "spatial",
+      "normalized_names": [
+        "musk"
+      ]
+    },
+    {
+      "id": "bfm-chief",
+      "store": "displayed",
+      "name": "CHIEF",
+      "modality": "spatial",
+      "normalized_names": [
+        "chief"
+      ]
+    },
+    {
+      "id": "bfm-hibou-hibou-b-hibou-l",
+      "store": "displayed",
+      "name": "Hibou (Hibou-B / Hibou-L)",
+      "modality": "spatial",
+      "normalized_names": [
+        "hibouhiboubhiboul"
+      ]
+    },
+    {
+      "id": "bfm-prism",
+      "store": "displayed",
+      "name": "PRISM",
+      "modality": "spatial",
+      "normalized_names": [
+        "prism"
+      ]
+    },
+    {
+      "id": "bfm-midnight-midnight-12k-midnight-92k",
+      "store": "displayed",
+      "name": "Midnight (Midnight-12k / Midnight-92k)",
+      "modality": "spatial",
+      "normalized_names": [
+        "midnightmidnight12kmidnight92k"
+      ]
+    },
+    {
+      "id": "bfm-gpfm-generalizable-pathology-foundation-model",
+      "store": "displayed",
+      "name": "GPFM (Generalizable Pathology Foundation Model)",
+      "modality": "spatial",
+      "normalized_names": [
+        "gpfmgeneralizablepathologyfoundationmodel"
+      ]
+    },
+    {
+      "id": "bfm-openphenom-s-16-phenom-family",
+      "store": "displayed",
+      "name": "OpenPhenom-S/16 (Phenom family)",
+      "modality": "spatial",
+      "normalized_names": [
+        "openphenoms16phenomfamily"
+      ]
+    },
+    {
+      "id": "bfm-subcell",
+      "store": "displayed",
+      "name": "SubCell",
+      "modality": "spatial",
+      "normalized_names": [
+        "subcell"
+      ]
+    },
+    {
+      "id": "bfm-cell-dino",
+      "store": "displayed",
+      "name": "Cell-DINO",
+      "modality": "spatial",
+      "normalized_names": [
+        "celldino"
+      ]
+    },
+    {
+      "id": "bfm-cell-painting-cnn-deepprofiler-model",
+      "store": "displayed",
+      "name": "Cell Painting CNN (DeepProfiler model)",
+      "modality": "spatial",
+      "normalized_names": [
+        "cellpaintingcnndeepprofilermodel"
+      ]
+    },
+    {
+      "id": "bfm-nicheformer",
+      "store": "displayed",
+      "name": "Nicheformer",
+      "modality": "spatial",
+      "normalized_names": [
+        "nicheformer"
+      ]
+    },
+    {
+      "id": "bfm-scgpt-spatial",
+      "store": "displayed",
+      "name": "scGPT-spatial",
+      "modality": "spatial",
+      "normalized_names": [
+        "scgptspatial"
+      ]
+    },
+    {
+      "id": "bfm-mstar",
+      "store": "displayed",
+      "name": "mSTAR",
+      "modality": "spatial",
+      "normalized_names": [
+        "mstar"
+      ]
+    },
+    {
+      "id": "bfm-biomedgpt",
+      "store": "displayed",
+      "name": "BioMedGPT",
+      "modality": "multimodal",
+      "normalized_names": [
+        "biomedgpt"
+      ]
+    },
+    {
+      "id": "bfm-chatnt",
+      "store": "displayed",
+      "name": "ChatNT",
+      "modality": "multimodal",
+      "normalized_names": [
+        "chatnt"
+      ]
+    },
+    {
+      "id": "bfm-instructprotein",
+      "store": "displayed",
+      "name": "InstructProtein",
+      "modality": "multimodal",
+      "normalized_names": [
+        "instructprotein"
+      ]
+    },
+    {
+      "id": "bfm-prott3",
+      "store": "displayed",
+      "name": "ProtT3",
+      "modality": "multimodal",
+      "normalized_names": [
+        "prott3"
+      ]
+    },
+    {
+      "id": "bfm-mol-instructions",
+      "store": "displayed",
+      "name": "Mol-Instructions",
+      "modality": "benchmark",
+      "normalized_names": [
+        "molinstructions"
+      ]
+    },
+    {
+      "id": "bfm-prot2text",
+      "store": "displayed",
+      "name": "Prot2Text",
+      "modality": "multimodal",
+      "normalized_names": [
+        "prot2text"
+      ]
+    },
+    {
+      "id": "bfm-txgemma",
+      "store": "displayed",
+      "name": "TxGemma",
+      "modality": "multimodal",
+      "normalized_names": [
+        "txgemma"
+      ]
+    },
+    {
+      "id": "bfm-scchat",
+      "store": "displayed",
+      "name": "scChat",
+      "modality": "platform",
+      "normalized_names": [
+        "scchat"
+      ]
+    },
+    {
+      "id": "bfm-tamarind-bio",
+      "store": "displayed",
+      "name": "Tamarind Bio",
+      "modality": "platform",
+      "normalized_names": [
+        "tamarindbio"
+      ]
+    },
+    {
+      "id": "bfm-neurosnap",
+      "store": "displayed",
+      "name": "Neurosnap",
+      "modality": "platform",
+      "normalized_names": [
+        "neurosnap"
+      ]
+    },
+    {
+      "id": "bfm-latch-bio",
+      "store": "displayed",
+      "name": "Latch Bio",
+      "modality": "platform",
+      "normalized_names": [
+        "latchbio"
+      ]
+    },
+    {
+      "id": "bfm-ginkgo-model-api-aa-0",
+      "store": "displayed",
+      "name": "Ginkgo Model API (AA-0)",
+      "modality": "platform",
+      "normalized_names": [
+        "ginkgomodelapiaa0"
+      ]
+    },
+    {
+      "id": "bfm-proteingym",
+      "store": "displayed",
+      "name": "ProteinGym",
+      "modality": "benchmark",
+      "normalized_names": [
+        "proteingym"
+      ]
+    },
+    {
+      "id": "bfm-bend",
+      "store": "displayed",
+      "name": "BEND",
+      "modality": "benchmark",
+      "normalized_names": [
+        "bend"
+      ]
+    },
+    {
+      "id": "bfm-genomic-benchmarks",
+      "store": "displayed",
+      "name": "Genomic Benchmarks",
+      "modality": "benchmark",
+      "normalized_names": [
+        "genomicbenchmarks"
+      ]
+    },
+    {
+      "id": "bfm-sceval",
+      "store": "displayed",
+      "name": "scEval",
+      "modality": "benchmark",
+      "normalized_names": [
+        "sceval"
+      ]
+    },
+    {
+      "id": "bfm-open-problems-in-single-cell-analysis",
+      "store": "displayed",
+      "name": "Open Problems in Single-Cell Analysis",
+      "modality": "benchmark",
+      "normalized_names": [
+        "openproblemsinsinglecellanalysis"
+      ]
+    },
+    {
+      "id": "bfm-proteinbench",
+      "store": "displayed",
+      "name": "ProteinBench",
+      "modality": "benchmark",
+      "normalized_names": [
+        "proteinbench"
+      ]
+    },
+    {
+      "id": "bfm-therapeutics-data-commons-tdc",
+      "store": "displayed",
+      "name": "Therapeutics Data Commons (TDC)",
+      "modality": "benchmark",
+      "normalized_names": [
+        "therapeuticsdatacommonstdc"
+      ]
+    },
+    {
+      "id": "bfm-genslms",
+      "store": "displayed",
+      "name": "GenSLMs",
+      "modality": "dna",
+      "normalized_names": [
+        "genslms"
+      ]
+    },
+    {
+      "id": "bfm-metagene-1",
+      "store": "displayed",
+      "name": "METAGENE-1",
+      "modality": "dna",
+      "normalized_names": [
+        "metagene1"
+      ]
+    },
+    {
+      "id": "bfm-cpgpt",
+      "store": "displayed",
+      "name": "CpGPT",
+      "modality": "dna",
+      "normalized_names": [
+        "cpgpt"
+      ]
+    },
+    {
+      "id": "bfm-methylgpt",
+      "store": "displayed",
+      "name": "MethylGPT",
+      "modality": "dna",
+      "normalized_names": [
+        "methylgpt"
+      ]
+    },
+    {
+      "id": "bfm-hicfoundation",
+      "store": "displayed",
+      "name": "HiCFoundation",
+      "modality": "dna",
+      "normalized_names": [
+        "hicfoundation"
+      ]
+    },
+    {
+      "id": "bfm-phylogpn",
+      "store": "displayed",
+      "name": "PhyloGPN",
+      "modality": "dna",
+      "normalized_names": [
+        "phylogpn"
+      ]
+    },
+    {
+      "id": "bfm-aido-dna",
+      "store": "displayed",
+      "name": "AIDO.DNA",
+      "modality": "dna",
+      "normalized_names": [
+        "aidodna"
+      ]
+    },
+    {
+      "id": "bfm-genos",
+      "store": "displayed",
+      "name": "Genos",
+      "modality": "dna",
+      "normalized_names": [
+        "genos"
+      ]
+    },
+    {
+      "id": "bfm-genos-m",
+      "store": "displayed",
+      "name": "Genos-m",
+      "modality": "dna",
+      "normalized_names": [
+        "genosm"
+      ]
+    },
+    {
+      "id": "bfm-epiagent",
+      "store": "displayed",
+      "name": "EpiAgent",
+      "modality": "singlecell",
+      "normalized_names": [
+        "epiagent"
+      ]
+    },
+    {
+      "id": "bfm-eva",
+      "store": "displayed",
+      "name": "EVA",
+      "modality": "rna",
+      "normalized_names": [
+        "eva"
+      ]
+    },
+    {
+      "id": "bfm-exai-1",
+      "store": "displayed",
+      "name": "Exai-1",
+      "modality": "rna",
+      "normalized_names": [
+        "exai1"
+      ]
+    },
+    {
+      "id": "bfm-proteina",
+      "store": "displayed",
+      "name": "Proteina",
+      "modality": "protein",
+      "normalized_names": [
+        "proteina"
+      ]
+    },
+    {
+      "id": "bfm-la-proteina",
+      "store": "displayed",
+      "name": "La-Proteina",
+      "modality": "protein",
+      "normalized_names": [
+        "laproteina"
+      ]
+    },
+    {
+      "id": "bfm-proteina-complexa",
+      "store": "displayed",
+      "name": "Proteina-Complexa",
+      "modality": "complex",
+      "normalized_names": [
+        "proteinacomplexa"
+      ]
+    },
+    {
+      "id": "bfm-foldflow-2",
+      "store": "displayed",
+      "name": "FoldFlow-2",
+      "modality": "protein",
+      "normalized_names": [
+        "foldflow2"
+      ]
+    },
+    {
+      "id": "bfm-iggm",
+      "store": "displayed",
+      "name": "IgGM",
+      "modality": "protein",
+      "normalized_names": [
+        "iggm"
+      ]
+    },
+    {
+      "id": "bfm-ablingua",
+      "store": "displayed",
+      "name": "AbLingua",
+      "modality": "protein",
+      "normalized_names": [
+        "ablingua"
+      ]
+    },
+    {
+      "id": "bfm-sceptr",
+      "store": "displayed",
+      "name": "SCEPTR",
+      "modality": "protein",
+      "normalized_names": [
+        "sceptr"
+      ]
+    },
+    {
+      "id": "bfm-mammal",
+      "store": "displayed",
+      "name": "MAMMAL",
+      "modality": "multimodal",
+      "normalized_names": [
+        "mammal"
+      ]
+    },
+    {
+      "id": "bfm-intellifold-2",
+      "store": "displayed",
+      "name": "IntelliFold-2",
+      "modality": "complex",
+      "normalized_names": [
+        "intellifold2"
+      ]
+    },
+    {
+      "id": "bfm-placer",
+      "store": "displayed",
+      "name": "PLACER",
+      "modality": "complex",
+      "normalized_names": [
+        "placer"
+      ]
+    },
+    {
+      "id": "bfm-atomica",
+      "store": "displayed",
+      "name": "ATOMICA",
+      "modality": "complex",
+      "normalized_names": [
+        "atomica"
+      ]
+    },
+    {
+      "id": "bfm-pharmolixfm",
+      "store": "displayed",
+      "name": "PharMolixFM",
+      "modality": "complex",
+      "normalized_names": [
+        "pharmolixfm"
+      ]
+    },
+    {
+      "id": "bfm-coati",
+      "store": "displayed",
+      "name": "COATI",
+      "modality": "molecule",
+      "normalized_names": [
+        "coati"
+      ]
+    },
+    {
+      "id": "bfm-gem-chemrl-gem",
+      "store": "displayed",
+      "name": "GEM (ChemRL-GEM)",
+      "modality": "molecule",
+      "normalized_names": [
+        "gemchemrlgem"
+      ]
+    },
+    {
+      "id": "bfm-chemgpt",
+      "store": "displayed",
+      "name": "ChemGPT",
+      "modality": "molecule",
+      "normalized_names": [
+        "chemgpt"
+      ]
+    },
+    {
+      "id": "bfm-chemdfm",
+      "store": "displayed",
+      "name": "ChemDFM",
+      "modality": "molecule",
+      "normalized_names": [
+        "chemdfm"
+      ]
+    },
+    {
+      "id": "bfm-nafm",
+      "store": "displayed",
+      "name": "NaFM",
+      "modality": "molecule",
+      "normalized_names": [
+        "nafm"
+      ]
+    },
+    {
+      "id": "bfm-molfm",
+      "store": "displayed",
+      "name": "MolFM",
+      "modality": "molecule",
+      "normalized_names": [
+        "molfm"
+      ]
+    },
+    {
+      "id": "bfm-novae",
+      "store": "displayed",
+      "name": "Novae",
+      "modality": "spatial",
+      "normalized_names": [
+        "novae"
+      ]
+    },
+    {
+      "id": "bfm-maxtoki",
+      "store": "displayed",
+      "name": "MaxToki",
+      "modality": "singlecell",
+      "normalized_names": [
+        "maxtoki"
+      ]
+    },
+    {
+      "id": "bfm-procyon",
+      "store": "displayed",
+      "name": "ProCyon",
+      "modality": "multimodal",
+      "normalized_names": [
+        "procyon"
+      ]
+    },
+    {
+      "id": "bfm-instructbiomol",
+      "store": "displayed",
+      "name": "InstructBioMol",
+      "modality": "multimodal",
+      "normalized_names": [
+        "instructbiomol"
+      ]
+    },
+    {
+      "id": "bfm-naturelm",
+      "store": "displayed",
+      "name": "NatureLM",
+      "modality": "multimodal",
+      "normalized_names": [
+        "naturelm"
+      ]
+    },
+    {
+      "id": "bfm-biobridge",
+      "store": "displayed",
+      "name": "BioBridge",
+      "modality": "multimodal",
+      "normalized_names": [
+        "biobridge"
+      ]
+    },
+    {
+      "id": "bfm-openmedlab",
+      "store": "displayed",
+      "name": "OpenMEDLab",
+      "modality": "platform",
+      "normalized_names": [
+        "openmedlab"
+      ]
+    },
+    {
+      "id": "bfm-amazon-bio-discovery",
+      "store": "displayed",
+      "name": "Amazon Bio Discovery",
+      "modality": "platform",
+      "normalized_names": [
+        "amazonbiodiscovery"
+      ]
+    },
+    {
+      "id": "bfm-latent-labs-latent-x-latent-x2",
+      "store": "displayed",
+      "name": "Latent Labs (Latent-X / Latent-X2)",
+      "modality": "protein",
+      "normalized_names": [
+        "latentlabslatentxlatentx2"
+      ]
+    },
+    {
+      "id": "bfm-omiclip-loki",
+      "store": "displayed",
+      "name": "OmiCLIP / Loki",
+      "modality": "spatial",
+      "normalized_names": [
+        "omicliploki"
+      ]
+    },
+    {
+      "id": "bfm-kronos",
+      "store": "displayed",
+      "name": "KRONOS",
+      "modality": "spatial",
+      "normalized_names": [
+        "kronos"
+      ]
+    },
+    {
+      "id": "bfm-virtues",
+      "store": "displayed",
+      "name": "VirTues",
+      "modality": "spatial",
+      "normalized_names": [
+        "virtues"
+      ]
+    },
+    {
+      "id": "bfm-stofm",
+      "store": "displayed",
+      "name": "SToFM",
+      "modality": "spatial",
+      "normalized_names": [
+        "stofm"
+      ]
+    },
+    {
+      "id": "bfm-storm",
+      "store": "displayed",
+      "name": "STORM",
+      "modality": "spatial",
+      "normalized_names": [
+        "storm"
+      ]
+    },
+    {
+      "id": "bfm-pathorchestra",
+      "store": "displayed",
+      "name": "PathOrchestra",
+      "modality": "spatial",
+      "normalized_names": [
+        "pathorchestra"
+      ]
+    },
+    {
+      "id": "bfm-cellsam",
+      "store": "displayed",
+      "name": "CellSAM",
+      "modality": "spatial",
+      "normalized_names": [
+        "cellsam"
+      ]
+    },
+    {
+      "id": "bfm-tape-tasks-assessing-protein-embeddings",
+      "store": "displayed",
+      "name": "TAPE (Tasks Assessing Protein Embeddings)",
+      "modality": "benchmark",
+      "normalized_names": [
+        "tapetasksassessingproteinembeddings"
+      ]
+    },
+    {
+      "id": "bfm-peer-protein-sequence-understanding",
+      "store": "displayed",
+      "name": "PEER (Protein sEquence undERstanding)",
+      "modality": "benchmark",
+      "normalized_names": [
+        "peerproteinsequenceunderstanding"
+      ]
+    },
+    {
+      "id": "bfm-genbench-genomic-foundation-models",
+      "store": "displayed",
+      "name": "GenBench (Genomic Foundation Models)",
+      "modality": "benchmark",
+      "normalized_names": [
+        "genbenchgenomicfoundationmodels"
+      ]
+    },
+    {
+      "id": "bfm-dnalongbench",
+      "store": "displayed",
+      "name": "DNALONGBENCH",
+      "modality": "benchmark",
+      "normalized_names": [
+        "dnalongbench"
+      ]
+    },
+    {
+      "id": "bfm-nabench",
+      "store": "displayed",
+      "name": "NABench",
+      "modality": "benchmark",
+      "normalized_names": [
+        "nabench"
+      ]
+    },
+    {
+      "id": "bfm-rnagym",
+      "store": "displayed",
+      "name": "RNAGym",
+      "modality": "benchmark",
+      "normalized_names": [
+        "rnagym"
+      ]
+    },
+    {
+      "id": "bfm-perteval-scfm",
+      "store": "displayed",
+      "name": "PertEval-scFM",
+      "modality": "benchmark",
+      "normalized_names": [
+        "pertevalscfm"
+      ]
+    },
+    {
+      "id": "bfm-pathbench",
+      "store": "displayed",
+      "name": "PathBench",
+      "modality": "benchmark",
+      "normalized_names": [
+        "pathbench"
+      ]
+    },
+    {
+      "id": "bfm-comet-multi-omics-evaluation",
+      "store": "displayed",
+      "name": "COMET (Multi-Omics Evaluation)",
+      "modality": "benchmark",
+      "normalized_names": [
+        "cometmultiomicsevaluation"
+      ]
+    },
+    {
+      "id": "bfm-space",
+      "store": "displayed",
+      "name": "SPACE",
+      "modality": "dna",
+      "normalized_names": [
+        "space"
+      ]
+    },
+    {
+      "id": "bfm-bmfm-dna",
+      "store": "displayed",
+      "name": "BMFM-DNA",
+      "modality": "dna",
+      "normalized_names": [
+        "bmfmdna"
+      ]
+    },
+    {
+      "id": "bfm-omni-dna",
+      "store": "displayed",
+      "name": "Omni-DNA",
+      "modality": "dna",
+      "normalized_names": [
+        "omnidna"
+      ]
+    },
+    {
+      "id": "bfm-nucel",
+      "store": "displayed",
+      "name": "NucEL",
+      "modality": "dna",
+      "normalized_names": [
+        "nucel"
+      ]
+    },
+    {
+      "id": "bfm-d3lm",
+      "store": "displayed",
+      "name": "D3LM",
+      "modality": "dna",
+      "normalized_names": [
+        "d3lm"
+      ]
+    },
+    {
+      "id": "bfm-onegenome-rice",
+      "store": "displayed",
+      "name": "OneGenome-Rice",
+      "modality": "dna",
+      "normalized_names": [
+        "ogr",
+        "onegenomerice"
+      ]
+    },
+    {
+      "id": "bfm-hydrarna",
+      "store": "displayed",
+      "name": "HydraRNA",
+      "modality": "rna",
+      "normalized_names": [
+        "hydrarna"
+      ]
+    },
+    {
+      "id": "bfm-structrfm",
+      "store": "displayed",
+      "name": "structRFM",
+      "modality": "rna",
+      "normalized_names": [
+        "structrfm"
+      ]
+    },
+    {
+      "id": "bfm-codonfm-encodon",
+      "store": "displayed",
+      "name": "CodonFM / EnCodon",
+      "modality": "rna",
+      "normalized_names": [
+        "codonfm",
+        "codonfmencodon",
+        "encodon"
+      ]
+    },
+    {
+      "id": "bfm-ankh3",
+      "store": "displayed",
+      "name": "Ankh3",
+      "modality": "protein",
+      "normalized_names": [
+        "ankh3"
+      ]
+    },
+    {
+      "id": "bfm-esm-s",
+      "store": "displayed",
+      "name": "ESM-S",
+      "modality": "protein",
+      "normalized_names": [
+        "esms"
+      ]
+    },
+    {
+      "id": "bfm-proust",
+      "store": "displayed",
+      "name": "Proust",
+      "modality": "protein",
+      "normalized_names": [
+        "proust"
+      ]
+    },
+    {
+      "id": "bfm-ab-roberta",
+      "store": "displayed",
+      "name": "Ab-RoBERTa",
+      "modality": "protein",
+      "normalized_names": [
+        "abroberta"
+      ]
+    },
+    {
+      "id": "bfm-oneprot",
+      "store": "displayed",
+      "name": "OneProt",
+      "modality": "multimodal",
+      "normalized_names": [
+        "oneprot"
+      ]
+    },
+    {
+      "id": "bfm-protdat",
+      "store": "displayed",
+      "name": "ProtDAT",
+      "modality": "multimodal",
+      "normalized_names": [
+        "protdat"
+      ]
+    },
+    {
+      "id": "bfm-esmfold2",
+      "store": "displayed",
+      "name": "ESMFold2",
+      "modality": "complex",
+      "normalized_names": [
+        "esmfold2"
+      ]
+    },
+    {
+      "id": "bfm-opendde-preview",
+      "store": "displayed",
+      "name": "OpenDDE Preview",
+      "modality": "complex",
+      "normalized_names": [
+        "openddepreview"
+      ]
+    },
+    {
+      "id": "bfm-pocketxmol",
+      "store": "displayed",
+      "name": "PocketXMol",
+      "modality": "molecule",
+      "normalized_names": [
+        "pocketxmol"
+      ]
+    },
+    {
+      "id": "bfm-suiren-1",
+      "store": "displayed",
+      "name": "Suiren-1.0",
+      "modality": "molecule",
+      "normalized_names": [
+        "suiren10",
+        "suirenbase",
+        "suirenconfavg",
+        "suirendimer"
+      ]
+    },
+    {
+      "id": "bfm-ubio-molfm",
+      "store": "displayed",
+      "name": "UBio-MolFM",
+      "modality": "molecule",
+      "normalized_names": [
+        "ubiomolfm"
+      ]
+    },
+    {
+      "id": "bfm-uma",
+      "store": "displayed",
+      "name": "UMA",
+      "modality": "molecule",
+      "normalized_names": [
+        "uma"
+      ]
+    },
+    {
+      "id": "bfm-seedfold",
+      "store": "displayed",
+      "name": "SeedFold / SeedFold-Linear",
+      "modality": "complex",
+      "normalized_names": [
+        "seedfold",
+        "seedfoldlinear",
+        "seedfoldseedfoldlinear"
+      ]
+    },
+    {
+      "id": "bfm-boltzgen",
+      "store": "displayed",
+      "name": "BoltzGen",
+      "modality": "protein",
+      "normalized_names": [
+        "boltzgen"
+      ]
+    },
+    {
+      "id": "bfm-pxdesign",
+      "store": "displayed",
+      "name": "PXDesign",
+      "modality": "protein",
+      "normalized_names": [
+        "pxdesign"
+      ]
+    },
+    {
+      "id": "bfm-boltzmol-1",
+      "store": "displayed",
+      "name": "BoltzMol-1",
+      "modality": "molecule",
+      "normalized_names": [
+        "boltzmol1"
+      ]
+    },
+    {
+      "id": "bfm-boltzprot-1",
+      "store": "displayed",
+      "name": "BoltzProt-1",
+      "modality": "protein",
+      "normalized_names": [
+        "boltzprot1"
+      ]
+    },
+    {
+      "id": "bfm-seedproteo",
+      "store": "displayed",
+      "name": "SeedProteo",
+      "modality": "protein",
+      "normalized_names": [
+        "seedproteo"
+      ]
+    },
+    {
+      "id": "bfm-alphaproteo",
+      "store": "displayed",
+      "name": "AlphaProteo",
+      "modality": "protein",
+      "normalized_names": [
+        "alphaproteo"
+      ]
+    },
+    {
+      "id": "bfm-rosetta-foundry",
+      "store": "displayed",
+      "name": "Rosetta Foundry",
+      "modality": "platform",
+      "normalized_names": [
+        "rosettafoundry"
+      ]
+    },
+    {
+      "id": "bfm-foldbench",
+      "store": "displayed",
+      "name": "FoldBench",
+      "modality": "benchmark",
+      "normalized_names": [
+        "foldbench"
+      ]
+    },
+    {
+      "id": "bfm-pxmeter",
+      "store": "displayed",
+      "name": "PXMeter",
+      "modality": "benchmark",
+      "normalized_names": [
+        "pxmeter"
+      ]
+    },
+    {
+      "id": "bfm-pfmbench",
+      "store": "displayed",
+      "name": "PFMBench",
+      "modality": "benchmark",
+      "normalized_names": [
+        "pfmbench"
+      ]
+    },
+    {
+      "id": "bfm-protein-se3",
+      "store": "displayed",
+      "name": "Protein-SE(3)",
+      "modality": "benchmark",
+      "normalized_names": [
+        "proteinse3"
+      ]
+    },
+    {
+      "id": "bfm-esm-atlas",
+      "store": "displayed",
+      "name": "ESM Atlas",
+      "modality": "platform",
+      "normalized_names": [
+        "esmatlas"
+      ]
+    },
+    {
+      "id": "bfm-biomatrix",
+      "store": "displayed",
+      "name": "BioMatrix",
+      "modality": "multimodal",
+      "normalized_names": [
+        "biomatrix"
+      ]
+    },
+    {
+      "id": "bfm-genejepa",
+      "store": "displayed",
+      "name": "GeneJEPA",
+      "modality": "singlecell",
+      "normalized_names": [
+        "genejepa"
+      ]
+    },
+    {
+      "id": "bfm-eva-scienta",
+      "store": "displayed",
+      "name": "EVA (Scienta)",
+      "modality": "multimodal",
+      "normalized_names": [
+        "evascienta"
+      ]
+    },
+    {
+      "id": "bfm-genbio-pathfm",
+      "store": "displayed",
+      "name": "GenBio-PathFM",
+      "modality": "spatial",
+      "normalized_names": [
+        "genbiopathfm"
+      ]
+    },
+    {
+      "id": "bfm-squall",
+      "store": "displayed",
+      "name": "SQUALL",
+      "modality": "spatial",
+      "normalized_names": [
+        "squall"
+      ]
+    },
+    {
+      "id": "bfm-spatialwhisperer",
+      "store": "displayed",
+      "name": "SpatialWhisperer",
+      "modality": "spatial",
+      "normalized_names": [
+        "spatialwhisperer"
+      ]
+    },
+    {
+      "id": "bfm-deepspot-m",
+      "store": "displayed",
+      "name": "DeepSpot-M",
+      "modality": "spatial",
+      "normalized_names": [
+        "deepspotm"
+      ]
+    },
+    {
+      "id": "bfm-h2o-spatial",
+      "store": "displayed",
+      "name": "H2O",
+      "modality": "spatial",
+      "normalized_names": [
+        "h2o"
+      ]
+    },
+    {
+      "id": "bfm-lemon",
+      "store": "displayed",
+      "name": "LEMON",
+      "modality": "spatial",
+      "normalized_names": [
+        "lemon"
+      ]
+    },
+    {
+      "id": "bfm-mupd",
+      "store": "displayed",
+      "name": "MuPD (Multimodal Pathology Diffusion)",
+      "modality": "spatial",
+      "normalized_names": [
+        "mupad",
+        "mupdmultimodalpathologydiffusion"
+      ]
+    },
+    {
+      "id": "bfm-bioairepo",
+      "store": "displayed",
+      "name": "BioAIrepo",
+      "modality": "platform",
+      "normalized_names": [
+        "bioairepo"
+      ]
+    },
+    {
+      "id": "bfm-vcbench",
+      "store": "displayed",
+      "name": "VCBench",
+      "modality": "benchmark",
+      "normalized_names": [
+        "vcbench"
+      ]
+    },
+    {
+      "id": "bfm-scmbench",
+      "store": "displayed",
+      "name": "SCMBench",
+      "modality": "benchmark",
+      "normalized_names": [
+        "scmbench"
+      ]
+    },
+    {
+      "id": "bfm-spapath-bench",
+      "store": "displayed",
+      "name": "SpaPath-Bench",
+      "modality": "benchmark",
+      "normalized_names": [
+        "spapathbench"
+      ]
+    },
+    {
+      "id": "bfm-gpt-rosalind",
+      "store": "displayed",
+      "name": "GPT-Rosalind",
+      "modality": "multimodal",
+      "normalized_names": [
+        "gptrosalind"
+      ]
+    },
+    {
+      "id": "bfm-mimic-polymathic",
+      "store": "displayed",
+      "name": "MIMIC",
+      "modality": "multimodal",
+      "normalized_names": [
+        "mimic"
+      ]
+    },
+    {
+      "id": "bfm-holocell",
+      "store": "displayed",
+      "name": "HoloCell",
+      "modality": "singlecell",
+      "normalized_names": [
+        "holocell"
+      ]
+    },
+    {
+      "id": "bfm-cellos",
+      "store": "displayed",
+      "name": "CellOS",
+      "modality": "singlecell",
+      "normalized_names": [
+        "cellos"
+      ]
+    },
+    {
+      "id": "bfm-omnicell-bgi",
+      "store": "displayed",
+      "name": "OmniCell",
+      "modality": "spatial",
+      "normalized_names": [
+        "omnicell"
+      ]
+    },
+    {
+      "id": "bfm-bioreason-pro",
+      "store": "displayed",
+      "name": "BioReason-Pro",
+      "modality": "multimodal",
+      "normalized_names": [
+        "bioreasonpro"
+      ]
+    },
+    {
+      "id": "bfm-geneb",
+      "store": "displayed",
+      "name": "GENEB",
+      "modality": "benchmark",
+      "normalized_names": [
+        "geneb",
+        "genomicembeddingbenchmark"
+      ]
+    },
+    {
+      "id": "bfm-pg-llm",
+      "store": "displayed",
+      "name": "PG-LLM",
+      "modality": "benchmark",
+      "normalized_names": [
+        "pgllm",
+        "proteingymllm"
+      ]
+    },
+    {
+      "id": "bfm-nesso-1",
+      "store": "displayed",
+      "name": "Nesso-1",
+      "modality": "complex",
+      "normalized_names": [
+        "nesso",
+        "nesso1"
+      ]
+    },
+    {
+      "id": "bfm-promera",
+      "store": "displayed",
+      "name": "Promera",
+      "modality": "complex",
+      "normalized_names": [
+        "promera"
+      ]
+    },
+    {
+      "id": "bfm-decaf",
+      "store": "displayed",
+      "name": "DeCAF (DeCAF-Boltz)",
+      "modality": "complex",
+      "normalized_names": [
+        "decafboltz",
+        "decafdecafboltz"
+      ]
+    },
+    {
+      "id": "bfm-fennix-bio1",
+      "store": "displayed",
+      "name": "FeNNix-Bio1",
+      "modality": "molecule",
+      "normalized_names": [
+        "fennixbio1",
+        "fennixbio1m",
+        "fennixbio1s"
+      ]
+    },
+    {
+      "id": "bfm-chemate",
+      "store": "displayed",
+      "name": "CheMatE",
+      "modality": "molecule",
+      "normalized_names": [
+        "chemate",
+        "chematev0"
+      ]
+    },
+    {
+      "id": "bfm-molexar",
+      "store": "displayed",
+      "name": "Molexar",
+      "modality": "molecule",
+      "normalized_names": [
+        "molexar"
+      ]
+    },
+    {
+      "id": "bfm-novomolgen",
+      "store": "displayed",
+      "name": "NovoMolGen",
+      "modality": "molecule",
+      "normalized_names": [
+        "novomolgen"
+      ]
+    },
+    {
+      "id": "bfm-reasyn",
+      "store": "displayed",
+      "name": "ReaSyn (NV-ReaSyn)",
+      "modality": "molecule",
+      "normalized_names": [
+        "nvreasyn",
+        "reasynnvreasyn"
+      ]
+    },
+    {
+      "id": "bfm-minimol",
+      "store": "displayed",
+      "name": "MiniMol",
+      "modality": "molecule",
+      "normalized_names": [
+        "minimol"
+      ]
+    },
+    {
+      "id": "bfm-chemeleon",
+      "store": "displayed",
+      "name": "CheMeleon",
+      "modality": "molecule",
+      "normalized_names": [
+        "chemeleon"
+      ]
+    },
+    {
+      "id": "bfm-marindna",
+      "store": "displayed",
+      "name": "MarinDNA",
+      "modality": "dna",
+      "normalized_names": [
+        "marindna"
+      ]
+    },
+    {
+      "id": "bfm-ceno",
+      "store": "displayed",
+      "name": "CENO",
+      "modality": "dna",
+      "normalized_names": [
+        "ceno",
+        "cenop"
+      ]
+    },
+    {
+      "id": "bfm-ldarnet",
+      "store": "displayed",
+      "name": "LDARNet",
+      "modality": "dna",
+      "normalized_names": [
+        "dnaadaptiverepresentationnetwork",
+        "ldarnet"
+      ]
+    },
+    {
+      "id": "bfm-carbon",
+      "store": "displayed",
+      "name": "Carbon (Carbon-500M / 3B / 8B)",
+      "modality": "dna",
+      "normalized_names": [
+        "carbon",
+        "carbon3b",
+        "carbon500m",
+        "carbon8b",
+        "carboncarbon500m3b8b"
+      ]
+    },
+    {
+      "id": "bfm-moderngena",
+      "store": "displayed",
+      "name": "ModernGENA (base / large)",
+      "modality": "dna",
+      "normalized_names": [
+        "moderngena",
+        "moderngenabaselarge"
+      ]
+    },
+    {
+      "id": "bfm-botanic-0",
+      "store": "displayed",
+      "name": "BOTANIC-0 (Botanic0-S / -M / -L)",
+      "modality": "dna",
+      "normalized_names": [
+        "botanic0",
+        "botanic0botanic0sml"
+      ]
+    },
+    {
+      "id": "bfm-mkb",
+      "store": "displayed",
+      "name": "MKB (Monkey King Bang)",
+      "modality": "multimodal",
+      "normalized_names": [
+        "mkb",
+        "mkbmonkeykingbang",
+        "monkeykingbang"
+      ]
+    },
+    {
+      "id": "bfm-mgm2",
+      "store": "displayed",
+      "name": "MGM2",
+      "modality": "multimodal",
+      "normalized_names": [
+        "mgm2",
+        "mgmv2"
+      ]
+    },
+    {
+      "id": "bfm-bionemo-agent-toolkit",
+      "store": "displayed",
+      "name": "NVIDIA BioNeMo Agent Toolkit",
+      "modality": "platform",
+      "normalized_names": [
+        "bionemoagenttoolkit",
+        "bionemoskills",
+        "nvidiabionemoagenttoolkit"
+      ]
+    },
+    {
+      "id": "bfm-boltz-lab",
+      "store": "displayed",
+      "name": "Boltz Lab / Boltz API",
+      "modality": "platform",
+      "normalized_names": [
+        "boltzapi",
+        "boltzlab",
+        "boltzlabboltzapi",
+        "boltzpbc"
+      ]
+    },
+    {
+      "id": "bfm-protgpt3",
+      "store": "displayed",
+      "name": "ProtGPT3",
+      "modality": "protein",
+      "normalized_names": [
+        "protgpt3"
+      ]
+    },
+    {
+      "id": "bfm-msa-pairformer",
+      "store": "displayed",
+      "name": "MSA Pairformer",
+      "modality": "protein",
+      "normalized_names": [
+        "msapairformer"
+      ]
+    },
+    {
+      "id": "bfm-prollama",
+      "store": "displayed",
+      "name": "ProLLaMA",
+      "modality": "protein",
+      "normalized_names": [
+        "prollama",
+        "prollamastage1"
+      ]
+    },
+    {
+      "id": "bfm-utrgen",
+      "store": "displayed",
+      "name": "UTRGen",
+      "modality": "rna",
+      "normalized_names": [
+        "utrgen"
+      ]
+    },
+    {
+      "id": "bfm-shifu-lmr",
+      "store": "displayed",
+      "name": "Shifu-LMR",
+      "modality": "rna",
+      "normalized_names": [
+        "lmr",
+        "shifu",
+        "shifulmr",
+        "shifulmrnano"
+      ]
+    },
+    {
+      "id": "bfm-numonomer",
+      "store": "displayed",
+      "name": "NUMonomer",
+      "modality": "rna",
+      "normalized_names": [
+        "numonomer"
+      ]
+    },
+    {
+      "id": "bfm-rnapro",
+      "store": "displayed",
+      "name": "RNAPro",
+      "modality": "rna",
+      "normalized_names": [
+        "rnapro"
+      ]
+    },
+    {
+      "id": "bfm-rnaelectra",
+      "store": "displayed",
+      "name": "RNAElectra",
+      "modality": "rna",
+      "normalized_names": [
+        "rnaelectra"
+      ]
+    },
+    {
+      "id": "bfm-dgrna",
+      "store": "displayed",
+      "name": "DGRNA",
+      "modality": "rna",
+      "normalized_names": [
+        "dgrna"
+      ]
+    },
+    {
+      "id": "bfm-ribonanzanet2",
+      "store": "displayed",
+      "name": "RibonanzaNet2",
+      "modality": "rna",
+      "normalized_names": [
+        "ribonanzanet2",
+        "rnet2"
+      ]
+    },
+    {
+      "id": "bfm-perturbgen",
+      "store": "displayed",
+      "name": "PerturbGen",
+      "modality": "singlecell",
+      "normalized_names": [
+        "perturbgen"
+      ]
+    },
+    {
+      "id": "bfm-prism2",
+      "store": "displayed",
+      "name": "PRISM2",
+      "modality": "spatial",
+      "normalized_names": [
+        "prism2"
+      ]
+    },
+    {
+      "id": "bfm-kronos2",
+      "store": "displayed",
+      "name": "KRONOS2",
+      "modality": "spatial",
+      "normalized_names": [
+        "kronos2",
+        "kronosv2"
+      ]
+    },
+    {
+      "id": "bfm-gigapath-flash",
+      "store": "displayed",
+      "name": "GigaPath-Flash",
+      "modality": "spatial",
+      "normalized_names": [
+        "gigapathflash",
+        "gigatimeflash",
+        "provgigapathflash"
+      ]
+    },
+    {
+      "id": "bfm-alice",
+      "store": "displayed",
+      "name": "ALICE",
+      "modality": "spatial",
+      "normalized_names": [
+        "alice"
+      ]
+    },
+    {
+      "id": "bfm-tissueformer",
+      "store": "displayed",
+      "name": "TissueFormer",
+      "modality": "spatial",
+      "normalized_names": [
+        "tissueformer"
+      ]
+    },
+    {
+      "id": "bfm-cellworld",
+      "store": "displayed",
+      "name": "CellWorld",
+      "modality": "spatial",
+      "normalized_names": [
+        "cellworld"
+      ]
+    },
+    {
+      "id": "bfm-seal",
+      "store": "displayed",
+      "name": "SEAL",
+      "modality": "spatial",
+      "normalized_names": [
+        "seal",
+        "spatialexpressionalignedlearning"
+      ]
+    },
+    {
+      "id": "bfm-spatialfusion",
+      "store": "displayed",
+      "name": "SpatialFusion",
+      "modality": "spatial",
+      "normalized_names": [
+        "spatialfusion"
+      ]
+    },
+    {
+      "id": "bfm-path-foundation",
+      "store": "displayed",
+      "name": "Path Foundation",
+      "modality": "spatial",
+      "normalized_names": [
+        "googlepathfoundation",
+        "pathfoundation"
+      ]
+    },
+    {
+      "id": "bfm-chemberta-3",
+      "store": "displayed",
+      "name": "ChemBERTa-3",
+      "modality": "platform",
+      "normalized_names": [
+        "chemberta3"
+      ]
+    },
+    {
+      "id": "bfm-virchow-virchow2-and-virchow2g",
+      "store": "displayed",
+      "name": "Virchow / Virchow2 (and Virchow2G)",
+      "modality": "spatial",
+      "normalized_names": [
+        "virchowvirchow2andvirchow2g"
+      ]
+    },
+    {
+      "id": "bfm-h-optimus-0-h-optimus-1",
+      "store": "displayed",
+      "name": "H-optimus-0 / H-optimus-1",
+      "modality": "spatial",
+      "normalized_names": [
+        "hoptimus0hoptimus1"
+      ]
+    },
+    {
+      "id": "bfm-mrna-fm-plantrna-fm",
+      "store": "held",
+      "name": "mRNA-FM / PlantRNA-FM",
+      "modality": "rna",
+      "normalized_names": [
+        "mrnafmplantrnafm"
+      ]
+    },
+    {
+      "id": "bfm-saturn",
+      "store": "held",
+      "name": "SATURN",
+      "modality": "singlecell",
+      "normalized_names": [
+        "saturn"
+      ]
+    },
+    {
+      "id": "bfm-xtrimogene",
+      "store": "held",
+      "name": "xTrimoGene",
+      "modality": "singlecell",
+      "normalized_names": [
+        "xtrimogene"
+      ]
+    },
+    {
+      "id": "bfm-scprotein",
+      "store": "held",
+      "name": "scPROTEIN",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scprotein"
+      ]
+    },
+    {
+      "id": "bfm-deepsea",
+      "store": "held",
+      "name": "DeepSEA",
+      "modality": "dna",
+      "normalized_names": [
+        "deepsea"
+      ]
+    },
+    {
+      "id": "bfm-chrombpnet",
+      "store": "held",
+      "name": "ChromBPNet",
+      "modality": "dna",
+      "normalized_names": [
+        "chrombpnet"
+      ]
+    },
+    {
+      "id": "bfm-mistral-dna",
+      "store": "held",
+      "name": "Mistral-DNA",
+      "modality": "dna",
+      "normalized_names": [
+        "mistraldna"
+      ]
+    },
+    {
+      "id": "bfm-florabert",
+      "store": "held",
+      "name": "FloraBERT",
+      "modality": "dna",
+      "normalized_names": [
+        "florabert"
+      ]
+    },
+    {
+      "id": "bfm-drfold",
+      "store": "held",
+      "name": "DRfold",
+      "modality": "rna",
+      "normalized_names": [
+        "drfold"
+      ]
+    },
+    {
+      "id": "bfm-framediff-frameflow-multiflow",
+      "store": "held",
+      "name": "FrameDiff / FrameFlow / Multiflow",
+      "modality": "protein",
+      "normalized_names": [
+        "framediffframeflowmultiflow"
+      ]
+    },
+    {
+      "id": "bfm-protriever",
+      "store": "held",
+      "name": "Protriever",
+      "modality": "protein",
+      "normalized_names": [
+        "protriever"
+      ]
+    },
+    {
+      "id": "bfm-protgps",
+      "store": "held",
+      "name": "ProtGPS",
+      "modality": "protein",
+      "normalized_names": [
+        "protgps"
+      ]
+    },
+    {
+      "id": "bfm-neuralplexer-and-neuralplexer3",
+      "store": "held",
+      "name": "NeuralPLexer (and NeuralPLexer3)",
+      "modality": "complex",
+      "normalized_names": [
+        "neuralplexerandneuralplexer3"
+      ]
+    },
+    {
+      "id": "bfm-uni-mol-docking-v2",
+      "store": "held",
+      "name": "Uni-Mol Docking V2",
+      "modality": "complex",
+      "normalized_names": [
+        "unimoldockingv2"
+      ]
+    },
+    {
+      "id": "bfm-abodybuilder3",
+      "store": "held",
+      "name": "ABodyBuilder3",
+      "modality": "protein",
+      "normalized_names": [
+        "abodybuilder3"
+      ]
+    },
+    {
+      "id": "bfm-scdiva",
+      "store": "held",
+      "name": "ScDiVa",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scdiva"
+      ]
+    },
+    {
+      "id": "bfm-tabula",
+      "store": "held",
+      "name": "Tabula",
+      "modality": "singlecell",
+      "normalized_names": [
+        "tabula"
+      ]
+    },
+    {
+      "id": "bfm-atlas-rudolfv-successor",
+      "store": "held",
+      "name": "Atlas (RudolfV successor)",
+      "modality": "spatial",
+      "normalized_names": [
+        "atlasrudolfvsuccessor"
+      ]
+    },
+    {
+      "id": "bfm-bioreason",
+      "store": "held",
+      "name": "BioReason",
+      "modality": "multimodal",
+      "normalized_names": [
+        "bioreason"
+      ]
+    },
+    {
+      "id": "bfm-openprotein-ai-poet-poet-2",
+      "store": "held",
+      "name": "OpenProtein.AI (PoET / PoET-2)",
+      "modality": "platform",
+      "normalized_names": [
+        "openproteinaipoetpoet2"
+      ]
+    },
+    {
+      "id": "bfm-pearl",
+      "store": "held",
+      "name": "Pearl",
+      "modality": "complex",
+      "normalized_names": [
+        "pearl"
+      ]
+    },
+    {
+      "id": "bfm-sctranslator",
+      "store": "held",
+      "name": "scTranslator",
+      "modality": "singlecell",
+      "normalized_names": [
+        "sctranslator"
+      ]
+    },
+    {
+      "id": "bfm-genecompass",
+      "store": "held",
+      "name": "GeneCompass",
+      "modality": "singlecell",
+      "normalized_names": [
+        "genecompass"
+      ]
+    },
+    {
+      "id": "bfm-hybridna",
+      "store": "held",
+      "name": "HybriDNA",
+      "modality": "dna",
+      "normalized_names": [
+        "hybridna"
+      ]
+    },
+    {
+      "id": "bfm-genemamba",
+      "store": "held",
+      "name": "GeneMamba",
+      "modality": "singlecell",
+      "normalized_names": [
+        "genemamba"
+      ]
+    },
+    {
+      "id": "bfm-scmmgpt",
+      "store": "held",
+      "name": "scMMGPT",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scmmgpt"
+      ]
+    },
+    {
+      "id": "bfm-plip-pathology-language-image-pretraining",
+      "store": "held",
+      "name": "PLIP (Pathology Language-Image Pretraining)",
+      "modality": "spatial",
+      "normalized_names": [
+        "plippathologylanguageimagepretraining"
+      ]
+    },
+    {
+      "id": "bfm-next-mol",
+      "store": "held",
+      "name": "NExT-Mol",
+      "modality": "molecule",
+      "normalized_names": [
+        "nextmol"
+      ]
+    },
+    {
+      "id": "bfm-lingshu-cell",
+      "store": "held",
+      "name": "Lingshu-Cell",
+      "modality": "singlecell",
+      "normalized_names": [
+        "lingshucell"
+      ]
+    },
+    {
+      "id": "bfm-jump-lite",
+      "store": "held",
+      "name": "JUMP-lite (with Nahual)",
+      "modality": "benchmark",
+      "normalized_names": [
+        "jumplitewithnahual"
+      ]
+    },
+    {
+      "id": "bfm-aqaffinity",
+      "store": "held",
+      "name": "AQAffinity",
+      "modality": "complex",
+      "normalized_names": [
+        "aqaffinity"
+      ]
+    },
+    {
+      "id": "bfm-planthelixseek",
+      "store": "held",
+      "name": "PlantHelixSeek",
+      "modality": "dna",
+      "normalized_names": [
+        "planthelixseek"
+      ]
+    },
+    {
+      "id": "bfm-seqlens-v2",
+      "store": "held",
+      "name": "SeqLens v2 (with mgxLens v2)",
+      "modality": "dna",
+      "normalized_names": [
+        "seqlensv2withmgxlensv2"
+      ]
+    },
+    {
+      "id": "bfm-screenshot",
+      "store": "held",
+      "name": "ScreenShot",
+      "modality": "singlecell",
+      "normalized_names": [
+        "screenshot"
+      ]
+    },
+    {
+      "id": "bfm-spgen",
+      "store": "held",
+      "name": "SPgen",
+      "modality": "spatial",
+      "normalized_names": [
+        "spgen"
+      ]
+    },
+    {
+      "id": "bfm-omicslm",
+      "store": "held",
+      "name": "OmicsLM",
+      "modality": "multimodal",
+      "normalized_names": [
+        "omicslm"
+      ]
+    },
+    {
+      "id": "bfm-x-cell",
+      "store": "held",
+      "name": "X-Cell / X-Cell-Ultra",
+      "modality": "singlecell",
+      "normalized_names": [
+        "xcell",
+        "xcellultra",
+        "xcellxcellultra"
+      ]
+    },
+    {
+      "id": "bfm-scmamba-snrna",
+      "store": "held",
+      "name": "scMamba (snRNA-seq, neurodegeneration)",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scmambasnrnaseqneurodegeneration"
+      ]
+    },
+    {
+      "id": "bfm-scmamba-multiomics",
+      "store": "held",
+      "name": "scMamba (multi-omics integration)",
+      "modality": "singlecell",
+      "normalized_names": [
+        "scmambamultiomicsintegration"
+      ]
+    }
+  ]
+}

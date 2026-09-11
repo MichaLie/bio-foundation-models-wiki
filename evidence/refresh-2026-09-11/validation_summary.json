@@ -1,0 +1,136 @@
+{
+  "checked_at": "2026-09-11T07:32:19.318504+00:00",
+  "catalog_count": 400,
+  "held_count": 44,
+  "preview_version": "2.2.0",
+  "baseline_commit": "66cef15df536f57c6e3ac0f581638d952493a5da",
+  "release_ref": null,
+  "displayed_existing_changed_ids": [
+    "bfm-gpn-msa"
+  ],
+  "displayed_removed_ids": [
+    "bfm-alice"
+  ],
+  "all_inherited_displayed_verified_dates_preserved": true,
+  "migration_idempotence": "pass",
+  "quick_maintenance": {
+    "verdict": "pass",
+    "mode": "quick",
+    "steps": [
+      {
+        "name": "deterministic-build-and-validator",
+        "status": "pass"
+      },
+      {
+        "name": "full-schema-and-invariants",
+        "status": "pass"
+      },
+      {
+        "name": "canonical-data-immutability",
+        "status": "pass"
+      },
+      {
+        "name": "git-diff-check",
+        "status": "pass"
+      }
+    ]
+  },
+  "simulation_result": {
+    "verdict": "pass",
+    "real_catalog_unchanged": true
+  },
+  "simulation_scenarios": [
+    {
+      "name": "baseline_clean_copy",
+      "expected": "pass",
+      "returncode": 0,
+      "result": "pass",
+      "test_passed": true
+    },
+    {
+      "name": "valid_synthetic_addition",
+      "expected": "pass",
+      "returncode": 0,
+      "result": "pass",
+      "test_passed": true
+    },
+    {
+      "name": "invalid_controlled_vocabulary",
+      "expected": "blocked",
+      "returncode": 1,
+      "result": "blocked",
+      "test_passed": true
+    },
+    {
+      "name": "normalized_alias_collision",
+      "expected": "blocked",
+      "returncode": 1,
+      "result": "blocked",
+      "test_passed": true
+    },
+    {
+      "name": "impossible_calendar_date",
+      "expected": "blocked",
+      "returncode": 1,
+      "result": "blocked",
+      "test_passed": true
+    },
+    {
+      "name": "valid_dated_evidence_source",
+      "expected": "pass",
+      "returncode": 0,
+      "result": "pass",
+      "test_passed": true
+    },
+    {
+      "name": "missing_evidence_source",
+      "expected": "blocked",
+      "returncode": 1,
+      "result": "blocked",
+      "test_passed": true
+    },
+    {
+      "name": "stale_public_distribution",
+      "expected": "blocked",
+      "returncode": 1,
+      "result": "blocked",
+      "test_passed": true
+    },
+    {
+      "name": "held_record_leaks_into_public_catalog",
+      "expected": "blocked",
+      "returncode": 1,
+      "result": "blocked",
+      "test_passed": true
+    },
+    {
+      "name": "mismatched_release_governance",
+      "expected": "blocked",
+      "returncode": 1,
+      "result": "blocked",
+      "test_passed": true
+    }
+  ],
+  "strict_release_gate": {
+    "result": "blocked_as_expected",
+    "only_error": "published release reference is unresolved"
+  },
+  "url_audit": {
+    "initial_unique": 1008,
+    "final_unique": 1005,
+    "final_occurrences": 2057,
+    "reachable": 807,
+    "restricted": 198,
+    "missing": 0,
+    "network_or_server_errors": 0,
+    "reconciliation": "Final occurrences joined by exact URL to untouched initial acquisition results after ALICE demotion; initial 404 preserved in full_link_audit_initial.tsv."
+  },
+  "canonical_sha256": {
+    "models_final.json": "b86d5325b629cc5e1dabd2dcd1f88a778d0c1219da9938177d2e856627775cd0",
+    "records_under_review.json": "3ae43ebacd76b382c10b81ee2062dbb8654c37b0fa32d589b75ac80f7efc8cab",
+    "resource_metadata.json": "fe7a63b89abbfa6492449041b4ed82e6c4c013ae7ff8a1461a90b63649eed6a0"
+  },
+  "git_diff_check": "pass",
+  "public_evidence_path_and_signed_token_scan": "pass",
+  "publication_authorized": false
+}

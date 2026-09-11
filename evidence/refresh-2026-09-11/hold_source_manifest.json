@@ -1,0 +1,2204 @@
+[
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/",
+    "record_ids": [
+      "bfm-mrna-fm-plantrna-fm"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681191+00:00",
+    "status": 200,
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "da84968bc075caad06d7bcf346e81b914b4b58af80d6334d9b2bbe1a8e9012f0",
+    "text_length": 212055,
+    "access_level": "landing_page_or_html",
+    "cache_file": "f1a03cc0ef4578c6e7f039f99607c3b136cca301feda04fabeb33347745ba62e.txt"
+  },
+  {
+    "url": "https://huggingface.co/api/models/yangheng/PlantRNA-FM",
+    "record_ids": [
+      "bfm-mrna-fm-plantrna-fm"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681554+00:00",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/yangheng/PlantRNA-FM",
+    "content_type": "application/json; charset=utf-8",
+    "card_license": "mit",
+    "gated": false,
+    "model_id": "yangheng/PlantRNA-FM",
+    "files": [
+      ".gitattributes",
+      "1kp.png",
+      "README.md",
+      "config.json",
+      "model.png",
+      "model.safetensors",
+      "special_tokens_map.json",
+      "tokenizer_config.json",
+      "vocab.txt"
+    ],
+    "sha256": "cd30a95e9335e09418b2a2c5e8731b646eae17222dc79f2a84a81bb2283bf15b",
+    "text_length": 1483,
+    "access_level": "artifact_metadata",
+    "cache_file": "87ac32e6d588dfc98cc60f824e41740b76c6e2e592f4755d2e238fd7b7c08de0.txt"
+  },
+  {
+    "url": "https://huggingface.co/api/models/yangheng/mrnafm",
+    "record_ids": [
+      "bfm-mrna-fm-plantrna-fm"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681671+00:00",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/yangheng/mrnafm",
+    "content_type": "application/json; charset=utf-8",
+    "card_license": "agpl-3.0",
+    "gated": false,
+    "model_id": "yangheng/mrnafm",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "README.mrnafm.md",
+      "config.json",
+      "model.safetensors",
+      "pytorch_model.bin",
+      "special_tokens_map.json",
+      "tokenizer_config.json"
+    ],
+    "sha256": "adeee19b1f36f0bd41436d8e13643ee106b5e4e55f7ce5106661c2001d1d442b",
+    "text_length": 1886,
+    "access_level": "artifact_metadata",
+    "cache_file": "1b888c64cbb9a59178a0c321250174dac9960ec1f3801ec968ef9ece2f60c55e.txt"
+  },
+  {
+    "url": "https://www.nature.com/articles/s41592-024-02191-z",
+    "record_ids": [
+      "bfm-saturn"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681727+00:00",
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/s41592-024-02191-z",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_length": 3036,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Client Challenge",
+    "cache_file": "107077fdd92e436e80717f048c850cee79cf213cdf65609121ebf3adabb167d3.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/snap-stanford/SATURN/readme",
+    "record_ids": [
+      "bfm-saturn"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681778+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/snap-stanford/SATURN/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/snap-stanford/SATURN/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "dfb7e5ffff464c403ffa245486b25a5f898560a1c796e81a5870cb0f42a3a203",
+    "text_length": 7988,
+    "access_level": "repository_readme_full",
+    "cache_file": "cdf70fd4da342dadcfa253241ec71370ff3154190e1fb586fa01085bc3795eb0.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/snap-stanford/SATURN/license",
+    "record_ids": [
+      "bfm-saturn"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681825+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/snap-stanford/SATURN/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/snap-stanford/SATURN/blob/main/LICENSE",
+    "license_spdx": "MIT",
+    "sha256": "a0fdcb04647a0bc2f2d570a8a0072317d7762438e0f5e6b3e19db1ab8a2c8844",
+    "text_length": 1068,
+    "access_level": "license_full",
+    "cache_file": "e561e1aefb79de3885eb479d4ea366e2dba8478afd77ec9b66b2994ce1fdb2df.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/snap-stanford/SATURN/releases",
+    "record_ids": [
+      "bfm-saturn"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681871+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/snap-stanford/SATURN/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "1cd37f31db1b7bd94d1736733549847d993f7a460e25ee447db5922478726c76.txt"
+  },
+  {
+    "url": "https://openreview.net/forum?id=gdwcoBCMVi",
+    "record_ids": [
+      "bfm-xtrimogene"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681904+00:00",
+    "status": 200,
+    "final_url": "https://openreview.net/challenge",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "11107b85262cc4419594677f46cd3b3af90285ee4bedd4e370182876f81d4e6f",
+    "text_length": 4787,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Verifying your browser | OpenReview",
+    "cache_file": "d259c1a484f1ab3a4e7fb1e9e015a8c159fbbe624dbf3d7bab46a409d945b7f3.txt"
+  },
+  {
+    "url": "https://arxiv.org/html/2311.15156v2",
+    "record_ids": [
+      "bfm-xtrimogene"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681952+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2311.15156v2",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "6bbb99c2bb63fbd5f88f08514577b47ecaabc9f327674270a0aa6e8cd8bfd52e",
+    "text_length": 203056,
+    "access_level": "landing_page_or_html",
+    "cache_file": "2f88ea3c1dee5c71d0eccc50d4ff9887bad1fd9a5280baa1b1cf34241d11e055.txt"
+  },
+  {
+    "url": "https://www.nature.com/articles/s41592-024-02214-9",
+    "record_ids": [
+      "bfm-scprotein"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.681996+00:00",
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/s41592-024-02214-9",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_length": 3036,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Client Challenge",
+    "cache_file": "c572b6b2c68c6d84f2ab3672f7ee1cc5a7d80c7e73cbaef2f8aa715a5ec66a7a.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/TencentAILabHealthcare/scPROTEIN/readme",
+    "record_ids": [
+      "bfm-scprotein"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.682043+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/TencentAILabHealthcare/scPROTEIN/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/TencentAILabHealthcare/scPROTEIN/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "222cc421767d4691990e70d7409e749d8775faff4fe75bd2b7d84e2a3966653d",
+    "text_length": 10133,
+    "access_level": "repository_readme_full",
+    "cache_file": "49f0d243ae3cecf719b91149bab4e8968fa136cd6fc420ec6d84def2b33ef477.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/TencentAILabHealthcare/scPROTEIN/license",
+    "record_ids": [
+      "bfm-scprotein"
+    ],
+    "fetched_at": "2026-09-11T06:59:33.682072+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/TencentAILabHealthcare/scPROTEIN/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/TencentAILabHealthcare/scPROTEIN/blob/main/LICENSE",
+    "license_spdx": "Apache-2.0",
+    "sha256": "778ef577fdb84b43ab644110c57c2fdb01cfe417ed5b3e9c3a0d79c4c893882d",
+    "text_length": 11357,
+    "access_level": "license_full",
+    "cache_file": "6932c94e101324ed1b97a1d8a462950c506ff66ad3f5a185c7d21b9b226b967e.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/TencentAILabHealthcare/scPROTEIN/releases",
+    "record_ids": [
+      "bfm-scprotein"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.259092+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/TencentAILabHealthcare/scPROTEIN/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "11ef146197b5ec1ea8c0b57b6c1d5ef51eed53a214dedd7c7c4db57ec0d7ade0",
+    "text_length": 4209,
+    "access_level": "repository_release_metadata",
+    "cache_file": "3093c00f5c6fa9001227efef7bec9a3bec67b1b00826cf8966cc11a420e6f095.txt"
+  },
+  {
+    "url": "https://www.nature.com/articles/nmeth.3547",
+    "record_ids": [
+      "bfm-deepsea"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.278263+00:00",
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/nmeth.3547",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_length": 3036,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Client Challenge",
+    "cache_file": "4b2459b943da7dbfe801fe071565d8c95f4b0a8bf53629608710a2475a2e5065.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/FunctionLab/selene/readme",
+    "record_ids": [
+      "bfm-deepsea"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.330584+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/FunctionLab/selene/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/FunctionLab/selene/blob/master/README.md",
+    "license_spdx": null,
+    "sha256": "e2a638d5ac52d94aa7d959683fd3929e11d863c50087e811b4295754a1c82973",
+    "text_length": 7569,
+    "access_level": "repository_readme_full",
+    "cache_file": "33135ef52f6cbfe34d5958139391fe3bfb9a757af5cbf4ab68bcdd25a4dd10a0.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/FunctionLab/selene/license",
+    "record_ids": [
+      "bfm-deepsea"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.337056+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/FunctionLab/selene/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/FunctionLab/selene/blob/master/LICENSE",
+    "license_spdx": "BSD-3-Clause-Clear",
+    "sha256": "503f9fb7724b724968a25c077c649680cc468a6928980bcc71b702366406d56c",
+    "text_length": 1695,
+    "access_level": "license_full",
+    "cache_file": "5ab4087e226bfdb5ab8896ffd2b5067e1373f538a27bd9ad88553710539b0159.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/FunctionLab/selene/releases",
+    "record_ids": [
+      "bfm-deepsea"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.391293+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/FunctionLab/selene/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "8197818b0fc9d53243b57da48f3b86a1a7cbab390ac89b46d9401cc643039d78",
+    "text_length": 48182,
+    "access_level": "repository_release_metadata",
+    "cache_file": "f7a5943fb34170510305d0d0db1df49f85fbbb229b868126450def97fc6b3a3d.txt"
+  },
+  {
+    "url": "https://www.biorxiv.org/content/10.1101/2024.12.25.630221v1",
+    "record_ids": [
+      "bfm-chrombpnet"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.393281+00:00",
+    "status": 200,
+    "final_url": "https://www.biorxiv.org/content/10.1101/2024.12.25.630221v1",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "a144532cf9c8e2807d840b84bfbf19dbcb7038b21131b9c0d47cab983fd10696",
+    "text_length": 142050,
+    "access_level": "landing_page_or_html",
+    "cache_file": "1eec2afa6dcf9d56b90deb28df5d01b8ac6bc47efd5e0cac541036836e7604b6.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/kundajelab/chrombpnet/readme",
+    "record_ids": [
+      "bfm-chrombpnet"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.473811+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/kundajelab/chrombpnet/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/kundajelab/chrombpnet/blob/master/README.md",
+    "license_spdx": null,
+    "sha256": "b4136ac44a72ed82f15acdbb11bf288364f5958ff9c4025ef686619e351a2ba1",
+    "text_length": 14597,
+    "access_level": "repository_readme_full",
+    "cache_file": "457bf5a163f7a5e43a0336e8779083ede4116806a7d2c77744117559420fcc8b.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/kundajelab/chrombpnet/license",
+    "record_ids": [
+      "bfm-chrombpnet"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.497844+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/kundajelab/chrombpnet/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/kundajelab/chrombpnet/blob/master/LICENSE",
+    "license_spdx": "MIT",
+    "sha256": "e3d50000885c574dd35aa175aa743cde3331a5e90926ab8514d33bec7dc6dd97",
+    "text_length": 1068,
+    "access_level": "license_full",
+    "cache_file": "a5e865557cdaeb8df3736297dff181d7d5b5e4d677b3d3ae87b067c07402b8d6.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/kundajelab/chrombpnet/releases",
+    "record_ids": [
+      "bfm-chrombpnet"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.595552+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/kundajelab/chrombpnet/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "ef0f54119a9dc71981b9cb41a19c63f03ac581b4da299fdeac4d6151f5e8ac97",
+    "text_length": 35394,
+    "access_level": "repository_release_metadata",
+    "cache_file": "31ef53f3452c339d730622567e76115be3b5c57324b36d586b48cd9e09fd3702.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/raphaelmourad/Mistral-DNA/readme",
+    "record_ids": [
+      "bfm-mistral-dna"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.607620+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/raphaelmourad/Mistral-DNA/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/raphaelmourad/Mistral-DNA/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "d98548c3accc375441def93c427dac2e919c7216f2e6705ed6b0d9949349e823",
+    "text_length": 4402,
+    "access_level": "repository_readme_full",
+    "cache_file": "a7f2a4ae3bde24b6ac5c9c453d3a11ec3d6f9b6e1856dadd42005b61241ddd04.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/raphaelmourad/Mistral-DNA/license",
+    "record_ids": [
+      "bfm-mistral-dna"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.814176+00:00",
+    "status": 404,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/raphaelmourad/Mistral-DNA/releases",
+    "record_ids": [
+      "bfm-mistral-dna"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.852413+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/raphaelmourad/Mistral-DNA/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "7793b5c63f6d4f3efc25dfb2ebdf54b4c6f492fdc0d5fe65e51d896b32d94560.txt"
+  },
+  {
+    "url": "https://www.researchsquare.com/article/rs-1927200/v1",
+    "record_ids": [
+      "bfm-florabert"
+    ],
+    "fetched_at": "2026-09-11T06:59:34.952187+00:00",
+    "status": 200,
+    "final_url": "https://www.researchsquare.com/article/rs-1927200/v1",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "057c9bac4b9d09052703d3e5502fb61fb5d36efb7bd406abd91d8ae2e3aafd5a",
+    "text_length": 50493,
+    "access_level": "landing_page_or_html",
+    "cache_file": "4afa469683f9dcf2daf3adea19a780137e84626fa0b109319fd84b3a41289d18.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/benlevyx/florabert/readme",
+    "record_ids": [
+      "bfm-florabert"
+    ],
+    "fetched_at": "2026-09-11T06:59:35.111313+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/benlevyx/florabert/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/benlevyx/florabert/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "3e94fc1f61d4b2ce5573e3a080913b515252793e9126ce1914bbb40f1ff0ef03",
+    "text_length": 6456,
+    "access_level": "repository_readme_full",
+    "cache_file": "8c0473691a3d4a79784e404c2ab5d1b5d590fc1e3df3b492c65cd40518fceed4.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/benlevyx/florabert/license",
+    "record_ids": [
+      "bfm-florabert"
+    ],
+    "fetched_at": "2026-09-11T06:59:35.130426+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/benlevyx/florabert/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/benlevyx/florabert/blob/main/LICENSE",
+    "license_spdx": "MIT",
+    "sha256": "affca744f59a444d623f87c6d6cbacdee9537477df15cc7b5878a8a2a70ac233",
+    "text_length": 1070,
+    "access_level": "license_full",
+    "cache_file": "62e1bc8090fc52f52b955a466f00c31d41958ae011a67b4ea37554edf8bc601d.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/benlevyx/florabert/releases",
+    "record_ids": [
+      "bfm-florabert"
+    ],
+    "fetched_at": "2026-09-11T06:59:35.264997+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/benlevyx/florabert/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "bd60c0bc525eaa5975079447def44eebace97b6d0baa0bd177b49eb3b3deae43.txt"
+  },
+  {
+    "url": "https://www.nature.com/articles/s41467-023-41303-9",
+    "record_ids": [
+      "bfm-drfold"
+    ],
+    "fetched_at": "2026-09-11T06:59:35.478301+00:00",
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/s41467-023-41303-9",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_length": 3036,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Client Challenge",
+    "cache_file": "9b7b97d134b90f72ff2481b4b0ce944d54122f77bc0f28b1cba78ef8cebd8b8a.txt"
+  },
+  {
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003659",
+    "record_ids": [
+      "bfm-drfold"
+    ],
+    "fetched_at": "2026-09-11T06:59:35.583760+00:00",
+    "status": 200,
+    "final_url": "https://journals.plos.org/plosbiology/article",
+    "content_type": "text/html;charset=UTF-8",
+    "sha256": "111efe2cb2ce3854f94168d364d04bf2fe49dcb0a1a6f6b215cef932661cd930",
+    "text_length": 293803,
+    "access_level": "landing_page_or_html",
+    "cache_file": "6f6efb58034fe4e8e149e25a316dc3258dbb42fe4cab06485ba8f44b83d43de9.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/leeyang/DRfold/readme",
+    "record_ids": [
+      "bfm-drfold"
+    ],
+    "fetched_at": "2026-09-11T06:59:35.583992+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/leeyang/DRfold/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/leeyang/DRfold/blob/main/readme.txt",
+    "license_spdx": null,
+    "sha256": "4ae6e939837171c2465f63d630bdb18d1a50567fef828663d22611cbac2c001a",
+    "text_length": 3072,
+    "access_level": "repository_readme_full",
+    "cache_file": "c319296334b74f3d384428d1f169ef2734eb1c4dda672f859161541cba30d3da.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/leeyang/DRfold/license",
+    "record_ids": [
+      "bfm-drfold"
+    ],
+    "fetched_at": "2026-09-11T06:59:35.984619+00:00",
+    "status": 404,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/leeyang/DRfold/releases",
+    "record_ids": [
+      "bfm-drfold"
+    ],
+    "fetched_at": "2026-09-11T06:59:36.223601+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/leeyang/DRfold/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "34a3b7cb70ed21c4d4becd58559f4a4528c2ce9eb4a47521c23b59f0411aa004",
+    "text_length": 3091,
+    "access_level": "repository_release_metadata",
+    "cache_file": "52757cb20dea6222c4b3b2e07dbe21fbbdf672c2802f114fb721d44d26be79b7.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/leeyang/DRfold2/readme",
+    "record_ids": [
+      "bfm-drfold"
+    ],
+    "fetched_at": "2026-09-11T06:59:36.232578+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/leeyang/DRfold2/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/leeyang/DRfold2/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "0e5702e63bac99da582f34eac62d6dec16b42e6949617a7df289f836ec1d5d44",
+    "text_length": 4075,
+    "access_level": "repository_readme_full",
+    "cache_file": "92a09f817769105eaaaf08f94b306d085d9cf1752348307f6d4e7cae4f13cfe4.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/leeyang/DRfold2/license",
+    "record_ids": [
+      "bfm-drfold"
+    ],
+    "fetched_at": "2026-09-11T06:59:36.503874+00:00",
+    "status": 404,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/leeyang/DRfold2/releases",
+    "record_ids": [
+      "bfm-drfold"
+    ],
+    "fetched_at": "2026-09-11T06:59:36.535756+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/leeyang/DRfold2/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "e7fab43a3293a351bdd4f6a89be2646ad2565bad8a6fb14179ff18ef66b4e628",
+    "text_length": 5163,
+    "access_level": "repository_release_metadata",
+    "cache_file": "e7a51224819943c15b8c02006ae82093c1cb9f846a7f4e8d2b1e17e410f38c4f.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2402.04997",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:36.743695+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2402.04997",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "997980d02921855ce874f22ebf5bfeccf9b636ee19a2636b51b4e96393247f01",
+    "text_length": 41961,
+    "access_level": "landing_page_or_html",
+    "cache_file": "c00f2e33cb988e4eea7fc615362bd9844a829adcccd3745b23129a00ad62b42f.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/jasonkyuyim/multiflow/readme",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:36.825947+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/jasonkyuyim/multiflow/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/jasonkyuyim/multiflow/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "4f3ff5abb00f47788e79c824fe33a1a740afaa9d317c8184b380436671452b4a",
+    "text_length": 6225,
+    "access_level": "repository_readme_full",
+    "cache_file": "7ca651c2ffec82c2e09bad2c864c1be97025e31022cf062ce035825818107c1b.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/jasonkyuyim/multiflow/license",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:36.932210+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/jasonkyuyim/multiflow/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/jasonkyuyim/multiflow/blob/main/LICENSE",
+    "license_spdx": "MIT",
+    "sha256": "3399bb3f2adddbb0f718a2724db1d9d46d8641001e0c5064c30175b569113fef",
+    "text_length": 1082,
+    "access_level": "license_full",
+    "cache_file": "ecae203601ed18c5b33b4716630b44026a9ba84f9a6809b5ed2f9283cd9b69f4.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/jasonkyuyim/multiflow/releases",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:36.962642+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/jasonkyuyim/multiflow/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "d0f8dbf00cf2b4f70250ec52783f670d1b33715852cc307e4f0517b5ecf04e27.txt"
+  },
+  {
+    "url": "https://proceedings.mlr.press/v235/campbell24a.html",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:37.039655+00:00",
+    "status": 200,
+    "final_url": "https://proceedings.mlr.press/v235/campbell24a.html",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "1c4f99a7abb0a4561c94c1d73a9d600edafae1afbd372d4d89ae8540e1e55d8c",
+    "text_length": 15946,
+    "access_level": "landing_page_or_html",
+    "cache_file": "c44549337bae9c09ae51c2c63140f5387131fc13be0f58eab8aa72e2bb7792d0.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2302.02277",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:37.157315+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2302.02277",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "3c8fc95fbea7e8d3a71bf725d318e50584434bb615aae50dc80843d1445de0f6",
+    "text_length": 43482,
+    "access_level": "landing_page_or_html",
+    "cache_file": "12ee776fded187c3d6ec77d9d094c42cf8eeb973434b2cdb6b557d4ab90c1898.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/readme",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:37.276992+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/license",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:37.317162+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/jasonkyuyim/se3_diffusion/blob/master/LICENSE",
+    "license_spdx": "MIT",
+    "sha256": "08801ebf9f7f3143b978e86c5fc19374f590a027f073b994923cbe87857b34bf",
+    "text_length": 1117,
+    "access_level": "license_full",
+    "cache_file": "2a0d6148bae3cf1a3ecfe83fd7f840f26aa02d3c139598975a51ae44646a1b0a.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/releases",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:37.322271+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "63173d83d215f01cb1c665e8f611f6c683a5a7c9919f3c8c6ad7d56c0cf04444.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2310.05297",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:37.423664+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2310.05297",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "46b780d2eaec9bc1117475fae7dcc16a71ba20d66f128866c6aa0eb13f673d62",
+    "text_length": 41276,
+    "access_level": "landing_page_or_html",
+    "cache_file": "530c3c422cdb9a9b3ce01f7c2823c8d4d5e91ee1e0de7b9d83194d896f1cdde6.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/microsoft/frame-flow/readme",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:37.478114+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repositories/679222545/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/microsoft/protein-frame-flow/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "c5cea0dc5dc099d5e54828d6160db0ae47f045a2e27e0929542f22d258ed1755",
+    "text_length": 9363,
+    "access_level": "repository_readme_full",
+    "cache_file": "da055c81948944c59a4935d3346af0b6d331e0af3271df063b3c4eaf4f600132.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/microsoft/frame-flow/license",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:37.635731+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repositories/679222545/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/microsoft/protein-frame-flow/blob/main/LICENSE",
+    "license_spdx": "MIT",
+    "sha256": "43f2aaf5f45cfa09647001c5695dcd1f897ead6a6ab7c5e505a7c97ddbc820ad",
+    "text_length": 1140,
+    "access_level": "license_full",
+    "cache_file": "843e884832de074ea940a00a8d367166e34855e0f64e26ed5535fc515ce49490.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/microsoft/frame-flow/releases",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "fetched_at": "2026-09-11T06:59:37.765665+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repositories/679222545/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "1a443d9e18f2ad1ee245c484a4c6d8fce619a96aa68e0e437af73a4222e02621.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2506.08954",
+    "record_ids": [
+      "bfm-protriever"
+    ],
+    "fetched_at": "2026-09-11T06:59:38.194686+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2506.08954",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "00e1c3a681ab056817144354a3d752d891ec635ea8e2f331c46f73647aab0e6e",
+    "text_length": 42483,
+    "access_level": "landing_page_or_html",
+    "cache_file": "bde6844c853e79649f76569e514965c6d60ededd38245a235dd11eab7225a86a.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/OATML-Markslab/Protriever/readme",
+    "record_ids": [
+      "bfm-protriever"
+    ],
+    "fetched_at": "2026-09-11T06:59:38.223411+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/OATML-Markslab/Protriever/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/OATML-Markslab/Protriever/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "6a17c6f08fdef26a61fdefc3ae7ecc524f7a08b94700a8241710e6b8a3f4e3e1",
+    "text_length": 58,
+    "access_level": "repository_readme_full",
+    "cache_file": "aace39aafb4d3c9901c0b19ab7fb2d2824570c0b616039e6d3f3d8c5355b753a.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/OATML-Markslab/Protriever/license",
+    "record_ids": [
+      "bfm-protriever"
+    ],
+    "fetched_at": "2026-09-11T06:59:38.361802+00:00",
+    "status": 404,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/OATML-Markslab/Protriever/releases",
+    "record_ids": [
+      "bfm-protriever"
+    ],
+    "fetched_at": "2026-09-11T06:59:38.589872+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/OATML-Markslab/Protriever/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "dbc665e3159796165f8ef6ee008e49ab6722db3913016d51cc39335356241496.txt"
+  },
+  {
+    "url": "https://www.science.org/doi/10.1126/science.adq2634",
+    "record_ids": [
+      "bfm-protgps"
+    ],
+    "fetched_at": "2026-09-11T06:59:38.642059+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/pgmikhael/protgps/readme",
+    "record_ids": [
+      "bfm-protgps"
+    ],
+    "fetched_at": "2026-09-11T06:59:38.794628+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/pgmikhael/protgps/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/pgmikhael/protgps/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "2ac1f71bcb86e0de8d162561491c454743805eb0e8fbc7f37a189fdd386f7cf6",
+    "text_length": 2340,
+    "access_level": "repository_readme_full",
+    "cache_file": "0029f6cc95193c20f0fb15208c275ee05bddbb0e72e1281f1df7eb188b0989cd.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/pgmikhael/protgps/license",
+    "record_ids": [
+      "bfm-protgps"
+    ],
+    "fetched_at": "2026-09-11T06:59:38.861394+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/pgmikhael/protgps/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/pgmikhael/protgps/blob/main/LICENSE",
+    "license_spdx": "MIT",
+    "sha256": "b613315dab82ac782401b7f00ec267c4ec363f69375d6895d14cab5c5f8f55fc",
+    "text_length": 1070,
+    "access_level": "license_full",
+    "cache_file": "190d8e526498136e0e6781654ceddb46d7bb3e6cbdb37ccda7617d8f4c73d898.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/pgmikhael/protgps/releases",
+    "record_ids": [
+      "bfm-protgps"
+    ],
+    "fetched_at": "2026-09-11T06:59:38.884518+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/pgmikhael/protgps/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "941119ee3f9ecff5da0301ec9fe95f76cc8567d62697fb5b79504340850037e5",
+    "text_length": 4603,
+    "access_level": "repository_release_metadata",
+    "cache_file": "fbe24ef1408476764d86505dac621bde3ff550a0b1d4740afd59c8207df94577.txt"
+  },
+  {
+    "url": "https://www.nature.com/articles/s42256-024-00792-z",
+    "record_ids": [
+      "bfm-neuralplexer-and-neuralplexer3"
+    ],
+    "fetched_at": "2026-09-11T06:59:39.177521+00:00",
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/s42256-024-00792-z",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_length": 3036,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Client Challenge",
+    "cache_file": "8c7f0bb441795541fd649eae1170a79227373ce1e3f4c3b1920be5bbba1094c7.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/zrqiao/NeuralPLexer/readme",
+    "record_ids": [
+      "bfm-neuralplexer-and-neuralplexer3"
+    ],
+    "fetched_at": "2026-09-11T06:59:39.229301+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/zrqiao/NeuralPLexer/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/zrqiao/NeuralPLexer/blob/main/README.rst",
+    "license_spdx": null,
+    "sha256": "c78d90fa794b372cce53af2920c81357d533b3793c39322943bebff4d39d8b7f",
+    "text_length": 4782,
+    "access_level": "repository_readme_full",
+    "cache_file": "963c4cc05b87b065e4677031aa6647149c515410e1a2c061fb9095d9386d8075.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/zrqiao/NeuralPLexer/license",
+    "record_ids": [
+      "bfm-neuralplexer-and-neuralplexer3"
+    ],
+    "fetched_at": "2026-09-11T06:59:39.275177+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/zrqiao/NeuralPLexer/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/zrqiao/NeuralPLexer/blob/main/LICENSE",
+    "license_spdx": "BSD-3-Clause-Clear",
+    "sha256": "48feb762e317b035cbd5e447d7737cf3f2374d9e3030db823c8c2600a978bfb4",
+    "text_length": 1702,
+    "access_level": "license_full",
+    "cache_file": "53ed686e5c7d34d75082da9b1b0c345752ab38379abf04893511fc23a0344527.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/zrqiao/NeuralPLexer/releases",
+    "record_ids": [
+      "bfm-neuralplexer-and-neuralplexer3"
+    ],
+    "fetched_at": "2026-09-11T06:59:39.454832+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/zrqiao/NeuralPLexer/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "956e7d97052640731475c28c7cde0c4869327e56f1573697c656b9410a30f0ca",
+    "text_length": 1723,
+    "access_level": "repository_release_metadata",
+    "cache_file": "eae9cde21bb7e7fef56b2cc36c6ffbd139b94502dd26dec669068bbe4c5db0f4.txt"
+  },
+  {
+    "url": "https://doi.org/10.5281/zenodo.10373581",
+    "record_ids": [
+      "bfm-neuralplexer-and-neuralplexer3"
+    ],
+    "fetched_at": "2026-09-11T06:59:39.605101+00:00",
+    "status": 200,
+    "final_url": "https://zenodo.org/records/10373581",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "6b822bac0986081baf2d66ed668ab35a3ee84939181c065660fa0109ded9106a",
+    "text_length": 71114,
+    "access_level": "landing_page_or_html",
+    "cache_file": "36fce0330659d98ae0f86b38764ee172b83b3e25c17139b92d336dbbaff36cd4.txt"
+  },
+  {
+    "url": "https://openreview.net/forum?id=BlLAmMFEzJ",
+    "record_ids": [
+      "bfm-neuralplexer-and-neuralplexer3"
+    ],
+    "fetched_at": "2026-09-11T06:59:39.763200+00:00",
+    "status": 200,
+    "final_url": "https://openreview.net/challenge",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "75a7e02b209dec1a46a099c705a951918dab63f750d9c28166c9ba9d707e6774",
+    "text_length": 4787,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Verifying your browser | OpenReview",
+    "cache_file": "18ee57b67e3b7d4d0d274cf851171035113e7bc3bf43ffa0541c9db2eb6c0437.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2405.11769",
+    "record_ids": [
+      "bfm-uni-mol-docking-v2"
+    ],
+    "fetched_at": "2026-09-11T06:59:39.879536+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2405.11769",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "7950715f7ebce167d3272d20d6b16d805f029f828ac2a843697517ff7bc4fbae",
+    "text_length": 43426,
+    "access_level": "landing_page_or_html",
+    "cache_file": "97eee5bc2c011e4a4511a9d2a5f457ae97fdd8774feb1cadf2febbfd30a72421.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/deepmodeling/Uni-Mol/readme",
+    "record_ids": [
+      "bfm-uni-mol-docking-v2"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.039191+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/deepmodeling/Uni-Mol/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/deepmodeling/Uni-Mol/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "35d0db9b49f4922f266ec5c71930938a1462cfd799e12ec225ad0ddb7dc317ff",
+    "text_length": 11868,
+    "access_level": "repository_readme_full",
+    "cache_file": "9128c055027cc99121d6a553b8aec0770375bf67ca433ac6a9c319f1864f5b4b.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/deepmodeling/Uni-Mol/license",
+    "record_ids": [
+      "bfm-uni-mol-docking-v2"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.063298+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/deepmodeling/Uni-Mol/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/deepmodeling/Uni-Mol/blob/main/LICENSE",
+    "license_spdx": "MIT",
+    "sha256": "6442d68146d66e41a20a66157c8ac6a01316f29d572da7b445ed5eb10626053b",
+    "text_length": 1070,
+    "access_level": "license_full",
+    "cache_file": "00019218c62e7db0b57e923769d8a1fdf177e331b0d529059f4a7c219300de1d.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/deepmodeling/Uni-Mol/releases",
+    "record_ids": [
+      "bfm-uni-mol-docking-v2"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.115651+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/deepmodeling/Uni-Mol/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "83e72e0a7500bbbe1ea58ca964cac87d73cafa38faee4bc8ba6eba336dd77be0",
+    "text_length": 29387,
+    "access_level": "repository_release_metadata",
+    "cache_file": "40cc15c6cb3d416df6edd5909df5ea11d8d9bc32f39936ad26f45bc42457be41.txt"
+  },
+  {
+    "url": "https://academic.oup.com/bioinformatics/article/40/10/btae576/7810444",
+    "record_ids": [
+      "bfm-abodybuilder3"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.218665+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/Exscientia/abodybuilder3/readme",
+    "record_ids": [
+      "bfm-abodybuilder3"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.372055+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/Exscientia/abodybuilder3/license",
+    "record_ids": [
+      "bfm-abodybuilder3"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.373532+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/Exscientia/abodybuilder3/license",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/Exscientia/abodybuilder3/blob/main/LICENSE.txt",
+    "license_spdx": "Apache-2.0",
+    "sha256": "e3e160ed958089b4a9b47b0da8d75384173466a73a5125670e52e22069826aeb",
+    "text_length": 11345,
+    "access_level": "license_full",
+    "cache_file": "935d09c0206150d6a7390d126495508850384378198fddc4787d4a031f8d984c.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/Exscientia/abodybuilder3/releases",
+    "record_ids": [
+      "bfm-abodybuilder3"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.425856+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/Exscientia/abodybuilder3/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "f612e0b9a25e58e2f3e12429ba34f7126cedfa2c58d327d3bb04f5a72212ca75.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2602.03477",
+    "record_ids": [
+      "bfm-scdiva"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.672943+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2602.03477",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "02d93dbe4fc05ff7e48818373f77fbc3fd811beb54f52ad7d55b704d56b04161",
+    "text_length": 43111,
+    "access_level": "landing_page_or_html",
+    "cache_file": "09968a4204367d8ef98d60f65c93c154261affb5347d80128cadb7acd79b17f1.txt"
+  },
+  {
+    "url": "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1",
+    "record_ids": [
+      "bfm-tabula"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.727684+00:00",
+    "status": 200,
+    "final_url": "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "79813272814d236d8fe6b1c74de6cc2be1698559d63e8d47b5035840e65e59a2",
+    "text_length": 116668,
+    "access_level": "landing_page_or_html",
+    "cache_file": "eff962febffd4ff9ae61c8e43d05aa34373d902f350a02f66758dc7d98bbd80f.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/aristoteleo/tabula/readme",
+    "record_ids": [
+      "bfm-tabula"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.838022+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/aristoteleo/tabula/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/aristoteleo/tabula/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "1c2271541849aae9b6112b76c31e9acd28efd7eeb850557dc986b07a9bb9aebe",
+    "text_length": 3705,
+    "access_level": "repository_readme_full",
+    "cache_file": "6040d88f243071f5e2b34b8cb29b2c2858169a197730206b453b8097e2721bc2.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/aristoteleo/tabula/license",
+    "record_ids": [
+      "bfm-tabula"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.847128+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/aristoteleo/tabula/releases",
+    "record_ids": [
+      "bfm-tabula"
+    ],
+    "fetched_at": "2026-09-11T06:59:40.891396+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/aristoteleo/tabula/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "1b7c897d830c10094b5f98c089c879320a98938dcbb1ad300605df087fce71f8.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2607.19400",
+    "record_ids": [
+      "bfm-tabula"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.032036+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2607.19400",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "738deeaeae0ac2d083619202276921755f9fffa01f074eab95e65c459b32a664",
+    "text_length": 44615,
+    "access_level": "landing_page_or_html",
+    "cache_file": "7680e071f14dcfb7b4b80ccb22fc651fc2873caf7c84b5ab139163dd6636bd89.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2501.05409",
+    "record_ids": [
+      "bfm-atlas-rudolfv-successor"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.099017+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2501.05409",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "769cfe77028eb05ca9a4b4e011f8f7751fdfcd54897c02d6d9a1f357818162dc",
+    "text_length": 44237,
+    "access_level": "landing_page_or_html",
+    "cache_file": "031845ff4e134f232d8d3d5da5d9e6bd9a1f274c291949941aa5621a62e63549.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2601.05148",
+    "record_ids": [
+      "bfm-atlas-rudolfv-successor"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.162177+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2601.05148",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "fe2580d8761efa3867ab8eb62ac8f97e2dcd0dc7e7cf573b2463c636691323f2",
+    "text_length": 44272,
+    "access_level": "landing_page_or_html",
+    "cache_file": "7b9167fa49287bf732be8d16334745c2521acd6ff9bac3272f4e5b20b37a0ca8.txt"
+  },
+  {
+    "url": "https://www.aignostics.com/products/foundation-models",
+    "record_ids": [
+      "bfm-atlas-rudolfv-successor"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.230314+00:00",
+    "status": 200,
+    "final_url": "https://www.aignostics.com/products/foundation-models",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "79028e8dac6075ff685ac8aa2f548b03e72a4824fdf9e56a67656ca56410ba53",
+    "text_length": 118264,
+    "access_level": "landing_page_or_html",
+    "cache_file": "8b63ad518d8c64fc0e6751c8f5f58747ff369eade87a1c42c41db5aa59793235.txt"
+  },
+  {
+    "url": "https://www.aignostics.com/blog/atlas-2-setting-a-new-standard-for-pathology-foundation-models",
+    "record_ids": [
+      "bfm-atlas-rudolfv-successor"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.232676+00:00",
+    "status": 200,
+    "final_url": "https://www.aignostics.com/blog/atlas-2-setting-a-new-standard-for-pathology-foundation-models",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "3be7a8354f96a430b62b5526fc1b7fff637bcc49156f82ccbfc6ce0bf2dfbdb9",
+    "text_length": 128674,
+    "access_level": "landing_page_or_html",
+    "cache_file": "123ff05e5c102535629e663eb790e3a7b86180dfcf9238ab98bf5146751b5fd6.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2505.23579",
+    "record_ids": [
+      "bfm-bioreason"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.352409+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2505.23579",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "aba76b4b312edc1765eecd9c9f240825526ea1d78a10941132d5ac642a45521a",
+    "text_length": 43590,
+    "access_level": "landing_page_or_html",
+    "cache_file": "281736b1b4a136d1b13ab47d01559bbce2de625e2ac73a52fea75ad3b954eb4e.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/bowang-lab/BioReason/readme",
+    "record_ids": [
+      "bfm-bioreason"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.433232+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/bowang-lab/BioReason/license",
+    "record_ids": [
+      "bfm-bioreason"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.433311+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/bowang-lab/BioReason/releases",
+    "record_ids": [
+      "bfm-bioreason"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.461802+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://arxiv.org/abs/2508.04724",
+    "record_ids": [
+      "bfm-openprotein-ai-poet-poet-2"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.529148+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2508.04724",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "e307e22770e24ea7321fe44fea8939009eb4a555c3f0d3325d8a9d85959b470b",
+    "text_length": 42104,
+    "access_level": "landing_page_or_html",
+    "cache_file": "f8cf82982e744f04b215f8b2a28daa7d23e00e3bd8e886284a38db844d94a9fc.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/OpenProteinAI/PoET-2/readme",
+    "record_ids": [
+      "bfm-openprotein-ai-poet-poet-2"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.621227+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/OpenProteinAI/PoET-2/readme",
+    "content_type": "application/json; charset=utf-8",
+    "content_url": "https://github.com/OpenProteinAI/PoET-2/blob/main/README.md",
+    "license_spdx": null,
+    "sha256": "b07ffcb62ae5ae9d07f3de9b6b11ee086d6bcba55cdb757820ae29145fd27928",
+    "text_length": 7756,
+    "access_level": "repository_readme_full",
+    "cache_file": "88ce7039700c3e8c17775469e823d191434d584ecc6d7dab145acce850bb6901.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/OpenProteinAI/PoET-2/license",
+    "record_ids": [
+      "bfm-openprotein-ai-poet-poet-2"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.693845+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/OpenProteinAI/PoET-2/releases",
+    "record_ids": [
+      "bfm-openprotein-ai-poet-poet-2"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.824048+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/OpenProteinAI/PoET-2/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "489eda873bf4896d048fa2349ecae9f9d4def07a55dc03a64ac4d8c341e2b6c0.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2510.24670",
+    "record_ids": [
+      "bfm-pearl"
+    ],
+    "fetched_at": "2026-09-11T06:59:41.991418+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2510.24670",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "eafa2a326f5fdf9f17d5786cf0ad167bb75526dfb3890e5a1736dcafc96087aa",
+    "text_length": 50954,
+    "access_level": "landing_page_or_html",
+    "cache_file": "4a148fe0e9e1d25ec8e138f36d5568d910a385f86fffadb822b8caca2ac69923.txt"
+  },
+  {
+    "url": "https://www.genesis.ml/ai-research",
+    "record_ids": [
+      "bfm-pearl"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.055720+00:00",
+    "status": 200,
+    "final_url": "https://www.genesis.ml/ai-research",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "243311b9ed7752504c96f629186275192ea03ef739ead0256b7fb13d346b4cdf",
+    "text_length": 80995,
+    "access_level": "landing_page_or_html",
+    "cache_file": "6cc8da54e04fd65908c917896db8bcb533706099b8c86a8d35fb05c64667a68b.txt"
+  },
+  {
+    "url": "https://www.nature.com/articles/s41551-025-01528-z",
+    "record_ids": [
+      "bfm-sctranslator"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.069624+00:00",
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/s41551-025-01528-z",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_length": 3036,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Client Challenge",
+    "cache_file": "d131e07c94b45509642b913d9125ee4beeb2c3b4f3ae2f2c6f95bf1cc1669fce.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/TencentAILabHealthcare/scTranslator/readme",
+    "record_ids": [
+      "bfm-sctranslator"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.159188+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/TencentAILabHealthcare/scTranslator/license",
+    "record_ids": [
+      "bfm-sctranslator"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.223276+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/TencentAILabHealthcare/scTranslator/releases",
+    "record_ids": [
+      "bfm-sctranslator"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.299250+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/TencentAILabHealthcare/scTranslator/releases",
+    "content_type": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "text_length": 2,
+    "access_level": "repository_release_metadata",
+    "cache_file": "40473472717c62351d3777149c7c050261ac1202264da465423b9ebcf58bc536.txt"
+  },
+  {
+    "url": "https://www.nature.com/articles/s41422-024-01034-y",
+    "record_ids": [
+      "bfm-genecompass"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.342197+00:00",
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/s41422-024-01034-y",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_length": 3036,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Client Challenge",
+    "cache_file": "186ff00671b15775498de412ed9c30a3bc40ae54faad01dcda5a99808b39fe6d.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/xCompass-AI/GeneCompass/readme",
+    "record_ids": [
+      "bfm-genecompass"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.433649+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/xCompass-AI/GeneCompass/license",
+    "record_ids": [
+      "bfm-genecompass"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.539159+00:00",
+    "status": 404,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/xCompass-AI/GeneCompass/releases",
+    "record_ids": [
+      "bfm-genecompass"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.600760+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://arxiv.org/abs/2502.10807",
+    "record_ids": [
+      "bfm-hybridna"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.668615+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2502.10807",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "2298e539065e93471aceaaf135501a62c2586a5dfa42861c15aa38166bc37c0c",
+    "text_length": 45903,
+    "access_level": "landing_page_or_html",
+    "cache_file": "d25249263330345b1cfaac08b63ded4c908eace13db28f2cb24725a57b8c976b.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2504.16956",
+    "record_ids": [
+      "bfm-genemamba"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.738270+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2504.16956",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "b40f05201382392ddfae0bfea80c3e28d63b50940ed5b25707e7fca67dbf9b80",
+    "text_length": 42905,
+    "access_level": "landing_page_or_html",
+    "cache_file": "4ef8a9a51b9b0d605c2f047e044acc670c77b5157e5e759d597f37f2613cd393.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/MineSelf2016/GeneMamba/readme",
+    "record_ids": [
+      "bfm-genemamba"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.774483+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/MineSelf2016/GeneMamba/license",
+    "record_ids": [
+      "bfm-genemamba"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.814670+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/MineSelf2016/GeneMamba/releases",
+    "record_ids": [
+      "bfm-genemamba"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.829568+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://huggingface.co/api/models/mineself2016/GeneMamba",
+    "record_ids": [
+      "bfm-genemamba"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.847658+00:00",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/mineself2016/GeneMamba",
+    "content_type": "application/json; charset=utf-8",
+    "card_license": null,
+    "gated": false,
+    "model_id": "mineself2016/GeneMamba",
+    "files": [
+      ".gitattributes",
+      ".gitignore",
+      "COMPLETION_SUMMARY.md",
+      "LICENSE",
+      "PROJECT_STRUCTURE.md",
+      "README.md",
+      "__init__.py",
+      "config.json",
+      "configuration_genemamba.py",
+      "converted_checkpoints/GeneMamba/README.md",
+      "converted_checkpoints/GeneMamba/examples/README.md",
+      "examples/1_extract_embeddings.py",
+      "examples/2_finetune_classification.py",
+      "examples/3_pretrain_from_scratch.py",
+      "examples/__init__.py",
+      "hf_space/README.md",
+      "hf_space/app.py",
+      "hf_space/requirements.txt",
+      "hf_space/runtime.txt",
+      "model.safetensors",
+      "modeling_genemamba.py",
+      "modeling_outputs.py",
+      "requirements.txt",
+      "scripts/convert_checkpoint.py",
+      "scripts/push_to_hub.py",
+      "setup.py",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "trainer_state.json",
+      "training_args.bin",
+      "verify_setup.sh"
+    ],
+    "sha256": "7bc8e40279b15f31974ab4afeb0525e772852f35b3bef9af2454e66118321465",
+    "text_length": 2564,
+    "access_level": "artifact_metadata",
+    "cache_file": "2d7e069d4ad544b2f8138a1d681b56b73184929fcd984de36246c6e1b0b4d077.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2503.09427",
+    "record_ids": [
+      "bfm-scmmgpt"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.887050+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2503.09427",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "4047a5509a999d85ae89f2a45af92a24df36c4a4265bafddc133dd6018e5b9ee",
+    "text_length": 42663,
+    "access_level": "landing_page_or_html",
+    "cache_file": "c300762ac336cbb3ab8fa7de36924c1eb1ea043cf01b663f4fb73e7d2228334d.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/syr-cn/scMMGPT/readme",
+    "record_ids": [
+      "bfm-scmmgpt"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.916607+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/syr-cn/scMMGPT/license",
+    "record_ids": [
+      "bfm-scmmgpt"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.916797+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/syr-cn/scMMGPT/releases",
+    "record_ids": [
+      "bfm-scmmgpt"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.961931+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://www.nature.com/articles/s41591-023-02504-3",
+    "record_ids": [
+      "bfm-plip-pathology-language-image-pretraining"
+    ],
+    "fetched_at": "2026-09-11T06:59:42.983616+00:00",
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/s41591-023-02504-3",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text_length": 3036,
+    "access_level": "inaccessible_challenge",
+    "page_title": "Client Challenge",
+    "cache_file": "51287039390b5fff2ebc7a861c0d0c1f0e937484636c3714ec3763e165b6df5d.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/PathologyFoundation/plip/readme",
+    "record_ids": [
+      "bfm-plip-pathology-language-image-pretraining"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.000194+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/PathologyFoundation/plip/license",
+    "record_ids": [
+      "bfm-plip-pathology-language-image-pretraining"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.031597+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/PathologyFoundation/plip/releases",
+    "record_ids": [
+      "bfm-plip-pathology-language-image-pretraining"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.052210+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://huggingface.co/api/models/vinid/plip",
+    "record_ids": [
+      "bfm-plip-pathology-language-image-pretraining"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.058448+00:00",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/vinid/plip",
+    "content_type": "application/json; charset=utf-8",
+    "card_license": null,
+    "gated": false,
+    "model_id": "vinid/plip",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "config.json",
+      "preprocessor_config.json",
+      "pytorch_model.bin",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json"
+    ],
+    "sha256": "19397c2df13417b035e32a062813e0ed11fea4bd4f4a5f12fc1f744f3aa803eb",
+    "text_length": 1597,
+    "access_level": "artifact_metadata",
+    "cache_file": "11dbfce3bd137beb435a71d080b08ceaaa4f6887e627a3fa2300833c05196a43.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2502.12638",
+    "record_ids": [
+      "bfm-next-mol"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.082601+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2502.12638",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "0f778bd799e4eda1a1999c2b92bf21f12372caca93262eb09e6594b64800885d",
+    "text_length": 43484,
+    "access_level": "landing_page_or_html",
+    "cache_file": "54016fe45ee464706861997ff956e0f375d8275db8fd3f60b5b7ba7ad2ef7f77.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/acharkq/next-mol/readme",
+    "record_ids": [
+      "bfm-next-mol"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.095182+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/acharkq/next-mol/license",
+    "record_ids": [
+      "bfm-next-mol"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.121756+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/acharkq/next-mol/releases",
+    "record_ids": [
+      "bfm-next-mol"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.169216+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://huggingface.co/api/models/acharkq/MoLlama",
+    "record_ids": [
+      "bfm-next-mol"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.188941+00:00",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/acharkq/MoLlama",
+    "content_type": "application/json; charset=utf-8",
+    "card_license": null,
+    "gated": false,
+    "model_id": "acharkq/MoLlama",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "config.json",
+      "generation_config.json",
+      "model.safetensors",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json"
+    ],
+    "sha256": "eb27d10ca5495bfc2ed07dfd1353e0f31ec4a80e71c5cf19337c8bd205596a1b",
+    "text_length": 1399,
+    "access_level": "artifact_metadata",
+    "cache_file": "32e70217d256287a1d8bc824d82bd117085660aa3531df7f0321dfbd229d5519.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2603.25240",
+    "record_ids": [
+      "bfm-lingshu-cell"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.207813+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2603.25240",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "93145a5e1026cb4b591c12e423f48b60e9c2f047485a51f3cdf4b55e9677db85",
+    "text_length": 44059,
+    "access_level": "landing_page_or_html",
+    "cache_file": "e34a8b1d417a569ab4ab31c547f82341f37f2024ccc7e19183440b9e4e853260.txt"
+  },
+  {
+    "url": "https://huggingface.co/collections/Alibaba-DAMO-Academy/lingshu-cell",
+    "record_ids": [
+      "bfm-lingshu-cell"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.241657+00:00",
+    "status": 200,
+    "final_url": "https://huggingface.co/collections/Alibaba-DAMO-Academy/lingshu-cell",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "09d63536a49ae22c001e30bcfb63bc0f4c26f3af548eff1fd2786541e31749b2",
+    "text_length": 92694,
+    "access_level": "landing_page_or_html",
+    "cache_file": "6cc3cb54bc365f6c957ad36220ee18cf0ed341211e9abf7de95060c7be208757.txt"
+  },
+  {
+    "url": "https://alibaba-damo-academy.github.io/lingshu-cell-homepage/",
+    "record_ids": [
+      "bfm-lingshu-cell"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.262019+00:00",
+    "status": 200,
+    "final_url": "https://alibaba-damo-academy.github.io/lingshu-cell-homepage/",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "aea4fb439fea590e92c1258c18a792c10842eddcc4b2b307ba9420163a656b17",
+    "text_length": 18718,
+    "access_level": "landing_page_or_html",
+    "cache_file": "bc06deaa74946c4664b09a6a9862fce6b76c31af34eb7efb99d31ba7a616725e.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2608.07632",
+    "record_ids": [
+      "bfm-jump-lite"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.266399+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2608.07632",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "96e5f2e9d13a0102f964e47767d2bfa4a80c01e566cea38df248d21a31865e30",
+    "text_length": 42306,
+    "access_level": "landing_page_or_html",
+    "cache_file": "c82825b139cb444c874cbb945e24b552ade6e1c466d3283e2daabfa81376885f.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/afermg/JUMP_lite/readme",
+    "record_ids": [
+      "bfm-jump-lite"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.322107+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/afermg/JUMP_lite/license",
+    "record_ids": [
+      "bfm-jump-lite"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.334511+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/afermg/JUMP_lite/releases",
+    "record_ids": [
+      "bfm-jump-lite"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.339269+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://zenodo.org/records/21779243",
+    "record_ids": [
+      "bfm-jump-lite"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.347584+00:00",
+    "status": 200,
+    "final_url": "https://zenodo.org/records/21779243",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "c0d4b341144d20c720494f167ff37aa7e55ed94400951e065998979d87401fe1",
+    "text_length": 69690,
+    "access_level": "landing_page_or_html",
+    "cache_file": "d7c20e0baf48a64586b8a4d686d2c127d348753104622ab60e243de8f7842a03.txt"
+  },
+  {
+    "url": "https://huggingface.co/api/models/SandboxAQ/AQAffinity",
+    "record_ids": [
+      "bfm-aqaffinity"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.377379+00:00",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/SandboxAQ/AQAffinity",
+    "content_type": "application/json; charset=utf-8",
+    "card_license": "apache-2.0",
+    "gated": "auto",
+    "model_id": "SandboxAQ/AQAffinity",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "data/training_dataset.csv",
+      "data/training_dataset_with_smiles_sequence.csv",
+      "data/validation_dataset.csv",
+      "data/validation_dataset_with_smiles_sequence.csv",
+      "examples/inference/L1000/L1000.json",
+      "examples/inference/L1000/colabfold_msa.npz",
+      "examples/inference/L1000/colabfold_templates.npz",
+      "examples/inference/L1000/runner.yaml",
+      "examples/inference/L1000/uniref90_hits.a3m",
+      "examples/inference/README.md",
+      "examples/train/README.md",
+      "examples/train/example_embedds/109237.pt",
+      "examples/train/example_embedds/109238.pt",
+      "examples/train/example_embedds/109239.pt",
+      "examples/train/example_embedds/109240.pt",
+      "examples/train/example_embedds/539506.pt",
+      "examples/train/example_embedds/539631.pt",
+      "examples/train/example_train.csv",
+      "examples/train/example_val.csv",
+      "examples/train/runner.yml",
+      "model_weights/model_weights_only.pt",
+      "model_weights/model_weights_only.safetensors",
+      "protein-ligand-binding-resized.png",
+      "pyproject.toml",
+      "src/aqaffinity/__init__.py",
+      "src/aqaffinity/modules/__init__.py",
+      "src/aqaffinity/modules/callbacks/__init__.py",
+      "src/aqaffinity/modules/callbacks/affinity_writer.py",
+      "src/aqaffinity/modules/callbacks/binding_dump.py",
+      "src/aqaffinity/modules/callbacks/validation_writer.py",
+      "src/aqaffinity/modules/configs/binding_architecture.py",
+      "src/aqaffinity/modules/configs/training.py",
+      "src/aqaffinity/modules/datasets/__init__.py",
+      "src/aqaffinity/modules/datasets/affinity_dataset.py",
+      "src/aqaffinity/modules/datasets/cropped_inference.py",
+      "src/aqaffinity/modules/datasets/dataset_utils.py",
+      "src/aqaffinity/modules/datasets/decoy_dataset.py",
+      "src/aqaffinity/modules/model/__init__.py",
+      "src/aqaffinity/modules/model/affinity_prediction_head.py",
+      "src/aqaffinity/modules/model/losses.py",
+      "src/aqaffinity/modules/model/pairformer.py",
+      "src/aqaffinity/modules/model/runner.py",
+      "src/aqaffinity/modules/per_assay_metric.py",
+      "src/aqaffinity/modules/training.py",
+      "src/aqaffinity/modules/utils.py",
+      "src/aqaffinity/run.py"
+    ],
+    "sha256": "74fc8b1e82fc1074dafdbb86f49e74b86b92d8f15ab1bbe2f1d24c65cb18714b",
+    "text_length": 3662,
+    "access_level": "artifact_metadata",
+    "cache_file": "cc290187fd8b03d8459ba4fd2b6f00f944202cdcec1fd20e7ace679ac686df11.txt"
+  },
+  {
+    "url": "https://huggingface.co/api/models/zhangtaolab/PlantHelixSeek",
+    "record_ids": [
+      "bfm-planthelixseek"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.390497+00:00",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/zhangtaolab/PlantHelixSeek",
+    "content_type": "application/json; charset=utf-8",
+    "card_license": "cc-by-nc-4.0",
+    "gated": false,
+    "model_id": "zhangtaolab/PlantHelixSeek",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "attention.py",
+      "cache.py",
+      "config.json",
+      "configuration.py",
+      "layers.py",
+      "mlp.py",
+      "model.py",
+      "pytorch_model.bin",
+      "special_tokens_map.json",
+      "tokenizer_config.json",
+      "utils.py",
+      "vocab.txt"
+    ],
+    "sha256": "65e0c6f3b2c9e7991d56cf83e8ad4ba8cd59e96bb199f124983cc43ef788b13e",
+    "text_length": 2088,
+    "access_level": "artifact_metadata",
+    "cache_file": "bece35a1ebedfc5aeec2271d41f3c78bc43dc68434cbad421c18169a0bc455d5.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/zhangtaolab/PlantHelixSeek/readme",
+    "record_ids": [
+      "bfm-planthelixseek"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.415221+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/zhangtaolab/PlantHelixSeek/license",
+    "record_ids": [
+      "bfm-planthelixseek"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.425459+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/zhangtaolab/PlantHelixSeek/releases",
+    "record_ids": [
+      "bfm-planthelixseek"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.467649+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://doi.org/10.1093/molbev/msag139",
+    "record_ids": [
+      "bfm-seqlens-v2"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.493658+00:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1093%2Fmolbev%2Fmsag139/transform",
+    "content_type": "application/json",
+    "sha256": "e40f85eb5c1f2cd232f305f5a7e293432c3e38a12c70376bce486b204ff25123",
+    "text_length": 19736,
+    "access_level": "landing_page_or_html",
+    "cache_file": "7a45d3c3f2cfee3500c205af6688b19c7d31a5b3e488c0169d0191aeb6864f04.txt"
+  },
+  {
+    "url": "https://arxiv.org/abs/2608.12219",
+    "record_ids": [
+      "bfm-screenshot"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.522380+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2608.12219",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "9dda2fdfe77fcd805869fff1b848361ee06b1e52a188aaac667b11ad785ce975",
+    "text_length": 42767,
+    "access_level": "landing_page_or_html",
+    "cache_file": "25f4088811b498acac236c7e8dc6cc083c91c9393d0b3e9bba58f1ca7eda4673.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/tansey-lab/screenshot/readme",
+    "record_ids": [
+      "bfm-screenshot"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.534119+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/tansey-lab/screenshot/license",
+    "record_ids": [
+      "bfm-screenshot"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.563227+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/tansey-lab/screenshot/releases",
+    "record_ids": [
+      "bfm-screenshot"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.566207+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://doi.org/10.64898/2026.07.16.739037",
+    "record_ids": [
+      "bfm-spgen"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.584912+00:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.64898%2F2026.07.16.739037/transform",
+    "content_type": "application/json",
+    "sha256": "b2ca91a2b82ea6e2475b62595817dec2f0dba3c3706d7cb0fb5da8b6a6a19f88",
+    "text_length": 11100,
+    "access_level": "landing_page_or_html",
+    "cache_file": "d62504590ef1c5c1f5484d5aaf38f5b60d2c18ba781595d86bdf3339227d516a.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/lijc0804/SPgen/readme",
+    "record_ids": [
+      "bfm-spgen"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.601538+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/lijc0804/SPgen/license",
+    "record_ids": [
+      "bfm-spgen"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.617243+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/lijc0804/SPgen/releases",
+    "record_ids": [
+      "bfm-spgen"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.631348+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://arxiv.org/abs/2605.06728",
+    "record_ids": [
+      "bfm-omicslm"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.675968+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2605.06728",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "cebb2ca49586fa2cfcc21855d74ffa32ab890b6e62a97ddcfe4fbb5a464bb740",
+    "text_length": 44434,
+    "access_level": "landing_page_or_html",
+    "cache_file": "c06aa0d20cbd9d4a123b0f1c4e030963635602a300ca90a5bc752f46b17a9ef4.txt"
+  },
+  {
+    "url": "https://doi.org/10.64898/2026.03.18.712807",
+    "record_ids": [
+      "bfm-x-cell"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.699545+00:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.64898%2F2026.03.18.712807/transform",
+    "content_type": "application/json",
+    "sha256": "70805c5e008f84fe89987936837eeef87b6c137a651f4c2e4475f5501f58ad68",
+    "text_length": 36538,
+    "access_level": "landing_page_or_html",
+    "cache_file": "96221b9fd883ccf23b1e34ef30f8e4b977d3df370fa0f28e0803c45950a73ad9.txt"
+  },
+  {
+    "url": "https://huggingface.co/api/models/Xaira-Therapeutics/X-Cell",
+    "record_ids": [
+      "bfm-x-cell"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.743061+00:00",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/Xaira-Therapeutics/X-Cell",
+    "content_type": "application/json; charset=utf-8",
+    "card_license": "cc-by-nc-sa-4.0",
+    "gated": false,
+    "model_id": "Xaira-Therapeutics/X-Cell",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "x-cell-overview.png"
+    ],
+    "sha256": "6bf1fb50948d899e2b64fafb46b7c94a32412d0d7809cc7750c91766cb46a5ad",
+    "text_length": 986,
+    "access_level": "artifact_metadata",
+    "cache_file": "bf2b94374cc0c3ec066223ddb3e8f2885de55486edaa7975d61a10eda0e080ac.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/Xaira-Therapeutics/x-cell/readme",
+    "record_ids": [
+      "bfm-x-cell"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.745982+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/Xaira-Therapeutics/x-cell/license",
+    "record_ids": [
+      "bfm-x-cell"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.777467+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/Xaira-Therapeutics/x-cell/releases",
+    "record_ids": [
+      "bfm-x-cell"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.796924+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://arxiv.org/abs/2502.19429",
+    "record_ids": [
+      "bfm-scmamba-snrna"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.816985+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2502.19429",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "c8ff9d15d11cb806b31663f5643c216eec143027f52127d5003b238b0541d11d",
+    "text_length": 42185,
+    "access_level": "landing_page_or_html",
+    "cache_file": "72abe100b1771d4b65a6dea251a67515a32fc6e83ce85644495f7efef61dd92f.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/okt0711/scMamba/readme",
+    "record_ids": [
+      "bfm-scmamba-snrna"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.852540+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/okt0711/scMamba/license",
+    "record_ids": [
+      "bfm-scmamba-snrna"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.882965+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/okt0711/scMamba/releases",
+    "record_ids": [
+      "bfm-scmamba-snrna"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.890425+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://arxiv.org/abs/2506.20697",
+    "record_ids": [
+      "bfm-scmamba-multiomics"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.930727+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2506.20697",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "8950dc6d82358c9b6282573a22d14bc3802c5a4e8917123fc0f5edbe0e89aae2",
+    "text_length": 42945,
+    "access_level": "landing_page_or_html",
+    "cache_file": "013cee921c568bc4384e61e60f9ea390b2658e972216866ef7363a8e165c4d98.txt"
+  },
+  {
+    "url": "https://api.github.com/repos/23AIBox/scMamba/readme",
+    "record_ids": [
+      "bfm-scmamba-multiomics"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.956260+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/23AIBox/scMamba/license",
+    "record_ids": [
+      "bfm-scmamba-multiomics"
+    ],
+    "fetched_at": "2026-09-11T06:59:43.976185+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  },
+  {
+    "url": "https://api.github.com/repos/23AIBox/scMamba/releases",
+    "record_ids": [
+      "bfm-scmamba-multiomics"
+    ],
+    "fetched_at": "2026-09-11T06:59:44.005676+00:00",
+    "status": 403,
+    "error": "HTTPError",
+    "access_level": "inaccessible"
+  }
+]

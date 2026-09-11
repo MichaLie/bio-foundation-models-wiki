@@ -57,6 +57,14 @@ def normalized_name(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", value.replace("+", " plus ").casefold()).strip()
 
 
+def check_evidence_source(value: object, pattern: str, where: str, errors: list[str]) -> None:
+    """A schema-valid provenance locator must also name an existing local file."""
+    if not isinstance(value, str) or not re.fullmatch(pattern, value):
+        errors.append(f"{where}: invalid evidence-source path")
+    elif not (Path(__file__).resolve().parent / value).is_file():
+        errors.append(f"{where}: evidence-source file is missing: {value}")
+
+
 def main(release: bool = False) -> int:
     errors: list[str] = []
     warnings: list[str] = []
@@ -136,6 +144,8 @@ def main(release: bool = False) -> int:
         for key, spec in properties.items():
             if key in record and "enum" in spec and record[key] not in spec["enum"]:
                 errors.append(f"{where}.{key}: {record[key]!r} is outside the controlled vocabulary")
+
+        check_evidence_source(record.get("audit_source"), properties["audit_source"]["pattern"], f"{where}.audit_source", errors)
 
         if not record.get("verified"):
             missing_verified += 1
@@ -259,6 +269,8 @@ def main(release: bool = False) -> int:
         for field in ("hold_since", "reason_code", "reason", "source", "reconsider_when"):
             if not review.get(field):
                 errors.append(f"{where}.review.{field}: required")
+        check_evidence_source(record.get("audit_source"), properties["audit_source"]["pattern"], f"{where}.record.audit_source", errors)
+        check_evidence_source(review.get("source"), properties["audit_source"]["pattern"], f"{where}.review.source", errors)
 
     link_audit_path = Path("evidence/link_audit.tsv")
     if not link_audit_path.is_file():

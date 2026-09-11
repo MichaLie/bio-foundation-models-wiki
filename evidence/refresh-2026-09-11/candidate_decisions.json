@@ -1,0 +1,1541 @@
+[
+  {
+    "id": "bfm-ribospan",
+    "name": "RIBOSPAN",
+    "modality": "rna",
+    "decision": "accept",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. The family landing repository itself contains documentation, not weights. Weight files are listed in the separately linked checkpoint repositories. Custom commercial-use restrictions also cover outputs and output-derived models; this is not a standard CC noncommercial licence. No gated checkpoint was downloaded.",
+    "claims": {
+      "scope": "Bidirectional RNA language-model family pretrained at single-nucleotide resolution, with 1,024- and 10,240-nucleotide contexts. The paper evaluates transferable representations, transcript-property prediction, mutation scoring, and a separate conditioned mRNA-generation framework.",
+      "artifact_and_terms": "Apache-2.0 code; custom noncommercial weights and output-use terms. 1K-15/1K-40 ungated; 10K-15 requires approval; 10K-40 not released.",
+      "input_output": "RNA sequence -> nucleotide probabilities and embeddings; downstream biological predictions"
+    },
+    "sources": [
+      {
+        "url": "https://huggingface.co/api/models/SII-GAIR-NLP/RIBOSPAN-1K-15",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:03:25.738428+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/SII-GAIR-NLP/RIBOSPAN-1K-15",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "dd7d8a53458e88dcc275e23e39ac52eeda6b3b3baa4d30089eb8993a9db3e477",
+        "text_length": 1471,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/SII-GAIR-NLP/RIBOSPAN-1K-40",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:03:25.738754+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/SII-GAIR-NLP/RIBOSPAN-1K-40",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "0940e367404e66601d432d7dad4d4ad6d6ab0b4e7d000bb2f052a80012df091b",
+        "text_length": 1480,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/SII-GAIR-NLP/RIBOSPAN-10K-15",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:03:25.738894+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/SII-GAIR-NLP/RIBOSPAN-10K-15",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "7b2af507d50b9e7d76668a540abbfc2efa9b4f28419dbd67512c5d5925462732",
+        "text_length": 2573,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-FM/raw/main/LICENSE",
+        "access_level": "license_full",
+        "fetched_at": "2026-09-11T07:03:25.738962+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-FM/raw/main/LICENSE",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "55ac6bc5ccae20993c27a8d4e53c54eca0fcfbd815ecbfe2a0f9810486a3fe08",
+        "text_length": 44549,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/GAIR-NLP/RIBOSPAN-FM/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:02:02.889191+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/GAIR-NLP/RIBOSPAN-FM/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "ae78805703955a6d10144f3d09436b07dca65d8bcc6bc2cda5b1d49edf22d8b8",
+        "text_length": 17216,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://github.com/GAIR-NLP/RIBOSPAN-FM",
+        "access_level": "repository_listing",
+        "fetched_at": "2026-09-11T07:02:02.889517+00:00",
+        "status": 200,
+        "final_url": "https://github.com/GAIR-NLP/RIBOSPAN-FM",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "e94a598510c8326894f8119554d2dda7f6fea692d765b9f0569a9e14028baa67",
+        "text_length": 391818,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/GAIR-NLP/RIBOSPAN-FM/HEAD/LICENSE",
+        "access_level": "license_full",
+        "fetched_at": "2026-09-11T07:02:02.889673+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/GAIR-NLP/RIBOSPAN-FM/HEAD/LICENSE",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "text_length": 11358,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/html/2608.22849v2",
+        "access_level": "full_text",
+        "fetched_at": "2026-09-11T07:02:03.782179+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/html/2608.22849v2",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "5613365c4007720cba6d6743a4db1d4610cd881638011ae6d73bbcced5664baf",
+        "text_length": 455541,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-FM/raw/main/README.md",
+        "access_level": "model_card_full",
+        "fetched_at": "2026-09-11T07:02:03.909712+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-FM/raw/main/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "68fd3a78987158f61efde19688b91a1e6edeb06d5cbb9e2b9ff5cb8be39ed447",
+        "text_length": 11795,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/SII-GAIR-NLP/RIBOSPAN-FM",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:02:04.016529+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/SII-GAIR-NLP/RIBOSPAN-FM",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "4ec1431ea12ff8acd42c73faf7237dcc19e742b2cbd85b9c0cb72a0889aec46c",
+        "text_length": 1375,
+        "manifest": "candidate_source_manifest.json"
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#RIBOSPAN"
+  },
+  {
+    "id": "bfm-monroe",
+    "name": "Monroe",
+    "modality": "molecule",
+    "decision": "accept",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. The released checkpoint directory and LFS pointer were inspected; weights were not downloaded or executed. MIT for the encoder does not establish the terms of TabPFN.",
+    "claims": {
+      "scope": "Molecular graph encoder pretrained on quantum-chemical properties, bioassay targets, and conformer denoising. Frozen molecular embeddings support downstream prediction with a separate prior-data-fitted model.",
+      "artifact_and_terms": "MIT code and released encoder weights via Git LFS; reported TabPFN v3 downstream prediction requires separate licence acceptance and access.",
+      "input_output": "SMILES/featurized molecular graph -> 720-dimensional embedding; embeddings plus labelled examples -> downstream predictions through a separate predictor"
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/blazejba/Monroe/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:02:02.889764+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/blazejba/Monroe/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "5dd6bd6a8af709ffc4d7c864d9797b0783250a360bba921356e86cafcacbf2f4",
+        "text_length": 15960,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://github.com/blazejba/Monroe",
+        "access_level": "repository_listing",
+        "fetched_at": "2026-09-11T07:02:02.889811+00:00",
+        "status": 200,
+        "final_url": "https://github.com/blazejba/Monroe",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "5320a303c40c5e36cafb373f788feac1c33e4304169ce636d697753a4a9193b7",
+        "text_length": 398649,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/blazejba/Monroe/HEAD/LICENSE",
+        "access_level": "license_full",
+        "fetched_at": "2026-09-11T07:02:02.889869+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/blazejba/Monroe/HEAD/LICENSE",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "18a0af8a0e748b03052cdf67619030883a225e9565b23ff22813a66bf1747400",
+        "text_length": 1075,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.18982",
+        "access_level": "abstract",
+        "fetched_at": "2026-09-11T07:02:04.139314+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2608.18982",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "267da3cfd0b762b9f9ddac9c3bc025836d8f04f0f58255f79b3bbeca08d2e17c",
+        "text_length": 43563,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/blazejba/Monroe/HEAD/checkpoint/weights.pt",
+        "access_level": "artifact_pointer",
+        "fetched_at": "2026-09-11T07:02:04.175840+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/blazejba/Monroe/HEAD/checkpoint/weights.pt",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "9a5f48bb46acbed1d22502231292be19d2ee449885da41bc22c799d339fc9f06",
+        "text_length": 134,
+        "manifest": "candidate_source_manifest.json"
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#Monroe"
+  },
+  {
+    "id": "bfm-nucleicbert",
+    "name": "NucleicBERT",
+    "modality": "rna",
+    "decision": "accept",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Journal full-text sections were inspected through web retrieval; direct HTTP returned a JavaScript challenge. Zenodo lists pretrained.pt and separate task checkpoints under Apache-2.0. The archive was first published in 2025; the journal article is from September 2026.",
+    "claims": {
+      "scope": "Masked RNA language model pretrained on approximately 30 million noncoding RNA sequences, learning single-sequence representations for structural and functional tasks without requiring a multiple-sequence alignment.",
+      "artifact_and_terms": "Open code + weights (Apache-2.0); public pretrained/task checkpoints on Zenodo.",
+      "input_output": "Single RNA sequence -> embeddings; task heads -> secondary structure, contact maps, splice-site or fitness predictions"
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/KIT-MBS/NucleicBERT/HEAD/README.md",
+        "access_level": "inaccessible",
+        "fetched_at": "2026-09-11T07:02:02.889904+00:00",
+        "status": 404,
+        "error": "HTTPError",
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://github.com/KIT-MBS/NucleicBERT",
+        "access_level": "repository_listing",
+        "fetched_at": "2026-09-11T07:02:02.889959+00:00",
+        "status": 200,
+        "final_url": "https://github.com/KIT-MBS/NucleicBERT",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "06f7f2405b52f79ebf2245668afc8376b9fda948267d6a2a3bddcecbef080bf1",
+        "text_length": 351016,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/KIT-MBS/NucleicBERT/HEAD/LICENSE",
+        "access_level": "license_full",
+        "fetched_at": "2026-09-11T07:02:02.890038+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/KIT-MBS/NucleicBERT/HEAD/LICENSE",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "text_length": 11357,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://www.nature.com/articles/s42256-026-01295-9",
+        "access_level": "inaccessible_challenge",
+        "fetched_at": "2026-09-11T07:02:04.220386+00:00",
+        "status": 200,
+        "final_url": "https://www.nature.com/articles/s42256-026-01295-9",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+        "text_length": 3036,
+        "page_title": "Client Challenge",
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://zenodo.org/api/records/16989562",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:02:04.353915+00:00",
+        "status": 200,
+        "final_url": "https://zenodo.org/api/records/16989562",
+        "content_type": "application/json",
+        "sha256": "9823396584e82c4466f25dd0c8686729aa030822725ee9ee1904b04f82f01592",
+        "text_length": 8429,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://www.nature.com/articles/s42256-026-01295-9",
+        "fetched_at": "2026-09-11",
+        "access_level": "selected_full_text_sections_via_web",
+        "sha256": null,
+        "hash_boundary": "Web retrieval does not expose raw response bytes."
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#NucleicBERT"
+  },
+  {
+    "id": "bfm-gpn-star",
+    "name": "GPN-Star",
+    "modality": "dna",
+    "decision": "accept",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Separate from GPN-MSA and PhyloGPN. Human model cards and safetensors listings were checked; no all-family licence claim is made for the separately distributed datasets or other species. Year follows the verified September 2025 preprint, not the 2026 journal publication.",
+    "claims": {
+      "scope": "Phylogeny-aware genomic language model using whole-genome alignments and species-tree information to learn evolutionary constraints. Human checkpoints cover vertebrate, mammalian, and primate alignments.",
+      "artifact_and_terms": "Open code + weights (MIT); public human checkpoints; aligned genomic input is required for training and inference.",
+      "input_output": "Whole-genome alignment with species context -> nucleotide probabilities, embeddings and variant-effect scores"
+    },
+    "sources": [
+      {
+        "url": "https://huggingface.co/api/models/songlab/gpn-star-hg38-v100-200m",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:03:25.739032+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/songlab/gpn-star-hg38-v100-200m",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "98e0a97ac5ec346adffc68a2b7fda342eb706c7bfdfd9abfb250019e2a8261ac",
+        "text_length": 976,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/songlab/gpn-star-hg38-m447-200m",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:03:25.739078+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/songlab/gpn-star-hg38-m447-200m",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "eab62c2546f4aaf5fb3af41bdaebe8100e0f26204a11e02c2330590c6e62e45d",
+        "text_length": 975,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/songlab/gpn-star-hg38-p243-200m",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:03:25.739118+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/songlab/gpn-star-hg38-p243-200m",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "3406cbfa40766be5d705fa5bf29950befabecdc8b0e69e7effd0b0983333c2d4",
+        "text_length": 975,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/songlab/gpn-star-hg38-v100-200m/raw/main/README.md",
+        "access_level": "model_card_full",
+        "fetched_at": "2026-09-11T07:03:25.739152+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/songlab/gpn-star-hg38-v100-200m/raw/main/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "d8d7a46d41a1a37fe4f0a5f637bf55c649310185329127d8a2204632e480be17",
+        "text_length": 24,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/songlab-cal/gpn/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:02:02.890092+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/songlab-cal/gpn/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "0312fb9646aef630a30cd3039337b31a48f4345f4dd1cdd71edcc483afd8b9d0",
+        "text_length": 7241,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://github.com/songlab-cal/gpn",
+        "access_level": "repository_listing",
+        "fetched_at": "2026-09-11T07:02:03.254388+00:00",
+        "status": 200,
+        "final_url": "https://github.com/songlab-cal/gpn",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "64e2acb22d54093dbe8a502e439a2794614a3b232ec872e15e5c2b654f0afaa7",
+        "text_length": 339239,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/songlab-cal/gpn/HEAD/LICENSE",
+        "access_level": "license_full",
+        "fetched_at": "2026-09-11T07:02:03.291385+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/songlab-cal/gpn/HEAD/LICENSE",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "cef312cb27bc4aae45e0ca7130643ca36f9aa4165ef09bcddf5ba5eb6fb76e90",
+        "text_length": 1071,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-026-11005-5",
+        "access_level": "inaccessible_challenge",
+        "fetched_at": "2026-09-11T07:02:04.378067+00:00",
+        "status": 200,
+        "final_url": "https://www.nature.com/articles/s41586-026-11005-5",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+        "text_length": 3036,
+        "page_title": "Client Challenge",
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/collections/songlab/gpn-star-68c0c055acc2ee51d5c4f129",
+        "access_level": "collection_listing",
+        "fetched_at": "2026-09-11T07:02:04.379468+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/collections/songlab/gpn-star",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "9ffcc84670425c76a184aa0a54ae65cd782e9d0b252ee1c9abe3cd074fc8492f",
+        "text_length": 239656,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://gpn.readthedocs.io/en/latest/models/gpn-star/",
+        "access_level": "official_documentation",
+        "fetched_at": "2026-09-11T07:08:26.262692+00:00",
+        "status": 200,
+        "final_url": "https://gpn.readthedocs.io/en/latest/models/gpn-star/",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "d4ed40b76b32653a7a57c284853a07c75135314898d6c169b44ed8be0cf2a9f0",
+        "text_length": 38426,
+        "manifest": "post_resolution_manifest.json"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-026-11005-5",
+        "fetched_at": "2026-09-11",
+        "access_level": "selected_full_text_sections_via_web",
+        "sha256": null,
+        "hash_boundary": "Web retrieval does not expose raw response bytes."
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#GPN-Star"
+  },
+  {
+    "id": "bfm-mol-jepa",
+    "name": "Mol-JEPA",
+    "modality": "molecule",
+    "decision": "accept",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Official corporate repository directly links the author model-hub account, resolving ownership. Model API lists model.safetensors. The README explicitly applies CC BY-NC 4.0 to code as well as weights.",
+    "claims": {
+      "scope": "Joint-embedding predictive model learning molecular representations from complementary chemical and biological modalities, including cellular effects, binding affinity, ADMET properties and quantum-chemical information.",
+      "artifact_and_terms": "Open code + weights (CC BY-NC 4.0); public weights and custom inference code on Hugging Face.",
+      "input_output": "SMILES -> molecular embeddings; embeddings support downstream property predictors"
+    },
+    "sources": [
+      {
+        "url": "https://huggingface.co/api/models/Flogrammer/Mol-JEPA",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:03:25.739243+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/Flogrammer/Mol-JEPA",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "1ae0d2445376d09f4fe3f6d19619b2864afc99bd291b798bcb7bc19bdc0ea7b9",
+        "text_length": 1021,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/Flogrammer/Mol-JEPA/raw/main/README.md",
+        "access_level": "model_card_full",
+        "fetched_at": "2026-09-11T07:03:25.739288+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/Flogrammer/Mol-JEPA/raw/main/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "93192e45c97b928610e8040c3e1ca256646c5e13f7fdf33f9d6512888a76a63d",
+        "text_length": 3869,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Boehringer-Ingelheim/mol-jepa/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:02:03.554167+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/Boehringer-Ingelheim/mol-jepa/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "fce70d80a4c030697655b2014b4663f18384c65a5d6a4a195ea68412032842de",
+        "text_length": 8811,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://github.com/Boehringer-Ingelheim/mol-jepa",
+        "access_level": "repository_listing",
+        "fetched_at": "2026-09-11T07:02:03.729360+00:00",
+        "status": 200,
+        "final_url": "https://github.com/Boehringer-Ingelheim/mol-jepa",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "9eb99edb88923b96264d12aff587f7a809fe1558186316a57affe29a6db1f9bd",
+        "text_length": 301460,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.22642",
+        "access_level": "abstract",
+        "fetched_at": "2026-09-11T07:02:04.388262+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2608.22642",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "24f5b1757ca440f2808dc6368805950da8d07db26584ad4edb6dd265d7261d4b",
+        "text_length": 41667,
+        "manifest": "candidate_source_manifest.json"
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#Mol-JEPA"
+  },
+  {
+    "id": "bfm-microgenomer",
+    "name": "MicroGenomer",
+    "modality": "dna",
+    "decision": "accept",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Resolves the previous unnamed watchlist lead. The official BGI repository links the model account; model_states.pt and downstream files are listed, with MIT in the model metadata. The paper is a December 2025 preprint.",
+    "claims": {
+      "scope": "Microbial genome language model trained hierarchically on genomic sequences and marker genes to produce gene- and genome-level representations and support ecophysiological trait prediction.",
+      "artifact_and_terms": "Open code + weights (MIT); official repository links the public author-hosted 470M checkpoint.",
+      "input_output": "Genome-labelled coding DNA sequences in CSV -> genomic embeddings and task-specific trait predictions"
+    },
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/BGIResearch/MicroGenomer/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:03:25.932738+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/BGIResearch/MicroGenomer/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "df1327a1165594fcbc4e5dc51c81202cb17548db40db2657d61851091f47a235",
+        "text_length": 4817,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://github.com/BGIResearch/MicroGenomer/tree/main/weights",
+        "access_level": "repository_listing",
+        "fetched_at": "2026-09-11T07:03:25.932884+00:00",
+        "status": 200,
+        "final_url": "https://github.com/BGIResearch/MicroGenomer/tree/main/weights",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "fe44def1c5b5e89566a9c76279e119d6a2a1c1e7e61dac8e5c620eb964a6c3fb",
+        "text_length": 223305,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://doi.org/10.64898/2025.12.28.696777",
+        "access_level": "abstract",
+        "fetched_at": "2026-09-11T07:03:26.082792+00:00",
+        "status": 200,
+        "final_url": "https://www.biorxiv.org/content/10.64898/2025.12.28.696777v1",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "ee0a5f4defd22ba738204c2d5b9365f9b4fba3fd66d366fdf34718ff323d3e50",
+        "text_length": 131624,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/sunhaotong0605/MicroGenomer-470M",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:04:42.222553+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/sunhaotong0605/MicroGenomer-470M",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "443313cdf1b880c259d0a90d0dc3afd593e73badad5e3b3c4a30e33ab694d8b4",
+        "text_length": 6533,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/sunhaotong0605/MicroGenomer-470M/raw/main/README.md",
+        "access_level": "model_card_full",
+        "fetched_at": "2026-09-11T07:04:42.532587+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/sunhaotong0605/MicroGenomer-470M/raw/main/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "d8d7a46d41a1a37fe4f0a5f637bf55c649310185329127d8a2204632e480be17",
+        "text_length": 24,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/BGIResearch/MicroGenomer/HEAD/LICENSE",
+        "access_level": "license_full",
+        "fetched_at": "2026-09-11T07:06:02.467318+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/BGIResearch/MicroGenomer/HEAD/LICENSE",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "c8f5d75286774935566871b997beac17d27dbd4a728899c83347b175af849026",
+        "text_length": 1069,
+        "manifest": "resolution_manifest.json"
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#MicroGenomer"
+  },
+  {
+    "id": "bfm-lambda",
+    "name": "LAMBDA (prophage benchmark)",
+    "modality": "benchmark",
+    "decision": "accept",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. The full-text source inspected is the March 2026 preprint; September journal identity was verified from publisher metadata/search while full publisher access was restricted. The small checkpoint archive contains probe heads, not redistributed EVO2 foundation weights. The README separately makes non-EVO2 fine-tuned task checkpoints available only on author request; the public benchmark archive is not an all-checkpoint release.",
+    "claims": {
+      "scope": "Benchmark for genomic language-model embeddings using phage/bacterial discrimination, fine-tuning, diagnostic tests, and genome-wide prophage detection, with reusable datasets and result visualization.",
+      "artifact_and_terms": "MIT evaluation code; CC BY 4.0 Zenodo dataset/results/probe archive; upstream foundation-model weights retain their own terms. Non-EVO2 fine-tuned task checkpoints are author-request-only.",
+      "input_output": "DNA segments or bacterial genomes plus model embeddings/predictions -> prophage-detection and representation-evaluation metrics"
+    },
+    "sources": [
+      {
+        "url": "https://academic.oup.com/nargab/article/8/3/lqag103/8787816",
+        "access_level": "inaccessible",
+        "fetched_at": "2026-09-11T07:03:26.380296+00:00",
+        "status": 403,
+        "error": "HTTPError",
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/leannmlindsey/LAMBDA/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:04:42.222322+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/leannmlindsey/LAMBDA/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "76e3d367f11dcd1ed7dfb6bf546b1f0dba13d636c040317a70adc0a8a68c9e3f",
+        "text_length": 14568,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "url": "https://github.com/leannmlindsey/LAMBDA",
+        "access_level": "repository_listing",
+        "fetched_at": "2026-09-11T07:04:42.222363+00:00",
+        "status": 200,
+        "final_url": "https://github.com/leannmlindsey/LAMBDA",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "6b5d3f9baf06acf35997967084d9fbab646be91ade83d05929e954e72ce99d83",
+        "text_length": 322793,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/leannmlindsey/LAMBDA/HEAD/LICENSE",
+        "access_level": "license_full",
+        "fetched_at": "2026-09-11T07:04:42.222420+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/leannmlindsey/LAMBDA/HEAD/LICENSE",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "565195134749781d41981b7b91a0387f6b32c490b529528e1ac462a1f04279df",
+        "text_length": 1073,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13041943/",
+        "access_level": "full_text",
+        "fetched_at": "2026-09-11T07:04:42.689954+00:00",
+        "status": 200,
+        "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13041943/",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "b3c9787667e6d83d7ee0e2ee50a4e897d99156b0b0affb769a39df77417dafca",
+        "text_length": 258216,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "url": "https://zenodo.org/api/records/19236552",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:06:01.799174+00:00",
+        "status": 200,
+        "final_url": "https://zenodo.org/api/records/21355242",
+        "content_type": "application/json",
+        "sha256": "464045a4dd2b8b81e2342d0210e38e305d7c45039ec7694c6cd90e39529021f7",
+        "text_length": 4401,
+        "manifest": "resolution_manifest.json"
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#LAMBDA"
+  },
+  {
+    "id": "bfm-kinconfbench",
+    "name": "KinConfBench",
+    "modality": "benchmark",
+    "decision": "accept",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Named reusable benchmark, not a new foundation-model checkpoint. Publisher full-text sections, UC Regents licence body and Figshare file metadata were inspected. Dataset archive was not downloaded.",
+    "claims": {
+      "scope": "Curated benchmark of 2,225 human kinase chains assessing whether cofolding models recover ligand-dependent kinase conformations, with geometric and conformation-state evaluation.",
+      "artifact_and_terms": "UC Regents software terms permit educational, research and not-for-profit use; precomputed inference archive is CC BY 4.0.",
+      "input_output": "Kinase structures and cofolding outputs -> conformation-state, geometric and diversity metrics"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s44386-026-00068-z",
+        "access_level": "inaccessible_challenge",
+        "fetched_at": "2026-09-11T07:03:26.369461+00:00",
+        "status": 200,
+        "final_url": "https://www.nature.com/articles/s44386-026-00068-z",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+        "text_length": 3036,
+        "page_title": "Client Challenge",
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/THGLab/KinConfBench/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:04:42.221804+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/THGLab/KinConfBench/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "4a77bd84859b9e6867ddd2fcdcc4ee131d66859294d2ff841d077299909521cb",
+        "text_length": 9596,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "url": "https://github.com/THGLab/KinConfBench",
+        "access_level": "repository_listing",
+        "fetched_at": "2026-09-11T07:04:42.222111+00:00",
+        "status": 200,
+        "final_url": "https://github.com/THGLab/KinConfBench",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "ae3b5ad248ec5c2359f34c32c1d827837888b5d043952462cd16fe28be9a2329",
+        "text_length": 347773,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/THGLab/KinConfBench/HEAD/LICENSE",
+        "access_level": "license_full",
+        "fetched_at": "2026-09-11T07:04:42.222205+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/THGLab/KinConfBench/HEAD/LICENSE",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "53aa924ef62762cabb294fa2458a33d003b324b27d720d69e29c73cf467252ac",
+        "text_length": 1208,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/31986663",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:06:01.799250+00:00",
+        "status": 200,
+        "final_url": "https://api.figshare.com/v2/articles/31986663",
+        "content_type": "application/json",
+        "sha256": "9672a5879ab890afa25877fe3165e3232637b969d7863cded9756f18666769f4",
+        "text_length": 3701,
+        "manifest": "resolution_manifest.json"
+      },
+      {
+        "url": "https://www.nature.com/articles/s44386-026-00068-z",
+        "fetched_at": "2026-09-11",
+        "access_level": "selected_full_text_sections_via_web",
+        "sha256": null,
+        "hash_boundary": "Web retrieval does not expose raw response bytes."
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#KinConfBench"
+  },
+  {
+    "id": "bfm-mrna-fm-plantrna-fm",
+    "name": "PlantRNA-FM",
+    "modality": "rna",
+    "decision": "accept_split",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Promoted by splitting the original family; the original stable ID follows PlantRNA-FM. Residual mRNA-FM remains held under bfm-mrna-fm. The prior combined name is retained as a historical alias, not a claim that the terms apply to mRNA-FM. The public model card demonstrates base embeddings; paper genic-region/translation predictions use task-specific fine-tuning.",
+    "claims": {
+      "scope": "Plant RNA foundation model pretrained on RNA sequences from 1,124 species, supporting interpretable representations and identification of functional sequence and structural motifs.",
+      "artifact_and_terms": "Model hub; MIT model and public safetensors weights; inference uses the released model card and standard Transformers.",
+      "input_output": "Plant RNA sequence -> base-model embeddings; task-specific predictions require downstream fine-tuning"
+    },
+    "sources": [
+      {
+        "url": "https://huggingface.co/yangheng/PlantRNA-FM/raw/main/README.md",
+        "access_level": "model_card_full",
+        "fetched_at": "2026-09-11T07:02:04.411587+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/yangheng/PlantRNA-FM/raw/main/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "cbf85880088ae79b70c134df43084cff351e55984702a489d39280fc93c6ab7c",
+        "text_length": 5794,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/",
+        "fetched_at": "2026-09-11T06:59:33.681191+00:00",
+        "status": 200,
+        "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "da84968bc075caad06d7bcf346e81b914b4b58af80d6334d9b2bbe1a8e9012f0",
+        "text_length": 212055,
+        "access_level": "landing_page_or_html",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/yangheng/PlantRNA-FM",
+        "fetched_at": "2026-09-11T06:59:33.681554+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/yangheng/PlantRNA-FM",
+        "content_type": "application/json; charset=utf-8",
+        "card_license": "mit",
+        "gated": false,
+        "model_id": "yangheng/PlantRNA-FM",
+        "sha256": "cd30a95e9335e09418b2a2c5e8731b646eae17222dc79f2a84a81bb2283bf15b",
+        "text_length": 1483,
+        "access_level": "artifact_metadata",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/yangheng/mrnafm",
+        "fetched_at": "2026-09-11T06:59:33.681671+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/yangheng/mrnafm",
+        "content_type": "application/json; charset=utf-8",
+        "card_license": "agpl-3.0",
+        "gated": false,
+        "model_id": "yangheng/mrnafm",
+        "sha256": "adeee19b1f36f0bd41436d8e13643ee106b5e4e55f7ce5106661c2001d1d442b",
+        "text_length": 1886,
+        "access_level": "artifact_metadata",
+        "manifest": "hold_source_manifest.json"
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#PlantRNA-FM"
+  },
+  {
+    "id": "bfm-framediff-frameflow-multiflow",
+    "name": "MultiFlow",
+    "modality": "protein",
+    "decision": "accept_split",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Original family stable ID is retained by MultiFlow. FrameFlow is separate; FrameDiff remains held. Distinct inference modes establish reusable scope; archive licensing is CC BY 4.0, not the code repository MIT licence.",
+    "claims": {
+      "scope": "Pretrained joint sequence-and-structure generative model combining discrete and continuous flows, with unconditional protein co-design, inverse folding and forward folding modes.",
+      "artifact_and_terms": "Open code + weights (MIT implementation; CC BY 4.0 Zenodo weights/datasets), public.",
+      "input_output": "Optional protein sequence or backbone structure -> generated sequence/structure pair, inverse-folded sequence or predicted backbone"
+    },
+    "sources": [
+      {
+        "url": "https://zenodo.org/api/records/10714631",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:02:04.482969+00:00",
+        "status": 200,
+        "final_url": "https://zenodo.org/api/records/10714631",
+        "content_type": "application/json",
+        "sha256": "3943dd9519ef540f1d9943011a4c7544797eeff4256d9200bcf87f308fcbc86c",
+        "text_length": 4456,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/jasonkyuyim/se3_diffusion/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:00:56.563090+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/jasonkyuyim/se3_diffusion/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "41cf2d9a779a712e86a4c708c2601bc88ffe219b86c7f38360a368ebd52ce68f",
+        "text_length": 14245,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2402.04997",
+        "fetched_at": "2026-09-11T06:59:36.743695+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2402.04997",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "997980d02921855ce874f22ebf5bfeccf9b636ee19a2636b51b4e96393247f01",
+        "text_length": 41961,
+        "access_level": "landing_page_or_html",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/multiflow/readme",
+        "fetched_at": "2026-09-11T06:59:36.825947+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/multiflow/readme",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/jasonkyuyim/multiflow/blob/main/README.md",
+        "license_spdx": null,
+        "sha256": "4f3ff5abb00f47788e79c824fe33a1a740afaa9d317c8184b380436671452b4a",
+        "text_length": 6225,
+        "access_level": "repository_readme_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/multiflow/license",
+        "fetched_at": "2026-09-11T06:59:36.932210+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/multiflow/license",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/jasonkyuyim/multiflow/blob/main/LICENSE",
+        "license_spdx": "MIT",
+        "sha256": "3399bb3f2adddbb0f718a2724db1d9d46d8641001e0c5064c30175b569113fef",
+        "text_length": 1082,
+        "access_level": "license_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/multiflow/releases",
+        "fetched_at": "2026-09-11T06:59:36.962642+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/multiflow/releases",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "text_length": 2,
+        "access_level": "repository_release_metadata",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://proceedings.mlr.press/v235/campbell24a.html",
+        "fetched_at": "2026-09-11T06:59:37.039655+00:00",
+        "status": 200,
+        "final_url": "https://proceedings.mlr.press/v235/campbell24a.html",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "1c4f99a7abb0a4561c94c1d73a9d600edafae1afbd372d4d89ae8540e1e55d8c",
+        "text_length": 15946,
+        "access_level": "landing_page_or_html",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2302.02277",
+        "fetched_at": "2026-09-11T06:59:37.157315+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2302.02277",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "3c8fc95fbea7e8d3a71bf725d318e50584434bb615aae50dc80843d1445de0f6",
+        "text_length": 43482,
+        "access_level": "landing_page_or_html",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/readme",
+        "fetched_at": "2026-09-11T06:59:37.276992+00:00",
+        "status": 403,
+        "error": "HTTPError",
+        "access_level": "inaccessible",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/license",
+        "fetched_at": "2026-09-11T06:59:37.317162+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/license",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/jasonkyuyim/se3_diffusion/blob/master/LICENSE",
+        "license_spdx": "MIT",
+        "sha256": "08801ebf9f7f3143b978e86c5fc19374f590a027f073b994923cbe87857b34bf",
+        "text_length": 1117,
+        "access_level": "license_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/releases",
+        "fetched_at": "2026-09-11T06:59:37.322271+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/releases",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "text_length": 2,
+        "access_level": "repository_release_metadata",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2310.05297",
+        "fetched_at": "2026-09-11T06:59:37.423664+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2310.05297",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "46b780d2eaec9bc1117475fae7dcc16a71ba20d66f128866c6aa0eb13f673d62",
+        "text_length": 41276,
+        "access_level": "landing_page_or_html",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/frame-flow/readme",
+        "fetched_at": "2026-09-11T06:59:37.478114+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repositories/679222545/readme",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/microsoft/protein-frame-flow/blob/main/README.md",
+        "license_spdx": null,
+        "sha256": "c5cea0dc5dc099d5e54828d6160db0ae47f045a2e27e0929542f22d258ed1755",
+        "text_length": 9363,
+        "access_level": "repository_readme_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/frame-flow/license",
+        "fetched_at": "2026-09-11T06:59:37.635731+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repositories/679222545/license",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/microsoft/protein-frame-flow/blob/main/LICENSE",
+        "license_spdx": "MIT",
+        "sha256": "43f2aaf5f45cfa09647001c5695dcd1f897ead6a6ab7c5e505a7c97ddbc820ad",
+        "text_length": 1140,
+        "access_level": "license_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/frame-flow/releases",
+        "fetched_at": "2026-09-11T06:59:37.765665+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repositories/679222545/releases",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "text_length": 2,
+        "access_level": "repository_release_metadata",
+        "manifest": "hold_source_manifest.json"
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#MultiFlow"
+  },
+  {
+    "id": "bfm-frameflow",
+    "name": "FrameFlow",
+    "modality": "protein",
+    "decision": "accept_split",
+    "reviewed": "2026-09-11",
+    "reason": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Split from the held three-member family. Both unconditional and motif-scaffolding inference paths are documented; the scientific-use caveat is kept separate from licence terms.",
+    "claims": {
+      "scope": "SE(3) flow-matching model with released pretrained checkpoints for unconditional protein-backbone generation and conditional motif scaffolding.",
+      "artifact_and_terms": "Open code + weights (MIT code; CC BY 4.0 Zenodo weights/datasets); generated structures have not been experimentally validated by the repository authors.",
+      "input_output": "Requested length or fixed structural motif -> sampled protein backbones and scaffold candidates"
+    },
+    "sources": [
+      {
+        "url": "https://zenodo.org/api/records/12776473",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:02:04.580429+00:00",
+        "status": 200,
+        "final_url": "https://zenodo.org/api/records/12776473",
+        "content_type": "application/json",
+        "sha256": "8b0b0af4e44051c5c1d9825ff35e6a49ce2511472ad64cee3e38c0cb8c94d1f8",
+        "text_length": 4041,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/jasonkyuyim/se3_diffusion/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:00:56.563090+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/jasonkyuyim/se3_diffusion/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "41cf2d9a779a712e86a4c708c2601bc88ffe219b86c7f38360a368ebd52ce68f",
+        "text_length": 14245,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2402.04997",
+        "fetched_at": "2026-09-11T06:59:36.743695+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2402.04997",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "997980d02921855ce874f22ebf5bfeccf9b636ee19a2636b51b4e96393247f01",
+        "text_length": 41961,
+        "access_level": "landing_page_or_html",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/multiflow/readme",
+        "fetched_at": "2026-09-11T06:59:36.825947+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/multiflow/readme",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/jasonkyuyim/multiflow/blob/main/README.md",
+        "license_spdx": null,
+        "sha256": "4f3ff5abb00f47788e79c824fe33a1a740afaa9d317c8184b380436671452b4a",
+        "text_length": 6225,
+        "access_level": "repository_readme_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/multiflow/license",
+        "fetched_at": "2026-09-11T06:59:36.932210+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/multiflow/license",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/jasonkyuyim/multiflow/blob/main/LICENSE",
+        "license_spdx": "MIT",
+        "sha256": "3399bb3f2adddbb0f718a2724db1d9d46d8641001e0c5064c30175b569113fef",
+        "text_length": 1082,
+        "access_level": "license_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/multiflow/releases",
+        "fetched_at": "2026-09-11T06:59:36.962642+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/multiflow/releases",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "text_length": 2,
+        "access_level": "repository_release_metadata",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://proceedings.mlr.press/v235/campbell24a.html",
+        "fetched_at": "2026-09-11T06:59:37.039655+00:00",
+        "status": 200,
+        "final_url": "https://proceedings.mlr.press/v235/campbell24a.html",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "1c4f99a7abb0a4561c94c1d73a9d600edafae1afbd372d4d89ae8540e1e55d8c",
+        "text_length": 15946,
+        "access_level": "landing_page_or_html",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2302.02277",
+        "fetched_at": "2026-09-11T06:59:37.157315+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2302.02277",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "3c8fc95fbea7e8d3a71bf725d318e50584434bb615aae50dc80843d1445de0f6",
+        "text_length": 43482,
+        "access_level": "landing_page_or_html",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/readme",
+        "fetched_at": "2026-09-11T06:59:37.276992+00:00",
+        "status": 403,
+        "error": "HTTPError",
+        "access_level": "inaccessible",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/license",
+        "fetched_at": "2026-09-11T06:59:37.317162+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/license",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/jasonkyuyim/se3_diffusion/blob/master/LICENSE",
+        "license_spdx": "MIT",
+        "sha256": "08801ebf9f7f3143b978e86c5fc19374f590a027f073b994923cbe87857b34bf",
+        "text_length": 1117,
+        "access_level": "license_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/releases",
+        "fetched_at": "2026-09-11T06:59:37.322271+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/releases",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "text_length": 2,
+        "access_level": "repository_release_metadata",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2310.05297",
+        "fetched_at": "2026-09-11T06:59:37.423664+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2310.05297",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "46b780d2eaec9bc1117475fae7dcc16a71ba20d66f128866c6aa0eb13f673d62",
+        "text_length": 41276,
+        "access_level": "landing_page_or_html",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/frame-flow/readme",
+        "fetched_at": "2026-09-11T06:59:37.478114+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repositories/679222545/readme",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/microsoft/protein-frame-flow/blob/main/README.md",
+        "license_spdx": null,
+        "sha256": "c5cea0dc5dc099d5e54828d6160db0ae47f045a2e27e0929542f22d258ed1755",
+        "text_length": 9363,
+        "access_level": "repository_readme_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/frame-flow/license",
+        "fetched_at": "2026-09-11T06:59:37.635731+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repositories/679222545/license",
+        "content_type": "application/json; charset=utf-8",
+        "content_url": "https://github.com/microsoft/protein-frame-flow/blob/main/LICENSE",
+        "license_spdx": "MIT",
+        "sha256": "43f2aaf5f45cfa09647001c5695dcd1f897ead6a6ab7c5e505a7c97ddbc820ad",
+        "text_length": 1140,
+        "access_level": "license_full",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/frame-flow/releases",
+        "fetched_at": "2026-09-11T06:59:37.765665+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repositories/679222545/releases",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "text_length": 2,
+        "access_level": "repository_release_metadata",
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2401.04082",
+        "access_level": "abstract",
+        "fetched_at": "2026-09-11T07:08:26.262585+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2401.04082",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "b614804073e46070ba2fa293bba58737c11a9242382a02a7ec1af5e4288003e5",
+        "text_length": 43234,
+        "manifest": "post_resolution_manifest.json"
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#FrameFlow"
+  },
+  {
+    "id": "bfm-mrna-fm",
+    "name": "mRNA-FM",
+    "modality": "rna",
+    "decision": "hold_residual",
+    "reviewed": "2026-09-11",
+    "reason": "Residual from the PlantRNA-FM family split: the cited model card declares an unofficial conversion and links family-level publication evidence. Official mRNA-specific provenance and exact original-artifact terms remain unresolved.",
+    "reconsider_when": "Verify the original mRNA-FM artifact and primary mRNA-specific evidence, or explicitly evidence and label a provenance-confirmed conversion.",
+    "sources": [
+      {
+        "candidate": "mRNA-FM",
+        "url": "https://huggingface.co/yangheng/mrnafm/raw/main/README.md",
+        "access_level": "model_card_full",
+        "fetched_at": "2026-09-11T07:02:04.461117+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/yangheng/mrnafm/raw/main/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "4155a267facfbcf6f1d09a4696734a642fd9a2bcb8c957554ed2b981d48cb8c5",
+        "text_length": 10197,
+        "manifest": "candidate_source_manifest.json"
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#mRNA-FM"
+  },
+  {
+    "id": "bfm-framediff",
+    "name": "FrameDiff",
+    "modality": "protein",
+    "decision": "hold_residual",
+    "reviewed": "2026-09-11",
+    "reason": "Family identity is now separated; the inspected release documents unconditional backbone generation, without a separately evidenced broader reusable task set.",
+    "reconsider_when": "Establish broader-than-one-task pretrained reuse under the current catalog boundary, or an explicitly approved structural-model policy.",
+    "sources": []
+  },
+  {
+    "id": "bfm-succeed",
+    "name": "SUCCEED",
+    "modality": "dna",
+    "decision": "hold",
+    "reviewed": "2026-09-11",
+    "reason": "A matching primary journal paper and code/Drive checkpoint links exist, but exact checkpoint and current implementation reuse terms were not verified; no repository LICENSE file was found at the inspected locator.",
+    "reconsider_when": "Verify explicit code and pretrained-checkpoint terms and publicly listed checkpoint access.",
+    "sources": [
+      {
+        "candidate": "SUCCEED",
+        "url": "https://www.nature.com/articles/s41467-026-73129-6",
+        "access_level": "inaccessible_challenge",
+        "fetched_at": "2026-09-11T07:03:26.277687+00:00",
+        "status": 200,
+        "final_url": "https://www.nature.com/articles/s41467-026-73129-6",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+        "text_length": 3036,
+        "page_title": "Client Challenge",
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "candidate": "SUCCEED",
+        "url": "https://raw.githubusercontent.com/bioczsun/SUCCEED/HEAD/README.md",
+        "access_level": "repository_readme_full",
+        "fetched_at": "2026-09-11T07:04:42.222455+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/bioczsun/SUCCEED/HEAD/README.md",
+        "content_type": "text/plain; charset=utf-8",
+        "sha256": "9403345a054b4e68ceaecdfdf6a2916a4e320e3a6eaf4955c79b9f7cf79f76b3",
+        "text_length": 14485,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "candidate": "SUCCEED",
+        "url": "https://github.com/bioczsun/SUCCEED",
+        "access_level": "repository_listing",
+        "fetched_at": "2026-09-11T07:04:42.222487+00:00",
+        "status": 200,
+        "final_url": "https://github.com/bioczsun/SUCCEED",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "d86ab22c6535d93aa4e3c64435bbe418ad6d94e32dec9b0b38fe1a132d049c09",
+        "text_length": 397981,
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "candidate": "SUCCEED",
+        "url": "https://raw.githubusercontent.com/bioczsun/SUCCEED/HEAD/LICENSE",
+        "access_level": "inaccessible",
+        "fetched_at": "2026-09-11T07:04:42.222520+00:00",
+        "status": 404,
+        "error": "HTTPError",
+        "manifest": "candidate_extended_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-iggm2",
+    "name": "IgGM2",
+    "modality": "protein",
+    "decision": "hold",
+    "reviewed": "2026-09-11",
+    "reason": "The July 2026 preprint is now verified from full text; no author-linked released IgGM2 checkpoint, usable public endpoint, or reuse terms were located in the inspected sources.",
+    "reconsider_when": "Verify an official reusable IgGM2 artifact or public inference endpoint with explicit access and reuse terms.",
+    "sources": [
+      {
+        "candidate": "IgGM2",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.07.09.737510v1.full",
+        "access_level": "full_text",
+        "fetched_at": "2026-09-11T07:03:26.272770+00:00",
+        "status": 200,
+        "final_url": "https://www.biorxiv.org/content/10.64898/2026.07.09.737510v1.full",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "aba14b7fe26c7ad42d14faf263628fca59f6e1d3b68de105d0cde4e5c00fc986",
+        "text_length": 342398,
+        "manifest": "candidate_detail_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-ainn-p1",
+    "name": "AINN-P1",
+    "modality": "protein",
+    "decision": "hold",
+    "reviewed": "2026-09-11",
+    "reason": "The vendor technical manuscript is verified in full (March 2026, 12 pages); its Data and Code Availability section says model weights and evaluation code will be made available upon publication. No currently usable public artifact or endpoint and exact reuse terms were established.",
+    "reconsider_when": "Verify an official released model artifact or usable public inference endpoint, with exact reuse terms.",
+    "sources": [
+      {
+        "candidate": "AINN-P1",
+        "url": "https://ainno.ai/news-ainn-p1",
+        "access_level": "vendor_announcement",
+        "fetched_at": "2026-09-11T07:03:26.231415+00:00",
+        "status": 200,
+        "final_url": "https://www.ainnocence.com/news-ainn-p1",
+        "content_type": "text/html; charset=UTF-8",
+        "sha256": "38317204e8300b1f5b4d5c8fca2f0fdecaee75cc399d40f574776424211d376f",
+        "text_length": 27644,
+        "manifest": "candidate_detail_manifest.json"
+      },
+      {
+        "candidate": "AINN-P1",
+        "url": "https://www.ainnocence.com/assets/press/AINN-P1_bioRxiv_submission.pdf",
+        "access_level": "vendor_technical_manuscript_full_text",
+        "fetched_at": "2026-09-11T07:21:14.678627+00:00",
+        "cache_file": "ainn-p1-technical-manuscript.pdf",
+        "status": 200,
+        "final_url": "https://www.ainnocence.com/assets/press/AINN-P1_bioRxiv_submission.pdf",
+        "content_type": "application/pdf",
+        "sha256": "c1642aed0713c4c342c7cbc130d1991a9f30d2de36f54765a80f35b9528715bf",
+        "text_length": 29794,
+        "pages": 12
+      }
+    ],
+    "claim_evidence": "evidence/refresh-2026-09-11/claim_evidence.json#AINN-P1"
+  },
+  {
+    "id": "bfm-rudolfv-2",
+    "name": "RudolfV-2",
+    "modality": "spatial",
+    "decision": "hold",
+    "reviewed": "2026-09-11",
+    "reason": "Official model metadata lists safetensors behind manual approval and an other/custom licence; the model card returned 401, so the actual terms and full member-level access conditions were not readable.",
+    "reconsider_when": "Read and verify the exact official model terms and member-specific artifact access; do not substitute Atlas evidence.",
+    "sources": [
+      {
+        "candidate": "RudolfV-2",
+        "url": "https://huggingface.co/Aignostics/RudolfV-2/raw/main/README.md",
+        "access_level": "inaccessible",
+        "fetched_at": "2026-09-11T07:04:42.681210+00:00",
+        "status": 401,
+        "error": "HTTPError",
+        "manifest": "candidate_extended_manifest.json"
+      },
+      {
+        "candidate": "RudolfV-2",
+        "url": "https://huggingface.co/api/models/Aignostics/RudolfV-2",
+        "access_level": "artifact_metadata",
+        "fetched_at": "2026-09-11T07:04:42.681651+00:00",
+        "status": 200,
+        "final_url": "https://huggingface.co/api/models/Aignostics/RudolfV-2",
+        "content_type": "application/json; charset=utf-8",
+        "sha256": "a8b1b047dfeb8c4f3d88924f235a33a012d15bb03256977abd3c7978cd074203",
+        "text_length": 1946,
+        "manifest": "candidate_extended_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-gpn-msa",
+    "name": "GPN-MSA",
+    "modality": "dna",
+    "decision": "material_correction",
+    "reviewed": "2026-09-11",
+    "reason": "Surface final journal paper and official deprecation in favor of GPN-Star. Original PMC link is the correct GPN-MSA preprint, confirmed independently; no erroneous identity correction applied. Preserve the old row verified date for the targeted partial check.",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41587-024-02511-w",
+        "fetched_at": "2026-09-11",
+        "access_level": "abstract_and_code_availability_via_web",
+        "excerpt": "deprecated in favor of GPN-Star",
+        "excerpt_source": "https://raw.githubusercontent.com/songlab-cal/gpn/HEAD/README.md"
+      }
+    ]
+  },
+  {
+    "name": "Unify",
+    "modality": "singlecell",
+    "decision": "reject_scope",
+    "reviewed": "2026-09-11",
+    "reason": "The official README describes training integration/perturbation models on supplied datasets, using pre-existing ESM/LLaMA embeddings. No reusable pretrained Unify checkpoint was established; do not relabel this training method as a foundation model.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/huawen-poppy/Unify/HEAD/README.md",
+        "fetched_at": "2026-09-11",
+        "access_level": "primary_page_or_abstract_via_web"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41467-026-76230-y",
+        "fetched_at": "2026-09-11",
+        "access_level": "primary_page_or_abstract_via_web"
+      }
+    ]
+  },
+  {
+    "name": "DeCAF-Pearl",
+    "modality": "complex",
+    "decision": "watchlist",
+    "reviewed": "2026-09-11",
+    "reason": "The model-hub listing still contains DeCAF checkpoints without a separately identified Pearl release. No change to the already explicit DeCAF-Boltz-only record.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/api/models/genesisml/decaf",
+        "fetched_at": "2026-09-11",
+        "access_level": "primary_page_or_abstract_via_web"
+      }
+    ]
+  },
+  {
+    "name": "Virchow2G",
+    "modality": "spatial",
+    "decision": "watchlist",
+    "reviewed": "2026-09-11",
+    "reason": "Current official family-access page was revisited; public weights or a technical paper with new release terms were not established. Retain existing member-specific access wording.",
+    "sources": [
+      {
+        "url": "https://www.paige.ai/foundation-models",
+        "fetched_at": "2026-09-11",
+        "access_level": "primary_page_or_abstract_via_web"
+      }
+    ]
+  },
+  {
+    "name": "nnMIL",
+    "modality": "spatial",
+    "decision": "reject_scope",
+    "reviewed": "2026-09-11",
+    "reason": "The August 2026 paper describes a multiple-instance learning aggregation framework operating on existing foundation-model features; no independently pretrained foundation backbone is claimed.",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41551-026-01767-8",
+        "fetched_at": "2026-09-11",
+        "access_level": "primary_page_or_abstract_via_web"
+      }
+    ]
+  },
+  {
+    "name": "CAPTAIN",
+    "modality": "multimodal",
+    "decision": "already_present",
+    "reviewed": "2026-09-11",
+    "reason": "Rediscovered primary paper matches displayed bfm-captain.",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41467-026-72882-y",
+        "fetched_at": "2026-09-11",
+        "access_level": "primary_page_or_abstract_via_web"
+      }
+    ]
+  },
+  {
+    "name": "TissueFormer",
+    "modality": "spatial",
+    "decision": "already_present",
+    "reviewed": "2026-09-11",
+    "reason": "Rediscovered paper matches the existing TissueFormer record; no duplicate addition.",
+    "sources": [
+      {
+        "url": "https://www.biorxiv.org/content/10.64898/2026.07.31.741265v1.full",
+        "fetched_at": "2026-09-11",
+        "access_level": "primary_page_or_abstract_via_web"
+      }
+    ]
+  },
+  {
+    "name": "Intern-S2-Preview",
+    "modality": "multimodal",
+    "decision": "route_elsewhere",
+    "reviewed": "2026-09-11",
+    "reason": "General scientific agentic foundation-model family; discovery lead forwarded for agent-index consideration rather than expanding biological-model scope.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2608.13505",
+        "fetched_at": "2026-09-11",
+        "access_level": "primary_page_or_abstract_via_web"
+      }
+    ]
+  },
+  {
+    "name": "Genesis Open Models Initiative",
+    "modality": "platform",
+    "decision": "reject_no_release",
+    "reviewed": "2026-09-11",
+    "reason": "The official announcement describes an initiative and proposed Genesis-Science-1 model; it is not a presently released biological-model platform artifact.",
+    "sources": [
+      {
+        "url": "https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-launches-genesis-open-models-initiative",
+        "fetched_at": "2026-09-11",
+        "access_level": "primary_page_or_abstract_via_web"
+      }
+    ]
+  },
+  {
+    "id": "bfm-alice",
+    "name": "ALICE",
+    "modality": "spatial",
+    "decision": "demote_hold",
+    "reviewed": "2026-09-11",
+    "reason": "Current official GitHub repository and raw README return 404; the authenticated GitHub connector independently returns NOT_FOUND. The Hugging Face model API and raw card return 401. Cached search text preserves earlier availability but does not establish current usable access or readable terms. This is an access-verification HOLD, not a claim of discontinuation.",
+    "sources": [
+      {
+        "candidate": "ALICE",
+        "url": "https://raw.githubusercontent.com/WonderLandxD/ALICE/HEAD/README.md",
+        "access_level": "inaccessible",
+        "fetched_at": "2026-09-11T07:24:09.572032+00:00",
+        "cache_file": "6a39376e4017e90bb42da8dca512855b22e7dc2992da56e5f30148d5e7e2a386.txt",
+        "status": 404,
+        "error": "HTTPError"
+      },
+      {
+        "candidate": "ALICE",
+        "url": "https://huggingface.co/JWonderLand/ALICE/raw/main/README.md",
+        "access_level": "inaccessible",
+        "fetched_at": "2026-09-11T07:24:09.572418+00:00",
+        "cache_file": "0a540d7773759de080734f85f10f8f220c82b8a2088a6278e3d67f8fd6791b71.txt",
+        "status": 401,
+        "error": "HTTPError"
+      },
+      {
+        "candidate": "ALICE",
+        "url": "https://huggingface.co/api/models/JWonderLand/ALICE",
+        "access_level": "inaccessible",
+        "fetched_at": "2026-09-11T07:24:09.572522+00:00",
+        "cache_file": "db632f2b0f143a4d91369ef3546a62038463e36195bb34c10032364fac7c55fe.txt",
+        "status": 401,
+        "error": "HTTPError"
+      },
+      {
+        "url": "https://github.com/WonderLandxD/ALICE",
+        "fetched_at": "2026-09-11",
+        "access_level": "inaccessible",
+        "acquisition": "GitHub connector",
+        "http_status": 404,
+        "error_code": "NOT_FOUND"
+      },
+      {
+        "url": "https://github.com/WonderLandxD/ALICE",
+        "fetched_at": "2026-09-11",
+        "access_level": "cached_search_readme",
+        "boundary": "Search result crawled last month; historical access evidence only."
+      }
+    ]
+  }
+]

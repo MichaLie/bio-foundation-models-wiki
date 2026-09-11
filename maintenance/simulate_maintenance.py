@@ -76,6 +76,18 @@ def impossible_date(repo: Path) -> None:
     write_records(path, data)
 
 
+def dated_evidence_source(repo: Path) -> None:
+    path, data, _ = records(repo)
+    data[0]["audit_source"] = "evidence/refresh-2026-09-11/candidate_decisions.json"
+    write_records(path, data)
+
+
+def missing_evidence_source(repo: Path) -> None:
+    path, data, _ = records(repo)
+    data[0]["audit_source"] = "evidence/refresh-2026-09-10/candidate_decisions.json"
+    write_records(path, data)
+
+
 def distribution_drift(repo: Path) -> None:
     _, _, metadata = records(repo)
     (repo / "docs" / metadata["data_file"]).write_text("[]\n", encoding="utf-8")
@@ -115,6 +127,8 @@ def main() -> int:
         ("invalid_controlled_vocabulary", invalid_vocabulary, False, []),
         ("normalized_alias_collision", alias_collision, False, []),
         ("impossible_calendar_date", impossible_date, False, []),
+        ("valid_dated_evidence_source", dated_evidence_source, True, []),
+        ("missing_evidence_source", missing_evidence_source, False, []),
         ("stale_public_distribution", distribution_drift, False, ["--check-only"]),
         ("mismatched_release_governance", mismatched_release_governance, False, ["--mode", "release", "--skip-links"]),
     ]

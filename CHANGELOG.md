@@ -2,6 +2,20 @@
 
 All notable public changes to this resource are documented here.
 
+## 2.2.0 — 2026-09-11
+
+- Added or promoted 11 models and benchmarks across RNA, DNA, protein,
+  molecular and benchmark categories, taking the displayed catalog to 400.
+  Re-reviewed all 39 previous HOLD conditions; 44 candidates remain held.
+- Corrected GPN-MSA's publication and deprecation information and moved ALICE
+  to a reversible HOLD after its official repository and model access failed.
+  Preserved stable IDs, prior evidence and unchanged verification dates.
+- Distinguished code, weights, datasets, gating and reuse terms, including
+  RIBOSPAN's custom licence and separately licensed model archives.
+- Enabled accurate dated evidence paths with file-existence validation,
+  rebuilt all distributions deterministically and recorded the full source,
+  link and independent review evidence for this refresh.
+
 ## 2.1.1 — 2026-08-14
 
 - Added a visible version-and-date badge to the index header, generated from

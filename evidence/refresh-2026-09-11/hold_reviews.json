@@ -1,0 +1,1831 @@
+[
+  {
+    "id": "bfm-mrna-fm-plantrna-fm",
+    "name": "mRNA-FM / PlantRNA-FM",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Split the family or verify each member with its own primary evidence, artifact locator, and licence.",
+    "decision": "split_promote",
+    "assessment": "PlantRNA-FM satisfies independent paper, official artifact and MIT terms. Preserve the original ID for PlantRNA-FM; mRNA-FM remains a disambiguated residual hold.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/",
+        "fetched_at": "2026-09-11T06:59:33.681191+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/yangheng/PlantRNA-FM",
+        "fetched_at": "2026-09-11T06:59:33.681554+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/yangheng/mrnafm",
+        "fetched_at": "2026-09-11T06:59:33.681671+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-saturn",
+    "name": "SATURN",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when an official reusable pretrained SATURN checkpoint is released and its terms are verified, or reclassify outside model scope.",
+    "decision": "retain",
+    "assessment": "README describes training outputs, derived macrogene weights and embeddings; no independently reusable pretrained SATURN checkpoint was established.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41592-024-02191-z",
+        "fetched_at": "2026-09-11T06:59:33.681727+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/snap-stanford/SATURN/readme",
+        "fetched_at": "2026-09-11T06:59:33.681778+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/snap-stanford/SATURN/license",
+        "fetched_at": "2026-09-11T06:59:33.681825+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/snap-stanford/SATURN/releases",
+        "fetched_at": "2026-09-11T06:59:33.681871+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-xtrimogene",
+    "name": "xTrimoGene",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when official reusable code or a checkpoint is released and verified.",
+    "decision": "retain",
+    "assessment": "Paper links the scFoundation repository. That does not establish a distinct reusable xTrimoGene release; the family relationship and standalone artifact remain unresolved.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://openreview.net/forum?id=gdwcoBCMVi",
+        "fetched_at": "2026-09-11T06:59:33.681904+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/html/2311.15156v2",
+        "fetched_at": "2026-09-11T06:59:33.681952+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-scprotein",
+    "name": "scPROTEIN",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider if broader reusable pretraining is evidenced or a written scope-policy revision explicitly includes this class.",
+    "decision": "retain",
+    "assessment": "Dataset-specific stage checkpoints remain documented. No broader pretrained reusable scope was established; no scope-policy exception was introduced.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41592-024-02214-9",
+        "fetched_at": "2026-09-11T06:59:33.681996+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/TencentAILabHealthcare/scPROTEIN/readme",
+        "fetched_at": "2026-09-11T06:59:33.682043+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/TencentAILabHealthcare/scPROTEIN/license",
+        "fetched_at": "2026-09-11T06:59:33.682072+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/TencentAILabHealthcare/scPROTEIN/releases",
+        "fetched_at": "2026-09-11T06:59:34.259092+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-deepsea",
+    "name": "DeepSEA",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider only under a written historical-exception policy with the original artifact correctly identified.",
+    "decision": "retain",
+    "assessment": "Historical assay-prediction scope remains unchanged. Selene is a framework locator, not by itself original DeepSEA artifact evidence; no historical exception was adopted.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/nmeth.3547",
+        "fetched_at": "2026-09-11T06:59:34.278263+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/FunctionLab/selene/readme",
+        "fetched_at": "2026-09-11T06:59:34.330584+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/FunctionLab/selene/license",
+        "fetched_at": "2026-09-11T06:59:34.337056+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/FunctionLab/selene/releases",
+        "fetched_at": "2026-09-11T06:59:34.391293+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-chrombpnet",
+    "name": "ChromBPNet",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider if a written scope policy includes assay-specific predictors or broader reusable pretraining is evidenced.",
+    "decision": "retain",
+    "assessment": "README documents assay-specific training and transferable bias components. The current broad-foundation-model condition is not established by this alone.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://www.biorxiv.org/content/10.1101/2024.12.25.630221v1",
+        "fetched_at": "2026-09-11T06:59:34.393281+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/kundajelab/chrombpnet/readme",
+        "fetched_at": "2026-09-11T06:59:34.473811+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/kundajelab/chrombpnet/license",
+        "fetched_at": "2026-09-11T06:59:34.497844+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/kundajelab/chrombpnet/releases",
+        "fetched_at": "2026-09-11T06:59:34.595552+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-mistral-dna",
+    "name": "Mistral-DNA",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when a primary source, authorized checkpoint, direct model card, and exact terms are all verified.",
+    "decision": "retain",
+    "assessment": "Author repository still describes a training experiment and links a hub checkpoint. No primary publication or explicit implementation licence was established.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://api.github.com/repos/raphaelmourad/Mistral-DNA/readme",
+        "fetched_at": "2026-09-11T06:59:34.607620+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/raphaelmourad/Mistral-DNA/license",
+        "fetched_at": "2026-09-11T06:59:34.814176+00:00",
+        "access_level": "inaccessible",
+        "http_status": 404,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/raphaelmourad/Mistral-DNA/releases",
+        "fetched_at": "2026-09-11T06:59:34.852413+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-florabert",
+    "name": "FloraBERT",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider if broader reusable foundation-model scope is established by primary evidence.",
+    "decision": "retain",
+    "assessment": "Code and saved models are documented, but the inspected source continues to focus on tissue-expression regression. The recorded broader-scope condition remains unresolved.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://www.researchsquare.com/article/rs-1927200/v1",
+        "fetched_at": "2026-09-11T06:59:34.952187+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/benlevyx/florabert/readme",
+        "fetched_at": "2026-09-11T06:59:35.111313+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/benlevyx/florabert/license",
+        "fetched_at": "2026-09-11T06:59:35.130426+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/benlevyx/florabert/releases",
+        "fetched_at": "2026-09-11T06:59:35.264997+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-drfold",
+    "name": "DRfold",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider only under a written structural-model exception or after reframing around an evidenced reusable pretrained component.",
+    "decision": "retain",
+    "assessment": "RNA-structure implementations and MIT statements are visible; the recorded task-scope boundary remains unresolved and no policy exception was adopted.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41467-023-41303-9",
+        "fetched_at": "2026-09-11T06:59:35.478301+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003659",
+        "fetched_at": "2026-09-11T06:59:35.583760+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/leeyang/DRfold/readme",
+        "fetched_at": "2026-09-11T06:59:35.583992+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/leeyang/DRfold/license",
+        "fetched_at": "2026-09-11T06:59:35.984619+00:00",
+        "access_level": "inaccessible",
+        "http_status": 404,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/leeyang/DRfold/releases",
+        "fetched_at": "2026-09-11T06:59:36.223601+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/leeyang/DRfold2/readme",
+        "fetched_at": "2026-09-11T06:59:36.232578+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/leeyang/DRfold2/license",
+        "fetched_at": "2026-09-11T06:59:36.503874+00:00",
+        "access_level": "inaccessible",
+        "http_status": 404,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/leeyang/DRfold2/releases",
+        "fetched_at": "2026-09-11T06:59:36.535756+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-framediff-frameflow-multiflow",
+    "name": "FrameDiff / FrameFlow / Multiflow",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Split FrameDiff, FrameFlow, and MultiFlow into independently evidenced records, or narrow this record to one system.",
+    "decision": "split_promote",
+    "assessment": "Narrow the original stable ID to MultiFlow; separately add FrameFlow with generation and motif-scaffolding modes. FrameDiff remains a residual scope hold. MIT implementation terms are separated from CC BY 4.0 archive terms.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/jasonkyuyim/se3_diffusion/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:56.563090+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2402.04997",
+        "fetched_at": "2026-09-11T06:59:36.743695+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/multiflow/readme",
+        "fetched_at": "2026-09-11T06:59:36.825947+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/multiflow/license",
+        "fetched_at": "2026-09-11T06:59:36.932210+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/multiflow/releases",
+        "fetched_at": "2026-09-11T06:59:36.962642+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://proceedings.mlr.press/v235/campbell24a.html",
+        "fetched_at": "2026-09-11T06:59:37.039655+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2302.02277",
+        "fetched_at": "2026-09-11T06:59:37.157315+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/readme",
+        "fetched_at": "2026-09-11T06:59:37.276992+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/license",
+        "fetched_at": "2026-09-11T06:59:37.317162+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/jasonkyuyim/se3_diffusion/releases",
+        "fetched_at": "2026-09-11T06:59:37.322271+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2310.05297",
+        "fetched_at": "2026-09-11T06:59:37.423664+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/frame-flow/readme",
+        "fetched_at": "2026-09-11T06:59:37.478114+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/frame-flow/license",
+        "fetched_at": "2026-09-11T06:59:37.635731+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/frame-flow/releases",
+        "fetched_at": "2026-09-11T06:59:37.765665+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-protriever",
+    "name": "Protriever",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when official executable code or reusable weights are released and verified.",
+    "decision": "retain",
+    "assessment": "Official repository remains minimal, with no verified reusable checkpoint or licence; the paper identity is confirmed.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2506.08954",
+        "fetched_at": "2026-09-11T06:59:38.194686+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/OATML-Markslab/Protriever/readme",
+        "fetched_at": "2026-09-11T06:59:38.223411+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/OATML-Markslab/Protriever/license",
+        "fetched_at": "2026-09-11T06:59:38.361802+00:00",
+        "access_level": "inaccessible",
+        "http_status": 404,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/OATML-Markslab/Protriever/releases",
+        "fetched_at": "2026-09-11T06:59:38.589872+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-protgps",
+    "name": "ProtGPS",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider if broader reusable foundation-model scope is established or a written task-specific exception is adopted.",
+    "decision": "retain",
+    "assessment": "README documents task checkpoints but no broader foundation-model scope. Publisher access was restricted; original condition is not satisfied by artifact existence.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://www.science.org/doi/10.1126/science.adq2634",
+        "fetched_at": "2026-09-11T06:59:38.642059+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/pgmikhael/protgps/readme",
+        "fetched_at": "2026-09-11T06:59:38.794628+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/pgmikhael/protgps/license",
+        "fetched_at": "2026-09-11T06:59:38.861394+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/pgmikhael/protgps/releases",
+        "fetched_at": "2026-09-11T06:59:38.884518+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-neuralplexer-and-neuralplexer3",
+    "name": "NeuralPLexer (and NeuralPLexer3)",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Split NeuralPLexer v1 and NP3 and verify each version's implementation, weights, and terms.",
+    "decision": "retain",
+    "assessment": "NeuralPLexer v1 has documented code and noncommercial archive terms. The NP3 member and its current artifact/access were not resolved, so the combined record remains held pending independent member records.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s42256-024-00792-z",
+        "fetched_at": "2026-09-11T06:59:39.177521+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/zrqiao/NeuralPLexer/readme",
+        "fetched_at": "2026-09-11T06:59:39.229301+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/zrqiao/NeuralPLexer/license",
+        "fetched_at": "2026-09-11T06:59:39.275177+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/zrqiao/NeuralPLexer/releases",
+        "fetched_at": "2026-09-11T06:59:39.454832+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.10373581",
+        "fetched_at": "2026-09-11T06:59:39.605101+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://openreview.net/forum?id=BlLAmMFEzJ",
+        "fetched_at": "2026-09-11T06:59:39.763200+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-uni-mol-docking-v2",
+    "name": "Uni-Mol Docking V2",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider only under a written structural/docking exception or with evidence of broader reusable scope.",
+    "decision": "retain",
+    "assessment": "Official repository still describes a released docking specialization. No broader reuse condition or structural-model exception was established.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2405.11769",
+        "fetched_at": "2026-09-11T06:59:39.879536+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/deepmodeling/Uni-Mol/readme",
+        "fetched_at": "2026-09-11T06:59:40.039191+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/deepmodeling/Uni-Mol/license",
+        "fetched_at": "2026-09-11T06:59:40.063298+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/deepmodeling/Uni-Mol/releases",
+        "fetched_at": "2026-09-11T06:59:40.115651+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-abodybuilder3",
+    "name": "ABodyBuilder3",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider only under a written structural-model exception or with evidence of broader reusable scope.",
+    "decision": "retain",
+    "assessment": "README and Apache-2.0 licence/weights locator are accessible; antibody-structure scope remains the recorded blocker.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/Exscientia/abodybuilder3/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:56.563383+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://academic.oup.com/bioinformatics/article/40/10/btae576/7810444",
+        "fetched_at": "2026-09-11T06:59:40.218665+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/Exscientia/abodybuilder3/readme",
+        "fetched_at": "2026-09-11T06:59:40.372055+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/Exscientia/abodybuilder3/license",
+        "fetched_at": "2026-09-11T06:59:40.373532+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/Exscientia/abodybuilder3/releases",
+        "fetched_at": "2026-09-11T06:59:40.425856+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-scdiva",
+    "name": "ScDiVa",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when official reusable code or a checkpoint is released and verified.",
+    "decision": "retain_material_update",
+    "assessment": "Author-named GitHub repository and linked hub now expose Apache-labelled weights and inference source. Static inspection finds from_pretrained downloads model.safetensors but passes it to torch.load, prints warning/error messages and returns random initialization without raising on loading failure; README says the inference SDK is under internal review. No model execution was performed. A verified usable implementation/checkpoint pair is still needed.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2602.03477",
+        "fetched_at": "2026-09-11T06:59:40.672943+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/wangmingxuan666/ScDiVa/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:07:52.454620+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "final_resolution_manifest.json"
+      },
+      {
+        "url": "https://github.com/wangmingxuan666/ScDiVa",
+        "fetched_at": "2026-09-11T07:07:52.454971+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "final_resolution_manifest.json"
+      },
+      {
+        "url": "https://wangmingxuan666.github.io/ScDiVa-web/",
+        "fetched_at": "2026-09-11T07:07:52.455079+00:00",
+        "access_level": "inaccessible",
+        "http_status": 404,
+        "manifest": "final_resolution_manifest.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/wangmingxuan666/ScDiVa/HEAD/LICENSE",
+        "fetched_at": "2026-09-11T07:08:26.261999+00:00",
+        "access_level": "license_full",
+        "http_status": 200,
+        "manifest": "post_resolution_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/warming666/ScDiVa/raw/main/modeling_scdiva.py",
+        "fetched_at": "2026-09-11T07:08:26.262480+00:00",
+        "access_level": "inference_source_code",
+        "http_status": 200,
+        "manifest": "post_resolution_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/warming666/ScDiVa/raw/main/README.md",
+        "fetched_at": "2026-09-11T07:06:01.798352+00:00",
+        "access_level": "model_card_full",
+        "http_status": 200,
+        "manifest": "resolution_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/warming666/ScDiVa",
+        "fetched_at": "2026-09-11T07:06:01.798665+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "resolution_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/html/2602.03477v1",
+        "fetched_at": "2026-09-11T07:06:01.798778+00:00",
+        "access_level": "full_text",
+        "http_status": 200,
+        "manifest": "resolution_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-tabula",
+    "name": "Tabula",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when an official reusable pretrained checkpoint is released and its terms are verified.",
+    "decision": "retain",
+    "assessment": "Training code and current paper remain visible; no reusable pretrained checkpoint was established from the inspected README and repository release metadata.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://github.com/aristoteleo/tabula",
+        "fetched_at": "2026-09-11T07:00:56.563539+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1",
+        "fetched_at": "2026-09-11T06:59:40.727684+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/aristoteleo/tabula/readme",
+        "fetched_at": "2026-09-11T06:59:40.838022+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/aristoteleo/tabula/license",
+        "fetched_at": "2026-09-11T06:59:40.847128+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/aristoteleo/tabula/releases",
+        "fetched_at": "2026-09-11T06:59:40.891396+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2607.19400",
+        "fetched_at": "2026-09-11T06:59:41.032036+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-atlas-rudolfv-successor",
+    "name": "Atlas (RudolfV successor)",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when a current official public artifact or endpoint and its exact access terms are verified.",
+    "decision": "retain",
+    "assessment": "Atlas/Atlas 2 papers and vendor pages are reachable. No explicit usable public Atlas endpoint/artifact terms were established. RudolfV-2 is tracked separately, with unreadable gated terms.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2501.05409",
+        "fetched_at": "2026-09-11T06:59:41.099017+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2601.05148",
+        "fetched_at": "2026-09-11T06:59:41.162177+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://www.aignostics.com/products/foundation-models",
+        "fetched_at": "2026-09-11T06:59:41.230314+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://www.aignostics.com/blog/atlas-2-setting-a-new-standard-for-pathology-foundation-models",
+        "fetched_at": "2026-09-11T06:59:41.232676+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-bioreason",
+    "name": "BioReason",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when the promised official checkpoints are released and their terms are verified.",
+    "decision": "retain",
+    "assessment": "Current original BioReason README still promises checkpoints soon. BioReason-Pro links are a separate already-cataloged successor, not original BioReason weights.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/bowang-lab/BioReason/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:56.563640+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/bowang-lab/BioReason",
+        "fetched_at": "2026-09-11T07:00:56.563687+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2505.23579",
+        "fetched_at": "2026-09-11T06:59:41.352409+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/bowang-lab/BioReason/readme",
+        "fetched_at": "2026-09-11T06:59:41.433232+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/bowang-lab/BioReason/license",
+        "fetched_at": "2026-09-11T06:59:41.433311+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/bowang-lab/BioReason/releases",
+        "fetched_at": "2026-09-11T06:59:41.461802+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-openprotein-ai-poet-poet-2",
+    "name": "OpenProtein.AI (PoET / PoET-2)",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Narrow to the platform or merge with the PoET-2 record while documenting the stable-ID disposition.",
+    "decision": "retain",
+    "assessment": "PoET-2 remains available under distinct Apache code/custom noncommercial weights terms and already has a displayed record. The held combined platform/family identity must not become another model duplicate.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://github.com/OpenProteinAI/PoET-2",
+        "fetched_at": "2026-09-11T07:00:56.563757+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2508.04724",
+        "fetched_at": "2026-09-11T06:59:41.529148+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/OpenProteinAI/PoET-2/readme",
+        "fetched_at": "2026-09-11T06:59:41.621227+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/OpenProteinAI/PoET-2/license",
+        "fetched_at": "2026-09-11T06:59:41.693845+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/OpenProteinAI/PoET-2/releases",
+        "fetched_at": "2026-09-11T06:59:41.824048+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-pearl",
+    "name": "Pearl",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when an official reusable model artifact or public endpoint and its terms are verified.",
+    "decision": "retain",
+    "assessment": "Paper and vendor research page are accessible but no reusable Pearl artifact or explicit public inference terms were established.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2510.24670",
+        "fetched_at": "2026-09-11T06:59:41.991418+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://www.genesis.ml/ai-research",
+        "fetched_at": "2026-09-11T06:59:42.055720+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-sctranslator",
+    "name": "scTranslator",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when scope eligibility and explicit code/checkpoint reuse terms are both resolved.",
+    "decision": "retain",
+    "assessment": "README lists pretrained Google Drive checkpoints; explicit implementation/checkpoint reuse terms and scope eligibility remain unresolved.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/TencentAILabHealthcare/scTranslator/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:56.563809+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/TencentAILabHealthcare/scTranslator",
+        "fetched_at": "2026-09-11T07:00:56.563843+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41551-025-01528-z",
+        "fetched_at": "2026-09-11T06:59:42.069624+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/TencentAILabHealthcare/scTranslator/readme",
+        "fetched_at": "2026-09-11T06:59:42.159188+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/TencentAILabHealthcare/scTranslator/license",
+        "fetched_at": "2026-09-11T06:59:42.223276+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/TencentAILabHealthcare/scTranslator/releases",
+        "fetched_at": "2026-09-11T06:59:42.299250+00:00",
+        "access_level": "repository_release_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-genecompass",
+    "name": "GeneCompass",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when explicit code and checkpoint reuse terms are confirmed from an official source.",
+    "decision": "retain",
+    "assessment": "Official README documents pretrained artifacts; the inspected repository licence endpoint returned 404. Exact code/checkpoint terms remain unresolved.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/xCompass-AI/GeneCompass/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:56.563878+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41422-024-01034-y",
+        "fetched_at": "2026-09-11T06:59:42.342197+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/xCompass-AI/GeneCompass/readme",
+        "fetched_at": "2026-09-11T06:59:42.433649+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/xCompass-AI/GeneCompass/license",
+        "fetched_at": "2026-09-11T06:59:42.539159+00:00",
+        "access_level": "inaccessible",
+        "http_status": 404,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/xCompass-AI/GeneCompass/releases",
+        "fetched_at": "2026-09-11T06:59:42.600760+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-hybridna",
+    "name": "HybriDNA",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when a provenance-confirmed official reusable model artifact is released and verified.",
+    "decision": "retain_material_update",
+    "assessment": "A Mishamq/HybriDNA-3B hub repository lists weights and Apache metadata, but its card describes the 300M variant and no author-controlled link from the inspected preprint establishes ownership. Do not promote the mismatched upload as an official 3B release.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2502.10807",
+        "fetched_at": "2026-09-11T06:59:42.668615+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/Mishamq/HybriDNA-3B/raw/main/README.md",
+        "fetched_at": "2026-09-11T07:06:01.798907+00:00",
+        "access_level": "model_card_full",
+        "http_status": 200,
+        "manifest": "resolution_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/Mishamq/HybriDNA-3B",
+        "fetched_at": "2026-09-11T07:06:01.798952+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "resolution_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/html/2502.10807v1",
+        "fetched_at": "2026-09-11T07:06:01.798996+00:00",
+        "access_level": "full_text",
+        "http_status": 200,
+        "manifest": "resolution_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-genemamba",
+    "name": "GeneMamba",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when explicit reuse terms for the official code and weights are confirmed.",
+    "decision": "retain_material_update",
+    "assessment": "Prior GitHub locator now returns 404 on both public page and raw README; hub still lists weights but no licence metadata. The earlier nonstandard licence concern was not resolved.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/MineSelf2016/GeneMamba/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:56.563909+00:00",
+        "access_level": "inaccessible",
+        "http_status": 404,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/MineSelf2016/GeneMamba",
+        "fetched_at": "2026-09-11T07:00:56.906865+00:00",
+        "access_level": "inaccessible",
+        "http_status": 404,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2504.16956",
+        "fetched_at": "2026-09-11T06:59:42.738270+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/MineSelf2016/GeneMamba/readme",
+        "fetched_at": "2026-09-11T06:59:42.774483+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/MineSelf2016/GeneMamba/license",
+        "fetched_at": "2026-09-11T06:59:42.814670+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/MineSelf2016/GeneMamba/releases",
+        "fetched_at": "2026-09-11T06:59:42.829568+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/mineself2016/GeneMamba",
+        "fetched_at": "2026-09-11T06:59:42.847658+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-scmmgpt",
+    "name": "scMMGPT",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when official reusable weights and explicit reuse terms are both confirmed.",
+    "decision": "retain",
+    "assessment": "Official repository README remains minimal; no released reusable weights with explicit terms were established.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/syr-cn/scMMGPT/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:56.952911+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/syr-cn/scMMGPT",
+        "fetched_at": "2026-09-11T07:00:57.224198+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2503.09427",
+        "fetched_at": "2026-09-11T06:59:42.887050+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/syr-cn/scMMGPT/readme",
+        "fetched_at": "2026-09-11T06:59:42.916607+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/syr-cn/scMMGPT/license",
+        "fetched_at": "2026-09-11T06:59:42.916797+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/syr-cn/scMMGPT/releases",
+        "fetched_at": "2026-09-11T06:59:42.961931+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-plip-pathology-language-image-pretraining",
+    "name": "PLIP (Pathology Language-Image Pretraining)",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when explicit reuse terms for the official code and weights are confirmed.",
+    "decision": "retain",
+    "assessment": "Official repository and linked model exist; model API supplies weights but no licence metadata, and no new explicit weight/code permission was established.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/PathologyFoundation/plip/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:57.231664+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/PathologyFoundation/plip",
+        "fetched_at": "2026-09-11T07:00:57.249707+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41591-023-02504-3",
+        "fetched_at": "2026-09-11T06:59:42.983616+00:00",
+        "access_level": "inaccessible_challenge",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/PathologyFoundation/plip/readme",
+        "fetched_at": "2026-09-11T06:59:43.000194+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/PathologyFoundation/plip/license",
+        "fetched_at": "2026-09-11T06:59:43.031597+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/PathologyFoundation/plip/releases",
+        "fetched_at": "2026-09-11T06:59:43.052210+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/vinid/plip",
+        "fetched_at": "2026-09-11T06:59:43.058448+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-next-mol",
+    "name": "NExT-Mol",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when explicit reuse terms for the official code and checkpoints are confirmed.",
+    "decision": "retain",
+    "assessment": "Official code links MoLlama and OSF checkpoints. Model metadata still lacks a licence, and explicit combined code/checkpoint permission was not established.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/acharkq/next-mol/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:57.446879+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/acharkq/next-mol",
+        "fetched_at": "2026-09-11T07:00:57.452098+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2502.12638",
+        "fetched_at": "2026-09-11T06:59:43.082601+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/acharkq/next-mol/readme",
+        "fetched_at": "2026-09-11T06:59:43.095182+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/acharkq/next-mol/license",
+        "fetched_at": "2026-09-11T06:59:43.121756+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/acharkq/next-mol/releases",
+        "fetched_at": "2026-09-11T06:59:43.169216+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/acharkq/MoLlama",
+        "fetched_at": "2026-09-11T06:59:43.188941+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-lingshu-cell",
+    "name": "Lingshu-Cell",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Reconsider when the official collection contains a released reusable model artifact with verified terms.",
+    "decision": "retain",
+    "assessment": "Official collection and project page remain paper-oriented; no author-linked released model files were established in this condition review.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2603.25240",
+        "fetched_at": "2026-09-11T06:59:43.207813+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/collections/Alibaba-DAMO-Academy/lingshu-cell",
+        "fetched_at": "2026-09-11T06:59:43.241657+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://alibaba-damo-academy.github.io/lingshu-cell-homepage/",
+        "fetched_at": "2026-09-11T06:59:43.262019+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-jump-lite",
+    "name": "JUMP-lite (with Nahual)",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "An unsigned listing of the Cell Painting Gallery publication_data / images prefixes for the JUMP-lite release returns objects, i.e. the metadata bundle, embeddings and image stores are actually downloadable; re-verify the data licence at that point.",
+    "decision": "retain_material_update",
+    "assessment": "The metadata S3 prefix now returns an object (README.md; last modified 2026-09-03), but the compressed-image prefix returns KeyCount 0. Indices are archived under CC0 on Zenodo; this does not complete the recorded image-and-metadata release condition. README still says gallery promotion pending.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/afermg/JUMP_lite/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:57.518099+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/afermg/JUMP_lite",
+        "fetched_at": "2026-09-11T07:00:57.729405+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.07632",
+        "fetched_at": "2026-09-11T06:59:43.266399+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/afermg/JUMP_lite/readme",
+        "fetched_at": "2026-09-11T06:59:43.322107+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/afermg/JUMP_lite/license",
+        "fetched_at": "2026-09-11T06:59:43.334511+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/afermg/JUMP_lite/releases",
+        "fetched_at": "2026-09-11T06:59:43.339269+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://zenodo.org/records/21779243",
+        "fetched_at": "2026-09-11T06:59:43.347584+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://zenodo.org/api/records/18705140",
+        "fetched_at": "2026-09-11T07:02:04.658234+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "candidate_source_manifest.json"
+      },
+      {
+        "url": "https://cellpainting-gallery.s3.amazonaws.com/?list-type=2&max-keys=1&prefix=cpg0016-jump/source_all/workspace/publication_data/2026_jump_lite/metadata/v1.0/",
+        "fetched_at": "2026-09-11T07:06:01.799068+00:00",
+        "access_level": "object_listing",
+        "http_status": 200,
+        "manifest": "resolution_manifest.json"
+      },
+      {
+        "url": "https://cellpainting-gallery.s3.amazonaws.com/?list-type=2&max-keys=1&prefix=cpg0016-jump/source_all/images/2026_jump_lite_v1.0/images_compressed/",
+        "fetched_at": "2026-09-11T07:06:01.799124+00:00",
+        "access_level": "object_listing",
+        "http_status": 200,
+        "manifest": "resolution_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-aqaffinity",
+    "name": "AQAffinity",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "A primary paper or preprint for AQAffinity appears, or the index adopts a written rule that a first-party vendor release post counts as the primary source and that single-capability heads built on another backbone are in scope. No artifact re-verification is needed at that point.",
+    "decision": "retain",
+    "assessment": "Model API confirms Apache-labelled gated weights. The recorded primary-document and scope condition remains unresolved; artifact existence alone does not satisfy it.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/api/models/SandboxAQ/AQAffinity",
+        "fetched_at": "2026-09-11T06:59:43.377379+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-planthelixseek",
+    "name": "PlantHelixSeek",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "A primary document appears - a preprint, journal article, or dated technical report for PlantHelixSeek or its architecture. Accept then with modality dna, noncommercial true, and a status naming the CC BY-NC 4.0 weights and MIT code.",
+    "decision": "retain",
+    "assessment": "Current README and hub show released plant-DNA checkpoints and CC BY-NC 4.0 weights/MIT code claims, but no matching primary technical paper was established.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/zhangtaolab/PlantHelixSeek/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:57.854531+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/zhangtaolab/PlantHelixSeek",
+        "fetched_at": "2026-09-11T07:00:57.986504+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/zhangtaolab/PlantHelixSeek",
+        "fetched_at": "2026-09-11T06:59:43.390497+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/zhangtaolab/PlantHelixSeek/readme",
+        "fetched_at": "2026-09-11T06:59:43.415221+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/zhangtaolab/PlantHelixSeek/license",
+        "fetched_at": "2026-09-11T06:59:43.425459+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/zhangtaolab/PlantHelixSeek/releases",
+        "fetched_at": "2026-09-11T06:59:43.467649+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-seqlens-v2",
+    "name": "SeqLens v2 (with mgxLens v2)",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "Positive evidence of ownership appears - the v1 authors publicly claiming the publishing organisation, a public v2 code repository, or a v2 paper naming authors - and the larger family members actually ship. Reassess mgxLens separately only if it is relicensed and re-scoped as a reusable model.",
+    "decision": "retain",
+    "assessment": "The cited journal locator resolves but no useful text was obtained from that direct response; positive v2 ownership and complete family release conditions were not newly established.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://doi.org/10.1093/molbev/msag139",
+        "fetched_at": "2026-09-11T06:59:43.493658+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-screenshot",
+    "name": "ScreenShot",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "A LICENSE file appears in the official repository, or the paper states explicit terms for the released weights, and the curator rules on whether functional-screening perturbation-response models belong in the index.",
+    "decision": "retain",
+    "assessment": "Code and model directories are described, but the inspected README/repository did not resolve explicit model reuse terms; scope decision remains outstanding.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/tansey-lab/screenshot/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:58.000106+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/tansey-lab/screenshot",
+        "fetched_at": "2026-09-11T07:00:58.154591+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.12219",
+        "fetched_at": "2026-09-11T06:59:43.522380+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/tansey-lab/screenshot/readme",
+        "fetched_at": "2026-09-11T06:59:43.534119+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/tansey-lab/screenshot/license",
+        "fetched_at": "2026-09-11T06:59:43.563227+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/tansey-lab/screenshot/releases",
+        "fetched_at": "2026-09-11T06:59:43.566207+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-spgen",
+    "name": "SPgen",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "The repository adds an explicit licence and ships downloadable SPgen checkpoints, or an author-controlled model-hub or Zenodo artifact appears, or a peer-reviewed version documents released weights. Re-verify licence wording at that point.",
+    "decision": "retain",
+    "assessment": "The repository remains minimal; a paper alone does not establish released reusable checkpoints and explicit terms.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/lijc0804/SPgen/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:58.215568+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/lijc0804/SPgen",
+        "fetched_at": "2026-09-11T07:00:58.304584+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://doi.org/10.64898/2026.07.16.739037",
+        "fetched_at": "2026-09-11T06:59:43.584912+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/lijc0804/SPgen/readme",
+        "fetched_at": "2026-09-11T06:59:43.601538+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/lijc0804/SPgen/license",
+        "fetched_at": "2026-09-11T06:59:43.617243+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/lijc0804/SPgen/releases",
+        "fetched_at": "2026-09-11T06:59:43.631348+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-omicslm",
+    "name": "OmicsLM",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "An official repository or model card appears under the authors' organisation, or a revised version of the paper adds a code-availability link; then verify weights licence and gating before accepting, and record whether the release is weights or inference-only.",
+    "decision": "retain",
+    "assessment": "Preprint identity is verified; targeted discovery and the inspected abstract did not yield a provenance-confirmed official reusable model release.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2605.06728",
+        "fetched_at": "2026-09-11T06:59:43.675968+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-x-cell",
+    "name": "X-Cell / X-Cell-Ultra",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "The model repository lists an actual weight file, or the inference package ships and the coming-soon banner is removed; then re-check whether X-Cell-Ultra is released separately or stays internal and record it under its own terms.",
+    "decision": "retain",
+    "assessment": "Official README still says model weights and inference code coming soon; hub lists only documentation/images, without checkpoint weights.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/Xaira-Therapeutics/x-cell/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:58.466812+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/Xaira-Therapeutics/x-cell",
+        "fetched_at": "2026-09-11T07:00:58.765206+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://doi.org/10.64898/2026.03.18.712807",
+        "fetched_at": "2026-09-11T06:59:43.699545+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://huggingface.co/api/models/Xaira-Therapeutics/X-Cell",
+        "fetched_at": "2026-09-11T06:59:43.743061+00:00",
+        "access_level": "artifact_metadata",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/Xaira-Therapeutics/x-cell/readme",
+        "fetched_at": "2026-09-11T06:59:43.745982+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/Xaira-Therapeutics/x-cell/license",
+        "fetched_at": "2026-09-11T06:59:43.777467+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/Xaira-Therapeutics/x-cell/releases",
+        "fetched_at": "2026-09-11T06:59:43.796924+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-scmamba-snrna",
+    "name": "scMamba (snRNA-seq, neurodegeneration)",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "The pretrained checkpoint is published at a public locator with readable terms instead of the email-request gate. Any catalog entry must keep a disambiguated name, because arXiv 2506.20697 scMamba is a different model.",
+    "decision": "retain",
+    "assessment": "Official README still requires contacting the author for the pretrained checkpoint. Public artifact/terms condition remains unmet.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/okt0711/scMamba/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:58.776422+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/okt0711/scMamba",
+        "fetched_at": "2026-09-11T07:00:58.924873+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2502.19429",
+        "fetched_at": "2026-09-11T06:59:43.816985+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/okt0711/scMamba/readme",
+        "fetched_at": "2026-09-11T06:59:43.852540+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/okt0711/scMamba/license",
+        "fetched_at": "2026-09-11T06:59:43.882965+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/okt0711/scMamba/releases",
+        "fetched_at": "2026-09-11T06:59:43.890425+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  },
+  {
+    "id": "bfm-scmamba-multiomics",
+    "name": "scMamba (multi-omics integration)",
+    "reviewed": "2026-09-11",
+    "baseline_reconsider_when": "The manuscript is accepted or published and the full code plus checkpoints are formally released at a verifiable locator (model hub, Zenodo, or a populated repository release) with the paper pointing at the repository; then add with disambiguation against the snRNA-seq scMamba.",
+    "decision": "retain",
+    "assessment": "README points to a Dropbox share; a formally released checkpoint listing with resolved terms and paper provenance was not established. Keep name disambiguation from the snRNA model.",
+    "evidence_boundary": "Condition-focused source review; not a full re-verification of every inherited descriptive claim.",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/23AIBox/scMamba/HEAD/README.md",
+        "fetched_at": "2026-09-11T07:00:59.121307+00:00",
+        "access_level": "repository_readme_full",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://github.com/23AIBox/scMamba",
+        "fetched_at": "2026-09-11T07:00:59.191405+00:00",
+        "access_level": "repository_listing",
+        "http_status": 200,
+        "manifest": "hold_fallback_manifest.json"
+      },
+      {
+        "url": "https://arxiv.org/abs/2506.20697",
+        "fetched_at": "2026-09-11T06:59:43.930727+00:00",
+        "access_level": "landing_page_or_html",
+        "http_status": 200,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/23AIBox/scMamba/readme",
+        "fetched_at": "2026-09-11T06:59:43.956260+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/23AIBox/scMamba/license",
+        "fetched_at": "2026-09-11T06:59:43.976185+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      },
+      {
+        "url": "https://api.github.com/repos/23AIBox/scMamba/releases",
+        "fetched_at": "2026-09-11T06:59:44.005676+00:00",
+        "access_level": "inaccessible",
+        "http_status": 403,
+        "manifest": "hold_source_manifest.json"
+      }
+    ]
+  }
+]

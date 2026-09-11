@@ -1,0 +1,175 @@
+{
+  "reviewed": "2026-09-11",
+  "window": {
+    "baseline": "2026-08-13",
+    "through": "2026-09-11",
+    "overlap": "Older unresolved candidates, family holds and watchlist entries were deliberately revisited."
+  },
+  "method": "Representative executed query strings are recorded below; broad queries were followed by primary paper, repository, archive and model-hub reads. Search ranking/date filters were imperfect. This is a bounded ten-modality sweep, not a systematic review or claim of exhaustive new-release coverage.",
+  "identity_normalization": "Before discovery, current names and aliases across 390 displayed and 39 held records were normalized to case-insensitive alphanumeric identities; baseline is preserved in normalized_identity_baseline.json. Stable IDs reserved across both stores; family splits use distinct member names with old combined aliases retained only on the stable-ID successor.",
+  "modalities": [
+    {
+      "modality": "dna",
+      "representative_queries": [
+        "DNA foundation model August September 2026 genomics pretrained",
+        "SUCCEED genome",
+        "GPN-Star 2025",
+        "MicroGenomer github",
+        "HybriDNA github checkpoint"
+      ],
+      "accepted": [
+        "GPN-Star",
+        "MicroGenomer"
+      ],
+      "other_followups": [
+        "SUCCEED",
+        "HybriDNA",
+        "GeneMamba",
+        "GPN-MSA"
+      ],
+      "outcome": "GPN-Star has a September journal publication and prior 2025 preprint; MicroGenomer closes an older release-identity gap. SUCCEED terms remain unresolved. GPN-MSA deprecation/publication updated."
+    },
+    {
+      "modality": "rna",
+      "representative_queries": [
+        "RNA foundation model August September 2026 pretrained",
+        "PlantRNAFM",
+        "NucleicBERT"
+      ],
+      "accepted": [
+        "RIBOSPAN",
+        "NucleicBERT",
+        "PlantRNA-FM"
+      ],
+      "other_followups": [
+        "mRNA-FM"
+      ],
+      "outcome": "RIBOSPAN is an August release. NucleicBERT journal publication is September but archived weights date to 2025. Plant/mRNA family split closes an older ambiguity."
+    },
+    {
+      "modality": "protein",
+      "representative_queries": [
+        "protein foundation model August September 2026 open weights",
+        "protein language model released August 2026 September 2026",
+        "IgGM2",
+        "AINN-P1"
+      ],
+      "accepted": [
+        "MultiFlow",
+        "FrameFlow"
+      ],
+      "other_followups": [
+        "FrameDiff",
+        "IgGM2",
+        "AINN-P1"
+      ],
+      "outcome": "No additional newly dated protein model established. Two older family members now independently meet artifact/terms/reuse criteria; FrameDiff remains a residual scope HOLD."
+    },
+    {
+      "modality": "complex",
+      "representative_queries": [
+        "\"cofolding\" \"2026\" \"August\" model released",
+        "\"cofolding\" \"September\" \"2026\""
+      ],
+      "accepted": [],
+      "other_followups": [
+        "DeCAF-Pearl",
+        "NeuralPLexer / NeuralPLexer3"
+      ],
+      "outcome": "No accepted addition. DeCAF-Pearl is still not separately identified among released hub files; KinConfBench belongs in benchmark. Structural-family scope decisions were not generalized."
+    },
+    {
+      "modality": "molecule",
+      "representative_queries": [
+        "\"molecular foundation model\" \"2026\" \"August\"",
+        "molecular pretrained model August 2026 foundation weights"
+      ],
+      "accepted": [
+        "Monroe",
+        "Mol-JEPA"
+      ],
+      "other_followups": [
+        "Next-Mol"
+      ],
+      "outcome": "Two August pretrained molecular encoders satisfy reusable representation scope. Encoder vs downstream-model terms and CC BY-NC coverage are explicit."
+    },
+    {
+      "modality": "singlecell",
+      "representative_queries": [
+        "\"single-cell foundation model\" \"2026\" \"September\"",
+        "single cell foundation model August 2026 new September weights",
+        "ScDiVa github",
+        "OmicsLM github"
+      ],
+      "accepted": [],
+      "other_followups": [
+        "Unify",
+        "ScDiVa",
+        "OmicsLM",
+        "scMamba"
+      ],
+      "outcome": "No accepted addition. Unify trains dataset-specific models from existing features. ScDiVa now exposes files, but static loader inspection leaves usable inference unresolved. All prior single-cell HOLD conditions revisited."
+    },
+    {
+      "modality": "spatial",
+      "representative_queries": [
+        "\"pathology foundation model\" \"2026\" \"August\"",
+        "spatial transcriptomics foundation model August September 2026 released",
+        "RudolfV-2",
+        "ALICE WonderLandxD model"
+      ],
+      "accepted": [],
+      "other_followups": [
+        "RudolfV-2",
+        "Virchow2G",
+        "nnMIL",
+        "TissueFormer",
+        "ALICE"
+      ],
+      "outcome": "No accepted addition. RudolfV-2 exact gated terms unreadable; nnMIL is an aggregation method; TissueFormer already present. ALICE demoted after independent current source failures."
+    },
+    {
+      "modality": "multimodal",
+      "representative_queries": [
+        "\"multimodal\" \"biology\" \"foundation model\" after:2026-08-12 before:2026-09-12",
+        "biological foundation models September 2026 DNA RNA protein new model"
+      ],
+      "accepted": [],
+      "other_followups": [
+        "CAPTAIN",
+        "Intern-S2-Preview",
+        "X-Cell"
+      ],
+      "outcome": "No accepted addition. CAPTAIN already present; general scientific agent lead Intern-S2-Preview routed to agent-index reviewer. X-Cell checkpoint release remains unverified."
+    },
+    {
+      "modality": "platform",
+      "representative_queries": [
+        "\"biological\" \"model\" \"platform\" \"August 2026\"",
+        "Genesis Open Models Initiative"
+      ],
+      "accepted": [],
+      "other_followups": [
+        "Genesis Open Models Initiative",
+        "PoET / PoET-2"
+      ],
+      "outcome": "No accepted addition. DOE initiative announcement is not a presently released biological-model platform; PoET-2 is already separately cataloged."
+    },
+    {
+      "modality": "benchmark",
+      "representative_queries": [
+        "\"foundation\" \"benchmark\" \"2026\" \"September\" genomics biology",
+        "KinConfBench",
+        "LAMBDA prophage"
+      ],
+      "accepted": [
+        "LAMBDA",
+        "KinConfBench"
+      ],
+      "other_followups": [
+        "JUMP-lite"
+      ],
+      "outcome": "Two reusable named benchmarks accepted. JUMP-lite metadata prefix has appeared, but the inspected compressed-image prefix is empty; retain release-condition HOLD."
+    }
+  ]
+}

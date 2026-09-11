@@ -1,0 +1,50 @@
+[
+  {
+    "candidate": "ScDiVa",
+    "url": "https://raw.githubusercontent.com/wangmingxuan666/ScDiVa/HEAD/LICENSE",
+    "access_level": "license_full",
+    "fetched_at": "2026-09-11T07:08:26.261999+00:00",
+    "cache_file": "4fa18aa6f37f36e0bef49482b08ce5ccff8cb11235da5b2bee830d4e27c72e73.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/wangmingxuan666/ScDiVa/HEAD/LICENSE",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "acf73540c4f30449c065a4b82e4c79c4ff9638c507ba7beec344e045610d8307",
+    "text_length": 10754
+  },
+  {
+    "candidate": "ScDiVa",
+    "url": "https://huggingface.co/warming666/ScDiVa/raw/main/modeling_scdiva.py",
+    "access_level": "inference_source_code",
+    "fetched_at": "2026-09-11T07:08:26.262480+00:00",
+    "cache_file": "b1d7ca82abee2c799586534dfcc6af4c38639b87320082f2c65e6ff9b82c7c8f.txt",
+    "status": 200,
+    "final_url": "https://huggingface.co/warming666/ScDiVa/raw/main/modeling_scdiva.py",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "4607fc7e701debb341f55cb3b4889516f3fbc27b2b8bf795801bf363a2150025",
+    "text_length": 13019
+  },
+  {
+    "candidate": "FrameFlow",
+    "url": "https://arxiv.org/abs/2401.04082",
+    "access_level": "abstract",
+    "fetched_at": "2026-09-11T07:08:26.262585+00:00",
+    "cache_file": "138e4ecb690a27cb435f94fa79a690e1e36cbf29657284a9cb7bed0d268ab1dd.txt",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2401.04082",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "b614804073e46070ba2fa293bba58737c11a9242382a02a7ec1af5e4288003e5",
+    "text_length": 43234
+  },
+  {
+    "candidate": "GPN-Star",
+    "url": "https://gpn.readthedocs.io/en/latest/models/gpn-star/",
+    "access_level": "official_documentation",
+    "fetched_at": "2026-09-11T07:08:26.262692+00:00",
+    "cache_file": "5439a72e81fc6a61f6af46ae36dc2289c78d20d591ba4ec913cf6c0bff04046e.txt",
+    "status": 200,
+    "final_url": "https://gpn.readthedocs.io/en/latest/models/gpn-star/",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "d4ed40b76b32653a7a57c284853a07c75135314898d6c169b44ed8be0cf2a9f0",
+    "text_length": 38426
+  }
+]

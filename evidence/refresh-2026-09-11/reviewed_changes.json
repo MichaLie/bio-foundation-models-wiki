@@ -1,0 +1,2568 @@
+{
+  "date": "2026-09-11",
+  "baseline_commit": "66cef15df536f57c6e3ac0f581638d952493a5da",
+  "catalog_upserts": [
+    {
+      "id": "bfm-ribospan",
+      "date_added": "2026-09-11",
+      "name": "RIBOSPAN",
+      "modality": "rna",
+      "description": "Bidirectional RNA language-model family pretrained at single-nucleotide resolution, with 1,024- and 10,240-nucleotide contexts. The paper evaluates transferable representations, transcript-property prediction, mutation scoring, and a separate conditioned mRNA-generation framework.",
+      "paper_links": [
+        {
+          "label": "arXiv (v2)",
+          "url": "https://arxiv.org/abs/2608.22849v2"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/GAIR-NLP/RIBOSPAN-FM"
+        },
+        {
+          "label": "Public 1K-15 weights",
+          "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-1K-15"
+        },
+        {
+          "label": "Public 1K-40 weights",
+          "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-1K-40"
+        },
+        {
+          "label": "Gated 10K-15 weights",
+          "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-10K-15"
+        },
+        {
+          "label": "Model licence",
+          "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-FM/blob/main/LICENSE"
+        }
+      ],
+      "status": "Apache-2.0 code; custom noncommercial weights and output-use terms. 1K-15/1K-40 ungated; 10K-15 requires approval; 10K-40 not released.",
+      "io": "RNA sequence -> nucleotide probabilities and embeddings; downstream biological predictions",
+      "use_cases": "RNA representation learning, mutation-effect scoring, full-transcript property prediction; paper also studies mRNA design",
+      "year": "2026",
+      "canonical": false,
+      "noncommercial": true,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://arxiv.org/abs/2608.22849v2",
+        "https://github.com/GAIR-NLP/RIBOSPAN-FM",
+        "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-1K-15",
+        "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-1K-40",
+        "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-10K-15",
+        "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-FM/blob/main/LICENSE"
+      ],
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. The family landing repository itself contains documentation, not weights. Weight files are listed in the separately linked checkpoint repositories. Custom commercial-use restrictions also cover outputs and output-derived models; this is not a standard CC noncommercial licence. No gated checkpoint was downloaded.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": []
+    },
+    {
+      "id": "bfm-monroe",
+      "date_added": "2026-09-11",
+      "name": "Monroe",
+      "modality": "molecule",
+      "description": "Molecular graph encoder pretrained on quantum-chemical properties, bioassay targets, and conformer denoising. Frozen molecular embeddings support downstream prediction with a separate prior-data-fitted model.",
+      "paper_links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2608.18982"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/blazejba/Monroe"
+        },
+        {
+          "label": "Encoder checkpoint",
+          "url": "https://github.com/blazejba/Monroe/tree/main/checkpoint"
+        }
+      ],
+      "status": "MIT code and released encoder weights via Git LFS; reported TabPFN v3 downstream prediction requires separate licence acceptance and access.",
+      "io": "SMILES/featurized molecular graph -> 720-dimensional embedding; embeddings plus labelled examples -> downstream predictions through a separate predictor",
+      "use_cases": "Low-data molecular-property prediction, ADMET modelling, bioassay prediction, activity-cliff evaluation",
+      "year": "2026",
+      "canonical": false,
+      "noncommercial": false,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://arxiv.org/abs/2608.18982",
+        "https://github.com/blazejba/Monroe",
+        "https://github.com/blazejba/Monroe/tree/main/checkpoint"
+      ],
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. The released checkpoint directory and LFS pointer were inspected; weights were not downloaded or executed. MIT for the encoder does not establish the terms of TabPFN.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": []
+    },
+    {
+      "id": "bfm-nucleicbert",
+      "date_added": "2026-09-11",
+      "name": "NucleicBERT",
+      "modality": "rna",
+      "description": "Masked RNA language model pretrained on approximately 30 million noncoding RNA sequences, learning single-sequence representations for structural and functional tasks without requiring a multiple-sequence alignment.",
+      "paper_links": [
+        {
+          "label": "Nature Machine Intelligence",
+          "url": "https://www.nature.com/articles/s42256-026-01295-9"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/KIT-MBS/NucleicBERT"
+        },
+        {
+          "label": "Pretrained and task weights",
+          "url": "https://zenodo.org/records/16989562"
+        }
+      ],
+      "status": "Open code + weights (Apache-2.0); public pretrained/task checkpoints on Zenodo.",
+      "io": "Single RNA sequence -> embeddings; task heads -> secondary structure, contact maps, splice-site or fitness predictions",
+      "use_cases": "RNA representation learning, structure and contact prediction, splice-site prediction, mutation-fitness analysis",
+      "year": "2025",
+      "canonical": false,
+      "noncommercial": false,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://www.nature.com/articles/s42256-026-01295-9",
+        "https://github.com/KIT-MBS/NucleicBERT",
+        "https://zenodo.org/records/16989562"
+      ],
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Journal full-text sections were inspected through web retrieval; direct HTTP returned a JavaScript challenge. Zenodo lists pretrained.pt and separate task checkpoints under Apache-2.0. The archive was first published in 2025; the journal article is from September 2026.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": []
+    },
+    {
+      "id": "bfm-gpn-star",
+      "date_added": "2026-09-11",
+      "name": "GPN-Star",
+      "modality": "dna",
+      "description": "Phylogeny-aware genomic language model using whole-genome alignments and species-tree information to learn evolutionary constraints. Human checkpoints cover vertebrate, mammalian, and primate alignments.",
+      "paper_links": [
+        {
+          "label": "Nature",
+          "url": "https://www.nature.com/articles/s41586-026-11005-5"
+        },
+        {
+          "label": "Original preprint",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.09.21.677619v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/songlab-cal/gpn"
+        },
+        {
+          "label": "Human vertebrate checkpoint",
+          "url": "https://huggingface.co/songlab/gpn-star-hg38-v100-200m"
+        },
+        {
+          "label": "Human mammal checkpoint",
+          "url": "https://huggingface.co/songlab/gpn-star-hg38-m447-200m"
+        },
+        {
+          "label": "Human primate checkpoint",
+          "url": "https://huggingface.co/songlab/gpn-star-hg38-p243-200m"
+        }
+      ],
+      "status": "Open code + weights (MIT); public human checkpoints; aligned genomic input is required for training and inference.",
+      "io": "Whole-genome alignment with species context -> nucleotide probabilities, embeddings and variant-effect scores",
+      "use_cases": "Genome-wide variant scoring, evolutionary-constraint analysis, prioritization of coding and noncoding variants",
+      "year": "2025",
+      "canonical": false,
+      "noncommercial": false,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://www.nature.com/articles/s41586-026-11005-5",
+        "https://www.biorxiv.org/content/10.1101/2025.09.21.677619v1",
+        "https://github.com/songlab-cal/gpn",
+        "https://huggingface.co/songlab/gpn-star-hg38-v100-200m",
+        "https://huggingface.co/songlab/gpn-star-hg38-m447-200m",
+        "https://huggingface.co/songlab/gpn-star-hg38-p243-200m"
+      ],
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Separate from GPN-MSA and PhyloGPN. Human model cards and safetensors listings were checked; no all-family licence claim is made for the separately distributed datasets or other species. Year follows the verified September 2025 preprint, not the 2026 journal publication.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": []
+    },
+    {
+      "id": "bfm-mol-jepa",
+      "date_added": "2026-09-11",
+      "name": "Mol-JEPA",
+      "modality": "molecule",
+      "description": "Joint-embedding predictive model learning molecular representations from complementary chemical and biological modalities, including cellular effects, binding affinity, ADMET properties and quantum-chemical information.",
+      "paper_links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2608.22642"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "Official GitHub",
+          "url": "https://github.com/Boehringer-Ingelheim/mol-jepa"
+        },
+        {
+          "label": "Weights and inference code",
+          "url": "https://huggingface.co/Flogrammer/Mol-JEPA"
+        }
+      ],
+      "status": "Open code + weights (CC BY-NC 4.0); public weights and custom inference code on Hugging Face.",
+      "io": "SMILES -> molecular embeddings; embeddings support downstream property predictors",
+      "use_cases": "Molecular representation learning, ADMET prediction, low-data property modelling, integration of biochemical context",
+      "year": "2026",
+      "canonical": false,
+      "noncommercial": true,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://arxiv.org/abs/2608.22642",
+        "https://github.com/Boehringer-Ingelheim/mol-jepa",
+        "https://huggingface.co/Flogrammer/Mol-JEPA"
+      ],
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Official corporate repository directly links the author model-hub account, resolving ownership. Model API lists model.safetensors. The README explicitly applies CC BY-NC 4.0 to code as well as weights.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": []
+    },
+    {
+      "id": "bfm-microgenomer",
+      "date_added": "2026-09-11",
+      "name": "MicroGenomer",
+      "modality": "dna",
+      "description": "Microbial genome language model trained hierarchically on genomic sequences and marker genes to produce gene- and genome-level representations and support ecophysiological trait prediction.",
+      "paper_links": [
+        {
+          "label": "bioRxiv",
+          "url": "https://doi.org/10.64898/2025.12.28.696777"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "Official GitHub",
+          "url": "https://github.com/BGIResearch/MicroGenomer"
+        },
+        {
+          "label": "470M weights",
+          "url": "https://huggingface.co/sunhaotong0605/MicroGenomer-470M"
+        }
+      ],
+      "status": "Open code + weights (MIT); official repository links the public author-hosted 470M checkpoint.",
+      "io": "Genome-labelled coding DNA sequences in CSV -> genomic embeddings and task-specific trait predictions",
+      "use_cases": "Microbial genome representation, growth-rate and environmental-trait prediction, comparative microbial genomics",
+      "year": "2025",
+      "canonical": false,
+      "noncommercial": false,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://doi.org/10.64898/2025.12.28.696777",
+        "https://github.com/BGIResearch/MicroGenomer",
+        "https://huggingface.co/sunhaotong0605/MicroGenomer-470M"
+      ],
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Resolves the previous unnamed watchlist lead. The official BGI repository links the model account; model_states.pt and downstream files are listed, with MIT in the model metadata. The paper is a December 2025 preprint.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": []
+    },
+    {
+      "id": "bfm-lambda",
+      "date_added": "2026-09-11",
+      "name": "LAMBDA (prophage benchmark)",
+      "modality": "benchmark",
+      "description": "Benchmark for genomic language-model embeddings using phage/bacterial discrimination, fine-tuning, diagnostic tests, and genome-wide prophage detection, with reusable datasets and result visualization.",
+      "paper_links": [
+        {
+          "label": "NAR Genomics and Bioinformatics",
+          "url": "https://doi.org/10.1093/nargab/lqag103"
+        },
+        {
+          "label": "Preprint full text",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13041943/"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/leannmlindsey/LAMBDA"
+        },
+        {
+          "label": "Dataset and evaluation artifacts",
+          "url": "https://zenodo.org/records/19236552"
+        },
+        {
+          "label": "Interactive benchmark",
+          "url": "https://leannmlindsey.github.io/lambda-benchmark/"
+        }
+      ],
+      "status": "MIT evaluation code; CC BY 4.0 Zenodo dataset/results/probe archive; upstream foundation-model weights retain their own terms. Non-EVO2 fine-tuned task checkpoints are author-request-only.",
+      "io": "DNA segments or bacterial genomes plus model embeddings/predictions -> prophage-detection and representation-evaluation metrics",
+      "use_cases": "Genomic-model comparison, probing and fine-tuning assessment, prophage-detection evaluation",
+      "year": "2026",
+      "canonical": false,
+      "noncommercial": false,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://doi.org/10.1093/nargab/lqag103",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13041943/",
+        "https://github.com/leannmlindsey/LAMBDA",
+        "https://zenodo.org/records/19236552",
+        "https://leannmlindsey.github.io/lambda-benchmark/"
+      ],
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. The full-text source inspected is the March 2026 preprint; September journal identity was verified from publisher metadata/search while full publisher access was restricted. The small checkpoint archive contains probe heads, not redistributed EVO2 foundation weights. The README separately makes non-EVO2 fine-tuned task checkpoints available only on author request; the public benchmark archive is not an all-checkpoint release.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": [
+        "LAMBDA"
+      ]
+    },
+    {
+      "id": "bfm-kinconfbench",
+      "date_added": "2026-09-11",
+      "name": "KinConfBench",
+      "modality": "benchmark",
+      "description": "Curated benchmark of 2,225 human kinase chains assessing whether cofolding models recover ligand-dependent kinase conformations, with geometric and conformation-state evaluation.",
+      "paper_links": [
+        {
+          "label": "npj Drug Discovery",
+          "url": "https://www.nature.com/articles/s44386-026-00068-z"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/THGLab/KinConfBench"
+        },
+        {
+          "label": "Inference archive",
+          "url": "https://doi.org/10.6084/m9.figshare.31986663"
+        }
+      ],
+      "status": "UC Regents software terms permit educational, research and not-for-profit use; precomputed inference archive is CC BY 4.0.",
+      "io": "Kinase structures and cofolding outputs -> conformation-state, geometric and diversity metrics",
+      "use_cases": "Cofolding-model evaluation, kinase conformation benchmarking, ligand-induced structural-change assessment",
+      "year": "2026",
+      "canonical": false,
+      "noncommercial": true,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://www.nature.com/articles/s44386-026-00068-z",
+        "https://github.com/THGLab/KinConfBench",
+        "https://doi.org/10.6084/m9.figshare.31986663"
+      ],
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Named reusable benchmark, not a new foundation-model checkpoint. Publisher full-text sections, UC Regents licence body and Figshare file metadata were inspected. Dataset archive was not downloaded.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": []
+    },
+    {
+      "id": "bfm-mrna-fm-plantrna-fm",
+      "date_added": "2026-06-16",
+      "name": "PlantRNA-FM",
+      "modality": "rna",
+      "description": "Plant RNA foundation model pretrained on RNA sequences from 1,124 species, supporting interpretable representations and identification of functional sequence and structural motifs.",
+      "paper_links": [
+        {
+          "label": "Nature Machine Intelligence (PMC)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "Official model and weights",
+          "url": "https://huggingface.co/yangheng/PlantRNA-FM"
+        }
+      ],
+      "status": "Model hub; MIT model and public safetensors weights; inference uses the released model card and standard Transformers.",
+      "io": "Plant RNA sequence -> base-model embeddings; task-specific predictions require downstream fine-tuning",
+      "use_cases": "Plant RNA function, genic-region annotation, translation-related motif analysis",
+      "year": "2024",
+      "canonical": false,
+      "noncommercial": false,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/",
+        "https://huggingface.co/yangheng/PlantRNA-FM"
+      ],
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Promoted by splitting the original family; the original stable ID follows PlantRNA-FM. Residual mRNA-FM remains held under bfm-mrna-fm. The prior combined name is retained as a historical alias, not a claim that the terms apply to mRNA-FM. The public model card demonstrates base embeddings; paper genic-region/translation predictions use task-specific fine-tuning.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": [
+        "mRNA-FM / PlantRNA-FM"
+      ],
+      "date_modified": "2026-09-11"
+    },
+    {
+      "id": "bfm-framediff-frameflow-multiflow",
+      "date_added": "2026-06-16",
+      "name": "MultiFlow",
+      "modality": "protein",
+      "description": "Pretrained joint sequence-and-structure generative model combining discrete and continuous flows, with unconditional protein co-design, inverse folding and forward folding modes.",
+      "paper_links": [
+        {
+          "label": "ICML paper",
+          "url": "https://proceedings.mlr.press/v235/campbell24a.html"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2402.04997"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/jasonkyuyim/multiflow"
+        },
+        {
+          "label": "Weights and datasets",
+          "url": "https://zenodo.org/records/10714631"
+        }
+      ],
+      "status": "Open code + weights (MIT implementation; CC BY 4.0 Zenodo weights/datasets), public.",
+      "io": "Optional protein sequence or backbone structure -> generated sequence/structure pair, inverse-folded sequence or predicted backbone",
+      "use_cases": "Protein co-design, inverse folding, forward folding",
+      "year": "2024",
+      "canonical": false,
+      "noncommercial": false,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://proceedings.mlr.press/v235/campbell24a.html",
+        "https://arxiv.org/abs/2402.04997",
+        "https://github.com/jasonkyuyim/multiflow",
+        "https://zenodo.org/records/10714631"
+      ],
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Original family stable ID is retained by MultiFlow. FrameFlow is separate; FrameDiff remains held. Distinct inference modes establish reusable scope; archive licensing is CC BY 4.0, not the code repository MIT licence.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": [
+        "FrameDiff / FrameFlow / Multiflow"
+      ],
+      "date_modified": "2026-09-11"
+    },
+    {
+      "id": "bfm-frameflow",
+      "date_added": "2026-09-11",
+      "name": "FrameFlow",
+      "modality": "protein",
+      "description": "SE(3) flow-matching model with released pretrained checkpoints for unconditional protein-backbone generation and conditional motif scaffolding.",
+      "paper_links": [
+        {
+          "label": "Backbone generation preprint",
+          "url": "https://arxiv.org/abs/2310.05297"
+        },
+        {
+          "label": "Motif-scaffolding preprint",
+          "url": "https://arxiv.org/abs/2401.04082"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/microsoft/frame-flow"
+        },
+        {
+          "label": "Weights and datasets",
+          "url": "https://zenodo.org/records/12776473"
+        }
+      ],
+      "status": "Open code + weights (MIT code; CC BY 4.0 Zenodo weights/datasets); generated structures have not been experimentally validated by the repository authors.",
+      "io": "Requested length or fixed structural motif -> sampled protein backbones and scaffold candidates",
+      "use_cases": "De novo backbone generation, motif-conditioned scaffold design",
+      "year": "2023",
+      "canonical": false,
+      "noncommercial": false,
+      "verified": "2026-09-11",
+      "sources": [
+        "https://arxiv.org/abs/2310.05297",
+        "https://arxiv.org/abs/2401.04082",
+        "https://github.com/microsoft/frame-flow",
+        "https://zenodo.org/records/12776473"
+      ],
+      "audit_state": "verified_with_limits",
+      "audit_priority": "P3",
+      "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Split from the held three-member family. Both unconditional and motif-scaffolding inference paths are documented; the scientific-use caveat is kept separate from licence terms.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": []
+    },
+    {
+      "id": "bfm-gpn-msa",
+      "date_added": "2026-06-16",
+      "modality": "dna",
+      "name": "GPN-MSA",
+      "description": "Alignment-based DNA language model for genome-wide variant effect prediction.",
+      "paper_links": [
+        {
+          "label": "Nature Biotechnology",
+          "url": "https://www.nature.com/articles/s41587-024-02511-w"
+        },
+        {
+          "label": "PMC article",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592768/"
+        },
+        {
+          "label": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2023.10.10.561776v1"
+        }
+      ],
+      "code_links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/songlab-cal/gpn"
+        }
+      ],
+      "status": "Open code + weights; maintainers deprecate GPN-MSA in favor of GPN-Star.",
+      "io": "MSA/genomic context -> variant effect score",
+      "use_cases": "Genome-wide variant scoring, evolutionary constraint",
+      "year": "2023",
+      "canonical": false,
+      "noncommercial": false,
+      "verified": "2026-07-13",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592768/",
+        "https://www.biorxiv.org/content/10.1101/2023.10.10.561776v1",
+        "https://github.com/songlab-cal/gpn",
+        "https://www.nature.com/articles/s41587-024-02511-w"
+      ],
+      "audit_state": "verified",
+      "audit_priority": "P4",
+      "audit_note": "Final paper · repo Targeted 2026-09-11 update: final journal paper surfaced and current official README deprecation recorded; prior verification date retained because this was not a complete re-audit of all row claims. See evidence/refresh-2026-09-11/candidate_decisions.json.",
+      "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+      "aliases": [],
+      "date_modified": "2026-09-11"
+    }
+  ],
+  "held_remove_ids": [
+    "bfm-mrna-fm-plantrna-fm",
+    "bfm-framediff-frameflow-multiflow"
+  ],
+  "held_upserts": [
+    {
+      "record": {
+        "id": "bfm-saturn",
+        "date_added": "2026-06-16",
+        "modality": "singlecell",
+        "name": "SATURN",
+        "description": "Cross-species cell embedding model using protein-language-model gene features.",
+        "paper_links": [
+          {
+            "label": "Nature Methods",
+            "url": "https://www.nature.com/articles/s41592-024-02191-z"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/snap-stanford/SATURN"
+          }
+        ],
+        "status": "HOLD — method code and derived embeddings exist, but no reusable pretrained SATURN checkpoint was verified",
+        "io": "scRNA counts + protein embeddings + labels -> shared cell embedding",
+        "use_cases": "Cross-species integration, homologous cell type mapping",
+        "year": "2024",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.nature.com/articles/s41592-024-02191-z",
+          "https://github.com/snap-stanford/SATURN"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "repository provides training code, embeddings and derived macrogene weights, not a reusable pretrained SATURN checkpoint. HOLD or reclassify as method.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "repository provides training code, embeddings and derived macrogene weights, not a reusable pretrained SATURN checkpoint. HOLD or reclassify as method. Re-reviewed 2026-09-11: README describes training outputs, derived macrogene weights and embeddings; no independently reusable pretrained SATURN checkpoint was established. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when an official reusable pretrained SATURN checkpoint is released and its terms are verified, or reclassify outside model scope."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-xtrimogene",
+        "date_added": "2026-06-16",
+        "modality": "singlecell",
+        "name": "xTrimoGene",
+        "description": "Efficient scalable representation learner for scRNA-seq.",
+        "paper_links": [
+          {
+            "label": "OpenReview",
+            "url": "https://openreview.net/forum?id=gdwcoBCMVi"
+          },
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/html/2311.15156v2"
+          }
+        ],
+        "code_links": [],
+        "status": "HOLD — paper only; no official reusable code or checkpoint verified",
+        "io": "Sparse scRNA vector -> embeddings/task predictions",
+        "use_cases": "Annotation, perturbation response, drug-combination prediction",
+        "year": "",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://openreview.net/forum?id=gdwcoBCMVi",
+          "https://arxiv.org/html/2311.15156v2"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "paper-only with no official code or checkpoint. HOLD under the reusable-artifact rule.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "paper-only with no official code or checkpoint. HOLD under the reusable-artifact rule. Re-reviewed 2026-09-11: Paper links the scFoundation repository. That does not establish a distinct reusable xTrimoGene release; the family relationship and standalone artifact remain unresolved. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when official reusable code or a checkpoint is released and verified."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-scprotein",
+        "date_added": "2026-06-16",
+        "modality": "singlecell",
+        "name": "scPROTEIN",
+        "description": "Graph contrastive model for single-cell proteomics embeddings.",
+        "paper_links": [
+          {
+            "label": "Nature Methods",
+            "url": "https://www.nature.com/articles/s41592-024-02214-9"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/TencentAILabHealthcare/scPROTEIN"
+          }
+        ],
+        "status": "HOLD — task framework with dataset-specific checkpoints; broad pretrained-model scope unverified",
+        "io": "Single-cell proteomics data -> embeddings",
+        "use_cases": "Mass cytometry/CyTOF-style proteomic cell analysis",
+        "year": "2024",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.nature.com/articles/s41592-024-02214-9",
+          "https://github.com/TencentAILabHealthcare/scPROTEIN"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "dataset-specific analysis framework/checkpoints do not substantiate a broadly pretrained foundation model. HOLD or reclassify outside scope.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "scope",
+        "reason": "dataset-specific analysis framework/checkpoints do not substantiate a broadly pretrained foundation model. HOLD or reclassify outside scope. Re-reviewed 2026-09-11: Dataset-specific stage checkpoints remain documented. No broader pretrained reusable scope was established; no scope-policy exception was introduced. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider if broader reusable pretraining is evidenced or a written scope-policy revision explicitly includes this class."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-deepsea",
+        "date_added": "2026-06-16",
+        "modality": "dna",
+        "name": "DeepSEA",
+        "description": "Pioneering deep-learning sequence model that predicts 919 chromatin features (TF binding, DNase, histone marks) from DNA with single-nucleotide sensitivity to prioritize noncoding variants.",
+        "io": "DNA sequence (~1 kb) -> 919 chromatin feature predictions; noncoding variant effect scores",
+        "status": "HOLD — catalog eligibility or reusable-artifact evidence is unresolved; see audit note",
+        "use_cases": "Noncoding/eQTL/disease variant prioritization, chromatin feature prediction, regulatory sequence analysis",
+        "year": "2015",
+        "paper_links": [
+          {
+            "label": "Nature",
+            "url": "https://www.nature.com/articles/nmeth.3547"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/FunctionLab/selene"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.nature.com/articles/nmeth.3547",
+          "https://github.com/FunctionLab/selene"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Identity is correct, but the linked artifact is the later Selene framework, and DeepSEA is a supervised regulatory predictor rather than an unambiguous reusable FM. Decide whether it is a documented historical/canonical exception. Paper, Selene. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_1.json): the original standalone DeepSEA artifact has been located at deepsea.princeton.edu/help/, distinct from the Selene framework this record links, and the page states no licence for that download. The remaining blocker is the missing written historical-exception policy, which no external evidence can satisfy; if that policy is adopted, replace the Selene link with the located artifact and record the absent licence.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "scope",
+        "reason": "Identity is correct, but the linked artifact is the later Selene framework, and DeepSEA is a supervised regulatory predictor rather than an unambiguous reusable FM. Decide whether it is a documented historical/canonical exception. Paper, Selene. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_1.json): the original standalone DeepSEA artifact has been located at deepsea.princeton.edu/help/, distinct from the Selene framework this record links, and the page states no licence for that download. The remaining blocker is the missing written historical-exception policy, which no external evidence can satisfy; if that policy is adopted, replace the Selene link with the located artifact and record the absent licence. Re-reviewed 2026-09-11: Historical assay-prediction scope remains unchanged. Selene is a framework locator, not by itself original DeepSEA artifact evidence; no historical exception was adopted. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider only under a written historical-exception policy with the original artifact correctly identified."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-chrombpnet",
+        "date_added": "2026-06-16",
+        "modality": "dna",
+        "name": "ChromBPNet",
+        "description": "Kundaje-lab bias-factorized, base-resolution CNN of chromatin accessibility (ATAC/DNase) that deconvolves enzyme bias to reveal TF motifs, footprints and regulatory variants.",
+        "io": "DNA sequence -> base-resolution accessibility profiles; TF motif/footprint and variant-effect outputs",
+        "status": "HOLD — catalog eligibility or reusable-artifact evidence is unresolved; see audit note",
+        "use_cases": "cis-regulatory syntax discovery, TF footprinting, regulatory variant scoring, enhancer/accessibility modeling",
+        "year": "2024",
+        "paper_links": [
+          {
+            "label": "bioRxiv",
+            "url": "https://www.biorxiv.org/content/10.1101/2024.12.25.630221v1"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/kundajelab/chrombpnet"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.biorxiv.org/content/10.1101/2024.12.25.630221v1",
+          "https://github.com/kundajelab/chrombpnet"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Current paper/repo describe a bias-factorized chromatin-accessibility predictor trained per assay, not clearly a reusable multi-task foundation model. Reassess against the stated scope rule or document an exception. Paper, repo.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "scope",
+        "reason": "Current paper/repo describe a bias-factorized chromatin-accessibility predictor trained per assay, not clearly a reusable multi-task foundation model. Reassess against the stated scope rule or document an exception. Paper, repo. Re-reviewed 2026-09-11: README documents assay-specific training and transferable bias components. The current broad-foundation-model condition is not established by this alone. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider if a written scope policy includes assay-specific predictors or broader reusable pretraining is evidenced."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-mistral-dna",
+        "date_added": "2026-06-16",
+        "modality": "dna",
+        "name": "Mistral-DNA",
+        "description": "Family of compact DNA language models adapting the Mistral/Mixtral architecture to genomics, pretrained via causal language modeling on human (hg38) and other genomes.",
+        "io": "DNA sequence -> embeddings, next-token likelihoods, generated DNA; fine-tuned task heads",
+        "status": "HOLD — primary paper absent and referenced checkpoint could not be verified",
+        "use_cases": "Genomic sequence classification, DNA generation, fine-tuning for regulatory/variant tasks, teaching/tutorials",
+        "year": "2024",
+        "paper_links": [],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/raphaelmourad/Mistral-DNA"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://github.com/raphaelmourad/Mistral-DNA"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "no primary paper, linked checkpoint currently unauthorized, and direct model-card URL is absent. HOLD until checkpoint and terms are verifiable.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "multiple",
+        "reason": "no primary paper, linked checkpoint currently unauthorized, and direct model-card URL is absent. HOLD until checkpoint and terms are verifiable. Re-reviewed 2026-09-11: Author repository still describes a training experiment and links a hub checkpoint. No primary publication or explicit implementation licence was established. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when a primary source, authorized checkpoint, direct model card, and exact terms are all verified."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-florabert",
+        "date_added": "2026-06-16",
+        "modality": "dna",
+        "name": "FloraBERT",
+        "description": "RoBERTa-based plant DNA language model (47M params) pretrained on ~11.7M plant promoter sequences and fine-tuned to predict tissue-specific maize gene expression across species.",
+        "io": "Plant promoter DNA sequence -> embeddings; predicted tissue-specific gene expression (TPM, 8 maize tissues)",
+        "status": "HOLD — catalog eligibility or reusable-artifact evidence is unresolved; see audit note",
+        "use_cases": "Cross-species gene-expression prediction from promoters, promoter representation learning, crop transfer learning",
+        "year": "2022",
+        "paper_links": [
+          {
+            "label": "Paper",
+            "url": "https://www.researchsquare.com/article/rs-1927200/v1"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/benlevyx/florabert"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.researchsquare.com/article/rs-1927200/v1",
+          "https://github.com/benlevyx/florabert"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Official description focuses on plant promoter modelling and tissue-specific gene-expression prediction; broad reusable FM scope is not established. Paper, repo.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "scope",
+        "reason": "Official description focuses on plant promoter modelling and tissue-specific gene-expression prediction; broad reusable FM scope is not established. Paper, repo. Re-reviewed 2026-09-11: Code and saved models are documented, but the inspected source continues to focus on tissue-expression regression. The recorded broader-scope condition remains unresolved. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider if broader reusable foundation-model scope is established by primary evidence."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-drfold",
+        "date_added": "2026-06-16",
+        "modality": "rna",
+        "name": "DRfold",
+        "description": "End-to-end deep-learning RNA tertiary-structure predictor combining learned local frame rotations and geometric restraints (MSA-free); DRfold2 (2026) adds a pretrained RNA Composite Language Model (RCLM) and a denoising structure module for end-to-end ab initio folding.",
+        "io": "RNA sequence (+ secondary structure) -> predicted 3D tertiary structure (atomic resolution)",
+        "status": "HOLD — catalog eligibility or reusable-artifact evidence is unresolved; see audit note",
+        "use_cases": "Ab initio / single-sequence RNA 3D structure prediction without MSA",
+        "year": "2023",
+        "paper_links": [
+          {
+            "label": "Nature",
+            "url": "https://www.nature.com/articles/s41467-023-41303-9"
+          },
+          {
+            "label": "PLOS Biology (DRfold2)",
+            "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003659"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/leeyang/DRfold"
+          },
+          {
+            "label": "GitHub (DRfold2)",
+            "url": "https://github.com/leeyang/DRfold2"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.nature.com/articles/s41467-023-41303-9",
+          "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003659",
+          "https://github.com/leeyang/DRfold",
+          "https://github.com/leeyang/DRfold2"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "DRfold/DRfold2 are RNA structure predictors; DRfold2 contains a pretrained RCLM component, but the catalogue record itself remains one-task structure prediction. HOLD or define a structural-model exception. DRfold paper, DRfold2 paper, DRfold, DRfold2. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_2.json): the successor repository does ship reusable artifacts - its install script downloads about 1.3 GB of model weights under MIT-form terms - but the weight locator is indirect and both remaining paths are curatorial: no written structural-model exception exists, and the record still frames the entry as one-task RNA structure prediction rather than around the pretrained language-model component.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "scope",
+        "reason": "DRfold/DRfold2 are RNA structure predictors; DRfold2 contains a pretrained RCLM component, but the catalogue record itself remains one-task structure prediction. HOLD or define a structural-model exception. DRfold paper, DRfold2 paper, DRfold, DRfold2. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_2.json): the successor repository does ship reusable artifacts - its install script downloads about 1.3 GB of model weights under MIT-form terms - but the weight locator is indirect and both remaining paths are curatorial: no written structural-model exception exists, and the record still frames the entry as one-task RNA structure prediction rather than around the pretrained language-model component. Re-reviewed 2026-09-11: RNA-structure implementations and MIT statements are visible; the recorded task-scope boundary remains unresolved and no policy exception was adopted. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider only under a written structural-model exception or after reframing around an evidenced reusable pretrained component."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-protriever",
+        "date_added": "2026-06-16",
+        "modality": "protein",
+        "name": "Protriever",
+        "description": "End-to-end differentiable retrieval-augmented protein language model (Marks/OATML) that jointly learns homology search and fitness prediction via efficient vector search.",
+        "io": "Query sequence + learned-retrieved homologs (e.g. UniRef) -> autoregressive fitness/variant scores, embeddings",
+        "status": "HOLD — official repository is a README placeholder; no released code, checkpoint or licence verified",
+        "use_cases": "MSA-free / fast homology-aware fitness prediction, variant effect prediction, retrieval-augmented protein modeling",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2506.08954"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/OATML-Markslab/Protriever"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2506.08954",
+          "https://github.com/OATML-Markslab/Protriever"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P1",
+        "audit_note": "official repository contains only README, not open code or weights. HOLD and correct status to placeholder/paper only.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "official repository contains only README, not open code or weights. HOLD and correct status to placeholder/paper only. Re-reviewed 2026-09-11: Official repository remains minimal, with no verified reusable checkpoint or licence; the paper identity is confirmed. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when official executable code or reusable weights are released and verified."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-protgps",
+        "date_added": "2026-06-16",
+        "modality": "protein",
+        "name": "ProtGPS",
+        "description": "ESM-2-based model (MIT/Whitehead) predicting protein subcellular compartment/condensate localization (12 classes) and generating sequences targeted to a chosen compartment.",
+        "io": "Protein sequence -> predicted compartment / mutation effect on localization; or compartment target -> generated sequence",
+        "status": "HOLD — catalog eligibility or reusable-artifact evidence is unresolved; see audit note",
+        "use_cases": "Subcellular/condensate localization prediction, disease-mutation localization-shift analysis, generative design of compartment-targeted proteins",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "Science",
+            "url": "https://www.science.org/doi/10.1126/science.adq2634"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/pgmikhael/protgps"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.science.org/doi/10.1126/science.adq2634",
+          "https://github.com/pgmikhael/protgps"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Model is centred on one localization objective—12-compartment prediction and localization-conditioned generation. Reassess broad-FM eligibility. Paper, repo.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "scope",
+        "reason": "Model is centred on one localization objective—12-compartment prediction and localization-conditioned generation. Reassess broad-FM eligibility. Paper, repo. Re-reviewed 2026-09-11: README documents task checkpoints but no broader foundation-model scope. Publisher access was restricted; original condition is not satisfied by artifact existence. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider if broader reusable foundation-model scope is established or a written task-specific exception is adopted."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-neuralplexer-and-neuralplexer3",
+        "date_added": "2026-06-16",
+        "modality": "complex",
+        "name": "NeuralPLexer (and NeuralPLexer3)",
+        "description": "Multiscale deep generative model for protein-ligand complex structure prediction and ligand-induced conformational states from protein sequence + ligand graph (diffusion in v1; NeuralPLexer3 uses flow matching for physio-realistic biomolecular complexes).",
+        "io": "Protein sequence + ligand molecular graph (+optional templates) -> protein-ligand complex 3D structure / conformational ensemble",
+        "status": "HOLD — v1 and NP3 are conflated and have different artifact availability/terms",
+        "use_cases": "Co-folding / blind docking, structure-based drug design, modeling ligand-induced conformational change",
+        "year": "2024",
+        "paper_links": [
+          {
+            "label": "Nature",
+            "url": "https://www.nature.com/articles/s42256-024-00792-z"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/zrqiao/NeuralPLexer"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.nature.com/articles/s42256-024-00792-z",
+          "https://github.com/zrqiao/NeuralPLexer",
+          "https://doi.org/10.5281/zenodo.10373581",
+          "https://openreview.net/forum?id=BlLAmMFEzJ"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Family conflates v1 and NP3. V1 checkpoints are explicitly CC BY-NC-SA for non-commercial use, while linked repo/paper do not implement NP3. NP3 has a separate NeurIPS paper and no verified public code/weights in the cited artifact. v1 paper, v1 repo, v1 checkpoints, NP3 paper.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "family_identity",
+        "reason": "Family conflates v1 and NP3. V1 checkpoints are explicitly CC BY-NC-SA for non-commercial use, while linked repo/paper do not implement NP3. NP3 has a separate NeurIPS paper and no verified public code/weights in the cited artifact. v1 paper, v1 repo, v1 checkpoints, NP3 paper. Re-reviewed 2026-09-11: NeuralPLexer v1 has documented code and noncommercial archive terms. The NP3 member and its current artifact/access were not resolved, so the combined record remains held pending independent member records. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Split NeuralPLexer v1 and NP3 and verify each version's implementation, weights, and terms."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-uni-mol-docking-v2",
+        "date_added": "2026-06-16",
+        "modality": "complex",
+        "name": "Uni-Mol Docking V2",
+        "description": "Upgraded Uni-Mol-based protein-ligand docking model producing chemically realistic, high-accuracy binding poses (>77% of PoseBusters under 2A RMSD, avoiding chirality/steric-clash artifacts).",
+        "io": "Protein pocket + ligand -> binding pose 3D coordinates",
+        "status": "HOLD — catalog eligibility or reusable-artifact evidence is unresolved; see audit note",
+        "use_cases": "Accurate binding-pose prediction, structure-based virtual screening, lead optimization",
+        "year": "2024",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2405.11769"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/deepmodeling/Uni-Mol/tree/main/unimol_docking_v2"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2405.11769",
+          "https://github.com/deepmodeling/Uni-Mol/tree/main/unimol_docking_v2"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Exact model is a dedicated docking predictor rather than an unambiguous broader-than-one-task FM. HOLD or document a structural/docking exception. Paper, repo.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "scope",
+        "reason": "Exact model is a dedicated docking predictor rather than an unambiguous broader-than-one-task FM. HOLD or document a structural/docking exception. Paper, repo. Re-reviewed 2026-09-11: Official repository still describes a released docking specialization. No broader reuse condition or structural-model exception was established. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider only under a written structural/docking exception or with evidence of broader reusable scope."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-abodybuilder3",
+        "date_added": "2026-06-16",
+        "modality": "protein",
+        "name": "ABodyBuilder3",
+        "description": "Scalable antibody structure prediction model leveraging ProtT5 language-model embeddings with improved CDR-loop accuracy and per-residue pLDDT-style uncertainty (successor to ABodyBuilder2).",
+        "io": "Antibody heavy/light chain sequences -> 3D antibody structure + predicted per-residue confidence (pLDDT)",
+        "status": "HOLD — catalog eligibility or reusable-artifact evidence is unresolved; see audit note",
+        "use_cases": "Antibody structure prediction, developability/engineering workflows, large-scale antibody modeling",
+        "year": "2024",
+        "paper_links": [
+          {
+            "label": "Oxford Acad.",
+            "url": "https://academic.oup.com/bioinformatics/article/40/10/btae576/7810444"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/Exscientia/abodybuilder3"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://academic.oup.com/bioinformatics/article/40/10/btae576/7810444",
+          "https://github.com/Exscientia/abodybuilder3"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Identity and artifacts verify, but ABodyBuilder3 is a task-specific antibody structure predictor rather than a model broader than one task; HOLD or document a structural-model exception. Paper, repo.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "scope",
+        "reason": "Identity and artifacts verify, but ABodyBuilder3 is a task-specific antibody structure predictor rather than a model broader than one task; HOLD or document a structural-model exception. Paper, repo. Re-reviewed 2026-09-11: README and Apache-2.0 licence/weights locator are accessible; antibody-structure scope remains the recorded blocker. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider only under a written structural-model exception or with evidence of broader reusable scope."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-scdiva",
+        "date_added": "2026-06-16",
+        "modality": "singlecell",
+        "name": "ScDiVa",
+        "description": "Masked discrete-diffusion single-cell foundation model jointly modeling discrete gene identity and continuous expression magnitude with a bidirectional denoiser and latent anchor token; pretrained on 59M cells.",
+        "io": "Masked/corrupted single-cell expression -> denoised gene identities + magnitudes, cell embeddings, generated cells",
+        "status": "HOLD — weights and inference source are public, but the inspected loader may return random initialization after a warning/error message; verified usable release required",
+        "use_cases": "Single-cell generation, dropout/sparsity-aware denoising, joint identity-and-expression modeling, representation learning",
+        "year": "2026",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2602.03477"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/wangmingxuan666/ScDiVa"
+          },
+          {
+            "label": "Model artifacts",
+            "url": "https://huggingface.co/warming666/ScDiVa"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2602.03477",
+          "https://github.com/wangmingxuan666/ScDiVa",
+          "https://huggingface.co/warming666/ScDiVa"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Historical pre-September assessment: paper-only with no released code or checkpoint. HOLD under the reusable-artifact rule. Re-reviewed 2026-09-11: Author-named GitHub repository and linked hub now expose Apache-labelled weights and inference source. Static inspection finds from_pretrained downloads model.safetensors but passes it to torch.load, catches errors and returns random initialization; README says the inference SDK is under internal review. No model execution was performed. A verified usable implementation/checkpoint pair is still needed.",
+        "audit_source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "date_modified": "2026-09-11",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "Historical pre-September condition: paper-only with no released code or checkpoint. HOLD under the reusable-artifact rule. Re-reviewed 2026-09-11: Author-named GitHub repository and linked hub now expose Apache-labelled weights and inference source. Static inspection finds from_pretrained downloads model.safetensors but passes it to torch.load, catches errors and returns random initialization; README says the inference SDK is under internal review. No model execution was performed. A verified usable implementation/checkpoint pair is still needed. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Verify a corrected inference loader that loads the published checkpoint successfully, with official code/checkpoint terms; retain disambiguation from unrelated scDIVA methods."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-tabula",
+        "date_added": "2026-06-16",
+        "modality": "singlecell",
+        "name": "Tabula",
+        "description": "Tabular self-supervised single-cell foundation model trained with federated learning, using combined gene-wise (column) reconstruction and cell-wise (row) contrastive objectives for privacy-preserving pretraining.",
+        "io": "scRNA-seq expression (tabular) -> cell/gene embeddings, task predictions",
+        "status": "HOLD — non-commercial training code only; no reusable pretrained checkpoint verified",
+        "use_cases": "Batch correction, cell annotation, multi-omics integration, denoising/imputation, GRN inference, privacy-preserving pretraining",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "bioRxiv",
+            "url": "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1"
+          },
+          {
+            "label": "arXiv (2026 version)",
+            "url": "https://arxiv.org/abs/2607.19400"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/aristoteleo/tabula"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.biorxiv.org/content/10.1101/2025.01.06.631427v1",
+          "https://github.com/aristoteleo/tabula",
+          "https://arxiv.org/abs/2607.19400"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P1",
+        "audit_note": "set NC true, but repository has training code only and no pretrained checkpoint. HOLD until reusable weights exist. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json and evidence/additions-2026-08-13/fm_result_10.json): the repository is alive but still ships training code only, with no weights and no releases, and no model-hub artifact exists under the authors. A rediscovered candidate was matched to this entry rather than added: the work now also appears as arXiv 2607.19400 under a new title, with a federated-orchestration companion platform, which explains the title mismatch between the repository README and the cited preprint. The custom non-commercial repository licence corroborates the existing noncommercial flag but supplies no weights.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "set NC true, but repository has training code only and no pretrained checkpoint. HOLD until reusable weights exist. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json and evidence/additions-2026-08-13/fm_result_10.json): the repository is alive but still ships training code only, with no weights and no releases, and no model-hub artifact exists under the authors. A rediscovered candidate was matched to this entry rather than added: the work now also appears as arXiv 2607.19400 under a new title, with a federated-orchestration companion platform, which explains the title mismatch between the repository README and the cited preprint. The custom non-commercial repository licence corroborates the existing noncommercial flag but supplies no weights. Re-reviewed 2026-09-11: Training code and current paper remain visible; no reusable pretrained checkpoint was established from the inspected README and repository release metadata. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when an official reusable pretrained checkpoint is released and its terms are verified."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-atlas-rudolfv-successor",
+        "date_added": "2026-06-16",
+        "modality": "spatial",
+        "name": "Atlas (RudolfV successor)",
+        "description": "Aignostics/Mayo Clinic/Charite pathology foundation model (ViT-H/14, 632M params) built on the RudolfV pathologists-in-the-loop approach, trained on 1.2M WSIs across 70+ tissue and 100+ stain types; the product line has since advanced to Atlas 2 (arXiv 2601.05148, January 2026).",
+        "io": "Histology tile -> tile-level embedding",
+        "status": "HOLD — no public Atlas or Atlas 2 weight artifact; commercial licensing only, and the previously listed model-hub entry is absent",
+        "use_cases": "Pan-tissue cancer classification, biomarker prediction, WSI feature extraction across diverse stains/scanners",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "arXiv (Atlas)",
+            "url": "https://arxiv.org/abs/2501.05409"
+          },
+          {
+            "label": "arXiv (Atlas 2)",
+            "url": "https://arxiv.org/abs/2601.05148"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "Official model page",
+            "url": "https://www.aignostics.com/products/foundation-models"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2501.05409",
+          "https://arxiv.org/abs/2601.05148",
+          "https://www.aignostics.com/products/foundation-models",
+          "https://www.aignostics.com/blog/atlas-2-setting-a-new-standard-for-pathology-foundation-models"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Listed HF artifact returns no model; official Aignostics materials now describe flexible commercial licensing and Atlas 2, not open/gated Atlas weights. Replace the dead artifact and avoid “open code, gated weights” unless a current public release is found. Atlas paper, dead listed artifact, official model page, Atlas 2. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the listed Hugging Face artifact is still absent; the official product page now presents a three-generation line ending in Atlas 2 (arXiv 2601.05148, January 2026) with commercial licensing only and no public weight download; and a gated RudolfV-2 family has appeared on the vendor's model-hub organisation whose licence text is unreadable without authentication. The RudolfV-2 family is a separate candidate, not evidence for Atlas.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "Listed HF artifact returns no model; official Aignostics materials now describe flexible commercial licensing and Atlas 2, not open/gated Atlas weights. Replace the dead artifact and avoid “open code, gated weights” unless a current public release is found. Atlas paper, dead listed artifact, official model page, Atlas 2. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the listed Hugging Face artifact is still absent; the official product page now presents a three-generation line ending in Atlas 2 (arXiv 2601.05148, January 2026) with commercial licensing only and no public weight download; and a gated RudolfV-2 family has appeared on the vendor's model-hub organisation whose licence text is unreadable without authentication. The RudolfV-2 family is a separate candidate, not evidence for Atlas. Re-reviewed 2026-09-11: Atlas/Atlas 2 papers and vendor pages are reachable. No explicit usable public Atlas endpoint/artifact terms were established. RudolfV-2 is tracked separately, with unreadable gated terms. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when a current official public artifact or endpoint and its exact access terms are verified."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-bioreason",
+        "date_added": "2026-06-16",
+        "modality": "multimodal",
+        "name": "BioReason",
+        "description": "Architecture that embeds a DNA foundation model (Evo2/Nucleotide Transformer) directly into an LLM so the LLM reasons over raw genomic sequence as a first-class input via SFT + RL, producing interpretable multi-step reasoning.",
+        "io": "Raw DNA sequence + text question -> multi-step biological reasoning / variant-effect / pathway answer with explanation",
+        "status": "HOLD — checkpoints remain forthcoming; no reusable model artifact verified",
+        "use_cases": "Mechanistic variant-effect explanation, KEGG disease-pathway reasoning, interpretable genomics QA",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2505.23579"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/bowang-lab/BioReason"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2505.23579",
+          "https://github.com/bowang-lab/BioReason"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "repository still says checkpoints are forthcoming. HOLD until a reusable checkpoint is released. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the promised checkpoints are still unreleased - the README's checkpoint section reads that they will be released soon, while the abstract in the same file continues to claim public checkpoints - and no model-hub artifact exists. The successor BioReason-Pro has been released separately and is already a displayed record; it is a different model and does not lift this hold.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "repository still says checkpoints are forthcoming. HOLD until a reusable checkpoint is released. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the promised checkpoints are still unreleased - the README's checkpoint section reads that they will be released soon, while the abstract in the same file continues to claim public checkpoints - and no model-hub artifact exists. The successor BioReason-Pro has been released separately and is already a displayed record; it is a different model and does not lift this hold. Re-reviewed 2026-09-11: Current original BioReason README still promises checkpoints soon. BioReason-Pro links are a separate already-cataloged successor, not original BioReason weights. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when the promised official checkpoints are released and their terms are verified."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-openprotein-ai-poet-poet-2",
+        "date_added": "2026-06-16",
+        "modality": "platform",
+        "name": "OpenProtein.AI (PoET / PoET-2)",
+        "description": "Commercial protein-design cloud platform plus the PoET-2 conditional, retrieval-augmented multimodal protein language foundation model (sequence+structure conditioning) for zero-shot variant effect prediction, embedding, scoring, and controllable generation.",
+        "io": "Protein family/sequence (+ optional structure) -> embeddings, fitness/property scores, generated sequences",
+        "status": "HOLD — platform/model identity overlaps PoET-2 and requires a distinct platform evidence boundary",
+        "use_cases": "Protein engineering, zero-shot variant effect prediction, sequence-to-property model training, in silico screening",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2508.04724"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/OpenProteinAI/PoET-2"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2508.04724",
+          "https://github.com/OpenProteinAI/PoET-2"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P1",
+        "audit_note": "set NC true and resolve duplication with bfm-poet-2. Narrow to the commercial platform or merge. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the PoET-2 repository is real and self-hosting, with Apache-2.0 code and a non-commercial model-weights licence, which confirms the recorded non-commercial flag for the model side. The condition remains a register-side editorial act: this record must be narrowed to the commercial platform or merged with the displayed PoET-2 record, with the stable-ID disposition documented. No separate held PoET-2 record exists, so the duplicate target lives in the displayed catalog.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "duplication",
+        "reason": "set NC true and resolve duplication with bfm-poet-2. Narrow to the commercial platform or merge. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the PoET-2 repository is real and self-hosting, with Apache-2.0 code and a non-commercial model-weights licence, which confirms the recorded non-commercial flag for the model side. The condition remains a register-side editorial act: this record must be narrowed to the commercial platform or merged with the displayed PoET-2 record, with the stable-ID disposition documented. No separate held PoET-2 record exists, so the duplicate target lives in the displayed catalog. Re-reviewed 2026-09-11: PoET-2 remains available under distinct Apache code/custom noncommercial weights terms and already has a displayed record. The held combined platform/family identity must not become another model duplicate. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Narrow to the platform or merge with the PoET-2 record while documenting the stable-ID disposition."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-pearl",
+        "date_added": "2026-06-20",
+        "modality": "complex",
+        "name": "Pearl",
+        "description": "Protein-ligand co-folding foundation model from Genesis Molecular AI using SO(3)-equivariant diffusion and large-scale synthetic training data, outperforming AlphaFold3 by 14.5% on the PoseBusters benchmark.",
+        "io": "protein sequence + ligand SMILES -> co-folded all-atom protein-ligand 3D structure",
+        "status": "HOLD — paper and project identity verified; no public model endpoint or reusable artifact verified",
+        "use_cases": "structure-based drug discovery, binding pose prediction, virtual screening, small-molecule docking",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2510.24670"
+          }
+        ],
+        "code_links": [],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2510.24670",
+          "https://www.genesis.ml/ai-research"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Only a paper is cited; “Web/API/commercial” lacks an official artifact locator. Official Genesis pages describe Pearl and an AI platform/partner access, not a public model endpoint. Paper, official Pearl page. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): paper identity was confirmed, but no artifact or terms exist to verify - the vendor's research page describes the model without stating access, weights, API or licensing, dedicated product paths return not-found, and the public inference catalogue lists no matching entry. A vendor endpoint path returns HTTP 200 for arbitrary paths, so it is worthless as evidence; a public endpoint remains unverified rather than confirmed absent.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "Only a paper is cited; “Web/API/commercial” lacks an official artifact locator. Official Genesis pages describe Pearl and an AI platform/partner access, not a public model endpoint. Paper, official Pearl page. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): paper identity was confirmed, but no artifact or terms exist to verify - the vendor's research page describes the model without stating access, weights, API or licensing, dedicated product paths return not-found, and the public inference catalogue lists no matching entry. A vendor endpoint path returns HTTP 200 for arbitrary paths, so it is worthless as evidence; a public endpoint remains unverified rather than confirmed absent. Re-reviewed 2026-09-11: Paper and vendor research page are accessible but no reusable Pearl artifact or explicit public inference terms were established. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when an official reusable model artifact or public endpoint and its terms are verified."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-sctranslator",
+        "date_added": "2026-06-20",
+        "modality": "singlecell",
+        "name": "scTranslator",
+        "description": "Pre-trained generative model that translates single-cell transcriptomes to proteomes in an align-free manner, enabling proteome inference from RNA data across diverse single-cell profiling technologies.",
+        "io": "single-cell RNA expression -> single-cell protein abundance",
+        "status": "HOLD — catalog eligibility or reusable-artifact evidence is unresolved; see audit note",
+        "use_cases": "multi-omics inference from RNA-only data, transcriptome-to-proteome translation, cross-technology single-cell integration",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "Nature",
+            "url": "https://www.nature.com/articles/s41551-025-01528-z"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/TencentAILabHealthcare/scTranslator"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.nature.com/articles/s41551-025-01528-z",
+          "https://github.com/TencentAILabHealthcare/scTranslator"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Code/checkpoints are public but no licence file is present, and the model is a single RNA-to-protein translation task. HOLD or explicitly document both scope and no-licence limitations. Paper, repo. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the journal publication and the recorded year were confirmed from the registration record, and the checkpoints remain real but term-free - three model sizes behind personal cloud-drive links, with no licence file and no SPDX licence on the repository. Both halves of the condition, scope eligibility and explicit reuse terms, stay open.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "multiple",
+        "reason": "Code/checkpoints are public but no licence file is present, and the model is a single RNA-to-protein translation task. HOLD or explicitly document both scope and no-licence limitations. Paper, repo. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_3.json): the journal publication and the recorded year were confirmed from the registration record, and the checkpoints remain real but term-free - three model sizes behind personal cloud-drive links, with no licence file and no SPDX licence on the repository. Both halves of the condition, scope eligibility and explicit reuse terms, stay open. Re-reviewed 2026-09-11: README lists pretrained Google Drive checkpoints; explicit implementation/checkpoint reuse terms and scope eligibility remain unresolved. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when scope eligibility and explicit code/checkpoint reuse terms are both resolved."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-genecompass",
+        "date_added": "2026-06-16",
+        "modality": "singlecell",
+        "name": "GeneCompass",
+        "description": "Knowledge-informed cross-species foundation model for gene regulation.",
+        "paper_links": [
+          {
+            "label": "Cell Research",
+            "url": "https://www.nature.com/articles/s41422-024-01034-y"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/xCompass-AI/GeneCompass"
+          }
+        ],
+        "status": "HOLD — public code/checkpoints; no confirmed reuse licence",
+        "io": "scRNA + biological priors -> gene/cell embeddings and GRN predictions",
+        "use_cases": "Regulatory mechanisms, fate regulator discovery, target discovery",
+        "year": "2024",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.nature.com/articles/s41422-024-01034-y",
+          "https://github.com/xCompass-AI/GeneCompass"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Paper; artifact. Action: replace “open” with “public code and checkpoints; reuse licence unconfirmed/HOLD”.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "terms",
+        "reason": "Paper; artifact. Action: replace “open” with “public code and checkpoints; reuse licence unconfirmed/HOLD”. Re-reviewed 2026-09-11: Official README documents pretrained artifacts; the inspected repository licence endpoint returned 404. Exact code/checkpoint terms remain unresolved. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when explicit code and checkpoint reuse terms are confirmed from an official source."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-hybridna",
+        "date_added": "2026-06-16",
+        "modality": "dna",
+        "name": "HybriDNA",
+        "description": "Microsoft decoder-only hybrid Transformer-Mamba2 DNA foundation model handling up to 131 kb at single-nucleotide resolution for both understanding and generation; SOTA on 33 DNA-understanding datasets.",
+        "io": "DNA sequence up to 131 kb -> embeddings/likelihoods (understanding) and generated DNA (generation)",
+        "status": "HOLD — paper verified; no provenance-confirmed reusable artifact found",
+        "use_cases": "Long-range DNA understanding (BEND/GUE/LRB tasks), regulatory element generation, variant/expression tasks",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2502.10807"
+          }
+        ],
+        "code_links": [],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2502.10807"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Paper; no provenance-confirmed official artifact found. Action: retain paper-only/HOLD. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the official project page's code link now points to a repository that returns not-found, so the only official artifact locator is dead, while three Apache-2.0, ungated weight repositories have appeared on a personal model-hub account whose display name matches the first author but whose organisations do not match the paper's institution. The paper-to-weights link is uploader-asserted rather than officially published, so provenance is unconfirmed. Re-reviewed 2026-09-11: A Mishamq/HybriDNA-3B hub repository lists weights and Apache metadata, but its card describes the 300M variant and no author-controlled link from the inspected preprint establishes ownership. Do not promote the mismatched upload as an official 3B release. The newly found upload is not a verified official artifact; it is therefore not added to the displayed artifact links.",
+        "audit_source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "aliases": [],
+        "date_modified": "2026-09-11"
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "Paper; no provenance-confirmed official artifact found. Action: retain paper-only/HOLD. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the official project page's code link now points to a repository that returns not-found, so the only official artifact locator is dead, while three Apache-2.0, ungated weight repositories have appeared on a personal model-hub account whose display name matches the first author but whose organisations do not match the paper's institution. The paper-to-weights link is uploader-asserted rather than officially published, so provenance is unconfirmed. Re-reviewed 2026-09-11: A Mishamq/HybriDNA-3B hub repository lists weights and Apache metadata, but its card describes the 300M variant and no author-controlled link from the inspected preprint establishes ownership. Do not promote the mismatched upload as an official 3B release. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when a provenance-confirmed official reusable model artifact is released and verified."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-genemamba",
+        "date_added": "2026-06-16",
+        "modality": "singlecell",
+        "name": "GeneMamba",
+        "description": "Single-cell transcriptomics foundation model on a bidirectional Bi-Mamba (state-space) backbone for linear-time gene-context modeling, pretrained on ~30M CELLxGENE cells with pathway-aware contrastive loss and rank-based gene encoding.",
+        "io": "scRNA-seq expression vector -> cell/gene embeddings, downstream task heads",
+        "status": "HOLD — public code/weights; no confirmed reuse licence",
+        "use_cases": "Cell type annotation, multi-batch integration, long-transcriptome modeling, gene-gene correlation analysis",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2504.16956"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/MineSelf2016/GeneMamba"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2504.16956",
+          "https://github.com/MineSelf2016/GeneMamba",
+          "https://huggingface.co/mineself2016/GeneMamba"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Paper; code; weights. Action: qualify as public code/weights with no confirmed reuse licence; HOLD the “open” claim. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): a parallel discovery lane proposed this model as a new addition on the strength of an Apache-2.0 header in the weights repository; reading the licence file itself shows the body is not the verbatim Apache-2.0 text (an altered patent-grant clause and a modified derivative-works definition), while the official code repository carries no licence at all. The catalog must not display this as Apache-2.0 until the authors resolve the discrepancy, so the hold stands and no new record was created. Re-reviewed 2026-09-11: Prior GitHub locator now returns 404 on both public page and raw README; hub still lists weights but no licence metadata. The earlier nonstandard licence concern was not resolved.",
+        "audit_source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "date_modified": "2026-09-11",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "terms",
+        "reason": "Paper; code; weights. Action: qualify as public code/weights with no confirmed reuse licence; HOLD the “open” claim. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): a parallel discovery lane proposed this model as a new addition on the strength of an Apache-2.0 header in the weights repository; reading the licence file itself shows the body is not the verbatim Apache-2.0 text (an altered patent-grant clause and a modified derivative-works definition), while the official code repository carries no licence at all. The catalog must not display this as Apache-2.0 until the authors resolve the discrepancy, so the hold stands and no new record was created. Re-reviewed 2026-09-11: Prior GitHub locator now returns 404 on both public page and raw README; hub still lists weights but no licence metadata. The earlier nonstandard licence concern was not resolved. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when explicit reuse terms for the official code and weights are confirmed."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-scmmgpt",
+        "date_added": "2026-06-16",
+        "modality": "singlecell",
+        "name": "scMMGPT",
+        "description": "Single-cell multimodal generative pretrained transformer linking a cell PLM and a text PLM via cell-to-text and text-to-cell cross-modal projectors, pretrained on 27M CELLxGENE cells.",
+        "io": "Cell expression and/or text -> cell description text, generated pseudo-cells, annotations",
+        "status": "HOLD — public source skeleton; weights and licence not confirmed",
+        "use_cases": "Cell annotation and clustering, text-to-cell generation, cell-to-text description, cross-modal reasoning",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2503.09427"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/syr-cn/scMMGPT"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2503.09427",
+          "https://github.com/syr-cn/scMMGPT"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Paper; repository. Action: change “open code” to “public source skeleton; weights and licence unconfirmed/HOLD”.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+        "date_modified": "2026-07-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "multiple",
+        "reason": "Paper; repository. Action: change “open code” to “public source skeleton; weights and licence unconfirmed/HOLD”. Re-reviewed 2026-09-11: Official repository README remains minimal; no released reusable weights with explicit terms were established. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when official reusable weights and explicit reuse terms are both confirmed."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-plip-pathology-language-image-pretraining",
+        "date_added": "2026-06-16",
+        "modality": "spatial",
+        "name": "PLIP (Pathology Language-Image Pretraining)",
+        "description": "First vision-language pathology foundation model; a CLIP fine-tuned on the OpenPath dataset of ~208,414 pathology image-text pairs curated from medical Twitter.",
+        "io": "Pathology image and/or text -> aligned CLIP-style embeddings; zero-shot classification and image/text retrieval",
+        "status": "HOLD — public code/weights; reuse terms not confirmed",
+        "use_cases": "Zero-shot tissue classification, image-to-image and text-to-image retrieval, knowledge sharing/search across pathology cases",
+        "year": "2023",
+        "paper_links": [
+          {
+            "label": "Nature",
+            "url": "https://www.nature.com/articles/s41591-023-02504-3"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/PathologyFoundation/plip"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://www.nature.com/articles/s41591-023-02504-3",
+          "https://github.com/PathologyFoundation/plip",
+          "https://huggingface.co/vinid/plip"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Paper; code; weights. Action: change “open” to “public code/weights; reuse terms unresolved/HOLD”; neither current official location provides a confirmed licence. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): neither official artifact grants reuse rights - the code repository has no licence file and the weights repository has empty card metadata. The only use-terms text is inherited from the upstream CLIP card and states that any deployed use case, commercial or not, is out of scope; if this entry is ever promoted, the terms field must reproduce that wording rather than imply an open licence, and the record's noncommercial flag must be revisited.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "terms",
+        "reason": "Paper; code; weights. Action: change “open” to “public code/weights; reuse terms unresolved/HOLD”; neither current official location provides a confirmed licence. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): neither official artifact grants reuse rights - the code repository has no licence file and the weights repository has empty card metadata. The only use-terms text is inherited from the upstream CLIP card and states that any deployed use case, commercial or not, is out of scope; if this entry is ever promoted, the terms field must reproduce that wording rather than imply an open licence, and the record's noncommercial flag must be revisited. Re-reviewed 2026-09-11: Official repository and linked model exist; model API supplies weights but no licence metadata, and no new explicit weight/code permission was established. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when explicit reuse terms for the official code and weights are confirmed."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-next-mol",
+        "date_added": "2026-06-20",
+        "modality": "molecule",
+        "name": "NExT-Mol",
+        "description": "Combines a 1.8B-parameter SELFIES-pretrained molecular LLM (MoLlama) with a 3D diffusion transformer for de novo 3D molecule generation and conformer prediction.",
+        "io": "SELFIES molecular sequence -> de novo 3D molecules and conformer geometries",
+        "status": "HOLD — public code/checkpoints; no confirmed reuse licence",
+        "use_cases": "de novo drug design, conformer prediction, structure-based virtual screening",
+        "year": "2025",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2502.12638"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/acharkq/next-mol"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2502.12638",
+          "https://github.com/acharkq/next-mol",
+          "https://huggingface.co/acharkq/MoLlama"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Paper; artifact; weights. Action: qualify as public code/checkpoints with reuse licence unconfirmed/HOLD. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the artifacts were located and are downloadable - a pretrained molecular language model on the model hub and conformer checkpoints on an open repository - but none of the three official locations declares a licence, the repository offers a citation request rather than terms, and it still warns that open sourcing is in progress.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "terms",
+        "reason": "Paper; artifact; weights. Action: qualify as public code/checkpoints with reuse licence unconfirmed/HOLD. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the artifacts were located and are downloadable - a pretrained molecular language model on the model hub and conformer checkpoints on an open repository - but none of the three official locations declares a licence, the repository offers a citation request rather than terms, and it still warns that open sourcing is in progress. Re-reviewed 2026-09-11: Official code links MoLlama and OSF checkpoints. Model metadata still lacks a licence, and explicit combined code/checkpoint permission was not established. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when explicit reuse terms for the official code and checkpoints are confirmed."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-lingshu-cell",
+        "date_added": "2026-06-20",
+        "modality": "singlecell",
+        "name": "Lingshu-Cell",
+        "description": "Alibaba DAMO Academy masked discrete diffusion model that generates whole-transcriptome expression distributions across ~18,000 genes without prior gene selection, achieving top performance on the Virtual Cell Challenge H1 perturbation benchmark.",
+        "io": "scRNA-seq gene expression profiles + perturbation conditions -> whole-transcriptome expression distributions (~18,000 genes)",
+        "status": "HOLD — paper/project page only; official collection did not contain a released model",
+        "use_cases": "perturbation response prediction, virtual cell simulation, transcriptomic distribution modeling, drug effect prediction",
+        "year": "2026",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2603.25240"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/collections/Alibaba-DAMO-Academy/lingshu-cell"
+          },
+          {
+            "label": "Official project",
+            "url": "https://alibaba-damo-academy.github.io/lingshu-cell-homepage/"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2603.25240",
+          "https://huggingface.co/collections/Alibaba-DAMO-Academy/lingshu-cell",
+          "https://alibaba-damo-academy.github.io/lingshu-cell-homepage/"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Paper; official collection; project. Action: downgrade “model hub” to paper/project page; the official collection currently contains the paper, not a model. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the official collection still contains only the paper and no model, and the official project page links no code, weights or endpoint. An unaffiliated third-party repository carrying checkpoint files has appeared; its provenance is not established and it must not be treated as the official artifact.",
+        "audit_source": "evidence/source-audit/foundation_residual_mod2.md",
+        "date_modified": "2026-08-13",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "artifact",
+        "reason": "Paper; official collection; project. Action: downgrade “model hub” to paper/project page; the official collection currently contains the paper, not a model. Re-reviewed 2026-08-13 (evidence/hold-review-2026-08-13/fm_hold_review_4.json): the official collection still contains only the paper and no model, and the official project page links no code, weights or endpoint. An unaffiliated third-party repository carrying checkpoint files has appeared; its provenance is not established and it must not be treated as the official artifact. Re-reviewed 2026-09-11: Official collection and project page remain paper-oriented; no author-linked released model files were established in this condition review. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Reconsider when the official collection contains a released reusable model artifact with verified terms."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-jump-lite",
+        "date_added": "2026-08-13",
+        "modality": "benchmark",
+        "name": "JUMP-lite (with Nahual)",
+        "description": "Compact benchmark subset of the JUMP Cell Painting resource for reproducible evaluation of cell-image representations.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2608.07632"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/afermg/JUMP_lite"
+          },
+          {
+            "label": "Zenodo code archive",
+            "url": "https://zenodo.org/records/21779243"
+          }
+        ],
+        "status": "HOLD — MIT harness code and a Zenodo code archive exist, but the benchmark image, embedding and metadata bundle is not yet retrievable from the Cell Painting Gallery",
+        "io": "Cell Painting images and precomputed embeddings + benchmark tasks -> cell-representation benchmark results",
+        "use_cases": "Benchmarking cell-image representation models",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2608.07632",
+          "https://github.com/afermg/JUMP_lite",
+          "https://zenodo.org/records/21779243"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: paper and MIT code verified, but an unsigned listing of the Cell Painting Gallery prefixes returns no objects, so the benchmark data cannot be downloaded. Evidence: evidence/additions-2026-08-13/fm_result_1.json. Re-reviewed 2026-09-11: The metadata S3 prefix now returns an object (README.md; last modified 2026-09-03), but the compressed-image prefix returns KeyCount 0. Indices are archived under CC0 on Zenodo; this does not complete the recorded image-and-metadata release condition. README still says gallery promotion pending.",
+        "audit_source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "aliases": [],
+        "date_modified": "2026-09-11"
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Paper (arXiv 2608.07632) and MIT code verified, but the benchmark artifact is not retrievable: the README states the release is deposited for publication in the Cell Painting Gallery and the public paths become available only after gallery promotion, and unsigned S3 listings of the cited prefixes return no objects. The data licence is deferred to Cell Painting Gallery / JUMP terms rather than stated. Scope note: JUMP-lite/Nahual is benchmark and deployment infrastructure, not a pretrained model. Evidence: evidence/additions-2026-08-13/fm_result_1.json. Re-reviewed 2026-09-11: The metadata S3 prefix now returns an object (README.md; last modified 2026-09-03), but the compressed-image prefix returns KeyCount 0. Indices are archived under CC0 on Zenodo; this does not complete the recorded image-and-metadata release condition. README still says gallery promotion pending. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "An unsigned listing of the Cell Painting Gallery publication_data / images prefixes for the JUMP-lite release returns objects, i.e. the metadata bundle, embeddings and image stores are actually downloadable; re-verify the data licence at that point."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-aqaffinity",
+        "date_added": "2026-08-13",
+        "modality": "complex",
+        "name": "AQAffinity",
+        "description": "SandboxAQ binding-affinity model that predicts protein-ligand affinity directly from sequence and ligand structure, implemented as an affinity module on an open co-folding backbone.",
+        "paper_links": [],
+        "code_links": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/SandboxAQ/AQAffinity"
+          }
+        ],
+        "status": "HOLD — Apache-2.0 weights, inference and training code are published behind an auto-approved contact form, but no primary paper exists and the model is a single-capability affinity head",
+        "io": "Protein sequence + ligand SMILES, with no precomputed structure -> predicted binding affinity",
+        "use_cases": "Binding-affinity prediction and hit triage",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://huggingface.co/SandboxAQ/AQAffinity"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: artifact, ownership and Apache-2.0 terms verified, but no paper or preprint exists and scope is narrower than a reusable backbone. Evidence: evidence/additions-2026-08-13/fm_result_2.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Artifact fully verified on the official SandboxAQ model hub (weights, inference and training code, Apache-2.0, auto-approved contact gate), but two gates fail: no paper or preprint exists anywhere (the only primary source is a first-party vendor release post, and the card cites another team's preprint), and the model is a single-purpose affinity head on another backbone rather than a pretrained model reusable across tasks. Also outside the refresh window. Evidence: evidence/additions-2026-08-13/fm_result_2.json. Re-reviewed 2026-09-11: Model API confirms Apache-labelled gated weights. The recorded primary-document and scope condition remains unresolved; artifact existence alone does not satisfy it. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "A primary paper or preprint for AQAffinity appears, or the index adopts a written rule that a first-party vendor release post counts as the primary source and that single-capability heads built on another backbone are in scope. No artifact re-verification is needed at that point."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-planthelixseek",
+        "date_added": "2026-08-13",
+        "modality": "dna",
+        "name": "PlantHelixSeek",
+        "description": "Plant DNA language model released with a base checkpoint and downstream task heads for regulatory-element and annotation tasks.",
+        "paper_links": [],
+        "code_links": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/zhangtaolab/PlantHelixSeek"
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/zhangtaolab/PlantHelixSeek"
+          }
+        ],
+        "status": "HOLD — public MIT code and ungated CC BY-NC 4.0 weights, but no paper, preprint or technical report exists",
+        "io": "Plant DNA sequence -> embeddings and downstream task predictions",
+        "use_cases": "Plant regulatory-element prediction, genome annotation, representation transfer",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://huggingface.co/zhangtaolab/PlantHelixSeek",
+          "https://github.com/zhangtaolab/PlantHelixSeek"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: artifacts and lab provenance verified, but there is no primary document; the repository's citation block is self-referential. Evidence: evidence/additions-2026-08-13/fm_result_3.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "scope",
+        "reason": "Model and provenance are real - an established plant-DNA-model lab, a base checkpoint plus downstream heads on the hub, MIT code and CC BY-NC 4.0 weights - but no primary paper, preprint or technical report exists and literature searches return no hits, so catalog eligibility is unresolved. Weights are non-commercial, and uptake is unproven. Evidence: evidence/additions-2026-08-13/fm_result_3.json. Re-reviewed 2026-09-11: Current README and hub show released plant-DNA checkpoints and CC BY-NC 4.0 weights/MIT code claims, but no matching primary technical paper was established. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "A primary document appears - a preprint, journal article, or dated technical report for PlantHelixSeek or its architecture. Accept then with modality dna, noncommercial true, and a status naming the CC BY-NC 4.0 weights and MIT code."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-seqlens-v2",
+        "date_added": "2026-08-13",
+        "modality": "dna",
+        "name": "SeqLens v2 (with mgxLens v2)",
+        "description": "Announced second generation of the seqLens genomic language model family, with only the smallest variant public and a companion metagenomic profiler bundle.",
+        "paper_links": [
+          {
+            "label": "seqLens v1 (Molecular Biology and Evolution)",
+            "url": "https://doi.org/10.1093/molbev/msag139"
+          }
+        ],
+        "code_links": [],
+        "status": "HOLD — v2 provenance is unverified, only the smallest variant is released, and the companion profiler declares no licence",
+        "io": "DNA or metagenomic sequence -> embeddings and downstream predictions",
+        "use_cases": "Genomic representation learning, metagenomic profiling",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://doi.org/10.1093/molbev/msag139"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: no v2 primary document, unverified organisation provenance, partial release, and an unlicensed companion bundle. Evidence: evidence/additions-2026-08-13/fm_result_3.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Three conditions fail. No primary document for v2 exists - literature hits cover only the v1 work and the v2 card cites itself. Provenance is unverified: the publishing hub organisation is unaffiliated with the v1 authors, no public v2 code repository exists, and the card cites non-public internal files. The release is partial - only the smallest variant is public, with the larger family members marked in development or planned. The companion mgxLens v2 additionally fails scope and licence: it is a self-described proof-of-concept retrieval profiler with no licence declared. Evidence: evidence/additions-2026-08-13/fm_result_3.json. Re-reviewed 2026-09-11: The cited journal locator resolves but no useful text was obtained from that direct response; positive v2 ownership and complete family release conditions were not newly established. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "Positive evidence of ownership appears - the v1 authors publicly claiming the publishing organisation, a public v2 code repository, or a v2 paper naming authors - and the larger family members actually ship. Reassess mgxLens separately only if it is relicensed and re-scoped as a reusable model."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-screenshot",
+        "date_added": "2026-08-13",
+        "modality": "singlecell",
+        "name": "ScreenShot",
+        "description": "In-context model for few-shot combination drug screening, pretrained on 40 screening datasets covering about 3,700 drugs and 6,000 samples, that predicts responses from functional dose-response measurements without fine-tuning.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2608.12219"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/tansey-lab/screenshot"
+          }
+        ],
+        "status": "HOLD — checkpoints are present in the public repository but no licence exists anywhere, so reuse rights are unresolved and scope placement needs a curator ruling",
+        "io": "Observed combination dose-response measurements -> predicted responses for unseen combinations",
+        "use_cases": "Combination drug-screening prediction, few-shot perturbation-response modelling",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2608.12219",
+          "https://github.com/tansey-lab/screenshot"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: paper and artifacts verified, but the repository has no licence file and the released checkpoints are per-held-out-cohort evaluation artifacts. Evidence: evidence/additions-2026-08-13/fm_result_5.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Paper (arXiv 2608.12219) and artifacts check out - the official lab repository ships model checkpoints and drug libraries - but no licence exists in any form, so the default is all-rights-reserved and no honest reuse phrase can be written. Scope also needs a curator call: the model is pretrained and reusable by in-context learning, but it consumes functional dose-response measurements rather than molecular representations, and the released checkpoints are leave-one-cohort-out evaluation artifacts rather than one canonical model. If admitted it belongs in the perturbation-response slot (singlecell), not molecule. Evidence: evidence/additions-2026-08-13/fm_result_5.json. Re-reviewed 2026-09-11: Code and model directories are described, but the inspected README/repository did not resolve explicit model reuse terms; scope decision remains outstanding. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "A LICENSE file appears in the official repository, or the paper states explicit terms for the released weights, and the curator rules on whether functional-screening perturbation-response models belong in the index."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-spgen",
+        "date_added": "2026-08-13",
+        "modality": "spatial",
+        "name": "SPgen",
+        "description": "Framework that predicts proteome-wide spatial protein abundance by combining frozen third-party sequence, expression and text encoders with a graph network trained per dataset.",
+        "paper_links": [
+          {
+            "label": "bioRxiv",
+            "url": "https://doi.org/10.64898/2026.07.16.739037"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/lijc0804/SPgen"
+          }
+        ],
+        "status": "HOLD — the official repository has no licence and ships no pretrained weights; the pretrained content is entirely third-party frozen encoders",
+        "io": "Spatial transcriptomics with protein-sequence and text embeddings -> predicted spatial protein expression",
+        "use_cases": "Spatial proteomics prediction",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://doi.org/10.64898/2026.07.16.739037",
+          "https://github.com/lijc0804/SPgen"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: preprint and repository identity verified, but no licence, no released checkpoint, and narrow single-task scope. Evidence: evidence/additions-2026-08-13/fm_result_7.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "multiple",
+        "reason": "Preprint and official repository verified and linked by the paper's code-availability statement, but three independent blockers remain: no licence file exists, so redistribution terms default to all-rights-reserved; the repository contains scripts and notebooks only, with no checkpoint files or weight-download instructions; and the pretrained content is third-party frozen encoders wrapped by a graph network trained per dataset, i.e. one task rather than reusable pretrained scope. Evidence: evidence/additions-2026-08-13/fm_result_7.json. Re-reviewed 2026-09-11: The repository remains minimal; a paper alone does not establish released reusable checkpoints and explicit terms. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "The repository adds an explicit licence and ships downloadable SPgen checkpoints, or an author-controlled model-hub or Zenodo artifact appears, or a peer-reviewed version documents released weights. Re-verify licence wording at that point."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-omicslm",
+        "date_added": "2026-08-13",
+        "modality": "multimodal",
+        "name": "OmicsLM",
+        "description": "Multimodal large language model that embeds continuous expression profiles in the language-model context for multi-sample omics reasoning, trained on more than 5.5 million instruction examples across 70+ task types.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2605.06728"
+          }
+        ],
+        "code_links": [],
+        "status": "HOLD — paper only; no official code, weights or endpoint could be located",
+        "io": "Expression profiles + natural-language question -> omics reasoning, analysis and answers",
+        "use_cases": "Multi-sample omics reasoning, expression-aware question answering",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2605.06728"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: the primary source is verified, but hub and repository searches return no official artifact. Evidence: evidence/additions-2026-08-13/fm_result_7.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "artifact",
+        "reason": "Primary source verified (arXiv 2605.06728, not withdrawn) and the abstract matches the described capability, but no official artifact could be found anywhere: the abstract page states no code or weights availability, a model-hub search returns nothing, and a repository search returns no matching project. Paper-only entries with no reusable artifact do not meet the artifact criterion. Evidence: evidence/additions-2026-08-13/fm_result_7.json. Re-reviewed 2026-09-11: Preprint identity is verified; targeted discovery and the inspected abstract did not yield a provenance-confirmed official reusable model release. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "An official repository or model card appears under the authors' organisation, or a revised version of the paper adds a code-availability link; then verify weights licence and gating before accepting, and record whether the release is weights or inference-only."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-x-cell",
+        "date_added": "2026-08-13",
+        "modality": "singlecell",
+        "name": "X-Cell / X-Cell-Ultra",
+        "description": "Xaira Therapeutics diffusion language model for causal perturbation prediction across diverse cellular contexts, announced with a small public variant and a much larger internal one.",
+        "paper_links": [
+          {
+            "label": "bioRxiv",
+            "url": "https://doi.org/10.64898/2026.03.18.712807"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/Xaira-Therapeutics/X-Cell"
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/Xaira-Therapeutics/x-cell"
+          }
+        ],
+        "status": "HOLD — the official repositories are public and CC BY-NC-SA-4.0, but both carry a 'weights and inference code coming soon' banner and contain no model files",
+        "io": "Cell context + perturbation -> predicted post-perturbation expression",
+        "use_cases": "Perturbation-response prediction, in silico genetic screens",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://doi.org/10.64898/2026.03.18.712807",
+          "https://huggingface.co/Xaira-Therapeutics/X-Cell",
+          "https://github.com/Xaira-Therapeutics/x-cell"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: paper, ownership, scope and terms verified, but no weights exist yet. Evidence: evidence/additions-2026-08-13/fm_result_10.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": [
+          "X-Cell",
+          "X-Cell-Ultra"
+        ]
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "artifact",
+        "reason": "Paper verifies (bioRxiv 10.64898/2026.03.18.712807, posted 2026-03-20, not withdrawn) and ownership, modality and CC BY-NC-SA-4.0 terms are clear, but the reusable-artifact rule fails: the model repository lists no model file and both the model card and the code repository carry the identical banner stating that weights and inference code are coming soon. Evidence: evidence/additions-2026-08-13/fm_result_10.json. Re-reviewed 2026-09-11: Official README still says model weights and inference code coming soon; hub lists only documentation/images, without checkpoint weights. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "The model repository lists an actual weight file, or the inference package ships and the coming-soon banner is removed; then re-check whether X-Cell-Ultra is released separately or stays internal and record it under its own terms."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-scmamba-snrna",
+        "date_added": "2026-08-13",
+        "modality": "singlecell",
+        "name": "scMamba (snRNA-seq, neurodegeneration)",
+        "description": "Bidirectional Mamba model pretrained on single-nucleus RNA-seq from postmortem brain tissue for neurodegeneration analysis; a different model from the multi-omics-integration scMamba.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2502.19429"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/okt0711/scMamba"
+          }
+        ],
+        "status": "HOLD — Apache-2.0 code is public, but the pretrained checkpoint is available only by email request",
+        "io": "Single-nucleus RNA-seq expression -> cell embeddings, annotations and imputed profiles",
+        "use_cases": "Cell-type annotation, doublet detection, imputation, differential-expression analysis",
+        "year": "2025",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2502.19429",
+          "https://github.com/okt0711/scMamba"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13 on the reusable-artifact rule; recorded separately from the multi-omics scMamba so the two are never merged. Evidence: evidence/additions-2026-08-13/fm_result_10.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "artifact",
+        "reason": "One half of a name collision, recorded so the two models are never merged. arXiv 2502.19429 is a genuinely different model from arXiv 2506.20697: different authors, data (postmortem-brain snRNA-seq), tasks and architecture lineage. The official repository names the same paper and authors, so ownership is clear, but there are no public weights - the checkpoint section is a request-by-email gate. Held on the reusable-artifact rule, not on scope or identity. Evidence: evidence/additions-2026-08-13/fm_result_10.json. Re-reviewed 2026-09-11: Official README still requires contacting the author for the pretrained checkpoint. Public artifact/terms condition remains unmet. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "The pretrained checkpoint is published at a public locator with readable terms instead of the email-request gate. Any catalog entry must keep a disambiguated name, because arXiv 2506.20697 scMamba is a different model."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-scmamba-multiomics",
+        "date_added": "2026-08-13",
+        "modality": "singlecell",
+        "name": "scMamba (multi-omics integration)",
+        "description": "State-space-duality model for single-cell multi-omics integration that tokenizes genomic regions instead of selecting highly variable features; a different model from the snRNA-seq scMamba.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2506.20697"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/23AIBox/scMamba"
+          }
+        ],
+        "status": "HOLD — the AGPL-3.0 repository is stale and states that code follows manuscript acceptance; checkpoints are offered only through a share whose contents could not be verified",
+        "io": "Paired single-cell multi-omics profiles -> aligned joint cell embeddings",
+        "use_cases": "Single-cell multi-omics integration, clustering, cell-type annotation, trajectory inference",
+        "year": "2025",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2506.20697",
+          "https://github.com/23AIBox/scMamba"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Held on 2026-08-13: two verification lanes disagreed on the artifact, neither could enumerate the checkpoint files, and the conservative reading prevails. Evidence: evidence/additions-2026-08-13/fm_result_10.json and fm_result_11.json.",
+        "audit_source": "evidence/source-audit/foundation_initial.md",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-08-13",
+        "reason_code": "artifact",
+        "reason": "Paper verified (arXiv 2506.20697, not withdrawn), but the artifact does not clear the bar. Two independent lanes reviewed it and disagreed: one read the repository as documenting inference from pretrained checkpoints, the other found the repository stale since before the paper was posted and its README stating that all code will be public following acceptance. Neither lane could enumerate the checkpoint files, which are offered only through a share page that does not render a file listing, so the conservative reading applies. A second, unrelated scMamba (arXiv 2502.19429) is held separately, so any future entry needs explicit disambiguation. Evidence: evidence/additions-2026-08-13/fm_result_10.json and fm_result_11.json. Re-reviewed 2026-09-11: README points to a Dropbox share; a formally released checkpoint listing with resolved terms and paper provenance was not established. Keep name disambiguation from the snRNA model. See evidence/refresh-2026-09-11/hold_reviews.json.",
+        "source": "evidence/refresh-2026-09-11/hold_reviews.json",
+        "reconsider_when": "The manuscript is accepted or published and the full code plus checkpoints are formally released at a verifiable locator (model hub, Zenodo, or a populated repository release) with the paper pointing at the repository; then add with disambiguation against the snRNA-seq scMamba."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-mrna-fm",
+        "date_added": "2026-09-11",
+        "name": "mRNA-FM",
+        "modality": "rna",
+        "description": "RNA-FM-derived model for coding mRNA; the previously cited hub is explicitly an unofficial MultiMolecule conversion. The conversion card specifies AGPL-3.0; this does not establish the original checkpoint terms.",
+        "paper_links": [
+          {
+            "label": "RNA-FM family preprint",
+            "url": "https://doi.org/10.1101/2022.08.06.503062"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "Previously cited unofficial conversion",
+            "url": "https://huggingface.co/yangheng/mrnafm"
+          }
+        ],
+        "status": "HOLD — Residual from the PlantRNA-FM family split: the cited model card declares an unofficial conversion and links family-level publication evidence. Official mRNA-specific provenance and exact original-artifact terms remain unresolved.",
+        "io": "Coding mRNA -> representations",
+        "use_cases": "mRNA representation learning",
+        "year": "",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-09-11",
+        "sources": [
+          "https://doi.org/10.1101/2022.08.06.503062",
+          "https://huggingface.co/yangheng/mrnafm"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Residual from the PlantRNA-FM family split: the cited model card declares an unofficial conversion and links family-level publication evidence. Official mRNA-specific provenance and exact original-artifact terms remain unresolved. Evidence: evidence/refresh-2026-09-11/candidate_decisions.json. The observed conversion licence is AGPL-3.0; no original-weights licence is inferred.",
+        "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "family_identity",
+        "reason": "Residual from the PlantRNA-FM family split: the cited model card declares an unofficial conversion and links family-level publication evidence. Official mRNA-specific provenance and exact original-artifact terms remain unresolved.",
+        "source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "reconsider_when": "Verify the original mRNA-FM artifact and primary mRNA-specific evidence, or explicitly evidence and label a provenance-confirmed conversion."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-framediff",
+        "date_added": "2026-09-11",
+        "modality": "protein",
+        "name": "FrameDiff",
+        "description": "SE(3) diffusion model for unconditional protein-backbone generation.",
+        "io": "Requested sequence length -> sampled protein backbone coordinates",
+        "status": "HOLD — Family identity is now separated; the inspected release documents unconditional backbone generation, without a separately evidenced broader reusable task set.",
+        "use_cases": "Unconditional protein-backbone generation",
+        "year": "2023",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2302.02277"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/jasonkyuyim/se3_diffusion"
+          }
+        ],
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-09-11",
+        "sources": [
+          "https://arxiv.org/abs/2302.02277",
+          "https://github.com/jasonkyuyim/se3_diffusion"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Family identity is now separated; the inspected release documents unconditional backbone generation, without a separately evidenced broader reusable task set. Evidence: evidence/refresh-2026-09-11/candidate_decisions.json.",
+        "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "date_modified": "2026-09-11",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-07-13",
+        "reason_code": "scope",
+        "reason": "Family identity is now separated; the inspected release documents unconditional backbone generation, without a separately evidenced broader reusable task set.",
+        "source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "reconsider_when": "Establish broader-than-one-task pretrained reuse under the current catalog boundary, or an explicitly approved structural-model policy."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-succeed",
+        "date_added": "2026-09-11",
+        "name": "SUCCEED",
+        "modality": "dna",
+        "description": "Supervised DNA pretraining framework supporting regulatory-profile prediction and transfer across epigenomic tasks.",
+        "paper_links": [
+          {
+            "label": "Nature Communications",
+            "url": "https://www.nature.com/articles/s41467-026-73129-6"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "Official repository",
+            "url": "https://github.com/bioczsun/SUCCEED"
+          }
+        ],
+        "status": "HOLD — A matching primary journal paper and code/Drive checkpoint links exist, but exact checkpoint and current implementation reuse terms were not verified; no repository LICENSE file was found at the inspected locator.",
+        "io": "DNA sequence -> regulatory predictions and transferred task outputs",
+        "use_cases": "Regulatory genomics, chromatin accessibility and contact modelling",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-09-11",
+        "sources": [
+          "https://www.nature.com/articles/s41467-026-73129-6",
+          "https://github.com/bioczsun/SUCCEED"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "A matching primary journal paper and code/Drive checkpoint links exist, but exact checkpoint and current implementation reuse terms were not verified; no repository LICENSE file was found at the inspected locator. Evidence: evidence/refresh-2026-09-11/candidate_decisions.json.",
+        "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-09-11",
+        "reason_code": "terms",
+        "reason": "A matching primary journal paper and code/Drive checkpoint links exist, but exact checkpoint and current implementation reuse terms were not verified; no repository LICENSE file was found at the inspected locator.",
+        "source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "reconsider_when": "Verify explicit code and pretrained-checkpoint terms and publicly listed checkpoint access."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-iggm2",
+        "date_added": "2026-09-11",
+        "name": "IgGM2",
+        "modality": "protein",
+        "description": "All-atom immune-receptor modelling framework described for structure prediction and sequence/structure design.",
+        "paper_links": [
+          {
+            "label": "bioRxiv",
+            "url": "https://www.biorxiv.org/content/10.64898/2026.07.09.737510v1"
+          }
+        ],
+        "code_links": [],
+        "status": "HOLD — The July 2026 preprint is now verified from full text; no author-linked released IgGM2 checkpoint, usable public endpoint, or reuse terms were located in the inspected sources.",
+        "io": "Immune receptor/target context -> structures or designed receptor candidates",
+        "use_cases": "Adaptive immune receptor modelling and design",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-09-11",
+        "sources": [
+          "https://www.biorxiv.org/content/10.64898/2026.07.09.737510v1"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "The July 2026 preprint is now verified from full text; no author-linked released IgGM2 checkpoint, usable public endpoint, or reuse terms were located in the inspected sources. Evidence: evidence/refresh-2026-09-11/candidate_decisions.json.",
+        "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-09-11",
+        "reason_code": "artifact",
+        "reason": "The July 2026 preprint is now verified from full text; no author-linked released IgGM2 checkpoint, usable public endpoint, or reuse terms were located in the inspected sources.",
+        "source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "reconsider_when": "Verify an official reusable IgGM2 artifact or public inference endpoint with explicit access and reuse terms."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-ainn-p1",
+        "date_added": "2026-09-11",
+        "name": "AINN-P1",
+        "modality": "protein",
+        "description": "Vendor-described sequence-only protein representation model evaluated on protein engineering tasks.",
+        "paper_links": [
+          {
+            "label": "Vendor announcement",
+            "url": "https://ainno.ai/news-ainn-p1"
+          },
+          {
+            "label": "Vendor technical manuscript",
+            "url": "https://www.ainnocence.com/assets/press/AINN-P1_bioRxiv_submission.pdf"
+          }
+        ],
+        "code_links": [],
+        "status": "HOLD — public model weights and evaluation code are still promised in the technical manuscript",
+        "io": "Amino-acid sequence -> protein representations and downstream predictions",
+        "use_cases": "Protein representation and engineering research",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-09-11",
+        "sources": [
+          "https://ainno.ai/news-ainn-p1",
+          "https://www.ainnocence.com/assets/press/AINN-P1_bioRxiv_submission.pdf"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "The vendor technical manuscript is verified in full (March 2026, 12 pages); its Data and Code Availability section says model weights and evaluation code will be made available upon publication. No currently usable public artifact or endpoint and exact reuse terms were established. Evidence: evidence/refresh-2026-09-11/candidate_decisions.json.",
+        "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-09-11",
+        "reason_code": "artifact",
+        "reason": "The vendor technical manuscript is verified in full (March 2026, 12 pages); its Data and Code Availability section says model weights and evaluation code will be made available upon publication. No currently usable public artifact or endpoint and exact reuse terms were established.",
+        "source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "reconsider_when": "Verify an official released model artifact or usable public inference endpoint, with exact reuse terms."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-rudolfv-2",
+        "date_added": "2026-09-11",
+        "name": "RudolfV-2",
+        "modality": "spatial",
+        "description": "Aignostics pathology-image feature-extraction model family, separate from Atlas.",
+        "paper_links": [],
+        "code_links": [
+          {
+            "label": "Official gated model",
+            "url": "https://huggingface.co/Aignostics/RudolfV-2"
+          }
+        ],
+        "status": "HOLD — Official model metadata lists safetensors behind manual approval and an other/custom licence; the model card returned 401, so the actual terms and full member-level access conditions were not readable.",
+        "io": "Pathology image -> features",
+        "use_cases": "Histopathology representation learning",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": false,
+        "verified": "2026-09-11",
+        "sources": [
+          "https://huggingface.co/Aignostics/RudolfV-2"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Official model metadata lists safetensors behind manual approval and an other/custom licence; the model card returned 401, so the actual terms and full member-level access conditions were not readable. Evidence: evidence/refresh-2026-09-11/candidate_decisions.json.",
+        "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "aliases": []
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-09-11",
+        "reason_code": "terms",
+        "reason": "Official model metadata lists safetensors behind manual approval and an other/custom licence; the model card returned 401, so the actual terms and full member-level access conditions were not readable.",
+        "source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "reconsider_when": "Read and verify the exact official model terms and member-specific artifact access; do not substitute Atlas evidence."
+      }
+    },
+    {
+      "record": {
+        "id": "bfm-alice",
+        "date_added": "2026-08-13",
+        "modality": "spatial",
+        "name": "ALICE",
+        "description": "General-purpose computational pathology foundation model built by multi-stage agglomerative distillation of eight vision, vision-language and slide-level teacher models into a single backbone, evaluated across 96 downstream tasks.",
+        "paper_links": [
+          {
+            "label": "arXiv",
+            "url": "https://arxiv.org/abs/2607.09526"
+          }
+        ],
+        "code_links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/WonderLandxD/ALICE"
+          },
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/JWonderLand/ALICE"
+          }
+        ],
+        "status": "HOLD — official repository unavailable and current model artifact/access terms could not be verified",
+        "io": "Pathology tiles or whole-slide images, optionally with text -> tile-, vision-language- and slide-level embeddings",
+        "use_cases": "Tissue and tile classification, pathology vision-language tasks, whole-slide diagnosis and prognosis",
+        "year": "2026",
+        "canonical": false,
+        "noncommercial": true,
+        "verified": "2026-08-13",
+        "sources": [
+          "https://arxiv.org/abs/2607.09526",
+          "https://github.com/WonderLandxD/ALICE",
+          "https://huggingface.co/JWonderLand/ALICE"
+        ],
+        "audit_state": "hold",
+        "audit_priority": "P2",
+        "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_12.json. CC BY-NC-ND-4.0 on both the repository and the manually gated weights. Targeted 2026-09-11 access recheck: Current official GitHub repository and raw README return 404; the authenticated GitHub connector independently returns NOT_FOUND. The Hugging Face model API and raw card return 401. Cached search text preserves earlier availability but does not establish current usable access or readable terms. This is an access-verification HOLD, not a claim of discontinuation. Previous verification date retained.",
+        "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "aliases": [],
+        "date_modified": "2026-09-11"
+      },
+      "review": {
+        "status": "under_review",
+        "hold_since": "2026-09-11",
+        "reason_code": "artifact",
+        "reason": "Current official GitHub repository and raw README return 404; the authenticated GitHub connector independently returns NOT_FOUND. The Hugging Face model API and raw card return 401. Cached search text preserves earlier availability but does not establish current usable access or readable terms. This is an access-verification HOLD, not a claim of discontinuation.",
+        "source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+        "reconsider_when": "Verify restored or author-linked replacement implementation and model artifact access with readable exact terms."
+      }
+    }
+  ],
+  "catalog_remove_ids": [
+    "bfm-alice"
+  ]
+}

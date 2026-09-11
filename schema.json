@@ -57,7 +57,7 @@
       "audit_note": {"type": "string", "minLength": 1},
       "audit_source": {
         "type": "string",
-        "pattern": "^evidence/source-audit/foundation_(?:initial|residual_mod[0-2])\\.md$"
+        "pattern": "^evidence/(?:source-audit/foundation_(?:initial|residual_mod[0-2])\\.md|refresh-[0-9]{4}-[0-9]{2}-[0-9]{2}/(?:candidate_decisions|hold_reviews)\\.json)$"
       }
     }
   },

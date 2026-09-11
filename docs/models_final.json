@@ -279,6 +279,10 @@
     "description": "Alignment-based DNA language model for genome-wide variant effect prediction.",
     "paper_links": [
       {
+        "label": "Nature Biotechnology",
+        "url": "https://www.nature.com/articles/s41587-024-02511-w"
+      },
+      {
         "label": "PMC article",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592768/"
       },
@@ -293,7 +297,7 @@
         "url": "https://github.com/songlab-cal/gpn"
       }
     ],
-    "status": "Open code + weights",
+    "status": "Open code + weights; maintainers deprecate GPN-MSA in favor of GPN-Star.",
     "io": "MSA/genomic context -> variant effect score",
     "use_cases": "Genome-wide variant scoring, evolutionary constraint",
     "year": "2023",
@@ -308,9 +312,10 @@
     ],
     "audit_state": "verified",
     "audit_priority": "P4",
-    "audit_note": "Final paper · repo",
-    "audit_source": "evidence/source-audit/foundation_residual_mod0.md",
-    "aliases": []
+    "audit_note": "Final paper · repo Targeted 2026-09-11 update: final journal paper surfaced and current official README deprecation recorded; prior verification date retained because this was not a complete re-audit of all row claims. See evidence/refresh-2026-09-11/candidate_decisions.json.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": [],
+    "date_modified": "2026-09-11"
   },
   {
     "id": "bfm-evo",
@@ -14472,46 +14477,6 @@
     ]
   },
   {
-    "id": "bfm-alice",
-    "date_added": "2026-08-13",
-    "modality": "spatial",
-    "name": "ALICE",
-    "description": "General-purpose computational pathology foundation model built by multi-stage agglomerative distillation of eight vision, vision-language and slide-level teacher models into a single backbone, evaluated across 96 downstream tasks.",
-    "paper_links": [
-      {
-        "label": "arXiv",
-        "url": "https://arxiv.org/abs/2607.09526"
-      }
-    ],
-    "code_links": [
-      {
-        "label": "GitHub",
-        "url": "https://github.com/WonderLandxD/ALICE"
-      },
-      {
-        "label": "Hugging Face",
-        "url": "https://huggingface.co/JWonderLand/ALICE"
-      }
-    ],
-    "status": "Gated weights (manual approval) under CC BY-NC-ND-4.0, non-commercial research only",
-    "io": "Pathology tiles or whole-slide images, optionally with text -> tile-, vision-language- and slide-level embeddings",
-    "use_cases": "Tissue and tile classification, pathology vision-language tasks, whole-slide diagnosis and prognosis",
-    "year": "2026",
-    "canonical": false,
-    "noncommercial": true,
-    "verified": "2026-08-13",
-    "sources": [
-      "https://arxiv.org/abs/2607.09526",
-      "https://github.com/WonderLandxD/ALICE",
-      "https://huggingface.co/JWonderLand/ALICE"
-    ],
-    "audit_state": "verified_with_limits",
-    "audit_priority": "P2",
-    "audit_note": "Added in the 2026-08-13 delegated discovery refresh; paper or official release document, artifact ownership, and exact licence/access wording verified from primary sources in evidence/additions-2026-08-13/fm_result_12.json. CC BY-NC-ND-4.0 on both the repository and the manually gated weights.",
-    "audit_source": "evidence/source-audit/foundation_initial.md",
-    "aliases": []
-  },
-  {
     "id": "bfm-tissueformer",
     "date_added": "2026-08-13",
     "modality": "spatial",
@@ -14851,6 +14816,499 @@
     "audit_note": "Promoted from the under-review register on 2026-08-13 with both model cards verified and per-member terms encoded: H-optimus-0 Apache-2.0 (auto-gated), H-optimus-1 CC BY-NC-ND-4.0 (manually gated). The listed paper is a company announcement and is labelled as such; no DOI exists. Evidence: evidence/hold-review-2026-08-13/fm_hold_review_3.json.",
     "audit_source": "evidence/source-audit/foundation_residual_mod1.md",
     "date_modified": "2026-08-13",
+    "aliases": []
+  },
+  {
+    "id": "bfm-ribospan",
+    "date_added": "2026-09-11",
+    "name": "RIBOSPAN",
+    "modality": "rna",
+    "description": "Bidirectional RNA language-model family pretrained at single-nucleotide resolution, with 1,024- and 10,240-nucleotide contexts. The paper evaluates transferable representations, transcript-property prediction, mutation scoring, and a separate conditioned mRNA-generation framework.",
+    "paper_links": [
+      {
+        "label": "arXiv (v2)",
+        "url": "https://arxiv.org/abs/2608.22849v2"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/GAIR-NLP/RIBOSPAN-FM"
+      },
+      {
+        "label": "Public 1K-15 weights",
+        "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-1K-15"
+      },
+      {
+        "label": "Public 1K-40 weights",
+        "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-1K-40"
+      },
+      {
+        "label": "Gated 10K-15 weights",
+        "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-10K-15"
+      },
+      {
+        "label": "Model licence",
+        "url": "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-FM/blob/main/LICENSE"
+      }
+    ],
+    "status": "Apache-2.0 code; custom noncommercial weights and output-use terms. 1K-15/1K-40 ungated; 10K-15 requires approval; 10K-40 not released.",
+    "io": "RNA sequence -> nucleotide probabilities and embeddings; downstream biological predictions",
+    "use_cases": "RNA representation learning, mutation-effect scoring, full-transcript property prediction; paper also studies mRNA design",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://arxiv.org/abs/2608.22849v2",
+      "https://github.com/GAIR-NLP/RIBOSPAN-FM",
+      "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-1K-15",
+      "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-1K-40",
+      "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-10K-15",
+      "https://huggingface.co/SII-GAIR-NLP/RIBOSPAN-FM/blob/main/LICENSE"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. The family landing repository itself contains documentation, not weights. Weight files are listed in the separately linked checkpoint repositories. Custom commercial-use restrictions also cover outputs and output-derived models; this is not a standard CC noncommercial licence. No gated checkpoint was downloaded.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": []
+  },
+  {
+    "id": "bfm-monroe",
+    "date_added": "2026-09-11",
+    "name": "Monroe",
+    "modality": "molecule",
+    "description": "Molecular graph encoder pretrained on quantum-chemical properties, bioassay targets, and conformer denoising. Frozen molecular embeddings support downstream prediction with a separate prior-data-fitted model.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.18982"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/blazejba/Monroe"
+      },
+      {
+        "label": "Encoder checkpoint",
+        "url": "https://github.com/blazejba/Monroe/tree/main/checkpoint"
+      }
+    ],
+    "status": "MIT code and released encoder weights via Git LFS; reported TabPFN v3 downstream prediction requires separate licence acceptance and access.",
+    "io": "SMILES/featurized molecular graph -> 720-dimensional embedding; embeddings plus labelled examples -> downstream predictions through a separate predictor",
+    "use_cases": "Low-data molecular-property prediction, ADMET modelling, bioassay prediction, activity-cliff evaluation",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://arxiv.org/abs/2608.18982",
+      "https://github.com/blazejba/Monroe",
+      "https://github.com/blazejba/Monroe/tree/main/checkpoint"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. The released checkpoint directory and LFS pointer were inspected; weights were not downloaded or executed. MIT for the encoder does not establish the terms of TabPFN.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": []
+  },
+  {
+    "id": "bfm-nucleicbert",
+    "date_added": "2026-09-11",
+    "name": "NucleicBERT",
+    "modality": "rna",
+    "description": "Masked RNA language model pretrained on approximately 30 million noncoding RNA sequences, learning single-sequence representations for structural and functional tasks without requiring a multiple-sequence alignment.",
+    "paper_links": [
+      {
+        "label": "Nature Machine Intelligence",
+        "url": "https://www.nature.com/articles/s42256-026-01295-9"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KIT-MBS/NucleicBERT"
+      },
+      {
+        "label": "Pretrained and task weights",
+        "url": "https://zenodo.org/records/16989562"
+      }
+    ],
+    "status": "Open code + weights (Apache-2.0); public pretrained/task checkpoints on Zenodo.",
+    "io": "Single RNA sequence -> embeddings; task heads -> secondary structure, contact maps, splice-site or fitness predictions",
+    "use_cases": "RNA representation learning, structure and contact prediction, splice-site prediction, mutation-fitness analysis",
+    "year": "2025",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://www.nature.com/articles/s42256-026-01295-9",
+      "https://github.com/KIT-MBS/NucleicBERT",
+      "https://zenodo.org/records/16989562"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Journal full-text sections were inspected through web retrieval; direct HTTP returned a JavaScript challenge. Zenodo lists pretrained.pt and separate task checkpoints under Apache-2.0. The archive was first published in 2025; the journal article is from September 2026.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": []
+  },
+  {
+    "id": "bfm-gpn-star",
+    "date_added": "2026-09-11",
+    "name": "GPN-Star",
+    "modality": "dna",
+    "description": "Phylogeny-aware genomic language model using whole-genome alignments and species-tree information to learn evolutionary constraints. Human checkpoints cover vertebrate, mammalian, and primate alignments.",
+    "paper_links": [
+      {
+        "label": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-11005-5"
+      },
+      {
+        "label": "Original preprint",
+        "url": "https://www.biorxiv.org/content/10.1101/2025.09.21.677619v1"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/songlab-cal/gpn"
+      },
+      {
+        "label": "Human vertebrate checkpoint",
+        "url": "https://huggingface.co/songlab/gpn-star-hg38-v100-200m"
+      },
+      {
+        "label": "Human mammal checkpoint",
+        "url": "https://huggingface.co/songlab/gpn-star-hg38-m447-200m"
+      },
+      {
+        "label": "Human primate checkpoint",
+        "url": "https://huggingface.co/songlab/gpn-star-hg38-p243-200m"
+      }
+    ],
+    "status": "Open code + weights (MIT); public human checkpoints; aligned genomic input is required for training and inference.",
+    "io": "Whole-genome alignment with species context -> nucleotide probabilities, embeddings and variant-effect scores",
+    "use_cases": "Genome-wide variant scoring, evolutionary-constraint analysis, prioritization of coding and noncoding variants",
+    "year": "2025",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://www.nature.com/articles/s41586-026-11005-5",
+      "https://www.biorxiv.org/content/10.1101/2025.09.21.677619v1",
+      "https://github.com/songlab-cal/gpn",
+      "https://huggingface.co/songlab/gpn-star-hg38-v100-200m",
+      "https://huggingface.co/songlab/gpn-star-hg38-m447-200m",
+      "https://huggingface.co/songlab/gpn-star-hg38-p243-200m"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Separate from GPN-MSA and PhyloGPN. Human model cards and safetensors listings were checked; no all-family licence claim is made for the separately distributed datasets or other species. Year follows the verified September 2025 preprint, not the 2026 journal publication.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": []
+  },
+  {
+    "id": "bfm-mol-jepa",
+    "date_added": "2026-09-11",
+    "name": "Mol-JEPA",
+    "modality": "molecule",
+    "description": "Joint-embedding predictive model learning molecular representations from complementary chemical and biological modalities, including cellular effects, binding affinity, ADMET properties and quantum-chemical information.",
+    "paper_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.22642"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Official GitHub",
+        "url": "https://github.com/Boehringer-Ingelheim/mol-jepa"
+      },
+      {
+        "label": "Weights and inference code",
+        "url": "https://huggingface.co/Flogrammer/Mol-JEPA"
+      }
+    ],
+    "status": "Open code + weights (CC BY-NC 4.0); public weights and custom inference code on Hugging Face.",
+    "io": "SMILES -> molecular embeddings; embeddings support downstream property predictors",
+    "use_cases": "Molecular representation learning, ADMET prediction, low-data property modelling, integration of biochemical context",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://arxiv.org/abs/2608.22642",
+      "https://github.com/Boehringer-Ingelheim/mol-jepa",
+      "https://huggingface.co/Flogrammer/Mol-JEPA"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Official corporate repository directly links the author model-hub account, resolving ownership. Model API lists model.safetensors. The README explicitly applies CC BY-NC 4.0 to code as well as weights.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": []
+  },
+  {
+    "id": "bfm-microgenomer",
+    "date_added": "2026-09-11",
+    "name": "MicroGenomer",
+    "modality": "dna",
+    "description": "Microbial genome language model trained hierarchically on genomic sequences and marker genes to produce gene- and genome-level representations and support ecophysiological trait prediction.",
+    "paper_links": [
+      {
+        "label": "bioRxiv",
+        "url": "https://doi.org/10.64898/2025.12.28.696777"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Official GitHub",
+        "url": "https://github.com/BGIResearch/MicroGenomer"
+      },
+      {
+        "label": "470M weights",
+        "url": "https://huggingface.co/sunhaotong0605/MicroGenomer-470M"
+      }
+    ],
+    "status": "Open code + weights (MIT); official repository links the public author-hosted 470M checkpoint.",
+    "io": "Genome-labelled coding DNA sequences in CSV -> genomic embeddings and task-specific trait predictions",
+    "use_cases": "Microbial genome representation, growth-rate and environmental-trait prediction, comparative microbial genomics",
+    "year": "2025",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://doi.org/10.64898/2025.12.28.696777",
+      "https://github.com/BGIResearch/MicroGenomer",
+      "https://huggingface.co/sunhaotong0605/MicroGenomer-470M"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Resolves the previous unnamed watchlist lead. The official BGI repository links the model account; model_states.pt and downstream files are listed, with MIT in the model metadata. The paper is a December 2025 preprint.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": []
+  },
+  {
+    "id": "bfm-lambda",
+    "date_added": "2026-09-11",
+    "name": "LAMBDA (prophage benchmark)",
+    "modality": "benchmark",
+    "description": "Benchmark for genomic language-model embeddings using phage/bacterial discrimination, fine-tuning, diagnostic tests, and genome-wide prophage detection, with reusable datasets and result visualization.",
+    "paper_links": [
+      {
+        "label": "NAR Genomics and Bioinformatics",
+        "url": "https://doi.org/10.1093/nargab/lqag103"
+      },
+      {
+        "label": "Preprint full text",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13041943/"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/leannmlindsey/LAMBDA"
+      },
+      {
+        "label": "Dataset and evaluation artifacts",
+        "url": "https://zenodo.org/records/19236552"
+      },
+      {
+        "label": "Interactive benchmark",
+        "url": "https://leannmlindsey.github.io/lambda-benchmark/"
+      }
+    ],
+    "status": "MIT evaluation code; CC BY 4.0 Zenodo dataset/results/probe archive; upstream foundation-model weights retain their own terms. Non-EVO2 fine-tuned task checkpoints are author-request-only.",
+    "io": "DNA segments or bacterial genomes plus model embeddings/predictions -> prophage-detection and representation-evaluation metrics",
+    "use_cases": "Genomic-model comparison, probing and fine-tuning assessment, prophage-detection evaluation",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://doi.org/10.1093/nargab/lqag103",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13041943/",
+      "https://github.com/leannmlindsey/LAMBDA",
+      "https://zenodo.org/records/19236552",
+      "https://leannmlindsey.github.io/lambda-benchmark/"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. The full-text source inspected is the March 2026 preprint; September journal identity was verified from publisher metadata/search while full publisher access was restricted. The small checkpoint archive contains probe heads, not redistributed EVO2 foundation weights. The README separately makes non-EVO2 fine-tuned task checkpoints available only on author request; the public benchmark archive is not an all-checkpoint release.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": [
+      "LAMBDA"
+    ]
+  },
+  {
+    "id": "bfm-kinconfbench",
+    "date_added": "2026-09-11",
+    "name": "KinConfBench",
+    "modality": "benchmark",
+    "description": "Curated benchmark of 2,225 human kinase chains assessing whether cofolding models recover ligand-dependent kinase conformations, with geometric and conformation-state evaluation.",
+    "paper_links": [
+      {
+        "label": "npj Drug Discovery",
+        "url": "https://www.nature.com/articles/s44386-026-00068-z"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/THGLab/KinConfBench"
+      },
+      {
+        "label": "Inference archive",
+        "url": "https://doi.org/10.6084/m9.figshare.31986663"
+      }
+    ],
+    "status": "UC Regents software terms permit educational, research and not-for-profit use; precomputed inference archive is CC BY 4.0.",
+    "io": "Kinase structures and cofolding outputs -> conformation-state, geometric and diversity metrics",
+    "use_cases": "Cofolding-model evaluation, kinase conformation benchmarking, ligand-induced structural-change assessment",
+    "year": "2026",
+    "canonical": false,
+    "noncommercial": true,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://www.nature.com/articles/s44386-026-00068-z",
+      "https://github.com/THGLab/KinConfBench",
+      "https://doi.org/10.6084/m9.figshare.31986663"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Named reusable benchmark, not a new foundation-model checkpoint. Publisher full-text sections, UC Regents licence body and Figshare file metadata were inspected. Dataset archive was not downloaded.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": []
+  },
+  {
+    "id": "bfm-mrna-fm-plantrna-fm",
+    "date_added": "2026-06-16",
+    "name": "PlantRNA-FM",
+    "modality": "rna",
+    "description": "Plant RNA foundation model pretrained on RNA sequences from 1,124 species, supporting interpretable representations and identification of functional sequence and structural motifs.",
+    "paper_links": [
+      {
+        "label": "Nature Machine Intelligence (PMC)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "Official model and weights",
+        "url": "https://huggingface.co/yangheng/PlantRNA-FM"
+      }
+    ],
+    "status": "Model hub; MIT model and public safetensors weights; inference uses the released model card and standard Transformers.",
+    "io": "Plant RNA sequence -> base-model embeddings; task-specific predictions require downstream fine-tuning",
+    "use_cases": "Plant RNA function, genic-region annotation, translation-related motif analysis",
+    "year": "2024",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652376/",
+      "https://huggingface.co/yangheng/PlantRNA-FM"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Promoted by splitting the original family; the original stable ID follows PlantRNA-FM. Residual mRNA-FM remains held under bfm-mrna-fm. The prior combined name is retained as a historical alias, not a claim that the terms apply to mRNA-FM. The public model card demonstrates base embeddings; paper genic-region/translation predictions use task-specific fine-tuning.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": [
+      "mRNA-FM / PlantRNA-FM"
+    ],
+    "date_modified": "2026-09-11"
+  },
+  {
+    "id": "bfm-framediff-frameflow-multiflow",
+    "date_added": "2026-06-16",
+    "name": "MultiFlow",
+    "modality": "protein",
+    "description": "Pretrained joint sequence-and-structure generative model combining discrete and continuous flows, with unconditional protein co-design, inverse folding and forward folding modes.",
+    "paper_links": [
+      {
+        "label": "ICML paper",
+        "url": "https://proceedings.mlr.press/v235/campbell24a.html"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2402.04997"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/jasonkyuyim/multiflow"
+      },
+      {
+        "label": "Weights and datasets",
+        "url": "https://zenodo.org/records/10714631"
+      }
+    ],
+    "status": "Open code + weights (MIT implementation; CC BY 4.0 Zenodo weights/datasets), public.",
+    "io": "Optional protein sequence or backbone structure -> generated sequence/structure pair, inverse-folded sequence or predicted backbone",
+    "use_cases": "Protein co-design, inverse folding, forward folding",
+    "year": "2024",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://proceedings.mlr.press/v235/campbell24a.html",
+      "https://arxiv.org/abs/2402.04997",
+      "https://github.com/jasonkyuyim/multiflow",
+      "https://zenodo.org/records/10714631"
+    ],
+    "audit_state": "verified",
+    "audit_priority": "P4",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Original family stable ID is retained by MultiFlow. FrameFlow is separate; FrameDiff remains held. Distinct inference modes establish reusable scope; archive licensing is CC BY 4.0, not the code repository MIT licence.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
+    "aliases": [
+      "FrameDiff / FrameFlow / Multiflow"
+    ],
+    "date_modified": "2026-09-11"
+  },
+  {
+    "id": "bfm-frameflow",
+    "date_added": "2026-09-11",
+    "name": "FrameFlow",
+    "modality": "protein",
+    "description": "SE(3) flow-matching model with released pretrained checkpoints for unconditional protein-backbone generation and conditional motif scaffolding.",
+    "paper_links": [
+      {
+        "label": "Backbone generation preprint",
+        "url": "https://arxiv.org/abs/2310.05297"
+      },
+      {
+        "label": "Motif-scaffolding preprint",
+        "url": "https://arxiv.org/abs/2401.04082"
+      }
+    ],
+    "code_links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/microsoft/frame-flow"
+      },
+      {
+        "label": "Weights and datasets",
+        "url": "https://zenodo.org/records/12776473"
+      }
+    ],
+    "status": "Open code + weights (MIT code; CC BY 4.0 Zenodo weights/datasets); generated structures have not been experimentally validated by the repository authors.",
+    "io": "Requested length or fixed structural motif -> sampled protein backbones and scaffold candidates",
+    "use_cases": "De novo backbone generation, motif-conditioned scaffold design",
+    "year": "2023",
+    "canonical": false,
+    "noncommercial": false,
+    "verified": "2026-09-11",
+    "sources": [
+      "https://arxiv.org/abs/2310.05297",
+      "https://arxiv.org/abs/2401.04082",
+      "https://github.com/microsoft/frame-flow",
+      "https://zenodo.org/records/12776473"
+    ],
+    "audit_state": "verified_with_limits",
+    "audit_priority": "P3",
+    "audit_note": "Evidence and access reviewed 2026-09-11; see evidence/refresh-2026-09-11/candidate_decisions.json. Split from the held three-member family. Both unconditional and motif-scaffolding inference paths are documented; the scientific-use caveat is kept separate from licence terms.",
+    "audit_source": "evidence/refresh-2026-09-11/candidate_decisions.json",
     "aliases": []
   }
 ]

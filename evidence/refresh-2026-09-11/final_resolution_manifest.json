@@ -1,0 +1,47 @@
+[
+  {
+    "candidate": "ScDiVa",
+    "url": "https://raw.githubusercontent.com/wangmingxuan666/ScDiVa/HEAD/README.md",
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:07:52.454620+00:00",
+    "cache_file": "60f3361efc292a5e4d9cb44461a62d2c0d2fa284e5bfcf5afdece22288eda31c.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/wangmingxuan666/ScDiVa/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "553dde5299e82dd46fa2048dbeab4b719c88f32bd1df50b4558a6ac79551ede2",
+    "text_length": 18749
+  },
+  {
+    "candidate": "ScDiVa",
+    "url": "https://github.com/wangmingxuan666/ScDiVa",
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:07:52.454971+00:00",
+    "cache_file": "24db62cd655ae8f0957b42e4560bf00d847d0028bf99c01949a8d64e6ec3ec56.txt",
+    "status": 200,
+    "final_url": "https://github.com/wangmingxuan666/ScDiVa",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "9b90cb58260bc8ca94b7b44505a453371a6bd6c43f8136b316f4212f8c105aa0",
+    "text_length": 437588
+  },
+  {
+    "candidate": "ScDiVa",
+    "url": "https://wangmingxuan666.github.io/ScDiVa-web/",
+    "access_level": "inaccessible",
+    "fetched_at": "2026-09-11T07:07:52.455079+00:00",
+    "cache_file": "852662296f1c1fedac9742c26576310ab15077fb80aaeb127492c30f26645045.txt",
+    "status": 404,
+    "error": "HTTPError"
+  },
+  {
+    "candidate": "GPN-MSA",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37873118/",
+    "access_level": "bibliographic_metadata",
+    "fetched_at": "2026-09-11T07:07:52.455171+00:00",
+    "cache_file": "b6ba06d3157f486ee9aeea80c2668555055156f57f961c86d47df615c6ada2e3.txt",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/37873118/",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "8ca4977253c274ed05bc619b3895b205c0ddb214890724a93e763272e6a03b81",
+    "text_length": 5565
+  }
+]

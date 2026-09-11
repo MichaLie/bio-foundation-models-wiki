@@ -230,7 +230,7 @@ footer{margin-top:26px;padding:17px 18px;border:1px solid #d8e3e9;border-radius:
 <body><div class="wrap">
 <header class="top"><div class="htext">
 <h1>Biological Foundation Models — Researcher Index</h1>
-<div class="vbadge" title="Version and date of the most recent published catalog update"><b>v__CATVERSION__</b> · updated __CATMODIFIED__</div>
+<div class="vbadge" title="Catalog version and metadata modification date"><b>v__CATVERSION__</b> · updated __CATMODIFIED__</div>
 <div class="sub">Filterable index of foundation models for biological sequences, molecules, structures, omics, cells, and tissue images.
 Answer fast: <b>what object?</b> · <b>in → out?</b> · <b>accessible today?</b> · <b>what for?</b>
 __EVIDENCE_STATEMENT__ Access tags are best-effort — <b>always verify the license</b> before commercial use. Click any row for detail.</div>

@@ -1,0 +1,15 @@
+[
+  {
+    "candidate": "AINN-P1",
+    "url": "https://www.ainnocence.com/assets/press/AINN-P1_bioRxiv_submission.pdf",
+    "access_level": "vendor_technical_manuscript_full_text",
+    "fetched_at": "2026-09-11T07:21:14.678627+00:00",
+    "cache_file": "ainn-p1-technical-manuscript.pdf",
+    "status": 200,
+    "final_url": "https://www.ainnocence.com/assets/press/AINN-P1_bioRxiv_submission.pdf",
+    "content_type": "application/pdf",
+    "sha256": "c1642aed0713c4c342c7cbc130d1991a9f30d2de36f54765a80f35b9528715bf",
+    "text_length": 29794,
+    "pages": 12
+  }
+]

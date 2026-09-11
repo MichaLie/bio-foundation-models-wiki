@@ -1,0 +1,430 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/jasonkyuyim/se3_diffusion/HEAD/README.md",
+    "record_ids": [
+      "bfm-framediff-frameflow-multiflow"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:56.563090+00:00",
+    "cache_file": "e68a9c08e5866f2364a6db52adc59864b508459ed91ef81cdfcf706497c4d55b.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/jasonkyuyim/se3_diffusion/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "41cf2d9a779a712e86a4c708c2601bc88ffe219b86c7f38360a368ebd52ce68f",
+    "text_length": 14245
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Exscientia/abodybuilder3/HEAD/README.md",
+    "record_ids": [
+      "bfm-abodybuilder3"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:56.563383+00:00",
+    "cache_file": "24a1ee3571914eba5edbb9c49c3352a606c4fbe6a372c2d03ba0ac5c08f49fee.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/Exscientia/abodybuilder3/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "580c6b666124e5e7dcfd4c2229ae84fcbef9821b9b825da2c1ae05a4ca9dec16",
+    "text_length": 3228
+  },
+  {
+    "url": "https://github.com/aristoteleo/tabula",
+    "record_ids": [
+      "bfm-tabula"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:56.563539+00:00",
+    "cache_file": "d77b620ee84fbe7389a2fbcfbd8987a8aa489d89a78b2c193ecbd11c64697db9.txt",
+    "status": 200,
+    "final_url": "https://github.com/aristoteleo/tabula",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "51dd22d47e88a1a6b27ba5dc781ceaa116b55bc98618ec4813e56b99d9189824",
+    "text_length": 283346
+  },
+  {
+    "url": "https://raw.githubusercontent.com/bowang-lab/BioReason/HEAD/README.md",
+    "record_ids": [
+      "bfm-bioreason"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:56.563640+00:00",
+    "cache_file": "12ba0ee0f52a53b832cccce5ffb5742dde471d63227826e72659453a00bc96f5.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/bowang-lab/BioReason/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "36e76e38fbeaf7ca4bb5198e3e261f3181ac77b5e92f4cd1eebfe76efa9eb0cd",
+    "text_length": 9098
+  },
+  {
+    "url": "https://github.com/bowang-lab/BioReason",
+    "record_ids": [
+      "bfm-bioreason"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:56.563687+00:00",
+    "cache_file": "be4c04c9ef808efd9d16317282e56b4003df7617b820372e12ad38312c551d41.txt",
+    "status": 200,
+    "final_url": "https://github.com/bowang-lab/BioReason",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "ab394200d3815b9bfacaddd0c9ff4af9c36d8ef6d7abe7800bf938a9ab900d2c",
+    "text_length": 347213
+  },
+  {
+    "url": "https://github.com/OpenProteinAI/PoET-2",
+    "record_ids": [
+      "bfm-openprotein-ai-poet-poet-2"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:56.563757+00:00",
+    "cache_file": "0983f997af69028a8e324975dbaee5623e11dada9996f8a07a424571dd5b91cc.txt",
+    "status": 200,
+    "final_url": "https://github.com/OpenProteinAI/PoET-2",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "3240f31dcbe3efc848325b2279a373dce20b573c362c4c55b4b5208640dd4007",
+    "text_length": 304599
+  },
+  {
+    "url": "https://raw.githubusercontent.com/TencentAILabHealthcare/scTranslator/HEAD/README.md",
+    "record_ids": [
+      "bfm-sctranslator"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:56.563809+00:00",
+    "cache_file": "1d203366dd8ef08195d11ca11c545035be85dcb929375ec82042b552875c424f.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/TencentAILabHealthcare/scTranslator/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "c996694782e075b06f687f6966f607178f77473bfbdf3fbb9646a58268cba4cf",
+    "text_length": 8420
+  },
+  {
+    "url": "https://github.com/TencentAILabHealthcare/scTranslator",
+    "record_ids": [
+      "bfm-sctranslator"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:56.563843+00:00",
+    "cache_file": "a7ebec50925673f747394539b824af881acd47f53864f4ebeb4904f34995ef69.txt",
+    "status": 200,
+    "final_url": "https://github.com/TencentAILabHealthcare/scTranslator",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "21b499900c0987add8ab3a4a015bbfb5c796a6d28e302da1677327915b400f62",
+    "text_length": 310831
+  },
+  {
+    "url": "https://raw.githubusercontent.com/xCompass-AI/GeneCompass/HEAD/README.md",
+    "record_ids": [
+      "bfm-genecompass"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:56.563878+00:00",
+    "cache_file": "68e19e2143bc68b0485e171ee2037e7154be05c6f2532269b9d5dbd3eebf918d.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/xCompass-AI/GeneCompass/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "d26270a638228aec4c06311515e282ec81704f18bde21eb9c986df37b03f4639",
+    "text_length": 9488
+  },
+  {
+    "url": "https://raw.githubusercontent.com/MineSelf2016/GeneMamba/HEAD/README.md",
+    "record_ids": [
+      "bfm-genemamba"
+    ],
+    "access_level": "inaccessible",
+    "fetched_at": "2026-09-11T07:00:56.563909+00:00",
+    "cache_file": "fbab4a1d025d0715b89aa24737287b179856f02f4788bf536b416e3cf8395018.txt",
+    "status": 404,
+    "error": "HTTPError"
+  },
+  {
+    "url": "https://github.com/MineSelf2016/GeneMamba",
+    "record_ids": [
+      "bfm-genemamba"
+    ],
+    "access_level": "inaccessible",
+    "fetched_at": "2026-09-11T07:00:56.906865+00:00",
+    "cache_file": "03d0ea9ce2045b62192bb005ea146b94868c427991de1a008487c809f2f868bb.txt",
+    "status": 404,
+    "error": "HTTPError"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/syr-cn/scMMGPT/HEAD/README.md",
+    "record_ids": [
+      "bfm-scmmgpt"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:56.952911+00:00",
+    "cache_file": "7ef3d224fe41d3a45a59767be570072aae7e3af5b2473ad7ed88ed348b6a05d6.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/syr-cn/scMMGPT/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "5bf8fba4845aec7de73f7cd32f67a46bd2211b4434d6214b950f5949993fe904",
+    "text_length": 10
+  },
+  {
+    "url": "https://github.com/syr-cn/scMMGPT",
+    "record_ids": [
+      "bfm-scmmgpt"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:57.224198+00:00",
+    "cache_file": "beaa66f98798472aee12e8668659d39ce003066ba4b4c48bbee88dae664706e8.txt",
+    "status": 200,
+    "final_url": "https://github.com/syr-cn/scMMGPT",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "31edd492d70aa9e7228c601d39ffee104295a955dc24b2ae5b4488a164c073ae",
+    "text_length": 248921
+  },
+  {
+    "url": "https://raw.githubusercontent.com/PathologyFoundation/plip/HEAD/README.md",
+    "record_ids": [
+      "bfm-plip-pathology-language-image-pretraining"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:57.231664+00:00",
+    "cache_file": "8dbb303913e9f7a2d4d7019ef2be3686cb73f0305ed1c4f13d300d9582eee019.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/PathologyFoundation/plip/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "598b5490dfc164cd7c128becc68b69e577d83e482cf5d599cef8972b01e1726c",
+    "text_length": 2500
+  },
+  {
+    "url": "https://github.com/PathologyFoundation/plip",
+    "record_ids": [
+      "bfm-plip-pathology-language-image-pretraining"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:57.249707+00:00",
+    "cache_file": "d63a1a7d7c98efa09a99929e609fa5081e916cce045c72e3dc28fec31acc76fd.txt",
+    "status": 200,
+    "final_url": "https://github.com/PathologyFoundation/plip",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "5ef271e9c7100d88970fb9f7035b1f168819e81b0e532e92b65ba6aa41b6834f",
+    "text_length": 280491
+  },
+  {
+    "url": "https://raw.githubusercontent.com/acharkq/next-mol/HEAD/README.md",
+    "record_ids": [
+      "bfm-next-mol"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:57.446879+00:00",
+    "cache_file": "6cabcd0243f20b84384b89d93dec661db5d92e7ef15a8ea02ca73fc1ba71b3ac.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/acharkq/next-mol/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "eb5e67687312ed226e986d4495b0c34a54f9c14a9f9bc80db3908b60c6688ddc",
+    "text_length": 12503
+  },
+  {
+    "url": "https://github.com/acharkq/next-mol",
+    "record_ids": [
+      "bfm-next-mol"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:57.452098+00:00",
+    "cache_file": "f419698928f84ae4bc819747c710b7d9e3e3d0407b1b7db27245ba4e51a95d71.txt",
+    "status": 200,
+    "final_url": "https://github.com/acharkq/next-mol",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "67e407c1de9f7d4975b349beec678b706b3f91bd4ebe12ca7ef5bb7ef74cd06e",
+    "text_length": 354234
+  },
+  {
+    "url": "https://raw.githubusercontent.com/afermg/JUMP_lite/HEAD/README.md",
+    "record_ids": [
+      "bfm-jump-lite"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:57.518099+00:00",
+    "cache_file": "0f73181791bf10e88043ad884ced698c9a4ceb0a65d377c50927d53d1940d5aa.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/afermg/JUMP_lite/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "64774de1a0df10a45d4c8a45cbc845bf87fec3cf176432d299d6eef6591acf7b",
+    "text_length": 8613
+  },
+  {
+    "url": "https://github.com/afermg/JUMP_lite",
+    "record_ids": [
+      "bfm-jump-lite"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:57.729405+00:00",
+    "cache_file": "a9c0b963ab6a987121168debe526d350f84760260a6d53fb1df751b227e8dcc7.txt",
+    "status": 200,
+    "final_url": "https://github.com/afermg/JUMP_lite",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "694ad2d31c3c555ce680e458276703428f9452a9d8c6bbbb2cb1e544ff7fcf8e",
+    "text_length": 335335
+  },
+  {
+    "url": "https://raw.githubusercontent.com/zhangtaolab/PlantHelixSeek/HEAD/README.md",
+    "record_ids": [
+      "bfm-planthelixseek"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:57.854531+00:00",
+    "cache_file": "aba6243e442373e78d23be32906942a3d1551a4188ed9ce26e1a88fa73d1c6d8.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/zhangtaolab/PlantHelixSeek/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "ae0bb5c9825a6c63ab21d3c4575dfea9bc8af5a84bc290939e8f45484b4b519f",
+    "text_length": 36749
+  },
+  {
+    "url": "https://github.com/zhangtaolab/PlantHelixSeek",
+    "record_ids": [
+      "bfm-planthelixseek"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:57.986504+00:00",
+    "cache_file": "0b0c1f50a3895e09b3b083052c1d38454a7ac2b725555432430c6d2ef4a7650d.txt",
+    "status": 200,
+    "final_url": "https://github.com/zhangtaolab/PlantHelixSeek",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "5c797e287e6e6564cb83aaff6e98050aff0cd5175626f6db6d0f3e6459c76011",
+    "text_length": 466482
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tansey-lab/screenshot/HEAD/README.md",
+    "record_ids": [
+      "bfm-screenshot"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:58.000106+00:00",
+    "cache_file": "3535d97d816ef86c78cf8acab33a69d4d7f1ba15fce2f3bc1530fd1113f32c92.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/tansey-lab/screenshot/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "01629fac0ae9f5e429f96cc8378a976af409ea1232329762ab0c9d11d2a553ff",
+    "text_length": 4487
+  },
+  {
+    "url": "https://github.com/tansey-lab/screenshot",
+    "record_ids": [
+      "bfm-screenshot"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:58.154591+00:00",
+    "cache_file": "fd2185be83e7721f8695c3a67e0e9b117b63a40aae92906ae88ed77555c82256.txt",
+    "status": 200,
+    "final_url": "https://github.com/tansey-lab/screenshot",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "20c1fbbfa2940e21f9bb2891f66a295f26b798e9909cc14617b5b037f26e01f8",
+    "text_length": 297964
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lijc0804/SPgen/HEAD/README.md",
+    "record_ids": [
+      "bfm-spgen"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:58.215568+00:00",
+    "cache_file": "edd831f10507d10b26e59bb073ba48dba7c747943d059dc7df771cc1d5bd06e9.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/lijc0804/SPgen/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "6ab3ced0a813c2dee7e4b7a3b2dd711753f1ed496fb63363622d1398a56f13b3",
+    "text_length": 1699
+  },
+  {
+    "url": "https://github.com/lijc0804/SPgen",
+    "record_ids": [
+      "bfm-spgen"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:58.304584+00:00",
+    "cache_file": "f5096152da20e20152b811714e509e6c747fbecc6d4f8cd1ee3434e37b9565cf.txt",
+    "status": 200,
+    "final_url": "https://github.com/lijc0804/SPgen",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "5bdaf36358fa24b0d8ff36dbf2d0499939a760ca104b1820a5a6c39c4eb71364",
+    "text_length": 269641
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Xaira-Therapeutics/x-cell/HEAD/README.md",
+    "record_ids": [
+      "bfm-x-cell"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:58.466812+00:00",
+    "cache_file": "7546e99b2c92a622d6bb85f1cafd614713257ad95d3acd03dfa005d7a400e0ff.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/Xaira-Therapeutics/x-cell/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "402739e04fbbe613788d04dcdae2c29f5b5e820adc67fac3772eddc7740384ec",
+    "text_length": 3385
+  },
+  {
+    "url": "https://github.com/Xaira-Therapeutics/x-cell",
+    "record_ids": [
+      "bfm-x-cell"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:58.765206+00:00",
+    "cache_file": "d8bc171e45c2376e48a41178074aec038551fd54965c566cb891237f9eeddd6b.txt",
+    "status": 200,
+    "final_url": "https://github.com/Xaira-Therapeutics/x-cell",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "a96b764dde607af889b16e9500488c959168073fd591bb0fa3906c3374c4f7ea",
+    "text_length": 306321
+  },
+  {
+    "url": "https://raw.githubusercontent.com/okt0711/scMamba/HEAD/README.md",
+    "record_ids": [
+      "bfm-scmamba-snrna"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:58.776422+00:00",
+    "cache_file": "9130416f45651e064692467f4ee618be75a7ebeeea3dec87767a193db4065d0a.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/okt0711/scMamba/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "7de69b0bafccccedad0ab1e4ff7343de5b6fa29e26a6104cf510d8ebba919ad5",
+    "text_length": 1458
+  },
+  {
+    "url": "https://github.com/okt0711/scMamba",
+    "record_ids": [
+      "bfm-scmamba-snrna"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:58.924873+00:00",
+    "cache_file": "d07e098982467d207c7d19b7a9e2507c414d20dc7b24f89299e83701f9179123.txt",
+    "status": 200,
+    "final_url": "https://github.com/okt0711/scMamba",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "6138fc7335c7ae9cebdcfee42ff539fa84da8358ea699adf31ceefec47a23566",
+    "text_length": 274851
+  },
+  {
+    "url": "https://raw.githubusercontent.com/23AIBox/scMamba/HEAD/README.md",
+    "record_ids": [
+      "bfm-scmamba-multiomics"
+    ],
+    "access_level": "repository_readme_full",
+    "fetched_at": "2026-09-11T07:00:59.121307+00:00",
+    "cache_file": "1e034e1d092b5301fca50a1f75066cfe27f83b6129f7620220998ddfa1a81dc9.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/23AIBox/scMamba/HEAD/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "sha256": "835381bb8a3154c80e2c41f18c1ace64cfd2f33fd4f8a3ec41e8b4434895aa39",
+    "text_length": 3835
+  },
+  {
+    "url": "https://github.com/23AIBox/scMamba",
+    "record_ids": [
+      "bfm-scmamba-multiomics"
+    ],
+    "access_level": "repository_listing",
+    "fetched_at": "2026-09-11T07:00:59.191405+00:00",
+    "cache_file": "dcc9b18d209198ffc2296c57b3855e97737888183c53417ef5543848c9d8e7fc.txt",
+    "status": 200,
+    "final_url": "https://github.com/23AIBox/scMamba",
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "57df98ef8ce3bb53cf09a4959eb5c64c31843dc92cc2f2f81ea58f5093d9fb0c",
+    "text_length": 271941
+  }
+]

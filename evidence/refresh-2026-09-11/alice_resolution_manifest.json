@@ -1,0 +1,29 @@
+[
+  {
+    "candidate": "ALICE",
+    "url": "https://raw.githubusercontent.com/WonderLandxD/ALICE/HEAD/README.md",
+    "access_level": "inaccessible",
+    "fetched_at": "2026-09-11T07:24:09.572032+00:00",
+    "cache_file": "6a39376e4017e90bb42da8dca512855b22e7dc2992da56e5f30148d5e7e2a386.txt",
+    "status": 404,
+    "error": "HTTPError"
+  },
+  {
+    "candidate": "ALICE",
+    "url": "https://huggingface.co/JWonderLand/ALICE/raw/main/README.md",
+    "access_level": "inaccessible",
+    "fetched_at": "2026-09-11T07:24:09.572418+00:00",
+    "cache_file": "0a540d7773759de080734f85f10f8f220c82b8a2088a6278e3d67f8fd6791b71.txt",
+    "status": 401,
+    "error": "HTTPError"
+  },
+  {
+    "candidate": "ALICE",
+    "url": "https://huggingface.co/api/models/JWonderLand/ALICE",
+    "access_level": "inaccessible",
+    "fetched_at": "2026-09-11T07:24:09.572522+00:00",
+    "cache_file": "db632f2b0f143a4d91369ef3546a62038463e36195bb34c10032364fac7c55fe.txt",
+    "status": 401,
+    "error": "HTTPError"
+  }
+]
