@@ -6,6 +6,7 @@
   "resource_version": "2.2.0",
   "issued": "2026-06-16",
   "modified": "2026-09-11",
+  "evidence_review_date": "2026-09-11",
   "data_file": "models_final.json",
   "schema_file": "schema.json",
   "under_review_file": "records_under_review.json",
