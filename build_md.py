@@ -54,7 +54,7 @@ audit_counts = Counter(record["audit_state"] for record in MODELS)
 out = [
     "# Biological Foundation Models Wiki",
     "",
-    f"Last evidence review: {META['modified']} · {len(MODELS)} entries across {len(MOD_ORDER)} categories.",
+    f"Last evidence review: {META.get('evidence_review_date', META['modified'])} · {len(MODELS)} entries across {len(MOD_ORDER)} categories.",
     "",
     "A researcher-facing index of foundation models and explicitly labelled platforms or benchmarks for biological sequences, molecules, structures, omics, cells, and tissue images. Presence is not a recommendation, proof of reuse rights, or evidence of clinical fitness.",
     "",

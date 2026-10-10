@@ -2,6 +2,29 @@
 
 All notable public changes to this resource are documented here.
 
+## 2.3.0 — 2026-10-10
+
+- Added 80 models, platforms and benchmarks across all ten categories, and
+  promoted 7 previously held records whose conditions are now met, taking the
+  displayed catalog to 486. Every addition and promotion passed a separate
+  review agent instructed to refute it. Some additions are canonical older
+  models the index lacked (e.g. GearNet, HIPT, CTransPath, AIMNet2, MACE-OFF).
+- Re-reviewed all 44 held records: 7 promoted, 4 retired with documented
+  reasons (xTrimoGene is now an alias of scFoundation), 33 kept with refreshed
+  conditions. Moved Molexar to the register after its official code was
+  withdrawn. 37 candidates remain under review.
+- Opened a calibrated-uncertainty lane: added the MUBen benchmark and stated
+  the confidence outputs of AlphaFold2, AlphaFold 3 and EVE where primary
+  sources support it.
+- Corrected 32 existing records for moved repositories and hub organisations,
+  journal versions of preprints, access and licence wording, and archived
+  upstream code. Fixed the UMA documentation link that had failed the weekly
+  link audit since 2026-09-14.
+- Added a separate `evidence_review_date` to the resource metadata.
+- Recorded method, coverage limits and every decision in
+  `evidence/DISCOVERY_AUDIT_2026-10-10.md` and `evidence/refresh-2026-10-10/`.
+- Set the immutable release reference after owner review and publication authorization.
+
 ## 2.2.0 — 2026-09-11
 
 - Added or promoted 11 models and benchmarks across RNA, DNA, protein,
