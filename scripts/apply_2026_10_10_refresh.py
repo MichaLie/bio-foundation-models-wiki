@@ -51,9 +51,11 @@ def main() -> None:
     register["record_count"] = len(register["entries"])
     register["date_modified"] = date
 
-    added = len({row["id"] for row in data} - before - held_before)
-    promoted = len({row["id"] for row in data} & held_before)
-    new_holds = len({entry["record"]["id"] for entry in register["entries"]} - held_before - before)
+    # Counts come from the payload, not the current files, so a re-run writes identical metadata.
+    promoted_ids = {row["id"] for row in payload["catalog_upserts"]} & set(payload["held_remove_ids"])
+    added = sum(1 for row in payload["catalog_upserts"] if row["date_added"] == date and row["id"] not in promoted_ids)
+    promoted = len(promoted_ids)
+    new_holds = sum(1 for entry in payload["held_upserts"] if entry["review"]["hold_since"] == date and entry["record"]["id"] not in removed)
     counts = Counter(row["audit_state"] for row in data)
     metadata = read(ROOT / "resource_metadata.json")
     metadata.update(
