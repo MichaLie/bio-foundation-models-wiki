@@ -22,7 +22,7 @@
       "dcat:accessURL": {
         "@id": "https://michalie.github.io/bio-foundation-models-wiki/"
       },
-      "dcat:byteSize": 606025,
+      "dcat:byteSize": 906892,
       "dcat:downloadURL": {
         "@id": "https://michalie.github.io/bio-foundation-models-wiki/models_final.json"
       },
@@ -36,7 +36,7 @@
         "spdx:algorithm": {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
         },
-        "spdx:checksumValue": "b86d5325b629cc5e1dabd2dcd1f88a778d0c1219da9938177d2e856627775cd0"
+        "spdx:checksumValue": "252c4716963a48ce7f86cdc94c0a5999c29869934cff5cb76f06075567a127ea"
       }
     },
     {
@@ -134,9 +134,9 @@
   },
   "dct:modified": {
     "@type": "xsd:date",
-    "@value": "2026-09-11"
+    "@value": "2026-10-10"
   },
-  "dct:provenance": "Curated from primary papers, official repositories, model hubs, project pages, and explicit licence or access terms. The 2026-09-11 refresh follows the August catalog with discovery across all ten modalities and condition-focused re-review of all 39 previously held records. It adds 11 displayed records including two resolved family promotions and a separately evidenced family member, makes a targeted GPN-MSA lifecycle/publication update, and returns ALICE to HOLD after current official access could no longer be verified. The canonical displayed catalog contains 400 records; 44 unresolved candidates remain in the separate under-review register. Unchanged rows retain their prior verification dates. Generated distributions come from canonical JSON through a deterministic build.",
+  "dct:provenance": "Curated from primary papers, official repositories, model hubs, project pages, and explicit licence or access terms. The 2026-10-10 local preview follows the September catalog with discovery lanes for all ten modalities, a calibrated-uncertainty lane and a candidate-feed/watchlist lane, followed by a separate adversarial review of every proposed addition and promotion. It adds 80 records, promotes 7 previously held records whose reconsideration conditions are now met, moves 1 record whose official code was withdrawn to the under-review register, corrects stale access, repository and publication details on existing records, and re-reviews every held record. The canonical displayed catalog contains 486 records; 37 unresolved candidates remain in the separate under-review register. Unchanged rows retain their prior verification dates. Generated distributions come from canonical JSON through a deterministic build. This preview has no published release reference.",
   "dct:publisher": {
     "@id": "https://github.com/MichaLie",
     "@type": "schema:Person",
@@ -154,7 +154,7 @@
     "dct:description": "Audited candidates excluded from the displayed canonical index until their scope, artifact, identity, duplication, or reuse-term issue is resolved.",
     "dct:title": "Biological Foundation Models — records under review",
     "dct:type": "Editorial under-review register; not part of the canonical displayed catalog",
-    "schema:numberOfItems": 44
+    "schema:numberOfItems": 37
   },
   "dct:rights": "Catalog data, metadata, and original documentation are licensed under CC BY 4.0; maintenance and build software are licensed under MIT. Third-party papers, model artifacts, external software, services, logos, and trademarks remain under their own terms. IMG CAS is the curator's affiliation, not the publisher or an endorsement.",
   "dct:source": {
@@ -162,22 +162,22 @@
   },
   "dct:title": "Biological Foundation Models - Researcher Index",
   "prov:wasDerivedFrom": {
-    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/66cef15df536f57c6e3ac0f581638d952493a5da"
+    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/1d07d7827489a22038e96053835070a8533110d1"
   },
   "prov:wasGeneratedBy": {
-    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/releases/tag/v2.2.0",
+    "@id": "https://michalie.github.io/bio-foundation-models-wiki/#local-preview-build-2.3.0",
     "@type": "prov:Activity",
-    "dct:type": "Versioned release build",
+    "dct:type": "Working build without an immutable release reference",
     "prov:endedAtTime": {
       "@type": "xsd:date",
-      "@value": "2026-09-11"
+      "@value": "2026-10-10"
     },
     "prov:used": [
       {
         "@id": "https://github.com/MichaLie/bio-foundation-models-wiki"
       },
       {
-        "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/66cef15df536f57c6e3ac0f581638d952493a5da"
+        "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/1d07d7827489a22038e96053835070a8533110d1"
       }
     ]
   },
@@ -192,7 +192,7 @@
     "schema:email": "mailto:michaela.liegertova@img.cas.cz",
     "schema:name": "Michaela Liegertová"
   },
-  "schema:dateModified": "2026-09-11",
+  "schema:dateModified": "2026-10-10",
   "schema:description": "A curated, filterable catalog of foundation models and related resources for biological sequences, molecules, structures, omics, cells, and tissue images.",
   "schema:identifier": "https://michalie.github.io/bio-foundation-models-wiki/",
   "schema:isAccessibleForFree": true,
@@ -200,12 +200,12 @@
     "@id": "https://creativecommons.org/licenses/by/4.0/"
   },
   "schema:name": "Biological Foundation Models - Researcher Index",
-  "schema:numberOfItems": 400,
+  "schema:numberOfItems": 486,
   "schema:sameAs": {
     "@id": "https://github.com/MichaLie/bio-foundation-models-wiki"
   },
   "schema:url": {
     "@id": "https://michalie.github.io/bio-foundation-models-wiki/"
   },
-  "schema:version": "2.2.0"
+  "schema:version": "2.3.0"
 }

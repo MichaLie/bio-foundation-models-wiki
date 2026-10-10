@@ -3,21 +3,21 @@
   "profile": "foundation-models",
   "title": "Biological Foundation Models - Researcher Index",
   "description": "A curated, filterable catalog of foundation models and related resources for biological sequences, molecules, structures, omics, cells, and tissue images.",
-  "resource_version": "2.2.0",
+  "resource_version": "2.3.0",
   "issued": "2026-06-16",
-  "modified": "2026-09-11",
-  "evidence_review_date": "2026-09-11",
+  "modified": "2026-10-10",
+  "evidence_review_date": "2026-10-10",
   "data_file": "models_final.json",
   "schema_file": "schema.json",
   "under_review_file": "records_under_review.json",
   "under_review_schema_file": "records_under_review.schema.json",
   "repository": "https://github.com/MichaLie/bio-foundation-models-wiki",
-  "baseline_commit": "66cef15df536f57c6e3ac0f581638d952493a5da",
-  "baseline_commit_url": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/66cef15df536f57c6e3ac0f581638d952493a5da",
-  "release_ref": "https://github.com/MichaLie/bio-foundation-models-wiki/releases/tag/v2.2.0",
+  "baseline_commit": "1d07d7827489a22038e96053835070a8533110d1",
+  "baseline_commit_url": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/1d07d7827489a22038e96053835070a8533110d1",
+  "release_ref": null,
   "legacy_snapshot_commit": "e608549ed498aca31921d08a16e424b99ef233aa",
   "legacy_snapshot_date": "2026-06-16",
-  "baseline_data_date": "2026-09-11",
+  "baseline_data_date": "2026-10-10",
   "id_prefix": "bfm",
   "creator": {
     "type": "Person",
@@ -42,7 +42,7 @@
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "code_license": "https://spdx.org/licenses/MIT.html",
   "rights_statement": "Catalog data, metadata, and original documentation are licensed under CC BY 4.0; maintenance and build software are licensed under MIT. Third-party papers, model artifacts, external software, services, logos, and trademarks remain under their own terms. IMG CAS is the curator's affiliation, not the publisher or an endorsement.",
-  "provenance": "Curated from primary papers, official repositories, model hubs, project pages, and explicit licence or access terms. The 2026-09-11 refresh follows the August catalog with discovery across all ten modalities and condition-focused re-review of all 39 previously held records. It adds 11 displayed records including two resolved family promotions and a separately evidenced family member, makes a targeted GPN-MSA lifecycle/publication update, and returns ALICE to HOLD after current official access could no longer be verified. The canonical displayed catalog contains 400 records; 44 unresolved candidates remain in the separate under-review register. Unchanged rows retain their prior verification dates. Generated distributions come from canonical JSON through a deterministic build.",
+  "provenance": "Curated from primary papers, official repositories, model hubs, project pages, and explicit licence or access terms. The 2026-10-10 local preview follows the September catalog with discovery lanes for all ten modalities, a calibrated-uncertainty lane and a candidate-feed/watchlist lane, followed by a separate adversarial review of every proposed addition and promotion. It adds 80 records, promotes 7 previously held records whose reconsideration conditions are now met, moves 1 record whose official code was withdrawn to the under-review register, corrects stale access, repository and publication details on existing records, and re-reviews every held record. The canonical displayed catalog contains 486 records; 37 unresolved candidates remain in the separate under-review register. Unchanged rows retain their prior verification dates. Generated distributions come from canonical JSON through a deterministic build. This preview has no published release reference.",
   "is_part_of": "https://michalie.github.io/",
   "keywords": [
     "biological foundation models",
@@ -53,5 +53,5 @@
     "single-cell",
     "ELIXIR"
   ],
-  "evidence_statement": "400 records: 258 verified and 142 with visible limitations. September review covers new entries and all 39 previous holds; older verification dates are preserved. 44 candidates remain under review. Check each record's access and licence limitations before use."
+  "evidence_statement": "486 records: 247 verified and 239 with visible limitations. October review covers new and promoted entries, targeted corrections and all previously held records; older verification dates are preserved. 37 candidates remain under review. Check each record's access and licence limitations before use."
 }

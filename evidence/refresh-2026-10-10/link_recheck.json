@@ -1,0 +1,45 @@
+{
+ "checked": "2026-10-10",
+ "method": "Authenticated GitHub API, Crossref/DataCite/Zenodo APIs, or one slow retry, for URLs that returned 503 or timed out under burst load",
+ "results": {
+  "https://doi.org/10.5281/zenodo.14794785": "registered (zenodo.org 200)",
+  "https://doi.org/10.5281/zenodo.16754363": "registered (zenodo.org 200)",
+  "https://doi.org/10.5281/zenodo.17801271": "registered (zenodo.org 200)",
+  "https://doi.org/10.5281/zenodo.21299708": "registered (zenodo.org 200)",
+  "https://doi.org/10.5281/zenodo.21790090": "registered (zenodo.org 200)",
+  "https://doi.org/10.5281/zenodo.21984993": "registered (zenodo.org 200)",
+  "https://doi.org/10.5281/zenodo.22140385": "registered (DataCite 200)",
+  "https://doi.org/10.5281/zenodo.22675706": "registered (zenodo.org 200)",
+  "https://github.com/BGIResearch/BioLLM/blob/master/LICENSE": "exists (GitHub API)",
+  "https://github.com/Biohub/esm/blob/main/_assets/ESM3_README.md": "exists (GitHub API)",
+  "https://github.com/PharMolix/OpenBioMed/blob/main/USE_POLICY.md": "exists (GitHub API)",
+  "https://github.com/PolymathicAI/MIMIC/blob/main/LORE/NOTICE.md": "exists (GitHub API)",
+  "https://github.com/Shanghai-Academy-of-AI-For-Science/MKB/blob/main/docs/MKB.pdf": "exists (GitHub API)",
+  "https://github.com/TencentAILabHealthcare/scBERT/blob/master/LICENSE": "exists (GitHub API)",
+  "https://github.com/amazon-science/LC-PLM/blob/main/LICENSE": "exists (GitHub API)",
+  "https://github.com/biomap-research/scFoundation/blob/main/MODEL_LICENSE": "exists (GitHub API)",
+  "https://github.com/facebookresearch/dinov2/blob/main/docs/README_CELL_DINO.md": "exists (GitHub API)",
+  "https://github.com/genbio-ai/ModelGenerator/blob/main/LICENSE": "exists (GitHub API)",
+  "https://github.com/huggingface/carbon/blob/main/tech-report.pdf": "exists (GitHub API)",
+  "https://github.com/ml4bio/RNA-FM/blob/main/tutorials/mRNA_expression/mrnafm-tutorial-code.ipynb": "exists (GitHub API)",
+  "https://github.com/zjunlp/ChatCell/blob/main/LICENSE": "exists (GitHub API)",
+  "https://zenodo.org/records/16989562": "exists (Zenodo API 200)",
+  "https://zenodo.org/records/17318279": "exists (Zenodo API 200)",
+  "https://zenodo.org/records/19236552": "exists (Zenodo API 200)"
+ },
+ "huggingface_api_recheck": {
+  "method": "Hugging Face Hub API, one request per 1.5 s, for every huggingface.co repository URL in the displayed catalog and the register (the burst audit received HTTP 429 for most of them)",
+  "checked": 282,
+  "ok_200": 278,
+  "not_ok": {
+   "https://huggingface.co/JWonderLand/ALICE": "401",
+   "https://huggingface.co/api/collections/Genentech/grelu-model-zoo": "401",
+   "https://huggingface.co/api/models/Genentech/borzoi-model": "401",
+   "https://huggingface.co/api/models/SandboxAQ/AQAffinity": "401"
+  },
+  "notes": {
+   "https://huggingface.co/JWonderLand/ALICE": "held record bfm-alice; repository private or removed (known, reason for its hold)",
+   "api-URL sources": "three huggingface.co/api/... source URLs were mis-parsed by the checker and returned 200 when fetched directly"
+  }
+ }
+}
