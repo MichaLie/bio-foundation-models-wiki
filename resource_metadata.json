@@ -14,7 +14,7 @@
   "repository": "https://github.com/MichaLie/bio-foundation-models-wiki",
   "baseline_commit": "1d07d7827489a22038e96053835070a8533110d1",
   "baseline_commit_url": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/1d07d7827489a22038e96053835070a8533110d1",
-  "release_ref": null,
+  "release_ref": "https://github.com/MichaLie/bio-foundation-models-wiki/releases/tag/v2.3.0",
   "legacy_snapshot_commit": "e608549ed498aca31921d08a16e424b99ef233aa",
   "legacy_snapshot_date": "2026-06-16",
   "baseline_data_date": "2026-10-10",

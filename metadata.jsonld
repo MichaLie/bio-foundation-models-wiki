@@ -165,9 +165,9 @@
     "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/commit/1d07d7827489a22038e96053835070a8533110d1"
   },
   "prov:wasGeneratedBy": {
-    "@id": "https://michalie.github.io/bio-foundation-models-wiki/#local-preview-build-2.3.0",
+    "@id": "https://github.com/MichaLie/bio-foundation-models-wiki/releases/tag/v2.3.0",
     "@type": "prov:Activity",
-    "dct:type": "Working build without an immutable release reference",
+    "dct:type": "Versioned release build",
     "prov:endedAtTime": {
       "@type": "xsd:date",
       "@value": "2026-10-10"

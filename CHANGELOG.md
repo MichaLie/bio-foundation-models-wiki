@@ -23,6 +23,7 @@ All notable public changes to this resource are documented here.
 - Added a separate `evidence_review_date` to the resource metadata.
 - Recorded method, coverage limits and every decision in
   `evidence/DISCOVERY_AUDIT_2026-10-10.md` and `evidence/refresh-2026-10-10/`.
+- Set the immutable release reference after owner review and publication authorization.
 
 ## 2.2.0 — 2026-09-11
 
