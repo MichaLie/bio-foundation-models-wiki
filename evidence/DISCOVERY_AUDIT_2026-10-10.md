@@ -64,7 +64,7 @@ This is a bounded discovery sweep with adversarial verification of every admissi
 
 ## Local checks
 
-- The dated migration (`scripts/apply_2026_10_10_refresh.py`) is idempotent: a second run left the catalog and register byte-identical.
+- The dated migration (`scripts/apply_2026_10_10_refresh.py`) is idempotent: a second run left every canonical JSON file, including the resource metadata, byte-identical.
 - `build.py`: 16 generated artifacts byte-stable. `validate_catalog.py`: pass (one expected warning, null release reference). `git diff --check`: clean.
 - Link audit: 1,503 unique URLs across 2,930 occurrences: 2,198 occurrences reachable and 693 restricted; none missing. The 39 occurrences that returned 503 or timed out under burst load were confirmed through the GitHub, Crossref, DataCite and Zenodo APIs. Hugging Face answered most audit requests with 429, so every Hugging Face repository URL was re-checked slowly through the Hub API; all resolve except the held ALICE repository. Restricted bioRxiv and publisher pages (bot blocks) were not re-checked and are not counted as verified. Details: [`refresh-2026-10-10/link_recheck.json`](refresh-2026-10-10/link_recheck.json).
 - `validate_catalog.py --release` is expected to fail only on the null release reference. Governance was not weakened.
