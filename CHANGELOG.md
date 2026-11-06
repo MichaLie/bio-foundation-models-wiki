@@ -2,6 +2,26 @@
 
 All notable public changes to this resource are documented here.
 
+## 2.4.0 — 2026-11-06
+
+- Added 52 models, platforms and benchmarks (41 from this cycle's discovery
+  lanes, 11 from a second review of October's discovery leads), taking the
+  displayed catalog to 538. Every addition passed a separate review agent
+  instructed to refute it. Some are established resources the index lacked
+  (e.g. FLIP, PoseBusters, PLINDER, DNABERT-S, QuiltNet, CaLM).
+- Re-reviewed all 37 held records (none met its condition) and all 91 October
+  leads; 40 leads now sit on the under-review register with stated
+  conditions, so 77 candidates are under review.
+- Calibrated uncertainty: added the THUNDER and PRISM pathology benchmarks,
+  which score calibration; stated ESMFold's per-residue confidence output.
+- Corrected 18 existing records: journal versions of preprints, new family
+  members (Scooby-2, AceFF-2-OMOL), access and licence wording (CodonBERT is
+  now flagged non-commercial; Protenix v2 weights are proprietary), archived
+  repositories, the Carbon technical-report link and ODesign's unreachable
+  web server.
+- Recorded method, coverage limits and every decision in
+  `evidence/DISCOVERY_AUDIT_2026-11-06.md` and `evidence/refresh-2026-11-06/`.
+
 ## 2.3.0 — 2026-10-10
 
 - Added 80 models, platforms and benchmarks across all ten categories, and
