@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-06",
+  "link_audit": {
+    "unique_urls": 1849,
+    "occurrences": 3512,
+    "outcomes": {
+      "reachable": 2555,
+      "restricted": 955,
+      "network_error": 2
+    }
+  },
+  "huggingface_api_recheck": {
+    "urls_checked": 406,
+    "resolved_200": 405,
+    "not_resolved": [
+      {
+        "url": "https://huggingface.co/JWonderLand/ALICE",
+        "record": "bfm-alice",
+        "status": 401
+      }
+    ],
+    "note": "Every Hugging Face model/dataset/collection URL in displayed and held records was re-checked one request at a time through the Hub API; URLs that cite the API directly were queried as written."
+  },
+  "network_errors": [
+    {
+      "url": "https://odesign.lglab.ac.cn/",
+      "record": "bfm-odesign",
+      "finding": "TLS certificate issued for origene.lglab.ac.cn; plain HTTP timed out (2026-11-06). Record wording now marks the server unverified."
+    }
+  ],
+  "not_rechecked": "Restricted bioRxiv and publisher pages (bot blocks) were not re-checked and are not counted as verified."
+}
