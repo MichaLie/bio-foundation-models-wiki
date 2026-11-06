@@ -21,6 +21,7 @@ All notable public changes to this resource are documented here.
   web server.
 - Recorded method, coverage limits and every decision in
   `evidence/DISCOVERY_AUDIT_2026-11-06.md` and `evidence/refresh-2026-11-06/`.
+- Set the immutable release reference after owner review and publication authorization.
 
 ## 2.3.0 — 2026-10-10
 
